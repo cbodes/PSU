@@ -1,0 +1,140 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// Company: <Name>
+//
+// File: controller.v
+// File history:
+//      <Revision number>: <Date>: <Comments>
+//      <Revision number>: <Date>: <Comments>
+//      <Revision number>: <Date>: <Comments>
+//
+// Description: 
+//
+// <Description here>
+//
+// Targeted device: <Family::ProASIC3E> <Die::A3PE1500> <Package::208 PQFP>
+// Author: <Name>
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+//`timescale <time_units> / <precision>
+
+module controller #(
+    AVG_WAIT = 7
+)(
+    input clk, n_rst, fm_cycle, vd_rdy, avg_done, int_done, sum_rdy,
+    input [11:0] wait_time,
+    output error_enable, shift_avg, calc_avg, shift_int, calc_int, deriv_enable, sum_enable, pwm_enable, id_enable, id_avg
+);
+
+parameter IDLE = 'd0;
+parameter CALC_ERROR = 'd1;
+parameter SHIFT_AVG = 'd2;
+parameter CALC_AVG = 'd3;
+parameter WAIT_AVG = 'd4;
+parameter SHIFT_INT = 'd5;
+parameter CALC_INT = 'd6;
+parameter WAIT_INT = 'd7;
+parameter CALC_DERIV = 'd8;
+parameter CALC_SUM = 'd9;
+parameter WAIT_SUM = 'd10;
+parameter CALC_PWM = 'd11;
+parameter CALC_ID = 'd12;
+parameter CALC_AVG_ID = 'd13;
+
+reg [5:0] state, next_state;
+reg [15:0] count, next_count;
+reg [15:0] avg_count, next_avg_count;
+
+always @(posedge clk, negedge n_rst) begin
+    if (n_rst == 0) begin
+        state <= IDLE;
+        count <= '0;
+        avg_count <= '0;
+    end else begin
+        state <= next_state;
+        count <= next_count;
+        avg_count <= next_avg_count;
+    end
+end
+
+
+assign shift_avg    = (state == SHIFT_AVG) ? 1'b1 : 1'b0;
+assign id_enable    = (state == SHIFT_AVG) ? 1'b1 : 1'b0;
+assign calc_avg     = (state == CALC_AVG) ? 1'b1 : 1'b0;
+assign id_avg       = (state == CALC_AVG) ? 1'b1 : 1'b0;
+assign error_enable = (state == CALC_ERROR) ? 1'b1 : 1'b0;
+assign shift_int    = (state == SHIFT_INT) ? 1'b1 : 1'b0;
+assign calc_int     = (state == CALC_INT) ? 1'b1 : 1'b0;
+assign deriv_enable = (state == CALC_DERIV) ? 1'b1 : 1'b0;
+assign sum_enable   = (state == CALC_SUM) ? 1'b1 : 1'b0;
+assign pwm_enable   = (state == CALC_PWM) ? 1'b1 : 1'b0;
+
+always_comb begin
+    next_state = state;
+    next_count = count;
+    next_avg_count = avg_count;
+    if (fm_cycle) begin
+            next_count = count + 'd1;
+    end
+
+    case (state)
+        IDLE: begin
+            if (vd_rdy == 1) begin
+                next_state = SHIFT_AVG;
+            end
+        end
+        SHIFT_AVG: begin
+            next_state = CALC_AVG;
+        end
+        CALC_AVG: begin
+            next_state = WAIT_AVG;
+        end
+        WAIT_AVG: begin
+            if (avg_done == 1) begin
+                if (avg_count >= AVG_WAIT) begin
+                    next_state = CALC_ERROR;
+                    next_avg_count = '0;
+                end else begin
+                    next_state = IDLE;
+                    next_avg_count = avg_count + 'd1;
+                end
+            end
+        end
+        CALC_ERROR: begin
+            next_state = SHIFT_INT;
+        end
+        SHIFT_INT: begin
+            next_state = CALC_INT;
+        end
+        CALC_INT: begin
+            next_state = WAIT_INT;
+        end
+        WAIT_INT: begin
+            if (int_done == 1) begin
+                next_state = CALC_DERIV;
+            end
+        end
+        CALC_DERIV: begin
+            next_state = CALC_SUM;
+        end
+        CALC_SUM: begin
+            next_state = WAIT_SUM;
+        end
+        WAIT_SUM: begin
+            if (sum_rdy == 1) begin
+                if (count >= wait_time) begin
+                    next_count = '0;
+                    next_state = CALC_PWM;
+                end
+                else begin
+                    next_state = IDLE;
+                end
+            end
+        end
+        CALC_PWM: begin
+            next_state = IDLE;
+        end
+    endcase
+end
+
+endmodule

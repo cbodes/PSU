@@ -1,0 +1,43 @@
+
+###==== BEGIN Header
+
+# Synopsys, Inc. constraint file
+# C:/PID Project/PID_Controller/synthesis/fpga.fdc
+# Written on Thu Mar 01 23:31:43 2018
+# by Synplify Pro, L-2016.09M-2 FDC Constraint Editor
+
+# Custom constraint commands may be added outside of the SCOPE tab sections bounded with BEGIN/END.
+# These sections are generated from SCOPE spreadsheet tabs.
+
+###==== END Header
+
+###==== BEGIN Collections - (Populated from tab in SCOPE, do not edit)
+###==== END Collections
+
+###==== BEGIN Clocks - (Populated from tab in SCOPE, do not edit)
+
+###==== END Clocks
+
+###==== BEGIN "Generated Clocks" - (Populated from tab in SCOPE, do not edit)
+###==== END "Generated Clocks"
+
+###==== BEGIN Inputs/Outputs - (Populated from tab in SCOPE, do not edit)
+###==== END Inputs/Outputs
+
+###==== BEGIN Registers - (Populated from tab in SCOPE, do not edit)
+###==== END Registers
+
+###==== BEGIN "Delay Paths" - (Populated from tab in SCOPE, do not edit)
+###==== END "Delay Paths"
+
+###==== BEGIN Attributes - (Populated from tab in SCOPE, do not edit)
+define_global_attribute  {syn_preserve} {1}
+###==== END Attributes
+
+###==== BEGIN "I/O Standards" - (Populated from tab in SCOPE, do not edit)
+###==== END "I/O Standards"
+
+###==== BEGIN "Compile Points" - (Populated from tab in SCOPE, do not edit)
+###==== END "Compile Points"
+
+

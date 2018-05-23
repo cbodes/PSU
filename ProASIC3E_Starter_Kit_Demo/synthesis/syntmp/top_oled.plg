@@ -1,0 +1,38 @@
+@P:  Worst Slack : 10.889
+@P:  PLL_clock|GLA_inferred_clock - Estimated Frequency : 139.4 MHz
+@P:  PLL_clock|GLA_inferred_clock - Requested Frequency : 40.0 MHz
+@P:  PLL_clock|GLA_inferred_clock - Estimated Period : 7.172
+@P:  PLL_clock|GLA_inferred_clock - Requested Period : 25.000
+@P:  PLL_clock|GLA_inferred_clock - Slack : 17.828
+@P:  top_oled|DBlock_clkin_inferred_clock - Estimated Frequency : 107.6 MHz
+@P:  top_oled|DBlock_clkin_inferred_clock - Requested Frequency : 40.0 MHz
+@P:  top_oled|DBlock_clkin_inferred_clock - Estimated Period : 9.291
+@P:  top_oled|DBlock_clkin_inferred_clock - Requested Period : 25.000
+@P:  top_oled|DBlock_clkin_inferred_clock - Slack : 15.709
+@P:  top_oled|OLED_clk_in_inferred_clock - Estimated Frequency : 70.9 MHz
+@P:  top_oled|OLED_clk_in_inferred_clock - Requested Frequency : 40.0 MHz
+@P:  top_oled|OLED_clk_in_inferred_clock - Estimated Period : 14.111
+@P:  top_oled|OLED_clk_in_inferred_clock - Requested Period : 25.000
+@P:  top_oled|OLED_clk_in_inferred_clock - Slack : 10.889
+@P:  top_oled|SW4 - Estimated Frequency : 354.9 MHz
+@P:  top_oled|SW4 - Requested Frequency : 40.0 MHz
+@P:  top_oled|SW4 - Estimated Period : 2.818
+@P:  top_oled|SW4 - Requested Period : 25.000
+@P:  top_oled|SW4 - Slack : 22.182
+@P:  top_oled|SW6 - Estimated Frequency : 354.9 MHz
+@P:  top_oled|SW6 - Requested Frequency : 40.0 MHz
+@P:  top_oled|SW6 - Estimated Period : 2.818
+@P:  top_oled|SW6 - Requested Period : 25.000
+@P:  top_oled|SW6 - Slack : 22.182
+@P:  Total Area : 5024.0
+@P:  Total Area : 100.0
+@P:  Total Area : 8.0
+@P:  Total Area : 2.0
+@P:  Total Area : 61.0
+@P:  Total Area : 29.0
+@P:  Total Area : 11.0
+@P:  Total Area : 10.0
+@P:  Total Area : 4842.0
+@P:  Total Area : 0.0
+@P:  Total Area : 5024.0
+@P:  CPU Time : 0h:00m:04s

@@ -1,0 +1,7 @@
+C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  work.top_oled  -multisrs  "C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\synwork\top_oled_comp.srs"  -osyn  "C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\synwork\top_oled_mult.srs"  -log  "C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\synlog\top_oled_multi_srs_gen.srr" 
+rc:0 success:1 runtime:0
+file:C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\synwork\top_oled_comp.srs|io:i|time:1519879762|size:30158|exec:0
+file:C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\synwork\top_oled_mult.srs|io:o|time:1519879763|size:4014|exec:0
+file:C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\synlog\top_oled_multi_srs_gen.srr|io:o|time:1519879763|size:515|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\syn_nfilter.exe|io:i|time:1479395258|size:3128320|exec:1
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1479395524|size:4208128|exec:1

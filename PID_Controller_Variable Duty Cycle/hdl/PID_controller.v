@@ -1,0 +1,175 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// Company: <Name>
+//
+// File: PID_controller.v
+// File history:
+//      <Revision number>: <Date>: <Comments>
+//      <Revision number>: <Date>: <Comments>
+//      <Revision number>: <Date>: <Comments>
+//
+// Description: 
+//
+// <Description here>
+//
+// Targeted device: <Family::ProASIC3E> <Die::A3PE1500> <Package::208 PQFP>
+// Author: <Name>
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+//`timescale <time_units> / <precision>
+
+module PID_controller #(
+    ADC_WIDTH = 13,
+    SPI_WIDTH = 12,
+    INTEGRAL_LENGTH = 64,
+    INTEGRAL_DIV = 6,
+    AVG_LENGTH = 4,
+    AVG_DIV = 2,
+    CNT_WIDTH = 32,
+    SPI_CLK_DIVIDER = 11,  //2.857 MHZ
+    ON_DIV = 1800,            //12.5 ns
+    START_OFF_DIV = 1000,
+    MIN_OFF_DIV = 0,
+    START_ON_DIV = 1000,
+    TARGET_V = 'd1024,
+    WAIT_TIME = 'd1,
+    TOTAL_TIME = 'd400,
+    K_I = 0,
+    K_D = 0,
+    K_P = 0
+)
+( 
+    input clk, n_rst, 
+    input din, act_ctl,
+    input [ADC_WIDTH-1:0] k_i, k_p, target_v,
+    //input inc_const, dec_const, choose_const,
+    //output sum_sign, pwm_change,
+    output cs, sck, primary, secondary,
+    output [7:0] LED
+);
+
+reg [CNT_WIDTH-1:0] off_div;
+reg [SPI_WIDTH-1:0] cur_vd, cur_id;
+wire [ADC_WIDTH-1:0] cur_error, id;
+wire [ADC_WIDTH-1:0] sr_new, sr_old, sr_prev, avg_new, avg_old, id_new, id_old, id_sr_new, id_sr_old, id_sr_prev;
+wire spi_clk;
+wire spi_din, vd_rdy, sum_rdy, vd_done;
+reg [ADC_WIDTH*3:0] sum;
+reg signed [ADC_WIDTH*2-1:0] integral;
+reg [ADC_WIDTH*2-1:0] average, avg_id; 
+reg [ADC_WIDTH-1:0] derivative, id_derivative; 
+wire int_done, sum_enable, deriv_enable, pwm_enable, calc_error, avg_enable, avg_done, calc_avg;
+wire id_enable, id_avg_enable, id_avg_done;
+wire pwm_chg, pwm_rdy;
+wire fm_cycle;
+wire lock, pwm_clk;
+
+//---------------------PID CONTROLLER CONTROLLER BLOCK---------------------------
+controller #(.AVG_WAIT(AVG_LENGTH-'d1)) CONTROLLER 
+(.clk(clk), .n_rst(n_rst), .wait_time(WAIT_TIME), .fm_cycle(fm_cycle), .pwm_rdy(pwm_rdy), .vd_rdy(vd_rdy), .avg_done(avg_done), .int_done(int_done), .sum_rdy(sum_rdy), .error_enable(calc_error), .shift_avg(avg_enable), .calc_avg(calc_avg),  .id_avg(id_avg_enable), .id_enable(id_enable), .shift_int(int_enable), .calc_int(calc_int), .deriv_enable(deriv_enable), .sum_enable(sum_enable), .pwm_enable(pwm_enable), .pwm_chg(pwm_chg));
+
+
+//---------------------CURRENT AVERAGEING REGISTERS---------------------------
+error_calc #(.ADC_WIDTH(ADC_WIDTH), .SPI_WIDTH(SPI_WIDTH)) IDREG
+(.clk(clk), .n_rst(n_rst), .target_v(13'd0), .calc_error(calc_error), .cur_vd(avg_id[AVG_DIV+12:AVG_DIV]), .diff(id));
+
+integral_calc #(.ADC_WIDTH(ADC_WIDTH)) ID_AVG_CALC
+(.clk(clk), .n_rst(n_rst), .cur_error(id_new), .old_error(id_old), .int_out(avg_id), .int_en(id_avg_enable), .int_done(id_avg_done));
+
+error_sr #(.ADC_WIDTH(ADC_WIDTH), .SR_LENGTH(AVG_LENGTH)) ID_SAMPLESR
+(.clk(clk), .n_rst(n_rst), .cur_error({1'b0, cur_id}), .sr_enable(id_enable), .sr_new(id_new), .sr_old(id_old));
+
+error_sr #(.ADC_WIDTH(ADC_WIDTH), .SR_LENGTH('d3)) ID_AVGSR
+(.clk(clk), .n_rst(n_rst), .cur_error(id), .sr_enable(int_enable), .sr_new(id_sr_new), .sr_old(id_sr_old), .sr_prev(id_sr_prev));
+
+derivative_calc #(.ADC_WIDTH(ADC_WIDTH)) ID_DCLC
+(.clk(clk), .n_rst(n_rst), .deriv_enable(deriv_enable), .cur_error(id_sr_new), .prev_error(id_sr_prev), .deriv_out(id_derivative));
+
+//---------------------VOLTAGE AVERAGEING REGISTERS---------------------------
+
+
+error_sr #(.ADC_WIDTH(ADC_WIDTH), .SR_LENGTH(AVG_LENGTH + 1)) AVGSR
+(.clk(clk), .n_rst(n_rst), .cur_error({1'b0, cur_vd}), .sr_enable(avg_enable), .sr_new(avg_new), .sr_old(avg_old));
+
+error_calc #(.ADC_WIDTH(ADC_WIDTH), .SPI_WIDTH(SPI_WIDTH)) EC
+(.clk(clk), .n_rst(n_rst), .target_v(target_v), .calc_error(calc_error), .cur_vd(average[AVG_DIV+12:AVG_DIV]), .diff(cur_error));
+
+integral_calc #(.ADC_WIDTH(ADC_WIDTH)) AVG_CALC
+(.clk(clk), .n_rst(n_rst), .cur_error(avg_new), .old_error(avg_old), .int_out(average), .int_en(calc_avg), .int_done(avg_done));
+
+
+//---------------------VOLTAGE INTEGRAL BLOCKS---------------------------
+
+error_sr #(.ADC_WIDTH(ADC_WIDTH), .SR_LENGTH(INTEGRAL_LENGTH + 1)) INTSR
+(.clk(clk), .n_rst(n_rst), .cur_error(cur_error), .sr_enable(int_enable), .sr_new(sr_new), .sr_old(sr_old), .sr_prev(sr_prev));
+
+integral_calc #(.ADC_WIDTH(ADC_WIDTH)) INTCALC
+(.clk(clk), .n_rst(n_rst), .cur_error(sr_new), .old_error(sr_old), .int_out(integral), .int_en(calc_int), .int_done(int_done));
+
+//---------------------VOLTAGE DERIVATIVE BLOCK---------------------------
+
+derivative_calc #(.ADC_WIDTH(ADC_WIDTH)) DCALC
+(.clk(clk), .n_rst(n_rst), .deriv_enable(deriv_enable), .cur_error(sr_new), .prev_error(sr_prev), .deriv_out(derivative));
+
+//---------------------PID SUM BLOCK---------------------------
+
+pid_sum #(.ADC_WIDTH(ADC_WIDTH)) SUM
+(.clk(clk), .n_rst(n_rst), .k_p(k_p), .k_d(K_D), .k_i(k_i), .derivative(derivative), .proportional(sr_new), .integral(integral >>> INTEGRAL_DIV), .sum(sum), .sum_en(sum_enable), .sum_rdy(sum_rdy));
+
+//---------------------SPI CONTROLLER BLOCKS---------------------------
+
+//spi_clk #(.DIVIDER(SPI_CLK_DIVIDER)) SPICLK
+//(.clk(clk), .n_rst(n_rst), .clk_out(spi_clk));
+
+spi_rx #(.ADC_WIDTH(SPI_WIDTH)) SPI
+(.clk(spi_clk), .n_rst(n_rst), .din(spi_din),  .vd_rdy(vd_done), .cs(cs), .vd(cur_vd), .id(cur_id));
+
+//---------------------PWM CONTROL BLOCKS---------------------------
+
+pll_80 PLL (.POWERDOWN(n_rst), .CLKA(clk), .LOCK(lock), .GLA(pwm_clk), .YC(spi_clk));
+
+pwm_ctl #(.TOTAL_TIME(TOTAL_TIME), .ON_TIME(ON_DIV), .ADC_WIDTH(ADC_WIDTH), .CNT_WIDTH(CNT_WIDTH), .START_OFF_DIV(START_OFF_DIV)) PWM_CTL
+(.clk(clk), .act_ctl(act_ctl), .n_rst(n_rst), .pwm_en(pwm_enable), .pwm_rdy(pwm_rdy), .id_ff(id_derivative), .sum(sum), .off_div(off_div));
+
+pwm_tx #(.TOTAL_TIME(TOTAL_TIME), .ON_DIV(ON_DIV), .START_OFF_DIV(START_OFF_DIV), .START_ON_DIV(START_ON_DIV), .ADC_WIDTH(ADC_WIDTH), .CNT_WIDTH(CNT_WIDTH)) PWM_TX
+(.clk(pwm_clk), .n_rst(n_rst), .act_ctl(act_ctl), .pwm_chg(pwm_chg), .off_div(off_div), .pwm_out(primary), .pre_delay('0), .post_delay('0), .secondary_out(secondary));
+
+//---------------------SIGNAL PULSE GENERATORS---------------------------
+
+sig_gen VD_SIG (.clk(clk), .n_rst(n_rst), .sig(vd_done), .sig_out(vd_rdy));
+
+//sig_gen INC_SIG (.clk(clk), .n_rst(n_rst), .sig(inc_const), .sig_out(inc_constd));
+
+//sig_gen DEC_SIG (.clk(clk), .n_rst(n_rst), .sig(dec_const), .sig_out(dec_constd));
+
+//sig_gen CHOOSE_SIG (.clk(clk), .n_rst(n_rst), .sig(choose_const), .sig_out(choose_constd));
+
+sig_gen FM_CYCLE (.clk(clk), .n_rst(n_rst), .sig(primary), .sig_out(fm_cycle));
+
+
+//---------------------USER CONTROLLED PARAMETER BLOCKS---------------------------
+
+//constant_gen #(.ADC_WIDTH(ADC_WIDTH)) CON_GEN
+//(.clk(clk), .n_rst(n_rst), .choose_const(choose_constd), .dec_const(dec_constd), .inc_const(inc_constd), .k_i(k_i), .k_d(k_d), .k_p(k_p), .cur_k(cur_const), .pre_delay(pre_delay), .post_delay(post_delay), .vd(target_v), .choosec(choose));
+
+//assign pwm_change = pwm_enable;
+//assign sum_sign = sum[ADC_WIDTH*3];
+assign spi_din = din;
+assign LED = average[AVG_DIV+12:AVG_DIV+5];
+//assign LED = cur_const[7:0];
+//assign LED = (choose == 'd0) ? sr_new[11:4] : cur_id[11:4];
+//assign LED = (choose == 'd5) ? id[11:4] : (choose == 'd4) ? average[13:6] : (choose == 'd3) ? cur_const[11:4] : cur_const[7:0];
+//assign LED = cur_error[ADC_WIDTH-2:ADC_WIDTH-9];
+//assign LED = average[15:8];
+//assign LED = id[ADC_WIDTH-2:ADC_WIDTH - 9];
+/*assign LED = (choose == 'd7) ? id[11:4] : (choose == 'd6) ? average[9:2] : (choose == 'd3) ? cur_const[11:4] : cur_const[7:0];
+assign LED[7] = integral[ADC_WIDTH*2-1];
+assign LED[6] = cur_error[ADC_WIDTH-1];
+assign LED[5] = derivative[ADC_WIDTH-1];
+*/
+
+//assign pll_clk = pwm_clk;
+assign sck = spi_clk;
+
+endmodule
+

@@ -1,0 +1,3 @@
+@E: CS187 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":132:0:132:6|Expecting ,
+@E: CS187 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":176:0:176:8|Expecting endmodule
+

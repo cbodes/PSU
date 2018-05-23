@@ -1,0 +1,31 @@
+********************************************************************
+                            Global Usage Report
+********************************************************************
+  
+Product: Designer
+Release: v11.8 SP3
+Version: 11.8.3.6
+Date: Wed Feb 28 23:59:35 2018
+Design Name: top_oled  Family: ProASIC3E  Die: A3PE1500  Package: 208 PQFP
+Design State: Post-Layout
+
+The following nets have been routed to a chip global resource:
+
+    Fanout            Name
+    ----------------------
+    1641              Net   : pacer_rst_c
+                      Driver: inst_oled_driver/reset/U_GL
+    21                Net   : GLA
+                      Driver: inst_PLL/Core/U_PLL
+    1645              Net   : OLED_clk_in_c
+                      Driver: OLED_clk_in_inferred_clock/U_GL
+    449               Net   : inst_oled_driver/byte_count[4]
+                      Driver: inst_oled_driver/byte_count_RNI2RP[4]/U_GL
+    515               Net   : inst_oled_driver/byte_count[6]
+                      Driver: inst_oled_driver/byte_count_RNI4TP[6]/U_GL
+    1536              Net   : inst_oled_driver/un1_state_13
+                      Driver: inst_oled_driver/state_RNIVMGR_0[5]/U_GL
+
+
+
+

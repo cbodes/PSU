@@ -1,0 +1,110 @@
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\PID Project\\PID_Controller\\synthesis\\synwork\\PSU_Top_Level_comp.srs|-top|PSU_Top_Level|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|C:\\PID Project\\PID_Controller\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib|-sysv|-devicelib|C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\proasic\\proasic3e.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\bin64\\c_ver.exe":1480000224
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\proasic\\proasic3e.v":1487963250
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\hypermods.v":1487963386
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\umr_capim.v":1487963386
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\scemi_objects.v":1487963386
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\scemi_pipes.svh":1487963386
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\PID_controller.v":1525425359
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\sig_gen.v":1520132301
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\derivative_calc.v":1520134634
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\error_calc.v":1523052168
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\error_sr.v":1520119775
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\integral_calc.v":1521335498
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\pid_sum.v":1523239037
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\PSU_controller.v":1525388227
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\PSU_Top_Level.v":1525426903
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\pwm_ctl.v":1525424908
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\pwm_tx.v":1525214351
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\spi_clk.v":1520204935
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\spi_ctl.v":1525031884
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\spi_rx.v":1524789965
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\spi_stp.v":1522886649
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\controller.v":1525405093
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\constant_gen.v":1525388046
+#CUR:"C:\\PID Project\\PID_Controller\\smartgen\\pll_maxf\\pll_maxf.v":1525395199
+#CUR:"C:\\PID Project\\PID_Controller\\smartgen\\pll_80\\pll_80.v":1525426926
+#CUR:"C:\\PID Project\\PID_Controller\\smartgen\\pll_spi\\pll_spi.v":1525423871
+0			"C:\PID Project\PID_Controller\hdl\PID_controller.v" verilog
+1			"C:\PID Project\PID_Controller\hdl\sig_gen.v" verilog
+2			"C:\PID Project\PID_Controller\hdl\derivative_calc.v" verilog
+3			"C:\PID Project\PID_Controller\hdl\error_calc.v" verilog
+4			"C:\PID Project\PID_Controller\hdl\error_sr.v" verilog
+5			"C:\PID Project\PID_Controller\hdl\integral_calc.v" verilog
+6			"C:\PID Project\PID_Controller\hdl\pid_sum.v" verilog
+7			"C:\PID Project\PID_Controller\hdl\PSU_controller.v" verilog
+8			"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v" verilog
+9			"C:\PID Project\PID_Controller\hdl\pwm_ctl.v" verilog
+10			"C:\PID Project\PID_Controller\hdl\pwm_tx.v" verilog
+11			"C:\PID Project\PID_Controller\hdl\spi_clk.v" verilog
+12			"C:\PID Project\PID_Controller\hdl\spi_ctl.v" verilog
+13			"C:\PID Project\PID_Controller\hdl\spi_rx.v" verilog
+14			"C:\PID Project\PID_Controller\hdl\spi_stp.v" verilog
+15			"C:\PID Project\PID_Controller\hdl\controller.v" verilog
+16			"C:\PID Project\PID_Controller\hdl\constant_gen.v" verilog
+17			"C:\PID Project\PID_Controller\smartgen\pll_maxf\pll_maxf.v" verilog
+18			"C:\PID Project\PID_Controller\smartgen\pll_80\pll_80.v" verilog
+19			"C:\PID Project\PID_Controller\smartgen\pll_spi\pll_spi.v" verilog
+#Dependency Lists(Uses List)
+0 1 10 9 18 13 6 2 4 5 3 15
+1 -1
+2 -1
+3 -1
+4 -1
+5 -1
+6 -1
+7 -1
+8 16 1 0 7
+9 -1
+10 -1
+11 -1
+12 -1
+13 1 12 14
+14 -1
+15 -1
+16 -1
+17 -1
+18 -1
+19 -1
+#Dependency Lists(Users Of)
+0 8
+1 13 8 0
+2 0
+3 0
+4 0
+5 0
+6 0
+7 8
+8 -1
+9 0
+10 0
+11 -1
+12 13
+13 0
+14 13
+15 0
+16 8
+17 -1
+18 0
+19 -1
+#Design Unit to File Association
+module work pll_spi 19
+module work pll_maxf 17
+module work spi_stp 14
+module work spi_ctl 12
+module work spi_clk 11
+module work PSU_Top_Level 8
+module work constant_gen 16
+module work PSU_controller 7
+module work PID_controller 0
+module work sig_gen 1
+module work pwm_tx 10
+module work pwm_ctl 9
+module work pll_80 18
+module work spi_rx 13
+module work pid_sum 6
+module work derivative_calc 2
+module work error_sr 4
+module work integral_calc 5
+module work error_calc 3
+module work controller 15

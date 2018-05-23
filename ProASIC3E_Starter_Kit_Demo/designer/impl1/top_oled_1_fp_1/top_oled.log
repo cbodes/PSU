@@ -1,0 +1,20 @@
+FlashPro
+Version: 9.1.2.16
+Release: v9.1 SP2
+
+Software Version: 9.1.2.16
+PDB file 'C:\Documents and Settings\odigas\My
+Documents\ProASIC3\StarterKit\A3PE_STARTER_KIT_DEMO_NEW\PA3E_starter_demo_v2\designer\impl1\top\
+_oled.pdb' has been loaded successfully.
+DESIGN : top_oled;  CHECKSUM : 2612;  PDB_VERSION : 1.7
+Driver : 3.0.0 build 1
+programmer '71011' : FlashPro3
+Warning: The programmer with id '65479' in the project file cannot be detected and connected.
+Opened 'C:\Documents and Settings\odigas\My
+Documents\ProASIC3\StarterKit\A3PE_STARTER_KIT_DEMO_NEW\PA3E_starter_demo_v2\designer\impl1\top\
+_oled_1_fp_1\top_oled.pro'
+Warning: Project 'top_oled' has been modified. Do you want to save it? [CANCEL]
+PDB file 'C:\Documents and Settings\odigas\My
+Documents\ProASIC3\StarterKit\A3PE_STARTER_KIT_DEMO_NEW\PA3E_starter_demo_v2\designer\impl1\top\
+_oled_new.pdb' has been loaded successfully.
+DESIGN : top_oled;  CHECKSUM : C6F7;  PDB_VERSION : 1.7

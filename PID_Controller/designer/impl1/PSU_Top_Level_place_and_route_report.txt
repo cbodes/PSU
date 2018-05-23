@@ -1,0 +1,293 @@
+***************************************************************************
+                               Status Report
+                          Fri May 04 15:49:51 2018 ***************************************************************************
+
+Product: Designer
+Release: v11.8 SP3
+Version: 11.8.3.6
+File Name: C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb
+Design Name: PSU_Top_Level  Design State: layout
+Last Saved: Fri May 04 15:46:02 2018
+
+***** Device Data **************************************************
+
+Family: ProASIC3E  Die: A3PE1500  Package: 208 PQFP
+Speed: STD  Voltage: 1.5
+
+Restrict JTAG Pins: YES
+Restrict Probe Pins: YES
+
+Junction Temperature Range:   COM
+Voltage Range:   COM
+
+***** Import Variables *********************************************
+
+Source File(s) Imported on Fri May 04 15:45:49 2018:
+        C:\PID Project\PID_Controller\synthesis\PSU_Top_Level.edn
+        C:\PID Project\PID_Controller\constraint\PID_controller.pdc
+
+
+***** CAE Variables ************************************************
+
+Back Annotation File: N/A
+
+
+***** Bitstream Variables ******************************************
+
+Bitstream File: N/A
+     Lock Mode: off
+
+
+***** Compile Variables ********************************************
+
+Netlist PIN properties overwrite existing properties: 0
+
+Compile Output:
+=====================================================================
+Parameters used to run compile:
+===============================
+
+Family      : ProASIC3E
+Device      : A3PE1500
+Package     : 208 PQFP
+Source      : C:\PID Project\PID_Controller\synthesis\PSU_Top_Level.edn
+              C:\PID Project\PID_Controller\constraint\PID_controller.pdc
+Format      : EDIF
+Topcell     : PSU_Top_Level
+Speed grade : STD
+Temp        : 0:25:70
+Voltage     : 1.58:1.50:1.42
+
+Keep Existing Physical Constraints : Yes
+Keep Existing Timing Constraints   : Yes
+
+pdc_abort_on_error                 : Yes
+pdc_eco_display_unmatched_objects  : No
+pdc_eco_max_warnings               : 10000
+
+demote_globals                     : No
+promote_globals                    : No
+localclock_max_shared_instances    : 12
+localclock_buffer_tree_max_fanout  : 12
+
+combine_register                   : No
+delete_buffer_tree                 : No
+
+report_high_fanout_nets_limit      : 10
+
+=====================================================================
+Compile starts ...
+
+Warning: Top level port din_12 is not connected to any IO pad
+Warning: Top level port din_fb is not connected to any IO pad
+Warning: Top level port din_5 is not connected to any IO pad
+Warning: Top level port din_15 is not connected to any IO pad
+
+Netlist Optimization Report
+===========================
+
+Optimized macros:
+  - Dangling net drivers:   342
+  - Buffers:                0
+  - Inverters:              0
+  - Tieoff:                 0
+  - Logic combining:        388
+
+    Total macros optimized  730
+
+There were 0 error(s) and 4 warning(s) in this design.
+=====================================================================
+
+Reading previous post-compile physical placement constraints.
+
+
+There were 0 error(s) and 0 warning(s).
+
+=====================================================================
+
+Reading user pdc (Physical Design Constraints) file(s) postcompile
+
+
+There were 0 error(s) and 0 warning(s) in reading the user pdc.
+
+=====================================================================
+Compile report:
+===============
+
+    CORE                       Used:   8426  Total:  38400   (21.94%)
+    IO (W/ clocks)             Used:     42  Total:    147   (28.57%)
+    Differential IO            Used:      0  Total:     65   (0.00%)
+    GLOBAL (Chip+Quadrant)     Used:      6  Total:     18   (33.33%)
+    PLL                        Used:      0  Total:      2   (0.00%)
+    RAM/FIFO                   Used:      0  Total:     60   (0.00%)
+    Low Static ICC             Used:      0  Total:      1   (0.00%)
+    FlashROM                   Used:      0  Total:      1   (0.00%)
+    User JTAG                  Used:      0  Total:      1   (0.00%)
+
+Global Information:
+
+    Type            | Used   | Total
+    ----------------|--------|--------------
+    Chip global     | 6      | 6  (100.00%)*
+    Quadrant global | 0      | 12 (0.00%)
+
+    (*) Chip globals may be assigned to Quadrant globals using the Multi-View Navigator (MVN)
+        or Physical Design Constraints (PDC).
+        They may also be assigned to Quadrant globals automatically during Layout.
+
+Core Information:
+
+    Type    | Instances    | Core tiles
+    --------|--------------|-----------
+    COMB    | 6829         | 6829
+    SEQ     | 1597         | 1597
+
+I/O Function:
+
+    Type                                  | w/o register  | w/ register  | w/ DDR register
+    --------------------------------------|---------------|--------------|----------------
+    Input I/O                             | 13            | 0            | 0
+    Output I/O                            | 29            | 0            | 0
+    Bidirectional I/O                     | 0             | 0            | 0
+    Differential Input I/O Pairs          | 0             | 0            | 0
+    Differential Output I/O Pairs         | 0             | 0            | 0
+
+I/O Technology:
+
+                                    |   Voltages    |             I/Os
+    --------------------------------|-------|-------|-------|--------|--------------
+    I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
+    --------------------------------|-------|-------|-------|--------|--------------
+    LVTTL                           | 3.30v | N/A   | 13    | 29     | 0
+
+I/O Placement:
+
+    Locked  :  41 ( 97.62% )
+    Placed  :   1 (  2.38% )
+    UnPlaced:   0
+
+Warning: Only some I/Os are locked
+
+Net information report:
+=======================
+
+The following nets have been assigned to a chip global resource:
+    Fanout  Type          Name
+    --------------------------
+    1597    SET/RESET_NET Net   : n_rst_c
+                          Driver: n_rst_pad
+                          Source: NETLIST
+    1554    CLK_NET       Net   : clk_c
+                          Driver: clk_pad
+                          Source: NETLIST
+    848     INT_NET       Net   : PID_33/int_enable
+                          Driver: PID_33/CONTROLLER/state_RNIG721[5]
+                          Source: NETLIST
+    122     INT_NET       Net   : PID_33/id_enable
+                          Driver: PID_33/CONTROLLER/state_RNID421[2]
+                          Source: NETLIST
+    100     INT_NET       Net   : PID_33/sum[39]
+                          Driver: PID_33/SUM/sumreg_RNIALKC[39]
+                          Source: NETLIST
+    92      INT_NET       Net   : PID_33/SUM/state[2]
+                          Driver: PID_33/SUM/state_RNIUJK5[2]
+                          Source: NETLIST
+
+High fanout nets in the post compile netlist:
+    Fanout  Type          Name
+    --------------------------
+    45      CLK_NET       Net   : cur_clk
+                          Driver: PID_33/SPICLK/cur_clk
+    24      INT_NET       Net   : choose_cont_c[3]
+                          Driver: choose_cont_pad[3]
+    24      INT_NET       Net   : act_ctl_33_0
+                          Driver: PSU_CTL/state_0[0]
+    24      INT_NET       Net   : PID_33/sr_old[12]
+                          Driver: PID_33/INTSR/sr_64_[12]
+    24      INT_NET       Net   : PID_33/PWM_CTL/I_26
+                          Driver:
+PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un2_temp_b_1_I_26
+    24      INT_NET       Net   : PID_33/SUM/m1_2
+                          Driver: PID_33/SUM/next_ireg_3_m1_2
+    24      INT_NET       Net   : PID_33/SUM/m2_1
+                          Driver: PID_33/SUM/next_ireg_3_m2_1
+    24      INT_NET       Net   : PID_33/SUM/m0_1_i
+                          Driver: PID_33/SUM/next_ireg_3_m0_1
+    23      INT_NET       Net   : act_ctl_33
+                          Driver: PSU_CTL/state[0]
+    23      INT_NET       Net   : choose_cont_c_0[3]
+                          Driver: choose_cont_pad_RNIJALA[3]
+
+Nets that are candidates for clock assignment and the resulting fanout:
+    Fanout  Type          Name
+    --------------------------
+    56      INT_NET       Net   : choose_cont_c[0]
+                          Driver: choose_cont_pad[0]
+    52      INT_NET       Net   : choose_cont_c[1]
+                          Driver: choose_cont_pad[1]
+    46      INT_NET       Net   : choose_cont_c[3]
+                          Driver: choose_cont_pad[3]
+    45      CLK_NET       Net   : cur_clk
+                          Driver: PID_33/SPICLK/cur_clk
+    27      INT_NET       Net   : choose_cont_c[2]
+                          Driver: choose_cont_pad[2]
+    27      INT_NET       Net   : choose_const_c[0]
+                          Driver: choose_const_pad[0]
+    27      INT_NET       Net   : PID_33/integral[25]
+                          Driver: PID_33/INTCALC/integ[25]
+    24      INT_NET       Net   : act_ctl_33_0
+                          Driver: PSU_CTL/state_0[0]
+    24      INT_NET       Net   : PID_33/sr_old[12]
+                          Driver: PID_33/INTSR/sr_64_[12]
+    24      INT_NET       Net   : PID_33/PWM_CTL/I_26
+                          Driver:
+PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un2_temp_b_1_I_26
+
+
+Layout Output:
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+
+
+Planning global net placement...
+
+
+Global net placement completed successfully.
+
+                        o - o - o - o - o - o
+
+Timing-driven Placer Started: Fri May 04 15:46:11 2018
+
+Placer Finished: Fri May 04 15:47:38 2018
+Total Placer CPU Time:     00:01:27
+
+                        o - o - o - o - o - o
+
+
+Timing-driven Router 
+Design: PSU_Top_Level                   Started: Fri May 04 15:47:46 2018
+
+ 
+Iterative improvement...
+
+Timing-driven Router completed successfully.
+
+Design: PSU_Top_Level                   
+Finished: Fri May 04 15:49:42 2018
+Total CPU Time:     00:01:56            Total Elapsed Time: 00:01:56
+Total Memory Usage: 628.8 Mbytes
+                        o - o - o - o - o - o
+
+status 257
+
+

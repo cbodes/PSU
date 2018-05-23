@@ -1,0 +1,41 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:: Running Verilog Compiler in System Verilog mode
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":21:7:21:20|Synthesizing module PSU_controller in library work.
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\controller.v":21:7:21:16|Synthesizing module controller in library work.
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\error_calc.v":21:7:21:16|Synthesizing module error_calc in library work.
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\integral_calc.v":21:7:21:19|Synthesizing module integral_calc in library work.
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\error_sr.v":21:7:21:14|Synthesizing module error_sr in library work.
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\error_sr.v":21:7:21:14|Synthesizing module error_sr in library work.
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\derivative_calc.v":20:7:20:21|Synthesizing module derivative_calc in library work.
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\error_sr.v":21:7:21:14|Synthesizing module error_sr in library work.
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\pid_sum.v":21:7:21:13|Synthesizing module pid_sum in library work.
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\spi_stp.v":20:7:20:13|Synthesizing module spi_stp in library work.
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\spi_ctl.v":21:7:21:13|Synthesizing module spi_ctl in library work.
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\sig_gen.v":21:7:21:13|Synthesizing module sig_gen in library work.
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\spi_rx.v":21:7:21:12|Synthesizing module spi_rx in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.v":2810:7:2810:9|Synthesizing module PLL in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.v":260:7:260:12|Synthesizing module PLLINT in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.v":1229:7:1229:9|Synthesizing module GND in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.v":2051:7:2051:9|Synthesizing module VCC in library work.
+@N: CG364 :"C:\PID Project\PID_Controller\smartgen\pll_80\pll_80.v":5:7:5:12|Synthesizing module pll_80 in library work.
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":21:7:21:13|Synthesizing module pwm_ctl in library work.
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\pwm_tx.v":21:7:21:12|Synthesizing module pwm_tx in library work.
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":21:7:21:20|Synthesizing module PID_controller in library work.
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\constant_gen.v":21:7:21:18|Synthesizing module constant_gen in library work.
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":21:7:21:19|Synthesizing module PSU_Top_Level in library work.
+@N: CL159 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":25:10:25:15|Input din_12 is unused.
+@N: CL159 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":29:10:29:15|Input din_fb is unused.
+@N: CL159 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":31:10:31:14|Input din_5 is unused.
+@N: CL159 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":33:10:33:15|Input din_15 is unused.
+@N: CL159 :"C:\PID Project\PID_Controller\hdl\pwm_tx.v":31:26:31:34|Input pre_delay is unused.
+@N: CL159 :"C:\PID Project\PID_Controller\hdl\pwm_tx.v":31:37:31:46|Input post_delay is unused.
+@N: CL201 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":51:0:51:5|Trying to extract state machine for register state.
+@N: CL159 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":30:26:30:30|Input id_ff is unused.
+@N: CL201 :"C:\PID Project\PID_Controller\hdl\spi_ctl.v":39:0:39:5|Trying to extract state machine for register state.
+@N: CL201 :"C:\PID Project\PID_Controller\hdl\pid_sum.v":48:0:48:5|Trying to extract state machine for register state.
+@N: CL201 :"C:\PID Project\PID_Controller\hdl\integral_calc.v":34:0:34:5|Trying to extract state machine for register state.
+@N: CL201 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Trying to extract state machine for register state.
+@N: CL201 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Trying to extract state machine for register state.
+@N|Running in 64-bit mode
+

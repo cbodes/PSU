@@ -1,0 +1,2 @@
+@E: CS168 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":69:8:69:8|Port k_i does not exist
+

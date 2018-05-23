@@ -1,0 +1,8 @@
+KEY IDE_DES_TOOL "Ide"
+KEY IDE_DES_ADB_PATH "C:\Documents and Settings\odigas\My Documents\ProASIC3\StarterKit\A3PE_STARTER_KIT_DEMO_NEW\PA3E_starter_demo_v2\designer\impl1\data_latch.adb"
+LIST SOURCE_FILES
+ENDLIST
+LIST OPTIONAL_FILES
+ENDLIST
+LIST VCD_FILES
+ENDLIST

@@ -1,0 +1,2 @@
+CKID0001:@|S:PID_controller_0.SPICLK.cur_clk[0]@|E:PID_controller_0.SPI.PTS.sr[4]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:clk@|E:PID_controller_0.SPICLK.counter[5]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 

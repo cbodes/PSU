@@ -1,0 +1,2 @@
+@W: CL271 :"C:\PID Project\SPI_recieveer\hdl\spi_clk.v":30:0:30:5|Pruning unused bits 5 to 1 of cur_clk[5:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+

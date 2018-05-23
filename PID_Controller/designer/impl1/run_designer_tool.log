@@ -1,0 +1,64 @@
+Microsemi Libero Software
+Version: 11.8.3.6
+Release: v11.8 SP3
+
+'IDE_DESIGNERVIEW_ROOTDIR' set to 'C:\PID Project\PID_Controller\designer'
+Info: The design PSU_Top_Level.adb was last modified by software version 11.8.3.6.
+Opened an existing Libero design PSU_Top_Level.adb.
+
+The Execute Script command succeeded ( 00:00:36 )
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+
+
+Global net placement completed successfully.
+
+                        o - o - o - o - o - o
+
+Timing-driven Placer Started: Fri May 04 02:27:07 2018
+
+Placer Finished: Fri May 04 02:28:00 2018
+Total Placer CPU Time:     00:00:53
+
+                        o - o - o - o - o - o
+
+
+Timing-driven Router 
+Design: PSU_Top_Level                   Started: Fri May 04 02:28:05 2018
+
+ 
+Iterative improvement...
+
+Timing-driven Router completed successfully.
+
+Design: PSU_Top_Level                   
+Finished: Fri May 04 02:29:34 2018
+Total CPU Time:     00:01:27            Total Elapsed Time: 00:01:29
+Total Memory Usage: 592.4 Mbytes
+                        o - o - o - o - o - o
+
+Loading the Timing data for the design.
+Finished loading the Timing data.
+
+The Layout command succeeded ( 00:02:36 )
+
+The Export-map command succeeded ( 00:00:26 )
+Wrote to the file: C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.pdb
+CHECKSUM: DC91
+
+The Generate programming file command succeeded ( 00:00:27 )
+Design closed.
+

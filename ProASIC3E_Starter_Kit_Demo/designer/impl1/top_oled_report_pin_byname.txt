@@ -1,0 +1,43 @@
+*****************************************************************
+Pin Report - Date: Wed Feb 28 23:59:36 2018 Pinchecksum: NOT-AVAILABLE
+Product: Designer
+Release: v11.8 SP3
+Version: 11.8.3.6
+Design Name: top_oled
+Family: ProASIC3E
+Die: A3PE1500
+Package: 208 PQFP
+*****************************************************************
+Port         |Pin |Fixed |Function         |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Schmitt Trigger |Input Delay |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+-------------|----|------|-----------------|--------|------------------|-----|--------------|----------------|------------|-----|-----------------|------------|--------------|
+CLK           26   Yes    GFA0/IO190NPB6V2  LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+DBlock_clkin  35   Yes    IO187NPB6V2       LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+HexA[0]       74   Yes    IO145PDB5V1       LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+HexA[1]       73   Yes    IO145NDB5V1       LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+HexA[2]       70   Yes    IO149PDB5V1       LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+HexA[3]       69   Yes    IO149NDB5V1       LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+HexB[0]       78   Yes    IO137PDB5V0       LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+HexB[1]       77   Yes    IO137NDB5V0       LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+HexB[2]       76   Yes    IO143PDB5V1       LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+HexB[3]       75   Yes    IO143NDB5V1       LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+LED[0]        55   Yes    IO166NDB5V3       LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+LED[1]        56   Yes    GEA2/IO166PDB5V3  LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+LED[2]        57   Yes    IO165NDB5V3       LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+LED[3]        58   Yes    GEB2/IO165PDB5V3  LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+LED[4]        59   Yes    IO164NDB5V3       LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+LED[5]        60   Yes    GEC2/IO164PDB5V3  LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+LED[6]        61   Yes    IO163PSB5V3       LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+LED[7]        63   Yes    IO161PSB5V3       LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+LOCK_out      15   Yes    IO204PSB7V1       LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+OLED_clk_in   20   Yes    IO200NDB7V1       LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+oled_init     11   Yes    IO212PDB7V2       LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+pacer_rst     192  Yes    IO12PSB0V1        LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+PLL_CLK_out   6    Yes    IO221NDB7V3       LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+scl           197  Yes    IO08NDB0V1        LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+sda           194  Yes    IO11NDB0V1        LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+SW1           68   Yes    IO153PDB5V2       LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+SW2           67   Yes    IO153NDB5V2       LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+SW3           66   Yes    IO157PDB5V2       LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+SW4           64   Yes    IO157NDB5V2       LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+SW5           159  Yes    GBA1/IO57PDB1V3   LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+SW6           113  Yes    GDB0/IO109NPB3V2  LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes

@@ -1,0 +1,367 @@
+Synopsys HDL Compiler, version comp2016q3p1, Build 117R, built Nov 17 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 127R, built Nov 24 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@N:: Running Verilog Compiler in System Verilog mode
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.v" (library work)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\PID Project\PID_Controller\hdl\PID_controller.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\sig_gen.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\derivative_calc.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\error_calc.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\error_sr.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\integral_calc.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\pid_sum.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\PSU_controller.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\pwm_ctl.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\pwm_tx.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\spi_clk.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\spi_ctl.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\spi_rx.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\spi_stp.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\controller.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\constant_gen.v" (library work)
+@I::"C:\PID Project\PID_Controller\smartgen\pll_maxf\pll_maxf.v" (library work)
+@I::"C:\PID Project\PID_Controller\smartgen\pll_80\pll_80.v" (library work)
+Verilog syntax check successful!
+File C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v changed - recompiling
+Selecting top level module PSU_Top_Level
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":21:7:21:20|Synthesizing module PSU_controller in library work.
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\controller.v":21:7:21:16|Synthesizing module controller in library work.
+
+	AVG_WAIT=32'b00000000000000000000000000000011
+	IDLE=32'b00000000000000000000000000000000
+	CALC_ERROR=32'b00000000000000000000000000000001
+	SHIFT_AVG=32'b00000000000000000000000000000010
+	CALC_AVG=32'b00000000000000000000000000000011
+	WAIT_AVG=32'b00000000000000000000000000000100
+	SHIFT_INT=32'b00000000000000000000000000000101
+	CALC_INT=32'b00000000000000000000000000000110
+	WAIT_INT=32'b00000000000000000000000000000111
+	CALC_DERIV=32'b00000000000000000000000000001000
+	CALC_SUM=32'b00000000000000000000000000001001
+	WAIT_SUM=32'b00000000000000000000000000001010
+	CALC_PWM=32'b00000000000000000000000000001011
+	CALC_ID=32'b00000000000000000000000000001100
+	CALC_AVG_ID=32'b00000000000000000000000000001101
+	PWM_WAIT=32'b00000000000000000000000000001110
+	CHANGE_PWM=32'b00000000000000000000000000001111
+   Generated name = controller_Z1
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\error_calc.v":21:7:21:16|Synthesizing module error_calc in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001101
+	SPI_WIDTH=32'b00000000000000000000000000001100
+   Generated name = error_calc_13s_12s
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\integral_calc.v":21:7:21:19|Synthesizing module integral_calc in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001101
+   Generated name = integral_calc_13s
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\error_sr.v":21:7:21:14|Synthesizing module error_sr in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001101
+	SR_LENGTH=32'b00000000000000000000000000000100
+   Generated name = error_sr_13s_4
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\error_sr.v":21:7:21:14|Synthesizing module error_sr in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001101
+	SR_LENGTH=32'b00000000000000000000000000000011
+   Generated name = error_sr_13s_3
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\derivative_calc.v":20:7:20:21|Synthesizing module derivative_calc in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001101
+   Generated name = derivative_calc_13s
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\error_sr.v":21:7:21:14|Synthesizing module error_sr in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001101
+	SR_LENGTH=32'b00000000000000000000000000000101
+   Generated name = error_sr_13s_5
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\error_sr.v":21:7:21:14|Synthesizing module error_sr in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001101
+	SR_LENGTH=32'b00000000000000000000000001000001
+   Generated name = error_sr_13s_65
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\pid_sum.v":21:7:21:13|Synthesizing module pid_sum in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001101
+   Generated name = pid_sum_13s
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\spi_stp.v":20:7:20:13|Synthesizing module spi_stp in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001100
+   Generated name = spi_stp_12s
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\spi_ctl.v":21:7:21:13|Synthesizing module spi_ctl in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001100
+   Generated name = spi_ctl_12s
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\sig_gen.v":21:7:21:13|Synthesizing module sig_gen in library work.
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\spi_rx.v":21:7:21:12|Synthesizing module spi_rx in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001100
+   Generated name = spi_rx_12s
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.v":2810:7:2810:9|Synthesizing module PLL in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.v":260:7:260:12|Synthesizing module PLLINT in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.v":1229:7:1229:9|Synthesizing module GND in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.v":2051:7:2051:9|Synthesizing module VCC in library work.
+
+@N: CG364 :"C:\PID Project\PID_Controller\smartgen\pll_80\pll_80.v":5:7:5:12|Synthesizing module pll_80 in library work.
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":21:7:21:13|Synthesizing module pwm_ctl in library work.
+
+	ON_TIME=32'b00000000000000000000000010011101
+	CNT_WIDTH=32'b00000000000000000000000000100000
+	ADC_WIDTH=32'b00000000000000000000000000001101
+	START_OFF_DIV=32'b00000000000000000000000010111100
+	MIN_OFF_DIV=32'b00000000000000000000000000000001
+	TOTAL_TIME=32'b00000000000000011000011010100000
+	IDLE=32'b00000000000000000000000000000000
+	ADJUST=32'b00000000000000000000000000000001
+	CALC=32'b00000000000000000000000000000010
+	FIX=32'b00000000000000000000000000000011
+   Generated name = pwm_ctl_157_32s_13s_188_1s_100000_0_1_2_3
+
+@W: CL169 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":50:0:50:5|Pruning unused register id[12:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":50:0:50:5|Pruning unused register sum_rem[15:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":50:0:50:5|Pruning register bits 39 to 24 of sum_adj[39:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":50:0:50:5|Pruning register bits 9 to 0 of sum_adj[39:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\pwm_tx.v":21:7:21:12|Synthesizing module pwm_tx in library work.
+
+	ON_DIV=32'b00000000000000000000000010011101
+	CNT_WIDTH=32'b00000000000000000000000000100000
+	ADC_WIDTH=32'b00000000000000000000000000001101
+	SECONDARY_DELAY=32'b00000000000000000000000000001010
+	START_OFF_DIV=32'b00000000000000000000000010111100
+	START_ON_DIV=32'b00000000000000000000000010011101
+	TOTAL_TIME=32'b00000000000000011000011010100000
+   Generated name = pwm_tx_157_32s_13s_10_188_157_100000
+
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\pwm_tx.v":37:29:37:35|Object sec_lim is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\pwm_tx.v":38:13:38:25|Object cur_secondary is declared but not assigned. Either assign a value or remove the declaration.
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":21:7:21:20|Synthesizing module PID_controller in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001101
+	SPI_WIDTH=32'b00000000000000000000000000001100
+	INTEGRAL_LENGTH=32'b00000000000000000000000001000000
+	INTEGRAL_DIV=32'b00000000000000000000000000000110
+	AVG_LENGTH=32'b00000000000000000000000000000100
+	AVG_DIV=32'b00000000000000000000000000000010
+	CNT_WIDTH=32'b00000000000000000000000000100000
+	SPI_CLK_DIVIDER=32'b00000000000000000000000000010100
+	ON_DIV=32'b00000000000000000000000010011101
+	START_OFF_DIV=32'b00000000000000000000000010111100
+	MIN_OFF_DIV=32'b00000000000000000000000011110000
+	START_ON_DIV=32'b00000000000000000000000010011101
+	TARGET_V=32'b00000000000000000000100000000000
+	WAIT_TIME=32'b00000000000000000000000000000001
+	TOTAL_TIME=32'b00000000000000011000011010100000
+	K_I=32'b00000000000000000000000001010000
+	K_D=32'b00000000000000000000000000000000
+	K_P=32'b00000000000000000000000001000000
+   Generated name = PID_controller_Z2
+
+@W: CS263 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":69:38:69:46|Port-width mismatch for port wait_time. The port definition is 12 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":117:43:117:45|Port-width mismatch for port k_d. The port definition is 13 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\constant_gen.v":21:7:21:18|Synthesizing module constant_gen in library work.
+
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\constant_gen.v":36:11:36:22|Object pre_delayreg is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\constant_gen.v":36:25:36:37|Object post_delayreg is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\constant_gen.v":37:20:37:25|Object k_ireg is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\constant_gen.v":37:28:37:33|Object k_dreg is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\constant_gen.v":37:36:37:41|Object k_preg is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\constant_gen.v":37:44:37:49|Object vd_reg is declared but not assigned. Either assign a value or remove the declaration.
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":21:7:21:19|Synthesizing module PSU_Top_Level in library work.
+
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":26:11:26:16|Removing wire sck_12, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":26:19:26:23|Removing wire cs_12, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":26:26:26:35|Removing wire primary_12, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":26:38:26:49|Removing wire secondary_12, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":30:11:30:16|Removing wire sck_fb, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":30:19:30:23|Removing wire cs_fb, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":30:26:30:35|Removing wire primary_fb, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":30:38:30:49|Removing wire secondary_fb, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":32:11:32:15|Removing wire sck_5, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":32:18:32:21|Removing wire cs_5, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":32:24:32:32|Removing wire primary_5, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":32:35:32:45|Removing wire secondary_5, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":34:11:34:16|Removing wire sck_15, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":34:19:34:23|Removing wire cs_15, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":34:26:34:35|Removing wire primary_15, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":34:38:34:49|Removing wire secondary_15, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":47:11:47:16|Removing wire LED_12, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":47:19:47:24|Removing wire LED_FB, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":47:27:47:31|Removing wire LED_5, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":47:42:47:47|Removing wire LED_15, as there is no assignment to it.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":48:10:48:15|Object choose is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":49:28:49:36|Object choose_cd is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":49:39:49:50|Object choos_constd is declared but not assigned. Either assign a value or remove the declaration.
+@W: CL156 :"C:\PID Project\PID_Controller\hdl\constant_gen.v":186:0:186:5|*Input un1_LED_5[11:0] to expression [pmux] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\PID Project\PID_Controller\hdl\constant_gen.v":186:0:186:5|*Input un1_LED_15[11:0] to expression [pmux] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\PID Project\PID_Controller\hdl\constant_gen.v":186:0:186:5|*Input un1_LED_12[11:0] to expression [pmux] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\PID Project\PID_Controller\hdl\constant_gen.v":186:0:186:5|*Input un1_LED_FB[11:0] to expression [pmux] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":26:11:26:16|*Output sck_12 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":26:19:26:23|*Output cs_12 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":26:26:26:35|*Output primary_12 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":26:38:26:49|*Output secondary_12 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":30:11:30:16|*Output sck_fb has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":30:19:30:23|*Output cs_fb has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":30:26:30:35|*Output primary_fb has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":30:38:30:49|*Output secondary_fb has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":32:11:32:15|*Output sck_5 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":32:18:32:21|*Output cs_5 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":32:24:32:32|*Output primary_5 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":32:35:32:45|*Output secondary_5 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":34:11:34:16|*Output sck_15 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":34:19:34:23|*Output cs_15 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":34:26:34:35|*Output primary_15 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":34:38:34:49|*Output secondary_15 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":25:10:25:15|Input din_12 is unused.
+@N: CL159 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":29:10:29:15|Input din_fb is unused.
+@N: CL159 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":31:10:31:14|Input din_5 is unused.
+@N: CL159 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":33:10:33:15|Input din_15 is unused.
+@N: CL159 :"C:\PID Project\PID_Controller\hdl\pwm_tx.v":32:26:32:34|Input pre_delay is unused.
+@N: CL159 :"C:\PID Project\PID_Controller\hdl\pwm_tx.v":32:37:32:46|Input post_delay is unused.
+@N: CL201 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":50:0:50:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 4 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+@W: CL246 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":30:26:30:28|Input port bits 38 to 24 of sum[39:0] are unused. Assign logic for all port bits or change the input port size.
+@N: CL159 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":31:26:31:30|Input id_ff is unused.
+@N: CL201 :"C:\PID Project\PID_Controller\hdl\spi_ctl.v":39:0:39:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 2 reachable states with original encodings of:
+   00
+   01
+@N: CL201 :"C:\PID Project\PID_Controller\hdl\pid_sum.v":48:0:48:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 7 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+   101
+   110
+@N: CL201 :"C:\PID Project\PID_Controller\hdl\integral_calc.v":34:0:34:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Pruning register bits 15 to 2 of avg_count[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL201 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 14 reachable states with original encodings of:
+   000000
+   000001
+   000010
+   000011
+   000100
+   000101
+   000110
+   000111
+   001000
+   001001
+   001010
+   001011
+   001110
+   001111
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Pruning register bits 31 to 9 of cnt[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL201 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 81MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri May 04 02:13:14 2018
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 117R, built Nov 17 2016
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri May 04 02:13:14 2018
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri May 04 02:13:14 2018
+
+###########################################################]

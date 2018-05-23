@@ -1,0 +1,8 @@
+KEY IDE_DES_TOOL "Ide"
+KEY IDE_DES_ADB_PATH "C:\Actelprj\App_notes\A3PE_starter\test_OLED\new_oled\PA3e_start_v3\PA3E_starter_demo_v1\designer\impl1\LED_Flashing.adb"
+LIST SOURCE_FILES
+ENDLIST
+LIST OPTIONAL_FILES
+ENDLIST
+LIST VCD_FILES
+ENDLIST

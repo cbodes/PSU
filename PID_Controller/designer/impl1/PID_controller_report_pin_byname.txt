@@ -1,0 +1,20 @@
+*****************************************************************
+Pin Report - Date: Thu Apr 26 21:38:21 2018 UNCOMPLETED LAYOUT
+Product: Designer
+Release: v11.8 SP3
+Version: 11.8.3.6
+Design Name: PID_controller
+Family: ProASIC3E
+Die: A3PE1500
+Package: 208 PQFP
+*****************************************************************
+Port      |Pin        |Fixed      |Function |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Schmitt Trigger |Input Delay |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+----------|-----------|-----------|---------|--------|------------------|-----|--------------|----------------|------------|-----|-----------------|------------|--------------|
+act_ctl    Unassigned  Unassigned            LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+clk        Unassigned  Unassigned            LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+cs         Unassigned  Unassigned            LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+din        Unassigned  Unassigned            LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+n_rst      Unassigned  Unassigned            LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+primary    Unassigned  Unassigned            LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+sck        Unassigned  Unassigned            LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+secondary  Unassigned  Unassigned            LVTTL    12                 High  None           ---              ---          No    35                No           Yes

@@ -1,0 +1,2371 @@
+Timing Report Max Delay Analysis
+
+SmartTime Version v11.8 SP3
+Microsemi Corporation - Microsemi Libero Software Release v11.8 SP3 (Version 11.8.3.6)
+Date: Thu May 03 18:04:03 2018
+
+
+Design: PSU_Top_Level
+Family: ProASIC3E
+Die: A3PE1500
+Package: 208 PQFP
+Temperature Range: 0 - 70 C
+Voltage Range: 1.425 - 1.575 V
+Speed Grade: STD
+Design State: Post-Layout
+Data source: Silicon verified
+Min Operating Conditions: BEST - 1.575 V - 0 C
+Max Operating Conditions: WORST - 1.425 V - 70 C
+Using Enhanced Min Delay Analysis
+Scenario for Timing Analysis: Primary
+
+
+-----------------------------------------------------
+SUMMARY
+
+Clock Domain:               PID_12/SPICLK/cur_clk:Q
+Period (ns):                7.548
+Frequency (MHz):            132.485
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+External Setup (ns):        2.595
+External Hold (ns):         -0.411
+Min Clock-To-Out (ns):      3.989
+Max Clock-To-Out (ns):      11.974
+
+Clock Domain:               PID_15/SPICLK/cur_clk:Q
+Period (ns):                7.635
+Frequency (MHz):            130.976
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+External Setup (ns):        2.938
+External Hold (ns):         -0.471
+Min Clock-To-Out (ns):      4.307
+Max Clock-To-Out (ns):      12.978
+
+Clock Domain:               PID_33/SPICLK/cur_clk:Q
+Period (ns):                8.062
+Frequency (MHz):            124.039
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+External Setup (ns):        4.098
+External Hold (ns):         -0.897
+Min Clock-To-Out (ns):      4.343
+Max Clock-To-Out (ns):      13.008
+
+Clock Domain:               PID_5/SPICLK/cur_clk:Q
+Period (ns):                8.201
+Frequency (MHz):            121.936
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+External Setup (ns):        5.453
+External Hold (ns):         -1.472
+Min Clock-To-Out (ns):      4.559
+Max Clock-To-Out (ns):      13.704
+
+Clock Domain:               PID_FB/SPICLK/cur_clk:Q
+Period (ns):                7.635
+Frequency (MHz):            130.976
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+External Setup (ns):        2.238
+External Hold (ns):         -0.232
+Min Clock-To-Out (ns):      3.736
+Max Clock-To-Out (ns):      11.361
+
+Clock Domain:               clk
+Period (ns):                24.779
+Frequency (MHz):            40.357
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+External Setup (ns):        32.607
+External Hold (ns):         0.126
+Min Clock-To-Out (ns):      2.873
+Max Clock-To-Out (ns):      23.831
+
+                            Input to Output
+Min Delay (ns):             4.371
+Max Delay (ns):             30.375
+
+END SUMMARY
+-----------------------------------------------------
+
+Clock Domain PID_12/SPICLK/cur_clk:Q
+
+SET Register to Register
+
+Path 1
+  From:                        PID_12/SPI/SPICTL/cnt[9]:CLK
+  To:                          PID_12/SPI/SPICTL/cnt[15]:D
+  Delay (ns):                  6.297
+  Slack (ns):
+  Arrival (ns):                8.670
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         7.548
+
+Path 2
+  From:                        PID_12/SPI/SPICTL/cnt[3]:CLK
+  To:                          PID_12/SPI/SPICTL/cnt[8]:D
+  Delay (ns):                  6.523
+  Slack (ns):
+  Arrival (ns):                8.232
+  Required (ns):
+  Setup (ns):                  0.574
+  Minimum Period (ns):         7.517
+
+Path 3
+  From:                        PID_12/SPI/SPICTL/cnt[9]:CLK
+  To:                          PID_12/SPI/SPICTL/cnt[14]:D
+  Delay (ns):                  6.269
+  Slack (ns):
+  Arrival (ns):                8.642
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         7.414
+
+Path 4
+  From:                        PID_12/SPI/SPICTL/state[0]:CLK
+  To:                          PID_12/SPI/SPICTL/cnt[10]:D
+  Delay (ns):                  5.590
+  Slack (ns):
+  Arrival (ns):                8.101
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         7.405
+
+Path 5
+  From:                        PID_12/SPI/SPICTL/cnt[9]:CLK
+  To:                          PID_12/SPI/SPICTL/cnt[13]:D
+  Delay (ns):                  6.072
+  Slack (ns):
+  Arrival (ns):                8.445
+  Required (ns):
+  Setup (ns):                  0.574
+  Minimum Period (ns):         7.382
+
+
+Expanded Path 1
+  From: PID_12/SPI/SPICTL/cnt[9]:CLK
+  To: PID_12/SPI/SPICTL/cnt[15]:D
+  data required time                             N/C
+  data arrival time                          -   8.670
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        PID_12/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  0.000                        PID_12/SPICLK/cur_clk:Q (r)
+               +     2.373          net: cur_clk
+  2.373                        PID_12/SPI/SPICTL/cnt[9]:CLK (r)
+               +     0.581          cell: ADLIB:DFN1C0
+  2.954                        PID_12/SPI/SPICTL/cnt[9]:Q (r)
+               +     1.478          net: PID_12/SPI/SPICTL/cnt[9]
+  4.432                        PID_12/SPI/SPICTL/cnt_RNI25NB1[9]:A (r)
+               +     0.525          cell: ADLIB:NOR3C
+  4.957                        PID_12/SPI/SPICTL/cnt_RNI25NB1[9]:Y (r)
+               +     0.334          net: PID_12/SPI/SPICTL/cnt_m6_0_a2_5
+  5.291                        PID_12/SPI/SPICTL/cnt_RNISG6U3[4]:B (r)
+               +     0.624          cell: ADLIB:NOR3B
+  5.915                        PID_12/SPI/SPICTL/cnt_RNISG6U3[4]:Y (r)
+               +     0.476          net: PID_12/SPI/SPICTL/cnt_N_13_mux
+  6.391                        PID_12/SPI/SPICTL/cnt_RNO_0[15]:B (r)
+               +     0.624          cell: ADLIB:OR3B
+  7.015                        PID_12/SPI/SPICTL/cnt_RNO_0[15]:Y (f)
+               +     0.334          net: PID_12/SPI/SPICTL/N_75
+  7.349                        PID_12/SPI/SPICTL/cnt_RNO[15]:B (f)
+               +     0.987          cell: ADLIB:XA1A
+  8.336                        PID_12/SPI/SPICTL/cnt_RNO[15]:Y (f)
+               +     0.334          net: PID_12/SPI/SPICTL/cnt_n15
+  8.670                        PID_12/SPI/SPICTL/cnt[15]:D (f)
+                                    
+  8.670                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PID_12/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  N/C                          PID_12/SPICLK/cur_clk:Q (r)
+               +     1.661          net: cur_clk
+  N/C                          PID_12/SPI/SPICTL/cnt[15]:CLK (r)
+               -     0.539          Library setup time: ADLIB:DFN1C0
+  N/C                          PID_12/SPI/SPICTL/cnt[15]:D
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+Path 1
+  From:                        din_12
+  To:                          PID_12/SPI/VD_STP/sr[0]:D
+  Delay (ns):                  4.239
+  Slack (ns):
+  Arrival (ns):                4.239
+  Required (ns):
+  Setup (ns):                  0.574
+  External Setup (ns):         2.595
+
+
+Expanded Path 1
+  From: din_12
+  To: PID_12/SPI/VD_STP/sr[0]:D
+  data required time                             N/C
+  data arrival time                          -   4.239
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        din_12 (r)
+               +     0.000          net: din_12
+  0.000                        din_12_pad/U0/U0:PAD (r)
+               +     1.202          cell: ADLIB:IOPAD_IN
+  1.202                        din_12_pad/U0/U0:Y (r)
+               +     0.000          net: din_12_pad/U0/NET1
+  1.202                        din_12_pad/U0/U1:YIN (r)
+               +     0.043          cell: ADLIB:IOIN_IB
+  1.245                        din_12_pad/U0/U1:Y (r)
+               +     2.994          net: din_12_c
+  4.239                        PID_12/SPI/VD_STP/sr[0]:D (r)
+                                    
+  4.239                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PID_12/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  N/C                          PID_12/SPICLK/cur_clk:Q (r)
+               +     2.218          net: cur_clk
+  N/C                          PID_12/SPI/VD_STP/sr[0]:CLK (r)
+               -     0.574          Library setup time: ADLIB:DFN1E0C0
+  N/C                          PID_12/SPI/VD_STP/sr[0]:D
+
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        PID_12/SPI/SPICTL/state[0]:CLK
+  To:                          cs_12
+  Delay (ns):                  9.463
+  Slack (ns):
+  Arrival (ns):                11.974
+  Required (ns):
+  Clock to Out (ns):           11.974
+
+
+Expanded Path 1
+  From: PID_12/SPI/SPICTL/state[0]:CLK
+  To: cs_12
+  data required time                             N/C
+  data arrival time                          -   11.974
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        PID_12/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  0.000                        PID_12/SPICLK/cur_clk:Q (r)
+               +     2.511          net: cur_clk
+  2.511                        PID_12/SPI/SPICTL/state[0]:CLK (r)
+               +     0.581          cell: ADLIB:DFN1C0
+  3.092                        PID_12/SPI/SPICTL/state[0]:Q (r)
+               +     1.897          net: PID_12/SPI/cs_i_1
+  4.989                        PID_12/SPI/SPICTL/state_RNIDURB[0]:A (r)
+               +     0.363          cell: ADLIB:INV
+  5.352                        PID_12/SPI/SPICTL/state_RNIDURB[0]:Y (f)
+               +     2.296          net: PID_12_SPI_cs_i_1_i
+  7.648                        cs_12_pad/U0/U1:D (f)
+               +     0.659          cell: ADLIB:IOTRI_OB_EB
+  8.307                        cs_12_pad/U0/U1:DOUT (f)
+               +     0.000          net: cs_12_pad/U0/NET1
+  8.307                        cs_12_pad/U0/U0:D (f)
+               +     3.667          cell: ADLIB:IOPAD_TRI
+  11.974                       cs_12_pad/U0/U0:PAD (f)
+               +     0.000          net: cs_12
+  11.974                       cs_12 (f)
+                                    
+  11.974                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PID_12/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  N/C                          PID_12/SPICLK/cur_clk:Q (r)
+                                    
+  N/C                          cs_12 (f)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+Path 1
+  From:                        n_rst
+  To:                          PID_12/SPI/SPICTL/cnt[1]:CLR
+  Delay (ns):                  2.721
+  Slack (ns):
+  Arrival (ns):                2.721
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      2.426
+
+Path 2
+  From:                        n_rst
+  To:                          PID_12/SPI/SPICTL/cnt[0]:CLR
+  Delay (ns):                  2.721
+  Slack (ns):
+  Arrival (ns):                2.721
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      2.426
+
+Path 3
+  From:                        n_rst
+  To:                          PID_12/SPI/SPICTL/cnt[2]:CLR
+  Delay (ns):                  2.685
+  Slack (ns):
+  Arrival (ns):                2.685
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      2.390
+
+Path 4
+  From:                        n_rst
+  To:                          PID_12/SPI/SPICTL/cnt[7]:CLR
+  Delay (ns):                  2.685
+  Slack (ns):
+  Arrival (ns):                2.685
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      2.390
+
+Path 5
+  From:                        n_rst
+  To:                          PID_12/SPI/SPICTL/cnt[4]:CLR
+  Delay (ns):                  2.685
+  Slack (ns):
+  Arrival (ns):                2.685
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      2.076
+
+
+Expanded Path 1
+  From: n_rst
+  To: PID_12/SPI/SPICTL/cnt[1]:CLR
+  data required time                             N/C
+  data arrival time                          -   2.721
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        n_rst (r)
+               +     0.000          net: n_rst
+  0.000                        n_rst_pad/U0/U0:PAD (r)
+               +     1.202          cell: ADLIB:IOPAD_IN
+  1.202                        n_rst_pad/U0/U0:Y (r)
+               +     0.000          net: n_rst_pad/U0/NET1
+  1.202                        n_rst_pad/U0/U1:A (r)
+               +     0.348          cell: ADLIB:CLKIO
+  1.550                        n_rst_pad/U0/U1:Y (r)
+               +     1.171          net: n_rst_c
+  2.721                        PID_12/SPI/SPICTL/cnt[1]:CLR (r)
+                                    
+  2.721                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PID_12/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  N/C                          PID_12/SPICLK/cur_clk:Q (r)
+               +     0.592          net: cur_clk
+  N/C                          PID_12/SPI/SPICTL/cnt[1]:CLK (r)
+               -     0.297          Library recovery time: ADLIB:DFN1C0
+  N/C                          PID_12/SPI/SPICTL/cnt[1]:CLR
+
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PID_15/SPICLK/cur_clk:Q
+
+SET Register to Register
+
+Path 1
+  From:                        PID_15/SPI/SPICTL/cnt[11]:CLK
+  To:                          PID_15/SPI/SPICTL/state[0]:D
+  Delay (ns):                  7.084
+  Slack (ns):
+  Arrival (ns):                8.405
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         7.635
+
+Path 2
+  From:                        PID_15/SPI/SPICTL/cnt[1]:CLK
+  To:                          PID_15/SPI/SPICTL/cnt[8]:D
+  Delay (ns):                  6.406
+  Slack (ns):
+  Arrival (ns):                7.718
+  Required (ns):
+  Setup (ns):                  0.574
+  Minimum Period (ns):         7.265
+
+Path 3
+  From:                        PID_15/SPI/SPICTL/cnt[14]:CLK
+  To:                          PID_15/SPI/SPICTL/state[0]:D
+  Delay (ns):                  6.277
+  Slack (ns):
+  Arrival (ns):                8.017
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         7.247
+
+Path 4
+  From:                        PID_15/SPI/SPICTL/cnt[0]:CLK
+  To:                          PID_15/SPI/SPICTL/cnt[8]:D
+  Delay (ns):                  6.386
+  Slack (ns):
+  Arrival (ns):                7.695
+  Required (ns):
+  Setup (ns):                  0.574
+  Minimum Period (ns):         7.242
+
+Path 5
+  From:                        PID_15/SPI/SPICTL/cnt[1]:CLK
+  To:                          PID_15/SPI/SPICTL/cnt[9]:D
+  Delay (ns):                  6.872
+  Slack (ns):
+  Arrival (ns):                8.184
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         7.227
+
+
+Expanded Path 1
+  From: PID_15/SPI/SPICTL/cnt[11]:CLK
+  To: PID_15/SPI/SPICTL/state[0]:D
+  data required time                             N/C
+  data arrival time                          -   8.405
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        PID_15/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  0.000                        PID_15/SPICLK/cur_clk:Q (r)
+               +     1.321          net: sck_5_c
+  1.321                        PID_15/SPI/SPICTL/cnt[11]:CLK (r)
+               +     0.737          cell: ADLIB:DFN1C0
+  2.058                        PID_15/SPI/SPICTL/cnt[11]:Q (f)
+               +     1.032          net: PID_15/SPI/SPICTL/cnt[11]
+  3.090                        PID_15/SPI/SPICTL/cnt_RNIF937[11]:B (f)
+               +     0.647          cell: ADLIB:NOR2
+  3.737                        PID_15/SPI/SPICTL/cnt_RNIF937[11]:Y (r)
+               +     0.334          net: PID_15/SPI/SPICTL/state_tr0_0_a3_1
+  4.071                        PID_15/SPI/SPICTL/state_RNO_4[0]:A (r)
+               +     0.664          cell: ADLIB:NOR3A
+  4.735                        PID_15/SPI/SPICTL/state_RNO_4[0]:Y (r)
+               +     1.811          net: PID_15/SPI/SPICTL/state_tr0_0_a3_6
+  6.546                        PID_15/SPI/SPICTL/state_RNO_2[0]:A (r)
+               +     0.525          cell: ADLIB:NOR3C
+  7.071                        PID_15/SPI/SPICTL/state_RNO_2[0]:Y (r)
+               +     0.334          net: PID_15/SPI/SPICTL/state_tr0_0_a3_12
+  7.405                        PID_15/SPI/SPICTL/state_RNO[0]:C (r)
+               +     0.666          cell: ADLIB:OR3C
+  8.071                        PID_15/SPI/SPICTL/state_RNO[0]:Y (f)
+               +     0.334          net: PID_15/SPI/SPICTL/state_RNO_8[0]
+  8.405                        PID_15/SPI/SPICTL/state[0]:D (f)
+                                    
+  8.405                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PID_15/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  N/C                          PID_15/SPICLK/cur_clk:Q (r)
+               +     1.309          net: sck_5_c
+  N/C                          PID_15/SPI/SPICTL/state[0]:CLK (r)
+               -     0.539          Library setup time: ADLIB:DFN1C0
+  N/C                          PID_15/SPI/SPICTL/state[0]:D
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+Path 1
+  From:                        din_15
+  To:                          PID_15/SPI/VD_STP/sr[0]:D
+  Delay (ns):                  5.223
+  Slack (ns):
+  Arrival (ns):                5.223
+  Required (ns):
+  Setup (ns):                  0.574
+  External Setup (ns):         2.938
+
+
+Expanded Path 1
+  From: din_15
+  To: PID_15/SPI/VD_STP/sr[0]:D
+  data required time                             N/C
+  data arrival time                          -   5.223
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        din_15 (r)
+               +     0.000          net: din_15
+  0.000                        din_15_pad/U0/U0:PAD (r)
+               +     1.202          cell: ADLIB:IOPAD_IN
+  1.202                        din_15_pad/U0/U0:Y (r)
+               +     0.000          net: din_15_pad/U0/NET1
+  1.202                        din_15_pad/U0/U1:YIN (r)
+               +     0.043          cell: ADLIB:IOIN_IB
+  1.245                        din_15_pad/U0/U1:Y (r)
+               +     3.978          net: din_15_c
+  5.223                        PID_15/SPI/VD_STP/sr[0]:D (r)
+                                    
+  5.223                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PID_15/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  N/C                          PID_15/SPICLK/cur_clk:Q (r)
+               +     2.859          net: sck_5_c
+  N/C                          PID_15/SPI/VD_STP/sr[0]:CLK (r)
+               -     0.574          Library setup time: ADLIB:DFN1E0C0
+  N/C                          PID_15/SPI/VD_STP/sr[0]:D
+
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        PID_15/SPI/SPICTL/state[0]:CLK
+  To:                          cs_15
+  Delay (ns):                  11.669
+  Slack (ns):
+  Arrival (ns):                12.978
+  Required (ns):
+  Clock to Out (ns):           12.978
+
+
+Expanded Path 1
+  From: PID_15/SPI/SPICTL/state[0]:CLK
+  To: cs_15
+  data required time                             N/C
+  data arrival time                          -   12.978
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        PID_15/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  0.000                        PID_15/SPICLK/cur_clk:Q (r)
+               +     1.309          net: sck_5_c
+  1.309                        PID_15/SPI/SPICTL/state[0]:CLK (r)
+               +     0.581          cell: ADLIB:DFN1C0
+  1.890                        PID_15/SPI/SPICTL/state[0]:Q (r)
+               +     4.036          net: PID_15/SPI/cs_i_1
+  5.926                        PID_15/SPI/SPICTL/state_RNIGQN9[0]:A (r)
+               +     0.363          cell: ADLIB:INV
+  6.289                        PID_15/SPI/SPICTL/state_RNIGQN9[0]:Y (f)
+               +     2.363          net: PID_15_SPI_cs_i_1_i
+  8.652                        cs_15_pad/U0/U1:D (f)
+               +     0.659          cell: ADLIB:IOTRI_OB_EB
+  9.311                        cs_15_pad/U0/U1:DOUT (f)
+               +     0.000          net: cs_15_pad/U0/NET1
+  9.311                        cs_15_pad/U0/U0:D (f)
+               +     3.667          cell: ADLIB:IOPAD_TRI
+  12.978                       cs_15_pad/U0/U0:PAD (f)
+               +     0.000          net: cs_15
+  12.978                       cs_15 (f)
+                                    
+  12.978                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PID_15/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  N/C                          PID_15/SPICLK/cur_clk:Q (r)
+                                    
+  N/C                          cs_15 (f)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+Path 1
+  From:                        n_rst
+  To:                          PID_15/SPI/SPICTL/cnt[3]:CLR
+  Delay (ns):                  2.662
+  Slack (ns):
+  Arrival (ns):                2.662
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      2.476
+
+Path 2
+  From:                        n_rst
+  To:                          PID_15/SPI/SPICTL/cnt[7]:CLR
+  Delay (ns):                  2.662
+  Slack (ns):
+  Arrival (ns):                2.662
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      2.476
+
+Path 3
+  From:                        n_rst
+  To:                          PID_15/SPI/SPICTL/cnt[2]:CLR
+  Delay (ns):                  2.651
+  Slack (ns):
+  Arrival (ns):                2.651
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      2.465
+
+Path 4
+  From:                        n_rst
+  To:                          PID_15/SPI/SPICTL/cnt[8]:CLR
+  Delay (ns):                  2.662
+  Slack (ns):
+  Arrival (ns):                2.662
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      1.932
+
+Path 5
+  From:                        n_rst
+  To:                          PID_15/SPI/SPICTL/cnt[6]:CLR
+  Delay (ns):                  2.661
+  Slack (ns):
+  Arrival (ns):                2.661
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      1.718
+
+
+Expanded Path 1
+  From: n_rst
+  To: PID_15/SPI/SPICTL/cnt[3]:CLR
+  data required time                             N/C
+  data arrival time                          -   2.662
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        n_rst (r)
+               +     0.000          net: n_rst
+  0.000                        n_rst_pad/U0/U0:PAD (r)
+               +     1.202          cell: ADLIB:IOPAD_IN
+  1.202                        n_rst_pad/U0/U0:Y (r)
+               +     0.000          net: n_rst_pad/U0/NET1
+  1.202                        n_rst_pad/U0/U1:A (r)
+               +     0.348          cell: ADLIB:CLKIO
+  1.550                        n_rst_pad/U0/U1:Y (r)
+               +     1.112          net: n_rst_c
+  2.662                        PID_15/SPI/SPICTL/cnt[3]:CLR (r)
+                                    
+  2.662                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PID_15/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  N/C                          PID_15/SPICLK/cur_clk:Q (r)
+               +     0.483          net: sck_5_c
+  N/C                          PID_15/SPI/SPICTL/cnt[3]:CLK (r)
+               -     0.297          Library recovery time: ADLIB:DFN1C0
+  N/C                          PID_15/SPI/SPICTL/cnt[3]:CLR
+
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PID_33/SPICLK/cur_clk:Q
+
+SET Register to Register
+
+Path 1
+  From:                        PID_33/SPI/SPICTL/cnt[0]:CLK
+  To:                          PID_33/SPI/SPICTL/cnt[14]:D
+  Delay (ns):                  6.861
+  Slack (ns):
+  Arrival (ns):                8.698
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         8.062
+
+Path 2
+  From:                        PID_33/SPI/SPICTL/cnt[10]:CLK
+  To:                          PID_33/SPI/SPICTL/cnt[14]:D
+  Delay (ns):                  6.234
+  Slack (ns):
+  Arrival (ns):                8.685
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         8.049
+
+Path 3
+  From:                        PID_33/SPI/SPICTL/cnt[0]:CLK
+  To:                          PID_33/SPI/SPICTL/cnt[9]:D
+  Delay (ns):                  7.360
+  Slack (ns):
+  Arrival (ns):                9.197
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         7.950
+
+Path 4
+  From:                        PID_33/SPI/SPICTL/cnt[0]:CLK
+  To:                          PID_33/SPI/SPICTL/cnt[8]:D
+  Delay (ns):                  6.722
+  Slack (ns):
+  Arrival (ns):                8.559
+  Required (ns):
+  Setup (ns):                  0.574
+  Minimum Period (ns):         7.838
+
+Path 5
+  From:                        PID_33/SPI/SPICTL/cnt[0]:CLK
+  To:                          PID_33/SPI/SPICTL/cnt[13]:D
+  Delay (ns):                  6.740
+  Slack (ns):
+  Arrival (ns):                8.577
+  Required (ns):
+  Setup (ns):                  0.574
+  Minimum Period (ns):         7.735
+
+
+Expanded Path 1
+  From: PID_33/SPI/SPICTL/cnt[0]:CLK
+  To: PID_33/SPI/SPICTL/cnt[14]:D
+  data required time                             N/C
+  data arrival time                          -   8.698
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        PID_33/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  0.000                        PID_33/SPICLK/cur_clk:Q (r)
+               +     1.837          net: sck_12_c
+  1.837                        PID_33/SPI/SPICTL/cnt[0]:CLK (r)
+               +     0.581          cell: ADLIB:DFN1C0
+  2.418                        PID_33/SPI/SPICTL/cnt[0]:Q (r)
+               +     0.482          net: PID_33/SPI/SPICTL/cnt[0]
+  2.900                        PID_33/SPI/SPICTL/cnt_RNI9KSO[1]:B (r)
+               +     0.516          cell: ADLIB:OR2B
+  3.416                        PID_33/SPI/SPICTL/cnt_RNI9KSO[1]:Y (f)
+               +     0.332          net: PID_33/SPI/SPICTL/N_30
+  3.748                        PID_33/SPI/SPICTL/cnt_RNIVVA51[2]:B (f)
+               +     0.647          cell: ADLIB:OR2A
+  4.395                        PID_33/SPI/SPICTL/cnt_RNIVVA51[2]:Y (f)
+               +     1.202          net: PID_33/SPI/SPICTL/N_31
+  5.597                        PID_33/SPI/SPICTL/cnt_RNI0OVH4[4]:C (f)
+               +     0.525          cell: ADLIB:NOR3B
+  6.122                        PID_33/SPI/SPICTL/cnt_RNI0OVH4[4]:Y (r)
+               +     0.384          net: PID_33/SPI/SPICTL/cnt_N_13_mux
+  6.506                        PID_33/SPI/SPICTL/cnt_RNO_0[14]:A (r)
+               +     0.537          cell: ADLIB:OR2A
+  7.043                        PID_33/SPI/SPICTL/cnt_RNO_0[14]:Y (f)
+               +     0.334          net: PID_33/SPI/SPICTL/N_74
+  7.377                        PID_33/SPI/SPICTL/cnt_RNO[14]:B (f)
+               +     0.987          cell: ADLIB:XA1A
+  8.364                        PID_33/SPI/SPICTL/cnt_RNO[14]:Y (f)
+               +     0.334          net: PID_33/SPI/SPICTL/cnt_n14
+  8.698                        PID_33/SPI/SPICTL/cnt[14]:D (f)
+                                    
+  8.698                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PID_33/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  N/C                          PID_33/SPICLK/cur_clk:Q (r)
+               +     1.175          net: sck_12_c
+  N/C                          PID_33/SPI/SPICTL/cnt[14]:CLK (r)
+               -     0.539          Library setup time: ADLIB:DFN1C0
+  N/C                          PID_33/SPI/SPICTL/cnt[14]:D
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+Path 1
+  From:                        din_33
+  To:                          PID_33/SPI/VD_STP/sr[0]:D
+  Delay (ns):                  6.341
+  Slack (ns):
+  Arrival (ns):                6.341
+  Required (ns):
+  Setup (ns):                  0.574
+  External Setup (ns):         4.098
+
+
+Expanded Path 1
+  From: din_33
+  To: PID_33/SPI/VD_STP/sr[0]:D
+  data required time                             N/C
+  data arrival time                          -   6.341
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        din_33 (r)
+               +     0.000          net: din_33
+  0.000                        din_33_pad/U0/U0:PAD (r)
+               +     1.202          cell: ADLIB:IOPAD_IN
+  1.202                        din_33_pad/U0/U0:Y (r)
+               +     0.000          net: din_33_pad/U0/NET1
+  1.202                        din_33_pad/U0/U1:YIN (r)
+               +     0.043          cell: ADLIB:IOIN_IB
+  1.245                        din_33_pad/U0/U1:Y (r)
+               +     5.096          net: din_33_c
+  6.341                        PID_33/SPI/VD_STP/sr[0]:D (r)
+                                    
+  6.341                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PID_33/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  N/C                          PID_33/SPICLK/cur_clk:Q (r)
+               +     2.817          net: sck_12_c
+  N/C                          PID_33/SPI/VD_STP/sr[0]:CLK (r)
+               -     0.574          Library setup time: ADLIB:DFN1E0C0
+  N/C                          PID_33/SPI/VD_STP/sr[0]:D
+
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        PID_33/SPI/SPICTL/state[0]:CLK
+  To:                          cs_33
+  Delay (ns):                  11.068
+  Slack (ns):
+  Arrival (ns):                13.008
+  Required (ns):
+  Clock to Out (ns):           13.008
+
+
+Expanded Path 1
+  From: PID_33/SPI/SPICTL/state[0]:CLK
+  To: cs_33
+  data required time                             N/C
+  data arrival time                          -   13.008
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        PID_33/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  0.000                        PID_33/SPICLK/cur_clk:Q (r)
+               +     1.940          net: sck_12_c
+  1.940                        PID_33/SPI/SPICTL/state[0]:CLK (r)
+               +     0.581          cell: ADLIB:DFN1C0
+  2.521                        PID_33/SPI/SPICTL/state[0]:Q (r)
+               +     3.317          net: PID_33/SPI/cs_i_1
+  5.838                        PID_33/SPI/SPICTL/state_RNIGSV6[0]:A (r)
+               +     0.363          cell: ADLIB:INV
+  6.201                        PID_33/SPI/SPICTL/state_RNIGSV6[0]:Y (f)
+               +     2.481          net: PID_33_SPI_cs_i_1_i
+  8.682                        cs_33_pad/U0/U1:D (f)
+               +     0.659          cell: ADLIB:IOTRI_OB_EB
+  9.341                        cs_33_pad/U0/U1:DOUT (f)
+               +     0.000          net: cs_33_pad/U0/NET1
+  9.341                        cs_33_pad/U0/U0:D (f)
+               +     3.667          cell: ADLIB:IOPAD_TRI
+  13.008                       cs_33_pad/U0/U0:PAD (f)
+               +     0.000          net: cs_33
+  13.008                       cs_33 (f)
+                                    
+  13.008                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PID_33/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  N/C                          PID_33/SPICLK/cur_clk:Q (r)
+                                    
+  N/C                          cs_33 (f)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+Path 1
+  From:                        n_rst
+  To:                          PID_33/SPI/SPICTL/cnt[4]:CLR
+  Delay (ns):                  2.679
+  Slack (ns):
+  Arrival (ns):                2.679
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      2.493
+
+Path 2
+  From:                        n_rst
+  To:                          PID_33/SPI/SPICTL/cnt[5]:CLR
+  Delay (ns):                  2.679
+  Slack (ns):
+  Arrival (ns):                2.679
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      2.493
+
+Path 3
+  From:                        n_rst
+  To:                          PID_33/SPI/SPICTL/cnt[3]:CLR
+  Delay (ns):                  2.679
+  Slack (ns):
+  Arrival (ns):                2.679
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      2.493
+
+Path 4
+  From:                        n_rst
+  To:                          PID_33/SPI/SPICTL/cnt[14]:CLR
+  Delay (ns):                  2.649
+  Slack (ns):
+  Arrival (ns):                2.649
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      1.771
+
+Path 5
+  From:                        n_rst
+  To:                          PID_33/SPI/SPICTL/cnt[8]:CLR
+  Delay (ns):                  2.679
+  Slack (ns):
+  Arrival (ns):                2.679
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      1.681
+
+
+Expanded Path 1
+  From: n_rst
+  To: PID_33/SPI/SPICTL/cnt[4]:CLR
+  data required time                             N/C
+  data arrival time                          -   2.679
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        n_rst (r)
+               +     0.000          net: n_rst
+  0.000                        n_rst_pad/U0/U0:PAD (r)
+               +     1.202          cell: ADLIB:IOPAD_IN
+  1.202                        n_rst_pad/U0/U0:Y (r)
+               +     0.000          net: n_rst_pad/U0/NET1
+  1.202                        n_rst_pad/U0/U1:A (r)
+               +     0.348          cell: ADLIB:CLKIO
+  1.550                        n_rst_pad/U0/U1:Y (r)
+               +     1.129          net: n_rst_c
+  2.679                        PID_33/SPI/SPICTL/cnt[4]:CLR (r)
+                                    
+  2.679                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PID_33/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  N/C                          PID_33/SPICLK/cur_clk:Q (r)
+               +     0.483          net: sck_12_c
+  N/C                          PID_33/SPI/SPICTL/cnt[4]:CLK (r)
+               -     0.297          Library recovery time: ADLIB:DFN1C0
+  N/C                          PID_33/SPI/SPICTL/cnt[4]:CLR
+
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PID_5/SPICLK/cur_clk:Q
+
+SET Register to Register
+
+Path 1
+  From:                        PID_5/SPI/SPICTL/cnt[3]:CLK
+  To:                          PID_5/SPI/VD_STP/sr[11]:E
+  Delay (ns):                  7.408
+  Slack (ns):
+  Arrival (ns):                9.032
+  Required (ns):
+  Setup (ns):                  0.608
+  Minimum Period (ns):         8.201
+
+Path 2
+  From:                        PID_5/SPI/SPICTL/cnt[1]:CLK
+  To:                          PID_5/SPI/SPICTL/cnt[9]:D
+  Delay (ns):                  7.474
+  Slack (ns):
+  Arrival (ns):                8.935
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         8.093
+
+Path 3
+  From:                        PID_5/SPI/SPICTL/cnt[6]:CLK
+  To:                          PID_5/SPI/SPICTL/cnt[9]:D
+  Delay (ns):                  7.381
+  Slack (ns):
+  Arrival (ns):                8.842
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         8.000
+
+Path 4
+  From:                        PID_5/SPI/SPICTL/cnt[5]:CLK
+  To:                          PID_5/SPI/SPICTL/cnt[9]:D
+  Delay (ns):                  6.980
+  Slack (ns):
+  Arrival (ns):                8.604
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         7.762
+
+Path 5
+  From:                        PID_5/SPI/SPICTL/cnt[11]:CLK
+  To:                          PID_5/SPI/VD_STP/sr[11]:E
+  Delay (ns):                  6.981
+  Slack (ns):
+  Arrival (ns):                8.581
+  Required (ns):
+  Setup (ns):                  0.608
+  Minimum Period (ns):         7.750
+
+
+Expanded Path 1
+  From: PID_5/SPI/SPICTL/cnt[3]:CLK
+  To: PID_5/SPI/VD_STP/sr[11]:E
+  data required time                             N/C
+  data arrival time                          -   9.032
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        PID_5/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  0.000                        PID_5/SPICLK/cur_clk:Q (r)
+               +     1.624          net: sck_fb_c
+  1.624                        PID_5/SPI/SPICTL/cnt[3]:CLK (r)
+               +     0.737          cell: ADLIB:DFN1C0
+  2.361                        PID_5/SPI/SPICTL/cnt[3]:Q (f)
+               +     1.566          net: PID_5/SPI/SPICTL/cnt[3]
+  3.927                        PID_5/SPI/SPICTL/cnt_RNIBJS[3]:A (f)
+               +     0.508          cell: ADLIB:NOR2
+  4.435                        PID_5/SPI/SPICTL/cnt_RNIBJS[3]:Y (r)
+               +     0.421          net: PID_5/SPI/SPICTL/N_103
+  4.856                        PID_5/SPI/SPICTL/cnt_RNIIUA1[4]:B (r)
+               +     0.515          cell: ADLIB:OR2A
+  5.371                        PID_5/SPI/SPICTL/cnt_RNIIUA1[4]:Y (r)
+               +     0.339          net: PID_5/SPI/SPICTL/N_73
+  5.710                        PID_5/SPI/SPICTL/cnt_RNISP43[4]:C (r)
+               +     0.751          cell: ADLIB:NOR3C
+  6.461                        PID_5/SPI/SPICTL/cnt_RNISP43[4]:Y (r)
+               +     0.318          net: PID_5/SPI/SPICTL/vd_stp_en_i_a3_9
+  6.779                        PID_5/SPI/SPICTL/state_RNIAHR33[0]:A (r)
+               +     0.469          cell: ADLIB:AO1B
+  7.248                        PID_5/SPI/SPICTL/state_RNIAHR33[0]:Y (r)
+               +     1.784          net: PID_5/SPI/N_29
+  9.032                        PID_5/SPI/VD_STP/sr[11]:E (r)
+                                    
+  9.032                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PID_5/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  N/C                          PID_5/SPICLK/cur_clk:Q (r)
+               +     1.439          net: sck_fb_c
+  N/C                          PID_5/SPI/VD_STP/sr[11]:CLK (r)
+               -     0.608          Library setup time: ADLIB:DFN1E0C0
+  N/C                          PID_5/SPI/VD_STP/sr[11]:E
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+Path 1
+  From:                        din_5
+  To:                          PID_5/SPI/VD_STP/sr[0]:D
+  Delay (ns):                  6.912
+  Slack (ns):
+  Arrival (ns):                6.912
+  Required (ns):
+  Setup (ns):                  0.574
+  External Setup (ns):         5.453
+
+
+Expanded Path 1
+  From: din_5
+  To: PID_5/SPI/VD_STP/sr[0]:D
+  data required time                             N/C
+  data arrival time                          -   6.912
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        din_5 (r)
+               +     0.000          net: din_5
+  0.000                        din_5_pad/U0/U0:PAD (r)
+               +     1.202          cell: ADLIB:IOPAD_IN
+  1.202                        din_5_pad/U0/U0:Y (r)
+               +     0.000          net: din_5_pad/U0/NET1
+  1.202                        din_5_pad/U0/U1:YIN (r)
+               +     0.043          cell: ADLIB:IOIN_IB
+  1.245                        din_5_pad/U0/U1:Y (r)
+               +     5.667          net: din_5_c
+  6.912                        PID_5/SPI/VD_STP/sr[0]:D (r)
+                                    
+  6.912                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PID_5/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  N/C                          PID_5/SPICLK/cur_clk:Q (r)
+               +     2.033          net: sck_fb_c
+  N/C                          PID_5/SPI/VD_STP/sr[0]:CLK (r)
+               -     0.574          Library setup time: ADLIB:DFN1E0C0
+  N/C                          PID_5/SPI/VD_STP/sr[0]:D
+
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        PID_5/SPI/SPICTL/state[0]:CLK
+  To:                          cs_5
+  Delay (ns):                  11.808
+  Slack (ns):
+  Arrival (ns):                13.704
+  Required (ns):
+  Clock to Out (ns):           13.704
+
+
+Expanded Path 1
+  From: PID_5/SPI/SPICTL/state[0]:CLK
+  To: cs_5
+  data required time                             N/C
+  data arrival time                          -   13.704
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        PID_5/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  0.000                        PID_5/SPICLK/cur_clk:Q (r)
+               +     1.896          net: sck_fb_c
+  1.896                        PID_5/SPI/SPICTL/state[0]:CLK (r)
+               +     0.581          cell: ADLIB:DFN1C0
+  2.477                        PID_5/SPI/SPICTL/state[0]:Q (r)
+               +     4.501          net: PID_5/SPI/cs_i_1
+  6.978                        PID_5/SPI/SPICTL/state_RNIVN98[0]:A (r)
+               +     0.363          cell: ADLIB:INV
+  7.341                        PID_5/SPI/SPICTL/state_RNIVN98[0]:Y (f)
+               +     2.037          net: PID_5_SPI_cs_i_1_i
+  9.378                        cs_5_pad/U0/U1:D (f)
+               +     0.659          cell: ADLIB:IOTRI_OB_EB
+  10.037                       cs_5_pad/U0/U1:DOUT (f)
+               +     0.000          net: cs_5_pad/U0/NET1
+  10.037                       cs_5_pad/U0/U0:D (f)
+               +     3.667          cell: ADLIB:IOPAD_TRI
+  13.704                       cs_5_pad/U0/U0:PAD (f)
+               +     0.000          net: cs_5
+  13.704                       cs_5 (f)
+                                    
+  13.704                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PID_5/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  N/C                          PID_5/SPICLK/cur_clk:Q (r)
+                                    
+  N/C                          cs_5 (f)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+Path 1
+  From:                        n_rst
+  To:                          PID_5/SPI/SPICTL/cnt[0]:CLR
+  Delay (ns):                  2.744
+  Slack (ns):
+  Arrival (ns):                2.744
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      2.707
+
+Path 2
+  From:                        n_rst
+  To:                          PID_5/SPI/SPICTL/cnt[9]:CLR
+  Delay (ns):                  2.760
+  Slack (ns):
+  Arrival (ns):                2.760
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      1.676
+
+Path 3
+  From:                        n_rst
+  To:                          PID_5/SPI/SPICTL/cnt[1]:CLR
+  Delay (ns):                  2.744
+  Slack (ns):
+  Arrival (ns):                2.744
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      1.580
+
+Path 4
+  From:                        n_rst
+  To:                          PID_5/SPI/VD_STP/sr[11]:CLR
+  Delay (ns):                  2.722
+  Slack (ns):
+  Arrival (ns):                2.722
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      1.580
+
+Path 5
+  From:                        n_rst
+  To:                          PID_5/SPI/SPICTL/cnt[12]:CLR
+  Delay (ns):                  2.744
+  Slack (ns):
+  Arrival (ns):                2.744
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      1.580
+
+
+Expanded Path 1
+  From: n_rst
+  To: PID_5/SPI/SPICTL/cnt[0]:CLR
+  data required time                             N/C
+  data arrival time                          -   2.744
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        n_rst (r)
+               +     0.000          net: n_rst
+  0.000                        n_rst_pad/U0/U0:PAD (r)
+               +     1.202          cell: ADLIB:IOPAD_IN
+  1.202                        n_rst_pad/U0/U0:Y (r)
+               +     0.000          net: n_rst_pad/U0/NET1
+  1.202                        n_rst_pad/U0/U1:A (r)
+               +     0.348          cell: ADLIB:CLKIO
+  1.550                        n_rst_pad/U0/U1:Y (r)
+               +     1.194          net: n_rst_c
+  2.744                        PID_5/SPI/SPICTL/cnt[0]:CLR (r)
+                                    
+  2.744                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PID_5/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  N/C                          PID_5/SPICLK/cur_clk:Q (r)
+               +     0.334          net: sck_fb_c
+  N/C                          PID_5/SPI/SPICTL/cnt[0]:CLK (r)
+               -     0.297          Library recovery time: ADLIB:DFN1C0
+  N/C                          PID_5/SPI/SPICTL/cnt[0]:CLR
+
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PID_FB/SPICLK/cur_clk:Q
+
+SET Register to Register
+
+Path 1
+  From:                        PID_FB/SPI/SPICTL/cnt[2]:CLK
+  To:                          PID_FB/SPI/VD_STP/sr[3]:E
+  Delay (ns):                  7.157
+  Slack (ns):
+  Arrival (ns):                8.800
+  Required (ns):
+  Setup (ns):                  0.608
+  Minimum Period (ns):         7.635
+
+Path 2
+  From:                        PID_FB/SPI/SPICTL/cnt[3]:CLK
+  To:                          PID_FB/SPI/VD_STP/sr[3]:E
+  Delay (ns):                  7.064
+  Slack (ns):
+  Arrival (ns):                8.707
+  Required (ns):
+  Setup (ns):                  0.608
+  Minimum Period (ns):         7.542
+
+Path 3
+  From:                        PID_FB/SPI/SPICTL/cnt[2]:CLK
+  To:                          PID_FB/SPI/SPICTL/cnt[9]:D
+  Delay (ns):                  6.781
+  Slack (ns):
+  Arrival (ns):                8.424
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         7.504
+
+Path 4
+  From:                        PID_FB/SPI/SPICTL/cnt[2]:CLK
+  To:                          PID_FB/SPI/VD_STP/sr[9]:E
+  Delay (ns):                  7.157
+  Slack (ns):
+  Arrival (ns):                8.800
+  Required (ns):
+  Setup (ns):                  0.608
+  Minimum Period (ns):         7.494
+
+Path 5
+  From:                        PID_FB/SPI/SPICTL/cnt[3]:CLK
+  To:                          PID_FB/SPI/SPICTL/cnt[9]:D
+  Delay (ns):                  6.754
+  Slack (ns):
+  Arrival (ns):                8.397
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         7.477
+
+
+Expanded Path 1
+  From: PID_FB/SPI/SPICTL/cnt[2]:CLK
+  To: PID_FB/SPI/VD_STP/sr[3]:E
+  data required time                             N/C
+  data arrival time                          -   8.800
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        PID_FB/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  0.000                        PID_FB/SPICLK/cur_clk:Q (r)
+               +     1.643          net: sck_33_c
+  1.643                        PID_FB/SPI/SPICTL/cnt[2]:CLK (r)
+               +     0.737          cell: ADLIB:DFN1C0
+  2.380                        PID_FB/SPI/SPICTL/cnt[2]:Q (f)
+               +     0.382          net: PID_FB/SPI/SPICTL/cnt[2]
+  2.762                        PID_FB/SPI/SPICTL/cnt_RNIH8KA[3]:B (f)
+               +     0.647          cell: ADLIB:NOR2
+  3.409                        PID_FB/SPI/SPICTL/cnt_RNIH8KA[3]:Y (r)
+               +     0.334          net: PID_FB/SPI/SPICTL/N_103
+  3.743                        PID_FB/SPI/SPICTL/cnt_RNIBEUF[4]:B (r)
+               +     0.515          cell: ADLIB:OR2A
+  4.258                        PID_FB/SPI/SPICTL/cnt_RNIBEUF[4]:Y (r)
+               +     1.518          net: PID_FB/SPI/SPICTL/N_73
+  5.776                        PID_FB/SPI/SPICTL/cnt_RNI1K751[4]:C (r)
+               +     0.751          cell: ADLIB:NOR3C
+  6.527                        PID_FB/SPI/SPICTL/cnt_RNI1K751[4]:Y (r)
+               +     0.737          net: PID_FB/SPI/SPICTL/vd_stp_en_i_a3_9
+  7.264                        PID_FB/SPI/SPICTL/state_RNI7O4M4[0]:A (r)
+               +     0.469          cell: ADLIB:AO1B
+  7.733                        PID_FB/SPI/SPICTL/state_RNI7O4M4[0]:Y (r)
+               +     1.067          net: PID_FB/SPI/N_29
+  8.800                        PID_FB/SPI/VD_STP/sr[3]:E (r)
+                                    
+  8.800                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PID_FB/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  N/C                          PID_FB/SPICLK/cur_clk:Q (r)
+               +     1.773          net: sck_33_c
+  N/C                          PID_FB/SPI/VD_STP/sr[3]:CLK (r)
+               -     0.608          Library setup time: ADLIB:DFN1E0C0
+  N/C                          PID_FB/SPI/VD_STP/sr[3]:E
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+Path 1
+  From:                        din_fb
+  To:                          PID_FB/SPI/VD_STP/sr[0]:D
+  Delay (ns):                  4.077
+  Slack (ns):
+  Arrival (ns):                4.077
+  Required (ns):
+  Setup (ns):                  0.574
+  External Setup (ns):         2.238
+
+
+Expanded Path 1
+  From: din_fb
+  To: PID_FB/SPI/VD_STP/sr[0]:D
+  data required time                             N/C
+  data arrival time                          -   4.077
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        din_fb (r)
+               +     0.000          net: din_fb
+  0.000                        din_fb_pad/U0/U0:PAD (r)
+               +     1.202          cell: ADLIB:IOPAD_IN
+  1.202                        din_fb_pad/U0/U0:Y (r)
+               +     0.000          net: din_fb_pad/U0/NET1
+  1.202                        din_fb_pad/U0/U1:YIN (r)
+               +     0.043          cell: ADLIB:IOIN_IB
+  1.245                        din_fb_pad/U0/U1:Y (r)
+               +     2.832          net: din_fb_c
+  4.077                        PID_FB/SPI/VD_STP/sr[0]:D (r)
+                                    
+  4.077                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PID_FB/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  N/C                          PID_FB/SPICLK/cur_clk:Q (r)
+               +     2.413          net: sck_33_c
+  N/C                          PID_FB/SPI/VD_STP/sr[0]:CLK (r)
+               -     0.574          Library setup time: ADLIB:DFN1E0C0
+  N/C                          PID_FB/SPI/VD_STP/sr[0]:D
+
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        PID_FB/SPI/SPICTL/state[0]:CLK
+  To:                          cs_fb
+  Delay (ns):                  9.241
+  Slack (ns):
+  Arrival (ns):                11.361
+  Required (ns):
+  Clock to Out (ns):           11.361
+
+
+Expanded Path 1
+  From: PID_FB/SPI/SPICTL/state[0]:CLK
+  To: cs_fb
+  data required time                             N/C
+  data arrival time                          -   11.361
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        PID_FB/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  0.000                        PID_FB/SPICLK/cur_clk:Q (r)
+               +     2.120          net: sck_33_c
+  2.120                        PID_FB/SPI/SPICTL/state[0]:CLK (r)
+               +     0.581          cell: ADLIB:DFN1C0
+  2.701                        PID_FB/SPI/SPICTL/state[0]:Q (r)
+               +     2.491          net: PID_FB/SPI/cs_i_1
+  5.192                        PID_FB/SPI/SPICTL/state_RNIIODF[0]:A (r)
+               +     0.363          cell: ADLIB:INV
+  5.555                        PID_FB/SPI/SPICTL/state_RNIIODF[0]:Y (f)
+               +     1.480          net: PID_FB_SPI_cs_i_1_i
+  7.035                        cs_fb_pad/U0/U1:D (f)
+               +     0.659          cell: ADLIB:IOTRI_OB_EB
+  7.694                        cs_fb_pad/U0/U1:DOUT (f)
+               +     0.000          net: cs_fb_pad/U0/NET1
+  7.694                        cs_fb_pad/U0/U0:D (f)
+               +     3.667          cell: ADLIB:IOPAD_TRI
+  11.361                       cs_fb_pad/U0/U0:PAD (f)
+               +     0.000          net: cs_fb
+  11.361                       cs_fb (f)
+                                    
+  11.361                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PID_FB/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  N/C                          PID_FB/SPICLK/cur_clk:Q (r)
+                                    
+  N/C                          cs_fb (f)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+Path 1
+  From:                        n_rst
+  To:                          PID_FB/SPI/SPICTL/cnt[1]:CLR
+  Delay (ns):                  2.672
+  Slack (ns):
+  Arrival (ns):                2.672
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      2.524
+
+Path 2
+  From:                        n_rst
+  To:                          PID_FB/SPI/SPICTL/cnt[4]:CLR
+  Delay (ns):                  2.672
+  Slack (ns):
+  Arrival (ns):                2.672
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      2.524
+
+Path 3
+  From:                        n_rst
+  To:                          PID_FB/SPI/SPICTL/cnt[0]:CLR
+  Delay (ns):                  2.672
+  Slack (ns):
+  Arrival (ns):                2.672
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      1.858
+
+Path 4
+  From:                        n_rst
+  To:                          PID_FB/SPI/SPICTL/cnt[6]:CLR
+  Delay (ns):                  2.642
+  Slack (ns):
+  Arrival (ns):                2.642
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      1.568
+
+Path 5
+  From:                        n_rst
+  To:                          PID_FB/SPI/SPICTL/cnt[12]:CLR
+  Delay (ns):                  2.681
+  Slack (ns):
+  Arrival (ns):                2.681
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      1.542
+
+
+Expanded Path 1
+  From: n_rst
+  To: PID_FB/SPI/SPICTL/cnt[1]:CLR
+  data required time                             N/C
+  data arrival time                          -   2.672
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        n_rst (r)
+               +     0.000          net: n_rst
+  0.000                        n_rst_pad/U0/U0:PAD (r)
+               +     1.202          cell: ADLIB:IOPAD_IN
+  1.202                        n_rst_pad/U0/U0:Y (r)
+               +     0.000          net: n_rst_pad/U0/NET1
+  1.202                        n_rst_pad/U0/U1:A (r)
+               +     0.348          cell: ADLIB:CLKIO
+  1.550                        n_rst_pad/U0/U1:Y (r)
+               +     1.122          net: n_rst_c
+  2.672                        PID_FB/SPI/SPICTL/cnt[1]:CLR (r)
+                                    
+  2.672                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PID_FB/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  N/C                          PID_FB/SPICLK/cur_clk:Q (r)
+               +     0.445          net: sck_33_c
+  N/C                          PID_FB/SPI/SPICTL/cnt[1]:CLK (r)
+               -     0.297          Library recovery time: ADLIB:DFN1C0
+  N/C                          PID_FB/SPI/SPICTL/cnt[1]:CLR
+
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain clk
+
+SET Register to Register
+
+Path 1
+  From:                        DEC_SIG/sig_prev:CLK
+  To:                          CG/target_vfb[12]:D
+  Delay (ns):                  24.239
+  Slack (ns):
+  Arrival (ns):                27.047
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         24.779
+
+Path 2
+  From:                        CG/k_p12[3]:CLK
+  To:                          PID_12/SUM/preg[23]:D
+  Delay (ns):                  24.113
+  Slack (ns):
+  Arrival (ns):                26.913
+  Required (ns):
+  Setup (ns):                  0.504
+  Minimum Period (ns):         24.762
+
+Path 3
+  From:                        PID_5/SUM/state[3]:CLK
+  To:                          PID_5/SUM/sumreg[31]:D
+  Delay (ns):                  24.033
+  Slack (ns):
+  Arrival (ns):                26.721
+  Required (ns):
+  Setup (ns):                  0.504
+  Minimum Period (ns):         24.578
+
+Path 4
+  From:                        INC_SIG/sig_prev:CLK
+  To:                          CG/target_vfb[12]:D
+  Delay (ns):                  23.936
+  Slack (ns):
+  Arrival (ns):                26.744
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         24.476
+
+Path 5
+  From:                        DEC_SIG/sig_old:CLK
+  To:                          CG/target_vfb[12]:D
+  Delay (ns):                  23.930
+  Slack (ns):
+  Arrival (ns):                26.738
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         24.470
+
+
+Expanded Path 1
+  From: DEC_SIG/sig_prev:CLK
+  To: CG/target_vfb[12]:D
+  data required time                             N/C
+  data arrival time                          -   27.047
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        clk
+               +     0.000          Clock source
+  0.000                        clk (r)
+               +     0.000          net: clk
+  0.000                        clk_pad/U0/U0:PAD (r)
+               +     1.202          cell: ADLIB:IOPAD_IN
+  1.202                        clk_pad/U0/U0:Y (r)
+               +     0.000          net: clk_pad/U0/NET1
+  1.202                        clk_pad/U0/U1:A (r)
+               +     0.348          cell: ADLIB:CLKIO
+  1.550                        clk_pad/U0/U1:Y (r)
+               +     1.258          net: clk_c
+  2.808                        DEC_SIG/sig_prev:CLK (r)
+               +     0.737          cell: ADLIB:DFN1C0
+  3.545                        DEC_SIG/sig_prev:Q (f)
+               +     0.395          net: DEC_SIG/sig_prev
+  3.940                        DEC_SIG/sig_old_RNIOSVI:B (f)
+               +     0.628          cell: ADLIB:NOR2B
+  4.568                        DEC_SIG/sig_old_RNIOSVI:Y (f)
+               +     0.422          net: dec_constd
+  4.990                        CG/target_v5_1_sqmuxa:B (f)
+               +     0.631          cell: ADLIB:NOR2B
+  5.621                        CG/target_v5_1_sqmuxa:Y (f)
+               +     0.347          net: CG/target_v5_1_sqmuxa
+  5.968                        CG/target_vfb_1_sqmuxa:A (f)
+               +     0.386          cell: ADLIB:NOR2B
+  6.354                        CG/target_vfb_1_sqmuxa:Y (f)
+               +     1.516          net: CG/target_vfb_1_sqmuxa
+  7.870                        CG/target_vfb_RNIQ6FE4[0]:A (f)
+               +     0.520          cell: ADLIB:AO1D
+  8.390                        CG/target_vfb_RNIQ6FE4[0]:Y (r)
+               +     0.334          net: CG/target_vfb_c0
+  8.724                        CG/target_vfb_RNI3SJN6[0]:A (r)
+               +     0.516          cell: ADLIB:NOR2A
+  9.240                        CG/target_vfb_RNI3SJN6[0]:Y (r)
+               +     0.323          net: CG/N_337
+  9.563                        CG/target_vfb_RNI4D2LB[2]:A (r)
+               +     0.933          cell: ADLIB:OA1
+  10.496                       CG/target_vfb_RNI4D2LB[2]:Y (r)
+               +     1.016          net: CG/target_vfb_c2_0
+  11.512                       CG/target_vfb_RNI2ND6N[2]:B (r)
+               +     0.984          cell: ADLIB:OA1B
+  12.496                       CG/target_vfb_RNI2ND6N[2]:Y (r)
+               +     0.415          net: CG/N_343
+  12.911                       CG/target_vfb_RNIACJ7S[3]:B (r)
+               +     0.900          cell: ADLIB:OA1C
+  13.811                       CG/target_vfb_RNIACJ7S[3]:Y (r)
+               +     0.343          net: CG/N_346
+  14.154                       CG/target_vfb_RNISTTIO1[4]:C (r)
+               +     0.655          cell: ADLIB:AO1
+  14.809                       CG/target_vfb_RNISTTIO1[4]:Y (r)
+               +     0.497          net: CG/target_vfb_c4
+  15.306                       CG/target_vfb_RNIUJM402[5]:A (r)
+               +     0.900          cell: ADLIB:OA1B
+  16.206                       CG/target_vfb_RNIUJM402[5]:Y (r)
+               +     0.346          net: CG/N_352
+  16.552                       CG/target_vfb_RNILPTT72[7]:A (r)
+               +     0.984          cell: ADLIB:OA1
+  17.536                       CG/target_vfb_RNILPTT72[7]:Y (r)
+               +     0.334          net: CG/target_vfb_c7_0
+  17.870                       CG/target_vfb_RNIUE27A2[7]:B (r)
+               +     0.515          cell: ADLIB:OR2A
+  18.385                       CG/target_vfb_RNIUE27A2[7]:Y (r)
+               +     0.323          net: CG/target_vfb_c8_0_tz_0
+  18.708                       CG/target_vfb_RNIK905I4[8]:B (r)
+               +     0.911          cell: ADLIB:OA1
+  19.619                       CG/target_vfb_RNIK905I4[8]:Y (r)
+               +     0.334          net: CG/target_vfb_c8_0
+  19.953                       CG/target_vfb_RNIS99649[8]:B (r)
+               +     0.984          cell: ADLIB:OA1B
+  20.937                       CG/target_vfb_RNIS99649[8]:Y (r)
+               +     1.016          net: CG/N_361
+  21.953                       CG/target_vfb_RNINUIUE9[10]:A (r)
+               +     0.984          cell: ADLIB:OA1
+  22.937                       CG/target_vfb_RNINUIUE9[10]:Y (r)
+               +     0.483          net: CG/target_vfb_c10_0
+  23.420                       CG/target_vfb_RNO_2[12]:B (r)
+               +     0.984          cell: ADLIB:OA1B
+  24.404                       CG/target_vfb_RNO_2[12]:Y (r)
+               +     0.334          net: CG/N_367
+  24.738                       CG/target_vfb_RNO_0[12]:C (r)
+               +     0.655          cell: ADLIB:AO1
+  25.393                       CG/target_vfb_RNO_0[12]:Y (r)
+               +     0.334          net: CG/target_vfb_c11
+  25.727                       CG/target_vfb_RNO[12]:C (r)
+               +     0.986          cell: ADLIB:XNOR3
+  26.713                       CG/target_vfb_RNO[12]:Y (f)
+               +     0.334          net: CG/target_vfb_n12
+  27.047                       CG/target_vfb[12]:D (f)
+                                    
+  27.047                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          clk
+               +     0.000          Clock source
+  N/C                          clk (r)
+               +     0.000          net: clk
+  N/C                          clk_pad/U0/U0:PAD (r)
+               +     1.202          cell: ADLIB:IOPAD_IN
+  N/C                          clk_pad/U0/U0:Y (r)
+               +     0.000          net: clk_pad/U0/NET1
+  N/C                          clk_pad/U0/U1:A (r)
+               +     0.348          cell: ADLIB:CLKIO
+  N/C                          clk_pad/U0/U1:Y (r)
+               +     1.257          net: clk_c
+  N/C                          CG/target_vfb[12]:CLK (r)
+               -     0.539          Library setup time: ADLIB:DFN1C0
+  N/C                          CG/target_vfb[12]:D
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+Path 1
+  From:                        choose_cont[0]
+  To:                          CG/target_v15[12]:D
+  Delay (ns):                  34.728
+  Slack (ns):
+  Arrival (ns):                34.728
+  Required (ns):
+  Setup (ns):                  0.539
+  External Setup (ns):         32.607
+
+Path 2
+  From:                        choose_cont[0]
+  To:                          CG/k_i15[9]:D
+  Delay (ns):                  34.367
+  Slack (ns):
+  Arrival (ns):                34.367
+  Required (ns):
+  Setup (ns):                  0.539
+  External Setup (ns):         32.238
+
+Path 3
+  From:                        choose_cont[0]
+  To:                          CG/k_i15[12]:D
+  Delay (ns):                  33.256
+  Slack (ns):
+  Arrival (ns):                33.256
+  Required (ns):
+  Setup (ns):                  0.539
+  External Setup (ns):         31.140
+
+Path 4
+  From:                        choose_cont[0]
+  To:                          CG/target_v15[11]:D
+  Delay (ns):                  32.884
+  Slack (ns):
+  Arrival (ns):                32.884
+  Required (ns):
+  Setup (ns):                  0.574
+  External Setup (ns):         30.797
+
+Path 5
+  From:                        choose_cont[0]
+  To:                          CG/k_p15[12]:D
+  Delay (ns):                  32.818
+  Slack (ns):
+  Arrival (ns):                32.818
+  Required (ns):
+  Setup (ns):                  0.574
+  External Setup (ns):         30.671
+
+
+Expanded Path 1
+  From: choose_cont[0]
+  To: CG/target_v15[12]:D
+  data required time                             N/C
+  data arrival time                          -   34.728
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        choose_cont[0] (f)
+               +     0.000          net: choose_cont[0]
+  0.000                        choose_cont_pad[0]/U0/U0:PAD (f)
+               +     0.889          cell: ADLIB:IOPAD_IN
+  0.889                        choose_cont_pad[0]/U0/U0:Y (f)
+               +     0.000          net: choose_cont_pad[0]/U0/NET1
+  0.889                        choose_cont_pad[0]/U0/U1:YIN (f)
+               +     0.040          cell: ADLIB:IOIN_IB
+  0.929                        choose_cont_pad[0]/U0/U1:Y (f)
+               +     3.369          net: choose_cont_c[0]
+  4.298                        choose_cont_pad_RNIG7LA_0[0]:A (f)
+               +     0.537          cell: ADLIB:BUFF
+  4.835                        choose_cont_pad_RNIG7LA_0[0]:Y (f)
+               +     6.761          net: choose_cont_c_0[0]
+  11.596                       CG/k_i1519_0:A (f)
+               +     0.681          cell: ADLIB:NOR3B
+  12.277                       CG/k_i1519_0:Y (f)
+               +     0.308          net: CG/k_i1519_0
+  12.585                       CG/k_i1519:A (f)
+               +     0.515          cell: ADLIB:NOR2B
+  13.100                       CG/k_i1519:Y (f)
+               +     1.958          net: CG/k_i1519
+  15.058                       CG/target_m5_i_a3_0:B (f)
+               +     0.631          cell: ADLIB:NOR2B
+  15.689                       CG/target_m5_i_a3_0:Y (f)
+               +     3.410          net: CG/target_m5_i_a3_0
+  19.099                       CG/target_v15_RNII1QL2[1]:B (f)
+               +     0.641          cell: ADLIB:NOR3C
+  19.740                       CG/target_v15_RNII1QL2[1]:Y (f)
+               +     0.323          net: CG/target_N_6
+  20.063                       CG/target_v15_RNIN71Q2[3]:B (f)
+               +     0.647          cell: ADLIB:OR2A
+  20.710                       CG/target_v15_RNIN71Q2[3]:Y (f)
+               +     0.562          net: CG/target_v15_RNIN71Q2[3]
+  21.272                       CG/target_v15_RNIJBHC5[3]:B (f)
+               +     0.631          cell: ADLIB:NOR2B
+  21.903                       CG/target_v15_RNIJBHC5[3]:Y (f)
+               +     0.343          net: CG/target_v15_RNIJBHC5[3]
+  22.246                       CG/target_v15_RNIPFUJA[4]:C (f)
+               +     0.706          cell: ADLIB:AO1
+  22.952                       CG/target_v15_RNIPFUJA[4]:Y (f)
+               +     0.698          net: CG/target_v15_RNIPFUJA[4]
+  23.650                       CG/target_v15_RNIFHN8I[5]:A (f)
+               +     0.932          cell: ADLIB:OA1C
+  24.582                       CG/target_v15_RNIFHN8I[5]:Y (r)
+               +     0.406          net: CG/N_430
+  24.988                       CG/target_v15_RNIDSN1Q[6]:A (r)
+               +     0.900          cell: ADLIB:OA1B
+  25.888                       CG/target_v15_RNIDSN1Q[6]:Y (r)
+               +     0.334          net: CG/N_433
+  26.222                       CG/target_v15_RNI33N7K1[7]:B (r)
+               +     0.515          cell: ADLIB:OR2
+  26.737                       CG/target_v15_RNI33N7K1[7]:Y (r)
+               +     0.323          net: CG/target_v15_c7
+  27.060                       CG/target_v15_RNIM33LM1_0[8]:A (r)
+               +     0.647          cell: ADLIB:AO13
+  27.707                       CG/target_v15_RNIM33LM1_0[8]:Y (r)
+               +     0.384          net: CG/target_v15_c8
+  28.091                       CG/target_v15_RNIVO7UO1[8]:A (r)
+               +     0.591          cell: ADLIB:NOR2A
+  28.682                       CG/target_v15_RNIVO7UO1[8]:Y (r)
+               +     0.320          net: CG/N_439
+  29.002                       CG/target_v15_RNI09INF3[9]:C (r)
+               +     0.767          cell: ADLIB:AO1
+  29.769                       CG/target_v15_RNI09INF3[9]:Y (r)
+               +     0.483          net: CG/target_v15_c9
+  30.252                       CG/target_v15_RNISP0CI3[10]:A (r)
+               +     0.760          cell: ADLIB:AO13
+  31.012                       CG/target_v15_RNISP0CI3[10]:Y (r)
+               +     0.384          net: CG/target_v15_c10
+  31.396                       CG/target_v15_RNO_2[12]:A (r)
+               +     0.591          cell: ADLIB:NOR2A
+  31.987                       CG/target_v15_RNO_2[12]:Y (r)
+               +     0.320          net: CG/N_445
+  32.307                       CG/target_v15_RNO_0[12]:C (r)
+               +     0.767          cell: ADLIB:AO1
+  33.074                       CG/target_v15_RNO_0[12]:Y (r)
+               +     0.334          net: CG/target_v15_c11
+  33.408                       CG/target_v15_RNO[12]:C (r)
+               +     0.986          cell: ADLIB:XNOR3
+  34.394                       CG/target_v15_RNO[12]:Y (f)
+               +     0.334          net: CG/target_v15_n12
+  34.728                       CG/target_v15[12]:D (f)
+                                    
+  34.728                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          clk
+               +     0.000          Clock source
+  N/C                          clk (r)
+               +     0.000          net: clk
+  N/C                          clk_pad/U0/U0:PAD (r)
+               +     1.202          cell: ADLIB:IOPAD_IN
+  N/C                          clk_pad/U0/U0:Y (r)
+               +     0.000          net: clk_pad/U0/NET1
+  N/C                          clk_pad/U0/U1:A (r)
+               +     0.348          cell: ADLIB:CLKIO
+  N/C                          clk_pad/U0/U1:Y (r)
+               +     1.110          net: clk_c
+  N/C                          CG/target_v15[12]:CLK (r)
+               -     0.539          Library setup time: ADLIB:DFN1C0
+  N/C                          CG/target_v15[12]:D
+
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        PID_15/AVG_CALC/integ[9]:CLK
+  To:                          LED[2]
+  Delay (ns):                  21.069
+  Slack (ns):
+  Arrival (ns):                23.831
+  Required (ns):
+  Clock to Out (ns):           23.831
+
+Path 2
+  From:                        CG/target_v15[3]:CLK
+  To:                          LED[3]
+  Delay (ns):                  19.934
+  Slack (ns):
+  Arrival (ns):                22.595
+  Required (ns):
+  Clock to Out (ns):           22.595
+
+Path 3
+  From:                        PID_15/AVG_CALC/integ[11]:CLK
+  To:                          LED[4]
+  Delay (ns):                  19.699
+  Slack (ns):
+  Arrival (ns):                22.393
+  Required (ns):
+  Clock to Out (ns):           22.393
+
+Path 4
+  From:                        PID_15/AVG_CALC/integ[12]:CLK
+  To:                          LED[5]
+  Delay (ns):                  19.407
+  Slack (ns):
+  Arrival (ns):                22.045
+  Required (ns):
+  Clock to Out (ns):           22.045
+
+Path 5
+  From:                        PID_15/AVG_CALC/integ[13]:CLK
+  To:                          LED[6]
+  Delay (ns):                  19.036
+  Slack (ns):
+  Arrival (ns):                21.685
+  Required (ns):
+  Clock to Out (ns):           21.685
+
+
+Expanded Path 1
+  From: PID_15/AVG_CALC/integ[9]:CLK
+  To: LED[2]
+  data required time                             N/C
+  data arrival time                          -   23.831
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        clk
+               +     0.000          Clock source
+  0.000                        clk (r)
+               +     0.000          net: clk
+  0.000                        clk_pad/U0/U0:PAD (r)
+               +     1.202          cell: ADLIB:IOPAD_IN
+  1.202                        clk_pad/U0/U0:Y (r)
+               +     0.000          net: clk_pad/U0/NET1
+  1.202                        clk_pad/U0/U1:A (r)
+               +     0.348          cell: ADLIB:CLKIO
+  1.550                        clk_pad/U0/U1:Y (r)
+               +     1.212          net: clk_c
+  2.762                        PID_15/AVG_CALC/integ[9]:CLK (r)
+               +     0.737          cell: ADLIB:DFN1C0
+  3.499                        PID_15/AVG_CALC/integ[9]:Q (f)
+               +     6.553          net: LED_15[2]
+  10.052                       PID_33/SUM/cur_k_0_i[2]:B (f)
+               +     0.572          cell: ADLIB:MX2C
+  10.624                       PID_33/SUM/cur_k_0_i[2]:Y (r)
+               +     0.323          net: PID_33/SUM/N_411
+  10.947                       PID_33/SUM/LED_0_a3_0_0[2]:A (r)
+               +     0.732          cell: ADLIB:OA1A
+  11.679                       PID_33/SUM/LED_0_a3_0_0[2]:Y (f)
+               +     0.308          net: PID_33/SUM/LED_0_a3_0[2]
+  11.987                       PID_33/SUM/LED_0_a3[2]:C (f)
+               +     0.405          cell: ADLIB:AOI1B
+  12.392                       PID_33/SUM/LED_0_a3[2]:Y (f)
+               +     1.660          net: N_611
+  14.052                       CG/LED_0_7[2]:B (f)
+               +     0.714          cell: ADLIB:OR3
+  14.766                       CG/LED_0_7[2]:Y (f)
+               +     1.107          net: CG/LED_0_7[2]
+  15.873                       CG/k_p33_RNIGG5L01[2]:B (f)
+               +     0.624          cell: ADLIB:OR3
+  16.497                       CG/k_p33_RNIGG5L01[2]:Y (f)
+               +     3.085          net: LED_c[2]
+  19.582                       LED_pad[2]/U0/U1:D (f)
+               +     0.582          cell: ADLIB:IOTRI_OB_EB
+  20.164                       LED_pad[2]/U0/U1:DOUT (f)
+               +     0.000          net: LED_pad[2]/U0/NET1
+  20.164                       LED_pad[2]/U0/U0:D (f)
+               +     3.667          cell: ADLIB:IOPAD_TRI
+  23.831                       LED_pad[2]/U0/U0:PAD (f)
+               +     0.000          net: LED[2]
+  23.831                       LED[2] (f)
+                                    
+  23.831                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          clk
+               +     0.000          Clock source
+  N/C                          clk (r)
+                                    
+  N/C                          LED[2] (f)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+Path 1
+  From:                        n_rst
+  To:                          PID_33/SPICLK/cur_clk:CLR
+  Delay (ns):                  2.679
+  Slack (ns):
+  Arrival (ns):                2.679
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      0.327
+
+Path 2
+  From:                        n_rst
+  To:                          PID_FB/SPICLK/cur_clk:CLR
+  Delay (ns):                  2.672
+  Slack (ns):
+  Arrival (ns):                2.672
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      0.320
+
+Path 3
+  From:                        n_rst
+  To:                          PID_12/SPICLK/counter[0]:CLR
+  Delay (ns):                  2.672
+  Slack (ns):
+  Arrival (ns):                2.672
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      0.320
+
+Path 4
+  From:                        n_rst
+  To:                          PID_12/CONTROLLER/state_4[2]:CLR
+  Delay (ns):                  2.685
+  Slack (ns):
+  Arrival (ns):                2.685
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      0.319
+
+Path 5
+  From:                        n_rst
+  To:                          PID_12/SPICLK/cur_clk:CLR
+  Delay (ns):                  2.685
+  Slack (ns):
+  Arrival (ns):                2.685
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      0.319
+
+
+Expanded Path 1
+  From: n_rst
+  To: PID_33/SPICLK/cur_clk:CLR
+  data required time                             N/C
+  data arrival time                          -   2.679
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        n_rst (r)
+               +     0.000          net: n_rst
+  0.000                        n_rst_pad/U0/U0:PAD (r)
+               +     1.202          cell: ADLIB:IOPAD_IN
+  1.202                        n_rst_pad/U0/U0:Y (r)
+               +     0.000          net: n_rst_pad/U0/NET1
+  1.202                        n_rst_pad/U0/U1:A (r)
+               +     0.348          cell: ADLIB:CLKIO
+  1.550                        n_rst_pad/U0/U1:Y (r)
+               +     1.129          net: n_rst_c
+  2.679                        PID_33/SPICLK/cur_clk:CLR (r)
+                                    
+  2.679                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          clk
+               +     0.000          Clock source
+  N/C                          clk (r)
+               +     0.000          net: clk
+  N/C                          clk_pad/U0/U0:PAD (r)
+               +     1.202          cell: ADLIB:IOPAD_IN
+  N/C                          clk_pad/U0/U0:Y (r)
+               +     0.000          net: clk_pad/U0/NET1
+  N/C                          clk_pad/U0/U1:A (r)
+               +     0.348          cell: ADLIB:CLKIO
+  N/C                          clk_pad/U0/U1:Y (r)
+               +     1.099          net: clk_c
+  N/C                          PID_33/SPICLK/cur_clk:CLK (r)
+               -     0.297          Library recovery time: ADLIB:DFN1C0
+  N/C                          PID_33/SPICLK/cur_clk:CLR
+
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Path set Pin to Pin
+
+SET Input to Output
+
+Path 1
+  From:                        choose_const[2]
+  To:                          LED[7]
+  Delay (ns):                  30.375
+  Slack (ns):
+  Arrival (ns):                30.375
+  Required (ns):
+
+Path 2
+  From:                        choose_const[3]
+  To:                          LED[7]
+  Delay (ns):                  29.954
+  Slack (ns):
+  Arrival (ns):                29.954
+  Required (ns):
+
+Path 3
+  From:                        choose_cont[3]
+  To:                          LED[7]
+  Delay (ns):                  29.399
+  Slack (ns):
+  Arrival (ns):                29.399
+  Required (ns):
+
+Path 4
+  From:                        choose_cont[1]
+  To:                          LED[7]
+  Delay (ns):                  29.011
+  Slack (ns):
+  Arrival (ns):                29.011
+  Required (ns):
+
+Path 5
+  From:                        choose_const[2]
+  To:                          LED[4]
+  Delay (ns):                  27.962
+  Slack (ns):
+  Arrival (ns):                27.962
+  Required (ns):
+
+
+Expanded Path 1
+  From: choose_const[2]
+  To: LED[7]
+  data required time                             N/C
+  data arrival time                          -   30.375
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        choose_const[2] (f)
+               +     0.000          net: choose_const[2]
+  0.000                        choose_const_pad[2]/U0/U0:PAD (f)
+               +     0.889          cell: ADLIB:IOPAD_IN
+  0.889                        choose_const_pad[2]/U0/U0:Y (f)
+               +     0.000          net: choose_const_pad[2]/U0/NET1
+  0.889                        choose_const_pad[2]/U0/U1:YIN (f)
+               +     0.040          cell: ADLIB:IOIN_IB
+  0.929                        choose_const_pad[2]/U0/U1:Y (f)
+               +     2.468          net: choose_const_c[2]
+  3.397                        CG/k_i521_2:A (f)
+               +     0.386          cell: ADLIB:NOR2B
+  3.783                        CG/k_i521_2:Y (f)
+               +     1.239          net: CG_k_i521_2
+  5.022                        CG/k_i521_2_RNI7FNP:A (f)
+               +     0.386          cell: ADLIB:NOR2B
+  5.408                        CG/k_i521_2_RNI7FNP:Y (f)
+               +     0.461          net: N_905
+  5.869                        PID_12/AVG_CALC/LED_0_a2_24[0]:A (f)
+               +     0.386          cell: ADLIB:NOR2B
+  6.255                        PID_12/AVG_CALC/LED_0_a2_24[0]:Y (f)
+               +     0.981          net: PID_12/AVG_CALC/N_906
+  7.236                        PID_12/AVG_CALC/LED_0_a2_12[0]:A (f)
+               +     0.631          cell: ADLIB:NOR2A
+  7.867                        PID_12/AVG_CALC/LED_0_a2_12[0]:Y (f)
+               +     1.649          net: PID_12/AVG_CALC/N_909
+  9.516                        PID_12/AVG_CALC/LED_0_a2_0[0]:B (f)
+               +     0.631          cell: ADLIB:NOR2B
+  10.147                       PID_12/AVG_CALC/LED_0_a2_0[0]:Y (f)
+               +     4.256          net: N_919
+  14.403                       PID_33/EC/un2_diffreg_0_0_LED_0_a3_10[7]:B (f)
+               +     0.631          cell: ADLIB:NOR2B
+  15.034                       PID_33/EC/un2_diffreg_0_0_LED_0_a3_10[7]:Y (f)
+               +     0.343          net: PID_33/EC/N_687
+  15.377                       PID_33/EC/un2_diffreg_0_0_LED_0_5[7]:C (f)
+               +     0.706          cell: ADLIB:AO1
+  16.083                       PID_33/EC/un2_diffreg_0_0_LED_0_5[7]:Y (f)
+               +     3.156          net: PID_33/EC/LED_0_5[7]
+  19.239                       PID_33/EC/un2_diffreg_0_0_LED_0_9[7]:C (f)
+               +     0.751          cell: ADLIB:OR3
+  19.990                       PID_33/EC/un2_diffreg_0_0_LED_0_9[7]:Y (f)
+               +     3.031          net: PID_33/EC/LED_0_9[7]
+  23.021                       PID_33/EC/un2_diffreg_0_0_LED_0_a3_4_0_RNIDC3RV[7]:C (f)
+               +     0.664          cell: ADLIB:OR3
+  23.685                       PID_33/EC/un2_diffreg_0_0_LED_0_a3_4_0_RNIDC3RV[7]:Y (f)
+               +     2.441          net: LED_c[7]
+  26.126                       LED_pad[7]/U0/U1:D (f)
+               +     0.582          cell: ADLIB:IOTRI_OB_EB
+  26.708                       LED_pad[7]/U0/U1:DOUT (f)
+               +     0.000          net: LED_pad[7]/U0/NET1
+  26.708                       LED_pad[7]/U0/U0:D (f)
+               +     3.667          cell: ADLIB:IOPAD_TRI
+  30.375                       LED_pad[7]/U0/U0:PAD (f)
+               +     0.000          net: LED[7]
+  30.375                       LED[7] (f)
+                                    
+  30.375                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          choose_const[2] (f)
+                                    
+  N/C                          LED[7] (f)
+                                    
+  N/C                          data required time
+
+
+END SET Input to Output
+
+----------------------------------------------------
+
+Path set User Sets
+

@@ -1,0 +1,27 @@
+#Build: Synplify Pro E-2010.09A-1, Build 006R, Oct  6 2010
+#install: C:\Actel9.1SPB\Libero_v9.1\Synopsys\synplify_E201009A-1
+#OS: Windows XP 5.1
+#Hostname: VXP-SUDEEPS
+
+#Implementation: synthesis
+
+#Fri Jun 10 10:25:08 2011
+
+$ Start of Compile
+#Fri Jun 10 10:25:08 2011
+
+Synopsys VHDL Compiler, version comp520rcp1, Build 028R, built Sep 23 2010
+@N|Running in 32-bit mode
+Copyright (C) 1994-2010, Synopsys Inc.  All Rights Reserved
+
+@N: CD720 :"C:\Actel9.1SPB\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\Actelprj\App_notes\A3PE_starter\test_OLED\new_oled\PA3e_start_v3\PA3E_starter_demo_v1\hdl\top_oled_v2.vhd":7:7:7:14|Top entity is set to top_oled.
+@W: CD643 :"C:\Actelprj\App_notes\A3PE_starter\test_OLED\new_oled\PA3e_start_v3\PA3E_starter_demo_v1\hdl\OLED_driver_proasic3e_hdl_v4.vhd":19:28:19:28|Ignoring use clause - oled_driver_pkg not found ...
+@E: CD415 :"C:\Actelprj\App_notes\A3PE_starter\test_OLED\new_oled\PA3e_start_v3\PA3E_starter_demo_v1\hdl\top_oled_v2.vhd":54:2:54:7|Expecting keyword end
+1 error parsing file C:\Actelprj\App_notes\A3PE_starter\test_OLED\new_oled\PA3e_start_v3\PA3E_starter_demo_v1\hdl\top_oled_v2.vhd
+@END
+@E|Parse errors encountered - exiting
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Jun 10 10:25:08 2011
+
+###########################################################]

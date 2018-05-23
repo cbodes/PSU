@@ -1,0 +1,75 @@
+Synopsys HDL Compiler, version comp2016q3p1, Build 117R, built Nov 17 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 127R, built Nov 24 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@N:: Running Verilog Compiler in System Verilog mode
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.v" (library work)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\PID Project\SPI_recieveer\hdl\spi_clk.v" (library work)
+@I::"C:\PID Project\SPI_recieveer\hdl\spi_ctl.v" (library work)
+@I::"C:\PID Project\SPI_recieveer\hdl\spi_pts.v" (library work)
+@I::"C:\PID Project\SPI_recieveer\hdl\spi_stp.v" (library work)
+@I::"C:\PID Project\SPI_recieveer\hdl\spi_rx.v" (library work)
+Verilog syntax check successful!
+Selecting top level module spi_rx
+@N: CG364 :"C:\PID Project\SPI_recieveer\hdl\spi_clk.v":21:7:21:13|Synthesizing module spi_clk in library work.
+
+	DIVIDER=32'b00000000000000000000000000010100
+   Generated name = spi_clk_20s
+
+@W: CL271 :"C:\PID Project\SPI_recieveer\hdl\spi_clk.v":30:0:30:5|Pruning unused bits 5 to 1 of cur_clk[5:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"C:\PID Project\SPI_recieveer\hdl\spi_ctl.v":21:7:21:13|Synthesizing module spi_ctl in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001000
+	NUM_CHANNELS=32'b00000000000000000000000000000001
+   Generated name = spi_ctl_8s_1s
+
+@N: CG364 :"C:\PID Project\SPI_recieveer\hdl\spi_pts.v":21:7:21:13|Synthesizing module spi_pts in library work.
+
+	CHAN_WIDTH=32'b00000000000000000000000000000101
+   Generated name = spi_pts_5s
+
+@N: CG364 :"C:\PID Project\SPI_recieveer\hdl\spi_stp.v":21:7:21:13|Synthesizing module spi_stp in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001000
+   Generated name = spi_stp_8s
+
+@N: CG364 :"C:\PID Project\SPI_recieveer\hdl\spi_rx.v":21:7:21:12|Synthesizing module spi_rx in library work.
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 72MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Mar 01 22:42:06 2018
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 117R, built Nov 17 2016
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Mar 01 22:42:07 2018
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Mar 01 22:42:07 2018
+
+###########################################################]

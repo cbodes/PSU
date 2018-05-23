@@ -1,0 +1,93 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: MO231 :"c:\pid project\pid_controller\hdl\psu_controller.v":35:0:35:5|Found counter in view:work.PSU_controller(verilog) instance cnt[25:0] 
+@N: MO231 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Found counter in view:work.controller_Z1(verilog) instance count[15:0] 
+@N: MO231 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Found counter in view:work.controller_Z1(verilog) instance avg_count[4:0] 
+@N: MF184 :"c:\pid project\pid_controller\hdl\error_calc.v":40:19:40:36|Found 13 by 13 bit subtractor, 'un2_diffreg_0_0[12:0]'
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF238 :"c:\pid project\pid_controller\hdl\integral_calc.v":34:0:34:5|Found 13-bit incrementor, 'inf_abs0_a_0[12:0]'
+@N: MF238 :"c:\pid project\pid_controller\hdl\integral_calc.v":34:0:34:5|Found 13-bit incrementor, 'inf_abs1_a_1[12:0]'
+@N: MF238 :"c:\pid project\pid_controller\hdl\integral_calc.v":34:0:34:5|Found 13-bit incrementor, 'inf_abs0_a_0[12:0]'
+@N: MF238 :"c:\pid project\pid_controller\hdl\integral_calc.v":34:0:34:5|Found 13-bit incrementor, 'inf_abs1_a_1[12:0]'
+@N: MF184 :"c:\pid project\pid_controller\hdl\derivative_calc.v":33:21:33:43|Found 13 by 13 bit subtractor, 'un2_deriv_out_0_0[12:0]'
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[0] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[1] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[2] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[3] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[4] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[5] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[6] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[7] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[8] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[9] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[10] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[11] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: MF176 |Default generator successful 
+@N: MF238 :"c:\pid project\pid_controller\hdl\pid_sum.v":48:0:48:5|Found 13-bit incrementor, 'inf_abs1_a_2[12:0]'
+@N: MF238 :"c:\pid project\pid_controller\hdl\pid_sum.v":48:0:48:5|Found 26-bit incrementor, 'inf_abs2_a_0[25:0]'
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF238 :"c:\pid project\pid_controller\hdl\spi_clk.v":40:17:40:26|Found 9-bit incrementor, 'un3_counter[8:0]'
+@N: MO231 :"c:\pid project\pid_controller\hdl\spi_ctl.v":39:0:39:5|Found counter in view:work.spi_ctl_12s_0(verilog) instance cnt[15:0] 
+@N: MO225 :"c:\pid project\pid_controller\hdl\spi_ctl.v":39:0:39:5|There are no possible illegal states for state machine state[1:0] (in view: work.spi_ctl_12s_0(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\pid project\pid_controller\hdl\pwm_ctl.v":49:0:49:5|There are no possible illegal states for state machine state[3:0] (in view: work.pwm_ctl_188_32s_13s_4056_1s_0_1_2_3(verilog)); safe FSM implementation is not required.
+@N: MF176 |Default generator successful 
+@N: MF238 :"c:\pid project\pid_controller\hdl\pwm_ctl.v":97:28:97:37|Found 24-bit incrementor, 'un1_nsum_adj[23:0]'
+@N: MO231 :"c:\pid project\pid_controller\hdl\pwm_tx.v":50:0:50:5|Found counter in view:work.pwm_tx_188_32s_13s_10_4056_188(verilog) instance counter[31:0] 
+@N: MF179 :"c:\pid project\pid_controller\hdl\pwm_tx.v":57:33:57:52|Found 32 by 32 bit less-than operator ('<') un1_counter_2 (in view: work.pwm_tx_188_32s_13s_10_4056_188(verilog))
+@N: MO231 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Found counter in view:work.controller_Z3_0(verilog) instance count[15:0] 
+@N: MF238 :"c:\pid project\pid_controller\hdl\integral_calc.v":34:0:34:5|Found 13-bit incrementor, 'inf_abs0_a_0[12:0]'
+@N: MF238 :"c:\pid project\pid_controller\hdl\integral_calc.v":34:0:34:5|Found 13-bit incrementor, 'inf_abs1_a_1[12:0]'
+@N: MF238 :"c:\pid project\pid_controller\hdl\spi_clk.v":40:17:40:26|Found 9-bit incrementor, 'un17_counter[8:0]'
+@N: MO231 :"c:\pid project\pid_controller\hdl\spi_ctl.v":39:0:39:5|Found counter in view:work.spi_ctl_12s_1(verilog) instance cnt[15:0] 
+@N: MO225 :"c:\pid project\pid_controller\hdl\spi_ctl.v":39:0:39:5|There are no possible illegal states for state machine state[1:0] (in view: work.spi_ctl_12s_1(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\pid project\pid_controller\hdl\pwm_ctl.v":49:0:49:5|There are no possible illegal states for state machine state[3:0] (in view: work.pwm_ctl_157_32s_13s_76179_1s_0_1_2_3(verilog)); safe FSM implementation is not required.
+@N: MF238 :"c:\pid project\pid_controller\hdl\pwm_ctl.v":97:28:97:37|Found 24-bit incrementor, 'un13_nsum_adj[23:0]'
+@N: MO231 :"c:\pid project\pid_controller\hdl\pwm_tx.v":50:0:50:5|Found counter in view:work.pwm_tx_157_32s_13s_10_76179_157(verilog) instance counter[31:0] 
+@N: MF179 :"c:\pid project\pid_controller\hdl\pwm_tx.v":57:33:57:52|Found 32 by 32 bit less-than operator ('<') un1_counter_2 (in view: work.pwm_tx_157_32s_13s_10_76179_157(verilog))
+@N: MO231 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Found counter in view:work.controller_Z3(verilog) instance count[15:0] 
+@N: MF238 :"c:\pid project\pid_controller\hdl\spi_clk.v":40:17:40:26|Found 9-bit incrementor, 'un3_counter[8:0]'
+@N: MO231 :"c:\pid project\pid_controller\hdl\spi_ctl.v":39:0:39:5|Found counter in view:work.spi_ctl_12s_2(verilog) instance cnt[15:0] 
+@N: MO225 :"c:\pid project\pid_controller\hdl\spi_ctl.v":39:0:39:5|There are no possible illegal states for state machine state[1:0] (in view: work.spi_ctl_12s_2(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\pid project\pid_controller\hdl\pwm_ctl.v":49:0:49:5|There are no possible illegal states for state machine state[3:0] (in view: work.pwm_ctl_34_32s_13s_1000000_1s_0_1_2_3(verilog)); safe FSM implementation is not required.
+@N: MF238 :"c:\pid project\pid_controller\hdl\pwm_ctl.v":97:28:97:37|Found 24-bit incrementor, 'un25_nsum_adj[23:0]'
+@N: MO231 :"c:\pid project\pid_controller\hdl\pwm_tx.v":50:0:50:5|Found counter in view:work.pwm_tx_34_32s_13s_10_1000000_34(verilog) instance counter[31:0] 
+@N: MF179 :"c:\pid project\pid_controller\hdl\pwm_tx.v":57:33:57:52|Found 32 by 32 bit less-than operator ('<') un1_counter_2 (in view: work.pwm_tx_34_32s_13s_10_1000000_34(verilog))
+@N: MF238 :"c:\pid project\pid_controller\hdl\spi_clk.v":40:17:40:26|Found 9-bit incrementor, 'un3_counter[8:0]'
+@N: MO231 :"c:\pid project\pid_controller\hdl\spi_ctl.v":39:0:39:5|Found counter in view:work.spi_ctl_12s_3(verilog) instance cnt[15:0] 
+@N: MO225 :"c:\pid project\pid_controller\hdl\spi_ctl.v":39:0:39:5|There are no possible illegal states for state machine state[1:0] (in view: work.spi_ctl_12s_3(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\pid project\pid_controller\hdl\pwm_ctl.v":49:0:49:5|There are no possible illegal states for state machine state[3:0] (in view: work.pwm_ctl_321_32s_13s_10066_1s_0_1_2_3(verilog)); safe FSM implementation is not required.
+@N: MF238 :"c:\pid project\pid_controller\hdl\pwm_ctl.v":97:28:97:37|Found 24-bit incrementor, 'un37_nsum_adj[23:0]'
+@N: MO231 :"c:\pid project\pid_controller\hdl\pwm_tx.v":50:0:50:5|Found counter in view:work.pwm_tx_321_32s_13s_10_10066_321(verilog) instance counter[31:0] 
+@N: MF179 :"c:\pid project\pid_controller\hdl\pwm_tx.v":57:33:57:52|Found 32 by 32 bit less-than operator ('<') un1_counter_2 (in view: work.pwm_tx_321_32s_13s_10_10066_321(verilog))
+@N: MF238 :"c:\pid project\pid_controller\hdl\spi_clk.v":40:17:40:26|Found 9-bit incrementor, 'un3_counter[8:0]'
+@N: MO231 :"c:\pid project\pid_controller\hdl\spi_ctl.v":39:0:39:5|Found counter in view:work.spi_ctl_12s_4(verilog) instance cnt[15:0] 
+@N: MO225 :"c:\pid project\pid_controller\hdl\spi_ctl.v":39:0:39:5|There are no possible illegal states for state machine state[1:0] (in view: work.spi_ctl_12s_4(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\pid project\pid_controller\hdl\pwm_ctl.v":49:0:49:5|There are no possible illegal states for state machine state[3:0] (in view: work.pwm_ctl_75_32s_13s_14630_1s_0_1_2_3(verilog)); safe FSM implementation is not required.
+@N: MF238 :"c:\pid project\pid_controller\hdl\pwm_ctl.v":97:28:97:37|Found 24-bit incrementor, 'un49_nsum_adj[23:0]'
+@N: MO231 :"c:\pid project\pid_controller\hdl\pwm_tx.v":50:0:50:5|Found counter in view:work.pwm_tx_75_32s_13s_10_14630_75(verilog) instance counter[31:0] 
+@N: MF179 :"c:\pid project\pid_controller\hdl\pwm_tx.v":57:33:57:52|Found 32 by 32 bit less-than operator ('<') un1_counter_2 (in view: work.pwm_tx_75_32s_13s_10_14630_75(verilog))
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":186:0:186:5|Found up-down counter in view:work.constant_gen(verilog) instance k_pfb[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":186:0:186:5|Found up-down counter in view:work.constant_gen(verilog) instance k_ifb[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":153:0:153:5|Found up-down counter in view:work.constant_gen(verilog) instance k_p12[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":153:0:153:5|Found up-down counter in view:work.constant_gen(verilog) instance k_i12[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":120:0:120:5|Found up-down counter in view:work.constant_gen(verilog) instance k_p15[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":120:0:120:5|Found up-down counter in view:work.constant_gen(verilog) instance k_i15[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":87:0:87:5|Found up-down counter in view:work.constant_gen(verilog) instance k_p33[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":87:0:87:5|Found up-down counter in view:work.constant_gen(verilog) instance k_i33[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":54:0:54:5|Found up-down counter in view:work.constant_gen(verilog) instance k_p5[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":54:0:54:5|Found up-down counter in view:work.constant_gen(verilog) instance k_i5[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":186:0:186:5|Found up-down counter in view:work.constant_gen(verilog) instance target_vfb[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":153:0:153:5|Found up-down counter in view:work.constant_gen(verilog) instance target_v12[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":120:0:120:5|Found up-down counter in view:work.constant_gen(verilog) instance target_v15[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":87:0:87:5|Found up-down counter in view:work.constant_gen(verilog) instance target_v33[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":54:0:54:5|Found up-down counter in view:work.constant_gen(verilog) instance target_v5[12:0]  
+@N: FP130 |Promoting Net n_rst_c on CLKBUF  n_rst_pad 
+@N: FP130 |Promoting Net clk_c on CLKBUF  clk_pad 
+@N: FP130 |Promoting Net PID_FB.int_enable on CLKINT  I_585 
+@N: FP130 |Promoting Net PID_5.int_enable on CLKINT  I_586 
+@N: FP130 |Promoting Net PID_15.int_enable on CLKINT  I_587 
+@N: FP130 |Promoting Net PID_12.int_enable on CLKINT  I_588 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

@@ -1,0 +1,15 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: MF238 :"c:\pid project\proasic3e_starter_kit_demo\hdl\top_oled_v2.vhd":105:18:105:32|Found 19-bit incrementor, 'un2_int_count_3[18:0]'
+@N: MF238 :"c:\pid project\proasic3e_starter_kit_demo\hdl\top_oled_v2.vhd":105:18:105:32|Found 20-bit incrementor, 'un2_int_count[19:0]'
+@N: MO231 :"c:\pid project\proasic3e_starter_kit_demo\hdl\oled_driver_proasic3e_hdl_v4.vhd":125:4:125:5|Found counter in view:work.OLED_driver(def_arch) instance data_count[3:0] 
+@N: MO231 :"c:\pid project\proasic3e_starter_kit_demo\hdl\oled_driver_proasic3e_hdl_v4.vhd":125:4:125:5|Found counter in view:work.OLED_driver(def_arch) instance splash_hold_count[20:0] 
+@N: MO106 :"c:\pid project\proasic3e_starter_kit_demo\hdl\oled_driver_proasic3e_hdl_v4.vhd":290:31:290:39|Found ROM .delname. (in view: work.OLED_driver(def_arch)) with 19 words by 8 bits.
+@N: MF238 :"c:\pid project\proasic3e_starter_kit_demo\hdl\oled_driver_proasic3e_hdl_v4.vhd":225:40:225:52|Found 4-bit incrementor, 'un4_bit_count_1[3:0]'
+@N: MO231 :"c:\pid project\proasic3e_starter_kit_demo\hdl\binary_counter.vhd":21:4:21:5|Found counter in view:work.binary_counter(behavioral) instance Qaux[2:0] 
+@N: FP130 |Promoting Net OLED_clk_in_c on CLKINT  OLED_clk_in_inferred_clock 
+@N: FP130 |Promoting Net inst_oled_driver.un1_state_13 on CLKINT  I_63 
+@N: FP130 |Promoting Net inst_oled_driver.byte_count[6] on CLKINT  I_64 
+@N: FP130 |Promoting Net inst_oled_driver.byte_count[4] on CLKINT  I_65 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

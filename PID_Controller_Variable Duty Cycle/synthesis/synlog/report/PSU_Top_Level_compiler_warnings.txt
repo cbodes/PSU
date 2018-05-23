@@ -1,0 +1,98 @@
+@W: CL169 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":50:0:50:5|Pruning unused register id[12:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":50:0:50:5|Pruning unused register sum_rem[15:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":50:0:50:5|Pruning register bits 39 to 24 of sum_adj[39:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":50:0:50:5|Pruning register bits 9 to 0 of sum_adj[39:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\pwm_tx.v":37:29:37:35|Object sec_lim is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\pwm_tx.v":38:13:38:25|Object cur_secondary is declared but not assigned. Either assign a value or remove the declaration.
+@W: CS263 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":69:38:69:46|Port-width mismatch for port wait_time. The port definition is 12 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":117:43:117:45|Port-width mismatch for port k_d. The port definition is 13 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\constant_gen.v":36:11:36:22|Object pre_delayreg is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\constant_gen.v":36:25:36:37|Object post_delayreg is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\constant_gen.v":37:20:37:25|Object k_ireg is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\constant_gen.v":37:28:37:33|Object k_dreg is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\constant_gen.v":37:36:37:41|Object k_preg is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\constant_gen.v":37:44:37:49|Object vd_reg is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":26:11:26:16|Removing wire sck_12, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":26:19:26:23|Removing wire cs_12, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":26:26:26:35|Removing wire primary_12, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":26:38:26:49|Removing wire secondary_12, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":30:11:30:16|Removing wire sck_fb, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":30:19:30:23|Removing wire cs_fb, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":30:26:30:35|Removing wire primary_fb, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":30:38:30:49|Removing wire secondary_fb, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":32:11:32:15|Removing wire sck_5, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":32:18:32:21|Removing wire cs_5, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":32:24:32:32|Removing wire primary_5, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":32:35:32:45|Removing wire secondary_5, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":34:11:34:16|Removing wire sck_15, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":34:19:34:23|Removing wire cs_15, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":34:26:34:35|Removing wire primary_15, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":34:38:34:49|Removing wire secondary_15, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":47:11:47:16|Removing wire LED_12, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":47:19:47:24|Removing wire LED_FB, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":47:27:47:31|Removing wire LED_5, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":47:42:47:47|Removing wire LED_15, as there is no assignment to it.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":48:10:48:15|Object choose is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":49:28:49:36|Object choose_cd is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":49:39:49:50|Object choos_constd is declared but not assigned. Either assign a value or remove the declaration.
+@W: CL156 :"C:\PID Project\PID_Controller\hdl\constant_gen.v":186:0:186:5|*Input un1_LED_5[11:0] to expression [pmux] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\PID Project\PID_Controller\hdl\constant_gen.v":186:0:186:5|*Input un1_LED_15[11:0] to expression [pmux] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\PID Project\PID_Controller\hdl\constant_gen.v":186:0:186:5|*Input un1_LED_12[11:0] to expression [pmux] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\PID Project\PID_Controller\hdl\constant_gen.v":186:0:186:5|*Input un1_LED_FB[11:0] to expression [pmux] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":26:11:26:16|*Output sck_12 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":26:19:26:23|*Output cs_12 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":26:26:26:35|*Output primary_12 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":26:38:26:49|*Output secondary_12 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":30:11:30:16|*Output sck_fb has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":30:19:30:23|*Output cs_fb has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":30:26:30:35|*Output primary_fb has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":30:38:30:49|*Output secondary_fb has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":32:11:32:15|*Output sck_5 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":32:18:32:21|*Output cs_5 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":32:24:32:32|*Output primary_5 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":32:35:32:45|*Output secondary_5 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":34:11:34:16|*Output sck_15 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":34:19:34:23|*Output cs_15 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":34:26:34:35|*Output primary_15 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v":34:38:34:49|*Output secondary_15 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL246 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":30:26:30:28|Input port bits 38 to 24 of sum[39:0] are unused. Assign logic for all port bits or change the input port size.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Pruning register bits 15 to 2 of avg_count[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Optimizing register bit cnt[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\PID Project\PID_Controller\hdl\PSU_controller.v":35:0:35:5|Pruning register bits 31 to 9 of cnt[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+

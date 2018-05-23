@@ -1,0 +1,29 @@
+@P:  Worst Slack : -9.789
+@P:  PID_controller|clk - Estimated Frequency : 50.5 MHz
+@P:  PID_controller|clk - Requested Frequency : 100.0 MHz
+@P:  PID_controller|clk - Estimated Period : 19.789
+@P:  PID_controller|clk - Requested Period : 10.000
+@P:  PID_controller|clk - Slack : -9.789
+@P:  spi_clk_11s|cur_clk_inferred_clock - Estimated Frequency : 91.4 MHz
+@P:  spi_clk_11s|cur_clk_inferred_clock - Requested Frequency : 100.0 MHz
+@P:  spi_clk_11s|cur_clk_inferred_clock - Estimated Period : 10.944
+@P:  spi_clk_11s|cur_clk_inferred_clock - Requested Period : 10.000
+@P:  spi_clk_11s|cur_clk_inferred_clock - Slack : -0.944
+@P:  Total Area : 2719.0
+@P:  Total Area : 4.0
+@P:  Total Area : 328.0
+@P:  Total Area : 490.0
+@P:  Total Area : 104.0
+@P:  Total Area : 4.0
+@P:  Total Area : 88.0
+@P:  Total Area : 12.0
+@P:  Total Area : 37.0
+@P:  Total Area : 92.0
+@P:  Total Area : 430.0
+@P:  Total Area : 835.0
+@P:  Total Area : 300.0
+@P:  Total Area : 13.0
+@P:  Total Area : 48.0
+@P:  Total Area : 37.0
+@P:  Total Area : 2719.0
+@P:  CPU Time : 0h:00m:06s

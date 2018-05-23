@@ -1,0 +1,47 @@
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":39:15:39:18|Removing wire sgt3, as there is no assignment to it.
+@W: CL169 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":48:0:48:5|Pruning unused register id[12:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":48:0:48:5|Pruning unused register sum_rem[15:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":48:0:48:5|Pruning register bits 39 to 24 of sum_adj[39:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":48:0:48:5|Pruning register bits 7 to 0 of sum_adj[39:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\pwm_tx.v":35:29:35:35|Object sec_lim is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\pwm_tx.v":36:13:36:25|Object cur_secondary is declared but not assigned. Either assign a value or remove the declaration.
+@W: CS263 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":94:37:94:44|Port-width mismatch for port target_v. The port definition is 13 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":116:32:116:34|Port-width mismatch for port k_p. The port definition is 13 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":116:43:116:45|Port-width mismatch for port k_d. The port definition is 13 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":116:54:116:56|Port-width mismatch for port k_i. The port definition is 13 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":134:114:134:122|Port-width mismatch for port pre_delay. The port definition is 32 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":134:138:134:147|Port-width mismatch for port post_delay. The port definition is 32 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":48:20:48:22|Object k_i is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":48:25:48:27|Object k_p is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":48:30:48:32|Object k_d is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":48:35:48:43|Object cur_const is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":53:11:53:16|Removing wire choose, as there is no assignment to it.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":54:20:54:27|Object target_v is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":55:21:55:29|Removing wire pre_delay, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":55:32:55:41|Removing wire post_delay, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":62:5:62:14|Removing wire src_select, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":64:5:64:11|Removing wire pwm_clk, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":64:14:64:17|Removing wire lock, as there is no assignment to it.
+@W: CL168 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":144:8:144:17|Removing instance CHOOSE_SIG because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":142:8:142:14|Removing instance DEC_SIG because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":140:8:140:14|Removing instance INC_SIG because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL156 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":134:114:134:122|*Input un1_PRE_DELAY[31:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":134:138:134:147|*Input un1_POST_DELAY[31:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":146:49:146:54|*Input fm_out to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL246 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":27:26:27:28|Input port bits 38 to 24 of sum[39:0] are unused. Assign logic for all port bits or change the input port size.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Pruning register bits 15 to 2 of avg_count[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+

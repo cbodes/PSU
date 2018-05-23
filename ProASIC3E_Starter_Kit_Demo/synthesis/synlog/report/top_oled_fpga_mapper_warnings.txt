@@ -1,0 +1,5 @@
+@W: MT420 |Found inferred clock top_oled|SW4 with period 25.00ns. Please declare a user-defined clock on object "p:SW4"
+@W: MT420 |Found inferred clock top_oled|SW6 with period 25.00ns. Please declare a user-defined clock on object "p:SW6"
+@W: MT420 |Found inferred clock top_oled|OLED_clk_in_inferred_clock with period 25.00ns. Please declare a user-defined clock on object "n:OLED_clk_in"
+@W: MT420 |Found inferred clock top_oled|DBlock_clkin_inferred_clock with period 25.00ns. Please declare a user-defined clock on object "n:DBlock_clkin"
+@W: MT420 |Found inferred clock PLL_clock|GLA_inferred_clock with period 25.00ns. Please declare a user-defined clock on object "n:inst_PLL.GLA"

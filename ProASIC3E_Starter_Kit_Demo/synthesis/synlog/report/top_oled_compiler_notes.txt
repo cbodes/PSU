@@ -1,0 +1,26 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CD720 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vhd2008\std.vhd":146:18:146:21|Setting time resolution to ps
+@N:"C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\top_oled_v2.vhd":24:7:24:14|Top entity is set to top_oled.
+@N: CD231 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N: CD630 :"C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\top_oled_v2.vhd":24:7:24:14|Synthesizing work.top_oled.rtl.
+@N: CD630 :"C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\Data_block.vhd":20:7:20:16|Synthesizing work.data_block.def_arch.
+@N: CD630 :"C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\mux2.vhd":5:7:5:10|Synthesizing work.mux2.behavioral.
+@N: CD604 :"C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\mux2.vhd":23:6:23:19|OTHERS clause is not synthesized.
+@N: CD630 :"C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\clockdiv.vhd":5:7:5:14|Synthesizing work.clockdiv.behavioural.
+@N: CD630 :"C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\count8.vhd":6:7:6:12|Synthesizing work.count8.behavioral.
+@N: CD630 :"C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\LED_Flashing.vhd":21:7:21:18|Synthesizing work.led_flashing.behavioral.
+@N: CD604 :"C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\LED_Flashing.vhd":63:6:63:19|OTHERS clause is not synthesized.
+@N: CD604 :"C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\LED_Flashing.vhd":77:6:77:19|OTHERS clause is not synthesized.
+@N: CD630 :"C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\binary_counter.vhd":6:7:6:20|Synthesizing work.binary_counter.behavioral.
+@N: CD630 :"C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\OLED_driver_proasic3e_hdl_v4.vhd":28:7:28:17|Synthesizing work.oled_driver.def_arch.
+@N: CD232 :"C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\OLED_driver_proasic3e_hdl_v4.vhd":64:16:64:17|Using gray code encoding for type state_type.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.vhd":3135:10:3135:15|Synthesizing proasic3e.clkint.syn_black_box.
+@N: CD630 :"C:\PID Project\ProASIC3E_Starter_Kit_Demo\smartgen\PLL_clock\PLL_clock.vhd":8:7:8:15|Synthesizing work.pll_clock.def_arch.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.vhd":3976:10:3976:12|Synthesizing proasic3e.pll.syn_black_box.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.vhd":407:10:407:15|Synthesizing proasic3e.pllint.syn_black_box.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.vhd":1894:10:1894:12|Synthesizing proasic3e.gnd.syn_black_box.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.vhd":2999:10:2999:12|Synthesizing proasic3e.vcc.syn_black_box.
+@N: CL201 :"C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\OLED_driver_proasic3e_hdl_v4.vhd":125:4:125:5|Trying to extract state machine for register state.
+@N|Running in 64-bit mode
+

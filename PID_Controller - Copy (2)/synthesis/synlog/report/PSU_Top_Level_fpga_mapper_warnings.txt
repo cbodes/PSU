@@ -1,0 +1,8 @@
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_0_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_1_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_2_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_3_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_4_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MT420 |Found inferred clock PSU_Top_Level|clk with period 10.00ns. Please declare a user-defined clock on object "p:clk"
+@W: MT420 |Found inferred clock pll_80|YC_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:PID_33.PLL_PWM.YC"
+@W: MT420 |Found inferred clock pll_80|GLA_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:PID_33.PLL_PWM.GLA"

@@ -1,0 +1,108 @@
+
+Starting:    C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\mbin\synbatch.exe
+Install:     C:\Microsemi\Libero_SoC_v11.8\SynplifyPro
+Hostname:    EE139PC18
+Date:        Thu Mar 01 22:42:06 2018
+Version:     L-2016.09M-2
+
+Arguments:   -product synplify_pro -licensetype synplifypro_actel -batch -log synplify.log spi_rx_syn.tcl
+ProductType: synplify_pro
+
+License checkout: synplifypro_actel
+License: synplifypro_actel node-locked 
+Licensed Vendor: actel
+License Option: actel_oem
+
+Running in Vendor Mode
+
+
+auto_infer_blackbox is not supported in current product.
+
+log file: "C:\PID Project\SPI_recieveer\synthesis\spi_rx.srr"
+
+Running: synthesis in foreground
+
+
+
+Running spi_rx_syn|synthesis
+
+
+Running: compile (Compile) on spi_rx_syn|synthesis
+# Thu Mar 01 22:42:06 2018
+
+
+Running: compile_flow (Compile Process) on spi_rx_syn|synthesis
+# Thu Mar 01 22:42:06 2018
+
+
+Running: compiler (Compile Input) on spi_rx_syn|synthesis
+# Thu Mar 01 22:42:06 2018
+
+Copied C:\PID Project\SPI_recieveer\synthesis\synwork\spi_rx_comp.srs to C:\PID Project\SPI_recieveer\synthesis\spi_rx.srs
+
+
+compiler completed
+# Thu Mar 01 22:42:08 2018
+
+Return Code: 0
+Run Time:00h:00m:02s
+
+
+Running: multi_srs_gen (Multi-srs Generator) on spi_rx_syn|synthesis
+# Thu Mar 01 22:42:08 2018
+
+
+multi_srs_gen completed
+# Thu Mar 01 22:42:08 2018
+
+Return Code: 0
+Run Time:00h:00m:00s
+
+Copied C:\PID Project\SPI_recieveer\synthesis\synwork\spi_rx_mult.srs to C:\PID Project\SPI_recieveer\synthesis\spi_rx.srs
+
+Complete: Compile Process on spi_rx_syn|synthesis
+
+
+Running: premap (Pre-mapping) on spi_rx_syn|synthesis
+# Thu Mar 01 22:42:08 2018
+
+
+premap completed with warnings
+# Thu Mar 01 22:42:08 2018
+
+Return Code: 1
+Run Time:00h:00m:00s
+
+Complete: Compile on spi_rx_syn|synthesis
+
+
+Running: map (Map) on spi_rx_syn|synthesis
+# Thu Mar 01 22:42:08 2018
+
+License granted for 4 parallel jobs
+
+
+Running: fpga_mapper (Map & Optimize) on spi_rx_syn|synthesis
+# Thu Mar 01 22:42:08 2018
+
+Copied C:\PID Project\SPI_recieveer\synthesis\synwork\spi_rx_m.srm to C:\PID Project\SPI_recieveer\synthesis\spi_rx.srm
+
+
+fpga_mapper completed with warnings
+# Thu Mar 01 22:42:09 2018
+
+Return Code: 1
+Run Time:00h:00m:01s
+
+Complete: Map on spi_rx_syn|synthesis
+
+Complete: Logic Synthesis on spi_rx_syn|synthesis
+
+TCL script complete: "spi_rx_syn.tcl"
+
+exit status=0
+
+exit status=0
+
+License checkin: synplifypro_actel
+

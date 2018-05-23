@@ -1,0 +1,1790 @@
+# Thu May 03 17:49:21 2018
+
+Synopsys Microsemi Technology Mapper, Version mapact, Build 1920R, Built Nov 17 2016 09:40:34
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09M-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 114MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 121MB)
+
+Encoding state machine state[2:0] (in view: work.PSU_controller(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+@N: MO231 :"c:\pid project\pid_controller\hdl\psu_controller.v":35:0:35:5|Found counter in view:work.PSU_controller(verilog) instance cnt[25:0] 
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_0_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_1_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_2_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_3_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_4_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_5_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_6_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_7_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_8_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_9_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_10_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_11_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_12_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_13_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_14_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_15_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_16_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_17_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_18_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_19_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_20_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_21_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_22_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_23_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_24_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_25_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_26_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_27_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_28_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_29_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_30_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_31_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_32_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@N: MO231 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Found counter in view:work.controller_Z1(verilog) instance count[15:0] 
+@N: MO231 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Found counter in view:work.controller_Z1(verilog) instance avg_count[4:0] 
+Encoding state machine state[13:0] (in view: work.controller_Z1(verilog))
+original code -> new code
+   000000 -> 00000000000001
+   000001 -> 00000000000010
+   000010 -> 00000000000100
+   000011 -> 00000000001000
+   000100 -> 00000000010000
+   000101 -> 00000000100000
+   000110 -> 00000001000000
+   000111 -> 00000010000000
+   001000 -> 00000100000000
+   001001 -> 00001000000000
+   001010 -> 00010000000000
+   001011 -> 00100000000000
+   001110 -> 01000000000000
+   001111 -> 10000000000000
+@N: MF184 :"c:\pid project\pid_controller\hdl\error_calc.v":40:19:40:36|Found 13 by 13 bit subtractor, 'un2_diffreg_0_0[12:0]'
+@N: MF176 |Default generator successful 
+Encoding state machine state[2:0] (in view: work.integral_calc_13s_1(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+@N: MF176 |Default generator successful 
+@N: MF238 :"c:\pid project\pid_controller\hdl\integral_calc.v":34:0:34:5|Found 13-bit incrementor, 'inf_abs0_a_0[12:0]'
+@N: MF238 :"c:\pid project\pid_controller\hdl\integral_calc.v":34:0:34:5|Found 13-bit incrementor, 'inf_abs1_a_1[12:0]'
+Encoding state machine state[2:0] (in view: work.integral_calc_13s_0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+@N: MF238 :"c:\pid project\pid_controller\hdl\integral_calc.v":34:0:34:5|Found 13-bit incrementor, 'inf_abs0_a_0[12:0]'
+@N: MF238 :"c:\pid project\pid_controller\hdl\integral_calc.v":34:0:34:5|Found 13-bit incrementor, 'inf_abs1_a_1[12:0]'
+@N: MF184 :"c:\pid project\pid_controller\hdl\derivative_calc.v":33:21:33:43|Found 13 by 13 bit subtractor, 'un2_deriv_out_0_0[12:0]'
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[0] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[1] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[2] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[3] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[4] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[5] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[6] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[7] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[8] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[9] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[10] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[11] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+Encoding state machine state[6:0] (in view: work.pid_sum_13s(verilog))
+original code -> new code
+   000 -> 0000001
+   001 -> 0000010
+   010 -> 0000100
+   011 -> 0001000
+   100 -> 0010000
+   101 -> 0100000
+   110 -> 1000000
+@N: MF176 |Default generator successful 
+@N: MF238 :"c:\pid project\pid_controller\hdl\pid_sum.v":48:0:48:5|Found 13-bit incrementor, 'inf_abs1_a_2[12:0]'
+@N: MF238 :"c:\pid project\pid_controller\hdl\pid_sum.v":48:0:48:5|Found 26-bit incrementor, 'inf_abs2_a_0[25:0]'
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF238 :"c:\pid project\pid_controller\hdl\spi_clk.v":40:17:40:26|Found 9-bit incrementor, 'un3_counter[8:0]'
+@N: MO231 :"c:\pid project\pid_controller\hdl\spi_ctl.v":39:0:39:5|Found counter in view:work.spi_ctl_12s_0(verilog) instance cnt[15:0] 
+Encoding state machine state[1:0] (in view: work.spi_ctl_12s_0(verilog))
+original code -> new code
+   00 -> 0
+   01 -> 1
+@N: MO225 :"c:\pid project\pid_controller\hdl\spi_ctl.v":39:0:39:5|There are no possible illegal states for state machine state[1:0] (in view: work.spi_ctl_12s_0(verilog)); safe FSM implementation is not required.
+Encoding state machine state[3:0] (in view: work.pwm_ctl_188_32s_13s_4056_1s_0_1_2_3(verilog))
+original code -> new code
+   000 -> 00
+   001 -> 01
+   010 -> 10
+   011 -> 11
+@N: MO225 :"c:\pid project\pid_controller\hdl\pwm_ctl.v":49:0:49:5|There are no possible illegal states for state machine state[3:0] (in view: work.pwm_ctl_188_32s_13s_4056_1s_0_1_2_3(verilog)); safe FSM implementation is not required.
+@N: MF176 |Default generator successful 
+@N: MF238 :"c:\pid project\pid_controller\hdl\pwm_ctl.v":97:28:97:37|Found 24-bit incrementor, 'un1_nsum_adj[23:0]'
+@N: MO231 :"c:\pid project\pid_controller\hdl\pwm_tx.v":50:0:50:5|Found counter in view:work.pwm_tx_188_32s_13s_10_4056_188(verilog) instance counter[31:0] 
+@N: MF179 :"c:\pid project\pid_controller\hdl\pwm_tx.v":57:33:57:52|Found 32 by 32 bit less-than operator ('<') un1_counter_2 (in view: work.pwm_tx_188_32s_13s_10_4056_188(verilog))
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_0_[12] (in view view:work.PID_controller_Z4(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_1_[12] (in view view:work.PID_controller_Z4(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_2_[12] (in view view:work.PID_controller_Z4(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_3_[12] (in view view:work.PID_controller_Z4(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_4_[12] (in view view:work.PID_controller_Z4(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@N: MO231 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Found counter in view:work.controller_Z3_0(verilog) instance count[15:0] 
+Encoding state machine state[13:0] (in view: work.controller_Z3_0(verilog))
+original code -> new code
+   000000 -> 00000000000001
+   000001 -> 00000000000010
+   000010 -> 00000000000100
+   000011 -> 00000000001000
+   000100 -> 00000000010000
+   000101 -> 00000000100000
+   000110 -> 00000001000000
+   000111 -> 00000010000000
+   001000 -> 00000100000000
+   001001 -> 00001000000000
+   001010 -> 00010000000000
+   001011 -> 00100000000000
+   001110 -> 01000000000000
+   001111 -> 10000000000000
+Encoding state machine state[2:0] (in view: work.integral_calc_13s(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+@N: MF238 :"c:\pid project\pid_controller\hdl\integral_calc.v":34:0:34:5|Found 13-bit incrementor, 'inf_abs0_a_0[12:0]'
+@N: MF238 :"c:\pid project\pid_controller\hdl\integral_calc.v":34:0:34:5|Found 13-bit incrementor, 'inf_abs1_a_1[12:0]'
+@N: MF238 :"c:\pid project\pid_controller\hdl\spi_clk.v":40:17:40:26|Found 9-bit incrementor, 'un17_counter[8:0]'
+@N: MO231 :"c:\pid project\pid_controller\hdl\spi_ctl.v":39:0:39:5|Found counter in view:work.spi_ctl_12s_1(verilog) instance cnt[15:0] 
+Encoding state machine state[1:0] (in view: work.spi_ctl_12s_1(verilog))
+original code -> new code
+   00 -> 0
+   01 -> 1
+@N: MO225 :"c:\pid project\pid_controller\hdl\spi_ctl.v":39:0:39:5|There are no possible illegal states for state machine state[1:0] (in view: work.spi_ctl_12s_1(verilog)); safe FSM implementation is not required.
+Encoding state machine state[3:0] (in view: work.pwm_ctl_157_32s_13s_76179_1s_0_1_2_3(verilog))
+original code -> new code
+   000 -> 00
+   001 -> 01
+   010 -> 10
+   011 -> 11
+@N: MO225 :"c:\pid project\pid_controller\hdl\pwm_ctl.v":49:0:49:5|There are no possible illegal states for state machine state[3:0] (in view: work.pwm_ctl_157_32s_13s_76179_1s_0_1_2_3(verilog)); safe FSM implementation is not required.
+@N: MF238 :"c:\pid project\pid_controller\hdl\pwm_ctl.v":97:28:97:37|Found 24-bit incrementor, 'un13_nsum_adj[23:0]'
+@N: MO231 :"c:\pid project\pid_controller\hdl\pwm_tx.v":50:0:50:5|Found counter in view:work.pwm_tx_157_32s_13s_10_76179_157(verilog) instance counter[31:0] 
+@N: MF179 :"c:\pid project\pid_controller\hdl\pwm_tx.v":57:33:57:52|Found 32 by 32 bit less-than operator ('<') un1_counter_2 (in view: work.pwm_tx_157_32s_13s_10_76179_157(verilog))
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_0_[12] (in view view:work.PID_controller_Z5(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_1_[12] (in view view:work.PID_controller_Z5(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_2_[12] (in view view:work.PID_controller_Z5(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_3_[12] (in view view:work.PID_controller_Z5(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_4_[12] (in view view:work.PID_controller_Z5(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@N: MO231 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Found counter in view:work.controller_Z3(verilog) instance count[15:0] 
+Encoding state machine state[13:0] (in view: work.controller_Z3(verilog))
+original code -> new code
+   000000 -> 00000000000001
+   000001 -> 00000000000010
+   000010 -> 00000000000100
+   000011 -> 00000000001000
+   000100 -> 00000000010000
+   000101 -> 00000000100000
+   000110 -> 00000001000000
+   000111 -> 00000010000000
+   001000 -> 00000100000000
+   001001 -> 00001000000000
+   001010 -> 00010000000000
+   001011 -> 00100000000000
+   001110 -> 01000000000000
+   001111 -> 10000000000000
+@N: MF238 :"c:\pid project\pid_controller\hdl\spi_clk.v":40:17:40:26|Found 9-bit incrementor, 'un3_counter[8:0]'
+@N: MO231 :"c:\pid project\pid_controller\hdl\spi_ctl.v":39:0:39:5|Found counter in view:work.spi_ctl_12s_2(verilog) instance cnt[15:0] 
+Encoding state machine state[1:0] (in view: work.spi_ctl_12s_2(verilog))
+original code -> new code
+   00 -> 0
+   01 -> 1
+@N: MO225 :"c:\pid project\pid_controller\hdl\spi_ctl.v":39:0:39:5|There are no possible illegal states for state machine state[1:0] (in view: work.spi_ctl_12s_2(verilog)); safe FSM implementation is not required.
+Encoding state machine state[3:0] (in view: work.pwm_ctl_34_32s_13s_1000000_1s_0_1_2_3(verilog))
+original code -> new code
+   000 -> 00
+   001 -> 01
+   010 -> 10
+   011 -> 11
+@N: MO225 :"c:\pid project\pid_controller\hdl\pwm_ctl.v":49:0:49:5|There are no possible illegal states for state machine state[3:0] (in view: work.pwm_ctl_34_32s_13s_1000000_1s_0_1_2_3(verilog)); safe FSM implementation is not required.
+@N: MF238 :"c:\pid project\pid_controller\hdl\pwm_ctl.v":97:28:97:37|Found 24-bit incrementor, 'un25_nsum_adj[23:0]'
+@N: MO231 :"c:\pid project\pid_controller\hdl\pwm_tx.v":50:0:50:5|Found counter in view:work.pwm_tx_34_32s_13s_10_1000000_34(verilog) instance counter[31:0] 
+@N: MF179 :"c:\pid project\pid_controller\hdl\pwm_tx.v":57:33:57:52|Found 32 by 32 bit less-than operator ('<') un1_counter_2 (in view: work.pwm_tx_34_32s_13s_10_1000000_34(verilog))
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_0_[12] (in view view:work.PID_controller_Z6(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_1_[12] (in view view:work.PID_controller_Z6(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_2_[12] (in view view:work.PID_controller_Z6(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_3_[12] (in view view:work.PID_controller_Z6(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_4_[12] (in view view:work.PID_controller_Z6(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@N: MF238 :"c:\pid project\pid_controller\hdl\spi_clk.v":40:17:40:26|Found 9-bit incrementor, 'un3_counter[8:0]'
+@N: MO231 :"c:\pid project\pid_controller\hdl\spi_ctl.v":39:0:39:5|Found counter in view:work.spi_ctl_12s_3(verilog) instance cnt[15:0] 
+Encoding state machine state[1:0] (in view: work.spi_ctl_12s_3(verilog))
+original code -> new code
+   00 -> 0
+   01 -> 1
+@N: MO225 :"c:\pid project\pid_controller\hdl\spi_ctl.v":39:0:39:5|There are no possible illegal states for state machine state[1:0] (in view: work.spi_ctl_12s_3(verilog)); safe FSM implementation is not required.
+Encoding state machine state[3:0] (in view: work.pwm_ctl_321_32s_13s_10066_1s_0_1_2_3(verilog))
+original code -> new code
+   000 -> 00
+   001 -> 01
+   010 -> 10
+   011 -> 11
+@N: MO225 :"c:\pid project\pid_controller\hdl\pwm_ctl.v":49:0:49:5|There are no possible illegal states for state machine state[3:0] (in view: work.pwm_ctl_321_32s_13s_10066_1s_0_1_2_3(verilog)); safe FSM implementation is not required.
+@N: MF238 :"c:\pid project\pid_controller\hdl\pwm_ctl.v":97:28:97:37|Found 24-bit incrementor, 'un37_nsum_adj[23:0]'
+@N: MO231 :"c:\pid project\pid_controller\hdl\pwm_tx.v":50:0:50:5|Found counter in view:work.pwm_tx_321_32s_13s_10_10066_321(verilog) instance counter[31:0] 
+@N: MF179 :"c:\pid project\pid_controller\hdl\pwm_tx.v":57:33:57:52|Found 32 by 32 bit less-than operator ('<') un1_counter_2 (in view: work.pwm_tx_321_32s_13s_10_10066_321(verilog))
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_0_[12] (in view view:work.PID_controller_Z7(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_1_[12] (in view view:work.PID_controller_Z7(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_2_[12] (in view view:work.PID_controller_Z7(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_3_[12] (in view view:work.PID_controller_Z7(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_4_[12] (in view view:work.PID_controller_Z7(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@N: MF238 :"c:\pid project\pid_controller\hdl\spi_clk.v":40:17:40:26|Found 9-bit incrementor, 'un3_counter[8:0]'
+@N: MO231 :"c:\pid project\pid_controller\hdl\spi_ctl.v":39:0:39:5|Found counter in view:work.spi_ctl_12s_4(verilog) instance cnt[15:0] 
+Encoding state machine state[1:0] (in view: work.spi_ctl_12s_4(verilog))
+original code -> new code
+   00 -> 0
+   01 -> 1
+@N: MO225 :"c:\pid project\pid_controller\hdl\spi_ctl.v":39:0:39:5|There are no possible illegal states for state machine state[1:0] (in view: work.spi_ctl_12s_4(verilog)); safe FSM implementation is not required.
+Encoding state machine state[3:0] (in view: work.pwm_ctl_75_32s_13s_14630_1s_0_1_2_3(verilog))
+original code -> new code
+   000 -> 00
+   001 -> 01
+   010 -> 10
+   011 -> 11
+@N: MO225 :"c:\pid project\pid_controller\hdl\pwm_ctl.v":49:0:49:5|There are no possible illegal states for state machine state[3:0] (in view: work.pwm_ctl_75_32s_13s_14630_1s_0_1_2_3(verilog)); safe FSM implementation is not required.
+@N: MF238 :"c:\pid project\pid_controller\hdl\pwm_ctl.v":97:28:97:37|Found 24-bit incrementor, 'un49_nsum_adj[23:0]'
+@N: MO231 :"c:\pid project\pid_controller\hdl\pwm_tx.v":50:0:50:5|Found counter in view:work.pwm_tx_75_32s_13s_10_14630_75(verilog) instance counter[31:0] 
+@N: MF179 :"c:\pid project\pid_controller\hdl\pwm_tx.v":57:33:57:52|Found 32 by 32 bit less-than operator ('<') un1_counter_2 (in view: work.pwm_tx_75_32s_13s_10_14630_75(verilog))
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":186:0:186:5|Found up-down counter in view:work.constant_gen(verilog) instance k_pfb[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":186:0:186:5|Found up-down counter in view:work.constant_gen(verilog) instance k_ifb[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":153:0:153:5|Found up-down counter in view:work.constant_gen(verilog) instance k_p12[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":153:0:153:5|Found up-down counter in view:work.constant_gen(verilog) instance k_i12[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":120:0:120:5|Found up-down counter in view:work.constant_gen(verilog) instance k_p15[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":120:0:120:5|Found up-down counter in view:work.constant_gen(verilog) instance k_i15[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":87:0:87:5|Found up-down counter in view:work.constant_gen(verilog) instance k_p33[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":87:0:87:5|Found up-down counter in view:work.constant_gen(verilog) instance k_i33[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":54:0:54:5|Found up-down counter in view:work.constant_gen(verilog) instance k_p5[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":54:0:54:5|Found up-down counter in view:work.constant_gen(verilog) instance k_i5[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":186:0:186:5|Found up-down counter in view:work.constant_gen(verilog) instance target_vfb[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":153:0:153:5|Found up-down counter in view:work.constant_gen(verilog) instance target_v12[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":120:0:120:5|Found up-down counter in view:work.constant_gen(verilog) instance target_v15[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":87:0:87:5|Found up-down counter in view:work.constant_gen(verilog) instance target_v33[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":54:0:54:5|Found up-down counter in view:work.constant_gen(verilog) instance target_v5[12:0]  
+
+Starting factoring (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 168MB peak: 169MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 224MB peak: 225MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:11s; Memory used current: 243MB peak: 249MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:21s; Memory used current: 264MB peak: 320MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:25s; CPU Time elapsed 0h:00m:23s; Memory used current: 271MB peak: 320MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:01m:53s; CPU Time elapsed 0h:01m:51s; Memory used current: 353MB peak: 354MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:01m:54s; CPU Time elapsed 0h:01m:52s; Memory used current: 348MB peak: 356MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:01m:55s; CPU Time elapsed 0h:01m:53s; Memory used current: 351MB peak: 356MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:02m:04s; CPU Time elapsed 0h:02m:01s; Memory used current: 391MB peak: 428MB)
+
+
+High Fanout Net Report
+**********************
+
+Driver Instance / Pin Name                   Fanout, notes                     
+-------------------------------------------------------------------------------
+PSU_CTL.state[0] / Q                         234                               
+CG.k_i12[0] / Q                              55                                
+CG.k_i12[1] / Q                              34                                
+CG.k_i33[0] / Q                              32                                
+CG.k_i33[1] / Q                              36                                
+CG.k_ifb[0] / Q                              32                                
+CG.k_ifb[1] / Q                              36                                
+CG.k_i5[0] / Q                               32                                
+CG.k_i5[1] / Q                               35                                
+CG.k_i5[11] / Q                              26                                
+CG.k_i15[0] / Q                              32                                
+CG.k_i15[1] / Q                              35                                
+CG.k_i15[11] / Q                             25                                
+CG.k_i12_0_sqmuxa / Y                        26                                
+CG.k_p12_0_sqmuxa / Y                        36                                
+CG.k_ifb_0_sqmuxa / Y                        27                                
+CG.k_p5_0_sqmuxa_1 / Y                       35                                
+CG.k_i33_0_sqmuxa / Y                        27                                
+CG.target_v15_0_sqmuxa / Y                   31                                
+CG.target_v12_0_sqmuxa / Y                   33                                
+CG.target_vfb_0_sqmuxa / Y                   35                                
+PID_15.CONTROLLER.state[2] / Q               62                                
+PID_15.CONTROLLER.state[5] / Q               847                               
+PID_15.CONTROLLER.state[13] / Q              32                                
+PID_15.INTSR.sr_0_[12] / Q                   26                                
+PID_15.INTCALC.integ[25] / Q                 66                                
+PID_15.SUM.sumreg[39] / Q                    89                                
+PID_15.PWM_TX.un1_counter_4[0] / Y           34                                
+PID_15.PWM_CTL.un1_off_div45 / Y             32                                
+PID_15.PWM_CTL.next_off_div_0_sqmuxa / Y     32                                
+PID_15.SUM.state[1] / Q                      41                                
+PID_15.SUM.state[2] / Q                      92                                
+PID_15.SUM.state[3] / Q                      28                                
+PID_15.SUM.un1_next_sum_1_iv[26] / Y         40                                
+PID_15.SUM.un1_state_1_0_a2 / Y              40                                
+PID_15.SUM.next_sum_0_sqmuxa_2 / Y           26                                
+PID_15.SUM.next_sum_0_sqmuxa_1 / Y           26                                
+PID_15.SUM.next_sum_1_sqmuxa_2 / Y           27                                
+PID_15.SUM.next_sum_1_sqmuxa / Y             27                                
+PID_15.SUM.next_ireg_3.m2_0 / Y              25                                
+PID_15.AVG_CALC.state[0] / Q                 51                                
+PID_5.CONTROLLER.state[2] / Q                62                                
+PID_5.CONTROLLER.state[5] / Q                847                               
+PID_5.CONTROLLER.state[13] / Q               32                                
+PID_5.INTSR.sr_0_[12] / Q                    37                                
+PID_5.INTCALC.integ[25] / Q                  41                                
+PID_5.SUM.sumreg[39] / Q                     91                                
+PID_5.PWM_TX.un1_counter_4[0] / Y            34                                
+PID_5.SUM.state[1] / Q                       41                                
+PID_5.SUM.state[2] / Q                       92                                
+PID_5.SUM.p_adj[0] / Q                       26                                
+PID_5.SUM.un1_next_sum_1_iv[26] / Y          40                                
+PID_5.SUM.un1_state_1_0_a2 / Y               40                                
+PID_5.SUM.next_ireg_3.m1_1 / Y               27                                
+PID_5.AVG_CALC.state[0] / Q                  51                                
+PID_FB.AVG_CALC.state_s0_0_a2 / Y            28                                
+PID_FB.INTCALC.state_s0_0_a2 / Y             28                                
+PID_FB.CONTROLLER.state[2] / Q               62                                
+PID_FB.CONTROLLER.state[5] / Q               847                               
+PID_FB.CONTROLLER.state[13] / Q              32                                
+PID_FB.INTSR.sr_0_[12] / Q                   42                                
+PID_FB.INTCALC.integ[25] / Q                 41                                
+PID_FB.SUM.sumreg[39] / Q                    91                                
+PID_FB.PWM_TX.un1_counter_4[0] / Y           34                                
+PID_FB.SUM.state[1] / Q                      41                                
+PID_FB.SUM.state[2] / Q                      92                                
+PID_FB.SUM.p_adj[0] / Q                      26                                
+PID_FB.SUM.un1_state_1_0_a2 / Y              40                                
+PID_FB.AVG_CALC.state[0] / Q                 53                                
+PID_33.CONTROLLER.state[2] / Q               62                                
+PID_33.CONTROLLER.state[5] / Q               847                               
+PID_33.CONTROLLER.state[13] / Q              32                                
+PID_33.INTSR.sr_0_[12] / Q                   31                                
+PID_33.INTCALC.integ[25] / Q                 66                                
+PID_33.SUM.sumreg[39] / Q                    84                                
+PID_33.PWM_TX.un1_counter_4[0] / Y           34                                
+PID_33.SUM.state[1] / Q                      41                                
+PID_33.SUM.state[2] / Q                      92                                
+PID_33.SUM.state[3] / Q                      28                                
+PID_33.SUM.p_adj[0] / Q                      26                                
+PID_33.SUM.un1_state_1_0_a2 / Y              40                                
+PID_33.INTCALC.un1_next_int_0_iv[13] / Y     37                                
+PID_33.AVG_CALC.state[0] / Q                 52                                
+PID_12.AVG_CALC.state_tr2_1 / Y              25                                
+PID_12.INTCALC.state_s0_0_a2 / Y             28                                
+PID_12.CONTROLLER.state[2] / Q               398                               
+PID_12.CONTROLLER.state[5] / Q               847                               
+PID_12.CONTROLLER.state[13] / Q              32                                
+PID_12.INTSR.sr_0_[12] / Q                   39                                
+PID_12.INTCALC.integ[25] / Q                 66                                
+PID_12.SUM.sumreg[39] / Q                    87                                
+PID_12.PWM_TX.un1_counter_4[0] / Y           34                                
+PID_12.SUM.state[1] / Q                      41                                
+PID_12.SUM.state[2] / Q                      92                                
+PID_12.SUM.state[3] / Q                      28                                
+PID_12.INTCALC.un1_next_int_0_iv[13] / Y     37                                
+PID_12.AVG_CALC.state[0] / Q                 53                                
+n_rst_pad / Y                                7086 : 7086 asynchronous set/reset
+choose_cont_pad[0] / Y                       75                                
+choose_cont_pad[1] / Y                       39                                
+choose_cont_pad[2] / Y                       46                                
+PID_15.INTCALC.un1_next_int_0_iv[13] / Y     37                                
+PID_15.SUM.next_ireg_3.m1_1 / Y              29                                
+PID_15.INTCALC.state_s0_0_a2 / Y             29                                
+PID_FB.SUM.un1_next_sum_1_iv[26] / Y         40                                
+PID_FB.SUM.next_sum_0_sqmuxa_2 / Y           26                                
+PID_FB.SUM.next_sum_1_sqmuxa / Y             27                                
+PID_FB.SUM.next_sum_0_sqmuxa / Y             26                                
+PID_FB.SUM.next_sum_0_sqmuxa_1 / Y           26                                
+PID_FB.SUM.next_sum_1_sqmuxa_2 / Y           26                                
+PID_FB.INTCALC.un1_next_int_0_iv[13] / Y     37                                
+PID_FB.SUM.next_ireg_3.m2_0 / Y              25                                
+PID_FB.SUM.next_ireg_3.m1_1 / Y              26                                
+PID_FB.PWM_CTL.un1_off_div25 / Y             32                                
+PID_FB.PWM_CTL.next_off_div_0_sqmuxa / Y     32                                
+CG.target_v5_0_sqmuxa_1 / Y                  33                                
+PID_5.SUM.next_sum_1_sqmuxa / Y              27                                
+PID_5.SUM.next_sum_0_sqmuxa / Y              26                                
+PID_5.SUM.next_sum_0_sqmuxa_1 / Y            26                                
+PID_5.SUM.next_sum_1_sqmuxa_2 / Y            27                                
+PID_5.SUM.next_sum_0_sqmuxa_2 / Y            28                                
+PID_5.SUM.next_ireg_3.m2_0 / Y               25                                
+PID_5.INTCALC.state_s0_0_a2 / Y              28                                
+PID_5.INTCALC.un1_next_int_0_iv[13] / Y      37                                
+CG.k_p33_0_sqmuxa / Y                        27                                
+CG.target_v33_0_sqmuxa / Y                   28                                
+PID_33.INTCALC.state_tr2_1 / Y               29                                
+CG.k_pfb_0_sqmuxa / Y                        27                                
+PID_5.PWM_CTL.next_off_div_0_sqmuxa / Y      32                                
+PID_5.PWM_CTL.un1_off_div35 / Y              32                                
+CG.k_p15_0_sqmuxa / Y                        27                                
+CG.k_i15_0_sqmuxa / Y                        35                                
+CG.k_i5_0_sqmuxa_1 / Y                       27                                
+PID_33.SUM.un1_next_sum_1_iv[26] / Y         44                                
+PID_33.SUM.next_sum_0_sqmuxa_2 / Y           28                                
+PID_33.SUM.next_sum_0_sqmuxa_1 / Y           26                                
+PID_33.SUM.next_sum_1_sqmuxa_2 / Y           27                                
+PID_33.SUM.next_sum_1_sqmuxa / Y             27                                
+PID_33.SUM.next_ireg_3.m2_0 / Y              25                                
+PID_33.PWM_CTL.un1_off_div15 / Y             32                                
+PID_33.PWM_CTL.next_off_div_0_sqmuxa / Y     32                                
+PID_12.SUM.un1_state_1_0_a2 / Y              40                                
+PID_12.SUM.un1_next_sum_1_iv[26] / Y         40                                
+PID_12.SUM.next_sum_0_sqmuxa_1 / Y           26                                
+PID_12.SUM.next_sum_1_sqmuxa_2 / Y           27                                
+PID_12.SUM.next_sum_0_sqmuxa_2 / Y           26                                
+PID_12.SUM.next_sum_1_sqmuxa / Y             27                                
+PID_12.SUM.next_ireg_3.m1_1 / Y              27                                
+PID_12.PWM_CTL.un1_off_div5 / Y              32                                
+PID_12.PWM_CTL.next_off_div_0_sqmuxa / Y     32                                
+===============================================================================
+
+@N: FP130 |Promoting Net n_rst_c on CLKBUF  n_rst_pad 
+@N: FP130 |Promoting Net clk_c on CLKBUF  clk_pad 
+@N: FP130 |Promoting Net PID_FB.int_enable on CLKINT  I_585 
+@N: FP130 |Promoting Net PID_5.int_enable on CLKINT  I_586 
+@N: FP130 |Promoting Net PID_15.int_enable on CLKINT  I_587 
+@N: FP130 |Promoting Net PID_12.int_enable on CLKINT  I_588 
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:02m:06s; CPU Time elapsed 0h:02m:04s; Memory used current: 391MB peak: 428MB)
+
+Replicating Combinational Instance PID_12.PWM_CTL.next_off_div_0_sqmuxa, fanout 32 segments 2
+Replicating Combinational Instance PID_12.PWM_CTL.un1_off_div5, fanout 32 segments 2
+Replicating Combinational Instance PID_12.SUM.next_ireg_3.m1_1, fanout 27 segments 2
+Replicating Combinational Instance PID_12.SUM.next_sum_1_sqmuxa, fanout 27 segments 2
+Replicating Combinational Instance PID_12.SUM.next_sum_0_sqmuxa_2, fanout 26 segments 2
+Replicating Combinational Instance PID_12.SUM.next_sum_1_sqmuxa_2, fanout 27 segments 2
+Replicating Combinational Instance PID_12.SUM.next_sum_0_sqmuxa_1, fanout 26 segments 2
+Replicating Combinational Instance PID_12.SUM.un1_next_sum_1_iv[26], fanout 40 segments 2
+Replicating Combinational Instance PID_12.SUM.un1_state_1_0_a2, fanout 40 segments 2
+Replicating Combinational Instance PID_33.PWM_CTL.next_off_div_0_sqmuxa, fanout 32 segments 2
+Replicating Combinational Instance PID_33.PWM_CTL.un1_off_div15, fanout 32 segments 2
+Replicating Combinational Instance PID_33.SUM.next_ireg_3.m2_0, fanout 25 segments 2
+Replicating Combinational Instance PID_33.SUM.next_sum_1_sqmuxa, fanout 27 segments 2
+Replicating Combinational Instance PID_33.SUM.next_sum_1_sqmuxa_2, fanout 27 segments 2
+Replicating Combinational Instance PID_33.SUM.next_sum_0_sqmuxa_1, fanout 26 segments 2
+Replicating Combinational Instance PID_33.SUM.next_sum_0_sqmuxa_2, fanout 28 segments 2
+Replicating Combinational Instance PID_33.SUM.un1_next_sum_1_iv[26], fanout 44 segments 2
+Replicating Combinational Instance CG.k_i5_0_sqmuxa_1, fanout 27 segments 2
+Replicating Combinational Instance CG.k_i15_0_sqmuxa, fanout 35 segments 2
+Replicating Combinational Instance CG.k_p15_0_sqmuxa, fanout 27 segments 2
+Replicating Combinational Instance PID_5.PWM_CTL.un1_off_div35, fanout 32 segments 2
+Replicating Combinational Instance PID_5.PWM_CTL.next_off_div_0_sqmuxa, fanout 32 segments 2
+Replicating Combinational Instance CG.k_pfb_0_sqmuxa, fanout 27 segments 2
+Replicating Combinational Instance PID_33.INTCALC.state_tr2_1, fanout 29 segments 2
+Replicating Combinational Instance CG.target_v33_0_sqmuxa, fanout 28 segments 2
+Replicating Combinational Instance CG.k_p33_0_sqmuxa, fanout 27 segments 2
+Replicating Combinational Instance PID_5.INTCALC.un1_next_int_0_iv[13], fanout 37 segments 2
+Replicating Combinational Instance PID_5.INTCALC.state_s0_0_a2, fanout 28 segments 2
+Replicating Combinational Instance PID_5.SUM.next_ireg_3.m2_0, fanout 25 segments 2
+Replicating Combinational Instance PID_5.SUM.next_sum_0_sqmuxa_2, fanout 28 segments 2
+Replicating Combinational Instance PID_5.SUM.next_sum_1_sqmuxa_2, fanout 27 segments 2
+Replicating Combinational Instance PID_5.SUM.next_sum_0_sqmuxa_1, fanout 26 segments 2
+Replicating Combinational Instance PID_5.SUM.next_sum_0_sqmuxa, fanout 26 segments 2
+Replicating Combinational Instance PID_5.SUM.next_sum_1_sqmuxa, fanout 27 segments 2
+Replicating Combinational Instance CG.target_v5_0_sqmuxa_1, fanout 33 segments 2
+Replicating Combinational Instance PID_FB.PWM_CTL.next_off_div_0_sqmuxa, fanout 32 segments 2
+Replicating Combinational Instance PID_FB.PWM_CTL.un1_off_div25, fanout 32 segments 2
+Replicating Combinational Instance PID_FB.SUM.next_ireg_3.m1_1, fanout 26 segments 2
+Replicating Combinational Instance PID_FB.SUM.next_ireg_3.m2_0, fanout 25 segments 2
+Replicating Combinational Instance PID_FB.INTCALC.un1_next_int_0_iv[13], fanout 37 segments 2
+Replicating Combinational Instance PID_FB.SUM.next_sum_1_sqmuxa_2, fanout 26 segments 2
+Replicating Combinational Instance PID_FB.SUM.next_sum_0_sqmuxa_1, fanout 26 segments 2
+Replicating Combinational Instance PID_FB.SUM.next_sum_0_sqmuxa, fanout 26 segments 2
+Replicating Combinational Instance PID_FB.SUM.next_sum_1_sqmuxa, fanout 27 segments 2
+Replicating Combinational Instance PID_FB.SUM.next_sum_0_sqmuxa_2, fanout 26 segments 2
+Replicating Combinational Instance PID_FB.SUM.un1_next_sum_1_iv[26], fanout 40 segments 2
+Replicating Combinational Instance PID_15.INTCALC.state_s0_0_a2, fanout 29 segments 2
+Replicating Combinational Instance PID_15.SUM.next_ireg_3.m1_1, fanout 29 segments 2
+Replicating Combinational Instance PID_15.INTCALC.un1_next_int_0_iv[13], fanout 37 segments 2
+Buffering choose_cont_c[2], fanout 46 segments 2
+Buffering choose_cont_c[1], fanout 39 segments 2
+Buffering choose_cont_c[0], fanout 75 segments 4
+Replicating Sequential Instance PID_12.AVG_CALC.state[0], fanout 53 segments 3
+Replicating Combinational Instance PID_12.INTCALC.un1_next_int_0_iv[13], fanout 37 segments 2
+Replicating Sequential Instance PID_12.SUM.state[3], fanout 29 segments 2
+Replicating Sequential Instance PID_12.SUM.state[2], fanout 92 segments 4
+Replicating Sequential Instance PID_12.SUM.state[1], fanout 45 segments 2
+Replicating Combinational Instance PID_12.PWM_TX.un1_counter_4[0], fanout 34 segments 2
+Replicating Sequential Instance PID_12.SUM.sumreg[39], fanout 87 segments 4
+Replicating Sequential Instance PID_12.INTCALC.integ[25], fanout 67 segments 3
+Replicating Sequential Instance PID_12.INTSR.sr_0_[12], fanout 41 segments 2
+Replicating Sequential Instance PID_12.CONTROLLER.state[13], fanout 32 segments 2
+Replicating Sequential Instance PID_12.CONTROLLER.state[2], fanout 398 segments 17
+Replicating Combinational Instance PID_12.INTCALC.state_s0_0_a2, fanout 30 segments 2
+Replicating Combinational Instance PID_12.AVG_CALC.state_tr2_1, fanout 25 segments 2
+Replicating Sequential Instance PID_33.AVG_CALC.state[0], fanout 52 segments 3
+Replicating Combinational Instance PID_33.INTCALC.un1_next_int_0_iv[13], fanout 37 segments 2
+Replicating Combinational Instance PID_33.SUM.un1_state_1_0_a2, fanout 40 segments 2
+Replicating Sequential Instance PID_33.SUM.p_adj[0], fanout 26 segments 2
+Replicating Sequential Instance PID_33.SUM.state[3], fanout 29 segments 2
+Replicating Sequential Instance PID_33.SUM.state[2], fanout 92 segments 4
+Replicating Sequential Instance PID_33.SUM.state[1], fanout 46 segments 2
+Replicating Combinational Instance PID_33.PWM_TX.un1_counter_4[0], fanout 34 segments 2
+Replicating Sequential Instance PID_33.SUM.sumreg[39], fanout 84 segments 4
+Replicating Sequential Instance PID_33.INTCALC.integ[25], fanout 67 segments 3
+Replicating Sequential Instance PID_33.INTSR.sr_0_[12], fanout 33 segments 2
+Replicating Sequential Instance PID_33.CONTROLLER.state[13], fanout 32 segments 2
+Replicating Sequential Instance PID_33.CONTROLLER.state[5], fanout 848 segments 36
+Replicating Sequential Instance PID_33.CONTROLLER.state[2], fanout 62 segments 3
+Replicating Sequential Instance PID_FB.AVG_CALC.state[0], fanout 53 segments 3
+Replicating Combinational Instance PID_FB.SUM.un1_state_1_0_a2, fanout 40 segments 2
+Replicating Sequential Instance PID_FB.SUM.p_adj[0], fanout 26 segments 2
+Replicating Sequential Instance PID_FB.SUM.state[2], fanout 92 segments 4
+Replicating Sequential Instance PID_FB.SUM.state[1], fanout 46 segments 2
+Replicating Combinational Instance PID_FB.PWM_TX.un1_counter_4[0], fanout 34 segments 2
+Replicating Sequential Instance PID_FB.SUM.sumreg[39], fanout 91 segments 4
+Replicating Sequential Instance PID_FB.INTCALC.integ[25], fanout 43 segments 2
+Replicating Sequential Instance PID_FB.INTSR.sr_0_[12], fanout 44 segments 2
+Replicating Sequential Instance PID_FB.CONTROLLER.state[13], fanout 32 segments 2
+Replicating Sequential Instance PID_FB.CONTROLLER.state[2], fanout 62 segments 3
+Replicating Combinational Instance PID_FB.INTCALC.state_s0_0_a2, fanout 29 segments 2
+Replicating Combinational Instance PID_FB.AVG_CALC.state_s0_0_a2, fanout 28 segments 2
+Replicating Sequential Instance PID_5.AVG_CALC.state[0], fanout 51 segments 3
+Replicating Combinational Instance PID_5.SUM.next_ireg_3.m1_1, fanout 27 segments 2
+Replicating Combinational Instance PID_5.SUM.un1_state_1_0_a2, fanout 40 segments 2
+Replicating Combinational Instance PID_5.SUM.un1_next_sum_1_iv[26], fanout 40 segments 2
+Replicating Sequential Instance PID_5.SUM.p_adj[0], fanout 26 segments 2
+Replicating Sequential Instance PID_5.SUM.state[2], fanout 92 segments 4
+Replicating Sequential Instance PID_5.SUM.state[1], fanout 46 segments 2
+Replicating Combinational Instance PID_5.PWM_TX.un1_counter_4[0], fanout 34 segments 2
+Replicating Sequential Instance PID_5.SUM.sumreg[39], fanout 91 segments 4
+Replicating Sequential Instance PID_5.INTCALC.integ[25], fanout 43 segments 2
+Replicating Sequential Instance PID_5.INTSR.sr_0_[12], fanout 39 segments 2
+Replicating Sequential Instance PID_5.CONTROLLER.state[13], fanout 32 segments 2
+Replicating Sequential Instance PID_5.CONTROLLER.state[2], fanout 62 segments 3
+Replicating Sequential Instance PID_15.AVG_CALC.state[0], fanout 51 segments 3
+Replicating Combinational Instance PID_15.SUM.next_ireg_3.m2_0, fanout 25 segments 2
+Replicating Combinational Instance PID_15.SUM.next_sum_1_sqmuxa, fanout 27 segments 2
+Replicating Combinational Instance PID_15.SUM.next_sum_1_sqmuxa_2, fanout 27 segments 2
+Replicating Combinational Instance PID_15.SUM.next_sum_0_sqmuxa_1, fanout 26 segments 2
+Replicating Combinational Instance PID_15.SUM.next_sum_0_sqmuxa_2, fanout 26 segments 2
+Replicating Combinational Instance PID_15.SUM.un1_state_1_0_a2, fanout 40 segments 2
+Replicating Combinational Instance PID_15.SUM.un1_next_sum_1_iv[26], fanout 40 segments 2
+Replicating Sequential Instance PID_15.SUM.state[3], fanout 29 segments 2
+Replicating Sequential Instance PID_15.SUM.state[2], fanout 92 segments 4
+Replicating Sequential Instance PID_15.SUM.state[1], fanout 45 segments 2
+Replicating Combinational Instance PID_15.PWM_CTL.next_off_div_0_sqmuxa, fanout 32 segments 2
+Replicating Combinational Instance PID_15.PWM_CTL.un1_off_div45, fanout 32 segments 2
+Replicating Combinational Instance PID_15.PWM_TX.un1_counter_4[0], fanout 34 segments 2
+Replicating Sequential Instance PID_15.SUM.sumreg[39], fanout 89 segments 4
+Replicating Sequential Instance PID_15.INTCALC.integ[25], fanout 67 segments 3
+Replicating Sequential Instance PID_15.INTSR.sr_0_[12], fanout 28 segments 2
+Replicating Sequential Instance PID_15.CONTROLLER.state[13], fanout 32 segments 2
+Replicating Sequential Instance PID_15.CONTROLLER.state[2], fanout 62 segments 3
+Replicating Combinational Instance CG.target_vfb_0_sqmuxa, fanout 35 segments 2
+Replicating Combinational Instance CG.target_v12_0_sqmuxa, fanout 33 segments 2
+Replicating Combinational Instance CG.target_v15_0_sqmuxa, fanout 31 segments 2
+Replicating Combinational Instance CG.k_i33_0_sqmuxa, fanout 27 segments 2
+Replicating Combinational Instance CG.k_p5_0_sqmuxa_1, fanout 35 segments 2
+Replicating Combinational Instance CG.k_ifb_0_sqmuxa, fanout 27 segments 2
+Replicating Combinational Instance CG.k_p12_0_sqmuxa, fanout 36 segments 2
+Replicating Combinational Instance CG.k_i12_0_sqmuxa, fanout 26 segments 2
+Replicating Sequential Instance CG.k_i15[11], fanout 25 segments 2
+Replicating Sequential Instance CG.k_i15[1], fanout 37 segments 2
+Replicating Sequential Instance CG.k_i15[0], fanout 33 segments 2
+Replicating Sequential Instance CG.k_i5[11], fanout 26 segments 2
+Replicating Sequential Instance CG.k_i5[1], fanout 37 segments 2
+Replicating Sequential Instance CG.k_i5[0], fanout 33 segments 2
+Replicating Sequential Instance CG.k_ifb[1], fanout 38 segments 2
+Replicating Sequential Instance CG.k_ifb[0], fanout 33 segments 2
+Replicating Sequential Instance CG.k_i33[1], fanout 37 segments 2
+Replicating Sequential Instance CG.k_i33[0], fanout 33 segments 2
+Replicating Sequential Instance CG.k_i12[1], fanout 35 segments 2
+Replicating Sequential Instance CG.k_i12[0], fanout 55 segments 3
+Replicating Sequential Instance PSU_CTL.state[0], fanout 244 segments 11
+Replicating Combinational Instance INC_SIG.sig_out, fanout 31 segments 2
+Replicating Combinational Instance PID_33.CONTROLLER.state_ns_i_0[5], fanout 36 segments 2
+
+Added 5 Buffers
+Added 235 Cells via replication
+	Added 151 Sequential Cells via replication
+	Added 84 Combinational Cells via replication
+
+Finished restoring hierarchy (Real Time elapsed 0h:02m:07s; CPU Time elapsed 0h:02m:05s; Memory used current: 394MB peak: 428MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+1 non-gated/non-generated clock tree(s) driving 7082 clock pin(s) of sequential element(s)
+5 gated/generated clock tree(s) driving 155 clock pin(s) of sequential element(s)
+0 instances converted, 155 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@K:CKID0006       clk                 port                   7082       CG.k_pfb[12]   
+=======================================================================================
+================================================================================ Gated/Generated Clocks =================================================================================
+Clock Tree ID     Driving Element           Drive Element Type     Fanout     Sample Instance                    Explanation                                                             
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       PID_12.SPICLK.cur_clk     DFN1C0                 31         PID_12.SPI.SPI_RDYSIG.sig_prev     No generated or derived clock directive on output of sequential instance
+@K:CKID0002       PID_33.SPICLK.cur_clk     DFN1C0                 31         PID_33.SPI.SPI_RDYSIG.sig_prev     No generated or derived clock directive on output of sequential instance
+@K:CKID0003       PID_FB.SPICLK.cur_clk     DFN1C0                 31         PID_FB.SPI.SPI_RDYSIG.sig_prev     No generated or derived clock directive on output of sequential instance
+@K:CKID0004       PID_5.SPICLK.cur_clk      DFN1C0                 31         PID_5.SPI.SPI_RDYSIG.sig_prev      No generated or derived clock directive on output of sequential instance
+@K:CKID0005       PID_15.SPICLK.cur_clk     DFN1C0                 31         PID_15.SPI.SPI_RDYSIG.sig_prev     No generated or derived clock directive on output of sequential instance
+=========================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:02m:08s; CPU Time elapsed 0h:02m:06s; Memory used current: 269MB peak: 428MB)
+
+Writing Analyst data base C:\PID Project\PID_Controller\synthesis\synwork\PSU_Top_Level_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:02m:10s; CPU Time elapsed 0h:02m:08s; Memory used current: 300MB peak: 428MB)
+
+Writing EDIF Netlist and constraint files
+L-2016.09M-2
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:02m:12s; CPU Time elapsed 0h:02m:09s; Memory used current: 305MB peak: 428MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:02m:12s; CPU Time elapsed 0h:02m:10s; Memory used current: 297MB peak: 428MB)
+
+@W: MT420 |Found inferred clock PSU_Top_Level|clk with period 10.00ns. Please declare a user-defined clock on object "p:clk"
+@W: MT420 |Found inferred clock spi_clk_11_3|cur_clk_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:PID_15.SPICLK.cur_clk"
+@W: MT420 |Found inferred clock spi_clk_11_2|cur_clk_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:PID_5.SPICLK.cur_clk"
+@W: MT420 |Found inferred clock spi_clk_11_1|cur_clk_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:PID_FB.SPICLK.cur_clk"
+@W: MT420 |Found inferred clock spi_clk_20|cur_clk_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:PID_33.SPICLK.cur_clk"
+@W: MT420 |Found inferred clock spi_clk_11_0|cur_clk_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:PID_12.SPICLK.cur_clk"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Thu May 03 17:51:34 2018
+#
+
+
+Top view:               PSU_Top_Level
+Library name:           PA3
+Operating conditions:   COMWCSTD ( T = 70.0, V = 1.42, P = 1.74, tree_type = balanced_tree )
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Wire load model:        proasic3e
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -18.632
+
+                                        Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock                          Frequency     Frequency     Period        Period        Slack       Type         Group              
+--------------------------------------------------------------------------------------------------------------------------------------------
+PSU_Top_Level|clk                       100.0 MHz     34.9 MHz      10.000        28.632        -18.632     inferred     Inferred_clkgroup_0
+spi_clk_11_0|cur_clk_inferred_clock     100.0 MHz     101.0 MHz     10.000        9.903         0.097       inferred     Inferred_clkgroup_5
+spi_clk_11_1|cur_clk_inferred_clock     100.0 MHz     102.9 MHz     10.000        9.720         0.280       inferred     Inferred_clkgroup_3
+spi_clk_11_2|cur_clk_inferred_clock     100.0 MHz     102.0 MHz     10.000        9.807         0.193       inferred     Inferred_clkgroup_2
+spi_clk_11_3|cur_clk_inferred_clock     100.0 MHz     102.9 MHz     10.000        9.720         0.280       inferred     Inferred_clkgroup_1
+spi_clk_20|cur_clk_inferred_clock       100.0 MHz     102.9 MHz     10.000        9.720         0.280       inferred     Inferred_clkgroup_4
+============================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                    |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                             Ending                               |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PSU_Top_Level|clk                    PSU_Top_Level|clk                    |  10.000      -18.632  |  No paths    -      |  No paths    -      |  No paths    -    
+spi_clk_11_3|cur_clk_inferred_clock  PSU_Top_Level|clk                    |  Diff grp    -        |  No paths    -      |  No paths    -      |  No paths    -    
+spi_clk_11_3|cur_clk_inferred_clock  spi_clk_11_3|cur_clk_inferred_clock  |  10.000      0.280    |  No paths    -      |  No paths    -      |  No paths    -    
+spi_clk_11_2|cur_clk_inferred_clock  PSU_Top_Level|clk                    |  Diff grp    -        |  No paths    -      |  No paths    -      |  No paths    -    
+spi_clk_11_2|cur_clk_inferred_clock  spi_clk_11_2|cur_clk_inferred_clock  |  10.000      0.193    |  No paths    -      |  No paths    -      |  No paths    -    
+spi_clk_11_1|cur_clk_inferred_clock  PSU_Top_Level|clk                    |  Diff grp    -        |  No paths    -      |  No paths    -      |  No paths    -    
+spi_clk_11_1|cur_clk_inferred_clock  spi_clk_11_1|cur_clk_inferred_clock  |  10.000      0.280    |  No paths    -      |  No paths    -      |  No paths    -    
+spi_clk_20|cur_clk_inferred_clock    PSU_Top_Level|clk                    |  Diff grp    -        |  No paths    -      |  No paths    -      |  No paths    -    
+spi_clk_20|cur_clk_inferred_clock    spi_clk_20|cur_clk_inferred_clock    |  10.000      0.280    |  No paths    -      |  No paths    -      |  No paths    -    
+spi_clk_11_0|cur_clk_inferred_clock  PSU_Top_Level|clk                    |  Diff grp    -        |  No paths    -      |  No paths    -      |  No paths    -    
+spi_clk_11_0|cur_clk_inferred_clock  spi_clk_11_0|cur_clk_inferred_clock  |  10.000      0.097    |  No paths    -      |  No paths    -      |  No paths    -    
+==================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: PSU_Top_Level|clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                        Starting                                                   Arrival            
+Instance                Reference             Type         Pin     Net             Time        Slack  
+                        Clock                                                                         
+------------------------------------------------------------------------------------------------------
+INC_SIG.sig_prev        PSU_Top_Level|clk     DFN1C0       Q       sig_prev        0.737       -18.632
+INC_SIG.sig_old         PSU_Top_Level|clk     DFN1P0       Q       sig_old_i_0     0.737       -18.099
+PID_33.SUM.p_adj[9]     PSU_Top_Level|clk     DFN1E1C0     Q       p_adj[9]        0.737       -17.768
+PID_33.SUM.p_adj[7]     PSU_Top_Level|clk     DFN1E1C0     Q       p_adj[7]        0.737       -17.094
+DEC_SIG.sig_prev        PSU_Top_Level|clk     DFN1C0       Q       sig_prev        0.737       -16.954
+DEC_SIG.sig_old         PSU_Top_Level|clk     DFN1P0       Q       sig_old_i_0     0.737       -16.776
+CG.k_i15[7]             PSU_Top_Level|clk     DFN1C0       Q       k_i15[7]        0.737       -16.736
+PID_12.SUM.p_adj[1]     PSU_Top_Level|clk     DFN1E1C0     Q       p_adj[1]        0.737       -16.654
+CG.k_i5[3]              PSU_Top_Level|clk     DFN1P0       Q       k_i5[3]         0.737       -16.611
+CG.k_i33[7]             PSU_Top_Level|clk     DFN1C0       Q       k_i33[7]        0.737       -16.460
+======================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                        Starting                                                       Required            
+Instance                Reference             Type         Pin     Net                 Time         Slack  
+                        Clock                                                                              
+-----------------------------------------------------------------------------------------------------------
+CG.k_p5[12]             PSU_Top_Level|clk     DFN1C0       D       k_p5_n12            9.427        -18.632
+CG.k_p12[12]            PSU_Top_Level|clk     DFN1C0       D       k_p12_n12           9.427        -18.055
+PID_33.SUM.preg[21]     PSU_Top_Level|clk     DFN1E1C0     D       next_preg_3[21]     9.496        -17.768
+CG.target_vfb[12]       PSU_Top_Level|clk     DFN1C0       D       target_vfb_n12      9.427        -17.761
+CG.k_p5[11]             PSU_Top_Level|clk     DFN1C0       D       k_p5_n11            9.427        -17.319
+PID_33.SUM.preg[13]     PSU_Top_Level|clk     DFN1E1C0     D       next_preg_3[13]     9.496        -16.929
+CG.k_p12[11]            PSU_Top_Level|clk     DFN1C0       D       k_p12_n11           9.427        -16.741
+PID_15.SUM.ireg[20]     PSU_Top_Level|clk     DFN1E1C0     D       next_ireg_3[20]     9.496        -16.736
+PID_12.SUM.preg[23]     PSU_Top_Level|clk     DFN1E1C0     D       next_preg_3[23]     9.496        -16.654
+CG.target_v5[12]        PSU_Top_Level|clk     DFN1C0       D       target_v5_n12       9.427        -16.623
+===========================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      28.059
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -18.632
+
+    Number of logic level(s):                17
+    Starting point:                          INC_SIG.sig_prev / Q
+    Ending point:                            CG.k_p5[12] / D
+    The start point is clocked by            PSU_Top_Level|clk [rising] on pin CLK
+    The end   point is clocked by            PSU_Top_Level|clk [rising] on pin CLK
+
+Instance / Net                           Pin      Pin               Arrival     No. of    
+Name                          Type       Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------
+INC_SIG.sig_prev              DFN1C0     Q        Out     0.737     0.737       -         
+sig_prev                      Net        -        -       0.806     -           3         
+INC_SIG.sig_old_RNIK1HQ_0     NOR2B      B        In      -         1.543       -         
+INC_SIG.sig_old_RNIK1HQ_0     NOR2B      Y        Out     0.627     2.171       -         
+inc_constd_0                  Net        -        -       2.172     -           16        
+CG.k_i521_2_RNILHSM2          NOR3C      C        In      -         4.343       -         
+CG.k_i521_2_RNILHSM2          NOR3C      Y        Out     0.641     4.984       -         
+k_p5_0_sqmuxa_1_0             Net        -        -       2.263     -           18        
+CG.k_i521_2_RNIEU765          AOI1       C        In      -         7.247       -         
+CG.k_i521_2_RNIEU765          AOI1       Y        Out     0.525     7.772       -         
+N_222                         Net        -        -       1.184     -           4         
+CG.k_p5_RNIIVR98[0]           OA1B       B        In      -         8.956       -         
+CG.k_p5_RNIIVR98[0]           OA1B       Y        Out     0.984     9.940       -         
+N_493                         Net        -        -       0.322     -           1         
+CG.k_p5_RNIKFF0H[0]           OR2        B        In      -         10.261      -         
+CG.k_p5_RNIKFF0H[0]           OR2        Y        Out     0.514     10.775      -         
+k_p5_c1                       Net        -        -       0.806     -           3         
+CG.k_p5_RNIQI34K_0[2]         AO13       A        In      -         11.582      -         
+CG.k_p5_RNIQI34K_0[2]         AO13       Y        Out     0.759     12.341      -         
+k_p5_c2                       Net        -        -       0.386     -           2         
+CG.k_p5_RNIF40RM[2]           NOR2A      A        In      -         12.727      -         
+CG.k_p5_RNIF40RM[2]           NOR2A      Y        Out     0.516     13.243      -         
+N_499                         Net        -        -       0.322     -           1         
+CG.k_p5_RNIR9RBB1[3]          AO1        C        In      -         13.565      -         
+CG.k_p5_RNIR9RBB1[3]          AO1        Y        Out     0.655     14.220      -         
+k_p5_c3                       Net        -        -       0.806     -           3         
+CG.k_p5_RNIQ4API1[3]          OA1B       A        In      -         15.026      -         
+CG.k_p5_RNIQ4API1[3]          OA1B       Y        Out     0.900     15.927      -         
+N_505                         Net        -        -       0.386     -           2         
+CG.k_p5_RNI26DAT1[5]          OA1B       A        In      -         16.312      -         
+CG.k_p5_RNI26DAT1[5]          OA1B       Y        Out     0.900     17.212      -         
+N_508                         Net        -        -       0.806     -           3         
+CG.k_p5_RNIA5SBB2[7]          OA1        A        In      -         18.019      -         
+CG.k_p5_RNIA5SBB2[7]          OA1        Y        Out     0.984     19.003      -         
+k_p5_c7_0                     Net        -        -       0.806     -           3         
+CG.k_p5_RNIJ5T1P4_0[7]        OA1B       B        In      -         19.809      -         
+CG.k_p5_RNIJ5T1P4_0[7]        OA1B       Y        Out     0.984     20.793      -         
+N_514                         Net        -        -       0.386     -           2         
+CG.k_p5_RNI8NPOR4[7]          OR2A       B        In      -         21.179      -         
+CG.k_p5_RNI8NPOR4[7]          OR2A       Y        Out     0.514     21.693      -         
+k_p5_c9_0_tz_0                Net        -        -       0.322     -           1         
+CG.k_p5_RNIAD6KL9[9]          OA1        B        In      -         22.014      -         
+CG.k_p5_RNIAD6KL9[9]          OA1        Y        Out     0.902     22.916      -         
+k_p5_c9_0                     Net        -        -       0.806     -           3         
+CG.k_p5_RNIVJ9FO9[10]         OA1A       B        In      -         23.723      -         
+CG.k_p5_RNIVJ9FO9[10]         OA1A       Y        Out     0.902     24.625      -         
+k_p5_c10_0                    Net        -        -       0.806     -           3         
+CG.k_p5_RNO_0[12]             OA1B       B        In      -         25.431      -         
+CG.k_p5_RNO_0[12]             OA1B       Y        Out     0.984     26.415      -         
+N_523                         Net        -        -       0.322     -           1         
+CG.k_p5_RNO[12]               AX1D       A        In      -         26.736      -         
+CG.k_p5_RNO[12]               AX1D       Y        Out     1.001     27.737      -         
+k_p5_n12                      Net        -        -       0.322     -           1         
+CG.k_p5[12]                   DFN1C0     D        In      -         28.059      -         
+==========================================================================================
+Total path delay (propagation time + setup) of 28.632 is 14.604(51.0%) logic and 14.029(49.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      27.968
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -18.542
+
+    Number of logic level(s):                17
+    Starting point:                          INC_SIG.sig_prev / Q
+    Ending point:                            CG.k_p5[12] / D
+    The start point is clocked by            PSU_Top_Level|clk [rising] on pin CLK
+    The end   point is clocked by            PSU_Top_Level|clk [rising] on pin CLK
+
+Instance / Net                           Pin      Pin               Arrival     No. of    
+Name                          Type       Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------
+INC_SIG.sig_prev              DFN1C0     Q        Out     0.737     0.737       -         
+sig_prev                      Net        -        -       0.806     -           3         
+INC_SIG.sig_old_RNIK1HQ_0     NOR2B      B        In      -         1.543       -         
+INC_SIG.sig_old_RNIK1HQ_0     NOR2B      Y        Out     0.627     2.171       -         
+inc_constd_0                  Net        -        -       2.172     -           16        
+CG.k_i521_2_RNILHSM2          NOR3C      C        In      -         4.343       -         
+CG.k_i521_2_RNILHSM2          NOR3C      Y        Out     0.641     4.984       -         
+k_p5_0_sqmuxa_1_0             Net        -        -       2.263     -           18        
+CG.k_i521_2_RNIEU765          AOI1       C        In      -         7.247       -         
+CG.k_i521_2_RNIEU765          AOI1       Y        Out     0.525     7.772       -         
+N_222                         Net        -        -       1.184     -           4         
+CG.k_p5_RNIIVR98[0]           OA1B       B        In      -         8.956       -         
+CG.k_p5_RNIIVR98[0]           OA1B       Y        Out     0.984     9.940       -         
+N_493                         Net        -        -       0.322     -           1         
+CG.k_p5_RNIKFF0H[0]           OR2        B        In      -         10.261      -         
+CG.k_p5_RNIKFF0H[0]           OR2        Y        Out     0.514     10.775      -         
+k_p5_c1                       Net        -        -       0.806     -           3         
+CG.k_p5_RNIQI34K_0[2]         AO13       A        In      -         11.582      -         
+CG.k_p5_RNIQI34K_0[2]         AO13       Y        Out     0.759     12.341      -         
+k_p5_c2                       Net        -        -       0.386     -           2         
+CG.k_p5_RNIF40RM[2]           NOR2A      A        In      -         12.727      -         
+CG.k_p5_RNIF40RM[2]           NOR2A      Y        Out     0.516     13.243      -         
+N_499                         Net        -        -       0.322     -           1         
+CG.k_p5_RNIR9RBB1[3]          AO1        C        In      -         13.565      -         
+CG.k_p5_RNIR9RBB1[3]          AO1        Y        Out     0.655     14.220      -         
+k_p5_c3                       Net        -        -       0.806     -           3         
+CG.k_p5_RNIQ4API1[3]          OA1B       A        In      -         15.026      -         
+CG.k_p5_RNIQ4API1[3]          OA1B       Y        Out     0.900     15.927      -         
+N_505                         Net        -        -       0.386     -           2         
+CG.k_p5_RNI26DAT1[5]          OA1B       A        In      -         16.312      -         
+CG.k_p5_RNI26DAT1[5]          OA1B       Y        Out     0.900     17.212      -         
+N_508                         Net        -        -       0.806     -           3         
+CG.k_p5_RNIA5SBB2[7]          OA1        A        In      -         18.019      -         
+CG.k_p5_RNIA5SBB2[7]          OA1        Y        Out     0.984     19.003      -         
+k_p5_c7_0                     Net        -        -       0.806     -           3         
+CG.k_p5_RNIJ5T1P4_0[7]        OA1B       B        In      -         19.809      -         
+CG.k_p5_RNIJ5T1P4_0[7]        OA1B       Y        Out     0.984     20.793      -         
+N_514                         Net        -        -       0.386     -           2         
+CG.k_p5_RNI8NPOR4[7]          OR2A       B        In      -         21.179      -         
+CG.k_p5_RNI8NPOR4[7]          OR2A       Y        Out     0.514     21.693      -         
+k_p5_c9_0_tz_0                Net        -        -       0.322     -           1         
+CG.k_p5_RNIAD6KL9[9]          OA1        B        In      -         22.014      -         
+CG.k_p5_RNIAD6KL9[9]          OA1        Y        Out     0.902     22.916      -         
+k_p5_c9_0                     Net        -        -       0.806     -           3         
+CG.k_p5_RNIVJ9FO9[10]         OA1A       B        In      -         23.723      -         
+CG.k_p5_RNIVJ9FO9[10]         OA1A       Y        Out     0.902     24.625      -         
+k_p5_c10_0                    Net        -        -       0.806     -           3         
+CG.k_p5_RNO_1[12]             OA1A       B        In      -         25.431      -         
+CG.k_p5_RNO_1[12]             OA1A       Y        Out     0.902     26.333      -         
+k_p5_c11_0                    Net        -        -       0.322     -           1         
+CG.k_p5_RNO[12]               AX1D       B        In      -         26.655      -         
+CG.k_p5_RNO[12]               AX1D       Y        Out     0.992     27.647      -         
+k_p5_n12                      Net        -        -       0.322     -           1         
+CG.k_p5[12]                   DFN1C0     D        In      -         27.968      -         
+==========================================================================================
+Total path delay (propagation time + setup) of 28.542 is 14.513(50.8%) logic and 14.029(49.2%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      27.908
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -18.481
+
+    Number of logic level(s):                17
+    Starting point:                          INC_SIG.sig_prev / Q
+    Ending point:                            CG.k_p5[12] / D
+    The start point is clocked by            PSU_Top_Level|clk [rising] on pin CLK
+    The end   point is clocked by            PSU_Top_Level|clk [rising] on pin CLK
+
+Instance / Net                           Pin      Pin               Arrival     No. of    
+Name                          Type       Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------
+INC_SIG.sig_prev              DFN1C0     Q        Out     0.737     0.737       -         
+sig_prev                      Net        -        -       0.806     -           3         
+INC_SIG.sig_old_RNIK1HQ_0     NOR2B      B        In      -         1.543       -         
+INC_SIG.sig_old_RNIK1HQ_0     NOR2B      Y        Out     0.627     2.171       -         
+inc_constd_0                  Net        -        -       2.172     -           16        
+CG.k_i521_2_RNILHSM2          NOR3C      C        In      -         4.343       -         
+CG.k_i521_2_RNILHSM2          NOR3C      Y        Out     0.641     4.984       -         
+k_p5_0_sqmuxa_1_0             Net        -        -       2.263     -           18        
+CG.k_i521_2_RNIEU765          AOI1       C        In      -         7.247       -         
+CG.k_i521_2_RNIEU765          AOI1       Y        Out     0.525     7.772       -         
+N_222                         Net        -        -       1.184     -           4         
+CG.k_p5_RNI2GJM8[1]           OA1        A        In      -         8.956       -         
+CG.k_p5_RNI2GJM8[1]           OA1        Y        Out     0.984     9.940       -         
+k_p5_c1_0                     Net        -        -       0.322     -           1         
+CG.k_p5_RNIKFF0H[0]           OR2        A        In      -         10.261      -         
+CG.k_p5_RNIKFF0H[0]           OR2        Y        Out     0.363     10.624      -         
+k_p5_c1                       Net        -        -       0.806     -           3         
+CG.k_p5_RNIQI34K_0[2]         AO13       A        In      -         11.431      -         
+CG.k_p5_RNIQI34K_0[2]         AO13       Y        Out     0.759     12.190      -         
+k_p5_c2                       Net        -        -       0.386     -           2         
+CG.k_p5_RNIF40RM[2]           NOR2A      A        In      -         12.576      -         
+CG.k_p5_RNIF40RM[2]           NOR2A      Y        Out     0.516     13.092      -         
+N_499                         Net        -        -       0.322     -           1         
+CG.k_p5_RNIR9RBB1[3]          AO1        C        In      -         13.414      -         
+CG.k_p5_RNIR9RBB1[3]          AO1        Y        Out     0.655     14.069      -         
+k_p5_c3                       Net        -        -       0.806     -           3         
+CG.k_p5_RNIQ4API1[3]          OA1B       A        In      -         14.875      -         
+CG.k_p5_RNIQ4API1[3]          OA1B       Y        Out     0.900     15.775      -         
+N_505                         Net        -        -       0.386     -           2         
+CG.k_p5_RNI26DAT1[5]          OA1B       A        In      -         16.161      -         
+CG.k_p5_RNI26DAT1[5]          OA1B       Y        Out     0.900     17.061      -         
+N_508                         Net        -        -       0.806     -           3         
+CG.k_p5_RNIA5SBB2[7]          OA1        A        In      -         17.868      -         
+CG.k_p5_RNIA5SBB2[7]          OA1        Y        Out     0.984     18.851      -         
+k_p5_c7_0                     Net        -        -       0.806     -           3         
+CG.k_p5_RNIJ5T1P4_0[7]        OA1B       B        In      -         19.658      -         
+CG.k_p5_RNIJ5T1P4_0[7]        OA1B       Y        Out     0.984     20.642      -         
+N_514                         Net        -        -       0.386     -           2         
+CG.k_p5_RNI8NPOR4[7]          OR2A       B        In      -         21.027      -         
+CG.k_p5_RNI8NPOR4[7]          OR2A       Y        Out     0.514     21.542      -         
+k_p5_c9_0_tz_0                Net        -        -       0.322     -           1         
+CG.k_p5_RNIAD6KL9[9]          OA1        B        In      -         21.863      -         
+CG.k_p5_RNIAD6KL9[9]          OA1        Y        Out     0.902     22.765      -         
+k_p5_c9_0                     Net        -        -       0.806     -           3         
+CG.k_p5_RNIVJ9FO9[10]         OA1A       B        In      -         23.572      -         
+CG.k_p5_RNIVJ9FO9[10]         OA1A       Y        Out     0.902     24.474      -         
+k_p5_c10_0                    Net        -        -       0.806     -           3         
+CG.k_p5_RNO_0[12]             OA1B       B        In      -         25.280      -         
+CG.k_p5_RNO_0[12]             OA1B       Y        Out     0.984     26.264      -         
+N_523                         Net        -        -       0.322     -           1         
+CG.k_p5_RNO[12]               AX1D       A        In      -         26.585      -         
+CG.k_p5_RNO[12]               AX1D       Y        Out     1.001     27.586      -         
+k_p5_n12                      Net        -        -       0.322     -           1         
+CG.k_p5[12]                   DFN1C0     D        In      -         27.908      -         
+==========================================================================================
+Total path delay (propagation time + setup) of 28.481 is 14.452(50.7%) logic and 14.029(49.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      27.892
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -18.465
+
+    Number of logic level(s):                17
+    Starting point:                          INC_SIG.sig_prev / Q
+    Ending point:                            CG.k_p5[12] / D
+    The start point is clocked by            PSU_Top_Level|clk [rising] on pin CLK
+    The end   point is clocked by            PSU_Top_Level|clk [rising] on pin CLK
+
+Instance / Net                           Pin      Pin               Arrival     No. of    
+Name                          Type       Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------
+INC_SIG.sig_prev              DFN1C0     Q        Out     0.737     0.737       -         
+sig_prev                      Net        -        -       0.806     -           3         
+INC_SIG.sig_old_RNIK1HQ_0     NOR2B      B        In      -         1.543       -         
+INC_SIG.sig_old_RNIK1HQ_0     NOR2B      Y        Out     0.627     2.171       -         
+inc_constd_0                  Net        -        -       2.172     -           16        
+CG.k_i521_2_RNILHSM2          NOR3C      C        In      -         4.343       -         
+CG.k_i521_2_RNILHSM2          NOR3C      Y        Out     0.641     4.984       -         
+k_p5_0_sqmuxa_1_0             Net        -        -       2.263     -           18        
+CG.k_i521_2_RNIEU765          AOI1       C        In      -         7.247       -         
+CG.k_i521_2_RNIEU765          AOI1       Y        Out     0.525     7.772       -         
+N_222                         Net        -        -       1.184     -           4         
+CG.k_p5_RNIIVR98[0]           OA1B       B        In      -         8.956       -         
+CG.k_p5_RNIIVR98[0]           OA1B       Y        Out     0.984     9.940       -         
+N_493                         Net        -        -       0.322     -           1         
+CG.k_p5_RNIKFF0H[0]           OR2        B        In      -         10.261      -         
+CG.k_p5_RNIKFF0H[0]           OR2        Y        Out     0.514     10.775      -         
+k_p5_c1                       Net        -        -       0.806     -           3         
+CG.k_p5_RNIQI34K_0[2]         AO13       A        In      -         11.582      -         
+CG.k_p5_RNIQI34K_0[2]         AO13       Y        Out     0.759     12.341      -         
+k_p5_c2                       Net        -        -       0.386     -           2         
+CG.k_p5_RNIF40RM[2]           NOR2A      A        In      -         12.727      -         
+CG.k_p5_RNIF40RM[2]           NOR2A      Y        Out     0.516     13.243      -         
+N_499                         Net        -        -       0.322     -           1         
+CG.k_p5_RNIR9RBB1[3]          AO1        C        In      -         13.565      -         
+CG.k_p5_RNIR9RBB1[3]          AO1        Y        Out     0.655     14.220      -         
+k_p5_c3                       Net        -        -       0.806     -           3         
+CG.k_p5_RNIQ4API1[3]          OA1B       A        In      -         15.026      -         
+CG.k_p5_RNIQ4API1[3]          OA1B       Y        Out     0.900     15.927      -         
+N_505                         Net        -        -       0.386     -           2         
+CG.k_p5_RNI26DAT1[5]          OA1B       A        In      -         16.312      -         
+CG.k_p5_RNI26DAT1[5]          OA1B       Y        Out     0.900     17.212      -         
+N_508                         Net        -        -       0.806     -           3         
+CG.k_p5_RNIKE4VA2[5]          OA1B       A        In      -         18.019      -         
+CG.k_p5_RNIKE4VA2[5]          OA1B       Y        Out     0.900     18.919      -         
+N_511                         Net        -        -       0.806     -           3         
+CG.k_p5_RNIJ5T1P4_0[7]        OA1B       A        In      -         19.726      -         
+CG.k_p5_RNIJ5T1P4_0[7]        OA1B       Y        Out     0.900     20.626      -         
+N_514                         Net        -        -       0.386     -           2         
+CG.k_p5_RNI8NPOR4[7]          OR2A       B        In      -         21.012      -         
+CG.k_p5_RNI8NPOR4[7]          OR2A       Y        Out     0.514     21.526      -         
+k_p5_c9_0_tz_0                Net        -        -       0.322     -           1         
+CG.k_p5_RNIAD6KL9[9]          OA1        B        In      -         21.847      -         
+CG.k_p5_RNIAD6KL9[9]          OA1        Y        Out     0.902     22.749      -         
+k_p5_c9_0                     Net        -        -       0.806     -           3         
+CG.k_p5_RNIVJ9FO9[10]         OA1A       B        In      -         23.556      -         
+CG.k_p5_RNIVJ9FO9[10]         OA1A       Y        Out     0.902     24.458      -         
+k_p5_c10_0                    Net        -        -       0.806     -           3         
+CG.k_p5_RNO_0[12]             OA1B       B        In      -         25.264      -         
+CG.k_p5_RNO_0[12]             OA1B       Y        Out     0.984     26.248      -         
+N_523                         Net        -        -       0.322     -           1         
+CG.k_p5_RNO[12]               AX1D       A        In      -         26.569      -         
+CG.k_p5_RNO[12]               AX1D       Y        Out     1.001     27.570      -         
+k_p5_n12                      Net        -        -       0.322     -           1         
+CG.k_p5[12]                   DFN1C0     D        In      -         27.892      -         
+==========================================================================================
+Total path delay (propagation time + setup) of 28.465 is 14.437(50.7%) logic and 14.029(49.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      27.817
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -18.391
+
+    Number of logic level(s):                17
+    Starting point:                          INC_SIG.sig_prev / Q
+    Ending point:                            CG.k_p5[12] / D
+    The start point is clocked by            PSU_Top_Level|clk [rising] on pin CLK
+    The end   point is clocked by            PSU_Top_Level|clk [rising] on pin CLK
+
+Instance / Net                           Pin      Pin               Arrival     No. of    
+Name                          Type       Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------
+INC_SIG.sig_prev              DFN1C0     Q        Out     0.737     0.737       -         
+sig_prev                      Net        -        -       0.806     -           3         
+INC_SIG.sig_old_RNIK1HQ_0     NOR2B      B        In      -         1.543       -         
+INC_SIG.sig_old_RNIK1HQ_0     NOR2B      Y        Out     0.627     2.171       -         
+inc_constd_0                  Net        -        -       2.172     -           16        
+CG.k_i521_2_RNILHSM2          NOR3C      C        In      -         4.343       -         
+CG.k_i521_2_RNILHSM2          NOR3C      Y        Out     0.641     4.984       -         
+k_p5_0_sqmuxa_1_0             Net        -        -       2.263     -           18        
+CG.k_i521_2_RNIEU765          AOI1       C        In      -         7.247       -         
+CG.k_i521_2_RNIEU765          AOI1       Y        Out     0.525     7.772       -         
+N_222                         Net        -        -       1.184     -           4         
+CG.k_p5_RNI2GJM8[1]           OA1        A        In      -         8.956       -         
+CG.k_p5_RNI2GJM8[1]           OA1        Y        Out     0.984     9.940       -         
+k_p5_c1_0                     Net        -        -       0.322     -           1         
+CG.k_p5_RNIKFF0H[0]           OR2        A        In      -         10.261      -         
+CG.k_p5_RNIKFF0H[0]           OR2        Y        Out     0.363     10.624      -         
+k_p5_c1                       Net        -        -       0.806     -           3         
+CG.k_p5_RNIQI34K_0[2]         AO13       A        In      -         11.431      -         
+CG.k_p5_RNIQI34K_0[2]         AO13       Y        Out     0.759     12.190      -         
+k_p5_c2                       Net        -        -       0.386     -           2         
+CG.k_p5_RNIF40RM[2]           NOR2A      A        In      -         12.576      -         
+CG.k_p5_RNIF40RM[2]           NOR2A      Y        Out     0.516     13.092      -         
+N_499                         Net        -        -       0.322     -           1         
+CG.k_p5_RNIR9RBB1[3]          AO1        C        In      -         13.414      -         
+CG.k_p5_RNIR9RBB1[3]          AO1        Y        Out     0.655     14.069      -         
+k_p5_c3                       Net        -        -       0.806     -           3         
+CG.k_p5_RNIQ4API1[3]          OA1B       A        In      -         14.875      -         
+CG.k_p5_RNIQ4API1[3]          OA1B       Y        Out     0.900     15.775      -         
+N_505                         Net        -        -       0.386     -           2         
+CG.k_p5_RNI26DAT1[5]          OA1B       A        In      -         16.161      -         
+CG.k_p5_RNI26DAT1[5]          OA1B       Y        Out     0.900     17.061      -         
+N_508                         Net        -        -       0.806     -           3         
+CG.k_p5_RNIA5SBB2[7]          OA1        A        In      -         17.868      -         
+CG.k_p5_RNIA5SBB2[7]          OA1        Y        Out     0.984     18.851      -         
+k_p5_c7_0                     Net        -        -       0.806     -           3         
+CG.k_p5_RNIJ5T1P4_0[7]        OA1B       B        In      -         19.658      -         
+CG.k_p5_RNIJ5T1P4_0[7]        OA1B       Y        Out     0.984     20.642      -         
+N_514                         Net        -        -       0.386     -           2         
+CG.k_p5_RNI8NPOR4[7]          OR2A       B        In      -         21.027      -         
+CG.k_p5_RNI8NPOR4[7]          OR2A       Y        Out     0.514     21.542      -         
+k_p5_c9_0_tz_0                Net        -        -       0.322     -           1         
+CG.k_p5_RNIAD6KL9[9]          OA1        B        In      -         21.863      -         
+CG.k_p5_RNIAD6KL9[9]          OA1        Y        Out     0.902     22.765      -         
+k_p5_c9_0                     Net        -        -       0.806     -           3         
+CG.k_p5_RNIVJ9FO9[10]         OA1A       B        In      -         23.572      -         
+CG.k_p5_RNIVJ9FO9[10]         OA1A       Y        Out     0.902     24.474      -         
+k_p5_c10_0                    Net        -        -       0.806     -           3         
+CG.k_p5_RNO_1[12]             OA1A       B        In      -         25.280      -         
+CG.k_p5_RNO_1[12]             OA1A       Y        Out     0.902     26.182      -         
+k_p5_c11_0                    Net        -        -       0.322     -           1         
+CG.k_p5_RNO[12]               AX1D       B        In      -         26.503      -         
+CG.k_p5_RNO[12]               AX1D       Y        Out     0.992     27.496      -         
+k_p5_n12                      Net        -        -       0.322     -           1         
+CG.k_p5[12]                   DFN1C0     D        In      -         27.817      -         
+==========================================================================================
+Total path delay (propagation time + setup) of 28.391 is 14.362(50.6%) logic and 14.029(49.4%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: spi_clk_11_0|cur_clk_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                              Starting                                                               Arrival          
+Instance                      Reference                               Type       Pin     Net         Time        Slack
+                              Clock                                                                                   
+----------------------------------------------------------------------------------------------------------------------
+PID_12.SPI.SPICTL.cnt[0]      spi_clk_11_0|cur_clk_inferred_clock     DFN1C0     Q       cnt[0]      0.580       0.097
+PID_12.SPI.SPICTL.cnt[1]      spi_clk_11_0|cur_clk_inferred_clock     DFN1C0     Q       cnt[1]      0.580       0.221
+PID_12.SPI.SPICTL.cnt[3]      spi_clk_11_0|cur_clk_inferred_clock     DFN1C0     Q       cnt[3]      0.737       0.417
+PID_12.SPI.SPICTL.cnt[5]      spi_clk_11_0|cur_clk_inferred_clock     DFN1C0     Q       cnt[5]      0.737       0.674
+PID_12.SPI.SPICTL.cnt[8]      spi_clk_11_0|cur_clk_inferred_clock     DFN1C0     Q       cnt[8]      0.737       1.250
+PID_12.SPI.SPICTL.cnt[7]      spi_clk_11_0|cur_clk_inferred_clock     DFN1C0     Q       cnt[7]      0.737       1.363
+PID_12.SPI.SPICTL.cnt[10]     spi_clk_11_0|cur_clk_inferred_clock     DFN1C0     Q       cnt[10]     0.737       1.601
+PID_12.SPI.SPICTL.cnt[2]      spi_clk_11_0|cur_clk_inferred_clock     DFN1C0     Q       cnt[2]      0.580       1.660
+PID_12.SPI.SPICTL.cnt[11]     spi_clk_11_0|cur_clk_inferred_clock     DFN1C0     Q       cnt[11]     0.737       1.809
+PID_12.SPI.SPICTL.cnt[4]      spi_clk_11_0|cur_clk_inferred_clock     DFN1C0     Q       cnt[4]      0.737       2.018
+======================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                              Starting                                                                 Required          
+Instance                      Reference                               Type         Pin     Net         Time         Slack
+                              Clock                                                                                      
+-------------------------------------------------------------------------------------------------------------------------
+PID_12.SPI.SPICTL.cnt[15]     spi_clk_11_0|cur_clk_inferred_clock     DFN1C0       D       cnt_n15     9.461        0.097
+PID_12.SPI.SPICTL.cnt[13]     spi_clk_11_0|cur_clk_inferred_clock     DFN1C0       D       cnt_n13     9.461        0.200
+PID_12.SPI.SPICTL.cnt[14]     spi_clk_11_0|cur_clk_inferred_clock     DFN1C0       D       cnt_n14     9.461        0.280
+PID_12.SPI.SPICTL.cnt[12]     spi_clk_11_0|cur_clk_inferred_clock     DFN1C0       D       cnt_n12     9.427        0.954
+PID_12.SPI.SPICTL.cnt[9]      spi_clk_11_0|cur_clk_inferred_clock     DFN1C0       D       cnt_n9      9.461        1.458
+PID_12.SPI.SPICTL.cnt[4]      spi_clk_11_0|cur_clk_inferred_clock     DFN1C0       D       N_20        9.461        1.839
+PID_12.SPI.VD_STP.sr[0]       spi_clk_11_0|cur_clk_inferred_clock     DFN1E0C0     E       N_29        9.392        1.959
+PID_12.SPI.VD_STP.sr[1]       spi_clk_11_0|cur_clk_inferred_clock     DFN1E0C0     E       N_29        9.392        1.959
+PID_12.SPI.VD_STP.sr[2]       spi_clk_11_0|cur_clk_inferred_clock     DFN1E0C0     E       N_29        9.392        1.959
+PID_12.SPI.VD_STP.sr[3]       spi_clk_11_0|cur_clk_inferred_clock     DFN1E0C0     E       N_29        9.392        1.959
+=========================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      9.364
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 0.097
+
+    Number of logic level(s):                5
+    Starting point:                          PID_12.SPI.SPICTL.cnt[0] / Q
+    Ending point:                            PID_12.SPI.SPICTL.cnt[15] / D
+    The start point is clocked by            spi_clk_11_0|cur_clk_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            spi_clk_11_0|cur_clk_inferred_clock [rising] on pin CLK
+
+Instance / Net                                   Pin      Pin               Arrival     No. of    
+Name                                  Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+PID_12.SPI.SPICTL.cnt[0]              DFN1C0     Q        Out     0.580     0.580       -         
+cnt[0]                                Net        -        -       1.279     -           5         
+PID_12.SPI.SPICTL.cnt_RNI34RL[1]      OR2B       B        In      -         1.860       -         
+PID_12.SPI.SPICTL.cnt_RNI34RL[1]      OR2B       Y        Out     0.516     2.376       -         
+N_30                                  Net        -        -       1.184     -           4         
+PID_12.SPI.SPICTL.cnt_RNIMNO01[2]     OR2A       B        In      -         3.559       -         
+PID_12.SPI.SPICTL.cnt_RNIMNO01[2]     OR2A       Y        Out     0.646     4.206       -         
+N_31                                  Net        -        -       1.184     -           4         
+PID_12.SPI.SPICTL.cnt_RNISG6U3[4]     NOR3B      C        In      -         5.389       -         
+PID_12.SPI.SPICTL.cnt_RNISG6U3[4]     NOR3B      Y        Out     0.488     5.878       -         
+cnt_N_13_mux                          Net        -        -       1.279     -           5         
+PID_12.SPI.SPICTL.cnt_RNO_0[15]       OR3B       B        In      -         7.157       -         
+PID_12.SPI.SPICTL.cnt_RNO_0[15]       OR3B       Y        Out     0.624     7.781       -         
+N_75                                  Net        -        -       0.322     -           1         
+PID_12.SPI.SPICTL.cnt_RNO[15]         XA1A       B        In      -         8.102       -         
+PID_12.SPI.SPICTL.cnt_RNO[15]         XA1A       Y        Out     0.940     9.043       -         
+cnt_n15                               Net        -        -       0.322     -           1         
+PID_12.SPI.SPICTL.cnt[15]             DFN1C0     D        In      -         9.364       -         
+==================================================================================================
+Total path delay (propagation time + setup) of 9.903 is 4.334(43.8%) logic and 5.569(56.2%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: spi_clk_11_1|cur_clk_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                              Starting                                                               Arrival          
+Instance                      Reference                               Type       Pin     Net         Time        Slack
+                              Clock                                                                                   
+----------------------------------------------------------------------------------------------------------------------
+PID_FB.SPI.SPICTL.cnt[0]      spi_clk_11_1|cur_clk_inferred_clock     DFN1C0     Q       cnt[0]      0.580       0.280
+PID_FB.SPI.SPICTL.cnt[1]      spi_clk_11_1|cur_clk_inferred_clock     DFN1C0     Q       cnt[1]      0.580       0.403
+PID_FB.SPI.SPICTL.cnt[3]      spi_clk_11_1|cur_clk_inferred_clock     DFN1C0     Q       cnt[3]      0.737       0.605
+PID_FB.SPI.SPICTL.cnt[5]      spi_clk_11_1|cur_clk_inferred_clock     DFN1C0     Q       cnt[5]      0.737       0.862
+PID_FB.SPI.SPICTL.cnt[8]      spi_clk_11_1|cur_clk_inferred_clock     DFN1C0     Q       cnt[8]      0.737       1.437
+PID_FB.SPI.SPICTL.cnt[7]      spi_clk_11_1|cur_clk_inferred_clock     DFN1C0     Q       cnt[7]      0.737       1.550
+PID_FB.SPI.SPICTL.cnt[10]     spi_clk_11_1|cur_clk_inferred_clock     DFN1C0     Q       cnt[10]     0.737       1.788
+PID_FB.SPI.SPICTL.cnt[2]      spi_clk_11_1|cur_clk_inferred_clock     DFN1C0     Q       cnt[2]      0.580       1.842
+PID_FB.SPI.SPICTL.cnt[4]      spi_clk_11_1|cur_clk_inferred_clock     DFN1C0     Q       cnt[4]      0.737       2.195
+PID_FB.SPI.SPICTL.cnt[11]     spi_clk_11_1|cur_clk_inferred_clock     DFN1C0     Q       cnt[11]     0.737       2.374
+======================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                              Starting                                                                 Required          
+Instance                      Reference                               Type         Pin     Net         Time         Slack
+                              Clock                                                                                      
+-------------------------------------------------------------------------------------------------------------------------
+PID_FB.SPI.SPICTL.cnt[14]     spi_clk_11_1|cur_clk_inferred_clock     DFN1C0       D       cnt_n14     9.461        0.280
+PID_FB.SPI.SPICTL.cnt[13]     spi_clk_11_1|cur_clk_inferred_clock     DFN1C0       D       cnt_n13     9.461        0.295
+PID_FB.SPI.SPICTL.cnt[15]     spi_clk_11_1|cur_clk_inferred_clock     DFN1C0       D       cnt_n15     9.461        0.652
+PID_FB.SPI.SPICTL.cnt[12]     spi_clk_11_1|cur_clk_inferred_clock     DFN1C0       D       cnt_n12     9.427        1.050
+PID_FB.SPI.SPICTL.cnt[9]      spi_clk_11_1|cur_clk_inferred_clock     DFN1C0       D       cnt_n9      9.461        1.458
+PID_FB.SPI.SPICTL.cnt[4]      spi_clk_11_1|cur_clk_inferred_clock     DFN1C0       D       N_20        9.461        1.839
+PID_FB.SPI.VD_STP.sr[0]       spi_clk_11_1|cur_clk_inferred_clock     DFN1E0C0     E       N_29        9.392        1.959
+PID_FB.SPI.VD_STP.sr[1]       spi_clk_11_1|cur_clk_inferred_clock     DFN1E0C0     E       N_29        9.392        1.959
+PID_FB.SPI.VD_STP.sr[2]       spi_clk_11_1|cur_clk_inferred_clock     DFN1E0C0     E       N_29        9.392        1.959
+PID_FB.SPI.VD_STP.sr[3]       spi_clk_11_1|cur_clk_inferred_clock     DFN1E0C0     E       N_29        9.392        1.959
+=========================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      9.181
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 0.280
+
+    Number of logic level(s):                5
+    Starting point:                          PID_FB.SPI.SPICTL.cnt[0] / Q
+    Ending point:                            PID_FB.SPI.SPICTL.cnt[14] / D
+    The start point is clocked by            spi_clk_11_1|cur_clk_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            spi_clk_11_1|cur_clk_inferred_clock [rising] on pin CLK
+
+Instance / Net                                   Pin      Pin               Arrival     No. of    
+Name                                  Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+PID_FB.SPI.SPICTL.cnt[0]              DFN1C0     Q        Out     0.580     0.580       -         
+cnt[0]                                Net        -        -       1.279     -           5         
+PID_FB.SPI.SPICTL.cnt_RNID4KA[1]      OR2B       B        In      -         1.860       -         
+PID_FB.SPI.SPICTL.cnt_RNID4KA[1]      OR2B       Y        Out     0.516     2.376       -         
+N_30                                  Net        -        -       1.184     -           4         
+PID_FB.SPI.SPICTL.cnt_RNI58UF[2]      OR2A       B        In      -         3.559       -         
+PID_FB.SPI.SPICTL.cnt_RNI58UF[2]      OR2A       Y        Out     0.646     4.206       -         
+N_31                                  Net        -        -       1.184     -           4         
+PID_FB.SPI.SPICTL.cnt_RNIOSSJ2[4]     NOR3B      C        In      -         5.389       -         
+PID_FB.SPI.SPICTL.cnt_RNIOSSJ2[4]     NOR3B      Y        Out     0.488     5.878       -         
+cnt_N_13_mux                          Net        -        -       1.184     -           4         
+PID_FB.SPI.SPICTL.cnt_RNO_0[14]       OR2A       A        In      -         7.061       -         
+PID_FB.SPI.SPICTL.cnt_RNO_0[14]       OR2A       Y        Out     0.537     7.598       -         
+N_74                                  Net        -        -       0.322     -           1         
+PID_FB.SPI.SPICTL.cnt_RNO[14]         XA1A       B        In      -         7.920       -         
+PID_FB.SPI.SPICTL.cnt_RNO[14]         XA1A       Y        Out     0.940     8.860       -         
+cnt_n14                               Net        -        -       0.322     -           1         
+PID_FB.SPI.SPICTL.cnt[14]             DFN1C0     D        In      -         9.181       -         
+==================================================================================================
+Total path delay (propagation time + setup) of 9.720 is 4.247(43.7%) logic and 5.473(56.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: spi_clk_11_2|cur_clk_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                             Starting                                                               Arrival          
+Instance                     Reference                               Type       Pin     Net         Time        Slack
+                             Clock                                                                                   
+---------------------------------------------------------------------------------------------------------------------
+PID_5.SPI.SPICTL.cnt[0]      spi_clk_11_2|cur_clk_inferred_clock     DFN1C0     Q       cnt[0]      0.580       0.193
+PID_5.SPI.SPICTL.cnt[1]      spi_clk_11_2|cur_clk_inferred_clock     DFN1C0     Q       cnt[1]      0.580       0.316
+PID_5.SPI.SPICTL.cnt[3]      spi_clk_11_2|cur_clk_inferred_clock     DFN1C0     Q       cnt[3]      0.737       0.513
+PID_5.SPI.SPICTL.cnt[5]      spi_clk_11_2|cur_clk_inferred_clock     DFN1C0     Q       cnt[5]      0.737       0.770
+PID_5.SPI.SPICTL.cnt[8]      spi_clk_11_2|cur_clk_inferred_clock     DFN1C0     Q       cnt[8]      0.737       1.345
+PID_5.SPI.SPICTL.cnt[7]      spi_clk_11_2|cur_clk_inferred_clock     DFN1C0     Q       cnt[7]      0.737       1.458
+PID_5.SPI.SPICTL.cnt[10]     spi_clk_11_2|cur_clk_inferred_clock     DFN1C0     Q       cnt[10]     0.737       1.696
+PID_5.SPI.SPICTL.cnt[2]      spi_clk_11_2|cur_clk_inferred_clock     DFN1C0     Q       cnt[2]      0.580       1.755
+PID_5.SPI.SPICTL.cnt[4]      spi_clk_11_2|cur_clk_inferred_clock     DFN1C0     Q       cnt[4]      0.737       2.113
+PID_5.SPI.SPICTL.cnt[11]     spi_clk_11_2|cur_clk_inferred_clock     DFN1C0     Q       cnt[11]     0.737       2.282
+=====================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                             Starting                                                                 Required          
+Instance                     Reference                               Type         Pin     Net         Time         Slack
+                             Clock                                                                                      
+------------------------------------------------------------------------------------------------------------------------
+PID_5.SPI.SPICTL.cnt[15]     spi_clk_11_2|cur_clk_inferred_clock     DFN1C0       D       cnt_n15     9.461        0.193
+PID_5.SPI.SPICTL.cnt[14]     spi_clk_11_2|cur_clk_inferred_clock     DFN1C0       D       cnt_n14     9.461        0.280
+PID_5.SPI.SPICTL.cnt[13]     spi_clk_11_2|cur_clk_inferred_clock     DFN1C0       D       cnt_n13     9.461        0.295
+PID_5.SPI.SPICTL.cnt[12]     spi_clk_11_2|cur_clk_inferred_clock     DFN1C0       D       cnt_n12     9.427        1.050
+PID_5.SPI.SPICTL.cnt[9]      spi_clk_11_2|cur_clk_inferred_clock     DFN1C0       D       cnt_n9      9.461        1.458
+PID_5.SPI.SPICTL.cnt[4]      spi_clk_11_2|cur_clk_inferred_clock     DFN1C0       D       N_20        9.461        1.839
+PID_5.SPI.VD_STP.sr[0]       spi_clk_11_2|cur_clk_inferred_clock     DFN1E0C0     E       N_29        9.392        1.959
+PID_5.SPI.VD_STP.sr[1]       spi_clk_11_2|cur_clk_inferred_clock     DFN1E0C0     E       N_29        9.392        1.959
+PID_5.SPI.VD_STP.sr[2]       spi_clk_11_2|cur_clk_inferred_clock     DFN1E0C0     E       N_29        9.392        1.959
+PID_5.SPI.VD_STP.sr[3]       spi_clk_11_2|cur_clk_inferred_clock     DFN1E0C0     E       N_29        9.392        1.959
+========================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      9.268
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 0.193
+
+    Number of logic level(s):                5
+    Starting point:                          PID_5.SPI.SPICTL.cnt[0] / Q
+    Ending point:                            PID_5.SPI.SPICTL.cnt[15] / D
+    The start point is clocked by            spi_clk_11_2|cur_clk_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            spi_clk_11_2|cur_clk_inferred_clock [rising] on pin CLK
+
+Instance / Net                                  Pin      Pin               Arrival     No. of    
+Name                                 Type       Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------
+PID_5.SPI.SPICTL.cnt[0]              DFN1C0     Q        Out     0.580     0.580       -         
+cnt[0]                               Net        -        -       1.279     -           5         
+PID_5.SPI.SPICTL.cnt_RNI7FS[1]       OR2B       B        In      -         1.860       -         
+PID_5.SPI.SPICTL.cnt_RNI7FS[1]       OR2B       Y        Out     0.516     2.376       -         
+N_30                                 Net        -        -       1.184     -           4         
+PID_5.SPI.SPICTL.cnt_RNICOA1[2]      OR2A       B        In      -         3.559       -         
+PID_5.SPI.SPICTL.cnt_RNICOA1[2]      OR2A       Y        Out     0.646     4.206       -         
+N_31                                 Net        -        -       1.184     -           4         
+PID_5.SPI.SPICTL.cnt_RNIKNP11[4]     NOR3B      C        In      -         5.389       -         
+PID_5.SPI.SPICTL.cnt_RNIKNP11[4]     NOR3B      Y        Out     0.488     5.878       -         
+cnt_N_13_mux                         Net        -        -       1.184     -           4         
+PID_5.SPI.SPICTL.cnt_RNO_0[15]       OR3B       B        In      -         7.061       -         
+PID_5.SPI.SPICTL.cnt_RNO_0[15]       OR3B       Y        Out     0.624     7.685       -         
+N_75                                 Net        -        -       0.322     -           1         
+PID_5.SPI.SPICTL.cnt_RNO[15]         XA1A       B        In      -         8.007       -         
+PID_5.SPI.SPICTL.cnt_RNO[15]         XA1A       Y        Out     0.940     8.947       -         
+cnt_n15                              Net        -        -       0.322     -           1         
+PID_5.SPI.SPICTL.cnt[15]             DFN1C0     D        In      -         9.268       -         
+=================================================================================================
+Total path delay (propagation time + setup) of 9.807 is 4.334(44.2%) logic and 5.473(55.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: spi_clk_11_3|cur_clk_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                              Starting                                                               Arrival          
+Instance                      Reference                               Type       Pin     Net         Time        Slack
+                              Clock                                                                                   
+----------------------------------------------------------------------------------------------------------------------
+PID_15.SPI.SPICTL.cnt[0]      spi_clk_11_3|cur_clk_inferred_clock     DFN1C0     Q       cnt[0]      0.580       0.280
+PID_15.SPI.SPICTL.cnt[1]      spi_clk_11_3|cur_clk_inferred_clock     DFN1C0     Q       cnt[1]      0.580       0.403
+PID_15.SPI.SPICTL.cnt[3]      spi_clk_11_3|cur_clk_inferred_clock     DFN1C0     Q       cnt[3]      0.737       0.605
+PID_15.SPI.SPICTL.cnt[5]      spi_clk_11_3|cur_clk_inferred_clock     DFN1C0     Q       cnt[5]      0.737       0.862
+PID_15.SPI.SPICTL.cnt[8]      spi_clk_11_3|cur_clk_inferred_clock     DFN1C0     Q       cnt[8]      0.737       1.437
+PID_15.SPI.SPICTL.cnt[7]      spi_clk_11_3|cur_clk_inferred_clock     DFN1C0     Q       cnt[7]      0.737       1.550
+PID_15.SPI.SPICTL.cnt[10]     spi_clk_11_3|cur_clk_inferred_clock     DFN1C0     Q       cnt[10]     0.737       1.788
+PID_15.SPI.SPICTL.cnt[2]      spi_clk_11_3|cur_clk_inferred_clock     DFN1C0     Q       cnt[2]      0.580       1.842
+PID_15.SPI.SPICTL.cnt[4]      spi_clk_11_3|cur_clk_inferred_clock     DFN1C0     Q       cnt[4]      0.737       2.195
+PID_15.SPI.SPICTL.cnt[11]     spi_clk_11_3|cur_clk_inferred_clock     DFN1C0     Q       cnt[11]     0.737       2.374
+======================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                              Starting                                                                 Required          
+Instance                      Reference                               Type         Pin     Net         Time         Slack
+                              Clock                                                                                      
+-------------------------------------------------------------------------------------------------------------------------
+PID_15.SPI.SPICTL.cnt[14]     spi_clk_11_3|cur_clk_inferred_clock     DFN1C0       D       cnt_n14     9.461        0.280
+PID_15.SPI.SPICTL.cnt[13]     spi_clk_11_3|cur_clk_inferred_clock     DFN1C0       D       cnt_n13     9.461        0.295
+PID_15.SPI.SPICTL.cnt[15]     spi_clk_11_3|cur_clk_inferred_clock     DFN1C0       D       cnt_n15     9.461        0.652
+PID_15.SPI.SPICTL.cnt[12]     spi_clk_11_3|cur_clk_inferred_clock     DFN1C0       D       cnt_n12     9.427        1.050
+PID_15.SPI.SPICTL.cnt[9]      spi_clk_11_3|cur_clk_inferred_clock     DFN1C0       D       cnt_n9      9.461        1.458
+PID_15.SPI.SPICTL.cnt[4]      spi_clk_11_3|cur_clk_inferred_clock     DFN1C0       D       N_20        9.461        1.839
+PID_15.SPI.VD_STP.sr[0]       spi_clk_11_3|cur_clk_inferred_clock     DFN1E0C0     E       N_29        9.392        1.959
+PID_15.SPI.VD_STP.sr[1]       spi_clk_11_3|cur_clk_inferred_clock     DFN1E0C0     E       N_29        9.392        1.959
+PID_15.SPI.VD_STP.sr[2]       spi_clk_11_3|cur_clk_inferred_clock     DFN1E0C0     E       N_29        9.392        1.959
+PID_15.SPI.VD_STP.sr[3]       spi_clk_11_3|cur_clk_inferred_clock     DFN1E0C0     E       N_29        9.392        1.959
+=========================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      9.181
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 0.280
+
+    Number of logic level(s):                5
+    Starting point:                          PID_15.SPI.SPICTL.cnt[0] / Q
+    Ending point:                            PID_15.SPI.SPICTL.cnt[14] / D
+    The start point is clocked by            spi_clk_11_3|cur_clk_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            spi_clk_11_3|cur_clk_inferred_clock [rising] on pin CLK
+
+Instance / Net                                   Pin      Pin               Arrival     No. of    
+Name                                  Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+PID_15.SPI.SPICTL.cnt[0]              DFN1C0     Q        Out     0.580     0.580       -         
+cnt[0]                                Net        -        -       1.279     -           5         
+PID_15.SPI.SPICTL.cnt_RNI9GKI[1]      OR2B       B        In      -         1.860       -         
+PID_15.SPI.SPICTL.cnt_RNI9GKI[1]      OR2B       Y        Out     0.516     2.376       -         
+N_30                                  Net        -        -       1.184     -           4         
+PID_15.SPI.SPICTL.cnt_RNIVPUR[2]      OR2A       B        In      -         3.559       -         
+PID_15.SPI.SPICTL.cnt_RNIVPUR[2]      OR2A       Y        Out     0.646     4.206       -         
+N_31                                  Net        -        -       1.184     -           4         
+PID_15.SPI.SPICTL.cnt_RNI00B43[4]     NOR3B      C        In      -         5.389       -         
+PID_15.SPI.SPICTL.cnt_RNI00B43[4]     NOR3B      Y        Out     0.488     5.878       -         
+cnt_N_13_mux                          Net        -        -       1.184     -           4         
+PID_15.SPI.SPICTL.cnt_RNO_0[14]       OR2A       A        In      -         7.061       -         
+PID_15.SPI.SPICTL.cnt_RNO_0[14]       OR2A       Y        Out     0.537     7.598       -         
+N_74                                  Net        -        -       0.322     -           1         
+PID_15.SPI.SPICTL.cnt_RNO[14]         XA1A       B        In      -         7.920       -         
+PID_15.SPI.SPICTL.cnt_RNO[14]         XA1A       Y        Out     0.940     8.860       -         
+cnt_n14                               Net        -        -       0.322     -           1         
+PID_15.SPI.SPICTL.cnt[14]             DFN1C0     D        In      -         9.181       -         
+==================================================================================================
+Total path delay (propagation time + setup) of 9.720 is 4.247(43.7%) logic and 5.473(56.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: spi_clk_20|cur_clk_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                              Starting                                                             Arrival          
+Instance                      Reference                             Type       Pin     Net         Time        Slack
+                              Clock                                                                                 
+--------------------------------------------------------------------------------------------------------------------
+PID_33.SPI.SPICTL.cnt[0]      spi_clk_20|cur_clk_inferred_clock     DFN1C0     Q       cnt[0]      0.580       0.280
+PID_33.SPI.SPICTL.cnt[1]      spi_clk_20|cur_clk_inferred_clock     DFN1C0     Q       cnt[1]      0.580       0.403
+PID_33.SPI.SPICTL.cnt[3]      spi_clk_20|cur_clk_inferred_clock     DFN1C0     Q       cnt[3]      0.737       0.605
+PID_33.SPI.SPICTL.cnt[5]      spi_clk_20|cur_clk_inferred_clock     DFN1C0     Q       cnt[5]      0.737       0.862
+PID_33.SPI.SPICTL.cnt[8]      spi_clk_20|cur_clk_inferred_clock     DFN1C0     Q       cnt[8]      0.737       1.437
+PID_33.SPI.SPICTL.cnt[7]      spi_clk_20|cur_clk_inferred_clock     DFN1C0     Q       cnt[7]      0.737       1.550
+PID_33.SPI.SPICTL.cnt[10]     spi_clk_20|cur_clk_inferred_clock     DFN1C0     Q       cnt[10]     0.737       1.788
+PID_33.SPI.SPICTL.cnt[2]      spi_clk_20|cur_clk_inferred_clock     DFN1C0     Q       cnt[2]      0.580       1.842
+PID_33.SPI.SPICTL.cnt[4]      spi_clk_20|cur_clk_inferred_clock     DFN1C0     Q       cnt[4]      0.737       2.195
+PID_33.SPI.SPICTL.cnt[11]     spi_clk_20|cur_clk_inferred_clock     DFN1C0     Q       cnt[11]     0.737       2.374
+====================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                              Starting                                                               Required          
+Instance                      Reference                             Type         Pin     Net         Time         Slack
+                              Clock                                                                                    
+-----------------------------------------------------------------------------------------------------------------------
+PID_33.SPI.SPICTL.cnt[14]     spi_clk_20|cur_clk_inferred_clock     DFN1C0       D       cnt_n14     9.461        0.280
+PID_33.SPI.SPICTL.cnt[13]     spi_clk_20|cur_clk_inferred_clock     DFN1C0       D       cnt_n13     9.461        0.295
+PID_33.SPI.SPICTL.cnt[15]     spi_clk_20|cur_clk_inferred_clock     DFN1C0       D       cnt_n15     9.461        0.652
+PID_33.SPI.SPICTL.cnt[12]     spi_clk_20|cur_clk_inferred_clock     DFN1C0       D       cnt_n12     9.427        1.050
+PID_33.SPI.SPICTL.cnt[9]      spi_clk_20|cur_clk_inferred_clock     DFN1C0       D       cnt_n9      9.461        1.458
+PID_33.SPI.SPICTL.cnt[4]      spi_clk_20|cur_clk_inferred_clock     DFN1C0       D       N_20        9.461        1.839
+PID_33.SPI.VD_STP.sr[0]       spi_clk_20|cur_clk_inferred_clock     DFN1E0C0     E       N_29        9.392        1.959
+PID_33.SPI.VD_STP.sr[1]       spi_clk_20|cur_clk_inferred_clock     DFN1E0C0     E       N_29        9.392        1.959
+PID_33.SPI.VD_STP.sr[2]       spi_clk_20|cur_clk_inferred_clock     DFN1E0C0     E       N_29        9.392        1.959
+PID_33.SPI.VD_STP.sr[3]       spi_clk_20|cur_clk_inferred_clock     DFN1E0C0     E       N_29        9.392        1.959
+=======================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      9.181
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 0.280
+
+    Number of logic level(s):                5
+    Starting point:                          PID_33.SPI.SPICTL.cnt[0] / Q
+    Ending point:                            PID_33.SPI.SPICTL.cnt[14] / D
+    The start point is clocked by            spi_clk_20|cur_clk_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            spi_clk_20|cur_clk_inferred_clock [rising] on pin CLK
+
+Instance / Net                                   Pin      Pin               Arrival     No. of    
+Name                                  Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+PID_33.SPI.SPICTL.cnt[0]              DFN1C0     Q        Out     0.580     0.580       -         
+cnt[0]                                Net        -        -       1.279     -           5         
+PID_33.SPI.SPICTL.cnt_RNI9KSO[1]      OR2B       B        In      -         1.860       -         
+PID_33.SPI.SPICTL.cnt_RNI9KSO[1]      OR2B       Y        Out     0.516     2.376       -         
+N_30                                  Net        -        -       1.184     -           4         
+PID_33.SPI.SPICTL.cnt_RNIVVA51[2]     OR2A       B        In      -         3.559       -         
+PID_33.SPI.SPICTL.cnt_RNIVVA51[2]     OR2A       Y        Out     0.646     4.206       -         
+N_31                                  Net        -        -       1.184     -           4         
+PID_33.SPI.SPICTL.cnt_RNI0OVH4[4]     NOR3B      C        In      -         5.389       -         
+PID_33.SPI.SPICTL.cnt_RNI0OVH4[4]     NOR3B      Y        Out     0.488     5.878       -         
+cnt_N_13_mux                          Net        -        -       1.184     -           4         
+PID_33.SPI.SPICTL.cnt_RNO_0[14]       OR2A       A        In      -         7.061       -         
+PID_33.SPI.SPICTL.cnt_RNO_0[14]       OR2A       Y        Out     0.537     7.598       -         
+N_74                                  Net        -        -       0.322     -           1         
+PID_33.SPI.SPICTL.cnt_RNO[14]         XA1A       B        In      -         7.920       -         
+PID_33.SPI.SPICTL.cnt_RNO[14]         XA1A       Y        Out     0.940     8.860       -         
+cnt_n14                               Net        -        -       0.322     -           1         
+PID_33.SPI.SPICTL.cnt[14]             DFN1C0     D        In      -         9.181       -         
+==================================================================================================
+Total path delay (propagation time + setup) of 9.720 is 4.247(43.7%) logic and 5.473(56.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:02m:12s; CPU Time elapsed 0h:02m:10s; Memory used current: 297MB peak: 428MB)
+
+
+Finished timing report (Real Time elapsed 0h:02m:12s; CPU Time elapsed 0h:02m:10s; Memory used current: 297MB peak: 428MB)
+
+--------------------------------------------------------------------------------
+Target Part: A3PE1500_PQFP208_STD
+Report for cell PSU_Top_Level.verilog
+  Core Cell usage:
+              cell count     area count*area
+              AND2   140      1.0      140.0
+             AND2A    15      1.0       15.0
+              AND3   310      1.0      310.0
+               AO1  2036      1.0     2036.0
+              AO13   266      1.0      266.0
+              AO18    43      1.0       43.0
+              AO1A   105      1.0      105.0
+              AO1B   186      1.0      186.0
+              AO1C    82      1.0       82.0
+              AO1D    16      1.0       16.0
+              AOI1    14      1.0       14.0
+             AOI1A    25      1.0       25.0
+             AOI1B    91      1.0       91.0
+               AX1    18      1.0       18.0
+              AX1A     5      1.0        5.0
+              AX1B    33      1.0       33.0
+              AX1C   135      1.0      135.0
+              AX1D   393      1.0      393.0
+              AX1E     5      1.0        5.0
+             AXOI5    62      1.0       62.0
+              BUFF     5      1.0        5.0
+            CLKINT     4      0.0        0.0
+               GND    95      0.0        0.0
+               INV    33      1.0       33.0
+              MAJ3   656      1.0      656.0
+              MIN3    37      1.0       37.0
+               MX2  1415      1.0     1415.0
+              MX2A    11      1.0       11.0
+              MX2B    11      1.0       11.0
+              MX2C    50      1.0       50.0
+              NOR2   326      1.0      326.0
+             NOR2A   866      1.0      866.0
+             NOR2B  3479      1.0     3479.0
+              NOR3   200      1.0      200.0
+             NOR3A   266      1.0      266.0
+             NOR3B   276      1.0      276.0
+             NOR3C   813      1.0      813.0
+               OA1   573      1.0      573.0
+              OA1A   164      1.0      164.0
+              OA1B   199      1.0      199.0
+              OA1C    18      1.0       18.0
+              OAI1     4      1.0        4.0
+               OR2  1249      1.0     1249.0
+              OR2A   241      1.0      241.0
+              OR2B    38      1.0       38.0
+               OR3   589      1.0      589.0
+              OR3A    12      1.0       12.0
+              OR3B    18      1.0       18.0
+              OR3C    13      1.0       13.0
+               VCC    95      0.0        0.0
+               XA1  1177      1.0     1177.0
+              XA1A    75      1.0       75.0
+              XA1B   343      1.0      343.0
+              XA1C    32      1.0       32.0
+             XNOR2   822      1.0      822.0
+             XNOR3   217      1.0      217.0
+               XO1    45      1.0       45.0
+              XO1A    11      1.0       11.0
+              XOR2  1210      1.0     1210.0
+              XOR3   826      1.0      826.0
+             ZOR3I    50      1.0       50.0
+
+
+            DFN1C0   800      1.0      800.0
+          DFN1E0C0   431      1.0      431.0
+          DFN1E0P0    19      1.0       19.0
+          DFN1E1C0  5924      1.0     5924.0
+            DFN1P0    63      1.0       63.0
+                   -----          ----------
+             TOTAL 27781             27587.0
+
+
+  IO Cell usage:
+              cell count
+            CLKBUF     2
+             INBUF    15
+            OUTBUF    29
+                   -----
+             TOTAL    46
+
+
+Core Cells         : 27587 of 38400 (72%)
+IO Cells           : 46
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 60 (0%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:02m:12s; CPU Time elapsed 0h:02m:10s; Memory used current: 70MB peak: 428MB)
+
+Process took 0h:02m:12s realtime, 0h:02m:10s cputime
+# Thu May 03 17:51:34 2018
+
+###########################################################]

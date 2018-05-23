@@ -1,0 +1,345 @@
+----------------------------------------------------------------------
+Report for cell PID_controller.verilog
+                                          Cell usage:
+                               cell       count     area    count*area
+                               BUFF         1       1.0        1.0
+                             CLKBUF         2       0.0        0.0
+                                GND         1       0.0        0.0
+                              INBUF         2       0.0        0.0
+                             OUTBUF         4       0.0        0.0
+                                VCC         1       0.0        0.0
+                      controller_Z1         1      37.0       37.0
+               error_calc_13s_12s_0         1      13.0       13.0
+                  error_sr_13s_4s_0         1      48.0       48.0
+                   error_sr_13s_64s         1     835.0      835.0
+                integral_calc_13s_0         1     430.0      430.0
+                integral_calc_13s_1         1     300.0      300.0
+                        pid_sum_13s         1      92.0       92.0
+          pwm_ctl_1800s_32s_13s_0_1_2_3         1     490.0      490.0
+          pwm_tx_1800s_32s_13s_10_1000s         1     328.0      328.0
+                          sig_gen_2         1       4.0        4.0
+                        spi_clk_11s         1      37.0       37.0
+                         spi_rx_12s         1     104.0      104.0
+                            
+                         TOTAL             23               2719.0
+----------------------------------------------------------------------
+Report for cell sig_gen_2.netlist
+  Original Cell name sig_gen
+     Instance path:  VD_SIG
+                                          Cell usage:
+                               cell       count     area    count*area
+                             DFN1C0         1       1.0        1.0
+                             DFN1P0         1       1.0        1.0
+                                GND         1       0.0        0.0
+                                INV         1       1.0        1.0
+                              NOR2B         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                            
+                         TOTAL              6                  4.0
+----------------------------------------------------------------------
+Report for cell pwm_tx_1800s_32s_13s_10_1000s.netlist
+     Instance path:  PWM_TX
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         7       1.0        7.0
+                              AND2A         3       1.0        3.0
+                               AND3        13       1.0       13.0
+                                AO1         6       1.0        6.0
+                               AO1A         1       1.0        1.0
+                               AO1C        15       1.0       15.0
+                              AOI1A         5       1.0        5.0
+                               AX1C        12       1.0       12.0
+                             DFN1C0        65       1.0       65.0
+                                GND         1       0.0        0.0
+                               MX2C         2       1.0        2.0
+                               NOR2         6       1.0        6.0
+                              NOR2A        49       1.0       49.0
+                              NOR2B         9       1.0        9.0
+                               NOR3         2       1.0        2.0
+                              NOR3A         5       1.0        5.0
+                              NOR3C        22       1.0       22.0
+                                OA1         5       1.0        5.0
+                               OA1A        10       1.0       10.0
+                                OR2         6       1.0        6.0
+                               OR2A        25       1.0       25.0
+                               OR3C         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                               XA1B        19       1.0       19.0
+                              XNOR2        39       1.0       39.0
+                               XOR2         1       1.0        1.0
+                            
+                         TOTAL            330                328.0
+----------------------------------------------------------------------
+Report for cell pwm_ctl_1800s_32s_13s_0_1_2_3.netlist
+     Instance path:  PWM_CTL
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         1       1.0        1.0
+                               AND3        14       1.0       14.0
+                                AO1        81       1.0       81.0
+                               AO1C         2       1.0        2.0
+                               AOI1         1       1.0        1.0
+                               AX1D         5       1.0        5.0
+                             DFN1C0         2       1.0        2.0
+                           DFN1E0C0        28       1.0       28.0
+                           DFN1E0P0         4       1.0        4.0
+                           DFN1E1C0        16       1.0       16.0
+                                GND         1       0.0        0.0
+                               MAJ3         4       1.0        4.0
+                                MX2        24       1.0       24.0
+                               MX2A         2       1.0        2.0
+                               NOR2        11       1.0       11.0
+                              NOR2A         8       1.0        8.0
+                              NOR2B        74       1.0       74.0
+                               NOR3        10       1.0       10.0
+                              NOR3A         7       1.0        7.0
+                              NOR3B         5       1.0        5.0
+                              NOR3C        17       1.0       17.0
+                                OA1        28       1.0       28.0
+                               OA1C         1       1.0        1.0
+                                OR2        25       1.0       25.0
+                               OR2B         1       1.0        1.0
+                                OR3        10       1.0       10.0
+                                VCC         1       0.0        0.0
+                                XA1        34       1.0       34.0
+                               XA1B         4       1.0        4.0
+                              XNOR2        16       1.0       16.0
+                                XO1        12       1.0       12.0
+                               XOR2        33       1.0       33.0
+                               XOR3        10       1.0       10.0
+                            
+                         TOTAL            492                490.0
+----------------------------------------------------------------------
+Report for cell spi_rx_12s.netlist
+     Instance path:  SPI
+                                          Cell usage:
+                               cell       count     area    count*area
+                                GND         1       0.0        0.0
+                                VCC         1       0.0        0.0
+                          sig_gen_0         1       4.0        4.0
+                        spi_ctl_12s         1      88.0       88.0
+                      spi_stp_12s_1         1      12.0       12.0
+                            
+                         TOTAL              5                104.0
+----------------------------------------------------------------------
+Report for cell sig_gen_0.netlist
+  Original Cell name sig_gen
+     Instance path:  SPI.SPI_RDYSIG
+                                          Cell usage:
+                               cell       count     area    count*area
+                             DFN1C0         1       1.0        1.0
+                             DFN1P0         1       1.0        1.0
+                                GND         1       0.0        0.0
+                                INV         1       1.0        1.0
+                              NOR2B         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                            
+                         TOTAL              6                  4.0
+----------------------------------------------------------------------
+Report for cell spi_ctl_12s.netlist
+     Instance path:  SPI.SPICTL
+                                          Cell usage:
+                               cell       count     area    count*area
+                                AO1         1       1.0        1.0
+                             DFN1C0        17       1.0       17.0
+                                GND         1       0.0        0.0
+                                INV         1       1.0        1.0
+                               MX2B         1       1.0        1.0
+                               NOR2         8       1.0        8.0
+                              NOR2A         3       1.0        3.0
+                              NOR2B         9       1.0        9.0
+                              NOR3A         1       1.0        1.0
+                              NOR3B         5       1.0        5.0
+                              NOR3C        12       1.0       12.0
+                                OA1         1       1.0        1.0
+                               OA1C         2       1.0        2.0
+                                OR2         3       1.0        3.0
+                               OR2A         3       1.0        3.0
+                               OR2B         7       1.0        7.0
+                               OR3A         1       1.0        1.0
+                               OR3B         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                                XA1         3       1.0        3.0
+                               XA1A         8       1.0        8.0
+                              XNOR2         1       1.0        1.0
+                            
+                         TOTAL             90                 88.0
+----------------------------------------------------------------------
+Report for cell spi_stp_12s_1.netlist
+  Original Cell name spi_stp_12s
+     Instance path:  SPI.VD_STP
+                                          Cell usage:
+                               cell       count     area    count*area
+                           DFN1E1C0        12       1.0       12.0
+                                GND         1       0.0        0.0
+                                VCC         1       0.0        0.0
+                            
+                         TOTAL             14                 12.0
+----------------------------------------------------------------------
+Report for cell spi_clk_11s.netlist
+     Instance path:  SPICLK
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         2       1.0        2.0
+                               AND3         7       1.0        7.0
+                               AOI1         1       1.0        1.0
+                              AOI1B         2       1.0        2.0
+                               AX1C         1       1.0        1.0
+                             DFN1C0        10       1.0       10.0
+                                GND         1       0.0        0.0
+                               NOR2         1       1.0        1.0
+                              NOR2A         1       1.0        1.0
+                              NOR2B         2       1.0        2.0
+                              NOR3A         1       1.0        1.0
+                              NOR3B         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                               XOR2         8       1.0        8.0
+                            
+                         TOTAL             39                 37.0
+----------------------------------------------------------------------
+Report for cell pid_sum_13s.netlist
+     Instance path:  SUM
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AO1A         1       1.0        1.0
+                             CLKINT         1       0.0        0.0
+                             DFN1C0         7       1.0        7.0
+                           DFN1E1C0        40       1.0       40.0
+                             DFN1P0         1       1.0        1.0
+                                GND         1       0.0        0.0
+                              NOR2A        40       1.0       40.0
+                              NOR2B         1       1.0        1.0
+                               NOR3         2       1.0        2.0
+                                VCC         1       0.0        0.0
+                            
+                         TOTAL             95                 92.0
+----------------------------------------------------------------------
+Report for cell integral_calc_13s_0.netlist
+  Original Cell name integral_calc_13s
+     Instance path:  INTCALC
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND3         6       1.0        6.0
+                                AO1        42       1.0       42.0
+                               AO13         1       1.0        1.0
+                               AO1A         4       1.0        4.0
+                               AO1B        11       1.0       11.0
+                               AX1D        25       1.0       25.0
+                             DFN1C0         4       1.0        4.0
+                           DFN1E0C0        26       1.0       26.0
+                                GND         1       0.0        0.0
+                               MAJ3         2       1.0        2.0
+                                MX2         8       1.0        8.0
+                               MX2B         2       1.0        2.0
+                               NOR2        10       1.0       10.0
+                              NOR2A         8       1.0        8.0
+                              NOR2B        78       1.0       78.0
+                               NOR3        10       1.0       10.0
+                              NOR3A        17       1.0       17.0
+                              NOR3B        20       1.0       20.0
+                              NOR3C        20       1.0       20.0
+                                OA1        16       1.0       16.0
+                               OA1A         3       1.0        3.0
+                               OA1B        11       1.0       11.0
+                                OR2        31       1.0       31.0
+                               OR2A         1       1.0        1.0
+                                OR3        22       1.0       22.0
+                                VCC         1       0.0        0.0
+                                XA1         2       1.0        2.0
+                               XA1A         2       1.0        2.0
+                               XA1B         1       1.0        1.0
+                              XNOR2        34       1.0       34.0
+                              XNOR3         2       1.0        2.0
+                               XOR2         9       1.0        9.0
+                               XOR3         2       1.0        2.0
+                            
+                         TOTAL            432                430.0
+----------------------------------------------------------------------
+Report for cell error_sr_13s_64s.netlist
+     Instance path:  INTSR
+                                          Cell usage:
+                               cell       count     area    count*area
+                           DFN1E1C0       834       1.0      834.0
+                                GND         1       0.0        0.0
+                              NOR2B         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                            
+                         TOTAL            837                835.0
+----------------------------------------------------------------------
+Report for cell integral_calc_13s_1.netlist
+  Original Cell name integral_calc_13s
+     Instance path:  AVG_CALC
+                                          Cell usage:
+                               cell       count     area    count*area
+                                AO1        48       1.0       48.0
+                               AO13         1       1.0        1.0
+                               AO1B        10       1.0       10.0
+                               AX1D        18       1.0       18.0
+                             CLKINT         1       0.0        0.0
+                             DFN1C0        10       1.0       10.0
+                           DFN1E0C0        18       1.0       18.0
+                                GND         1       0.0        0.0
+                               MAJ3         3       1.0        3.0
+                               NOR2         1       1.0        1.0
+                              NOR2A        13       1.0       13.0
+                              NOR2B        72       1.0       72.0
+                              NOR3C        18       1.0       18.0
+                                OA1        10       1.0       10.0
+                               OA1A         1       1.0        1.0
+                               OA1B        11       1.0       11.0
+                                OR2        30       1.0       30.0
+                               OR2A         1       1.0        1.0
+                                OR3         6       1.0        6.0
+                                VCC         1       0.0        0.0
+                              XNOR2        11       1.0       11.0
+                              XNOR3         2       1.0        2.0
+                               XOR2        13       1.0       13.0
+                               XOR3         3       1.0        3.0
+                            
+                         TOTAL            303                300.0
+----------------------------------------------------------------------
+Report for cell error_calc_13s_12s_0.netlist
+  Original Cell name error_calc_13s_12s
+     Instance path:  EC
+                                          Cell usage:
+                               cell       count     area    count*area
+                           DFN1E1C0        13       1.0       13.0
+                                GND         1       0.0        0.0
+                                VCC         1       0.0        0.0
+                            
+                         TOTAL             15                 13.0
+----------------------------------------------------------------------
+Report for cell error_sr_13s_4s_0.netlist
+  Original Cell name error_sr_13s_4s
+     Instance path:  AVGSR
+                                          Cell usage:
+                               cell       count     area    count*area
+                           DFN1E1C0        48       1.0       48.0
+                                GND         1       0.0        0.0
+                                VCC         1       0.0        0.0
+                            
+                         TOTAL             50                 48.0
+----------------------------------------------------------------------
+Report for cell controller_Z1.netlist
+     Instance path:  CONTROLLER
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         1       1.0        1.0
+                                AO1         1       1.0        1.0
+                               AO1A         2       1.0        2.0
+                              AOI1B         1       1.0        1.0
+                             CLKINT         1       0.0        0.0
+                             DFN1C0        13       1.0       13.0
+                             DFN1P0         2       1.0        2.0
+                                GND         1       0.0        0.0
+                               NOR2         1       1.0        1.0
+                              NOR2B         3       1.0        3.0
+                              NOR3A         5       1.0        5.0
+                              NOR3C         2       1.0        2.0
+                               OA1B         2       1.0        2.0
+                               OA1C         1       1.0        1.0
+                               OR2B         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                               XOR2         2       1.0        2.0
+                            
+                         TOTAL             40                 37.0

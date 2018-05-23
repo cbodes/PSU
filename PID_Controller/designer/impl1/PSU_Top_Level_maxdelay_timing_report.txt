@@ -1,0 +1,1485 @@
+Timing Report Max Delay Analysis
+
+SmartTime Version v11.8 SP3
+Microsemi Corporation - Microsemi Libero Software Release v11.8 SP3 (Version 11.8.3.6)
+Date: Fri May 04 15:50:02 2018
+
+
+Design: PSU_Top_Level
+Family: ProASIC3E
+Die: A3PE1500
+Package: 208 PQFP
+Temperature Range: 0 - 70 C
+Voltage Range: 1.425 - 1.575 V
+Speed Grade: STD
+Design State: Post-Layout
+Data source: Silicon verified
+Min Operating Conditions: BEST - 1.575 V - 0 C
+Max Operating Conditions: WORST - 1.425 V - 70 C
+Using Enhanced Min Delay Analysis
+Scenario for Timing Analysis: Primary
+
+
+-----------------------------------------------------
+SUMMARY
+
+Clock Domain:               PID_33/SPICLK/cur_clk:Q
+Period (ns):                8.933
+Frequency (MHz):            111.944
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+External Setup (ns):        7.466
+External Hold (ns):         -1.425
+Min Clock-To-Out (ns):      5.103
+Max Clock-To-Out (ns):      15.205
+
+Clock Domain:               clk
+Period (ns):                157.963
+Frequency (MHz):            6.331
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+External Setup (ns):        30.825
+External Hold (ns):         0.537
+Min Clock-To-Out (ns):      3.440
+Max Clock-To-Out (ns):      24.256
+
+                            Input to Output
+Min Delay (ns):             3.527
+Max Delay (ns):             24.767
+
+END SUMMARY
+-----------------------------------------------------
+
+Clock Domain PID_33/SPICLK/cur_clk:Q
+
+SET Register to Register
+
+Path 1
+  From:                        PID_33/SPI/SPICTL/cnt[2]:CLK
+  To:                          PID_33/SPI/VD_STP/sr[6]:E
+  Delay (ns):                  7.590
+  Slack (ns):
+  Arrival (ns):                10.276
+  Required (ns):
+  Setup (ns):                  0.608
+  Minimum Period (ns):         8.933
+
+Path 2
+  From:                        PID_33/SPI/SPICTL/cnt[2]:CLK
+  To:                          PID_33/SPI/SPICTL/cnt[8]:D
+  Delay (ns):                  6.446
+  Slack (ns):
+  Arrival (ns):                9.132
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         8.705
+
+Path 3
+  From:                        PID_33/SPI/SPICTL/cnt[2]:CLK
+  To:                          PID_33/SPI/SPICTL/cnt[14]:D
+  Delay (ns):                  6.921
+  Slack (ns):
+  Arrival (ns):                9.607
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         8.700
+
+Path 4
+  From:                        PID_33/SPI/SPICTL/cnt[2]:CLK
+  To:                          PID_33/SPI/SPICTL/cnt[3]:D
+  Delay (ns):                  5.716
+  Slack (ns):
+  Arrival (ns):                8.402
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         8.413
+
+Path 5
+  From:                        PID_33/SPI/SPICTL/cnt[12]:CLK
+  To:                          PID_33/SPI/VD_STP/sr[6]:E
+  Delay (ns):                  7.520
+  Slack (ns):
+  Arrival (ns):                9.729
+  Required (ns):
+  Setup (ns):                  0.608
+  Minimum Period (ns):         8.386
+
+
+Expanded Path 1
+  From: PID_33/SPI/SPICTL/cnt[2]:CLK
+  To: PID_33/SPI/VD_STP/sr[6]:E
+  data required time                             N/C
+  data arrival time                          -   10.276
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        PID_33/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  0.000                        PID_33/SPICLK/cur_clk:Q (r)
+               +     2.686          net: cur_clk
+  2.686                        PID_33/SPI/SPICTL/cnt[2]:CLK (r)
+               +     0.737          cell: ADLIB:DFN1C0
+  3.423                        PID_33/SPI/SPICTL/cnt[2]:Q (f)
+               +     0.828          net: PID_33/SPI/SPICTL/cnt[2]
+  4.251                        PID_33/SPI/SPICTL/cnt_RNIDOSO_0[2]:B (f)
+               +     0.647          cell: ADLIB:OR2
+  4.898                        PID_33/SPI/SPICTL/cnt_RNIDOSO_0[2]:Y (f)
+               +     0.400          net: PID_33/SPI/SPICTL/N_73
+  5.298                        PID_33/SPI/SPICTL/cnt_RNI56B51[4]:A (f)
+               +     0.386          cell: ADLIB:OR2B
+  5.684                        PID_33/SPI/SPICTL/cnt_RNI56B51[4]:Y (r)
+               +     0.343          net: PID_33/SPI/SPICTL/N_75
+  6.027                        PID_33/SPI/SPICTL/cnt_RNIR78U1[9]:A (r)
+               +     0.664          cell: ADLIB:NOR3A
+  6.691                        PID_33/SPI/SPICTL/cnt_RNIR78U1[9]:Y (r)
+               +     0.910          net: PID_33/SPI/SPICTL/vd_stp_en_i_a3_1
+  7.601                        PID_33/SPI/SPICTL/state_RNI9V1B5[0]:A (r)
+               +     0.469          cell: ADLIB:AO1B
+  8.070                        PID_33/SPI/SPICTL/state_RNI9V1B5[0]:Y (r)
+               +     2.206          net: PID_33/SPI/N_30
+  10.276                       PID_33/SPI/VD_STP/sr[6]:E (r)
+                                    
+  10.276                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PID_33/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  N/C                          PID_33/SPICLK/cur_clk:Q (r)
+               +     1.951          net: cur_clk
+  N/C                          PID_33/SPI/VD_STP/sr[6]:CLK (r)
+               -     0.608          Library setup time: ADLIB:DFN1E0C0
+  N/C                          PID_33/SPI/VD_STP/sr[6]:E
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+Path 1
+  From:                        din_33
+  To:                          PID_33/SPI/VD_STP/sr[0]:D
+  Delay (ns):                  9.407
+  Slack (ns):
+  Arrival (ns):                9.407
+  Required (ns):
+  Setup (ns):                  0.574
+  External Setup (ns):         7.466
+
+Path 2
+  From:                        din_33
+  To:                          PID_33/SPI/ID_STP/sr[0]:D
+  Delay (ns):                  7.736
+  Slack (ns):
+  Arrival (ns):                7.736
+  Required (ns):
+  Setup (ns):                  0.504
+  External Setup (ns):         5.508
+
+
+Expanded Path 1
+  From: din_33
+  To: PID_33/SPI/VD_STP/sr[0]:D
+  data required time                             N/C
+  data arrival time                          -   9.407
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        din_33 (r)
+               +     0.000          net: din_33
+  0.000                        din_33_pad/U0/U0:PAD (r)
+               +     1.202          cell: ADLIB:IOPAD_IN
+  1.202                        din_33_pad/U0/U0:Y (r)
+               +     0.000          net: din_33_pad/U0/NET1
+  1.202                        din_33_pad/U0/U1:YIN (r)
+               +     0.043          cell: ADLIB:IOIN_IB
+  1.245                        din_33_pad/U0/U1:Y (r)
+               +     8.162          net: din_33_c
+  9.407                        PID_33/SPI/VD_STP/sr[0]:D (r)
+                                    
+  9.407                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PID_33/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  N/C                          PID_33/SPICLK/cur_clk:Q (r)
+               +     2.515          net: cur_clk
+  N/C                          PID_33/SPI/VD_STP/sr[0]:CLK (r)
+               -     0.574          Library setup time: ADLIB:DFN1E0C0
+  N/C                          PID_33/SPI/VD_STP/sr[0]:D
+
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        PID_33/SPI/SPICTL/state[0]:CLK
+  To:                          cs_33
+  Delay (ns):                  12.998
+  Slack (ns):
+  Arrival (ns):                15.205
+  Required (ns):
+  Clock to Out (ns):           15.205
+
+
+Expanded Path 1
+  From: PID_33/SPI/SPICTL/state[0]:CLK
+  To: cs_33
+  data required time                             N/C
+  data arrival time                          -   15.205
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        PID_33/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  0.000                        PID_33/SPICLK/cur_clk:Q (r)
+               +     2.207          net: cur_clk
+  2.207                        PID_33/SPI/SPICTL/state[0]:CLK (r)
+               +     0.581          cell: ADLIB:DFN1C0
+  2.788                        PID_33/SPI/SPICTL/state[0]:Q (r)
+               +     5.380          net: PID_33/SPI/cs_i_1
+  8.168                        PID_33/SPI/SPICTL/state_RNIGSV6[0]:A (r)
+               +     0.363          cell: ADLIB:INV
+  8.531                        PID_33/SPI/SPICTL/state_RNIGSV6[0]:Y (f)
+               +     2.348          net: PID_33_SPI_cs_i_1_i
+  10.879                       cs_33_pad/U0/U1:D (f)
+               +     0.659          cell: ADLIB:IOTRI_OB_EB
+  11.538                       cs_33_pad/U0/U1:DOUT (f)
+               +     0.000          net: cs_33_pad/U0/NET1
+  11.538                       cs_33_pad/U0/U0:D (f)
+               +     3.667          cell: ADLIB:IOPAD_TRI
+  15.205                       cs_33_pad/U0/U0:PAD (f)
+               +     0.000          net: cs_33
+  15.205                       cs_33 (f)
+                                    
+  15.205                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PID_33/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  N/C                          PID_33/SPICLK/cur_clk:Q (r)
+                                    
+  N/C                          cs_33 (f)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+Path 1
+  From:                        n_rst
+  To:                          PID_33/SPI/SPICTL/cnt[3]:CLR
+  Delay (ns):                  2.687
+  Slack (ns):
+  Arrival (ns):                2.687
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      2.456
+
+Path 2
+  From:                        n_rst
+  To:                          PID_33/SPI/SPICTL/cnt[1]:CLR
+  Delay (ns):                  2.676
+  Slack (ns):
+  Arrival (ns):                2.676
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      2.451
+
+Path 3
+  From:                        n_rst
+  To:                          PID_33/SPI/SPICTL/cnt[6]:CLR
+  Delay (ns):                  2.676
+  Slack (ns):
+  Arrival (ns):                2.676
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      2.451
+
+Path 4
+  From:                        n_rst
+  To:                          PID_33/SPI/SPICTL/cnt[0]:CLR
+  Delay (ns):                  2.676
+  Slack (ns):
+  Arrival (ns):                2.676
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      2.007
+
+Path 5
+  From:                        n_rst
+  To:                          PID_33/SPI/SPICTL/cnt[8]:CLR
+  Delay (ns):                  2.676
+  Slack (ns):
+  Arrival (ns):                2.676
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      2.007
+
+
+Expanded Path 1
+  From: n_rst
+  To: PID_33/SPI/SPICTL/cnt[3]:CLR
+  data required time                             N/C
+  data arrival time                          -   2.687
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        n_rst (r)
+               +     0.000          net: n_rst
+  0.000                        n_rst_pad/U0/U0:PAD (r)
+               +     1.202          cell: ADLIB:IOPAD_IN
+  1.202                        n_rst_pad/U0/U0:Y (r)
+               +     0.000          net: n_rst_pad/U0/NET1
+  1.202                        n_rst_pad/U0/U1:A (r)
+               +     0.348          cell: ADLIB:CLKIO
+  1.550                        n_rst_pad/U0/U1:Y (r)
+               +     1.137          net: n_rst_c
+  2.687                        PID_33/SPI/SPICTL/cnt[3]:CLR (r)
+                                    
+  2.687                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PID_33/SPICLK/cur_clk:Q
+               +     0.000          Clock source
+  N/C                          PID_33/SPICLK/cur_clk:Q (r)
+               +     0.528          net: cur_clk
+  N/C                          PID_33/SPI/SPICTL/cnt[3]:CLK (r)
+               -     0.297          Library recovery time: ADLIB:DFN1C0
+  N/C                          PID_33/SPI/SPICTL/cnt[3]:CLR
+
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain clk
+
+SET Register to Register
+
+Path 1
+  From:                        PID_33/PWM_CTL/id[1]:CLK
+  To:                          PID_33/PWM_CTL/total_time[0]:D
+  Delay (ns):                  157.377
+  Slack (ns):
+  Arrival (ns):                160.061
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         157.963
+
+Path 2
+  From:                        PID_33/PWM_CTL/id_0[0]:CLK
+  To:                          PID_33/PWM_CTL/total_time[0]:D
+  Delay (ns):                  156.806
+  Slack (ns):
+  Arrival (ns):                159.490
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         157.392
+
+Path 3
+  From:                        PID_33/PWM_CTL/id[4]:CLK
+  To:                          PID_33/PWM_CTL/total_time[0]:D
+  Delay (ns):                  156.805
+  Slack (ns):
+  Arrival (ns):                159.452
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         157.354
+
+Path 4
+  From:                        PID_33/PWM_CTL/id[5]:CLK
+  To:                          PID_33/PWM_CTL/total_time[0]:D
+  Delay (ns):                  156.617
+  Slack (ns):
+  Arrival (ns):                159.305
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         157.207
+
+Path 5
+  From:                        PID_33/PWM_CTL/id_0[3]:CLK
+  To:                          PID_33/PWM_CTL/total_time[0]:D
+  Delay (ns):                  156.580
+  Slack (ns):
+  Arrival (ns):                159.268
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         157.170
+
+
+Expanded Path 1
+  From: PID_33/PWM_CTL/id[1]:CLK
+  To: PID_33/PWM_CTL/total_time[0]:D
+  data required time                             N/C
+  data arrival time                          -   160.061
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        clk
+               +     0.000          Clock source
+  0.000                        clk (r)
+               +     0.000          net: clk
+  0.000                        clk_pad/U0/U0:PAD (r)
+               +     1.202          cell: ADLIB:IOPAD_IN
+  1.202                        clk_pad/U0/U0:Y (r)
+               +     0.000          net: clk_pad/U0/NET1
+  1.202                        clk_pad/U0/U1:A (r)
+               +     0.348          cell: ADLIB:CLKIO
+  1.550                        clk_pad/U0/U1:Y (r)
+               +     1.134          net: clk_c
+  2.684                        PID_33/PWM_CTL/id[1]:CLK (r)
+               +     0.737          cell: ADLIB:DFN1E1C0
+  3.421                        PID_33/PWM_CTL/id[1]:Q (f)
+               +     0.989          net: PID_33/PWM_CTL/id[1]
+  4.410                        PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un2_temp_b_1_I_10:B (f)
+               +     0.714          cell: ADLIB:NOR3
+  5.124                        PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un2_temp_b_1_I_10:Y (r)
+               +     0.796          net: PID_33/PWM_CTL/DWACT_FINC_E[0]
+  5.920                        PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un2_temp_b_1_I_30:A (r)
+               +     0.525          cell: ADLIB:AND3
+  6.445                        PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un2_temp_b_1_I_30:Y (r)
+               +     1.233          net: PID_33/PWM_CTL/DWACT_FINC_E[6]
+  7.678                        PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un2_temp_b_1_I_31:A (r)
+               +     0.664          cell: ADLIB:NOR3A
+  8.342                        PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un2_temp_b_1_I_31:Y (r)
+               +     0.337          net: PID_33/PWM_CTL/N_4_2
+  8.679                        PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un2_temp_b_1_I_32:B (r)
+               +     0.664          cell: ADLIB:XNOR2
+  9.343                        PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un2_temp_b_1_I_32:Y (r)
+               +     0.380          net: PID_33/PWM_CTL/I_32
+  9.723                        PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un12_sum_ADD_15x15_fast_I14_Y:B (r)
+               +     0.911          cell: ADLIB:OA1
+  10.634                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un12_sum_ADD_15x15_fast_I14_Y:Y (r)
+               +     0.403          net: PID_33/PWM_CTL/N246_3
+  11.037                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un12_sum_ADD_15x15_fast_I40_Y:C (r)
+               +     0.666          cell: ADLIB:NOR3C
+  11.703                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un12_sum_ADD_15x15_fast_I40_Y:Y (r)
+               +     0.403          net: PID_33/PWM_CTL/N276
+  12.106                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un12_sum_ADD_15x15_fast_I83_un1_Y_0:B (r)
+               +     0.516          cell: ADLIB:NOR2B
+  12.622                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un12_sum_ADD_15x15_fast_I83_un1_Y_0:Y (r)
+               +     0.604          net: PID_33/PWM_CTL/ADD_15x15_fast_I83_un1_Y_0
+  13.226                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un12_sum_ADD_15x15_fast_I83_un1_Y:C (r)
+               +     0.525          cell: ADLIB:OA1
+  13.751                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un12_sum_ADD_15x15_fast_I83_un1_Y:Y (r)
+               +     1.092          net: PID_33/PWM_CTL/I83_un1_Y
+  14.843                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un12_sum_ADD_15x15_fast_I110_Y:A (r)
+               +     0.993          cell: ADLIB:AX1B
+  15.836                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un12_sum_ADD_15x15_fast_I110_Y:Y (f)
+               +     1.561          net: PID_33/PWM_CTL/mult1_un12_sum[14]
+  17.397                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_temp_b_3[1]:S (f)
+               +     0.480          cell: ADLIB:MX2
+  17.877                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_temp_b_3[1]:Y (r)
+               +     0.334          net: PID_33/PWM_CTL/mult1_temp_b_3[1]
+  18.211                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un19_sum_ADD_15x15_fast_I0_CO1:A (r)
+               +     0.516          cell: ADLIB:NOR2A
+  18.727                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un19_sum_ADD_15x15_fast_I0_CO1:Y (r)
+               +     0.455          net: PID_33/PWM_CTL/N191_7
+  19.182                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un19_sum_ADD_15x15_fast_I73_un1_Y_s:C (r)
+               +     0.751          cell: ADLIB:NOR3C
+  19.933                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un19_sum_ADD_15x15_fast_I73_un1_Y_s:Y (r)
+               +     0.420          net: PID_33/PWM_CTL/ADD_15x15_fast_I73_un1_Y_out_3
+  20.353                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un19_sum_ADD_15x15_fast_I73_un1_Y:A (r)
+               +     0.516          cell: ADLIB:NOR2A
+  20.869                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un19_sum_ADD_15x15_fast_I73_un1_Y:Y (r)
+               +     1.135          net: PID_33/PWM_CTL/I73_un1_Y_7
+  22.004                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un26_sum_ADD_m1_e:B (r)
+               +     0.911          cell: ADLIB:OA1
+  22.915                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un26_sum_ADD_m1_e:Y (r)
+               +     1.589          net: PID_33/PWM_CTL/I78_un1_Y_5
+  24.504                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un19_sum_ADD_15x15_fast_I103_Y:A (r)
+               +     1.001          cell: ADLIB:AX1D
+  25.505                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un19_sum_ADD_15x15_fast_I103_Y:Y (f)
+               +     2.131          net: PID_33/PWM_CTL/ADD_15x15_fast_I103_Y_7
+  27.636                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_temp_b_4[10]:S (f)
+               +     0.480          cell: ADLIB:MX2
+  28.116                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_temp_b_4[10]:Y (r)
+               +     0.384          net: PID_33/PWM_CTL/mult1_temp_b_4[10]
+  28.500                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un26_sum_ADD_15x15_fast_I9_P0N:A (r)
+               +     0.363          cell: ADLIB:OR2
+  28.863                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un26_sum_ADD_15x15_fast_I9_P0N:Y (r)
+               +     0.621          net: PID_33/PWM_CTL/N219_2
+  29.484                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un26_sum_ADD_15x15_fast_I19_Y:B (r)
+               +     0.591          cell: ADLIB:NOR2B
+  30.075                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un26_sum_ADD_15x15_fast_I19_Y:Y (r)
+               +     0.323          net: PID_33/PWM_CTL/N237_7
+  30.398                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un26_sum_ADD_15x15_fast_I39_Y:B (r)
+               +     0.591          cell: ADLIB:NOR2B
+  30.989                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un26_sum_ADD_15x15_fast_I39_Y:Y (r)
+               +     0.382          net: PID_33/PWM_CTL/N260_3
+  31.371                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un26_sum_ADD_15x15_fast_I78_un1_Y_0:C (r)
+               +     0.751          cell: ADLIB:NOR3C
+  32.122                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un26_sum_ADD_15x15_fast_I78_un1_Y_0:Y (r)
+               +     0.318          net: PID_33/PWM_CTL/ADD_15x15_fast_I78_un1_Y_0_2
+  32.440                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un26_sum_ADD_15x15_fast_I78_un1_Y:C (r)
+               +     0.398          cell: ADLIB:OA1
+  32.838                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un26_sum_ADD_15x15_fast_I78_un1_Y:Y (r)
+               +     0.334          net: PID_33/PWM_CTL/I78_un1_Y_3
+  33.172                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un26_sum_ADD_15x15_fast_I103_Y:A (r)
+               +     0.993          cell: ADLIB:AX1B
+  34.165                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un26_sum_ADD_15x15_fast_I103_Y:Y (f)
+               +     1.394          net: PID_33/PWM_CTL/ADD_15x15_fast_I103_Y_6
+  35.559                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_temp_b_5[9]:S (f)
+               +     0.480          cell: ADLIB:MX2
+  36.039                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_temp_b_5[9]:Y (r)
+               +     0.889          net: PID_33/PWM_CTL/mult1_temp_b_5[9]
+  36.928                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un33_sum_ADD_15x15_fast_I24_Y:B (r)
+               +     0.902          cell: ADLIB:OA1
+  37.830                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un33_sum_ADD_15x15_fast_I24_Y:Y (r)
+               +     1.109          net: PID_33/PWM_CTL/N249_6
+  38.939                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un33_sum_ADD_15x15_fast_I50_Y:A (r)
+               +     0.488          cell: ADLIB:NOR2B
+  39.427                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un33_sum_ADD_15x15_fast_I50_Y:Y (r)
+               +     0.401          net: PID_33/PWM_CTL/N279_6
+  39.828                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un33_sum_ADD_15x15_fast_I85_un1_Y_0:B (r)
+               +     0.591          cell: ADLIB:NOR2B
+  40.419                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un33_sum_ADD_15x15_fast_I85_un1_Y_0:Y (r)
+               +     0.311          net: PID_33/PWM_CTL/ADD_15x15_fast_I85_un1_Y_0_2
+  40.730                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un33_sum_ADD_15x15_fast_I85_un1_Y:C (r)
+               +     0.525          cell: ADLIB:OA1
+  41.255                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un33_sum_ADD_15x15_fast_I85_un1_Y:Y (r)
+               +     1.145          net: PID_33/PWM_CTL/I85_un1_Y_2
+  42.400                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un33_sum_ADD_15x15_fast_I85_Y:C (r)
+               +     0.683          cell: ADLIB:OR3
+  43.083                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un33_sum_ADD_15x15_fast_I85_Y:Y (r)
+               +     0.326          net: PID_33/PWM_CTL/N332_0
+  43.409                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un33_sum_ADD_15x15_fast_I112_Y:C (r)
+               +     1.170          cell: ADLIB:XOR3
+  44.579                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un33_sum_ADD_15x15_fast_I112_Y:Y (r)
+               +     0.575          net: PID_33/PWM_CTL/ADD_15x15_fast_I112_Y_1_0
+  45.154                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_temp_b_6[5]:S (r)
+               +     0.372          cell: ADLIB:MX2
+  45.526                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_temp_b_6[5]:Y (f)
+               +     0.588          net: PID_33/PWM_CTL/mult1_temp_b_6[5]
+  46.114                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un40_sum_ADD_15x15_fast_I5_P0N:B (f)
+               +     0.647          cell: ADLIB:OR2
+  46.761                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un40_sum_ADD_15x15_fast_I5_P0N:Y (f)
+               +     0.387          net: PID_33/PWM_CTL/N212_1
+  47.148                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un40_sum_ADD_15x15_fast_I32_Y:C (f)
+               +     0.487          cell: ADLIB:OA1
+  47.635                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un40_sum_ADD_15x15_fast_I32_Y:Y (f)
+               +     0.367          net: PID_33/PWM_CTL/N257_3
+  48.002                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un40_sum_ADD_15x15_fast_I57_un1_Y:C (f)
+               +     0.405          cell: ADLIB:OA1
+  48.407                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un40_sum_ADD_15x15_fast_I57_un1_Y:Y (f)
+               +     0.308          net: PID_33/PWM_CTL/I57_un1_Y_4
+  48.715                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un40_sum_ADD_15x15_fast_I57_Y:A (f)
+               +     0.508          cell: ADLIB:OR2
+  49.223                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un40_sum_ADD_15x15_fast_I57_Y:Y (f)
+               +     0.334          net: PID_33/PWM_CTL/N286_3
+  49.557                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un40_sum_ADD_15x15_fast_I79_Y:C (f)
+               +     0.706          cell: ADLIB:AO1
+  50.263                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un40_sum_ADD_15x15_fast_I79_Y:Y (f)
+               +     1.026          net: PID_33/PWM_CTL/N350_0
+  51.289                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un40_sum_ADD_15x15_fast_I85_Y:B (f)
+               +     0.598          cell: ADLIB:AO1
+  51.887                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un40_sum_ADD_15x15_fast_I85_Y:Y (f)
+               +     1.401          net: PID_33/PWM_CTL/N332
+  53.288                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un40_sum_ADD_15x15_fast_I112_Y:B (f)
+               +     0.937          cell: ADLIB:XNOR2
+  54.225                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un40_sum_ADD_15x15_fast_I112_Y:Y (r)
+               +     1.065          net: PID_33/PWM_CTL/mult1_un40_sum[14]
+  55.290                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_temp_b_7[7]:S (r)
+               +     0.508          cell: ADLIB:MX2
+  55.798                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_temp_b_7[7]:Y (r)
+               +     0.534          net: PID_33/PWM_CTL/mult1_temp_b_7[7]
+  56.332                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un47_sum_ADD_15x15_fast_I7_P0N:A (r)
+               +     0.363          cell: ADLIB:OR2
+  56.695                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un47_sum_ADD_15x15_fast_I7_P0N:Y (r)
+               +     0.386          net: PID_33/PWM_CTL/N218_1
+  57.081                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un47_sum_ADD_15x15_fast_I27_un1_Y:C (r)
+               +     0.751          cell: ADLIB:NOR3C
+  57.832                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un47_sum_ADD_15x15_fast_I27_un1_Y:Y (r)
+               +     0.334          net: PID_33/PWM_CTL/I27_un1_Y
+  58.166                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un47_sum_ADD_15x15_fast_I27_Y:C (r)
+               +     0.655          cell: ADLIB:AO1
+  58.821                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un47_sum_ADD_15x15_fast_I27_Y:Y (r)
+               +     0.318          net: PID_33/PWM_CTL/N252
+  59.139                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un47_sum_ADD_15x15_fast_I49_un1_Y:A (r)
+               +     0.488          cell: ADLIB:NOR2B
+  59.627                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un47_sum_ADD_15x15_fast_I49_un1_Y:Y (r)
+               +     0.320          net: PID_33/PWM_CTL/I49_un1_Y
+  59.947                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un47_sum_ADD_15x15_fast_I65_un1_Y:B (r)
+               +     0.911          cell: ADLIB:AOI1D
+  60.858                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un47_sum_ADD_15x15_fast_I65_un1_Y:Y (r)
+               +     1.220          net: PID_33/PWM_CTL/I65_un1_Y
+  62.078                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un47_sum_ADD_15x15_fast_I85_Y_2:C (r)
+               +     0.683          cell: ADLIB:OR3
+  62.761                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un47_sum_ADD_15x15_fast_I85_Y_2:Y (r)
+               +     0.323          net: PID_33/PWM_CTL/ADD_15x15_fast_I85_Y_2_0
+  63.084                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un47_sum_ADD_15x15_fast_I112_Y:B (r)
+               +     0.944          cell: ADLIB:AX1D
+  64.028                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un47_sum_ADD_15x15_fast_I112_Y:Y (r)
+               +     1.265          net: PID_33/PWM_CTL/ADD_15x15_fast_I112_Y_0_0
+  65.293                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_temp_b_8[3]:S (r)
+               +     0.508          cell: ADLIB:MX2
+  65.801                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_temp_b_8[3]:Y (r)
+               +     0.476          net: PID_33/PWM_CTL/mult1_temp_b_8[3]
+  66.277                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un54_sum_ADD_15x15_fast_I2_G0N:B (r)
+               +     0.516          cell: ADLIB:NOR2B
+  66.793                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un54_sum_ADD_15x15_fast_I2_G0N:Y (r)
+               +     0.774          net: PID_33/PWM_CTL/N197_10
+  67.567                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un54_sum_ADD_15x15_fast_I34_Y:C (r)
+               +     0.767          cell: ADLIB:AO1
+  68.334                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un54_sum_ADD_15x15_fast_I34_Y:Y (r)
+               +     1.186          net: PID_33/PWM_CTL/N252_0
+  69.520                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un54_sum_ADD_15x15_fast_I57_Y:C (r)
+               +     0.655          cell: ADLIB:AO1
+  70.175                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un54_sum_ADD_15x15_fast_I57_Y:Y (r)
+               +     0.461          net: PID_33/PWM_CTL/N279_11
+  70.636                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un54_sum_m3:A (r)
+               +     0.369          cell: ADLIB:OAI1
+  71.005                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un54_sum_m3:Y (f)
+               +     0.334          net: PID_33/PWM_CTL/N_39_mux_7
+  71.339                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un54_sum_m4:A (f)
+               +     0.631          cell: ADLIB:NOR2A
+  71.970                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un54_sum_m4:Y (f)
+               +     0.318          net: PID_33/PWM_CTL/N_5_0_0
+  72.288                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un54_sum_ADD_15x15_fast_I70_Y:A (f)
+               +     0.520          cell: ADLIB:AO1A
+  72.808                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un54_sum_ADD_15x15_fast_I70_Y:Y (r)
+               +     1.753          net: PID_33/PWM_CTL/N327_2
+  74.561                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un54_sum_ADD_15x15_fast_I98_Y:C (r)
+               +     0.986          cell: ADLIB:XOR3
+  75.547                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un54_sum_ADD_15x15_fast_I98_Y:Y (f)
+               +     0.338          net: PID_33/PWM_CTL/mult1_un54_sum[9]
+  75.885                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un61_sum_ADD_15x15_fast_I9_P0N:B (f)
+               +     0.647          cell: ADLIB:OR2
+  76.532                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un61_sum_ADD_15x15_fast_I9_P0N:Y (f)
+               +     0.819          net: PID_33/PWM_CTL/N219_0
+  77.351                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un61_sum_ADD_15x15_fast_I19_Y:B (f)
+               +     0.631          cell: ADLIB:NOR2B
+  77.982                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un61_sum_ADD_15x15_fast_I19_Y:Y (f)
+               +     1.724          net: PID_33/PWM_CTL/N237_5
+  79.706                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un61_sum_ADD_15x15_fast_I39_Y:B (f)
+               +     0.631          cell: ADLIB:NOR2B
+  80.337                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un61_sum_ADD_15x15_fast_I39_Y:Y (f)
+               +     0.400          net: PID_33/PWM_CTL/N260_5
+  80.737                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un61_sum_ADD_15x15_fast_I78_un1_Y_0:A (f)
+               +     0.386          cell: ADLIB:NOR2B
+  81.123                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un61_sum_ADD_15x15_fast_I78_un1_Y_0:Y (f)
+               +     1.302          net: PID_33/PWM_CTL/ADD_15x15_fast_I78_un1_Y_0_6
+  82.425                       PID_33/PWM_CTL/next_total_time_if_m14_0_o4_1:C (f)
+               +     0.704          cell: ADLIB:AO1C
+  83.129                       PID_33/PWM_CTL/next_total_time_if_m14_0_o4_1:Y (r)
+               +     0.384          net: PID_33/PWM_CTL/if_m14_0_o4_1
+  83.513                       PID_33/PWM_CTL/next_total_time_if_m14_1_0:A (r)
+               +     0.732          cell: ADLIB:OA1C
+  84.245                       PID_33/PWM_CTL/next_total_time_if_m14_1_0:Y (f)
+               +     0.428          net: PID_33/PWM_CTL/if_m14_1_0
+  84.673                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un68_sum_ADD_15x15_fast_I2_P0N:A (f)
+               +     0.480          cell: ADLIB:AO1D
+  85.153                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un68_sum_ADD_15x15_fast_I2_P0N:Y (r)
+               +     0.406          net: PID_33/PWM_CTL/N198_0
+  85.559                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un68_sum_ADD_15x15_fast_I34_un1_Y_s:B (r)
+               +     0.516          cell: ADLIB:NOR2B
+  86.075                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un68_sum_ADD_15x15_fast_I34_un1_Y_s:Y (r)
+               +     0.323          net: PID_33/PWM_CTL/ADD_15x15_fast_I34_un1_Y_out
+  86.398                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un68_sum_ADD_15x15_fast_I34_Y:B (r)
+               +     0.666          cell: ADLIB:AO1
+  87.064                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un68_sum_ADD_15x15_fast_I34_Y:Y (r)
+               +     0.862          net: PID_33/PWM_CTL/N252_6
+  87.926                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un68_sum_ADD_15x15_fast_I57_Y:C (r)
+               +     0.655          cell: ADLIB:AO1
+  88.581                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un68_sum_ADD_15x15_fast_I57_Y:Y (r)
+               +     1.028          net: PID_33/PWM_CTL/N279_3
+  89.609                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un68_sum_m3:B (r)
+               +     0.636          cell: ADLIB:AO1D
+  90.245                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un68_sum_m3:Y (f)
+               +     0.323          net: PID_33/PWM_CTL/N_39_mux_4
+  90.568                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un68_sum_m4:A (f)
+               +     0.628          cell: ADLIB:NOR2A
+  91.196                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un68_sum_m4:Y (f)
+               +     0.696          net: PID_33/PWM_CTL/N_5_0_2
+  91.892                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un68_sum_ADD_15x15_fast_I70_Y:A (f)
+               +     0.520          cell: ADLIB:AO1A
+  92.412                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un68_sum_ADD_15x15_fast_I70_Y:Y (r)
+               +     1.139          net: PID_33/PWM_CTL/N327_5
+  93.551                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un68_sum_ADD_15x15_fast_I98_Y:C (r)
+               +     0.986          cell: ADLIB:XOR3
+  94.537                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un68_sum_ADD_15x15_fast_I98_Y:Y (f)
+               +     0.385          net: PID_33/PWM_CTL/mult1_un68_sum[9]
+  94.922                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un75_sum_ADD_15x15_fast_I10_P0N:B (f)
+               +     0.647          cell: ADLIB:OR2
+  95.569                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un75_sum_ADD_15x15_fast_I10_P0N:Y (f)
+               +     0.387          net: PID_33/PWM_CTL/N227_4
+  95.956                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un75_sum_ADD_15x15_fast_I20_Y:C (f)
+               +     0.487          cell: ADLIB:OA1
+  96.443                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un75_sum_ADD_15x15_fast_I20_Y:Y (f)
+               +     0.991          net: PID_33/PWM_CTL/N245
+  97.434                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un75_sum_ADD_15x15_fast_I42_Y:B (f)
+               +     0.628          cell: ADLIB:NOR2B
+  98.062                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un75_sum_ADD_15x15_fast_I42_Y:Y (f)
+               +     0.403          net: PID_33/PWM_CTL/N271_3
+  98.465                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un75_sum_ADD_15x15_fast_I85_un1_Y_0:C (f)
+               +     0.681          cell: ADLIB:NOR3C
+  99.146                       PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un75_sum_ADD_15x15_fast_I85_un1_Y_0:Y (f)
+               +     1.262          net: PID_33/PWM_CTL/ADD_15x15_fast_I85_un1_Y_0_0
+  100.408                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un75_sum_ADD_15x15_fast_I85_un1_Y:A (f)
+               +     0.515          cell: ADLIB:NOR2B
+  100.923                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un75_sum_ADD_15x15_fast_I85_un1_Y:Y (f)
+               +     1.073          net: PID_33/PWM_CTL/I85_un1_Y_1
+  101.996                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un75_sum_ADD_15x15_fast_I112_Y:A (f)
+               +     0.666          cell: ADLIB:AX1D
+  102.662                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un75_sum_ADD_15x15_fast_I112_Y:Y (f)
+               +     1.010          net: PID_33/PWM_CTL/ADD_15x15_fast_I112_Y
+  103.672                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_temp_b_12[11]:S (f)
+               +     0.520          cell: ADLIB:MX2
+  104.192                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_temp_b_12[11]:Y (f)
+               +     0.455          net: PID_33/PWM_CTL/mult1_temp_b_12[11]
+  104.647                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un82_sum_ADD_15x15_fast_I10_P0N:B (f)
+               +     0.647          cell: ADLIB:OR2
+  105.294                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un82_sum_ADD_15x15_fast_I10_P0N:Y (f)
+               +     1.051          net: PID_33/PWM_CTL/N222_7
+  106.345                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un82_sum_ADD_15x15_fast_I19_Y:B (f)
+               +     0.631          cell: ADLIB:NOR2B
+  106.976                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un82_sum_ADD_15x15_fast_I19_Y:Y (f)
+               +     0.476          net: PID_33/PWM_CTL/N237_3
+  107.452                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un82_sum_ADD_15x15_fast_I39_Y:C (f)
+               +     0.681          cell: ADLIB:NOR3C
+  108.133                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un82_sum_ADD_15x15_fast_I39_Y:Y (f)
+               +     0.790          net: PID_33/PWM_CTL/N260
+  108.923                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un82_sum_ADD_15x15_fast_I78_un1_Y_0:B (f)
+               +     0.628          cell: ADLIB:AND2
+  109.551                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un82_sum_ADD_15x15_fast_I78_un1_Y_0:Y (f)
+               +     0.406          net: PID_33/PWM_CTL/ADD_15x15_fast_I78_un1_Y_0
+  109.957                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un82_sum_ADD_15x15_fast_I78_un1_Y:B (f)
+               +     0.631          cell: ADLIB:AND2
+  110.588                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un82_sum_ADD_15x15_fast_I78_un1_Y:Y (f)
+               +     1.069          net: PID_33/PWM_CTL/I78_un1_Y
+  111.657                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un82_sum_ADD_15x15_fast_I103_Y:A (f)
+               +     0.666          cell: ADLIB:AX1D
+  112.323                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un82_sum_ADD_15x15_fast_I103_Y:Y (f)
+               +     0.708          net: PID_33/PWM_CTL/ADD_15x15_fast_I103_Y_3
+  113.031                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_temp_b_13[1]:S (f)
+               +     0.480          cell: ADLIB:MX2
+  113.511                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_temp_b_13[1]:Y (r)
+               +     0.325          net: PID_33/PWM_CTL/mult1_temp_b_13[1]
+  113.836                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un89_sum_ADD_15x15_fast_I0_CO1:A (r)
+               +     0.488          cell: ADLIB:NOR2B
+  114.324                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un89_sum_ADD_15x15_fast_I0_CO1:Y (r)
+               +     1.414          net: PID_33/PWM_CTL/N191_2
+  115.738                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un89_sum_ADD_15x15_fast_I36_Y:A (r)
+               +     0.525          cell: ADLIB:MAJ3
+  116.263                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un89_sum_ADD_15x15_fast_I36_Y:Y (r)
+               +     0.712          net: PID_33/PWM_CTL/N254_0
+  116.975                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un89_sum_m2_e:B (r)
+               +     0.624          cell: ADLIB:NOR3B
+  117.599                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un89_sum_m2_e:Y (r)
+               +     0.318          net: PID_33/PWM_CTL/N_38_1
+  117.917                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un89_sum_m3:A (r)
+               +     0.369          cell: ADLIB:OAI1
+  118.286                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un89_sum_m3:Y (f)
+               +     0.334          net: PID_33/PWM_CTL/N_39_mux_3
+  118.620                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un89_sum_m4:A (f)
+               +     0.631          cell: ADLIB:NOR2A
+  119.251                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un89_sum_m4:Y (f)
+               +     1.633          net: PID_33/PWM_CTL/N_5_0_3
+  120.884                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un89_sum_ADD_15x15_fast_I70_Y:A (f)
+               +     0.520          cell: ADLIB:AO1A
+  121.404                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un89_sum_ADD_15x15_fast_I70_Y:Y (r)
+               +     0.334          net: PID_33/PWM_CTL/N327_6
+  121.738                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un89_sum_ADD_15x15_fast_I98_Y:C (r)
+               +     0.986          cell: ADLIB:XOR3
+  122.724                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un89_sum_ADD_15x15_fast_I98_Y:Y (f)
+               +     0.948          net: PID_33/PWM_CTL/mult1_un89_sum[9]
+  123.672                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un96_sum_ADD_15x15_fast_I9_P0N:B (f)
+               +     0.647          cell: ADLIB:OR2
+  124.319                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un96_sum_ADD_15x15_fast_I9_P0N:Y (f)
+               +     0.406          net: PID_33/PWM_CTL/N219_5
+  124.725                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un96_sum_ADD_15x15_fast_I19_Y:B (f)
+               +     0.631          cell: ADLIB:NOR2B
+  125.356                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un96_sum_ADD_15x15_fast_I19_Y:Y (f)
+               +     1.623          net: PID_33/PWM_CTL/N237_1
+  126.979                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un96_sum_ADD_15x15_fast_I39_Y:C (f)
+               +     0.681          cell: ADLIB:NOR3C
+  127.660                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un96_sum_ADD_15x15_fast_I39_Y:Y (f)
+               +     0.323          net: PID_33/PWM_CTL/N260_9
+  127.983                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un96_sum_ADD_15x15_fast_I60_un1_Y:B (f)
+               +     0.628          cell: ADLIB:NOR2B
+  128.611                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un96_sum_ADD_15x15_fast_I60_un1_Y:Y (f)
+               +     0.334          net: PID_33/PWM_CTL/I60_un1_Y_1
+  128.945                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un96_sum_ADD_15x15_fast_I78_Y_2:C (f)
+               +     0.664          cell: ADLIB:OR3
+  129.609                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un96_sum_ADD_15x15_fast_I78_Y_2:Y (f)
+               +     0.334          net: PID_33/PWM_CTL/ADD_15x15_fast_I78_Y_2_9
+  129.943                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un96_sum_ADD_15x15_fast_I78_Y:C (f)
+               +     0.706          cell: ADLIB:AO1
+  130.649                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un96_sum_ADD_15x15_fast_I78_Y:Y (f)
+               +     0.326          net: PID_33/PWM_CTL/N317_1
+  130.975                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un96_sum_ADD_15x15_fast_I103_Y:B (f)
+               +     0.937          cell: ADLIB:XOR2
+  131.912                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un96_sum_ADD_15x15_fast_I103_Y:Y (r)
+               +     1.357          net: PID_33/PWM_CTL/ADD_15x15_fast_I103_Y_1_2
+  133.269                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_temp_b_15[6]:S (r)
+               +     0.365          cell: ADLIB:MX2
+  133.634                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_temp_b_15[6]:Y (r)
+               +     1.167          net: PID_33/PWM_CTL/mult1_temp_b_15[6]
+  134.801                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un103_sum_m10:A (r)
+               +     0.488          cell: ADLIB:NOR2B
+  135.289                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un103_sum_m10:Y (r)
+               +     0.323          net: PID_33/PWM_CTL/N_44_9
+  135.612                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un103_sum_m29:C (r)
+               +     0.713          cell: ADLIB:MIN3
+  136.325                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un103_sum_m29:Y (f)
+               +     0.322          net: PID_33/PWM_CTL/N_44_mux_9
+  136.647                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un103_sum_ADD_15x15_fast_I46_Y:A (f)
+               +     0.520          cell: ADLIB:AO1A
+  137.167                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un103_sum_ADD_15x15_fast_I46_Y:Y (r)
+               +     0.665          net: PID_33/PWM_CTL/N267_1
+  137.832                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un103_sum_ADD_15x15_fast_I60_un1_Y:C (r)
+               +     0.666          cell: ADLIB:NOR3C
+  138.498                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un103_sum_ADD_15x15_fast_I60_un1_Y:Y (r)
+               +     0.334          net: PID_33/PWM_CTL/I60_un1_Y
+  138.832                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un103_sum_ADD_15x15_fast_I78_Y_2:C (r)
+               +     0.683          cell: ADLIB:OR3
+  139.515                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un103_sum_ADD_15x15_fast_I78_Y_2:Y (r)
+               +     0.320          net: PID_33/PWM_CTL/ADD_15x15_fast_I78_Y_2_1
+  139.835                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un103_sum_ADD_15x15_fast_I78_Y:C (r)
+               +     0.767          cell: ADLIB:AO1
+  140.602                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un103_sum_ADD_15x15_fast_I78_Y:Y (r)
+               +     0.406          net: PID_33/PWM_CTL/N317
+  141.008                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un110_sum_ADD_m1:B (r)
+               +     0.628          cell: ADLIB:XNOR2
+  141.636                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un110_sum_ADD_m1:Y (f)
+               +     0.990          net: PID_33/PWM_CTL/ADD_N_2_i_0_li
+  142.626                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un110_sum_ADD_m16_0_1:S (f)
+               +     0.520          cell: ADLIB:MX2
+  143.146                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un110_sum_ADD_m16_0_1:Y (f)
+               +     0.308          net: PID_33/PWM_CTL/ADD_m16_0_1
+  143.454                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un110_sum_ADD_m16_0:A (f)
+               +     0.508          cell: ADLIB:OR2
+  143.962                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un110_sum_ADD_m16_0:Y (f)
+               +     1.488          net: ADD_m16_0_0
+  145.450                      d_m1_e_0:B (f)
+               +     0.488          cell: ADLIB:NOR2A
+  145.938                      d_m1_e_0:Y (r)
+               +     0.323          net: d_N_3_mux_0
+  146.261                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un110_sum_ADD_15x15_fast_I54_un1_Y_0:A (r)
+               +     0.666          cell: ADLIB:MX2
+  146.927                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un110_sum_ADD_15x15_fast_I54_un1_Y_0:Y (r)
+               +     0.318          net: PID_33/PWM_CTL/I54_un1_Y_1
+  147.245                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un110_sum_ADD_15x15_fast_I54_Y:A (r)
+               +     0.363          cell: ADLIB:OR2
+  147.608                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un110_sum_ADD_15x15_fast_I54_Y:Y (r)
+               +     0.323          net: PID_33/PWM_CTL/N275_9
+  147.931                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un110_sum_ADD_15x15_fast_I73_Y:B (r)
+               +     0.591          cell: ADLIB:OR2
+  148.522                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un110_sum_ADD_15x15_fast_I73_Y:Y (r)
+               +     0.886          net: PID_33/PWM_CTL/N336_3
+  149.408                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un110_sum_ADD_15x15_fast_I78_un1_Y:C (r)
+               +     0.751          cell: ADLIB:NOR3C
+  150.159                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un110_sum_ADD_15x15_fast_I78_un1_Y:Y (r)
+               +     0.334          net: PID_33/PWM_CTL/I78_un1_Y_0
+  150.493                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un110_sum_ADD_15x15_fast_I103_Y:A (r)
+               +     1.001          cell: ADLIB:AX1D
+  151.494                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un110_sum_ADD_15x15_fast_I103_Y:Y (f)
+               +     1.866          net: PID_33/PWM_CTL/ADD_15x15_fast_I103_Y
+  153.360                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_temp_b_17[5]:S (f)
+               +     0.480          cell: ADLIB:MX2
+  153.840                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_temp_b_17[5]:Y (r)
+               +     0.403          net: PID_33/PWM_CTL/mult1_temp_b_17[5]
+  154.243                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un117_sum_ADD_15x15_fast_I4_G0N:C (r)
+               +     0.645          cell: ADLIB:XA1
+  154.888                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un117_sum_ADD_15x15_fast_I4_G0N:Y (r)
+               +     0.323          net: PID_33/PWM_CTL/N203_0
+  155.211                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un117_sum_ADD_15x15_fast_I73_Y_0:C (r)
+               +     0.767          cell: ADLIB:AO1
+  155.978                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un117_sum_ADD_15x15_fast_I73_Y_0:Y (r)
+               +     1.159          net: PID_33/PWM_CTL/ADD_15x15_fast_I73_Y_0
+  157.137                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un117_sum_ADD_15x15_fast_I73_Y:B (r)
+               +     0.641          cell: ADLIB:OR3
+  157.778                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un117_sum_ADD_15x15_fast_I73_Y:Y (r)
+               +     0.323          net: PID_33/PWM_CTL/N336_7
+  158.101                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un117_sum_ADD_15x15_fast_I78_Y:B (r)
+               +     0.666          cell: ADLIB:AO1
+  158.767                      PID_33/PWM_CTL/next_total_time_if_generate_plus.mult1_un117_sum_ADD_15x15_fast_I78_Y:Y (r)
+               +     0.334          net: PID_33/PWM_CTL/N317_0
+  159.101                      PID_33/PWM_CTL/next_total_time_I_6:A (r)
+               +     0.626          cell: ADLIB:XO1A
+  159.727                      PID_33/PWM_CTL/next_total_time_I_6:Y (f)
+               +     0.334          net: PID_33/PWM_CTL/N_4
+  160.061                      PID_33/PWM_CTL/total_time[0]:D (f)
+                                    
+  160.061                      data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          clk
+               +     0.000          Clock source
+  N/C                          clk (r)
+               +     0.000          net: clk
+  N/C                          clk_pad/U0/U0:PAD (r)
+               +     1.202          cell: ADLIB:IOPAD_IN
+  N/C                          clk_pad/U0/U0:Y (r)
+               +     0.000          net: clk_pad/U0/NET1
+  N/C                          clk_pad/U0/U1:A (r)
+               +     0.348          cell: ADLIB:CLKIO
+  N/C                          clk_pad/U0/U1:Y (r)
+               +     1.087          net: clk_c
+  N/C                          PID_33/PWM_CTL/total_time[0]:CLK (r)
+               -     0.539          Library setup time: ADLIB:DFN1E1C0
+  N/C                          PID_33/PWM_CTL/total_time[0]:D
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+Path 1
+  From:                        choose_cont[3]
+  To:                          CG/k_i33[12]:D
+  Delay (ns):                  32.910
+  Slack (ns):
+  Arrival (ns):                32.910
+  Required (ns):
+  Setup (ns):                  0.574
+  External Setup (ns):         30.825
+
+Path 2
+  From:                        choose_cont[0]
+  To:                          CG/k_i33[12]:D
+  Delay (ns):                  32.248
+  Slack (ns):
+  Arrival (ns):                32.248
+  Required (ns):
+  Setup (ns):                  0.574
+  External Setup (ns):         30.163
+
+Path 3
+  From:                        choose_const[0]
+  To:                          CG/k_i33[12]:D
+  Delay (ns):                  31.730
+  Slack (ns):
+  Arrival (ns):                31.730
+  Required (ns):
+  Setup (ns):                  0.574
+  External Setup (ns):         29.645
+
+Path 4
+  From:                        choose_cont[3]
+  To:                          CG/k_i33[11]:D
+  Delay (ns):                  31.680
+  Slack (ns):
+  Arrival (ns):                31.680
+  Required (ns):
+  Setup (ns):                  0.574
+  External Setup (ns):         29.595
+
+Path 5
+  From:                        choose_cont[3]
+  To:                          CG/target_v33[12]:D
+  Delay (ns):                  31.591
+  Slack (ns):
+  Arrival (ns):                31.591
+  Required (ns):
+  Setup (ns):                  0.574
+  External Setup (ns):         29.456
+
+
+Expanded Path 1
+  From: choose_cont[3]
+  To: CG/k_i33[12]:D
+  data required time                             N/C
+  data arrival time                          -   32.910
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        choose_cont[3] (r)
+               +     0.000          net: choose_cont[3]
+  0.000                        choose_cont_pad[3]/U0/U0:PAD (r)
+               +     1.202          cell: ADLIB:IOPAD_IN
+  1.202                        choose_cont_pad[3]/U0/U0:Y (r)
+               +     0.000          net: choose_cont_pad[3]/U0/NET1
+  1.202                        choose_cont_pad[3]/U0/U1:YIN (r)
+               +     0.043          cell: ADLIB:IOIN_IB
+  1.245                        choose_cont_pad[3]/U0/U1:Y (r)
+               +     2.036          net: choose_cont_c[3]
+  3.281                        choose_cont_pad_RNIJALA[3]:A (r)
+               +     0.466          cell: ADLIB:BUFF
+  3.747                        choose_cont_pad_RNIJALA[3]:Y (r)
+               +     2.945          net: choose_cont_c_0[3]
+  6.692                        CG/k_i3320:B (r)
+               +     0.716          cell: ADLIB:NOR3C
+  7.408                        CG/k_i3320:Y (r)
+               +     4.436          net: CG_k_i3320
+  11.844                       CG/k_i521_RNIT0CD2_3:B (r)
+               +     0.516          cell: ADLIB:NOR2B
+  12.360                       CG/k_i521_RNIT0CD2_3:Y (r)
+               +     1.475          net: CG/k_i33_0_sqmuxa_0
+  13.835                       CG/k_i33_RNIN2BS4_0[0]:B (r)
+               +     0.598          cell: ADLIB:AO1D
+  14.433                       CG/k_i33_RNIN2BS4_0[0]:Y (f)
+               +     1.149          net: CG/k_i33_c0
+  15.582                       CG/k_i33_RNIEARI7_0[1]:A (f)
+               +     1.062          cell: ADLIB:AO13
+  16.644                       CG/k_i33_RNIEARI7_0[1]:Y (f)
+               +     0.406          net: CG/k_i33_c1
+  17.050                       CG/k_i33_RNI6JB9A[2]:A (f)
+               +     0.887          cell: ADLIB:AO13
+  17.937                       CG/k_i33_RNI6JB9A[2]:Y (f)
+               +     0.406          net: CG/k_i33_c2
+  18.343                       CG/k_i33_RNIVSRVC[3]:A (f)
+               +     0.887          cell: ADLIB:AO13
+  19.230                       CG/k_i33_RNIVSRVC[3]:Y (f)
+               +     0.406          net: CG/k_i33_c3
+  19.636                       CG/k_i33_RNIP7CMF[4]:A (f)
+               +     0.887          cell: ADLIB:AO13
+  20.523                       CG/k_i33_RNIP7CMF[4]:Y (f)
+               +     1.129          net: CG/k_i33_c4
+  21.652                       CG/k_i33_RNIKJSCI[5]:A (f)
+               +     0.887          cell: ADLIB:AO13
+  22.539                       CG/k_i33_RNIKJSCI[5]:Y (f)
+               +     0.406          net: CG/k_i33_c5
+  22.945                       CG/k_i33_RNIG0D3L[6]:A (f)
+               +     0.887          cell: ADLIB:AO13
+  23.832                       CG/k_i33_RNIG0D3L[6]:Y (f)
+               +     0.406          net: CG/k_i33_c6
+  24.238                       CG/k_i33_RNIDETPN[7]:A (f)
+               +     0.887          cell: ADLIB:AO13
+  25.125                       CG/k_i33_RNIDETPN[7]:Y (f)
+               +     1.458          net: CG/k_i33_c7
+  26.583                       CG/k_i33_RNIBTDGQ[8]:A (f)
+               +     0.887          cell: ADLIB:AO13
+  27.470                       CG/k_i33_RNIBTDGQ[8]:Y (f)
+               +     0.406          net: CG/k_i33_c8
+  27.876                       CG/k_i33_RNIADU6T[9]:A (f)
+               +     0.887          cell: ADLIB:AO13
+  28.763                       CG/k_i33_RNIADU6T[9]:Y (f)
+               +     0.406          net: CG/k_i33_c9
+  29.169                       CG/k_i33_RNIH3K101[10]:A (f)
+               +     0.887          cell: ADLIB:AO13
+  30.056                       CG/k_i33_RNIH3K101[10]:Y (f)
+               +     0.419          net: CG/k_i33_c10
+  30.475                       CG/k_i33_RNO_0[12]:A (f)
+               +     0.887          cell: ADLIB:AO13
+  31.362                       CG/k_i33_RNO_0[12]:Y (f)
+               +     0.343          net: CG/k_i33_c11
+  31.705                       CG/k_i33_RNO[12]:C (f)
+               +     0.873          cell: ADLIB:XNOR3
+  32.578                       CG/k_i33_RNO[12]:Y (r)
+               +     0.332          net: CG/k_i33_n12
+  32.910                       CG/k_i33[12]:D (r)
+                                    
+  32.910                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          clk
+               +     0.000          Clock source
+  N/C                          clk (r)
+               +     0.000          net: clk
+  N/C                          clk_pad/U0/U0:PAD (r)
+               +     1.202          cell: ADLIB:IOPAD_IN
+  N/C                          clk_pad/U0/U0:Y (r)
+               +     0.000          net: clk_pad/U0/NET1
+  N/C                          clk_pad/U0/U1:A (r)
+               +     0.348          cell: ADLIB:CLKIO
+  N/C                          clk_pad/U0/U1:Y (r)
+               +     1.109          net: clk_c
+  N/C                          CG/k_i33[12]:CLK (r)
+               -     0.574          Library setup time: ADLIB:DFN1C0
+  N/C                          CG/k_i33[12]:D
+
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        CG/k_p33[5]:CLK
+  To:                          LED[5]
+  Delay (ns):                  21.593
+  Slack (ns):
+  Arrival (ns):                24.256
+  Required (ns):
+  Clock to Out (ns):           24.256
+
+Path 2
+  From:                        CG/k_i33_0[0]:CLK
+  To:                          LED[0]
+  Delay (ns):                  21.146
+  Slack (ns):
+  Arrival (ns):                23.795
+  Required (ns):
+  Clock to Out (ns):           23.795
+
+Path 3
+  From:                        CG/k_i33[3]:CLK
+  To:                          LED[3]
+  Delay (ns):                  20.731
+  Slack (ns):
+  Arrival (ns):                23.403
+  Required (ns):
+  Clock to Out (ns):           23.403
+
+Path 4
+  From:                        CG/k_i33[2]:CLK
+  To:                          LED[2]
+  Delay (ns):                  20.588
+  Slack (ns):
+  Arrival (ns):                23.237
+  Required (ns):
+  Clock to Out (ns):           23.237
+
+Path 5
+  From:                        CG/k_i5[0]:CLK
+  To:                          LED[0]
+  Delay (ns):                  20.126
+  Slack (ns):
+  Arrival (ns):                22.794
+  Required (ns):
+  Clock to Out (ns):           22.794
+
+
+Expanded Path 1
+  From: CG/k_p33[5]:CLK
+  To: LED[5]
+  data required time                             N/C
+  data arrival time                          -   24.256
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        clk
+               +     0.000          Clock source
+  0.000                        clk (r)
+               +     0.000          net: clk
+  0.000                        clk_pad/U0/U0:PAD (r)
+               +     1.202          cell: ADLIB:IOPAD_IN
+  1.202                        clk_pad/U0/U0:Y (r)
+               +     0.000          net: clk_pad/U0/NET1
+  1.202                        clk_pad/U0/U1:A (r)
+               +     0.348          cell: ADLIB:CLKIO
+  1.550                        clk_pad/U0/U1:Y (r)
+               +     1.113          net: clk_c
+  2.663                        CG/k_p33[5]:CLK (r)
+               +     0.737          cell: ADLIB:DFN1C0
+  3.400                        CG/k_p33[5]:Q (f)
+               +     3.478          net: k_p33[5]
+  6.878                        PID_33/SUM/m239:A (f)
+               +     0.579          cell: ADLIB:MX2
+  7.457                        PID_33/SUM/m239:Y (f)
+               +     1.095          net: PID_33/SUM/N_240_0
+  8.552                        PID_33/SUM/m323:B (f)
+               +     0.610          cell: ADLIB:MX2A
+  9.162                        PID_33/SUM/m323:Y (f)
+               +     1.625          net: PID_33/SUM/N_324_0
+  10.787                       PID_33/SUM/m440:B (f)
+               +     0.619          cell: ADLIB:MX2
+  11.406                       PID_33/SUM/m440:Y (f)
+               +     0.308          net: PID_33/SUM/N_441
+  11.714                       PID_33/SUM/m93:A (f)
+               +     0.515          cell: ADLIB:NOR2B
+  12.229                       PID_33/SUM/m93:Y (f)
+               +     0.334          net: PID_33/SUM/N_94_0
+  12.563                       PID_33/SUM/m95:A (f)
+               +     0.619          cell: ADLIB:MX2
+  13.182                       PID_33/SUM/m95:Y (f)
+               +     1.399          net: PID_33/N_96_0
+  14.581                       PID_33/AVG_CALC/un1_integ_0_0_m96:B (f)
+               +     0.572          cell: ADLIB:MX2
+  15.153                       PID_33/AVG_CALC/un1_integ_0_0_m96:Y (f)
+               +     0.323          net: PID_33/AVG_CALC/N_97_0
+  15.476                       PID_33/AVG_CALC/un1_integ_0_0_m98_0:C (f)
+               +     0.641          cell: ADLIB:NOR3C
+  16.117                       PID_33/AVG_CALC/un1_integ_0_0_m98_0:Y (f)
+               +     0.323          net: PID_33/AVG_CALC/N_569_mux
+  16.440                       PID_33/AVG_CALC/un1_integ_0_0_m102:A (f)
+               +     0.579          cell: ADLIB:MX2
+  17.019                       PID_33/AVG_CALC/un1_integ_0_0_m102:Y (f)
+               +     0.320          net: PID_33/AVG_CALC/N_103_0
+  17.339                       PID_33/AVG_CALC/un1_integ_0_0_m104:B (f)
+               +     0.572          cell: ADLIB:MX2
+  17.911                       PID_33/AVG_CALC/un1_integ_0_0_m104:Y (f)
+               +     2.019          net: N_577_mux_c
+  19.930                       LED_pad[5]/U0/U1:D (f)
+               +     0.659          cell: ADLIB:IOTRI_OB_EB
+  20.589                       LED_pad[5]/U0/U1:DOUT (f)
+               +     0.000          net: LED_pad[5]/U0/NET1
+  20.589                       LED_pad[5]/U0/U0:D (f)
+               +     3.667          cell: ADLIB:IOPAD_TRI
+  24.256                       LED_pad[5]/U0/U0:PAD (f)
+               +     0.000          net: LED[5]
+  24.256                       LED[5] (f)
+                                    
+  24.256                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          clk
+               +     0.000          Clock source
+  N/C                          clk (r)
+                                    
+  N/C                          LED[5] (f)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+Path 1
+  From:                        n_rst
+  To:                          PID_33/SPICLK/cur_clk:CLR
+  Delay (ns):                  2.676
+  Slack (ns):
+  Arrival (ns):                2.676
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      0.324
+
+Path 2
+  From:                        n_rst
+  To:                          PID_33/SUM/p_adj[12]:CLR
+  Delay (ns):                  2.650
+  Slack (ns):
+  Arrival (ns):                2.650
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      0.289
+
+Path 3
+  From:                        n_rst
+  To:                          PID_33/SUM/p_adj[10]:CLR
+  Delay (ns):                  2.650
+  Slack (ns):
+  Arrival (ns):                2.650
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      0.289
+
+Path 4
+  From:                        n_rst
+  To:                          PID_33/SUM/p_adj[11]:CLR
+  Delay (ns):                  2.650
+  Slack (ns):
+  Arrival (ns):                2.650
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      0.289
+
+Path 5
+  From:                        n_rst
+  To:                          PID_33/VD_SIG/sig_prev:CLR
+  Delay (ns):                  2.648
+  Slack (ns):
+  Arrival (ns):                2.648
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      0.287
+
+
+Expanded Path 1
+  From: n_rst
+  To: PID_33/SPICLK/cur_clk:CLR
+  data required time                             N/C
+  data arrival time                          -   2.676
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        n_rst (r)
+               +     0.000          net: n_rst
+  0.000                        n_rst_pad/U0/U0:PAD (r)
+               +     1.202          cell: ADLIB:IOPAD_IN
+  1.202                        n_rst_pad/U0/U0:Y (r)
+               +     0.000          net: n_rst_pad/U0/NET1
+  1.202                        n_rst_pad/U0/U1:A (r)
+               +     0.348          cell: ADLIB:CLKIO
+  1.550                        n_rst_pad/U0/U1:Y (r)
+               +     1.126          net: n_rst_c
+  2.676                        PID_33/SPICLK/cur_clk:CLR (r)
+                                    
+  2.676                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          clk
+               +     0.000          Clock source
+  N/C                          clk (r)
+               +     0.000          net: clk
+  N/C                          clk_pad/U0/U0:PAD (r)
+               +     1.202          cell: ADLIB:IOPAD_IN
+  N/C                          clk_pad/U0/U0:Y (r)
+               +     0.000          net: clk_pad/U0/NET1
+  N/C                          clk_pad/U0/U1:A (r)
+               +     0.348          cell: ADLIB:CLKIO
+  N/C                          clk_pad/U0/U1:Y (r)
+               +     1.099          net: clk_c
+  N/C                          PID_33/SPICLK/cur_clk:CLK (r)
+               -     0.297          Library recovery time: ADLIB:DFN1C0
+  N/C                          PID_33/SPICLK/cur_clk:CLR
+
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Path set Pin to Pin
+
+SET Input to Output
+
+Path 1
+  From:                        choose_cont[0]
+  To:                          LED[5]
+  Delay (ns):                  24.767
+  Slack (ns):
+  Arrival (ns):                24.767
+  Required (ns):
+
+Path 2
+  From:                        choose_cont[0]
+  To:                          LED[4]
+  Delay (ns):                  23.979
+  Slack (ns):
+  Arrival (ns):                23.979
+  Required (ns):
+
+Path 3
+  From:                        choose_cont[0]
+  To:                          LED[3]
+  Delay (ns):                  23.721
+  Slack (ns):
+  Arrival (ns):                23.721
+  Required (ns):
+
+Path 4
+  From:                        choose_cont[0]
+  To:                          LED[0]
+  Delay (ns):                  23.269
+  Slack (ns):
+  Arrival (ns):                23.269
+  Required (ns):
+
+Path 5
+  From:                        choose_cont[1]
+  To:                          LED[7]
+  Delay (ns):                  23.255
+  Slack (ns):
+  Arrival (ns):                23.255
+  Required (ns):
+
+
+Expanded Path 1
+  From: choose_cont[0]
+  To: LED[5]
+  data required time                             N/C
+  data arrival time                          -   24.767
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        choose_cont[0] (f)
+               +     0.000          net: choose_cont[0]
+  0.000                        choose_cont_pad[0]/U0/U0:PAD (f)
+               +     0.889          cell: ADLIB:IOPAD_IN
+  0.889                        choose_cont_pad[0]/U0/U0:Y (f)
+               +     0.000          net: choose_cont_pad[0]/U0/NET1
+  0.889                        choose_cont_pad[0]/U0/U1:YIN (f)
+               +     0.040          cell: ADLIB:IOIN_IB
+  0.929                        choose_cont_pad[0]/U0/U1:Y (f)
+               +     2.203          net: choose_cont_c[0]
+  3.132                        choose_cont_pad_RNIG7LA_0[0]:A (f)
+               +     0.537          cell: ADLIB:BUFF
+  3.669                        choose_cont_pad_RNIG7LA_0[0]:Y (f)
+               +     3.779          net: choose_cont_c_0[0]
+  7.448                        PID_33/SUM/m239:S (f)
+               +     0.520          cell: ADLIB:MX2
+  7.968                        PID_33/SUM/m239:Y (f)
+               +     1.095          net: PID_33/SUM/N_240_0
+  9.063                        PID_33/SUM/m323:B (f)
+               +     0.610          cell: ADLIB:MX2A
+  9.673                        PID_33/SUM/m323:Y (f)
+               +     1.625          net: PID_33/SUM/N_324_0
+  11.298                       PID_33/SUM/m440:B (f)
+               +     0.619          cell: ADLIB:MX2
+  11.917                       PID_33/SUM/m440:Y (f)
+               +     0.308          net: PID_33/SUM/N_441
+  12.225                       PID_33/SUM/m93:A (f)
+               +     0.515          cell: ADLIB:NOR2B
+  12.740                       PID_33/SUM/m93:Y (f)
+               +     0.334          net: PID_33/SUM/N_94_0
+  13.074                       PID_33/SUM/m95:A (f)
+               +     0.619          cell: ADLIB:MX2
+  13.693                       PID_33/SUM/m95:Y (f)
+               +     1.399          net: PID_33/N_96_0
+  15.092                       PID_33/AVG_CALC/un1_integ_0_0_m96:B (f)
+               +     0.572          cell: ADLIB:MX2
+  15.664                       PID_33/AVG_CALC/un1_integ_0_0_m96:Y (f)
+               +     0.323          net: PID_33/AVG_CALC/N_97_0
+  15.987                       PID_33/AVG_CALC/un1_integ_0_0_m98_0:C (f)
+               +     0.641          cell: ADLIB:NOR3C
+  16.628                       PID_33/AVG_CALC/un1_integ_0_0_m98_0:Y (f)
+               +     0.323          net: PID_33/AVG_CALC/N_569_mux
+  16.951                       PID_33/AVG_CALC/un1_integ_0_0_m102:A (f)
+               +     0.579          cell: ADLIB:MX2
+  17.530                       PID_33/AVG_CALC/un1_integ_0_0_m102:Y (f)
+               +     0.320          net: PID_33/AVG_CALC/N_103_0
+  17.850                       PID_33/AVG_CALC/un1_integ_0_0_m104:B (f)
+               +     0.572          cell: ADLIB:MX2
+  18.422                       PID_33/AVG_CALC/un1_integ_0_0_m104:Y (f)
+               +     2.019          net: N_577_mux_c
+  20.441                       LED_pad[5]/U0/U1:D (f)
+               +     0.659          cell: ADLIB:IOTRI_OB_EB
+  21.100                       LED_pad[5]/U0/U1:DOUT (f)
+               +     0.000          net: LED_pad[5]/U0/NET1
+  21.100                       LED_pad[5]/U0/U0:D (f)
+               +     3.667          cell: ADLIB:IOPAD_TRI
+  24.767                       LED_pad[5]/U0/U0:PAD (f)
+               +     0.000          net: LED[5]
+  24.767                       LED[5] (f)
+                                    
+  24.767                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          choose_cont[0] (f)
+                                    
+  N/C                          LED[5] (f)
+                                    
+  N/C                          data required time
+
+
+END SET Input to Output
+
+----------------------------------------------------
+
+Path set User Sets
+

@@ -1,0 +1,46 @@
+Target Part: A3PE1500_PQFP208_STD
+Report for cell spi_rx.verilog
+  Core Cell usage:
+              cell count     area count*area
+              AND2     3      1.0        3.0
+              AND3    20      1.0       20.0
+              AO1B     1      1.0        1.0
+              AOI1     1      1.0        1.0
+             AOI1B     2      1.0        2.0
+              AX1C     1      1.0        1.0
+              BUFF     1      1.0        1.0
+               GND     5      0.0        0.0
+               INV     2      1.0        2.0
+              NOR2     6      1.0        6.0
+             NOR2A     2      1.0        2.0
+             NOR2B     9      1.0        9.0
+             NOR3A     1      1.0        1.0
+             NOR3B     2      1.0        2.0
+             NOR3C     3      1.0        3.0
+              OR2A     1      1.0        1.0
+              OR2B     1      1.0        1.0
+               VCC     5      0.0        0.0
+              XOR2    20      1.0       20.0
+
+
+          DFN0E0C0     8      1.0        8.0
+            DFN1C0    24      1.0       24.0
+          DFN1E1C0     2      1.0        2.0
+                   -----          ----------
+             TOTAL   120               110.0
+
+
+  IO Cell usage:
+              cell count
+             INBUF     3
+            OUTBUF    11
+                   -----
+             TOTAL    14
+
+
+Core Cells         : 110 of 38400 (0%)
+IO Cells           : 14
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 60 (0%)
+

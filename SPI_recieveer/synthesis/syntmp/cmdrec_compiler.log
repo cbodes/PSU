@@ -1,0 +1,12 @@
+C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\c_hdl.exe  -osyn  "C:\PID Project\SPI_recieveer\synthesis\synwork\spi_rx_comp.srs"  -top  spi_rx  -hdllog  "C:\PID Project\SPI_recieveer\synthesis\synlog\spi_rx_compiler.srr"  -encrypt  -mp  4  -verification_mode 0  -verilog  -prodtype  synplify_pro  -nram -fixsmult -divnmod   -I "C:\PID Project\SPI_recieveer\synthesis\"  -I C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib   -sysv  -devicelib  C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.v  -encrypt  -pro  -dmgen  "C:\PID Project\SPI_recieveer\synthesis\dm"  -ui -fid2 -ram -sharing on -ll 2000 -autosm  -lib work "C:\PID Project\SPI_recieveer\hdl\spi_clk.v" -lib work "C:\PID Project\SPI_recieveer\hdl\spi_ctl.v" -lib work "C:\PID Project\SPI_recieveer\hdl\spi_pts.v" -lib work "C:\PID Project\SPI_recieveer\hdl\spi_stp.v" -lib work "C:\PID Project\SPI_recieveer\hdl\spi_rx.v" 
+rc:0 success:1 runtime:2
+file:C:\PID Project\SPI_recieveer\synthesis\synwork\spi_rx_comp.srs|io:o|time:1519962127|size:6733|exec:0
+file:C:\PID Project\SPI_recieveer\synthesis\synlog\spi_rx_compiler.srr|io:o|time:1519962127|size:4106|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.v|io:i|time:1487963250|size:55760|exec:0
+file:C:\PID Project\SPI_recieveer\hdl\spi_clk.v|io:i|time:1519961173|size:1063|exec:0
+file:C:\PID Project\SPI_recieveer\hdl\spi_ctl.v|io:i|time:1519961173|size:1575|exec:0
+file:C:\PID Project\SPI_recieveer\hdl\spi_pts.v|io:i|time:1519961173|size:1144|exec:0
+file:C:\PID Project\SPI_recieveer\hdl\spi_stp.v|io:i|time:1519962124|size:1060|exec:0
+file:C:\PID Project\SPI_recieveer\hdl\spi_rx.v|io:i|time:1519962097|size:1410|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\c_hdl.exe|io:i|time:1479395164|size:1337856|exec:1
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\c_hdl.exe|io:i|time:1479395368|size:1973248|exec:1

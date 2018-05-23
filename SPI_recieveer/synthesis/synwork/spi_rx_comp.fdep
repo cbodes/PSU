@@ -1,0 +1,35 @@
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\PID Project\\SPI_recieveer\\synthesis\\synwork\\spi_rx_comp.srs|-top|spi_rx|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|C:\\PID Project\\SPI_recieveer\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib|-sysv|-devicelib|C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\proasic\\proasic3e.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\bin64\\c_ver.exe":1480000224
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\proasic\\proasic3e.v":1487963250
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\hypermods.v":1487963386
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\umr_capim.v":1487963386
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\scemi_objects.v":1487963386
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\scemi_pipes.svh":1487963386
+#CUR:"C:\\PID Project\\SPI_recieveer\\hdl\\spi_clk.v":1519961173
+#CUR:"C:\\PID Project\\SPI_recieveer\\hdl\\spi_ctl.v":1519961173
+#CUR:"C:\\PID Project\\SPI_recieveer\\hdl\\spi_pts.v":1519961173
+#CUR:"C:\\PID Project\\SPI_recieveer\\hdl\\spi_stp.v":1519962124
+#CUR:"C:\\PID Project\\SPI_recieveer\\hdl\\spi_rx.v":1519962097
+0			"C:\PID Project\SPI_recieveer\hdl\spi_clk.v" verilog
+1			"C:\PID Project\SPI_recieveer\hdl\spi_ctl.v" verilog
+2			"C:\PID Project\SPI_recieveer\hdl\spi_pts.v" verilog
+3			"C:\PID Project\SPI_recieveer\hdl\spi_stp.v" verilog
+4			"C:\PID Project\SPI_recieveer\hdl\spi_rx.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+1 -1
+2 -1
+3 -1
+4 3 2 1 0
+#Dependency Lists(Users Of)
+0 4
+1 4
+2 4
+3 4
+4 -1
+#Design Unit to File Association
+module work spi_rx 4
+module work spi_stp 3
+module work spi_pts 2
+module work spi_ctl 1
+module work spi_clk 0

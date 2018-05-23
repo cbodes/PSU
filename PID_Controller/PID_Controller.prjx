@@ -1,0 +1,911 @@
+KEY LIBERO "11.8"
+KEY CAPTURE "11.8.3.6"
+KEY DEFAULT_IMPORT_LOC "C:\Documents and Settings\odigas\My Documents\ProASIC3\StarterKit\ProASIC_StarterKit_Demo\StarterKit_Demo\hdl"
+KEY DEFAULT_OPEN_LOC ""
+KEY ProjectID "0"
+KEY HDLTechnology "VERILOG"
+KEY VERILOGMODE "SYSTEMVERILOG"
+KEY VHDLMODE "VHDL2008"
+KEY UseConstraintFlowTechnology "FALSE"
+KEY VendorTechnology_Family "ProASIC3E"
+KEY VendorTechnology_Die "IT10X10M3"
+KEY VendorTechnology_Package "pq208"
+KEY VendorTechnology_Speed "STD"
+KEY VendorTechnology_DieVoltage "1.5"
+KEY VendorTechnology_PART_RANGE "COM"
+KEY VendorTechnology_DSW_VCCA_VOLTAGE_RAMP_RATE ""
+KEY VendorTechnology_IO_DEFT_STD "LVTTL"
+KEY VendorTechnology_OPCONR ""
+KEY VendorTechnology_PLL_SUPPLY ""
+KEY VendorTechnology_RAD_EXPOSURE ""
+KEY VendorTechnology_RESERVEMIGRATIONPINS "1"
+KEY VendorTechnology_RESTRICTPROBEPINS "1"
+KEY VendorTechnology_RESTRICTSPIPINS "0"
+KEY VendorTechnology_SYSTEM_CONTROLLER_SUSPEND_MODE ""
+KEY VendorTechnology_TARGETDEVICESFORMIGRATION "IT10X10M3"
+KEY VendorTechnology_TEMPR "COM"
+KEY VendorTechnology_UNUSED_MSS_IO_RESISTOR_PULL "None"
+KEY VendorTechnology_VCCI_1.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
+KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
+KEY VendorTechnology_VOLTR "COM"
+KEY ProjectLocation "C:\PID Project\PID_Controller"
+KEY ProjectDescription ""
+KEY Pa4PeripheralNewSeq "GOOD"
+KEY SimulationType "VERILOG"
+KEY Vendor "Actel"
+KEY ActiveRoot "PID_controller::work"
+LIST REVISIONS
+VALUE="Impl1",NUM=1
+CURREV=1
+ENDLIST
+LIST FileManager
+VALUE "<project>\component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf,actgen_cxf"
+STATE="utd"
+TIME="1523327724"
+SIZE="437"
+ENDFILE
+VALUE "<project>\constraint\fpga.pdc,pdc"
+STATE="utd"
+TIME="1519964926"
+SIZE="14"
+ENDFILE
+VALUE "<project>\constraint\PID_controller.pdc,pdc"
+STATE="utd"
+TIME="1519944111"
+SIZE="133"
+ENDFILE
+VALUE "<project>\constraint\PID_controller_sdc.sdc,sdc"
+STATE="utd"
+TIME="1519964906"
+SIZE="417"
+ENDFILE
+VALUE "<project>\designer\impl1\PID_controller - Copy.pdb,pdb"
+STATE="utd"
+TIME="1522390048"
+SIZE="272852"
+ENDFILE
+VALUE "<project>\designer\impl1\PID_controller.adb,adb"
+STATE="utd"
+TIME="1524793102"
+SIZE="450048"
+ENDFILE
+VALUE "<project>\designer\impl1\PID_controller.ide_des,ide_des"
+STATE="utd"
+TIME="1524793102"
+SIZE="1056"
+ENDFILE
+VALUE "<project>\designer\impl1\PID_controller160.pdb,pdb"
+STATE="utd"
+TIME="1524197930"
+SIZE="212061"
+ENDFILE
+VALUE "<project>\designer\impl1\PID_controller_ba.sdf,ba_sdf"
+STATE="ood"
+TIME="1524175045"
+SIZE="2337988"
+ENDFILE
+VALUE "<project>\designer\impl1\PID_controller_compile_log.rpt,log"
+STATE="utd"
+TIME="1524793102"
+SIZE="8197"
+ENDFILE
+VALUE "<project>\designer\impl1\PID_controller_floorplan_log.rpt,log"
+STATE="utd"
+TIME="1523050792"
+SIZE="354"
+ENDFILE
+VALUE "<project>\designer\impl1\PID_controller_fp\PID_controller.pdb,pdb"
+STATE="ood"
+TIME="1519879524"
+SIZE="2148"
+ENDFILE
+VALUE "<project>\designer\impl1\PID_controller_fp\PID_controller.pro,pro"
+STATE="utd"
+TIME="1520094619"
+SIZE="2418"
+ENDFILE
+VALUE "<project>\designer\impl1\PID_controller_fp\PID_controller_1.pdb,pdb"
+STATE="utd"
+TIME="1519858441"
+SIZE="2144"
+ENDFILE
+VALUE "<project>\designer\impl1\PID_controller_fp\PID_controller_2.pdb,pdb"
+STATE="utd"
+TIME="1519858934"
+SIZE="2147"
+ENDFILE
+VALUE "<project>\designer\impl1\PID_controller_fp\projectData\PID_controller.pdb,pdb"
+STATE="utd"
+TIME="1520094619"
+SIZE="2148"
+ENDFILE
+VALUE "<project>\designer\impl1\PID_controller_timingconstraints_log.rpt,log"
+STATE="utd"
+TIME="1519861153"
+SIZE="437"
+ENDFILE
+VALUE "<project>\designer\impl1\PID_single_spi.pdb,pdb"
+STATE="utd"
+TIME="1522908824"
+SIZE="280358"
+ENDFILE
+VALUE "<project>\designer\impl1\PID_sum_div_by8.pdb,pdb"
+STATE="utd"
+TIME="1522877151"
+SIZE="277104"
+ENDFILE
+VALUE "<project>\designer\impl1\spi_rx.adb,adb"
+STATE="ood"
+TIME="1519962408"
+SIZE="66048"
+ENDFILE
+VALUE "<project>\designer\impl1\spi_rx.ide_des,ide_des"
+STATE="utd"
+TIME="1519962408"
+SIZE="952"
+ENDFILE
+VALUE "<project>\designer\impl1\spi_rx_compile_log.rpt,log"
+STATE="utd"
+TIME="1519962408"
+SIZE="8259"
+ENDFILE
+VALUE "<project>\hdl\constant_gen.v,hdl"
+STATE="utd"
+TIME="1524202779"
+SIZE="3704"
+ENDFILE
+VALUE "<project>\hdl\controller.v,hdl"
+STATE="utd"
+TIME="1523056678"
+SIZE="4372"
+ENDFILE
+VALUE "<project>\hdl\derivative_calc.v,hdl"
+STATE="utd"
+TIME="1520134634"
+SIZE="1026"
+ENDFILE
+VALUE "<project>\hdl\error_calc.v,hdl"
+STATE="utd"
+TIME="1523052168"
+SIZE="1185"
+ENDFILE
+VALUE "<project>\hdl\error_sr.v,hdl"
+STATE="utd"
+TIME="1520119775"
+SIZE="1430"
+ENDFILE
+VALUE "<project>\hdl\integral_calc.v,hdl"
+STATE="utd"
+TIME="1521335498"
+SIZE="2107"
+ENDFILE
+VALUE "<project>\hdl\PID_controller (1).v,hdl"
+STATE="utd"
+TIME="1519931930"
+SIZE="2005"
+ENDFILE
+VALUE "<project>\hdl\PID_controller.v,hdl"
+STATE="utd"
+TIME="1524789988"
+SIZE="7876"
+ENDFILE
+VALUE "<project>\hdl\PID_ControllerSD.v,hdl"
+STATE="utd"
+TIME="1519951911"
+SIZE="2521"
+ENDFILE
+VALUE "<project>\hdl\pid_controller_tb.v,hdl"
+STATE="utd"
+TIME="1519843941"
+SIZE="2485"
+ENDFILE
+VALUE "<project>\hdl\pid_ctl.v,hdl"
+STATE="utd"
+TIME="1522972433"
+SIZE="4030"
+ENDFILE
+VALUE "<project>\hdl\pid_sum.v,hdl"
+STATE="utd"
+TIME="1523239037"
+SIZE="3827"
+ENDFILE
+VALUE "<project>\hdl\PSU_controller.v,hdl"
+STATE="utd"
+TIME="1524792604"
+SIZE="1787"
+ENDFILE
+VALUE "<project>\hdl\PSU_Top_Level.v,hdl"
+STATE="utd"
+TIME="1524791910"
+SIZE="3435"
+ENDFILE
+VALUE "<project>\hdl\pwm_ctl.v,hdl"
+STATE="utd"
+TIME="1524172873"
+SIZE="4382"
+ENDFILE
+VALUE "<project>\hdl\pwm_tx.v,hdl"
+STATE="utd"
+TIME="1524789246"
+SIZE="1942"
+ENDFILE
+VALUE "<project>\hdl\sig_gen.v,hdl"
+STATE="utd"
+TIME="1520132301"
+SIZE="992"
+ENDFILE
+VALUE "<project>\hdl\spi_clk.v,hdl"
+STATE="utd"
+TIME="1520204935"
+SIZE="1064"
+ENDFILE
+VALUE "<project>\hdl\spi_ctl.v,hdl"
+STATE="utd"
+TIME="1524199079"
+SIZE="1693"
+ENDFILE
+VALUE "<project>\hdl\spi_pts.v,hdl"
+STATE="utd"
+TIME="1523002083"
+SIZE="1121"
+ENDFILE
+VALUE "<project>\hdl\spi_rx.v,hdl"
+STATE="utd"
+TIME="1524789965"
+SIZE="1487"
+ENDFILE
+VALUE "<project>\hdl\spi_stp.v,hdl"
+STATE="utd"
+TIME="1522886649"
+SIZE="1021"
+ENDFILE
+VALUE "<project>\hdl\voltage_gen.v,hdl"
+STATE="utd"
+TIME="1520217549"
+SIZE="1046"
+ENDFILE
+VALUE "<project>\hdl\v_test.v,hdl"
+STATE="utd"
+TIME="1519877022"
+SIZE="969"
+ENDFILE
+VALUE "<project>\simulation\integral_calc_tb_presynth_simulation.log,log"
+STATE="utd"
+TIME="1521333084"
+SIZE="2199"
+ENDFILE
+VALUE "<project>\simulation\pid_controllertb_postsynth_simulation.log,log"
+STATE="utd"
+TIME="1524793167"
+SIZE="3619"
+ENDFILE
+VALUE "<project>\simulation\pid_controllertb_presynth_simulation.log,log"
+STATE="utd"
+TIME="1524792745"
+SIZE="42714"
+ENDFILE
+VALUE "<project>\simulation\run.do,do"
+STATE="utd"
+TIME="1524793132"
+SIZE="672"
+ENDFILE
+VALUE "<project>\smartgen\pll_maxf\pll_maxf.cxf,actgen_cxf"
+STATE="utd"
+TIME="1524199165"
+SIZE="1480"
+ENDFILE
+VALUE "<project>\smartgen\pll_maxf\pll_maxf.gen,gen"
+STATE="utd"
+TIME="1524199164"
+SIZE="537"
+PARENT="<project>\smartgen\pll_maxf\pll_maxf.cxf"
+ENDFILE
+VALUE "<project>\smartgen\pll_maxf\pll_maxf.log,log"
+STATE="utd"
+TIME="1524199165"
+SIZE="2729"
+PARENT="<project>\smartgen\pll_maxf\pll_maxf.cxf"
+ENDFILE
+VALUE "<project>\smartgen\pll_maxf\pll_maxf.v,hdl"
+STATE="utd"
+TIME="1524199165"
+SIZE="2761"
+PARENT="<project>\smartgen\pll_maxf\pll_maxf.cxf"
+ENDFILE
+VALUE "<project>\stimulus\pid_controllertb.v,tb_hdl"
+STATE="utd"
+TIME="1524792042"
+SIZE="4290"
+ENDFILE
+VALUE "<project>\synthesis\PID_controller.edn,syn_edn"
+STATE="utd"
+TIME="1524793070"
+SIZE="1236053"
+ENDFILE
+VALUE "<project>\synthesis\PID_controller.so,so"
+STATE="utd"
+TIME="1524793070"
+SIZE="227"
+ENDFILE
+VALUE "<project>\synthesis\PID_controller.v,syn_hdl"
+STATE="utd"
+TIME="1524793132"
+SIZE="390773"
+ENDFILE
+VALUE "<project>\synthesis\PID_ControllerSD.so,so"
+STATE="utd"
+TIME="1519962305"
+SIZE="231"
+ENDFILE
+VALUE "<project>\synthesis\PID_ControllerSD_syn.prj,prj"
+STATE="utd"
+TIME="1519962306"
+SIZE="2462"
+ENDFILE
+VALUE "<project>\synthesis\PID_controller_sdc.sdc,syn_sdc"
+STATE="utd"
+TIME="1524793070"
+SIZE="403"
+ENDFILE
+VALUE "<project>\synthesis\PID_controller_syn.prj,prj"
+STATE="utd"
+TIME="1524793071"
+SIZE="3028"
+ENDFILE
+VALUE "<project>\synthesis\spi_rx.edn,syn_edn"
+STATE="ood"
+TIME="1519962401"
+SIZE="52926"
+ENDFILE
+VALUE "<project>\synthesis\spi_rx.so,so"
+STATE="utd"
+TIME="1519962401"
+SIZE="211"
+ENDFILE
+VALUE "<project>\synthesis\spi_rx_sdc.sdc,syn_sdc"
+STATE="ood"
+TIME="1519962401"
+SIZE="395"
+ENDFILE
+VALUE "<project>\synthesis\spi_rx_syn.prj,prj"
+STATE="utd"
+TIME="1519962401"
+SIZE="1878"
+ENDFILE
+ENDLIST
+LIST UsedFile
+VALUE "<project>\hdl\PID_controller.v,PID_controller"
+VALUE "<project>\hdl\pid_ctl.v,controller"
+ENDLIST
+LIST NewModulesInfo
+LIST "PID_controller::work"
+FILE "<project>\hdl\PID_controller.v,hdl"
+LIST UserCustomizedFileList
+LIST "ideSYNTHESIS"
+USE_LIST=TRUE
+FILELIST
+VALUE "<project>\hdl\PSU_Top_Level.v,hdl"
+VALUE "<project>\hdl\PSU_controller.v,hdl"
+VALUE "<project>\hdl\PID_controller.v,hdl"
+VALUE "<project>\hdl\controller.v,hdl"
+VALUE "<project>\hdl\sig_gen.v,hdl"
+VALUE "<project>\hdl\spi_clk.v,hdl"
+VALUE "<project>\hdl\spi_rx.v,hdl"
+VALUE "<project>\hdl\spi_pts.v,hdl"
+VALUE "<project>\hdl\spi_ctl.v,hdl"
+VALUE "<project>\hdl\derivative_calc.v,hdl"
+VALUE "<project>\hdl\error_calc.v,hdl"
+VALUE "<project>\hdl\error_sr.v,hdl"
+VALUE "<project>\hdl\integral_calc.v,hdl"
+VALUE "<project>\hdl\pid_sum.v,hdl"
+VALUE "<project>\hdl\v_test.v,hdl"
+VALUE "<project>\hdl\spi_stp.v,hdl"
+VALUE "<project>\hdl\pwm_tx.v,hdl"
+VALUE "<project>\hdl\pwm_ctl.v,hdl"
+VALUE "<project>\hdl\constant_gen.v,hdl"
+VALUE "<project>\hdl\voltage_gen.v,hdl"
+ENDFILELIST
+ENDLIST
+LIST "ideSIMULATION"
+USE_LIST=TRUE
+FILELIST
+VALUE "<project>\hdl\PSU_Top_Level.v,hdl"
+VALUE "<project>\hdl\PSU_controller.v,hdl"
+VALUE "<project>\hdl\controller.v,hdl"
+VALUE "<project>\hdl\derivative_calc.v,hdl"
+VALUE "<project>\hdl\error_calc.v,hdl"
+VALUE "<project>\hdl\error_sr.v,hdl"
+VALUE "<project>\hdl\integral_calc.v,hdl"
+VALUE "<project>\hdl\pid_sum.v,hdl"
+VALUE "<project>\hdl\pwm_ctl.v,hdl"
+VALUE "<project>\hdl\pwm_tx.v,hdl"
+VALUE "<project>\hdl\sig_gen.v,hdl"
+VALUE "<project>\hdl\spi_clk.v,hdl"
+VALUE "<project>\hdl\spi_ctl.v,hdl"
+VALUE "<project>\hdl\spi_stp.v,hdl"
+VALUE "<project>\hdl\spi_rx.v,hdl"
+VALUE "<project>\hdl\PID_controller.v,hdl"
+ENDFILELIST
+ENDLIST
+ENDLIST 
+LIST AssociatedStimulus
+VALUE "<project>\stimulus\pid_controllertb.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+LiberoState=Post_Synthesis
+ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\PID_controller.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+VALUE "<project>\synthesis\PID_controller.edn,syn_edn"
+VALUE "<project>\synthesis\PID_controller.vm,syn_vm"
+VALUE "<project>\synthesis\PID_controller_sdc.sdc,syn_sdc"
+VALUE "<project>\synthesis\PID_controller.v,syn_hdl"
+VALUE "<project>\phy_synthesis\PID_controller_palace.edn,palace_edn"
+VALUE "<project>\phy_synthesis\PID_controller_palace.gcf,palace_gcf"
+VALUE "<project>\phy_synthesis\PID_controller_palace.pdc,palace_pdc"
+VALUE "<project>\phy_synthesis\PID_controller_palace.sdc,palace_sdc"
+VALUE "<project>\phy_synthesis\PID_controller_palace.v,palace_hdl"
+VALUE "<project>\designer\impl1\PID_controller.adb,adb"
+VALUE "<project>\designer\impl1\PID_controller.prb,prb"
+VALUE "<project>\designer\impl1\PID_controller.fdb,fdb"
+VALUE "<project>\designer\impl1\PID_controller.pdb,pdb"
+VALUE "<project>\designer\impl1\PID_controller.stp,stp"
+VALUE "<project>\designer\impl1\PID_controller_1_fp\PID_controller_1.pro,pro"
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST PinReports
+VALUE "<project>\designer\impl1\PID_controller_report_pin_byname.txt,log"
+VALUE "<project>\designer\impl1\PID_controller_report_pin_bynumber.txt,log"
+ENDLIST
+ENDLIST
+LIST "PID_ControllerSD::work"
+FILE "<project>\hdl\PID_ControllerSD.v,hdl"
+LIST ProjectState5.1
+LIST Impl1
+ideSYNTHESIS(<project>\synthesis\PID_ControllerSD.edn,syn_edn)=StateFailure
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST "spi_rx::work"
+FILE "<project>\hdl\spi_rx.v,hdl"
+LIST ProjectState5.1
+LIST Impl1
+ideSYNTHESIS(<project>\synthesis\spi_rx.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+ENDLIST
+LIST AssociatedStimulus
+LIST PID_controller
+VALUE "<project>\stimulus\pid_controllertb.v,tb_hdl"
+ENDLIST
+ENDLIST
+LIST Other_Association
+ENDLIST
+LIST SimulationOptions
+UseAutomaticDoFile=true
+IncludeWaveDo=false
+Type=max
+RunTime=10000ns
+Resolution=1ps
+VsimOpt=
+EntityName=pid_controllertb
+TopInstanceName=PID
+DoFileName=
+DoFileName2=wave.do
+DoFileParams=
+DisplayDUTWave=false
+LogAllSignals=false
+DisablePulseFiltering=false
+DumpVCD=false
+VCDFileName=power.vcd
+VHDL2008=false
+Verilog2001=false
+SystemVerilog=false
+TimeUnit=1
+TimeUnitBase=ns
+Precision=100
+PrecisionBase=ps
+ENDLIST
+LIST ModelSimLibPath
+UseCustomPath=FALSE
+LibraryPath=
+ENDLIST
+LIST GlobalFlowOptions
+GenerateHDLAfterSynthesis=FALSE
+GenerateHDLAfterPhySynthesis=FALSE
+RunDRCAfterSynthesis=FALSE
+AutoCheckConstraints=TRUE
+UpdateModelSimIni=TRUE
+NoIOMode=FALSE
+PeriInitStandalone=FALSE
+EnableViewDraw=FALSE
+UpdateViewDrawIni=TRUE
+GenerateHDLFromSchematic=TRUE
+VmNetlistFlowOn=FALSE
+EnableDesignSeparationOn=FALSE
+EnableSETMitigationOn=FALSE
+DisplayFanoutLimit=10
+AbortFlowOnPDCErrorsOn=TRUE
+AbortFlowOnSDCErrorsOn=TRUE
+InstantiateInSmartDesign=FALSE
+FlashProInputFile=pdb
+SmartGenCompileReport=T
+ENDLIST
+LIST PhySynthesisOptions
+ENDLIST
+LIST Profiles
+NAME="SoftConsole"
+FUNCTION="SoftwareIDE"
+TOOL="SoftConsole"
+LOCATION="eclipse.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="Synplify Pro ME"
+FUNCTION="Synthesis"
+TOOL="Synplify Pro ME"
+LOCATION="C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\synplify_pro.exe"
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="ModelSim ME"
+FUNCTION="Simulation"
+TOOL="ModelSim"
+LOCATION="C:\Microsemi\Libero_SoC_v11.8\Modelsim\win32acoem\modelsim.exe"
+PARAM=" -l PSU_tb_postlayout_simulation.log "
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="FPExpress"
+FUNCTION="Program"
+TOOL="FlashPro"
+LOCATION="C:\Microsemi\Libero_SoC_v11.8\Designer\bin\FPExpress.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="Identify Debugger"
+FUNCTION="IdentifyDebugger"
+TOOL="Identify Debugger"
+LOCATION="C:\Microsemi\Libero_SoC_v11.8\Identify\bin\identify_debugger.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+ENDLIST
+LIST ProjectState5.1
+LIST "PID_controller::work"
+LIST Impl1
+LiberoState=Post_Synthesis
+ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\PID_controller.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+VALUE "<project>\synthesis\PID_controller.edn,syn_edn"
+VALUE "<project>\synthesis\PID_controller.vm,syn_vm"
+VALUE "<project>\synthesis\PID_controller_sdc.sdc,syn_sdc"
+VALUE "<project>\synthesis\PID_controller.v,syn_hdl"
+VALUE "<project>\phy_synthesis\PID_controller_palace.edn,palace_edn"
+VALUE "<project>\phy_synthesis\PID_controller_palace.gcf,palace_gcf"
+VALUE "<project>\phy_synthesis\PID_controller_palace.pdc,palace_pdc"
+VALUE "<project>\phy_synthesis\PID_controller_palace.sdc,palace_sdc"
+VALUE "<project>\phy_synthesis\PID_controller_palace.v,palace_hdl"
+VALUE "<project>\designer\impl1\PID_controller.adb,adb"
+VALUE "<project>\designer\impl1\PID_controller.prb,prb"
+VALUE "<project>\designer\impl1\PID_controller.fdb,fdb"
+VALUE "<project>\designer\impl1\PID_controller.pdb,pdb"
+VALUE "<project>\designer\impl1\PID_controller.stp,stp"
+VALUE "<project>\designer\impl1\PID_controller_1_fp\PID_controller_1.pro,pro"
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "PID_ControllerSD::work"
+LIST Impl1
+ideSYNTHESIS(<project>\synthesis\PID_ControllerSD.edn,syn_edn)=StateFailure
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "spi_rx::work"
+LIST Impl1
+ideSYNTHESIS(<project>\synthesis\spi_rx.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST ExcludePackageForSimulation
+ENDLIST
+LIST ExcludePackageForSynthesis
+ENDLIST
+LIST IncludeModuleForSimulation
+ENDLIST
+LIST CDBOrder
+ENDLIST
+LIST UserCustomizedFileList
+LIST "PID_controller"
+LIST "ideSYNTHESIS"
+USE_LIST=TRUE
+FILELIST
+VALUE "<project>\hdl\PSU_Top_Level.v,hdl"
+VALUE "<project>\hdl\PSU_controller.v,hdl"
+VALUE "<project>\hdl\PID_controller.v,hdl"
+VALUE "<project>\hdl\controller.v,hdl"
+VALUE "<project>\hdl\sig_gen.v,hdl"
+VALUE "<project>\hdl\spi_clk.v,hdl"
+VALUE "<project>\hdl\spi_rx.v,hdl"
+VALUE "<project>\hdl\spi_pts.v,hdl"
+VALUE "<project>\hdl\spi_ctl.v,hdl"
+VALUE "<project>\hdl\derivative_calc.v,hdl"
+VALUE "<project>\hdl\error_calc.v,hdl"
+VALUE "<project>\hdl\error_sr.v,hdl"
+VALUE "<project>\hdl\integral_calc.v,hdl"
+VALUE "<project>\hdl\pid_sum.v,hdl"
+VALUE "<project>\hdl\v_test.v,hdl"
+VALUE "<project>\hdl\spi_stp.v,hdl"
+VALUE "<project>\hdl\pwm_tx.v,hdl"
+VALUE "<project>\hdl\pwm_ctl.v,hdl"
+VALUE "<project>\hdl\constant_gen.v,hdl"
+VALUE "<project>\hdl\voltage_gen.v,hdl"
+ENDFILELIST
+ENDLIST
+LIST "ideSIMULATION"
+USE_LIST=TRUE
+FILELIST
+VALUE "<project>\hdl\PSU_Top_Level.v,hdl"
+VALUE "<project>\hdl\PSU_controller.v,hdl"
+VALUE "<project>\hdl\controller.v,hdl"
+VALUE "<project>\hdl\derivative_calc.v,hdl"
+VALUE "<project>\hdl\error_calc.v,hdl"
+VALUE "<project>\hdl\error_sr.v,hdl"
+VALUE "<project>\hdl\integral_calc.v,hdl"
+VALUE "<project>\hdl\pid_sum.v,hdl"
+VALUE "<project>\hdl\pwm_ctl.v,hdl"
+VALUE "<project>\hdl\pwm_tx.v,hdl"
+VALUE "<project>\hdl\sig_gen.v,hdl"
+VALUE "<project>\hdl\spi_clk.v,hdl"
+VALUE "<project>\hdl\spi_ctl.v,hdl"
+VALUE "<project>\hdl\spi_stp.v,hdl"
+VALUE "<project>\hdl\spi_rx.v,hdl"
+VALUE "<project>\hdl\PID_controller.v,hdl"
+ENDFILELIST
+ENDLIST
+ENDLIST
+LIST "PID_controller"
+LIST "ideSYNTHESIS"
+USE_LIST=TRUE
+FILELIST
+VALUE "<project>\hdl\PSU_Top_Level.v,hdl"
+VALUE "<project>\hdl\PSU_controller.v,hdl"
+VALUE "<project>\hdl\PID_controller.v,hdl"
+VALUE "<project>\hdl\controller.v,hdl"
+VALUE "<project>\hdl\sig_gen.v,hdl"
+VALUE "<project>\hdl\spi_clk.v,hdl"
+VALUE "<project>\hdl\spi_rx.v,hdl"
+VALUE "<project>\hdl\spi_pts.v,hdl"
+VALUE "<project>\hdl\spi_ctl.v,hdl"
+VALUE "<project>\hdl\derivative_calc.v,hdl"
+VALUE "<project>\hdl\error_calc.v,hdl"
+VALUE "<project>\hdl\error_sr.v,hdl"
+VALUE "<project>\hdl\integral_calc.v,hdl"
+VALUE "<project>\hdl\pid_sum.v,hdl"
+VALUE "<project>\hdl\v_test.v,hdl"
+VALUE "<project>\hdl\spi_stp.v,hdl"
+VALUE "<project>\hdl\pwm_tx.v,hdl"
+VALUE "<project>\hdl\pwm_ctl.v,hdl"
+VALUE "<project>\hdl\constant_gen.v,hdl"
+VALUE "<project>\hdl\voltage_gen.v,hdl"
+ENDFILELIST
+ENDLIST
+LIST "ideSIMULATION"
+USE_LIST=TRUE
+FILELIST
+VALUE "<project>\hdl\PSU_Top_Level.v,hdl"
+VALUE "<project>\hdl\PSU_controller.v,hdl"
+VALUE "<project>\hdl\controller.v,hdl"
+VALUE "<project>\hdl\derivative_calc.v,hdl"
+VALUE "<project>\hdl\error_calc.v,hdl"
+VALUE "<project>\hdl\error_sr.v,hdl"
+VALUE "<project>\hdl\integral_calc.v,hdl"
+VALUE "<project>\hdl\pid_sum.v,hdl"
+VALUE "<project>\hdl\pwm_ctl.v,hdl"
+VALUE "<project>\hdl\pwm_tx.v,hdl"
+VALUE "<project>\hdl\sig_gen.v,hdl"
+VALUE "<project>\hdl\spi_clk.v,hdl"
+VALUE "<project>\hdl\spi_ctl.v,hdl"
+VALUE "<project>\hdl\spi_stp.v,hdl"
+VALUE "<project>\hdl\spi_rx.v,hdl"
+VALUE "<project>\hdl\PID_controller.v,hdl"
+ENDFILELIST
+ENDLIST
+ENDLIST
+LIST "PID_controller"
+LIST "ideSYNTHESIS"
+USE_LIST=TRUE
+FILELIST
+VALUE "<project>\hdl\PSU_Top_Level.v,hdl"
+VALUE "<project>\hdl\PSU_controller.v,hdl"
+VALUE "<project>\hdl\PID_controller.v,hdl"
+VALUE "<project>\hdl\controller.v,hdl"
+VALUE "<project>\hdl\sig_gen.v,hdl"
+VALUE "<project>\hdl\spi_clk.v,hdl"
+VALUE "<project>\hdl\spi_rx.v,hdl"
+VALUE "<project>\hdl\spi_pts.v,hdl"
+VALUE "<project>\hdl\spi_ctl.v,hdl"
+VALUE "<project>\hdl\derivative_calc.v,hdl"
+VALUE "<project>\hdl\error_calc.v,hdl"
+VALUE "<project>\hdl\error_sr.v,hdl"
+VALUE "<project>\hdl\integral_calc.v,hdl"
+VALUE "<project>\hdl\pid_sum.v,hdl"
+VALUE "<project>\hdl\v_test.v,hdl"
+VALUE "<project>\hdl\spi_stp.v,hdl"
+VALUE "<project>\hdl\pwm_tx.v,hdl"
+VALUE "<project>\hdl\pwm_ctl.v,hdl"
+VALUE "<project>\hdl\constant_gen.v,hdl"
+VALUE "<project>\hdl\voltage_gen.v,hdl"
+ENDFILELIST
+ENDLIST
+LIST "ideSIMULATION"
+USE_LIST=TRUE
+FILELIST
+VALUE "<project>\hdl\PSU_Top_Level.v,hdl"
+VALUE "<project>\hdl\PSU_controller.v,hdl"
+VALUE "<project>\hdl\controller.v,hdl"
+VALUE "<project>\hdl\derivative_calc.v,hdl"
+VALUE "<project>\hdl\error_calc.v,hdl"
+VALUE "<project>\hdl\error_sr.v,hdl"
+VALUE "<project>\hdl\integral_calc.v,hdl"
+VALUE "<project>\hdl\pid_sum.v,hdl"
+VALUE "<project>\hdl\pwm_ctl.v,hdl"
+VALUE "<project>\hdl\pwm_tx.v,hdl"
+VALUE "<project>\hdl\sig_gen.v,hdl"
+VALUE "<project>\hdl\spi_clk.v,hdl"
+VALUE "<project>\hdl\spi_ctl.v,hdl"
+VALUE "<project>\hdl\spi_stp.v,hdl"
+VALUE "<project>\hdl\spi_rx.v,hdl"
+VALUE "<project>\hdl\PID_controller.v,hdl"
+ENDFILELIST
+ENDLIST
+ENDLIST
+ENDLIST
+LIST OpenedFileList
+ORIENTATION;HORIZONTAL
+StartPage;StartPage;0
+ACTIVEVIEW;StartPage
+ENDLIST
+LIST ModuleSubBlockList
+LIST "constant_gen::work","hdl\constant_gen.v","FALSE","FALSE"
+ENDLIST
+LIST "controller::work","hdl\pid_ctl.v","FALSE","FALSE"
+ENDLIST
+LIST "derivative_calc::work","hdl\derivative_calc.v","FALSE","FALSE"
+ENDLIST
+LIST "DESIGN_FIRMWARE::work","component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf","TRUE","FALSE"
+ENDLIST
+LIST "error_calc::work","hdl\error_calc.v","FALSE","FALSE"
+ENDLIST
+LIST "error_sr::work","hdl\error_sr.v","FALSE","FALSE"
+ENDLIST
+LIST "integral_calc::work","hdl\integral_calc.v","FALSE","FALSE"
+ENDLIST
+LIST "PID_controller::work","hdl\PID_controller.v","FALSE","FALSE"
+SUBBLOCK "derivative_calc::work","hdl\derivative_calc.v","FALSE","FALSE"
+SUBBLOCK "error_calc::work","hdl\error_calc.v","FALSE","FALSE"
+SUBBLOCK "error_sr::work","hdl\error_sr.v","FALSE","FALSE"
+SUBBLOCK "integral_calc::work","hdl\integral_calc.v","FALSE","FALSE"
+SUBBLOCK "pid_sum::work","hdl\pid_sum.v","FALSE","FALSE"
+SUBBLOCK "pwm_ctl::work","hdl\pwm_ctl.v","FALSE","FALSE"
+SUBBLOCK "pwm_tx::work","hdl\pwm_tx.v","FALSE","FALSE"
+SUBBLOCK "sig_gen::work","hdl\sig_gen.v","FALSE","FALSE"
+SUBBLOCK "spi_clk::work","hdl\spi_clk.v","FALSE","FALSE"
+SUBBLOCK "spi_rx::work","hdl\spi_rx.v","FALSE","FALSE"
+SUBBLOCK "controller::work","hdl\pid_ctl.v","FALSE","FALSE"
+ENDLIST
+LIST "pid_controller_tb::work","hdl\pid_controller_tb.v","FALSE","FALSE"
+SUBBLOCK "PID_controller::work","hdl\PID_controller.v","FALSE","FALSE"
+ENDLIST
+LIST "PID_ControllerSD::work","hdl\PID_ControllerSD.v","FALSE","FALSE"
+SUBBLOCK "PID_controller::work","hdl\PID_controller.v","FALSE","FALSE"
+ENDLIST
+LIST "pid_sum::work","hdl\pid_sum.v","FALSE","FALSE"
+ENDLIST
+LIST "pll_maxf::work","smartgen\pll_maxf\pll_maxf.v","TRUE","FALSE"
+ENDLIST
+LIST "PSU_controller::work","hdl\PSU_controller.v","FALSE","FALSE"
+ENDLIST
+LIST "PSU_Top_Level::work","hdl\PSU_Top_Level.v","FALSE","FALSE"
+SUBBLOCK "PSU_controller::work","hdl\PSU_controller.v","FALSE","FALSE"
+SUBBLOCK "PID_controller::work","hdl\PID_controller.v","FALSE","FALSE"
+ENDLIST
+LIST "pwm_ctl::work","hdl\pwm_ctl.v","FALSE","FALSE"
+ENDLIST
+LIST "pwm_tx::work","hdl\pwm_tx.v","FALSE","FALSE"
+ENDLIST
+LIST "sig_gen::work","hdl\sig_gen.v","FALSE","FALSE"
+ENDLIST
+LIST "spi_clk::work","hdl\spi_clk.v","FALSE","FALSE"
+ENDLIST
+LIST "spi_ctl::work","hdl\spi_ctl.v","FALSE","FALSE"
+ENDLIST
+LIST "spi_pts::work","hdl\spi_pts.v","FALSE","FALSE"
+ENDLIST
+LIST "spi_rx::work","hdl\spi_rx.v","FALSE","FALSE"
+SUBBLOCK "sig_gen::work","hdl\sig_gen.v","FALSE","FALSE"
+SUBBLOCK "spi_ctl::work","hdl\spi_ctl.v","FALSE","FALSE"
+SUBBLOCK "spi_stp::work","hdl\spi_stp.v","FALSE","FALSE"
+ENDLIST
+LIST "spi_stp::work","hdl\spi_stp.v","FALSE","FALSE"
+ENDLIST
+LIST "v_test::work","hdl\v_test.v","FALSE","FALSE"
+ENDLIST
+LIST "voltage_gen::work","hdl\voltage_gen.v","FALSE","FALSE"
+ENDLIST
+LIST "pid_controllertb::work","stimulus\pid_controllertb.v","FALSE","TRUE"
+SUBBLOCK "PSU_Top_Level::work","hdl\PSU_Top_Level.v","FALSE","FALSE"
+ENDLIST
+ENDLIST
+LIST ActiveTestBenchList
+LIST "PID_controller::work"
+ACTIVETESTBENCH "pid_controllertb::work","stimulus\pid_controllertb.v","FALSE"
+ENDLIST
+LIST "PID_controller::work"
+ACTIVETESTBENCH "pid_controllertb::work","stimulus\pid_controllertb.v","FALSE"
+ENDLIST
+LIST "PID_controller::work"
+ACTIVETESTBENCH "pid_controllertb::work","stimulus\pid_controllertb.v","FALSE"
+ENDLIST
+ENDLIST
+LIST IOTabList
+ENDLIST
+LIST FPTabList
+ENDLIST
+LIST TimingTabList
+VALUE "constraint\PID_controller_sdc.sdc"
+ENDLIST
+LIST FDCTabList
+ENDLIST

@@ -1,0 +1,142 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// Company: <Name>
+//
+// File: pid_sum.v
+// File history:
+//      <Revision number>: <Date>: <Comments>
+//      <Revision number>: <Date>: <Comments>
+//      <Revision number>: <Date>: <Comments>
+//
+// Description: 
+//
+// <Description here>
+//
+// Targeted device: <Family::ProASIC3E> <Die::A3PE1500> <Package::208 PQFP>
+// Author: <Name>
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+module pid_sum #(
+    parameter ADC_WIDTH = 13
+)(
+    input clk, n_rst, sum_en,
+    input [ADC_WIDTH-1:0] k_p, k_d, k_i, derivative, proportional,
+    input [ADC_WIDTH*2-1:0] integral,
+    output [ADC_WIDTH*3:0] sum,
+    output sum_rdy
+);
+
+/*
+localparam PREG_WIDTH = ADC_WIDTH + 8;
+localparam DREG_WIDTH = ADC_WIDTH + 8;
+localparam IREG_WIDTH = ADC_WIDTH + 8 + 10;
+localparam SUM_WIDTH = ADC_WIDTH + 8 + 10 + 1;
+*/
+reg [2:0] state, next_state;
+reg [ADC_WIDTH-1:0] d_adj, n_dadj, p_adj, n_padj;
+reg [ADC_WIDTH*2-1:0] n_iadj, i_adj;
+reg [ADC_WIDTH*2-2:0] preg, dreg, next_preg, next_dreg;
+reg [ADC_WIDTH*2-1:0] ireg, next_ireg;
+reg [ADC_WIDTH*3:0] next_sum, sumreg;
+
+assign sum = sumreg;
+
+assign sum_rdy = (state == 3'd0) ? 1: 0;
+
+always @(posedge clk, negedge n_rst) begin
+    if (n_rst == 0) begin
+        state <= '0;
+        ireg <= '0;
+        dreg <= '0;
+        preg <= '0;
+        sumreg <= '0;
+        i_adj <= '0;
+        p_adj <= '0;
+        d_adj <= '0;
+    end
+    else begin
+        state <= next_state;
+        ireg <= next_ireg;
+        dreg <= next_dreg;
+        preg <= next_preg;
+        sumreg <= next_sum;
+        i_adj <= n_iadj;
+        p_adj <= n_padj;
+        d_adj <= n_dadj;
+    end
+end
+
+always_comb begin
+    next_state = state;
+    next_ireg = ireg;
+    next_preg = preg;
+    next_dreg = dreg;
+    next_sum = sumreg;
+    n_iadj = i_adj;
+    n_padj = p_adj;
+    n_dadj = d_adj;
+
+    casez(state)
+        'd0: begin
+            if (sum_en) begin
+                next_state = 3'd1;
+            end
+        end
+        'd1: begin
+            if (integral[ADC_WIDTH*2-1] == 1) begin
+                n_iadj = ~integral + 1;
+            end else begin
+                n_iadj = integral;
+            end
+            if (derivative[ADC_WIDTH-1] == 1) begin
+                n_dadj = ~derivative + 1;
+            end else begin
+                n_dadj = derivative;
+            end
+            if (proportional[ADC_WIDTH-1] == 1) begin
+                n_padj = ~proportional + 1;
+            end else begin
+                n_padj = proportional;
+            end
+            next_state = 3'd2;
+        end
+        3'd2: begin
+            next_ireg = i_adj * k_i;
+            next_dreg = d_adj * k_d;
+            next_preg = p_adj * k_p;
+            next_sum = '0;
+            next_state = 'd6;
+        end
+        'd6: begin
+            next_state = 'd3;
+        end
+        'd3: begin
+            if (integral[ADC_WIDTH*2-1] == 1) begin
+                next_sum = next_sum - ireg;
+            end else begin
+                next_sum = next_sum + ireg;
+            end
+            next_state = 'd4;
+        end
+        'd4: begin
+            if (derivative[ADC_WIDTH-1] == 1) begin
+                next_sum = next_sum - dreg;
+            end else begin
+                next_sum = next_sum + dreg;
+            end
+            next_state = 'd5;
+        end
+        'd5: begin
+            if (proportional[ADC_WIDTH-1] == 1) begin
+                next_sum = next_sum - preg;
+            end else begin
+                next_sum = next_sum + preg;
+            end
+            next_state = '0;
+        end
+    endcase
+end
+
+endmodule

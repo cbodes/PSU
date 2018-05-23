@@ -1,0 +1,4 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: BN115 :"c:\pid project\pid_controller\hdl\spi_rx.v":41:33:41:35|Removing instance STP (in view: work.spi_rx_12s_1s(verilog)) of type view:work.spi_stp_12s(verilog) because it does not drive other instances.
+@N: BN225 |Writing default property annotation file C:\PID Project\PID_Controller\synthesis\PID_ControllerSD.sap.

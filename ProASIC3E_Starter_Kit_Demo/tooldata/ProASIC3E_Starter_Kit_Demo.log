@@ -1,0 +1,16 @@
+Project Name: ProASIC3E_Starter_Kit_Demo
+Location: C:\PID Project\ProASIC3E_Starter_Kit_Demo
+Description: 
+Preferred HDL Type: VHDL
+
+#-----------------------------------------------------
+                  Device Details
+#-----------------------------------------------------
+
+Part Number    : A3PE1500-PQ208
+Family         : ProASIC3E
+Die            : A3PE1500
+Package        : 208 PQFP
+Speed          : STD
+Core Voltage   : 1.5
+Range          : COM

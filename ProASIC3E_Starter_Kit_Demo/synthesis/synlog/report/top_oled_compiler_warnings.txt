@@ -1,0 +1,9 @@
+@W: CD638 :"C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\Data_block.vhd":64:11:64:20|Signal hex_sw_net is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\Data_block.vhd":65:11:65:23|Signal mux_selectsw2 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\Data_block.vhd":66:11:66:23|Signal mux_selectsw3 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\Data_block.vhd":67:11:67:31|Signal hexsw_counter_sel_int is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\Data_block.vhd":68:11:68:34|Signal flashled_counter_sel_int is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CG296 :"C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\count8.vhd":21:2:21:8|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\count8.vhd":27:23:27:26|Referenced variable data is not in sensitivity list.
+@W: CG290 :"C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\count8.vhd":26:11:26:15|Referenced variable sload is not in sensitivity list.
+

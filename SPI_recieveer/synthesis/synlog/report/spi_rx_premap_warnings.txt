@@ -1,0 +1,2 @@
+@W: MT530 :"c:\pid project\spi_recieveer\hdl\spi_ctl.v":39:0:39:5|Found inferred clock spi_clk_20s|cur_clk_inferred_clock[0] which controls 30 sequential elements including SPICTL.cnt[15:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\pid project\spi_recieveer\hdl\spi_clk.v":30:0:30:5|Found inferred clock spi_rx|clk which controls 7 sequential elements including SPICLK.counter[5:0]. This clock has no specified timing constraint which may adversely impact design performance. 

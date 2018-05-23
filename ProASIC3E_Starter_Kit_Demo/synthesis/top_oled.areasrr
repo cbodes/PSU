@@ -1,0 +1,187 @@
+----------------------------------------------------------------------
+Report for cell top_oled.rtl
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         6       1.0        6.0
+                               AND3        31       1.0       31.0
+                               BUFF         1       1.0        1.0
+                             CLKINT         1       0.0        0.0
+                             DFN1C1        20       1.0       20.0
+                         Data_Block         1     100.0      100.0
+                                GND         1       0.0        0.0
+                              INBUF        15       0.0        0.0
+                                INV         1       1.0        1.0
+                              NOR2B         4       1.0        4.0
+                        OLED_driver         1    4842.0     4842.0
+                             OUTBUF        16       0.0        0.0
+                          PLL_clock         1       0.0        0.0
+                                VCC         1       0.0        0.0
+                               XOR2        19       1.0       19.0
+                            
+                         TOTAL            119               5024.0
+----------------------------------------------------------------------
+Report for cell Data_Block.netlist
+     Instance path:  inst_Data_Block
+                                          Cell usage:
+                               cell       count     area    count*area
+                                GND         1       0.0        0.0
+                       LED_Flashing         1      29.0       29.0
+                                VCC         1       0.0        0.0
+                         clockdiv_1         1       2.0        2.0
+                             count8         1      61.0       61.0
+                               mux2         1       8.0        8.0
+                            
+                         TOTAL              6                100.0
+----------------------------------------------------------------------
+Report for cell mux2.netlist
+     Instance path:  inst_Data_Block.DATA_MUX
+                                          Cell usage:
+                               cell       count     area    count*area
+                                GND         1       0.0        0.0
+                                MX2         8       1.0        8.0
+                                VCC         1       0.0        0.0
+                            
+                         TOTAL             10                  8.0
+----------------------------------------------------------------------
+Report for cell clockdiv_1.netlist
+  Original Cell name clockdiv
+     Instance path:  inst_Data_Block.SW6_count
+                                          Cell usage:
+                               cell       count     area    count*area
+                             DFN1C1         1       1.0        1.0
+                                GND         1       0.0        0.0
+                                INV         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                            
+                         TOTAL              4                  2.0
+----------------------------------------------------------------------
+Report for cell count8.netlist
+     Instance path:  inst_Data_Block.count8_intance
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         8       1.0        8.0
+                                AO1         8       1.0        8.0
+                               AO1A         8       1.0        8.0
+                           DFN1P1C1         8       1.0        8.0
+                                GND         1       0.0        0.0
+                                INV         1       1.0        1.0
+                              NOR2B         8       1.0        8.0
+                                VCC         1       0.0        0.0
+                               XOR2        20       1.0       20.0
+                            
+                         TOTAL             63                 61.0
+----------------------------------------------------------------------
+Report for cell LED_Flashing.netlist
+     Instance path:  inst_Data_Block.LED_Flashing_instance
+                                          Cell usage:
+                               cell       count     area    count*area
+                                GND         1       0.0        0.0
+                              NOR2A         8       1.0        8.0
+                                VCC         1       0.0        0.0
+                     binary_counter         1      11.0       11.0
+                         clockdiv_0         1      10.0       10.0
+                            
+                         TOTAL             12                 29.0
+----------------------------------------------------------------------
+Report for cell binary_counter.netlist
+     Instance path:  inst_Data_Block.LED_Flashing_instance.flashing_counter
+                                          Cell usage:
+                               cell       count     area    count*area
+                                AO1         1       1.0        1.0
+                               AX1C         1       1.0        1.0
+                             DFN1C1         3       1.0        3.0
+                                GND         1       0.0        0.0
+                                INV         1       1.0        1.0
+                               NOR2         2       1.0        2.0
+                               OR2B         1       1.0        1.0
+                               OR3C         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                               XOR2         1       1.0        1.0
+                            
+                         TOTAL             13                 11.0
+----------------------------------------------------------------------
+Report for cell clockdiv_0.netlist
+  Original Cell name clockdiv
+     Instance path:  inst_Data_Block.LED_Flashing_instance.SW4_DirectionChange
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AO1A         1       1.0        1.0
+                               AO1B         1       1.0        1.0
+                               AO1C         2       1.0        2.0
+                             DFN1C1         1       1.0        1.0
+                                GND         1       0.0        0.0
+                                INV         1       1.0        1.0
+                                MX2         2       1.0        2.0
+                               MX2A         1       1.0        1.0
+                               MX2B         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                            
+                         TOTAL             12                 10.0
+----------------------------------------------------------------------
+Report for cell OLED_driver.netlist
+     Instance path:  inst_oled_driver
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2        14       1.0       14.0
+                               AND3         1       1.0        1.0
+                                AO1        40       1.0       40.0
+                               AO1A        22       1.0       22.0
+                               AO1B         1       1.0        1.0
+                               AO1C         2       1.0        2.0
+                               AO1D         5       1.0        5.0
+                               AOI1         1       1.0        1.0
+                              AOI1B         4       1.0        4.0
+                                AX1         8       1.0        8.0
+                               AX1B         1       1.0        1.0
+                               AX1C         1       1.0        1.0
+                               AX1D         1       1.0        1.0
+                               AXO2         1       1.0        1.0
+                              AXOI5         1       1.0        1.0
+                             CLKINT         4       0.0        0.0
+                             DFN1C0      1245       1.0     1245.0
+                           DFN1E0C0        17       1.0       17.0
+                           DFN1E1C0       378       1.0      378.0
+                                GND         1       0.0        0.0
+                                INV         1       1.0        1.0
+                              MAJ3X         1       1.0        1.0
+                                MX2      1523       1.0     1523.0
+                               NOR2        25       1.0       25.0
+                              NOR2A      1237       1.0     1237.0
+                              NOR2B        53       1.0       53.0
+                               NOR3         8       1.0        8.0
+                              NOR3A        23       1.0       23.0
+                              NOR3B        29       1.0       29.0
+                              NOR3C         8       1.0        8.0
+                                OA1         5       1.0        5.0
+                               OA1A         6       1.0        6.0
+                               OA1B         4       1.0        4.0
+                               OA1C         4       1.0        4.0
+                               OAI1         1       1.0        1.0
+                                OR2        34       1.0       34.0
+                               OR2A        17       1.0       17.0
+                               OR2B        13       1.0       13.0
+                                OR3        45       1.0       45.0
+                               OR3A         8       1.0        8.0
+                               OR3B         7       1.0        7.0
+                               OR3C         3       1.0        3.0
+                                VCC         1       0.0        0.0
+                                XA1         2       1.0        2.0
+                               XA1A         1       1.0        1.0
+                               XAI1         1       1.0        1.0
+                              XNOR2        13       1.0       13.0
+                                XO1         1       1.0        1.0
+                               XO1A         1       1.0        1.0
+                               XOR2        25       1.0       25.0
+                            
+                         TOTAL           4848               4842.0
+----------------------------------------------------------------------
+Report for cell PLL_clock.netlist
+     Instance path:  inst_PLL
+                                          Cell usage:
+                               cell       count     area    count*area
+                                GND         1       0.0        0.0
+                                PLL         1       0.0        0.0
+                             PLLINT         1       0.0        0.0
+                                VCC         1       0.0        0.0
+                            
+                         TOTAL              4                  0.0

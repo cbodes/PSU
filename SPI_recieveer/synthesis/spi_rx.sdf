@@ -1,0 +1,328 @@
+(DELAYFILE
+(SDFVERSION "OVI 2.1")
+(DESIGN "spi_rx")
+(DATE "123")
+(VENDOR "ProASIC3E")
+(PROGRAM "Synplify")
+(VERSION "mapact, Build 1920R")
+(DIVIDER /)
+(VOLTAGE 2.500000:2.500000:2.500000)
+(PROCESS "TYPICAL")
+(TEMPERATURE 70.000000:70.000000:70.000000)
+(TIMESCALE 1ns)
+(CELL
+  (CELLTYPE "spi_rx")
+  (INSTANCE)
+  (TIMINGCHECK
+
+    (PATHCONSTRAINT SPICTL/cnt\[7\]/CLK  SPICTL/cnt\[7\]/Q  SPICTL/cnt_RNIG2TQ\[14\]/B  SPICTL/cnt_RNIG2TQ\[14\]/Y  SPICTL/cnt_RNIC0LM1\[15\]/A  SPICTL/cnt_RNIC0LM1\[15\]/Y  SPICTL/cnt_RNI4TEC3\[5\]/C  SPICTL/cnt_RNI4TEC3\[5\]/Y  SPICTL/state_RNIMD796/B  SPICTL/state_RNIMD796/Y  STP/sr\[7\]/E  	(4.4:4.4:4.4) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[7\]/CLK  SPICTL/cnt\[7\]/Q  SPICTL/cnt_RNIG2TQ\[14\]/B  SPICTL/cnt_RNIG2TQ\[14\]/Y  SPICTL/cnt_RNIC0LM1\[15\]/A  SPICTL/cnt_RNIC0LM1\[15\]/Y  SPICTL/cnt_RNI4TEC3\[5\]/C  SPICTL/cnt_RNI4TEC3\[5\]/Y  SPICTL/state_RNIMD796/B  SPICTL/state_RNIMD796/Y  STP/sr\[5\]/E  	(4.4:4.4:4.4) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[7\]/CLK  SPICTL/cnt\[7\]/Q  SPICTL/cnt_RNIG2TQ\[14\]/B  SPICTL/cnt_RNIG2TQ\[14\]/Y  SPICTL/cnt_RNIC0LM1\[15\]/A  SPICTL/cnt_RNIC0LM1\[15\]/Y  SPICTL/cnt_RNI4TEC3\[5\]/C  SPICTL/cnt_RNI4TEC3\[5\]/Y  SPICTL/state_RNIMD796/B  SPICTL/state_RNIMD796/Y  STP/sr\[4\]/E  	(4.4:4.4:4.4) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[7\]/CLK  SPICTL/cnt\[7\]/Q  SPICTL/cnt_RNIG2TQ\[14\]/B  SPICTL/cnt_RNIG2TQ\[14\]/Y  SPICTL/cnt_RNIC0LM1\[15\]/A  SPICTL/cnt_RNIC0LM1\[15\]/Y  SPICTL/cnt_RNI4TEC3\[5\]/C  SPICTL/cnt_RNI4TEC3\[5\]/Y  SPICTL/state_RNIMD796/B  SPICTL/state_RNIMD796/Y  STP/sr\[3\]/E  	(4.4:4.4:4.4) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[7\]/CLK  SPICTL/cnt\[7\]/Q  SPICTL/cnt_RNIG2TQ\[14\]/B  SPICTL/cnt_RNIG2TQ\[14\]/Y  SPICTL/cnt_RNIC0LM1\[15\]/A  SPICTL/cnt_RNIC0LM1\[15\]/Y  SPICTL/cnt_RNI4TEC3\[5\]/C  SPICTL/cnt_RNI4TEC3\[5\]/Y  SPICTL/state_RNIMD796/B  SPICTL/state_RNIMD796/Y  STP/sr\[2\]/E  	(4.4:4.4:4.4) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[7\]/CLK  SPICTL/cnt\[7\]/Q  SPICTL/cnt_RNIG2TQ\[14\]/B  SPICTL/cnt_RNIG2TQ\[14\]/Y  SPICTL/cnt_RNIC0LM1\[15\]/A  SPICTL/cnt_RNIC0LM1\[15\]/Y  SPICTL/cnt_RNI4TEC3\[5\]/C  SPICTL/cnt_RNI4TEC3\[5\]/Y  SPICTL/state_RNIMD796/B  SPICTL/state_RNIMD796/Y  STP/sr\[1\]/E  	(4.4:4.4:4.4) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[7\]/CLK  SPICTL/cnt\[7\]/Q  SPICTL/cnt_RNIG2TQ\[14\]/B  SPICTL/cnt_RNIG2TQ\[14\]/Y  SPICTL/cnt_RNIC0LM1\[15\]/A  SPICTL/cnt_RNIC0LM1\[15\]/Y  SPICTL/cnt_RNI4TEC3\[5\]/C  SPICTL/cnt_RNI4TEC3\[5\]/Y  SPICTL/state_RNIMD796/B  SPICTL/state_RNIMD796/Y  STP/sr\[0\]/E  	(4.4:4.4:4.4) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[14\]/CLK  SPICTL/cnt\[14\]/Q  SPICTL/cnt_RNIG2TQ\[14\]/A  SPICTL/cnt_RNIG2TQ\[14\]/Y  SPICTL/cnt_RNIC0LM1\[15\]/A  SPICTL/cnt_RNIC0LM1\[15\]/Y  SPICTL/cnt_RNI4TEC3\[5\]/C  SPICTL/cnt_RNI4TEC3\[5\]/Y  SPICTL/state_RNIMD796/B  SPICTL/state_RNIMD796/Y  STP/sr\[7\]/E  	(4.4:4.4:4.4) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[1\]/CLK  SPICTL/cnt\[1\]/Q  SPICTL/cnt_RNI5P271\[2\]/A  SPICTL/cnt_RNI5P271\[2\]/Y  SPICTL/cnt_RNIKT1S2\[2\]/C  SPICTL/cnt_RNIKT1S2\[2\]/Y  SPICTL/state_RNIMD796/A  SPICTL/state_RNIMD796/Y  STP/sr\[7\]/E  	(4.4:4.4:4.4) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[2\]/CLK  SPICTL/cnt\[2\]/Q  SPICTL/cnt_RNI5P271\[2\]/B  SPICTL/cnt_RNI5P271\[2\]/Y  SPICTL/cnt_RNIKT1S2\[2\]/C  SPICTL/cnt_RNIKT1S2\[2\]/Y  SPICTL/state_RNIMD796/A  SPICTL/state_RNIMD796/Y  STP/sr\[7\]/E  	(4.4:4.4:4.4) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[3\]/CLK  SPICTL/cnt\[3\]/Q  SPICTL/cnt_RNIV12Q\[8\]/B  SPICTL/cnt_RNIV12Q\[8\]/Y  SPICTL/cnt_RNIKT1S2\[2\]/B  SPICTL/cnt_RNIKT1S2\[2\]/Y  SPICTL/state_RNIMD796/A  SPICTL/state_RNIMD796/Y  STP/sr\[7\]/E  	(4.4:4.4:4.4) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[4\]/CLK  SPICTL/cnt\[4\]/Q  SPICTL/cnt_RNI5P271\[2\]/C  SPICTL/cnt_RNI5P271\[2\]/Y  SPICTL/cnt_RNIKT1S2\[2\]/C  SPICTL/cnt_RNIKT1S2\[2\]/Y  SPICTL/state_RNIMD796/A  SPICTL/state_RNIMD796/Y  STP/sr\[7\]/E  	(4.4:4.4:4.4) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[9\]/CLK  SPICTL/cnt\[9\]/Q  SPICTL/cnt_RNIG2TQ\[9\]/B  SPICTL/cnt_RNIG2TQ\[9\]/Y  SPICTL/cnt_RNIKT1S2\[2\]/A  SPICTL/cnt_RNIKT1S2\[2\]/Y  SPICTL/state_RNIMD796/A  SPICTL/state_RNIMD796/Y  STP/sr\[7\]/E  	(4.4:4.4:4.4) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[13\]/CLK  SPICTL/cnt\[13\]/Q  SPICTL/cnt_RNIPQNR\[10\]/B  SPICTL/cnt_RNIPQNR\[10\]/Y  SPICTL/cnt_RNI4TEC3\[5\]/B  SPICTL/cnt_RNI4TEC3\[5\]/Y  SPICTL/state_RNIMD796/B  SPICTL/state_RNIMD796/Y  STP/sr\[7\]/E  	(4.4:4.4:4.4) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[6\]/CLK  SPICTL/cnt\[6\]/Q  SPICTL/cnt_RNIV12Q\[5\]/B  SPICTL/cnt_RNIV12Q\[5\]/Y  SPICTL/cnt_RNI4TEC3\[5\]/A  SPICTL/cnt_RNI4TEC3\[5\]/Y  SPICTL/state_RNIMD796/B  SPICTL/state_RNIMD796/Y  STP/sr\[7\]/E  	(4.4:4.4:4.4) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[8\]/CLK  SPICTL/cnt\[8\]/Q  SPICTL/cnt_RNIV12Q\[8\]/A  SPICTL/cnt_RNIV12Q\[8\]/Y  SPICTL/cnt_RNIKT1S2\[2\]/B  SPICTL/cnt_RNIKT1S2\[2\]/Y  SPICTL/state_RNIMD796/A  SPICTL/state_RNIMD796/Y  STP/sr\[7\]/E  	(4.4:4.4:4.4) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[12\]/CLK  SPICTL/cnt\[12\]/Q  SPICTL/cnt_RNIG2TQ\[9\]/A  SPICTL/cnt_RNIG2TQ\[9\]/Y  SPICTL/cnt_RNIKT1S2\[2\]/A  SPICTL/cnt_RNIKT1S2\[2\]/Y  SPICTL/state_RNIMD796/A  SPICTL/state_RNIMD796/Y  STP/sr\[7\]/E  	(4.4:4.4:4.4) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[10\]/CLK  SPICTL/cnt\[10\]/Q  SPICTL/cnt_RNIPQNR\[10\]/A  SPICTL/cnt_RNIPQNR\[10\]/Y  SPICTL/cnt_RNI4TEC3\[5\]/B  SPICTL/cnt_RNI4TEC3\[5\]/Y  SPICTL/state_RNIMD796/B  SPICTL/state_RNIMD796/Y  STP/sr\[7\]/E  	(4.4:4.4:4.4) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[5\]/CLK  SPICTL/cnt\[5\]/Q  SPICTL/cnt_RNIV12Q\[5\]/A  SPICTL/cnt_RNIV12Q\[5\]/Y  SPICTL/cnt_RNI4TEC3\[5\]/A  SPICTL/cnt_RNI4TEC3\[5\]/Y  SPICTL/state_RNIMD796/B  SPICTL/state_RNIMD796/Y  STP/sr\[7\]/E  	(4.4:4.4:4.4) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[11\]/CLK  SPICTL/cnt\[11\]/Q  SPICTL/cnt_RNIC0LM1\[15\]/B  SPICTL/cnt_RNIC0LM1\[15\]/Y  SPICTL/cnt_RNI4TEC3\[5\]/C  SPICTL/cnt_RNI4TEC3\[5\]/Y  SPICTL/state_RNIMD796/B  SPICTL/state_RNIMD796/Y  STP/sr\[7\]/E  	(4.4:4.4:4.4) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[15\]/CLK  SPICTL/cnt\[15\]/Q  SPICTL/cnt_RNIC0LM1\[15\]/C  SPICTL/cnt_RNIC0LM1\[15\]/Y  SPICTL/cnt_RNI4TEC3\[5\]/C  SPICTL/cnt_RNI4TEC3\[5\]/Y  SPICTL/state_RNIMD796/B  SPICTL/state_RNIMD796/Y  STP/sr\[7\]/E  	(4.4:4.4:4.4) )
+
+    (PATHCONSTRAINT SPICTL/state/CLK  SPICTL/state/Q  SPICTL/state_RNIMD796/C  SPICTL/state_RNIMD796/Y  STP/sr\[7\]/E  	(4.4:4.4:4.4) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[1\]/CLK  SPICTL/cnt\[1\]/Q  SPICTL/un2_cnt_I_10/B  SPICTL/un2_cnt_I_10/Y  SPICTL/un2_cnt_I_30/A  SPICTL/un2_cnt_I_30/Y  SPICTL/un2_cnt_I_34/B  SPICTL/un2_cnt_I_34/Y  SPICTL/un2_cnt_I_35/A  SPICTL/un2_cnt_I_35/Y  SPICTL/cnt\[12\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[1\]/CLK  SPICTL/cnt\[1\]/Q  SPICTL/un2_cnt_I_10/B  SPICTL/un2_cnt_I_10/Y  SPICTL/un2_cnt_I_30/A  SPICTL/un2_cnt_I_30/Y  SPICTL/un2_cnt_I_36/A  SPICTL/un2_cnt_I_36/Y  SPICTL/un2_cnt_I_37/A  SPICTL/un2_cnt_I_37/Y  SPICTL/cnt\[13\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[1\]/CLK  SPICTL/cnt\[1\]/Q  SPICTL/un2_cnt_I_10/B  SPICTL/un2_cnt_I_10/Y  SPICTL/un2_cnt_I_30/A  SPICTL/un2_cnt_I_30/Y  SPICTL/un2_cnt_I_39/A  SPICTL/un2_cnt_I_39/Y  SPICTL/un2_cnt_I_40/A  SPICTL/un2_cnt_I_40/Y  SPICTL/cnt\[14\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[1\]/CLK  SPICTL/cnt\[1\]/Q  SPICTL/un2_cnt_I_10/B  SPICTL/un2_cnt_I_10/Y  SPICTL/un2_cnt_I_30/A  SPICTL/un2_cnt_I_30/Y  SPICTL/un2_cnt_I_42/A  SPICTL/un2_cnt_I_42/Y  SPICTL/un2_cnt_I_43/A  SPICTL/un2_cnt_I_43/Y  SPICTL/cnt\[15\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[1\]/CLK  SPICTL/cnt\[1\]/Q  SPICTL/un2_cnt_I_10/B  SPICTL/un2_cnt_I_10/Y  SPICTL/un2_cnt_I_30/A  SPICTL/un2_cnt_I_30/Y  SPICTL/un2_cnt_I_31/A  SPICTL/un2_cnt_I_31/Y  SPICTL/un2_cnt_I_32/A  SPICTL/un2_cnt_I_32/Y  SPICTL/cnt\[11\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[2\]/CLK  SPICTL/cnt\[2\]/Q  SPICTL/un2_cnt_I_10/C  SPICTL/un2_cnt_I_10/Y  SPICTL/un2_cnt_I_30/A  SPICTL/un2_cnt_I_30/Y  SPICTL/un2_cnt_I_34/B  SPICTL/un2_cnt_I_34/Y  SPICTL/un2_cnt_I_35/A  SPICTL/un2_cnt_I_35/Y  SPICTL/cnt\[12\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[0\]/CLK  SPICTL/cnt\[0\]/Q  SPICTL/un2_cnt_I_10/A  SPICTL/un2_cnt_I_10/Y  SPICTL/un2_cnt_I_30/A  SPICTL/un2_cnt_I_30/Y  SPICTL/un2_cnt_I_34/B  SPICTL/un2_cnt_I_34/Y  SPICTL/un2_cnt_I_35/A  SPICTL/un2_cnt_I_35/Y  SPICTL/cnt\[12\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[4\]/CLK  SPICTL/cnt\[4\]/Q  SPICTL/un2_cnt_I_18/B  SPICTL/un2_cnt_I_18/Y  SPICTL/un2_cnt_I_30/B  SPICTL/un2_cnt_I_30/Y  SPICTL/un2_cnt_I_34/B  SPICTL/un2_cnt_I_34/Y  SPICTL/un2_cnt_I_35/A  SPICTL/un2_cnt_I_35/Y  SPICTL/cnt\[12\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[3\]/CLK  SPICTL/cnt\[3\]/Q  SPICTL/un2_cnt_I_18/A  SPICTL/un2_cnt_I_18/Y  SPICTL/un2_cnt_I_30/B  SPICTL/un2_cnt_I_30/Y  SPICTL/un2_cnt_I_34/B  SPICTL/un2_cnt_I_34/Y  SPICTL/un2_cnt_I_35/A  SPICTL/un2_cnt_I_35/Y  SPICTL/cnt\[12\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[5\]/CLK  SPICTL/cnt\[5\]/Q  SPICTL/un2_cnt_I_18/C  SPICTL/un2_cnt_I_18/Y  SPICTL/un2_cnt_I_30/B  SPICTL/un2_cnt_I_30/Y  SPICTL/un2_cnt_I_34/B  SPICTL/un2_cnt_I_34/Y  SPICTL/un2_cnt_I_35/A  SPICTL/un2_cnt_I_35/Y  SPICTL/cnt\[12\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[7\]/CLK  SPICTL/cnt\[7\]/Q  SPICTL/cnt_RNIG2TQ\[14\]/B  SPICTL/cnt_RNIG2TQ\[14\]/Y  SPICTL/cnt_RNIC0LM1\[15\]/A  SPICTL/cnt_RNIC0LM1\[15\]/Y  SPICTL/cnt_RNI4TEC3\[5\]/C  SPICTL/cnt_RNI4TEC3\[5\]/Y  SPICTL/state_RNIMD796/B  SPICTL/state_RNIMD796/Y  PTS/sr\[3\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[7\]/CLK  SPICTL/cnt\[7\]/Q  SPICTL/cnt_RNIG2TQ\[14\]/B  SPICTL/cnt_RNIG2TQ\[14\]/Y  SPICTL/cnt_RNIC0LM1\[15\]/A  SPICTL/cnt_RNIC0LM1\[15\]/Y  SPICTL/cnt_RNI4TEC3\[5\]/C  SPICTL/cnt_RNI4TEC3\[5\]/Y  SPICTL/state_RNIMD796/B  SPICTL/state_RNIMD796/Y  PTS/sr\[4\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[1\]/CLK  SPICTL/cnt\[1\]/Q  SPICTL/un2_cnt_I_10/B  SPICTL/un2_cnt_I_10/Y  SPICTL/un2_cnt_I_24/A  SPICTL/un2_cnt_I_24/Y  SPICTL/un2_cnt_I_25/B  SPICTL/un2_cnt_I_25/Y  SPICTL/un2_cnt_I_26/A  SPICTL/un2_cnt_I_26/Y  SPICTL/cnt\[9\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[1\]/CLK  SPICTL/cnt\[1\]/Q  SPICTL/un2_cnt_I_10/B  SPICTL/un2_cnt_I_10/Y  SPICTL/un2_cnt_I_11/B  SPICTL/un2_cnt_I_11/Y  SPICTL/un2_cnt_I_12/A  SPICTL/un2_cnt_I_12/Y  SPICTL/cnt_RNO\[4\]/A  SPICTL/cnt_RNO\[4\]/Y  SPICTL/cnt\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[1\]/CLK  SPICTL/cnt\[1\]/Q  SPICTL/un2_cnt_I_10/B  SPICTL/un2_cnt_I_10/Y  SPICTL/un2_cnt_I_24/A  SPICTL/un2_cnt_I_24/Y  SPICTL/un2_cnt_I_27/A  SPICTL/un2_cnt_I_27/Y  SPICTL/un2_cnt_I_28/A  SPICTL/un2_cnt_I_28/Y  SPICTL/cnt\[10\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[4\]/CLK  SPICTL/cnt\[4\]/Q  SPICTL/un2_cnt_I_18/B  SPICTL/un2_cnt_I_18/Y  SPICTL/un2_cnt_I_24/B  SPICTL/un2_cnt_I_24/Y  SPICTL/un2_cnt_I_25/B  SPICTL/un2_cnt_I_25/Y  SPICTL/un2_cnt_I_26/A  SPICTL/un2_cnt_I_26/Y  SPICTL/cnt\[9\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[8\]/CLK  SPICTL/cnt\[8\]/Q  SPICTL/un2_cnt_I_29/C  SPICTL/un2_cnt_I_29/Y  SPICTL/un2_cnt_I_30/C  SPICTL/un2_cnt_I_30/Y  SPICTL/un2_cnt_I_34/B  SPICTL/un2_cnt_I_34/Y  SPICTL/un2_cnt_I_35/A  SPICTL/un2_cnt_I_35/Y  SPICTL/cnt\[12\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[7\]/CLK  SPICTL/cnt\[7\]/Q  SPICTL/un2_cnt_I_29/B  SPICTL/un2_cnt_I_29/Y  SPICTL/un2_cnt_I_30/C  SPICTL/un2_cnt_I_30/Y  SPICTL/un2_cnt_I_34/B  SPICTL/un2_cnt_I_34/Y  SPICTL/un2_cnt_I_35/A  SPICTL/un2_cnt_I_35/Y  SPICTL/cnt\[12\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[6\]/CLK  SPICTL/cnt\[6\]/Q  SPICTL/un2_cnt_I_29/A  SPICTL/un2_cnt_I_29/Y  SPICTL/un2_cnt_I_30/C  SPICTL/un2_cnt_I_30/Y  SPICTL/un2_cnt_I_34/B  SPICTL/un2_cnt_I_34/Y  SPICTL/un2_cnt_I_35/A  SPICTL/un2_cnt_I_35/Y  SPICTL/cnt\[12\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[1\]/CLK  SPICTL/cnt\[1\]/Q  SPICTL/un2_cnt_I_10/B  SPICTL/un2_cnt_I_10/Y  SPICTL/un2_cnt_I_16/A  SPICTL/un2_cnt_I_16/Y  SPICTL/un2_cnt_I_17/A  SPICTL/un2_cnt_I_17/Y  SPICTL/cnt\[6\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[1\]/CLK  SPICTL/cnt\[1\]/Q  SPICTL/un2_cnt_I_10/B  SPICTL/un2_cnt_I_10/Y  SPICTL/un2_cnt_I_19/A  SPICTL/un2_cnt_I_19/Y  SPICTL/un2_cnt_I_20/A  SPICTL/un2_cnt_I_20/Y  SPICTL/cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[1\]/CLK  SPICTL/cnt\[1\]/Q  SPICTL/un2_cnt_I_10/B  SPICTL/un2_cnt_I_10/Y  SPICTL/un2_cnt_I_22/A  SPICTL/un2_cnt_I_22/Y  SPICTL/un2_cnt_I_23/A  SPICTL/un2_cnt_I_23/Y  SPICTL/cnt\[8\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[1\]/CLK  SPICTL/cnt\[1\]/Q  SPICTL/un2_cnt_I_10/B  SPICTL/un2_cnt_I_10/Y  SPICTL/un2_cnt_I_13/A  SPICTL/un2_cnt_I_13/Y  SPICTL/un2_cnt_I_14/A  SPICTL/un2_cnt_I_14/Y  SPICTL/cnt\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[0\]/CLK  SPICTL/cnt\[0\]/Q  SPICTL/state_RNO_2/A  SPICTL/state_RNO_2/Y  SPICTL/state_RNO_1/B  SPICTL/state_RNO_1/Y  SPICTL/state_RNO_0/C  SPICTL/state_RNO_0/Y  SPICTL/state_RNO/A  SPICTL/state_RNO/Y  SPICTL/state/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[7\]/CLK  SPICTL/cnt\[7\]/Q  SPICTL/cnt_RNIG2TQ\[14\]/B  SPICTL/cnt_RNIG2TQ\[14\]/Y  SPICTL/cnt_RNIC0LM1\[15\]/A  SPICTL/cnt_RNIC0LM1\[15\]/Y  SPICTL/cnt_RNI4TEC3\[5\]/C  SPICTL/cnt_RNI4TEC3\[5\]/Y  SPICTL/state_RNO/B  SPICTL/state_RNO/Y  SPICTL/state/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[7\]/CLK  SPICTL/cnt\[7\]/Q  SPICTL/un2_cnt_I_21/B  SPICTL/un2_cnt_I_21/Y  SPICTL/un2_cnt_I_24/C  SPICTL/un2_cnt_I_24/Y  SPICTL/un2_cnt_I_25/B  SPICTL/un2_cnt_I_25/Y  SPICTL/un2_cnt_I_26/A  SPICTL/un2_cnt_I_26/Y  SPICTL/cnt\[9\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[4\]/CLK  SPICTL/cnt\[4\]/Q  SPICTL/un2_cnt_I_18/B  SPICTL/un2_cnt_I_18/Y  SPICTL/un2_cnt_I_22/B  SPICTL/un2_cnt_I_22/Y  SPICTL/un2_cnt_I_23/A  SPICTL/un2_cnt_I_23/Y  SPICTL/cnt\[8\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[4\]/CLK  SPICTL/cnt\[4\]/Q  SPICTL/un2_cnt_I_18/B  SPICTL/un2_cnt_I_18/Y  SPICTL/un2_cnt_I_19/B  SPICTL/un2_cnt_I_19/Y  SPICTL/un2_cnt_I_20/A  SPICTL/un2_cnt_I_20/Y  SPICTL/cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[6\]/CLK  SPICTL/cnt\[6\]/Q  SPICTL/un2_cnt_I_21/A  SPICTL/un2_cnt_I_21/Y  SPICTL/un2_cnt_I_24/C  SPICTL/un2_cnt_I_24/Y  SPICTL/un2_cnt_I_25/B  SPICTL/un2_cnt_I_25/Y  SPICTL/un2_cnt_I_26/A  SPICTL/un2_cnt_I_26/Y  SPICTL/cnt\[9\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[1\]/CLK  SPICTL/cnt\[1\]/Q  SPICTL/state_RNO_2/B  SPICTL/state_RNO_2/Y  SPICTL/state_RNO_1/B  SPICTL/state_RNO_1/Y  SPICTL/state_RNO_0/C  SPICTL/state_RNO_0/Y  SPICTL/state_RNO/A  SPICTL/state_RNO/Y  SPICTL/state/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/counter\[3\]/CLK  SPICLK/counter\[3\]/Q  SPICLK/counter_RNITIHB\[2\]/B  SPICLK/counter_RNITIHB\[2\]/Y  SPICLK/counter_RNIU93N\[5\]/B  SPICLK/counter_RNIU93N\[5\]/Y  SPICLK/cur_clk_RNO\[0\]/B  SPICLK/cur_clk_RNO\[0\]/Y  SPICLK/cur_clk\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/counter\[0\]/CLK  SPICLK/counter\[0\]/Q  SPICLK/un3_counter_I_10/A  SPICLK/un3_counter_I_10/Y  SPICLK/un3_counter_I_11/B  SPICLK/un3_counter_I_11/Y  SPICLK/un3_counter_I_12/A  SPICLK/un3_counter_I_12/Y  SPICLK/counter_RNO\[4\]/C  SPICLK/counter_RNO\[4\]/Y  SPICLK/counter\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/counter\[1\]/CLK  SPICLK/counter\[1\]/Q  SPICLK/un3_counter_I_10/B  SPICLK/un3_counter_I_10/Y  SPICLK/un3_counter_I_11/B  SPICLK/un3_counter_I_11/Y  SPICLK/un3_counter_I_12/A  SPICLK/un3_counter_I_12/Y  SPICLK/counter_RNO\[4\]/C  SPICLK/counter_RNO\[4\]/Y  SPICLK/counter\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/counter\[2\]/CLK  SPICLK/counter\[2\]/Q  SPICLK/counter_RNITIHB\[2\]/A  SPICLK/counter_RNITIHB\[2\]/Y  SPICLK/counter_RNIU93N\[5\]/B  SPICLK/counter_RNIU93N\[5\]/Y  SPICLK/cur_clk_RNO\[0\]/B  SPICLK/cur_clk_RNO\[0\]/Y  SPICLK/cur_clk\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[10\]/CLK  SPICTL/cnt\[10\]/Q  SPICTL/un2_cnt_I_33/B  SPICTL/un2_cnt_I_33/Y  SPICTL/un2_cnt_I_36/B  SPICTL/un2_cnt_I_36/Y  SPICTL/un2_cnt_I_37/A  SPICTL/un2_cnt_I_37/Y  SPICTL/cnt\[13\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[10\]/CLK  SPICTL/cnt\[10\]/Q  SPICTL/un2_cnt_I_33/B  SPICTL/un2_cnt_I_33/Y  SPICTL/un2_cnt_I_42/B  SPICTL/un2_cnt_I_42/Y  SPICTL/un2_cnt_I_43/A  SPICTL/un2_cnt_I_43/Y  SPICTL/cnt\[15\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/counter\[2\]/CLK  SPICLK/counter\[2\]/Q  SPICLK/un3_counter_I_10/C  SPICLK/un3_counter_I_10/Y  SPICLK/un3_counter_I_11/B  SPICLK/un3_counter_I_11/Y  SPICLK/un3_counter_I_12/A  SPICLK/un3_counter_I_12/Y  SPICLK/counter_RNO\[4\]/C  SPICLK/counter_RNO\[4\]/Y  SPICLK/counter\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[9\]/CLK  SPICTL/cnt\[9\]/Q  SPICTL/un2_cnt_I_33/A  SPICTL/un2_cnt_I_33/Y  SPICTL/un2_cnt_I_36/B  SPICTL/un2_cnt_I_36/Y  SPICTL/un2_cnt_I_37/A  SPICTL/un2_cnt_I_37/Y  SPICTL/cnt\[13\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[10\]/CLK  SPICTL/cnt\[10\]/Q  SPICTL/un2_cnt_I_33/B  SPICTL/un2_cnt_I_33/Y  SPICTL/un2_cnt_I_34/A  SPICTL/un2_cnt_I_34/Y  SPICTL/un2_cnt_I_35/A  SPICTL/un2_cnt_I_35/Y  SPICTL/cnt\[12\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/counter\[3\]/CLK  SPICLK/counter\[3\]/Q  SPICLK/counter_RNITIHB\[2\]/B  SPICLK/counter_RNITIHB\[2\]/Y  SPICLK/counter_RNIU93N\[5\]/B  SPICLK/counter_RNIU93N\[5\]/Y  SPICLK/counter_RNO\[4\]/A  SPICLK/counter_RNO\[4\]/Y  SPICLK/counter\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/counter\[3\]/CLK  SPICLK/counter\[3\]/Q  SPICLK/counter_RNITIHB\[2\]/B  SPICLK/counter_RNITIHB\[2\]/Y  SPICLK/counter_RNIU93N\[5\]/B  SPICLK/counter_RNIU93N\[5\]/Y  SPICLK/counter_RNO\[2\]/A  SPICLK/counter_RNO\[2\]/Y  SPICLK/counter\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[11\]/CLK  SPICTL/cnt\[11\]/Q  SPICTL/un2_cnt_I_33/C  SPICTL/un2_cnt_I_33/Y  SPICTL/un2_cnt_I_36/B  SPICTL/un2_cnt_I_36/Y  SPICTL/un2_cnt_I_37/A  SPICTL/un2_cnt_I_37/Y  SPICTL/cnt\[13\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[3\]/CLK  SPICTL/cnt\[3\]/Q  SPICTL/cnt_RNIV12Q\[8\]/B  SPICTL/cnt_RNIV12Q\[8\]/Y  SPICTL/state_RNO_0/B  SPICTL/state_RNO_0/Y  SPICTL/state_RNO/A  SPICTL/state_RNO/Y  SPICTL/state/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[4\]/CLK  SPICTL/cnt\[4\]/Q  SPICTL/state_RNO_1/A  SPICTL/state_RNO_1/Y  SPICTL/state_RNO_0/C  SPICTL/state_RNO_0/Y  SPICTL/state_RNO/A  SPICTL/state_RNO/Y  SPICTL/state/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/counter\[0\]/CLK  SPICLK/counter\[0\]/Q  SPICLK/counter_RNIPEHB\[1\]/B  SPICLK/counter_RNIPEHB\[1\]/Y  SPICLK/cur_clk_RNO\[0\]/A  SPICLK/cur_clk_RNO\[0\]/Y  SPICLK/cur_clk\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[4\]/CLK  SPICTL/cnt\[4\]/Q  SPICTL/un2_cnt_I_15/B  SPICTL/un2_cnt_I_15/Y  SPICTL/un2_cnt_I_16/B  SPICTL/un2_cnt_I_16/Y  SPICTL/un2_cnt_I_17/A  SPICTL/un2_cnt_I_17/Y  SPICTL/cnt\[6\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/counter\[0\]/CLK  SPICLK/counter\[0\]/Q  SPICLK/counter_RNIPEHB\[1\]/B  SPICLK/counter_RNIPEHB\[1\]/Y  SPICLK/counter_RNO\[4\]/B  SPICLK/counter_RNO\[4\]/Y  SPICLK/counter\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/counter\[0\]/CLK  SPICLK/counter\[0\]/Q  SPICLK/counter_RNIPEHB\[1\]/B  SPICLK/counter_RNIPEHB\[1\]/Y  SPICLK/counter_RNO\[2\]/B  SPICLK/counter_RNO\[2\]/Y  SPICLK/counter\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[9\]/CLK  SPICTL/cnt\[9\]/Q  SPICTL/cnt_RNIG2TQ\[9\]/B  SPICTL/cnt_RNIG2TQ\[9\]/Y  SPICTL/state_RNO_0/A  SPICTL/state_RNO_0/Y  SPICTL/state_RNO/A  SPICTL/state_RNO/Y  SPICTL/state/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[3\]/CLK  SPICTL/cnt\[3\]/Q  SPICTL/un2_cnt_I_15/A  SPICTL/un2_cnt_I_15/Y  SPICTL/un2_cnt_I_16/B  SPICTL/un2_cnt_I_16/Y  SPICTL/un2_cnt_I_17/A  SPICTL/un2_cnt_I_17/Y  SPICTL/cnt\[6\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[7\]/CLK  SPICTL/cnt\[7\]/Q  SPICTL/un2_cnt_I_21/B  SPICTL/un2_cnt_I_21/Y  SPICTL/un2_cnt_I_22/C  SPICTL/un2_cnt_I_22/Y  SPICTL/un2_cnt_I_23/A  SPICTL/un2_cnt_I_23/Y  SPICTL/cnt\[8\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/counter\[0\]/CLK  SPICLK/counter\[0\]/Q  SPICLK/un3_counter_I_10/A  SPICLK/un3_counter_I_10/Y  SPICLK/un3_counter_I_13/A  SPICLK/un3_counter_I_13/Y  SPICLK/un3_counter_I_14/A  SPICLK/un3_counter_I_14/Y  SPICLK/counter\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[2\]/CLK  SPICTL/cnt\[2\]/Q  SPICTL/state_RNO_1/C  SPICTL/state_RNO_1/Y  SPICTL/state_RNO_0/C  SPICTL/state_RNO_0/Y  SPICTL/state_RNO/A  SPICTL/state_RNO/Y  SPICTL/state/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[13\]/CLK  SPICTL/cnt\[13\]/Q  SPICTL/un2_cnt_I_38/B  SPICTL/un2_cnt_I_38/Y  SPICTL/un2_cnt_I_39/C  SPICTL/un2_cnt_I_39/Y  SPICTL/un2_cnt_I_40/A  SPICTL/un2_cnt_I_40/Y  SPICTL/cnt\[14\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/counter\[0\]/CLK  SPICLK/counter\[0\]/Q  SPICLK/un3_counter_I_6/B  SPICLK/un3_counter_I_6/Y  SPICLK/un3_counter_I_7/A  SPICLK/un3_counter_I_7/Y  SPICLK/counter_RNO\[2\]/C  SPICLK/counter_RNO\[2\]/Y  SPICLK/counter\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[12\]/CLK  SPICTL/cnt\[12\]/Q  SPICTL/un2_cnt_I_38/A  SPICTL/un2_cnt_I_38/Y  SPICTL/un2_cnt_I_39/C  SPICTL/un2_cnt_I_39/Y  SPICTL/un2_cnt_I_40/A  SPICTL/un2_cnt_I_40/Y  SPICTL/cnt\[14\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[13\]/CLK  SPICTL/cnt\[13\]/Q  SPICTL/un2_cnt_I_41/B  SPICTL/un2_cnt_I_41/Y  SPICTL/un2_cnt_I_42/C  SPICTL/un2_cnt_I_42/Y  SPICTL/un2_cnt_I_43/A  SPICTL/un2_cnt_I_43/Y  SPICTL/cnt\[15\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[3\]/CLK  SPICTL/cnt\[3\]/Q  SPICTL/un2_cnt_I_11/A  SPICTL/un2_cnt_I_11/Y  SPICTL/un2_cnt_I_12/A  SPICTL/un2_cnt_I_12/Y  SPICTL/cnt_RNO\[4\]/A  SPICTL/cnt_RNO\[4\]/Y  SPICTL/cnt\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/counter\[1\]/CLK  SPICLK/counter\[1\]/Q  SPICLK/counter_RNIPEHB\[1\]/A  SPICLK/counter_RNIPEHB\[1\]/Y  SPICLK/cur_clk_RNO\[0\]/A  SPICLK/cur_clk_RNO\[0\]/Y  SPICLK/cur_clk\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[12\]/CLK  SPICTL/cnt\[12\]/Q  SPICTL/un2_cnt_I_41/A  SPICTL/un2_cnt_I_41/Y  SPICTL/un2_cnt_I_42/C  SPICTL/un2_cnt_I_42/Y  SPICTL/un2_cnt_I_43/A  SPICTL/un2_cnt_I_43/Y  SPICTL/cnt\[15\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/counter\[1\]/CLK  SPICLK/counter\[1\]/Q  SPICLK/un3_counter_I_6/A  SPICLK/un3_counter_I_6/Y  SPICLK/un3_counter_I_7/A  SPICLK/un3_counter_I_7/Y  SPICLK/counter_RNO\[2\]/C  SPICLK/counter_RNO\[2\]/Y  SPICLK/counter\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/counter\[3\]/CLK  SPICLK/counter\[3\]/Q  SPICLK/un3_counter_I_11/A  SPICLK/un3_counter_I_11/Y  SPICLK/un3_counter_I_12/A  SPICLK/un3_counter_I_12/Y  SPICLK/counter_RNO\[4\]/C  SPICLK/counter_RNO\[4\]/Y  SPICLK/counter\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/counter\[4\]/CLK  SPICLK/counter\[4\]/Q  SPICLK/counter_RNIU93N\[5\]/A  SPICLK/counter_RNIU93N\[5\]/Y  SPICLK/cur_clk_RNO\[0\]/B  SPICLK/cur_clk_RNO\[0\]/Y  SPICLK/cur_clk\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[14\]/CLK  SPICTL/cnt\[14\]/Q  SPICTL/un2_cnt_I_41/C  SPICTL/un2_cnt_I_41/Y  SPICTL/un2_cnt_I_42/C  SPICTL/un2_cnt_I_42/Y  SPICTL/un2_cnt_I_43/A  SPICTL/un2_cnt_I_43/Y  SPICTL/cnt\[15\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[1\]/CLK  SPICTL/cnt\[1\]/Q  SPICTL/un2_cnt_I_5/B  SPICTL/un2_cnt_I_5/Y  SPICTL/cnt_RNO\[1\]/A  SPICTL/cnt_RNO\[1\]/Y  SPICTL/cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[4\]/CLK  SPICTL/cnt\[4\]/Q  SPICTL/un2_cnt_I_12/B  SPICTL/un2_cnt_I_12/Y  SPICTL/cnt_RNO\[4\]/A  SPICTL/cnt_RNO\[4\]/Y  SPICTL/cnt\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/cur_clk\[0\]/CLK  SPICLK/cur_clk\[0\]/Q  SPICLK/cur_clk_RNO\[0\]/C  SPICLK/cur_clk_RNO\[0\]/Y  SPICLK/cur_clk\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[4\]/CLK  SPICTL/cnt\[4\]/Q  SPICTL/un2_cnt_I_13/C  SPICTL/un2_cnt_I_13/Y  SPICTL/un2_cnt_I_14/A  SPICTL/un2_cnt_I_14/Y  SPICTL/cnt\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[0\]/CLK  SPICTL/cnt\[0\]/Q  SPICTL/un2_cnt_I_6/B  SPICTL/un2_cnt_I_6/Y  SPICTL/un2_cnt_I_7/A  SPICTL/un2_cnt_I_7/Y  SPICTL/cnt\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/counter\[2\]/CLK  SPICLK/counter\[2\]/Q  SPICLK/un3_counter_I_7/B  SPICLK/un3_counter_I_7/Y  SPICLK/counter_RNO\[2\]/C  SPICLK/counter_RNO\[2\]/Y  SPICLK/counter\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[1\]/CLK  SPICTL/cnt\[1\]/Q  SPICTL/un2_cnt_I_8/B  SPICTL/un2_cnt_I_8/Y  SPICTL/un2_cnt_I_9/A  SPICTL/un2_cnt_I_9/Y  SPICTL/cnt\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[3\]/CLK  SPICTL/cnt\[3\]/Q  SPICTL/un2_cnt_I_13/B  SPICTL/un2_cnt_I_13/Y  SPICTL/un2_cnt_I_14/A  SPICTL/un2_cnt_I_14/Y  SPICTL/cnt\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[1\]/CLK  SPICTL/cnt\[1\]/Q  SPICTL/un2_cnt_I_6/A  SPICTL/un2_cnt_I_6/Y  SPICTL/un2_cnt_I_7/A  SPICTL/un2_cnt_I_7/Y  SPICTL/cnt\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[2\]/CLK  SPICTL/cnt\[2\]/Q  SPICTL/un2_cnt_I_8/C  SPICTL/un2_cnt_I_8/Y  SPICTL/un2_cnt_I_9/A  SPICTL/un2_cnt_I_9/Y  SPICTL/cnt\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[9\]/CLK  SPICTL/cnt\[9\]/Q  SPICTL/un2_cnt_I_27/C  SPICTL/un2_cnt_I_27/Y  SPICTL/un2_cnt_I_28/A  SPICTL/un2_cnt_I_28/Y  SPICTL/cnt\[10\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[6\]/CLK  SPICTL/cnt\[6\]/Q  SPICTL/un2_cnt_I_19/C  SPICTL/un2_cnt_I_19/Y  SPICTL/un2_cnt_I_20/A  SPICTL/un2_cnt_I_20/Y  SPICTL/cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[12\]/CLK  SPICTL/cnt\[12\]/Q  SPICTL/un2_cnt_I_36/C  SPICTL/un2_cnt_I_36/Y  SPICTL/un2_cnt_I_37/A  SPICTL/un2_cnt_I_37/Y  SPICTL/cnt\[13\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[0\]/CLK  SPICTL/cnt\[0\]/Q  SPICTL/un2_cnt_I_5/A  SPICTL/un2_cnt_I_5/Y  SPICTL/cnt_RNO\[1\]/A  SPICTL/cnt_RNO\[1\]/Y  SPICTL/cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[0\]/CLK  SPICTL/cnt\[0\]/Q  SPICTL/un2_cnt_I_8/A  SPICTL/un2_cnt_I_8/Y  SPICTL/un2_cnt_I_9/A  SPICTL/un2_cnt_I_9/Y  SPICTL/cnt\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/counter\[0\]/CLK  SPICLK/counter\[0\]/Q  SPICLK/un3_counter_I_8/A  SPICLK/un3_counter_I_8/Y  SPICLK/un3_counter_I_9/A  SPICLK/un3_counter_I_9/Y  SPICLK/counter\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[9\]/CLK  SPICTL/cnt\[9\]/Q  SPICTL/un2_cnt_I_31/B  SPICTL/un2_cnt_I_31/Y  SPICTL/un2_cnt_I_32/A  SPICTL/un2_cnt_I_32/Y  SPICTL/cnt\[11\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[8\]/CLK  SPICTL/cnt\[8\]/Q  SPICTL/un2_cnt_I_27/B  SPICTL/un2_cnt_I_27/Y  SPICTL/un2_cnt_I_28/A  SPICTL/un2_cnt_I_28/Y  SPICTL/cnt\[10\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/counter\[1\]/CLK  SPICLK/counter\[1\]/Q  SPICLK/un3_counter_I_8/B  SPICLK/un3_counter_I_8/Y  SPICLK/un3_counter_I_9/A  SPICLK/un3_counter_I_9/Y  SPICLK/counter\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/counter\[5\]/CLK  SPICLK/counter\[5\]/Q  SPICLK/counter_RNIU93N\[5\]/C  SPICLK/counter_RNIU93N\[5\]/Y  SPICLK/cur_clk_RNO\[0\]/B  SPICLK/cur_clk_RNO\[0\]/Y  SPICLK/cur_clk\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[10\]/CLK  SPICTL/cnt\[10\]/Q  SPICTL/un2_cnt_I_31/C  SPICTL/un2_cnt_I_31/Y  SPICTL/un2_cnt_I_32/A  SPICTL/un2_cnt_I_32/Y  SPICTL/cnt\[11\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[5\]/CLK  SPICTL/cnt\[5\]/Q  SPICTL/un2_cnt_I_16/C  SPICTL/un2_cnt_I_16/Y  SPICTL/un2_cnt_I_17/A  SPICTL/un2_cnt_I_17/Y  SPICTL/cnt\[6\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/counter\[2\]/CLK  SPICLK/counter\[2\]/Q  SPICLK/un3_counter_I_8/C  SPICLK/un3_counter_I_8/Y  SPICLK/un3_counter_I_9/A  SPICLK/un3_counter_I_9/Y  SPICLK/counter\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[8\]/CLK  SPICTL/cnt\[8\]/Q  SPICTL/un2_cnt_I_25/A  SPICTL/un2_cnt_I_25/Y  SPICTL/un2_cnt_I_26/A  SPICTL/un2_cnt_I_26/Y  SPICTL/cnt\[9\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/counter\[3\]/CLK  SPICLK/counter\[3\]/Q  SPICLK/un3_counter_I_13/B  SPICLK/un3_counter_I_13/Y  SPICLK/un3_counter_I_14/A  SPICLK/un3_counter_I_14/Y  SPICLK/counter\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/counter\[4\]/CLK  SPICLK/counter\[4\]/Q  SPICLK/un3_counter_I_12/B  SPICLK/un3_counter_I_12/Y  SPICLK/counter_RNO\[4\]/C  SPICLK/counter_RNO\[4\]/Y  SPICLK/counter\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/state/CLK  SPICTL/state/Q  SPICTL/state_RNIUIM/A  SPICTL/state_RNIUIM/Y  PTS/sr\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[3\]/CLK  SPICTL/cnt\[3\]/Q  SPICTL/un2_cnt_I_9/B  SPICTL/un2_cnt_I_9/Y  SPICTL/cnt\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/counter\[4\]/CLK  SPICLK/counter\[4\]/Q  SPICLK/un3_counter_I_13/C  SPICLK/un3_counter_I_13/Y  SPICLK/un3_counter_I_14/A  SPICLK/un3_counter_I_14/Y  SPICLK/counter\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[2\]/CLK  SPICTL/cnt\[2\]/Q  SPICTL/un2_cnt_I_7/B  SPICTL/un2_cnt_I_7/Y  SPICTL/cnt\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[9\]/CLK  SPICTL/cnt\[9\]/Q  SPICTL/un2_cnt_I_26/B  SPICTL/un2_cnt_I_26/Y  SPICTL/cnt\[9\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[6\]/CLK  SPICTL/cnt\[6\]/Q  SPICTL/un2_cnt_I_17/B  SPICTL/un2_cnt_I_17/Y  SPICTL/cnt\[6\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[8\]/CLK  SPICTL/cnt\[8\]/Q  SPICTL/un2_cnt_I_23/B  SPICTL/un2_cnt_I_23/Y  SPICTL/cnt\[8\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[12\]/CLK  SPICTL/cnt\[12\]/Q  SPICTL/un2_cnt_I_35/B  SPICTL/un2_cnt_I_35/Y  SPICTL/cnt\[12\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/counter\[1\]/CLK  SPICLK/counter\[1\]/Q  SPICLK/un3_counter_I_5/B  SPICLK/un3_counter_I_5/Y  SPICLK/counter\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[7\]/CLK  SPICTL/cnt\[7\]/Q  SPICTL/un2_cnt_I_20/B  SPICTL/un2_cnt_I_20/Y  SPICTL/cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[13\]/CLK  SPICTL/cnt\[13\]/Q  SPICTL/un2_cnt_I_37/B  SPICTL/un2_cnt_I_37/Y  SPICTL/cnt\[13\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[10\]/CLK  SPICTL/cnt\[10\]/Q  SPICTL/un2_cnt_I_28/B  SPICTL/un2_cnt_I_28/Y  SPICTL/cnt\[10\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[5\]/CLK  SPICTL/cnt\[5\]/Q  SPICTL/un2_cnt_I_14/B  SPICTL/un2_cnt_I_14/Y  SPICTL/cnt\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/counter\[3\]/CLK  SPICLK/counter\[3\]/Q  SPICLK/un3_counter_I_9/B  SPICLK/un3_counter_I_9/Y  SPICLK/counter\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/state/CLK  SPICTL/state/Q  SPICTL/cnt_RNO\[0\]/A  SPICTL/cnt_RNO\[0\]/Y  SPICTL/cnt\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/state/CLK  SPICTL/state/Q  SPICTL/cnt_RNO\[4\]/B  SPICTL/cnt_RNO\[4\]/Y  SPICTL/cnt\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/state/CLK  SPICTL/state/Q  SPICTL/cnt_RNO\[1\]/B  SPICTL/cnt_RNO\[1\]/Y  SPICTL/cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/counter\[0\]/CLK  SPICLK/counter\[0\]/Q  SPICLK/un3_counter_I_4/A  SPICLK/un3_counter_I_4/Y  SPICLK/counter\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/counter\[0\]/CLK  SPICLK/counter\[0\]/Q  SPICLK/un3_counter_I_5/A  SPICLK/un3_counter_I_5/Y  SPICLK/counter\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/state/CLK  SPICTL/state/Q  PTS/sr_7\[4\]/A  PTS/sr_7\[4\]/Y  PTS/sr\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[0\]/CLK  SPICTL/cnt\[0\]/Q  SPICTL/cnt_RNO\[0\]/B  SPICTL/cnt_RNO\[0\]/Y  SPICTL/cnt\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[14\]/CLK  SPICTL/cnt\[14\]/Q  SPICTL/un2_cnt_I_40/B  SPICTL/un2_cnt_I_40/Y  SPICTL/cnt\[14\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[11\]/CLK  SPICTL/cnt\[11\]/Q  SPICTL/un2_cnt_I_32/B  SPICTL/un2_cnt_I_32/Y  SPICTL/cnt\[11\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICTL/cnt\[15\]/CLK  SPICTL/cnt\[15\]/Q  SPICTL/un2_cnt_I_43/B  SPICTL/un2_cnt_I_43/Y  SPICTL/cnt\[15\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT SPICLK/counter\[5\]/CLK  SPICLK/counter\[5\]/Q  SPICLK/un3_counter_I_14/B  SPICLK/un3_counter_I_14/Y  SPICLK/counter\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT PTS/sr\[3\]/CLK  PTS/sr\[3\]/Q  PTS/sr_7\[4\]/B  PTS/sr_7\[4\]/Y  PTS/sr\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT STP/sr\[0\]/CLK  STP/sr\[0\]/Q  STP/sr\[1\]/D  	(9.3:9.3:9.3) )
+
+    (PATHCONSTRAINT STP/sr\[1\]/CLK  STP/sr\[1\]/Q  STP/sr\[2\]/D  	(9.3:9.3:9.3) )
+
+    (PATHCONSTRAINT STP/sr\[2\]/CLK  STP/sr\[2\]/Q  STP/sr\[3\]/D  	(9.3:9.3:9.3) )
+
+    (PATHCONSTRAINT STP/sr\[3\]/CLK  STP/sr\[3\]/Q  STP/sr\[4\]/D  	(9.3:9.3:9.3) )
+
+    (PATHCONSTRAINT STP/sr\[4\]/CLK  STP/sr\[4\]/Q  STP/sr\[5\]/D  	(9.3:9.3:9.3) )
+
+    (PATHCONSTRAINT STP/sr\[5\]/CLK  STP/sr\[5\]/Q  STP/sr\[6\]/D  	(9.3:9.3:9.3) )
+
+    (PATHCONSTRAINT STP/sr\[6\]/CLK  STP/sr\[6\]/Q  STP/sr\[7\]/D  	(9.3:9.3:9.3) )
+
+    (PATHCONSTRAINT SPICTL/state/CLK  SPICTL/state/Q  SPICTL/state_RNIUIM/A  SPICTL/state_RNIUIM/Y  vd_rdy_pad/D  vd_rdy_pad/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT SPICTL/state/CLK  SPICTL/state/Q  SPICTL/state_RNIUIM/A  SPICTL/state_RNIUIM/Y  cs_pad/D  cs_pad/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT STP/sr\[0\]/CLK  STP/sr\[0\]/Q  vd_pad\[0\]/D  vd_pad\[0\]/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT STP/sr\[1\]/CLK  STP/sr\[1\]/Q  vd_pad\[1\]/D  vd_pad\[1\]/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT STP/sr\[2\]/CLK  STP/sr\[2\]/Q  vd_pad\[2\]/D  vd_pad\[2\]/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT STP/sr\[3\]/CLK  STP/sr\[3\]/Q  vd_pad\[3\]/D  vd_pad\[3\]/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT STP/sr\[4\]/CLK  STP/sr\[4\]/Q  vd_pad\[4\]/D  vd_pad\[4\]/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT STP/sr\[5\]/CLK  STP/sr\[5\]/Q  vd_pad\[5\]/D  vd_pad\[5\]/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT STP/sr\[6\]/CLK  STP/sr\[6\]/Q  vd_pad\[6\]/D  vd_pad\[6\]/PAD  	(10.0:10.0:10.0) )
+
+  )
+)
+)

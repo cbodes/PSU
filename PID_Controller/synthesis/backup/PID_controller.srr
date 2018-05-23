@@ -1,0 +1,384 @@
+#Build: Synplify Pro L-2016.09M-2, Build 065R, Nov 16 2016
+#install: C:\Microsemi\Libero_SoC_v11.8\SynplifyPro
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-M9R98KO
+
+# Tue Feb 27 22:28:38 2018
+
+#Implementation: synthesis
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 117R, built Nov 17 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 127R, built Nov 24 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@N:: Running Verilog Compiler in System Verilog mode
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.v" (library work)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\LiberoProjects\PID_Controller\hdl\derivative_calc.v" (library work)
+@I::"C:\LiberoProjects\PID_Controller\hdl\error_calc.v" (library work)
+@I::"C:\LiberoProjects\PID_Controller\hdl\integral_calc.v" (library work)
+@I::"C:\LiberoProjects\PID_Controller\hdl\pid_sum.v" (library work)
+@I::"C:\LiberoProjects\PID_Controller\hdl\error_sr.v" (library work)
+@I::"C:\LiberoProjects\PID_Controller\hdl\PID_controller.v" (library work)
+Verilog syntax check successful!
+Selecting top level module PID_controller
+@N: CG364 :"C:\LiberoProjects\PID_Controller\hdl\error_calc.v":21:7:21:16|Synthesizing module error_calc in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001000
+	TARGET_V=32'b00000000000000000000000000000011
+   Generated name = error_calc_8s_3s
+
+@N: CG364 :"C:\LiberoProjects\PID_Controller\hdl\error_sr.v":21:7:21:14|Synthesizing module error_sr in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001000
+	SR_LENGTH=32'b00000000000000000000000000000010
+   Generated name = error_sr_8s_2s
+
+@N: CG364 :"C:\LiberoProjects\PID_Controller\hdl\integral_calc.v":21:7:21:19|Synthesizing module integral_calc in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001000
+   Generated name = integral_calc_8s
+
+@N: CG364 :"C:\LiberoProjects\PID_Controller\hdl\derivative_calc.v":20:7:20:21|Synthesizing module derivative_calc in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001000
+   Generated name = derivative_calc_8s
+
+@N: CG364 :"C:\LiberoProjects\PID_Controller\hdl\pid_sum.v":20:7:20:13|Synthesizing module pid_sum in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001000
+   Generated name = pid_sum_8s
+
+@W: CL169 :"C:\LiberoProjects\PID_Controller\hdl\pid_sum.v":36:0:36:5|Pruning unused register ireg[26:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\LiberoProjects\PID_Controller\hdl\pid_sum.v":36:0:36:5|Pruning unused register dreg[15:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\LiberoProjects\PID_Controller\hdl\pid_sum.v":36:0:36:5|Pruning unused register preg[15:0]. Make sure that there are no unused intermediate registers.
+@N: CG364 :"C:\LiberoProjects\PID_Controller\hdl\PID_controller.v":21:7:21:20|Synthesizing module PID_controller in library work.
+
+@W: CG360 :"C:\LiberoProjects\PID_Controller\hdl\PID_controller.v":29:11:29:16|Removing wire fm_out, as there is no assignment to it.
+@W: CL168 :"C:\LiberoProjects\PID_Controller\hdl\PID_controller.v":54:33:54:35|Removing instance SUM because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"C:\LiberoProjects\PID_Controller\hdl\PID_controller.v":51:41:51:45|Removing instance DCALC because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"C:\LiberoProjects\PID_Controller\hdl\PID_controller.v":48:39:48:45|Removing instance INTCALC because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"C:\LiberoProjects\PID_Controller\hdl\PID_controller.v":45:57:45:59|Removing instance ESR because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"C:\LiberoProjects\PID_Controller\hdl\PID_controller.v":42:57:42:58|Removing instance EC because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL157 :"C:\LiberoProjects\PID_Controller\hdl\PID_controller.v":29:11:29:16|*Output fm_out has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"C:\LiberoProjects\PID_Controller\hdl\PID_controller.v":27:10:27:12|Input clk is unused.
+@N: CL159 :"C:\LiberoProjects\PID_Controller\hdl\PID_controller.v":27:15:27:19|Input n_rst is unused.
+@N: CL159 :"C:\LiberoProjects\PID_Controller\hdl\PID_controller.v":28:26:28:31|Input cur_vd is unused.
+@W: CL190 :"C:\LiberoProjects\PID_Controller\hdl\pid_sum.v":36:0:36:5|Optimizing register bit sumreg[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\LiberoProjects\PID_Controller\hdl\pid_sum.v":36:0:36:5|Optimizing register bit sumreg[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\LiberoProjects\PID_Controller\hdl\pid_sum.v":36:0:36:5|Optimizing register bit sumreg[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\LiberoProjects\PID_Controller\hdl\pid_sum.v":36:0:36:5|Optimizing register bit sumreg[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\LiberoProjects\PID_Controller\hdl\pid_sum.v":36:0:36:5|Optimizing register bit sumreg[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\LiberoProjects\PID_Controller\hdl\pid_sum.v":36:0:36:5|Optimizing register bit sumreg[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\LiberoProjects\PID_Controller\hdl\pid_sum.v":36:0:36:5|Optimizing register bit sumreg[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\LiberoProjects\PID_Controller\hdl\pid_sum.v":36:0:36:5|Optimizing register bit sumreg[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\LiberoProjects\PID_Controller\hdl\pid_sum.v":36:0:36:5|Optimizing register bit sumreg[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\LiberoProjects\PID_Controller\hdl\pid_sum.v":36:0:36:5|Optimizing register bit sumreg[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\LiberoProjects\PID_Controller\hdl\pid_sum.v":36:0:36:5|Optimizing register bit sumreg[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\LiberoProjects\PID_Controller\hdl\pid_sum.v":36:0:36:5|Optimizing register bit sumreg[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\LiberoProjects\PID_Controller\hdl\pid_sum.v":36:0:36:5|Pruning register bits 28 to 17 of sumreg[28:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL159 :"C:\LiberoProjects\PID_Controller\hdl\pid_sum.v":24:26:24:28|Input k_p is unused.
+@N: CL159 :"C:\LiberoProjects\PID_Controller\hdl\pid_sum.v":24:31:24:33|Input k_d is unused.
+@N: CL159 :"C:\LiberoProjects\PID_Controller\hdl\pid_sum.v":24:36:24:38|Input k_i is unused.
+@N: CL159 :"C:\LiberoProjects\PID_Controller\hdl\error_calc.v":25:10:25:12|Input clk is unused.
+@N: CL159 :"C:\LiberoProjects\PID_Controller\hdl\error_calc.v":25:15:25:19|Input n_rst is unused.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 74MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Feb 27 22:28:39 2018
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 117R, built Nov 17 2016
+@N|Running in 64-bit mode
+@N: NF107 :"C:\LiberoProjects\PID_Controller\hdl\PID_controller.v":21:7:21:20|Selected library: work cell: PID_controller view verilog as top level
+@N: NF107 :"C:\LiberoProjects\PID_Controller\hdl\PID_controller.v":21:7:21:20|Selected library: work cell: PID_controller view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Feb 27 22:28:39 2018
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Feb 27 22:28:39 2018
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 117R, built Nov 17 2016
+@N|Running in 64-bit mode
+@N: NF107 :"C:\LiberoProjects\PID_Controller\hdl\PID_controller.v":21:7:21:20|Selected library: work cell: PID_controller view verilog as top level
+@N: NF107 :"C:\LiberoProjects\PID_Controller\hdl\PID_controller.v":21:7:21:20|Selected library: work cell: PID_controller view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Feb 27 22:28:40 2018
+
+###########################################################]
+Pre-mapping Report
+
+# Tue Feb 27 22:28:40 2018
+
+Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 1920R, Built Nov 17 2016 09:40:34
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09M-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\LiberoProjects\PID_Controller\synthesis\PID_controller_scck.rpt 
+Printing clock  summary report in "C:\LiberoProjects\PID_Controller\synthesis\PID_controller_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+@N: MO111 :"c:\liberoprojects\pid_controller\hdl\pid_controller.v":29:11:29:16|Tristate driver fm_out (in view: work.PID_controller(verilog)) on net fm_out (in view: work.PID_controller(verilog)) has its enable tied to GND.
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+
+
+Clock Summary
+*****************
+
+Start     Requested     Requested     Clock     Clock     Clock
+Clock     Frequency     Period        Type      Group     Load 
+---------------------------------------------------------------
+===============================================================
+
+Finished Pre Mapping Phase.
+@N: MO111 :"c:\liberoprojects\pid_controller\hdl\pid_controller.v":29:11:29:16|Tristate driver fm_out (in view: work.PID_controller(verilog)) on net fm_out (in view: work.PID_controller(verilog)) has its enable tied to GND.
+@N: BN225 |Writing default property annotation file C:\LiberoProjects\PID_Controller\synthesis\PID_controller.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 23MB peak: 109MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Feb 27 22:28:41 2018
+
+###########################################################]
+Map & Optimize Report
+
+# Tue Feb 27 22:28:41 2018
+
+Synopsys Microsemi Technology Mapper, Version mapact, Build 1920R, Built Nov 17 2016 09:40:34
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09M-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+@N: MO111 :"c:\liberoprojects\pid_controller\hdl\pid_controller.v":29:11:29:16|Tristate driver fm_out (in view: work.PID_controller(verilog)) on net fm_out (in view: work.PID_controller(verilog)) has its enable tied to GND.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+Writing Analyst data base C:\LiberoProjects\PID_Controller\synthesis\synwork\PID_controller_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+Writing EDIF Netlist and constraint files
+L-2016.09M-2
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Tue Feb 27 22:28:42 2018
+#
+
+
+Top view:               PID_controller
+Library name:           PA3
+Operating conditions:   COMWCSTD ( T = 70.0, V = 1.42, P = 1.74, tree_type = balanced_tree )
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Wire load model:        proasic3e
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: NA
+
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------
+Starting  Ending  |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------
+========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+--------------------------------------------------------------------------------
+Target Part: A3PE1500_PQFP208_STD
+Report for cell PID_controller.verilog
+  Core Cell usage:
+              cell count     area count*area
+               GND     1      0.0        0.0
+               VCC     1      0.0        0.0
+
+
+                   -----          ----------
+             TOTAL     2                 0.0
+
+
+  IO Cell usage:
+              cell count
+           TRIBUFF     1
+                   -----
+             TOTAL     1
+
+
+Core Cells         : 0 of 38400 (0%)
+IO Cells           : 1
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 60 (0%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 23MB peak: 109MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Feb 27 22:28:42 2018
+
+###########################################################]

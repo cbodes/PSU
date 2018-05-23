@@ -1,0 +1,10 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:: Running Verilog Compiler in System Verilog mode
+@N: CG364 :"C:\PID Project\SPI_recieveer\hdl\spi_clk.v":21:7:21:13|Synthesizing module spi_clk in library work.
+@N: CG364 :"C:\PID Project\SPI_recieveer\hdl\spi_ctl.v":21:7:21:13|Synthesizing module spi_ctl in library work.
+@N: CG364 :"C:\PID Project\SPI_recieveer\hdl\spi_pts.v":21:7:21:13|Synthesizing module spi_pts in library work.
+@N: CG364 :"C:\PID Project\SPI_recieveer\hdl\spi_stp.v":21:7:21:13|Synthesizing module spi_stp in library work.
+@N: CG364 :"C:\PID Project\SPI_recieveer\hdl\spi_rx.v":21:7:21:12|Synthesizing module spi_rx in library work.
+@N|Running in 64-bit mode
+

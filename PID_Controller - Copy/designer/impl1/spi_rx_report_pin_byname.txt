@@ -1,0 +1,26 @@
+*****************************************************************
+Pin Report - Date: Thu Mar 01 22:46:47 2018 UNCOMPLETED LAYOUT
+Product: Designer
+Release: v11.8 SP3
+Version: 11.8.3.6
+Design Name: spi_rx
+Family: ProASIC3E
+Die: A3PE1500
+Package: 208 PQFP
+*****************************************************************
+Port   |Pin        |Fixed      |Function |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Schmitt Trigger |Input Delay |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+-------|-----------|-----------|---------|--------|------------------|-----|--------------|----------------|------------|-----|-----------------|------------|--------------|
+clk     Unassigned  Unassigned            LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+cs      Unassigned  Unassigned            LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+din     Unassigned  Unassigned            LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+dout    Unassigned  Unassigned            LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+n_rst   Unassigned  Unassigned            LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+vd[0]   Unassigned  Unassigned            LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+vd[1]   Unassigned  Unassigned            LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+vd[2]   Unassigned  Unassigned            LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+vd[3]   Unassigned  Unassigned            LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+vd[4]   Unassigned  Unassigned            LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+vd[5]   Unassigned  Unassigned            LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+vd[6]   Unassigned  Unassigned            LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+vd[7]   Unassigned  Unassigned            LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+vd_rdy  Unassigned  Unassigned            LVTTL    12                 High  None           ---              ---          No    35                No           Yes

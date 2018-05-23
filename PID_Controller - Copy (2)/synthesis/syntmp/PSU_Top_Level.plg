@@ -1,0 +1,40 @@
+@P:  Worst Slack : -19.611
+@P:  PSU_Top_Level|clk - Estimated Frequency : 33.8 MHz
+@P:  PSU_Top_Level|clk - Requested Frequency : 100.0 MHz
+@P:  PSU_Top_Level|clk - Estimated Period : 29.611
+@P:  PSU_Top_Level|clk - Requested Period : 10.000
+@P:  PSU_Top_Level|clk - Slack : -19.611
+@P:  pll_80|GLA_inferred_clock - Estimated Frequency : 65.0 MHz
+@P:  pll_80|GLA_inferred_clock - Requested Frequency : 100.0 MHz
+@P:  pll_80|GLA_inferred_clock - Estimated Period : 15.373
+@P:  pll_80|GLA_inferred_clock - Requested Period : 10.000
+@P:  pll_80|GLA_inferred_clock - Slack : -5.373
+@P:  pll_80|YC_inferred_clock - Estimated Frequency : 99.1 MHz
+@P:  pll_80|YC_inferred_clock - Requested Frequency : 100.0 MHz
+@P:  pll_80|YC_inferred_clock - Estimated Period : 10.094
+@P:  pll_80|YC_inferred_clock - Requested Period : 10.000
+@P:  pll_80|YC_inferred_clock - Slack : -0.094
+@P:  Total Area : 6415.0
+@P:  Total Area : 1061.0
+@P:  Total Area : 4.0
+@P:  Total Area : 4.0
+@P:  Total Area : 5299.0
+@P:  Total Area : 3.0
+@P:  Total Area : 344.0
+@P:  Total Area : 520.0
+@P:  Total Area : 0.0
+@P:  Total Area : 97.0
+@P:  Total Area : 4.0
+@P:  Total Area : 81.0
+@P:  Total Area : 12.0
+@P:  Total Area : 2540.0
+@P:  Total Area : 34.0
+@P:  Total Area : 405.0
+@P:  Total Area : 846.0
+@P:  Total Area : 307.0
+@P:  Total Area : 95.0
+@P:  Total Area : 60.0
+@P:  Total Area : 48.0
+@P:  Total Area : 41.0
+@P:  Total Area : 6415.0
+@P:  CPU Time : 0h:00m:45s

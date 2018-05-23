@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/LiberoProjects/PID_Controller/simulation
+vPID_controller
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 !s110 1524175051
+!i10b 1
+!s100 N_FFe=G51_V7zBm=MdgQk3
+I4boi_i2Hc2NBmCm7ZV_I01
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 !s105 PID_controller_ba_v_unit
+S1
+Z4 dC:/PID Project/PID_Controller/simulation
+Z5 w1524175045
+Z6 8C:/PID Project/PID_Controller/designer/impl1/PID_controller_ba.v
+Z7 FC:/PID Project/PID_Controller/designer/impl1/PID_controller_ba.v
+L0 217
+Z8 OW;L;10.5c;63
+r1
+!s85 0
+31
+Z9 !s108 1524175051.000000
+Z10 !s107 C:/PID Project/PID_Controller/designer/impl1/PID_controller_ba.v|
+Z11 !s90 -reportprogress|300|-sv|-work|postlayout|C:/PID Project/PID_Controller/designer/impl1/PID_controller_ba.v|
+!s101 -O0
+!i113 1
+Z12 o-sv -work postlayout -O0
+Z13 tCvgOpt 0
+n@p@i@d_controller
+vpid_controllertb
+R0
+R1
+!i10b 1
+!s100 8>A2<gkRSIFS<4STOV<H@1
+IPhdhd228AI=Z2X_?QK2Fb2
+R2
+!s105 pid_controllertb_v_unit
+S1
+R4
+w1523323894
+8C:/PID Project/PID_Controller/stimulus/pid_controllertb.v
+FC:/PID Project/PID_Controller/stimulus/pid_controllertb.v
+L0 30
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/PID Project/PID_Controller/stimulus/pid_controllertb.v|
+!s90 -reportprogress|300|+incdir+C:/PID Project/PID_Controller/stimulus|-sv|-work|postlayout|C:/PID Project/PID_Controller/stimulus/pid_controllertb.v|
+!s101 -O0
+!i113 1
+R12
+!s92 {+incdir+C:/PID Project/PID_Controller/stimulus} -sv -work postlayout -O0
+R13
+vPLLBA
+R0
+R1
+!i10b 1
+!s100 d;AIIPOMke@nk=oQF0RZk0
+I9:bb?GQN4WFD[OBjCg?bY0
+R2
+R3
+S1
+R4
+R5
+R6
+R7
+L0 6
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!s101 -O0
+!i113 1
+R12
+R13
+n@p@l@l@b@a

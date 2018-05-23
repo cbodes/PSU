@@ -1,0 +1,31 @@
+********************************************************************
+                            Global Usage Report
+********************************************************************
+  
+Product: Designer
+Release: v11.8 SP3
+Version: 11.8.3.6
+Date: Thu May 03 18:03:30 2018
+Design Name: PSU_Top_Level  Family: ProASIC3E  Die: A3PE1500  Package: 208 PQFP
+Design State: Post-Layout
+
+The following nets have been routed to a chip global resource:
+
+    Fanout            Name
+    ----------------------
+    7030              Net   : clk_c
+                      Driver: clk_pad/U0/U1/U_GL
+    7185              Net   : n_rst_c
+                      Driver: n_rst_pad/U0/U1/U_GL
+    848               Net   : PID_FB/int_enable
+                      Driver: PID_FB/CONTROLLER/state_RNII3G9[5]/U_GL
+    848               Net   : PID_5/int_enable
+                      Driver: PID_5/CONTROLLER/state_RNIV2C2[5]/U_GL
+    848               Net   : PID_12/int_enable
+                      Driver: PID_12/CONTROLLER/state_RNID9U5[5]/U_GL
+    848               Net   : PID_15/int_enable
+                      Driver: PID_15/CONTROLLER/state_RNIG5Q3[5]/U_GL
+
+
+
+

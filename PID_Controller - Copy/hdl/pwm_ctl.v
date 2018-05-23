@@ -1,0 +1,146 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// Company: <Name>
+//
+// File: pwm_ctl.v
+// File history:
+//      <Revision number>: <Date>: <Comments>
+//      <Revision number>: <Date>: <Comments>
+//      <Revision number>: <Date>: <Comments>
+//
+// Description: 
+//
+// <Description here>
+//
+// Targeted device: <Family::ProASIC3E> <Die::A3PE1500> <Package::208 PQFP>
+// Author: <Name>
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+//`timescale <time_units> / <precision>
+
+module pwm_ctl #(
+    parameter ON_TIME = 40,
+    parameter CNT_WIDTH = 18,    
+    parameter ADC_WIDTH = 12,
+    parameter START_OFF_DIV = 100,
+    parameter MIN_OFF_DIV = 1
+)(
+    input clk, n_rst, pwm_en, act_ctl,
+    input [ADC_WIDTH*3:0] sum,
+    input [ADC_WIDTH-1:0] id_ff,
+    output reg [CNT_WIDTH-1:0] off_div,
+    output pwm_rdy
+);
+
+parameter IDLE = 'd0;
+parameter ADJUST = 'd1;
+parameter CALC = 'd2;
+parameter FIX = 'd3;
+
+
+reg [ADC_WIDTH-1:0] id, next_id;
+reg [ADC_WIDTH*3:0] nsum_adj, sum_adj;
+reg [CNT_WIDTH-1:0] next_off_div;
+reg [2:0] state, next_state;
+logic [15:0] negsum_scale;
+logic [15:0] possum_scale;
+logic [15:0] sum_rem, next_sum_rem;
+
+always @(posedge clk, negedge n_rst) begin
+    if (n_rst == 0) begin
+        off_div <= ON_TIME;
+        state <= IDLE;
+        sum_adj <= '0;
+        id <= '0;
+        sum_rem <= '0;
+    end else begin
+        if (act_ctl) begin 
+            off_div <= START_OFF_DIV;
+        end else begin
+            off_div <= next_off_div;
+        end
+        state <= next_state;
+        sum_adj <= nsum_adj;
+        id <= next_id;
+        sum_rem <= next_sum_rem;
+    end
+end
+
+//assign sum_adj = (sum[ADC_WIDTH*3] == 1) ? ~sum + 1 : sum;
+
+/*
+assign sgt1 = sum_adj[0] | sum_adj[1] | sum_adj[2] | sum_adj[3] | sum_adj[4] | sum_adj[5] | sum_adj[6] | sum_adj[7];
+assign sgt2 = sum_adj[8] | sum_adj[9] | sum_adj[10] | sum_adj[11] | sum_adj[12] | sum_adj[13] | sum_adj[14] | sum_adj[15];
+assign sgt3 = sum_adj[16] | sum_adj[17] | sum_adj[18] | sum_adj[19] | sum_adj[20] | sum_adj[21] | sum_adj[22] | sum_adj[23];
+assign sgt4 = | sum_adj[31:24];
+*/
+
+assign negsum_scale = sum_adj[23:8];
+assign possum_scale = sum_adj[23:8];
+assign pwm_rdy = (state == IDLE) ? 1'b1 : 1'b0;
+//assign sum_rem = sum_adj[7:0];
+
+always_comb begin
+    next_off_div = off_div;
+    nsum_adj = sum_adj;
+    next_state = state;
+    next_id = id;
+    next_sum_rem = sum_rem;
+	case (state)
+		IDLE: begin
+            if (pwm_en) begin
+                next_state = ADJUST;
+            end
+        end
+        ADJUST: begin
+            if (sum[ADC_WIDTH*3] == 1) begin
+                nsum_adj = ~sum + 'd1;
+            end else begin
+                nsum_adj = sum;
+            end
+            if (id_ff[ADC_WIDTH-1] == 1) begin
+                next_id = ~id_ff + 'd1;
+            end else begin
+                next_id = id_ff;
+            end
+            next_state = CALC;
+        end
+        CALC: begin 
+            if (sum[ADC_WIDTH*3] == 1) begin
+                /*if (slt) begin
+                    next_off_div = off_div >> 1;
+                end else if (sum_adj >= 128) begin
+                    next_off_div = off_div - sum_adj[7:5];
+                end*/
+                next_off_div = off_div - possum_scale;
+                //next_off_div = off_div - 'd1;
+            end
+            else begin
+                /*if (slt) begin
+                    next_off_div = off_div << 1;
+                end else if (sum_adj >= 128) begin*/
+                next_off_div = off_div + possum_scale;
+                //end
+                //next_off_div = off_div + 'd1;
+            end
+            next_sum_rem = sum[7:0];
+            next_state = FIX;
+        end
+        FIX: begin
+            if (next_off_div[CNT_WIDTH-1] == 1 | next_off_div < MIN_OFF_DIV) begin
+                next_off_div = MIN_OFF_DIV + 1;
+            end else if (next_off_div > 'd2000100) begin
+                next_off_div = 'd2000000;
+            end
+            /*if (sum[ADC_WIDTH*3] == 1 & id_ff[ADC_WIDTH-1] == 1'b0 & id > 'd750) begin
+                next_off_div = 'd5;
+            end*/
+            /*if (id_ff[ADC_WIDTH-1] == 1'b1 & id > 'd1000) begin
+                next_off_div = ;
+            end*/
+            next_state = IDLE;
+        end
+    endcase
+end
+
+endmodule

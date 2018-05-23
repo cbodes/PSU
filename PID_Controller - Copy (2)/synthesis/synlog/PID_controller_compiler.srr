@@ -1,0 +1,264 @@
+Synopsys HDL Compiler, version comp2016q3p1, Build 117R, built Nov 17 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 127R, built Nov 24 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@N:: Running Verilog Compiler in System Verilog mode
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.v" (library work)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\PSU_controller.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\PID_controller.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\controller.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\sig_gen.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\spi_clk.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\spi_rx.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\spi_pts.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\spi_ctl.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\derivative_calc.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\error_calc.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\error_sr.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\integral_calc.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\pid_sum.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\v_test.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\spi_stp.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\pwm_tx.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\pwm_ctl.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\constant_gen.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\voltage_gen.v" (library work)
+Verilog syntax check successful!
+Selecting top level module PID_controller
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\controller.v":21:7:21:16|Synthesizing module controller in library work.
+
+	AVG_WAIT=32'b00000000000000000000000000000011
+	IDLE=32'b00000000000000000000000000000000
+	CALC_ERROR=32'b00000000000000000000000000000001
+	SHIFT_AVG=32'b00000000000000000000000000000010
+	CALC_AVG=32'b00000000000000000000000000000011
+	WAIT_AVG=32'b00000000000000000000000000000100
+	SHIFT_INT=32'b00000000000000000000000000000101
+	CALC_INT=32'b00000000000000000000000000000110
+	WAIT_INT=32'b00000000000000000000000000000111
+	CALC_DERIV=32'b00000000000000000000000000001000
+	CALC_SUM=32'b00000000000000000000000000001001
+	WAIT_SUM=32'b00000000000000000000000000001010
+	CALC_PWM=32'b00000000000000000000000000001011
+	CALC_ID=32'b00000000000000000000000000001100
+	CALC_AVG_ID=32'b00000000000000000000000000001101
+	PWM_WAIT=32'b00000000000000000000000000001110
+	CHANGE_PWM=32'b00000000000000000000000000001111
+   Generated name = controller_Z1
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\error_calc.v":21:7:21:16|Synthesizing module error_calc in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001101
+	SPI_WIDTH=32'b00000000000000000000000000001100
+   Generated name = error_calc_13s_12s
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\integral_calc.v":21:7:21:19|Synthesizing module integral_calc in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001101
+   Generated name = integral_calc_13s
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\error_sr.v":21:7:21:14|Synthesizing module error_sr in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001101
+	SR_LENGTH=32'b00000000000000000000000000000100
+   Generated name = error_sr_13s_4s
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\error_sr.v":21:7:21:14|Synthesizing module error_sr in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001101
+	SR_LENGTH=32'b00000000000000000000000000000011
+   Generated name = error_sr_13s_3
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\derivative_calc.v":20:7:20:21|Synthesizing module derivative_calc in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001101
+   Generated name = derivative_calc_13s
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\error_sr.v":21:7:21:14|Synthesizing module error_sr in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001101
+	SR_LENGTH=32'b00000000000000000000000001000000
+   Generated name = error_sr_13s_64s
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\pid_sum.v":21:7:21:13|Synthesizing module pid_sum in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001101
+   Generated name = pid_sum_13s
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\spi_clk.v":21:7:21:13|Synthesizing module spi_clk in library work.
+
+	DIVIDER=32'b00000000000000000000000000001011
+   Generated name = spi_clk_11s
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\spi_stp.v":20:7:20:13|Synthesizing module spi_stp in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001100
+   Generated name = spi_stp_12s
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\spi_ctl.v":21:7:21:13|Synthesizing module spi_ctl in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001100
+   Generated name = spi_ctl_12s
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\sig_gen.v":21:7:21:13|Synthesizing module sig_gen in library work.
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\spi_rx.v":21:7:21:12|Synthesizing module spi_rx in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001100
+   Generated name = spi_rx_12s
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":21:7:21:13|Synthesizing module pwm_ctl in library work.
+
+	ON_TIME=32'b00000000000000000000011100001000
+	CNT_WIDTH=32'b00000000000000000000000000100000
+	ADC_WIDTH=32'b00000000000000000000000000001101
+	IDLE=32'b00000000000000000000000000000000
+	ADJUST=32'b00000000000000000000000000000001
+	CALC=32'b00000000000000000000000000000010
+	FIX=32'b00000000000000000000000000000011
+   Generated name = pwm_ctl_1800s_32s_13s_0_1_2_3
+
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":39:15:39:18|Removing wire sgt3, as there is no assignment to it.
+@W: CL169 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":48:0:48:5|Pruning unused register id[12:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":48:0:48:5|Pruning unused register sum_rem[15:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":48:0:48:5|Pruning register bits 39 to 24 of sum_adj[39:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":48:0:48:5|Pruning register bits 7 to 0 of sum_adj[39:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\pwm_tx.v":21:7:21:12|Synthesizing module pwm_tx in library work.
+
+	ON_DIV=32'b00000000000000000000011100001000
+	CNT_WIDTH=32'b00000000000000000000000000100000
+	ADC_WIDTH=32'b00000000000000000000000000001101
+	SECONDARY_DELAY=32'b00000000000000000000000000001010
+	START_OFF_DIV=32'b00000000000000000000001111101000
+   Generated name = pwm_tx_1800s_32s_13s_10_1000s
+
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\pwm_tx.v":35:29:35:35|Object sec_lim is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\pwm_tx.v":36:13:36:25|Object cur_secondary is declared but not assigned. Either assign a value or remove the declaration.
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":21:7:21:20|Synthesizing module PID_controller in library work.
+
+@W: CS263 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":94:37:94:44|Port-width mismatch for port target_v. The port definition is 13 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":116:32:116:34|Port-width mismatch for port k_p. The port definition is 13 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":116:43:116:45|Port-width mismatch for port k_d. The port definition is 13 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":116:54:116:56|Port-width mismatch for port k_i. The port definition is 13 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":134:114:134:122|Port-width mismatch for port pre_delay. The port definition is 32 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":134:138:134:147|Port-width mismatch for port post_delay. The port definition is 32 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":48:20:48:22|Object k_i is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":48:25:48:27|Object k_p is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":48:30:48:32|Object k_d is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":48:35:48:43|Object cur_const is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":53:11:53:16|Removing wire choose, as there is no assignment to it.
+@W: CG133 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":54:20:54:27|Object target_v is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":55:21:55:29|Removing wire pre_delay, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":55:32:55:41|Removing wire post_delay, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":62:5:62:14|Removing wire src_select, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":64:5:64:11|Removing wire pwm_clk, as there is no assignment to it.
+@W: CG360 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":64:14:64:17|Removing wire lock, as there is no assignment to it.
+@W: CL168 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":144:8:144:17|Removing instance CHOOSE_SIG because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":142:8:142:14|Removing instance DEC_SIG because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":140:8:140:14|Removing instance INC_SIG because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL156 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":134:114:134:122|*Input un1_PRE_DELAY[31:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":134:138:134:147|*Input un1_POST_DELAY[31:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\PID Project\PID_Controller\hdl\PID_controller.v":146:49:146:54|*Input fm_out to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@N: CL159 :"C:\PID Project\PID_Controller\hdl\pwm_tx.v":30:26:30:34|Input pre_delay is unused.
+@N: CL159 :"C:\PID Project\PID_Controller\hdl\pwm_tx.v":30:37:30:46|Input post_delay is unused.
+@N: CL201 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":48:0:48:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 4 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+@W: CL246 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":27:26:27:28|Input port bits 38 to 24 of sum[39:0] are unused. Assign logic for all port bits or change the input port size.
+@N: CL159 :"C:\PID Project\PID_Controller\hdl\pwm_ctl.v":28:26:28:30|Input id_ff is unused.
+@N: CL201 :"C:\PID Project\PID_Controller\hdl\spi_ctl.v":39:0:39:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 2 reachable states with original encodings of:
+   00
+   01
+@N: CL201 :"C:\PID Project\PID_Controller\hdl\pid_sum.v":48:0:48:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 7 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+   101
+   110
+@N: CL201 :"C:\PID Project\PID_Controller\hdl\integral_calc.v":34:0:34:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Optimizing register bit avg_count[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Pruning register bits 15 to 2 of avg_count[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL201 :"C:\PID Project\PID_Controller\hdl\controller.v":50:0:50:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 14 reachable states with original encodings of:
+   000000
+   000001
+   000010
+   000011
+   000100
+   000101
+   000110
+   000111
+   001000
+   001001
+   001010
+   001011
+   001110
+   001111
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 78MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Apr 26 21:37:41 2018
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 117R, built Nov 17 2016
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Apr 26 21:37:41 2018
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Apr 26 21:37:41 2018
+
+###########################################################]

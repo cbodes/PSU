@@ -1,0 +1,26 @@
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+1 non-gated/non-generated clock tree(s) driving 129 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 20 clock pin(s) of sequential element(s)
+0 instances converted, 20 sequential instances remain driven by gated/generated clocks
+
+===================================== Non-Gated/Non-Generated Clocks =====================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                   
+----------------------------------------------------------------------------------------------------------
+@K:CKID0002       clk                 port                   129        PID_controller_0.SPICLK.counter[5]
+==========================================================================================================
+======================================================================================= Gated/Generated Clocks =======================================================================================
+Clock Tree ID     Driving Element                        Drive Element Type     Fanout     Sample Instance                    Explanation                                                             
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       PID_controller_0.SPICLK.cur_clk[0]     DFN1C0                 20         PID_controller_0.SPI.PTS.sr[4]     No generated or derived clock directive on output of sequential instance
+======================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+

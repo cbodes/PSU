@@ -1,0 +1,6 @@
+CKID0001:@|S:PID_12.SPICLK.cur_clk@|E:PID_12.SPI.SPI_RDYSIG.sig_prev@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:PID_33.SPICLK.cur_clk@|E:PID_33.SPI.SPI_RDYSIG.sig_prev@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 
+CKID0003:@|S:PID_FB.SPICLK.cur_clk@|E:PID_FB.SPI.SPI_RDYSIG.sig_prev@|F:@syn_sample_clock_path==CKID0003@|M:ClockId0003 
+CKID0004:@|S:PID_5.SPICLK.cur_clk@|E:PID_5.SPI.SPI_RDYSIG.sig_prev@|F:@syn_sample_clock_path==CKID0004@|M:ClockId0004 
+CKID0005:@|S:PID_15.SPICLK.cur_clk@|E:PID_15.SPI.SPI_RDYSIG.sig_prev@|F:@syn_sample_clock_path==CKID0005@|M:ClockId0005 
+CKID0006:@|S:clk@|E:CG.k_pfb[12]@|F:@syn_sample_clock_path==CKID0006@|M:ClockId0006 

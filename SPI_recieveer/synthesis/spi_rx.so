@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>spi_rx</design>
+	<target_edif>C:\PID Project\SPI_recieveer\synthesis\spi_rx.edn</target_edif>
+</SynplifyOutput>

@@ -1,0 +1,5 @@
+CKID0001:@|S:int_count[1]@|E:inst_oled_driver.init_pointer[7]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:inst_PLL.Core@|E:int_count[10]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 
+CKID0003:@|S:int_count[18]@|E:inst_Data_Block.count8_intance.Qaux[7]@|F:@syn_sample_clock_path==CKID0003@|M:ClockId0003 
+CKID0004:@|S:SW4@|E:inst_Data_Block.LED_Flashing_instance.SW4_DirectionChange.Q_net@|F:@syn_sample_clock_path==CKID0004@|M:ClockId0004 
+CKID0005:@|S:SW6@|E:inst_Data_Block.SW6_count.Q_net@|F:@syn_sample_clock_path==CKID0005@|M:ClockId0005 

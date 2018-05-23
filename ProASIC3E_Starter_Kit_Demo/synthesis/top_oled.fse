@@ -1,0 +1,70 @@
+
+fsm_encoding {1312541251} gray
+
+fsm_state_encoding {1312541251} power_up {000000}
+
+fsm_state_encoding {1312541251} idle {000001}
+
+fsm_state_encoding {1312541251} stop0 {000011}
+
+fsm_state_encoding {1312541251} idle_1 {000010}
+
+fsm_state_encoding {1312541251} start1 {000110}
+
+fsm_state_encoding {1312541251} start0 {000111}
+
+fsm_state_encoding {1312541251} stop1 {000101}
+
+fsm_state_encoding {1312541251} stop2 {000100}
+
+fsm_state_encoding {1312541251} lowcol0 {001100}
+
+fsm_state_encoding {1312541251} page0 {001101}
+
+fsm_state_encoding {1312541251} slave2 {001111}
+
+fsm_state_encoding {1312541251} control2 {001110}
+
+fsm_state_encoding {1312541251} start2 {001010}
+
+fsm_state_encoding {1312541251} slave {001011}
+
+fsm_state_encoding {1312541251} init1 {001001}
+
+fsm_state_encoding {1312541251} control {001000}
+
+fsm_state_encoding {1312541251} splash_hold {011000}
+
+fsm_state_encoding {1312541251} display_on {011001}
+
+fsm_state_encoding {1312541251} slave6 {011011}
+
+fsm_state_encoding {1312541251} control6 {011010}
+
+fsm_state_encoding {1312541251} highcol1 {011110}
+
+fsm_state_encoding {1312541251} slave5 {011111}
+
+fsm_state_encoding {1312541251} data2 {011101}
+
+fsm_state_encoding {1312541251} control5 {011100}
+
+fsm_state_encoding {1312541251} highcol0 {010100}
+
+fsm_state_encoding {1312541251} slave3 {010101}
+
+fsm_state_encoding {1312541251} data1 {010111}
+
+fsm_state_encoding {1312541251} control3 {010110}
+
+fsm_state_encoding {1312541251} lowcol1 {010010}
+
+fsm_state_encoding {1312541251} page1 {010011}
+
+fsm_state_encoding {1312541251} slave4 {010001}
+
+fsm_state_encoding {1312541251} control4 {010000}
+
+fsm_state_encoding {1312541251} format_array {110000}
+
+fsm_registers {1312541251} {state[5]}  {state[4]}  {state[3]}  {state[2]}  {state[1]}  {state[0]} 

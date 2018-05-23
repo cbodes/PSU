@@ -1,0 +1,632 @@
+#Build: Synplify Pro L-2016.09M-2, Build 065R, Nov 16 2016
+#install: C:\Microsemi\Libero_SoC_v11.8\SynplifyPro
+#OS: Windows 7 6.1
+#Hostname: EE139PC18
+
+# Thu Mar 01 22:46:38 2018
+
+#Implementation: synthesis
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 117R, built Nov 17 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 127R, built Nov 24 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@N:: Running Verilog Compiler in System Verilog mode
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.v" (library work)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\PID Project\PID_Controller\hdl\spi_ctl.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\spi_pts.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\spi_stp.v" (library work)
+@I::"C:\PID Project\PID_Controller\hdl\spi_rx.v" (library work)
+Verilog syntax check successful!
+Options changed - recompiling
+Selecting top level module spi_rx
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\spi_ctl.v":21:7:21:13|Synthesizing module spi_ctl in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001000
+	NUM_CHANNELS=32'b00000000000000000000000000000001
+   Generated name = spi_ctl_8s_1s
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\spi_pts.v":21:7:21:13|Synthesizing module spi_pts in library work.
+
+	CHAN_WIDTH=32'b00000000000000000000000000000101
+   Generated name = spi_pts_5s
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\spi_stp.v":20:7:20:13|Synthesizing module spi_stp in library work.
+
+	ADC_WIDTH=32'b00000000000000000000000000001000
+   Generated name = spi_stp_8s
+
+@N: CG364 :"C:\PID Project\PID_Controller\hdl\spi_rx.v":21:7:21:12|Synthesizing module spi_rx in library work.
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 72MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Mar 01 22:46:38 2018
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 117R, built Nov 17 2016
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Mar 01 22:46:39 2018
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Mar 01 22:46:39 2018
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 117R, built Nov 17 2016
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Mar 01 22:46:40 2018
+
+###########################################################]
+Pre-mapping Report
+
+# Thu Mar 01 22:46:40 2018
+
+Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 1920R, Built Nov 17 2016 09:40:34
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09M-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\PID Project\PID_Controller\synthesis\spi_rx_scck.rpt 
+Printing clock  summary report in "C:\PID Project\PID_Controller\synthesis\spi_rx_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 102MB)
+
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+
+
+Clock Summary
+*****************
+
+Start          Requested     Requested     Clock        Clock                   Clock
+Clock          Frequency     Period        Type         Group                   Load 
+-------------------------------------------------------------------------------------
+spi_rx|clk     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     30   
+=====================================================================================
+
+@W: MT530 :"c:\pid project\pid_controller\hdl\spi_ctl.v":39:0:39:5|Found inferred clock spi_rx|clk which controls 30 sequential elements including SPICTL.cnt[15:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\PID Project\PID_Controller\synthesis\spi_rx.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 23MB peak: 109MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Mar 01 22:46:40 2018
+
+###########################################################]
+Map & Optimize Report
+
+# Thu Mar 01 22:46:40 2018
+
+Synopsys Microsemi Technology Mapper, Version mapact, Build 1920R, Built Nov 17 2016 09:40:34
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09M-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
+
+@N: MF238 :"c:\pid project\pid_controller\hdl\spi_ctl.v":47:15:47:22|Found 16-bit incrementor, 'un2_cnt[15:0]'
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+@W: MO160 :"c:\pid project\pid_controller\hdl\spi_pts.v":34:0:34:5|Register bit PTS.sr[0] (in view view:work.spi_rx(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\spi_pts.v":34:0:34:5|Register bit PTS.sr[1] (in view view:work.spi_rx(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\spi_pts.v":34:0:34:5|Register bit PTS.sr[2] (in view view:work.spi_rx(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 109MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 109MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 109MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+
+High Fanout Net Report
+**********************
+
+Driver Instance / Pin Name     Fanout, notes                 
+-------------------------------------------------------------
+n_rst_pad / Y                  27 : 27 asynchronous set/reset
+=============================================================
+
+@N: FP130 |Promoting Net clk_c on CLKBUF  clk_pad 
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+Buffering n_rst_c, fanout 27 segments 2
+
+Added 1 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+1 non-gated/non-generated clock tree(s) driving 27 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@K:CKID0001       clk                 port                   27         STP.sr[7]      
+=======================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+Writing Analyst data base C:\PID Project\PID_Controller\synthesis\synwork\spi_rx_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+
+Writing EDIF Netlist and constraint files
+L-2016.09M-2
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 110MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 110MB)
+
+@W: MT420 |Found inferred clock spi_rx|clk with period 10.00ns. Please declare a user-defined clock on object "p:clk"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Thu Mar 01 22:46:41 2018
+#
+
+
+Top view:               spi_rx
+Library name:           PA3
+Operating conditions:   COMWCSTD ( T = 70.0, V = 1.42, P = 1.74, tree_type = balanced_tree )
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Wire load model:        proasic3e
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -2.696
+
+                   Requested     Estimated     Requested     Estimated                Clock        Clock              
+Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group              
+----------------------------------------------------------------------------------------------------------------------
+spi_rx|clk         100.0 MHz     65.0 MHz      10.000        15.391        -2.696     inferred     Inferred_clkgroup_0
+======================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                  |    rise  to  rise   |    fall  to  fall   |    rise  to  fall    |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------------
+Starting    Ending      |  constraint  slack  |  constraint  slack  |  constraint  slack   |  constraint  slack
+---------------------------------------------------------------------------------------------------------------
+spi_rx|clk  spi_rx|clk  |  10.000      1.667  |  10.000      8.248  |  5.000       -2.696  |  No paths    -    
+===============================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: spi_rx|clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                   Starting                                      Arrival           
+Instance           Reference      Type       Pin     Net         Time        Slack 
+                   Clock                                                           
+-----------------------------------------------------------------------------------
+SPICTL.cnt[7]      spi_rx|clk     DFN1C0     Q       cnt[7]      0.737       -2.696
+SPICTL.cnt[14]     spi_rx|clk     DFN1C0     Q       cnt[14]     0.737       -2.179
+SPICTL.cnt[1]      spi_rx|clk     DFN1C0     Q       cnt[1]      0.737       -2.166
+SPICTL.cnt[2]      spi_rx|clk     DFN1C0     Q       cnt[2]      0.737       -2.042
+SPICTL.cnt[3]      spi_rx|clk     DFN1C0     Q       cnt[3]      0.737       -1.924
+SPICTL.cnt[4]      spi_rx|clk     DFN1C0     Q       cnt[4]      0.737       -1.780
+SPICTL.cnt[9]      spi_rx|clk     DFN1C0     Q       cnt[9]      0.737       -1.681
+SPICTL.cnt[13]     spi_rx|clk     DFN1C0     Q       cnt[13]     0.737       -1.669
+SPICTL.cnt[6]      spi_rx|clk     DFN1C0     Q       cnt[6]      0.737       -1.665
+SPICTL.cnt[8]      spi_rx|clk     DFN1C0     Q       cnt[8]      0.737       -1.641
+===================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                   Starting                                     Required           
+Instance           Reference      Type         Pin     Net      Time         Slack 
+                   Clock                                                           
+-----------------------------------------------------------------------------------
+STP.sr[0]          spi_rx|clk     DFN0E0C0     E       N_5      4.392        -2.696
+STP.sr[1]          spi_rx|clk     DFN0E0C0     E       N_5      4.392        -2.696
+STP.sr[2]          spi_rx|clk     DFN0E0C0     E       N_5      4.392        -2.696
+STP.sr[3]          spi_rx|clk     DFN0E0C0     E       N_5      4.392        -2.696
+STP.sr[4]          spi_rx|clk     DFN0E0C0     E       N_5      4.392        -2.696
+STP.sr[5]          spi_rx|clk     DFN0E0C0     E       N_5      4.392        -2.696
+STP.sr[6]          spi_rx|clk     DFN0E0C0     E       N_5      4.392        -2.696
+STP.sr[7]          spi_rx|clk     DFN0E0C0     E       N_5      4.392        -2.696
+SPICTL.cnt[12]     spi_rx|clk     DFN1C0       D       I_35     9.461        1.667 
+SPICTL.cnt[11]     spi_rx|clk     DFN1C0       D       I_32     9.461        1.830 
+===================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.608
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.392
+
+    - Propagation time:                      7.087
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -2.696
+
+    Number of logic level(s):                4
+    Starting point:                          SPICTL.cnt[7] / Q
+    Ending point:                            STP.sr[0] / E
+    The start point is clocked by            spi_rx|clk [rising] on pin CLK
+    The end   point is clocked by            spi_rx|clk [falling] on pin CLK
+
+Instance / Net                           Pin      Pin               Arrival     No. of    
+Name                        Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------
+SPICTL.cnt[7]               DFN1C0       Q        Out     0.737     0.737       -         
+cnt[7]                      Net          -        -       1.184     -           4         
+SPICTL.cnt_RNIG2TQ[14]      NOR2         B        In      -         1.921       -         
+SPICTL.cnt_RNIG2TQ[14]      NOR2         Y        Out     0.646     2.567       -         
+next_state8_0_a2_0_9_1      Net          -        -       0.322     -           1         
+SPICTL.cnt_RNIC0LM1[15]     NOR3A        A        In      -         2.889       -         
+SPICTL.cnt_RNIC0LM1[15]     NOR3A        Y        Out     0.664     3.552       -         
+next_state8_0_a2_0_9_4      Net          -        -       0.322     -           1         
+SPICTL.cnt_RNI4TEC3[5]      NOR3C        C        In      -         3.874       -         
+SPICTL.cnt_RNI4TEC3[5]      NOR3C        Y        Out     0.666     4.540       -         
+next_state8_0_a2_0_9        Net          -        -       0.386     -           2         
+SPICTL.state_RNIMD796       AO1B         B        In      -         4.925       -         
+SPICTL.state_RNIMD796       AO1B         Y        Out     0.454     5.379       -         
+N_5                         Net          -        -       1.708     -           10        
+STP.sr[0]                   DFN0E0C0     E        In      -         7.087       -         
+==========================================================================================
+Total path delay (propagation time + setup) of 7.696 is 3.775(49.1%) logic and 3.921(50.9%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      5.000
+    - Setup time:                            0.608
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.392
+
+    - Propagation time:                      7.087
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -2.696
+
+    Number of logic level(s):                4
+    Starting point:                          SPICTL.cnt[7] / Q
+    Ending point:                            STP.sr[7] / E
+    The start point is clocked by            spi_rx|clk [rising] on pin CLK
+    The end   point is clocked by            spi_rx|clk [falling] on pin CLK
+
+Instance / Net                           Pin      Pin               Arrival     No. of    
+Name                        Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------
+SPICTL.cnt[7]               DFN1C0       Q        Out     0.737     0.737       -         
+cnt[7]                      Net          -        -       1.184     -           4         
+SPICTL.cnt_RNIG2TQ[14]      NOR2         B        In      -         1.921       -         
+SPICTL.cnt_RNIG2TQ[14]      NOR2         Y        Out     0.646     2.567       -         
+next_state8_0_a2_0_9_1      Net          -        -       0.322     -           1         
+SPICTL.cnt_RNIC0LM1[15]     NOR3A        A        In      -         2.889       -         
+SPICTL.cnt_RNIC0LM1[15]     NOR3A        Y        Out     0.664     3.552       -         
+next_state8_0_a2_0_9_4      Net          -        -       0.322     -           1         
+SPICTL.cnt_RNI4TEC3[5]      NOR3C        C        In      -         3.874       -         
+SPICTL.cnt_RNI4TEC3[5]      NOR3C        Y        Out     0.666     4.540       -         
+next_state8_0_a2_0_9        Net          -        -       0.386     -           2         
+SPICTL.state_RNIMD796       AO1B         B        In      -         4.925       -         
+SPICTL.state_RNIMD796       AO1B         Y        Out     0.454     5.379       -         
+N_5                         Net          -        -       1.708     -           10        
+STP.sr[7]                   DFN0E0C0     E        In      -         7.087       -         
+==========================================================================================
+Total path delay (propagation time + setup) of 7.696 is 3.775(49.1%) logic and 3.921(50.9%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      5.000
+    - Setup time:                            0.608
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.392
+
+    - Propagation time:                      7.087
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -2.696
+
+    Number of logic level(s):                4
+    Starting point:                          SPICTL.cnt[7] / Q
+    Ending point:                            STP.sr[6] / E
+    The start point is clocked by            spi_rx|clk [rising] on pin CLK
+    The end   point is clocked by            spi_rx|clk [falling] on pin CLK
+
+Instance / Net                           Pin      Pin               Arrival     No. of    
+Name                        Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------
+SPICTL.cnt[7]               DFN1C0       Q        Out     0.737     0.737       -         
+cnt[7]                      Net          -        -       1.184     -           4         
+SPICTL.cnt_RNIG2TQ[14]      NOR2         B        In      -         1.921       -         
+SPICTL.cnt_RNIG2TQ[14]      NOR2         Y        Out     0.646     2.567       -         
+next_state8_0_a2_0_9_1      Net          -        -       0.322     -           1         
+SPICTL.cnt_RNIC0LM1[15]     NOR3A        A        In      -         2.889       -         
+SPICTL.cnt_RNIC0LM1[15]     NOR3A        Y        Out     0.664     3.552       -         
+next_state8_0_a2_0_9_4      Net          -        -       0.322     -           1         
+SPICTL.cnt_RNI4TEC3[5]      NOR3C        C        In      -         3.874       -         
+SPICTL.cnt_RNI4TEC3[5]      NOR3C        Y        Out     0.666     4.540       -         
+next_state8_0_a2_0_9        Net          -        -       0.386     -           2         
+SPICTL.state_RNIMD796       AO1B         B        In      -         4.925       -         
+SPICTL.state_RNIMD796       AO1B         Y        Out     0.454     5.379       -         
+N_5                         Net          -        -       1.708     -           10        
+STP.sr[6]                   DFN0E0C0     E        In      -         7.087       -         
+==========================================================================================
+Total path delay (propagation time + setup) of 7.696 is 3.775(49.1%) logic and 3.921(50.9%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      5.000
+    - Setup time:                            0.608
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.392
+
+    - Propagation time:                      7.087
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -2.696
+
+    Number of logic level(s):                4
+    Starting point:                          SPICTL.cnt[7] / Q
+    Ending point:                            STP.sr[5] / E
+    The start point is clocked by            spi_rx|clk [rising] on pin CLK
+    The end   point is clocked by            spi_rx|clk [falling] on pin CLK
+
+Instance / Net                           Pin      Pin               Arrival     No. of    
+Name                        Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------
+SPICTL.cnt[7]               DFN1C0       Q        Out     0.737     0.737       -         
+cnt[7]                      Net          -        -       1.184     -           4         
+SPICTL.cnt_RNIG2TQ[14]      NOR2         B        In      -         1.921       -         
+SPICTL.cnt_RNIG2TQ[14]      NOR2         Y        Out     0.646     2.567       -         
+next_state8_0_a2_0_9_1      Net          -        -       0.322     -           1         
+SPICTL.cnt_RNIC0LM1[15]     NOR3A        A        In      -         2.889       -         
+SPICTL.cnt_RNIC0LM1[15]     NOR3A        Y        Out     0.664     3.552       -         
+next_state8_0_a2_0_9_4      Net          -        -       0.322     -           1         
+SPICTL.cnt_RNI4TEC3[5]      NOR3C        C        In      -         3.874       -         
+SPICTL.cnt_RNI4TEC3[5]      NOR3C        Y        Out     0.666     4.540       -         
+next_state8_0_a2_0_9        Net          -        -       0.386     -           2         
+SPICTL.state_RNIMD796       AO1B         B        In      -         4.925       -         
+SPICTL.state_RNIMD796       AO1B         Y        Out     0.454     5.379       -         
+N_5                         Net          -        -       1.708     -           10        
+STP.sr[5]                   DFN0E0C0     E        In      -         7.087       -         
+==========================================================================================
+Total path delay (propagation time + setup) of 7.696 is 3.775(49.1%) logic and 3.921(50.9%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      5.000
+    - Setup time:                            0.608
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.392
+
+    - Propagation time:                      7.087
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -2.696
+
+    Number of logic level(s):                4
+    Starting point:                          SPICTL.cnt[7] / Q
+    Ending point:                            STP.sr[4] / E
+    The start point is clocked by            spi_rx|clk [rising] on pin CLK
+    The end   point is clocked by            spi_rx|clk [falling] on pin CLK
+
+Instance / Net                           Pin      Pin               Arrival     No. of    
+Name                        Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------
+SPICTL.cnt[7]               DFN1C0       Q        Out     0.737     0.737       -         
+cnt[7]                      Net          -        -       1.184     -           4         
+SPICTL.cnt_RNIG2TQ[14]      NOR2         B        In      -         1.921       -         
+SPICTL.cnt_RNIG2TQ[14]      NOR2         Y        Out     0.646     2.567       -         
+next_state8_0_a2_0_9_1      Net          -        -       0.322     -           1         
+SPICTL.cnt_RNIC0LM1[15]     NOR3A        A        In      -         2.889       -         
+SPICTL.cnt_RNIC0LM1[15]     NOR3A        Y        Out     0.664     3.552       -         
+next_state8_0_a2_0_9_4      Net          -        -       0.322     -           1         
+SPICTL.cnt_RNI4TEC3[5]      NOR3C        C        In      -         3.874       -         
+SPICTL.cnt_RNI4TEC3[5]      NOR3C        Y        Out     0.666     4.540       -         
+next_state8_0_a2_0_9        Net          -        -       0.386     -           2         
+SPICTL.state_RNIMD796       AO1B         B        In      -         4.925       -         
+SPICTL.state_RNIMD796       AO1B         Y        Out     0.454     5.379       -         
+N_5                         Net          -        -       1.708     -           10        
+STP.sr[4]                   DFN0E0C0     E        In      -         7.087       -         
+==========================================================================================
+Total path delay (propagation time + setup) of 7.696 is 3.775(49.1%) logic and 3.921(50.9%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 110MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 110MB)
+
+--------------------------------------------------------------------------------
+Target Part: A3PE1500_PQFP208_STD
+Report for cell spi_rx.verilog
+  Core Cell usage:
+              cell count     area count*area
+              AND2     3      1.0        3.0
+              AND3    17      1.0       17.0
+              AO1B     1      1.0        1.0
+              AOI1     1      1.0        1.0
+              BUFF     1      1.0        1.0
+               GND     4      0.0        0.0
+               INV     1      1.0        1.0
+              NOR2     5      1.0        5.0
+             NOR2A     2      1.0        2.0
+             NOR2B     6      1.0        6.0
+             NOR3A     1      1.0        1.0
+             NOR3B     1      1.0        1.0
+             NOR3C     3      1.0        3.0
+              OR2A     1      1.0        1.0
+              OR2B     1      1.0        1.0
+               VCC     4      0.0        0.0
+              XOR2    15      1.0       15.0
+
+
+          DFN0E0C0     8      1.0        8.0
+            DFN1C0    17      1.0       17.0
+          DFN1E1C0     2      1.0        2.0
+                   -----          ----------
+             TOTAL    94                86.0
+
+
+  IO Cell usage:
+              cell count
+            CLKBUF     1
+             INBUF     2
+            OUTBUF    11
+                   -----
+             TOTAL    14
+
+
+Core Cells         : 86 of 38400 (0%)
+IO Cells           : 14
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 60 (0%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 24MB peak: 110MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Mar 01 22:46:41 2018
+
+###########################################################]

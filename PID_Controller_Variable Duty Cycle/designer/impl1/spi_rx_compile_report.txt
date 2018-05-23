@@ -1,0 +1,216 @@
+***************************************************************************
+                               Status Report
+                          Thu Mar 01 22:46:46 2018 ***************************************************************************
+
+Product: Designer
+Release: v11.8 SP3
+Version: 11.8.3.6
+File Name: C:\PID Project\PID_Controller\designer\impl1\spi_rx.adb
+Design Name: spi_rx  Design State: compile
+Last Saved: Thu Mar 01 22:46:45 2018
+
+***** Device Data **************************************************
+
+Family: ProASIC3E  Die: A3PE1500  Package: 208 PQFP
+Speed: STD  Voltage: 1.5
+
+Restrict JTAG Pins: YES
+Restrict Probe Pins: YES
+
+Junction Temperature Range:   COM
+Voltage Range:   COM
+
+***** Import Variables *********************************************
+
+Source File(s) Imported on Thu Mar 01 22:46:44 2018:
+        C:\PID Project\PID_Controller\synthesis\spi_rx.edn
+
+
+***** CAE Variables ************************************************
+
+Back Annotation File: N/A
+
+
+***** Bitstream Variables ******************************************
+
+Bitstream File: N/A
+     Lock Mode: OFF
+
+
+***** Compile Variables ********************************************
+
+Netlist PIN properties overwrite existing properties: 0
+
+Compile Output:
+=====================================================================
+Parameters used to run compile:
+===============================
+
+Family      : ProASIC3E
+Device      : A3PE1500
+Package     : 208 PQFP
+Source      : C:\PID Project\PID_Controller\synthesis\spi_rx.edn
+Format      : EDIF
+Topcell     : spi_rx
+Speed grade : STD
+Temp        : 0:25:70
+Voltage     : 1.58:1.50:1.42
+
+Keep Existing Physical Constraints : No
+Keep Existing Timing Constraints   : Yes
+
+pdc_abort_on_error                 : Yes
+pdc_eco_display_unmatched_objects  : No
+pdc_eco_max_warnings               : 10000
+
+demote_globals                     : No
+promote_globals                    : No
+localclock_max_shared_instances    : 12
+localclock_buffer_tree_max_fanout  : 12
+
+combine_register                   : No
+delete_buffer_tree                 : No
+
+report_high_fanout_nets_limit      : 10
+
+=====================================================================
+Compile starts ...
+
+
+Netlist Optimization Report
+===========================
+
+Optimized macros:
+  - Dangling net drivers:   0
+  - Buffers:                0
+  - Inverters:              0
+  - Tieoff:                 0
+  - Logic combining:        5
+
+    Total macros optimized  5
+
+Warning: CMP503: Remapped 10 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
+         pin on the enable flip-flop is not being driven by a global net.
+
+There were 0 error(s) and 1 warning(s) in this design.
+=====================================================================
+Compile report:
+===============
+
+    CORE                       Used:     91  Total:  38400   (0.24%)
+    IO (W/ clocks)             Used:     14  Total:    147   (9.52%)
+    Differential IO            Used:      0  Total:     65   (0.00%)
+    GLOBAL (Chip+Quadrant)     Used:      1  Total:     18   (5.56%)
+    PLL                        Used:      0  Total:      2   (0.00%)
+    RAM/FIFO                   Used:      0  Total:     60   (0.00%)
+    Low Static ICC             Used:      0  Total:      1   (0.00%)
+    FlashROM                   Used:      0  Total:      1   (0.00%)
+    User JTAG                  Used:      0  Total:      1   (0.00%)
+
+Global Information:
+
+    Type            | Used   | Total
+    ----------------|--------|--------------
+    Chip global     | 1      | 6  (16.67%)*
+    Quadrant global | 0      | 12 (0.00%)
+
+    (*) Chip globals may be assigned to Quadrant globals using the Multi-View Navigator (MVN)
+        or Physical Design Constraints (PDC).
+        They may also be assigned to Quadrant globals automatically during Layout.
+
+Core Information:
+
+    Type    | Instances    | Core tiles
+    --------|--------------|-----------
+    COMB    | 64           | 64
+    SEQ     | 27           | 27
+
+I/O Function:
+
+    Type                                  | w/o register  | w/ register  | w/ DDR register
+    --------------------------------------|---------------|--------------|----------------
+    Input I/O                             | 3             | 0            | 0
+    Output I/O                            | 11            | 0            | 0
+    Bidirectional I/O                     | 0             | 0            | 0
+    Differential Input I/O Pairs          | 0             | 0            | 0
+    Differential Output I/O Pairs         | 0             | 0            | 0
+
+I/O Technology:
+
+                                    |   Voltages    |             I/Os
+    --------------------------------|-------|-------|-------|--------|--------------
+    I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
+    --------------------------------|-------|-------|-------|--------|--------------
+    LVTTL                           | 3.30v | N/A   | 3     | 11     | 0
+
+I/O Placement:
+
+    Locked  :   0
+    Placed  :   0
+    UnPlaced:  14 ( 100.00% )
+
+Net information report:
+=======================
+
+The following nets drive enable flip-flops that have been remapped to a 2-tile implementation:
+    EffCnt  Type          Name
+    --------------------------
+    10      SET/RESET_NET Net   : n_rst_c_0
+                          Driver: n_rst_pad_RNIQVTF
+
+The following nets have been assigned to a chip global resource:
+    Fanout  Type          Name
+    --------------------------
+    27      CLK_NET       Net   : clk_c
+                          Driver: clk_pad
+                          Source: NETLIST
+
+High fanout nets in the post compile netlist:
+    Fanout  Type          Name
+    --------------------------
+    14      SET/RESET_NET Net   : n_rst_c
+                          Driver: n_rst_pad
+    14      SET/RESET_NET Net   : n_rst_c_0
+                          Driver: n_rst_pad_RNIQVTF
+    10      INT_NET       Net   : SPICTL.N_5
+                          Driver: SPICTL/state_RNIMD796
+    7       INT_NET       Net   : SPICTL/DWACT_FINC_E[0]
+                          Driver: SPICTL/un2_cnt_I_10
+    6       INT_NET       Net   : SPICTL.state
+                          Driver: SPICTL/state
+    6       INT_NET       Net   : SPICTL/cnt[1]
+                          Driver: SPICTL/cnt[1]
+    6       INT_NET       Net   : SPICTL/cnt[4]
+                          Driver: SPICTL/cnt[4]
+    6       INT_NET       Net   : SPICTL/cnt[3]
+                          Driver: SPICTL/cnt[3]
+    6       INT_NET       Net   : SPICTL/cnt[0]
+                          Driver: SPICTL/cnt[0]
+    5       INT_NET       Net   : SPICTL/cnt[2]
+                          Driver: SPICTL/cnt[2]
+
+Nets that are candidates for clock assignment and the resulting fanout:
+    Fanout  Type          Name
+    --------------------------
+    27      SET/RESET_NET Net   : n_rst_c
+                          Driver: n_rst_pad
+    10      INT_NET       Net   : SPICTL.N_5
+                          Driver: SPICTL/state_RNIMD796
+    8       INT_NET       Net   : SPICTL.state
+                          Driver: SPICTL/state
+    7       INT_NET       Net   : SPICTL/DWACT_FINC_E[0]
+                          Driver: SPICTL/un2_cnt_I_10
+    6       INT_NET       Net   : SPICTL/cnt[1]
+                          Driver: SPICTL/cnt[1]
+    6       INT_NET       Net   : SPICTL/cnt[4]
+                          Driver: SPICTL/cnt[4]
+    6       INT_NET       Net   : SPICTL/cnt[3]
+                          Driver: SPICTL/cnt[3]
+    6       INT_NET       Net   : SPICTL/cnt[0]
+                          Driver: SPICTL/cnt[0]
+    5       INT_NET       Net   : SPICTL/cnt[2]
+                          Driver: SPICTL/cnt[2]
+    5       INT_NET       Net   : SPICTL/cnt[6]
+                          Driver: SPICTL/cnt[6]
+
+

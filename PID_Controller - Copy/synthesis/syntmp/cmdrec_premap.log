@@ -1,0 +1,14 @@
+C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\m_proasic.exe  -mp  4  -prjfile  "C:\PID Project\PID_Controller\synthesis\scratchproject.prs"  -implementation  synthesis  -prodtype  synplify_pro   -encrypt  -pro  -rundir  "C:\PID Project\PID_Controller\synthesis"   -part A3PE1500  -package PQFP208  -grade STD    -maxfan 24 -globalthreshold 50 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile "C:\PID Project\PID_Controller\synthesis\synlog\report\PSU_Top_Level_premap.xml"  -top_level_module  PSU_Top_Level  -oedif  "C:\PID Project\PID_Controller\synthesis\PSU_Top_Level.edn"  -conchk_prepass  "C:\PID Project\PID_Controller\synthesis\PSU_Top_Level_cck.rpt"   -freq 100.000   "C:\PID Project\PID_Controller\synthesis\synwork\PSU_Top_Level_mult.srs"  -flow prepass  -gcc_prepass  -osrd  "C:\PID Project\PID_Controller\synthesis\synwork\PSU_Top_Level_prem.srd"  -qsap  "C:\PID Project\PID_Controller\synthesis\PSU_Top_Level.sap"  -devicelib  C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.v  -ologparam  "C:\PID Project\PID_Controller\synthesis\syntmp\PSU_Top_Level.plg"  -osyn  "C:\PID Project\PID_Controller\synthesis\synwork\PSU_Top_Level_prem.srd"  -prjdir  "C:\PID Project\PID_Controller\synthesis\"  -prjname  PSU_Top_Level_syn  -log  "C:\PID Project\PID_Controller\synthesis\synlog\PSU_Top_Level_premap.srr" 
+rc:1 success:1 runtime:1
+file:C:\PID Project\PID_Controller\synthesis\scratchproject.prs|io:o|time:1525208117|size:2812|exec:0
+file:C:\PID Project\PID_Controller\synthesis\PSU_Top_Level.edn|io:o|time:1525379056|size:12305069|exec:0
+file:C:\PID Project\PID_Controller\synthesis\PSU_Top_Level_cck.rpt|io:o|time:1525384161|size:25612|exec:0
+file:C:\PID Project\PID_Controller\synthesis\synwork\PSU_Top_Level_mult.srs|io:i|time:1525384160|size:9523|exec:0
+file:C:\PID Project\PID_Controller\synthesis\synwork\PSU_Top_Level_prem.srd|io:o|time:1525384160|size:192950|exec:0
+file:C:\PID Project\PID_Controller\synthesis\PSU_Top_Level.sap|io:o|time:1525384161|size:7059|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.v|io:i|time:1487963250|size:55760|exec:0
+file:"C:\PID Project\PID_Controller\synthesis\syntmp\PSU_Top_Level.plg"|io:o|time:0|size:0|exec:0
+file:C:\PID Project\PID_Controller\synthesis\synwork\PSU_Top_Level_prem.srd|io:o|time:1525384160|size:192950|exec:0
+file:C:\PID Project\PID_Controller\synthesis\synlog\PSU_Top_Level_premap.srr|io:o|time:1525384161|size:53549|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\m_proasic.exe|io:i|time:1479395834|size:10978304|exec:1
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\m_proasic.exe|io:i|time:1479397240|size:14125056|exec:1

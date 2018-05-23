@@ -1,0 +1,38 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: MF176 |Default generator successful 
+@N: MF238 :"c:\pid project\pid_controller\hdl\integral_calc.v":34:0:34:5|Found 13-bit incrementor, 'inf_abs1_a_1[12:0]'
+@N: MF238 :"c:\pid project\pid_controller\hdl\integral_calc.v":34:0:34:5|Found 13-bit incrementor, 'inf_abs0_a_0[12:0]'
+@N: MF238 :"c:\pid project\pid_controller\hdl\integral_calc.v":34:0:34:5|Found 13-bit incrementor, 'inf_abs1_a_1[12:0]'
+@N: MF238 :"c:\pid project\pid_controller\hdl\integral_calc.v":34:0:34:5|Found 13-bit incrementor, 'inf_abs0_a_0[12:0]'
+@N: MF184 :"c:\pid project\pid_controller\hdl\derivative_calc.v":33:21:33:43|Found 13 by 13 bit subtractor, 'un2_deriv_out_0_0[12:0]'
+@N: MF176 |Default generator successful 
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[0] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[1] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[2] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[3] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[4] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[5] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[6] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[7] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[8] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[9] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[10] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[11] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: MO230 :"c:\pid project\pid_controller\hdl\pid_sum.v":48:0:48:5|Found up-down counter in view:work.pid_sum_13s(verilog) instance sumreg[39:0]  
+@N: MF238 :"c:\pid project\pid_controller\hdl\spi_clk.v":40:17:40:26|Found 9-bit incrementor, 'un3_counter[8:0]'
+@N: MO231 :"c:\pid project\pid_controller\hdl\spi_ctl.v":39:0:39:5|Found counter in view:work.spi_ctl_12s(verilog) instance cnt[15:0] 
+@N: MO225 :"c:\pid project\pid_controller\hdl\spi_ctl.v":39:0:39:5|There are no possible illegal states for state machine state[1:0] (in view: work.spi_ctl_12s(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\pid project\pid_controller\hdl\pwm_ctl.v":48:0:48:5|There are no possible illegal states for state machine state[3:0] (in view: work.pwm_ctl_1800s_32s_13s_0_1_2_3(verilog)); safe FSM implementation is not required.
+@N: MF176 |Default generator successful 
+@N: MF238 :"c:\pid project\pid_controller\hdl\pwm_ctl.v":94:28:94:37|Found 24-bit incrementor, 'un1_nsum_adj[23:0]'
+@N: MO231 :"c:\pid project\pid_controller\hdl\pwm_tx.v":49:0:49:5|Found counter in view:work.pwm_tx_1800s_32s_13s_10_1000s(verilog) instance counter[31:0] 
+@N: MF179 :"c:\pid project\pid_controller\hdl\pwm_tx.v":56:33:56:52|Found 32 by 32 bit less-than operator ('<') un1_counter_2 (in view: work.pwm_tx_1800s_32s_13s_10_1000s(verilog))
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance DCALC.deriv_out[12] (in view: work.PID_controller(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: FP130 |Promoting Net n_rst_c on CLKBUF  n_rst_pad 
+@N: FP130 |Promoting Net clk_c on CLKBUF  clk_pad 
+@N: FP130 |Promoting Net int_enable on CLKINT  I_903 
+@N: FP130 |Promoting Net sum[39] on CLKINT  I_904 
+@N: FP130 |Promoting Net AVG_CALC.state[0] on CLKINT  I_905 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

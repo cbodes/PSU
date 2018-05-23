@@ -1,0 +1,73 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\PID Project\\ProASIC3E_Starter_Kit_Demo\\synthesis\\synwork\\top_oled_comp.srs|-top|work.top_oled|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-vhdl2008|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\bin64\\c_vhdl.exe":1480000292
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vhd2008\\location.map":1478825988
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vhd2008\\std.vhd":1487963386
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vhd\\snps_haps_pkg.vhd":1487963254
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vhd2008\\std1164.vhd":1487963386
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vhd2008\\std_textio.vhd":1487963386
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vhd2008\\numeric.vhd":1487963386
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vhd\\umr_capim.vhd":1487963254
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vhd2008\\arith.vhd":1487963386
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vhd2008\\unsigned.vhd":1487963386
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vhd\\hyperents.vhd":1487963254
+#CUR:"C:\\PID Project\\ProASIC3E_Starter_Kit_Demo\\hdl\\binary_counter.vhd":1519878810
+#CUR:"C:\\PID Project\\ProASIC3E_Starter_Kit_Demo\\hdl\\clockdiv.vhd":1519878810
+#CUR:"C:\\PID Project\\ProASIC3E_Starter_Kit_Demo\\hdl\\LED_Flashing.vhd":1519878810
+#CUR:"C:\\PID Project\\ProASIC3E_Starter_Kit_Demo\\hdl\\count8.vhd":1519878810
+#CUR:"C:\\PID Project\\ProASIC3E_Starter_Kit_Demo\\hdl\\mux2.vhd":1519878810
+#CUR:"C:\\PID Project\\ProASIC3E_Starter_Kit_Demo\\hdl\\Data_block.vhd":1519878810
+#CUR:"C:\\PID Project\\ProASIC3E_Starter_Kit_Demo\\hdl\\OLED_driver_proasic3e_hdl_v4.vhd":1519878810
+#CUR:"C:\\PID Project\\ProASIC3E_Starter_Kit_Demo\\smartgen\\PLL_clock\\PLL_clock.vhd":1519878810
+#CUR:"C:\\PID Project\\ProASIC3E_Starter_Kit_Demo\\hdl\\top_oled_v2.vhd":1519878810
+0 "C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\binary_counter.vhd" vhdl
+1 "C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\clockdiv.vhd" vhdl
+2 "C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\LED_Flashing.vhd" vhdl
+3 "C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\count8.vhd" vhdl
+4 "C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\mux2.vhd" vhdl
+5 "C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\Data_block.vhd" vhdl
+6 "C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\OLED_driver_proasic3e_hdl_v4.vhd" vhdl
+7 "C:\PID Project\ProASIC3E_Starter_Kit_Demo\smartgen\PLL_clock\PLL_clock.vhd" vhdl
+8 "C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\top_oled_v2.vhd" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 -1
+2 1 0 
+3 -1
+4 -1
+5 2 3 1 4 
+6 -1
+7 -1
+8 7 6 5 
+
+# Dependency Lists (Users Of)
+0 2 
+1 5 2 
+2 5 
+3 5 
+4 5 
+5 8 
+6 8 
+7 8 
+8 -1
+
+# Design Unit to File Association
+arch work binary_counter behavioral 0
+module work binary_counter 0
+arch work clockdiv behavioural 1
+module work clockdiv 1
+arch work led_flashing behavioral 2
+module work led_flashing 2
+arch work count8 behavioral 3
+module work count8 3
+arch work mux2 behavioral 4
+module work mux2 4
+arch work data_block def_arch 5
+module work data_block 5
+arch work oled_driver def_arch 6
+module work oled_driver 6
+arch work pll_clock def_arch 7
+module work pll_clock 7
+arch work top_oled rtl 8
+module work top_oled 8

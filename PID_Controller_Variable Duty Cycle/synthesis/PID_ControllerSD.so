@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>PID_ControllerSD</design>
+	<target_edif>C:\PID Project\PID_Controller\synthesis\PID_ControllerSD.edn</target_edif>
+</SynplifyOutput>

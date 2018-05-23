@@ -1,0 +1,31 @@
+#------------------------------------------------------------------------------------------------------------------------------------------
+# RUN NUMBER: 1   DATE: 23:56:44 03-May-2018
+# INVOKED AS:  extended_run_gui.tcl -n 25 -starting_seed_index 1 -timing_driven -compare_criteria frequency -c clk
+#------------------------------------------------------------------------------------------------------------------------------------------
+# Seed Index  Seed      Specific Clock         Frequency  Report Analyzed                                Saved Design
+# ==========  ========  ===============  ===============  =============================================  ===================================
+           1         0  N/A                Layout failed  PSU_Top_Level_timing_r1_s1.rpt               
+           2  86662958  N/A                Layout failed  PSU_Top_Level_timing_r1_s2.rpt               
+           3   8988747  N/A                Layout failed  PSU_Top_Level_timing_r1_s3.rpt               
+           4  51071856  N/A                Layout failed  PSU_Top_Level_timing_r1_s4.rpt               
+           5  78381505  N/A                Layout failed  PSU_Top_Level_timing_r1_s5.rpt               
+           6  82287664  N/A                Layout failed  PSU_Top_Level_timing_r1_s6.rpt               
+           7  23702026  N/A                Layout failed  PSU_Top_Level_timing_r1_s7.rpt               
+           8  51370950  N/A                Layout failed  PSU_Top_Level_timing_r1_s8.rpt               
+           9  93189207  N/A                Layout failed  PSU_Top_Level_timing_r1_s9.rpt               
+          10  17538078  N/A                Layout failed  PSU_Top_Level_timing_r1_s10.rpt              
+          11  77122585  N/A                Layout failed  PSU_Top_Level_timing_r1_s11.rpt              
+          12  27521058  N/A                Layout failed  PSU_Top_Level_timing_r1_s12.rpt              
+          13  77808595  N/A                Layout failed  PSU_Top_Level_timing_r1_s13.rpt              
+          14  85318856  N/A                Layout failed  PSU_Top_Level_timing_r1_s14.rpt              
+          15  74257101  N/A                Layout failed  PSU_Top_Level_timing_r1_s15.rpt              
+          16  32878858  N/A                Layout failed  PSU_Top_Level_timing_r1_s16.rpt              
+          17  46508465  N/A                Layout failed  PSU_Top_Level_timing_r1_s17.rpt              
+          18  94448754  N/A                Layout failed  PSU_Top_Level_timing_r1_s18.rpt              
+          19  15741291  N/A                Layout failed  PSU_Top_Level_timing_r1_s19.rpt              
+          20  54522669  N/A                Layout failed  PSU_Top_Level_timing_r1_s20.rpt              
+          21  48978728  N/A                Layout failed  PSU_Top_Level_timing_r1_s21.rpt              
+          22  69702706  N/A                Layout failed  PSU_Top_Level_timing_r1_s22.rpt              
+          23  97870047  N/A                Layout failed  PSU_Top_Level_timing_r1_s23.rpt              
+          24  62801420  N/A                Layout failed  PSU_Top_Level_timing_r1_s24.rpt              
+          25  53746736  N/A                Layout failed  PSU_Top_Level_timing_r1_s25.rpt              

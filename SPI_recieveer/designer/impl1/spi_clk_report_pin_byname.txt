@@ -1,0 +1,15 @@
+*****************************************************************
+Pin Report - Date: Thu Mar 01 22:33:07 2018 UNCOMPLETED LAYOUT
+Product: Designer
+Release: v11.8 SP3
+Version: 11.8.3.6
+Design Name: spi_clk
+Family: ProASIC3E
+Die: A3PE1500
+Package: 208 PQFP
+*****************************************************************
+Port    |Pin        |Fixed      |Function |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Schmitt Trigger |Input Delay |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+--------|-----------|-----------|---------|--------|------------------|-----|--------------|----------------|------------|-----|-----------------|------------|--------------|
+clk      Unassigned  Unassigned            LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+clk_out  Unassigned  Unassigned            LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+n_rst    Unassigned  Unassigned            LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes

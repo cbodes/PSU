@@ -1,0 +1,26 @@
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+1 non-gated/non-generated clock tree(s) driving 1143 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 31 clock pin(s) of sequential element(s)
+0 instances converted, 31 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@K:CKID0002       clk                 port                   1143       VD_SIG.sig_prev
+=======================================================================================
+========================================================================== Gated/Generated Clocks ==========================================================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance             Explanation                                                             
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       SPICLK.cur_clk      DFN1C0                 31         SPI.SPI_RDYSIG.sig_prev     No generated or derived clock directive on output of sequential instance
+============================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+

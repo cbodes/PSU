@@ -1,0 +1,15 @@
+C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\c_hdl.exe  -osyn  "C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\synwork\top_oled_comp.srs"  -top  work.top_oled  -hdllog  "C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\synlog\top_oled_compiler.srr"  -encrypt  -mp  4  -verification_mode 0  -vhdl  -prodtype  synplify_pro  -nram -fixsmult -divnmod  -encrypt  -pro  -dmgen  "C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\dm"  -lite -ui -fid2 -ram -sharing on -ll 2000 -autosm  -vhdl2008  -ignore_undefined_lib  -lib work "C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\binary_counter.vhd" -lib work "C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\clockdiv.vhd" -lib work "C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\LED_Flashing.vhd" -lib work "C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\count8.vhd" -lib work "C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\mux2.vhd" -lib work "C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\Data_block.vhd" -lib work "C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\OLED_driver_proasic3e_hdl_v4.vhd" -lib work "C:\PID Project\ProASIC3E_Starter_Kit_Demo\smartgen\PLL_clock\PLL_clock.vhd" -lib work "C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\top_oled_v2.vhd" 
+rc:0 success:1 runtime:2
+file:C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\synwork\top_oled_comp.srs|io:o|time:1519879762|size:30158|exec:0
+file:C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\synlog\top_oled_compiler.srr|io:o|time:1519879762|size:8372|exec:0
+file:C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\binary_counter.vhd|io:i|time:1519878810|size:613|exec:0
+file:C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\clockdiv.vhd|io:i|time:1519878810|size:520|exec:0
+file:C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\LED_Flashing.vhd|io:i|time:1519878810|size:2327|exec:0
+file:C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\count8.vhd|io:i|time:1519878810|size:843|exec:0
+file:C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\mux2.vhd|io:i|time:1519878810|size:502|exec:0
+file:C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\Data_block.vhd|io:i|time:1519878810|size:3276|exec:0
+file:C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\OLED_driver_proasic3e_hdl_v4.vhd|io:i|time:1519878810|size:47568|exec:0
+file:C:\PID Project\ProASIC3E_Starter_Kit_Demo\smartgen\PLL_clock\PLL_clock.vhd|io:i|time:1519878810|size:4674|exec:0
+file:C:\PID Project\ProASIC3E_Starter_Kit_Demo\hdl\top_oled_v2.vhd|io:i|time:1519878810|size:6045|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\c_hdl.exe|io:i|time:1479395164|size:1337856|exec:1
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\c_hdl.exe|io:i|time:1479395368|size:1973248|exec:1

@@ -1,0 +1,210 @@
+Microsemi Libero Software
+Version: 11.8.3.6
+Release: v11.8 SP3
+
+Created a new design.
+'BA_NAME' set to 'PID_controller_ba'
+'IDE_DESIGNERVIEW_NAME' set to 'Impl1'
+'IDE_DESIGNERVIEW_COUNT' set to '1'
+'IDE_DESIGNERVIEW_REV0' set to 'Impl1'
+'IDE_DESIGNERVIEW_REVNUM0' set to '1'
+'IDE_DESIGNERVIEW_ROOTDIR' set to 'C:\PID Project\PID_Controller\designer'
+'IDE_DESIGNERVIEW_LASTREV' set to '1'
+'DESDIR' set to 'C:/PID Project/PID_Controller/designer/impl1'
+'BA_DIR' set to 'C:/PID Project/PID_Controller/designer/impl1'
+'BA_NETLIST_ALSO' set to '1'
+'EDNINFLAVOR' set to 'GENERIC'
+'NETLIST_NAMING_STYLE' set to 'VERILOG'
+'EXPORT_STATUS_REPORT' set to '1'
+'EXPORT_STATUS_REPORT_FILENAME' set to 'PID_controller.rpt'
+'AUDIT_NETLIST_FILE' set to '1'
+'AUDIT_DCF_FILE' set to '1'
+'AUDIT_PIN_FILE' set to '1'
+'AUDIT_ADL_FILE' set to '1'
+
+ Netlist Reading Time = 0.0 seconds
+Imported the file:
+   C:\PID Project\PID_Controller\synthesis\PID_controller.edn
+
+The Import command succeeded ( 00:00:01 )
+Design saved to file PID_controller.adb.
+=====================================================================
+Parameters used to run compile:
+===============================
+
+Family      : ProASIC3E
+Device      : A3PE1500
+Package     : 208 PQFP
+Source      : C:\PID Project\PID_Controller\synthesis\PID_controller.edn
+Format      : EDIF
+Topcell     : PID_controller
+Speed grade : STD
+Temp        : 0:25:70
+Voltage     : 1.58:1.50:1.42
+
+Keep Existing Physical Constraints : No
+Keep Existing Timing Constraints   : Yes
+
+pdc_abort_on_error                 : Yes
+pdc_eco_display_unmatched_objects  : No
+pdc_eco_max_warnings               : 10000
+
+demote_globals                     : No
+promote_globals                    : No
+localclock_max_shared_instances    : 12
+localclock_buffer_tree_max_fanout  : 12
+
+combine_register                   : No
+delete_buffer_tree                 : No
+
+report_high_fanout_nets_limit      : 10
+
+=====================================================================
+Compile starts ...
+
+
+Netlist Optimization Report
+===========================
+
+Optimized macros:
+  - Dangling net drivers:   2219
+  - Buffers:                0
+  - Inverters:              0
+  - Tieoff:                 0
+  - Logic combining:        69
+
+    Total macros optimized  2288
+
+There were 0 error(s) and 0 warning(s) in this design.
+=====================================================================
+Compile report:
+===============
+
+    CORE                       Used:    434  Total:  38400   (1.13%)
+    IO (W/ clocks)             Used:      8  Total:    147   (5.44%)
+    Differential IO            Used:      0  Total:     65   (0.00%)
+    GLOBAL (Chip+Quadrant)     Used:      2  Total:     18   (11.11%)
+    PLL                        Used:      0  Total:      2   (0.00%)
+    RAM/FIFO                   Used:      0  Total:     60   (0.00%)
+    Low Static ICC             Used:      0  Total:      1   (0.00%)
+    FlashROM                   Used:      0  Total:      1   (0.00%)
+    User JTAG                  Used:      0  Total:      1   (0.00%)
+
+Global Information:
+
+    Type            | Used   | Total
+    ----------------|--------|--------------
+    Chip global     | 2      | 6  (33.33%)*
+    Quadrant global | 0      | 12 (0.00%)
+
+    (*) Chip globals may be assigned to Quadrant globals using the Multi-View Navigator (MVN)
+        or Physical Design Constraints (PDC).
+        They may also be assigned to Quadrant globals automatically during Layout.
+
+Core Information:
+
+    Type    | Instances    | Core tiles
+    --------|--------------|-----------
+    COMB    | 342          | 342
+    SEQ     | 92           | 92
+
+I/O Function:
+
+    Type                                  | w/o register  | w/ register  | w/ DDR register
+    --------------------------------------|---------------|--------------|----------------
+    Input I/O                             | 4             | 0            | 0
+    Output I/O                            | 4             | 0            | 0
+    Bidirectional I/O                     | 0             | 0            | 0
+    Differential Input I/O Pairs          | 0             | 0            | 0
+    Differential Output I/O Pairs         | 0             | 0            | 0
+
+I/O Technology:
+
+                                    |   Voltages    |             I/Os
+    --------------------------------|-------|-------|-------|--------|--------------
+    I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
+    --------------------------------|-------|-------|-------|--------|--------------
+    LVTTL                           | 3.30v | N/A   | 4     | 4      | 0
+
+I/O Placement:
+
+    Locked  :   0
+    Placed  :   0
+    UnPlaced:   8 ( 100.00% )
+
+Net information report:
+=======================
+
+The following nets have been assigned to a chip global resource:
+    Fanout  Type          Name
+    --------------------------
+    92      SET/RESET_NET Net   : n_rst_c
+                          Driver: n_rst_pad
+                          Source: NETLIST
+    75      CLK_NET       Net   : clk_c
+                          Driver: clk_pad
+                          Source: NETLIST
+
+High fanout nets in the post compile netlist:
+    Fanout  Type          Name
+    --------------------------
+    19      CLK_NET       Net   : cur_clk
+                          Driver: SPICLK/cur_clk
+    19      INT_NET       Net   : SPI/cs_i_1
+                          Driver: SPI/SPICTL/state[0]
+    17      INT_NET       Net   : act_ctl_c
+                          Driver: act_ctl_pad
+    17      INT_NET       Net   : PWM_TX/un1_counter_4_0[0]
+                          Driver: PWM_TX/cur_pwm_RNII3O392
+    17      INT_NET       Net   : PWM_TX/cur_pwm_RNII3O392_0
+                          Driver: PWM_TX/cur_pwm_RNII3O392_0
+    16      INT_NET       Net   : act_ctl_c_0
+                          Driver: act_ctl_pad_RNIE5G8
+    9       INT_NET       Net   : PWM_TX/counter[7]
+                          Driver: PWM_TX/counter[7]
+    8       INT_NET       Net   : SPI/SPICTL/cnt[5]
+                          Driver: SPI/SPICTL/cnt[5]
+    8       INT_NET       Net   : PWM_TX/counter[13]
+                          Driver: PWM_TX/counter[13]
+    8       INT_NET       Net   : PWM_TX/counter[17]
+                          Driver: PWM_TX/counter[17]
+
+Nets that are candidates for clock assignment and the resulting fanout:
+    Fanout  Type          Name
+    --------------------------
+    32      INT_NET       Net   : act_ctl_c
+                          Driver: act_ctl_pad
+    19      CLK_NET       Net   : cur_clk
+                          Driver: SPICLK/cur_clk
+    19      INT_NET       Net   : SPI/cs_i_1
+                          Driver: SPI/SPICTL/state[0]
+    17      INT_NET       Net   : PWM_TX/un1_counter_4_0[0]
+                          Driver: PWM_TX/cur_pwm_RNII3O392
+    17      INT_NET       Net   : PWM_TX/cur_pwm_RNII3O392_0
+                          Driver: PWM_TX/cur_pwm_RNII3O392_0
+    9       INT_NET       Net   : PWM_TX/counter[7]
+                          Driver: PWM_TX/counter[7]
+    8       INT_NET       Net   : SPI/SPICTL/cnt[5]
+                          Driver: SPI/SPICTL/cnt[5]
+    8       INT_NET       Net   : PWM_TX/counter[13]
+                          Driver: PWM_TX/counter[13]
+    8       INT_NET       Net   : PWM_TX/counter[17]
+                          Driver: PWM_TX/counter[17]
+    8       INT_NET       Net   : PWM_TX/counter[11]
+                          Driver: PWM_TX/counter[11]
+
+The Compile command succeeded ( 00:00:01 )
+Wrote status report to file: PID_controller_compile_report.txt
+
+The Report command succeeded ( 00:00:00 )
+Wrote pin report to file: PID_controller_report_pin_byname.txt
+
+The Report command succeeded ( 00:00:00 )
+Wrote pin report to file: PID_controller_report_pin_bynumber.txt
+
+The Report command succeeded ( 00:00:01 )
+Design saved to file C:\PID Project\PID_Controller\designer\impl1\PID_controller.adb.
+
+The Execute Script command succeeded ( 00:00:05 )
+Design closed.
+

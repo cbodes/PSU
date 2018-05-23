@@ -1,0 +1,14 @@
+C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\m_proasic.exe  -mp  4  -prjfile  "C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\scratchproject.prs"  -implementation  synthesis  -prodtype  synplify_pro   -encrypt  -pro  -rundir  "C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis"   -part A3PE1500  -package PQFP208  -grade -2    -maxfan 24 -globalthreshold 50 -opcond COMWC -report_path 0 -RWCheckOnRam 0 -summaryfile "C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\synlog\report\top_oled_premap.xml"  -top_level_module  work.top_oled  -oedif  "C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\top_oled.edn"  -conchk_prepass  "C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\top_oled_cck.rpt"   -freq 40.000   "C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\synwork\top_oled_mult.srs"  -flow prepass  -gcc_prepass  -osrd  "C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\synwork\top_oled_prem.srd"  -qsap  "C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\top_oled.sap"  -devicelib  C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.v  -ologparam  "C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\syntmp\top_oled.plg"  -osyn  "C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\synwork\top_oled_prem.srd"  -prjdir  "C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\"  -prjname  top_oled_syn  -log  "C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\synlog\top_oled_premap.srr" 
+rc:1 success:1 runtime:1
+file:C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\scratchproject.prs|io:o|time:1519878992|size:2497|exec:0
+file:C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\top_oled.edn|io:o|time:1519879000|size:2308928|exec:0
+file:C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\top_oled_cck.rpt|io:o|time:1519879764|size:24413|exec:0
+file:C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\synwork\top_oled_mult.srs|io:i|time:1519879763|size:4014|exec:0
+file:C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\synwork\top_oled_prem.srd|io:o|time:1519879763|size:48122|exec:0
+file:C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\top_oled.sap|io:o|time:1519879764|size:3124|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.v|io:i|time:1487963250|size:55760|exec:0
+file:"C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\syntmp\top_oled.plg"|io:o|time:0|size:0|exec:0
+file:C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\synwork\top_oled_prem.srd|io:o|time:1519879763|size:48122|exec:0
+file:C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\synlog\top_oled_premap.srr|io:o|time:1519879764|size:5643|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\m_proasic.exe|io:i|time:1479395834|size:10978304|exec:1
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\m_proasic.exe|io:i|time:1479397240|size:14125056|exec:1

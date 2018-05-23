@@ -1,0 +1,104 @@
+Microsemi Libero Software
+Version: 11.8.3.6
+Release: v11.8 SP3
+
+Info: The design PSU_Top_Level.adb was last modified by software version 11.8.3.6.
+Opened an existing Libero design PSU_Top_Level.adb.
+
+The Execute Script command succeeded ( 00:00:04 )
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+Error: PLC002: No legal assignment exists for global net PID_33/GLA.
+
+Global Nets Whose Drivers Are Limited to Quadrants or Which Have No Valid Locations:
+
+        |--------------------------------------------|
+        |Global Net          |Valid Driver Locations |
+        |--------------------------------------------|
+        |PID_33/GLA          |(None)
+        |--------------------------------------------|
+        |clk_c               |(None)
+        |--------------------------------------------|
+        |n_rst_c             |(None)
+        |--------------------------------------------|
+
+Info: Consider relaxing the constraints for these nets by removing region constraints,
+      unassigning fixed cells and I/Os, relaxing I/O bank assignments, or using input
+      buffers without hardwired pad connections.
+Error: PLC003: No legal global assignment could be found because of complex region and/or IO
+       technology constraints.
+Error: PLC005: Automatic global net placement failed.
+INFO: See the GlobalNet Report from the Reports option of the Tools menu for information about
+the global assignment.
+
+The Layout command failed ( 00:00:01 )
+
+The Layout command failed ( 00:00:02 )
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+
+
+Global net placement completed successfully.
+
+                        o - o - o - o - o - o
+
+Timing-driven Placer Started: Thu May 03 21:06:35 2018
+
+Placer Finished: Thu May 03 21:07:42 2018
+Total Placer CPU Time:     00:01:07
+
+                        o - o - o - o - o - o
+
+
+Timing-driven Router 
+Design: PSU_Top_Level                   Started: Thu May 03 21:07:48 2018
+
+ 
+Iterative improvement...
+
+Timing-driven Router completed successfully.
+
+Design: PSU_Top_Level                   
+Finished: Thu May 03 21:09:08 2018
+Total CPU Time:     00:01:20            Total Elapsed Time: 00:01:20
+Total Memory Usage: 596.0 Mbytes
+                        o - o - o - o - o - o
+
+Loading the Timing data for the design.
+Finished loading the Timing data.
+
+The Layout command succeeded ( 00:02:45 )
+Design closed.
+
+Info: The design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level_backup.adb was last
+      modified by software version 11.8.3.6.
+Opened an existing Libero design C:\PID
+Project\PID_Controller\designer\impl1\PSU_Top_Level_backup.adb.
+Design closed.
+

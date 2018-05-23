@@ -1,0 +1,307 @@
+Actel Designer Software
+Version: 9.1.5.1
+Release: v9.1 SP5
+
+
+ Netlist Reading Time = 0.0 seconds
+Imported the files:
+   F:\Manufactioring test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\synthesis\top_oled.edn
+   F:\Manufactioring
+test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\synthesis\top_oled_sdc.sdc
+   F:\Manufactioring test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\constraint\top_oled.pdc
+
+The Import command succeeded ( 00:00:07 )
+Info: The design F:\Manufactioring
+      test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\designer\impl1\top_oled.adb was last
+      modified by software version 9.1.3.4.
+Opened an existing Libero design F:\Manufactioring
+test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\designer\impl1\top_oled.adb.
+'BA_NAME' set to 'top_oled_ba'
+'IDE_DESIGNERVIEW_NAME' set to 'Impl1'
+'IDE_DESIGNERVIEW_COUNT' set to '1'
+'IDE_DESIGNERVIEW_REV0' set to 'Impl1'
+'IDE_DESIGNERVIEW_REVNUM0' set to '1'
+'IDE_DESIGNERVIEW_ROOTDIR' set to 'F:\Manufactioring
+test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\designer'
+'IDE_DESIGNERVIEW_LASTREV' set to '1'
+
+The Execute Script command succeeded ( 00:00:00 )
+=====================================================================
+Parameters used to run compile:
+===============================
+
+Family      : ProASIC3E
+Device      : A3PE1500
+Package     : 208 PQFP
+Source      : F:\Manufactioring
+test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\synthesis\top_oled.edn
+              F:\Manufactioring
+test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\synthesis\top_oled_sdc.sdc
+              F:\Manufactioring
+test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\constraint\top_oled.pdc
+Format      : EDIF
+Topcell     : top_oled
+Speed grade : -2
+Temp        : 0:25:70
+Voltage     : 1.58:1.50:1.42
+
+Keep Existing Physical Constraints : Yes
+Keep Existing Timing Constraints   : Yes
+
+pdc_abort_on_error                 : Yes
+pdc_eco_display_unmatched_objects  : No
+pdc_eco_max_warnings               : 10000
+
+demote_globals                     : No
+promote_globals                    : No
+localclock_max_shared_instances    : 12
+localclock_buffer_tree_max_fanout  : 12
+
+combine_register                   : No
+delete_buffer_tree                 : No
+
+report_high_fanout_nets_limit      : 10
+
+=====================================================================
+Compile starts ...
+
+Warning: CMP201: Net inst_PLL/Core_GLB drives no load.
+Warning: CMP201: Net inst_PLL/Core_GLC drives no load.
+Warning: CMP201: Net inst_PLL/Core_YB drives no load.
+Warning: CMP201: Net inst_PLL/Core_YC drives no load.
+
+Netlist Optimization Report
+===========================
+
+Optimized macros:
+  - Dangling net drivers:   0
+  - Buffers:                1
+  - Inverters:              0
+  - Tieoff:                 0
+  - Logic combining:        58
+
+    Total macros optimized  59
+
+There were 0 error(s) and 4 warning(s) in this design.
+=====================================================================
+
+Reading previous post-compile physical placement constraints.
+
+
+There were 0 error(s) and 0 warning(s).
+
+=====================================================================
+
+Reading user pdc (Physical Design Constraints) file(s) postcompile
+
+
+There were 0 error(s) and 0 warning(s) in reading the user pdc.
+
+=====================================================================
+Compile report:
+===============
+
+    CORE                       Used:   1724  Total:  38400   (4.49%)
+    IO (W/ clocks)             Used:     31  Total:    147   (21.09%)
+    Differential IO            Used:      0  Total:     65   (0.00%)
+    GLOBAL (Chip+Quadrant)     Used:      6  Total:     18   (33.33%)
+    PLL                        Used:      1  Total:      2   (50.00%)
+    RAM/FIFO                   Used:      0  Total:     60   (0.00%)
+    Low Static ICC             Used:      0  Total:      1   (0.00%)
+    FlashROM                   Used:      0  Total:      1   (0.00%)
+    User JTAG                  Used:      0  Total:      1   (0.00%)
+
+Global Information:
+
+    Type            | Used   | Total
+    ----------------|--------|--------------
+    Chip global     | 6      | 6  (100.00%)*
+    Quadrant global | 0      | 12 (0.00%)
+
+    (*) Chip globals may be assigned to Quadrant globals using the Multi-View Navigator (MVN)
+        or Physical Design Constraints (PDC).
+        They may also be assigned to Quadrant globals automatically during Layout.
+
+Core Information:
+
+    Type    | Instances    | Core tiles
+    --------|--------------|-----------
+    COMB    | 1226         | 1226
+    SEQ     | 474          | 498
+
+I/O Function:
+
+    Type                          | w/o register  | w/ register  | w/ DDR register
+    ------------------------------|---------------|--------------|----------------
+    Input I/O                     | 15            | 0            | 0
+    Output I/O                    | 16            | 0            | 0
+    Bidirectional I/O             | 0             | 0            | 0
+    Differential Input I/O Pairs  | 0             | 0            | 0
+    Differential Output I/O Pairs | 0             | 0            | 0
+
+I/O Technology:
+
+                                    |   Voltages    |             I/Os
+    --------------------------------|-------|-------|-------|--------|--------------
+    I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
+    --------------------------------|-------|-------|-------|--------|--------------
+    LVTTL                           | 3.30v | N/A   | 15    | 16     | 0
+
+I/O Placement:
+
+    Locked  :  31 ( 100.00% )
+    Placed  :   0
+    UnPlaced:   0
+
+Net information report:
+=======================
+
+The following nets have been assigned to a chip global resource:
+    Fanout  Type          Name
+    --------------------------
+    446     CLK_NET       Net   : int_count_c[1]
+                          Driver: int_count_RNISUN4[1]
+                          Source: NETLIST
+    442     SET/RESET_NET Net   : pacer_rst_c
+                          Driver: inst_oled_driver/reset
+                          Source: NETLIST
+    382     INT_NET       Net   : inst_oled_driver/state[5]
+                          Driver: inst_oled_driver/state_RNIEME2[5]
+                          Source: NETLIST
+    359     INT_NET       Net   : inst_oled_driver/un1_state_13
+                          Driver: inst_oled_driver/state_RNIN47M_0[5]
+                          Source: NETLIST
+    117     INT_NET       Net   : inst_oled_driver/byte_count[4]
+                          Driver: inst_oled_driver/byte_count_RNIIFG6[4]
+                          Source: NETLIST
+    21      CLK_NET       Net   : PLL_CLK_out
+                          Driver: inst_PLL/Core
+                          Source: ESSENTIAL
+
+High fanout nets in the post compile netlist:
+    Fanout  Type          Name
+    --------------------------
+    23      INT_NET       Net   : inst_oled_driver/byte_count_2[3]
+                          Driver: inst_oled_driver/byte_count_2[3]
+    23      INT_NET       Net   : inst_oled_driver/byte_count_1[3]
+                          Driver: inst_oled_driver/byte_count_1[3]
+    23      INT_NET       Net   : inst_oled_driver/byte_count_0[3]
+                          Driver: inst_oled_driver/byte_count_0[3]
+    23      INT_NET       Net   : inst_oled_driver/byte_count_3[5]
+                          Driver: inst_oled_driver/byte_count_3[5]
+    23      INT_NET       Net   : inst_oled_driver/byte_count_2[5]
+                          Driver: inst_oled_driver/byte_count_2[5]
+    23      INT_NET       Net   : inst_oled_driver/byte_count_1[5]
+                          Driver: inst_oled_driver/byte_count_1[5]
+    23      INT_NET       Net   : inst_oled_driver/byte_count_0[5]
+                          Driver: inst_oled_driver/byte_count_0[5]
+    23      INT_NET       Net   : inst_oled_driver/N_5584
+                          Driver: inst_oled_driver/data_count_RNIMK69[1]
+    23      INT_NET       Net   : inst_oled_driver/byte_count[5]
+                          Driver: inst_oled_driver/byte_count[5]
+    22      SET/RESET_NET Net   : SW5_c
+                          Driver: SW5_pad
+
+Nets that are candidates for clock assignment and the resulting fanout:
+    Fanout  Type          Name
+    --------------------------
+    42      INT_NET       Net   : SW5_c
+                          Driver: SW5_pad
+    23      INT_NET       Net   : inst_oled_driver/byte_count_2[3]
+                          Driver: inst_oled_driver/byte_count_2[3]
+    23      INT_NET       Net   : inst_oled_driver/byte_count_1[3]
+                          Driver: inst_oled_driver/byte_count_1[3]
+    23      INT_NET       Net   : inst_oled_driver/byte_count_0[3]
+                          Driver: inst_oled_driver/byte_count_0[3]
+    23      INT_NET       Net   : inst_oled_driver/byte_count_3[5]
+                          Driver: inst_oled_driver/byte_count_3[5]
+    23      INT_NET       Net   : inst_oled_driver/byte_count_2[5]
+                          Driver: inst_oled_driver/byte_count_2[5]
+    23      INT_NET       Net   : inst_oled_driver/byte_count_1[5]
+                          Driver: inst_oled_driver/byte_count_1[5]
+    23      INT_NET       Net   : inst_oled_driver/byte_count_0[5]
+                          Driver: inst_oled_driver/byte_count_0[5]
+    23      INT_NET       Net   : inst_oled_driver/N_5584
+                          Driver: inst_oled_driver/data_count_RNIMK69[1]
+    23      INT_NET       Net   : inst_oled_driver/byte_count[5]
+                          Driver: inst_oled_driver/byte_count[5]
+
+
+SDC Import: Begin processing constraints...
+
+
+SDC Import:  There were 0 errors and 2 warnings detected.
+
+
+
+SDC Import: End processing constraints
+
+
+The Compile command succeeded ( 00:00:04 )
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+
+
+Global net placement completed successfully.
+
+                        o - o - o - o - o - o
+
+Timing-driven Placer Started: Mon Oct 08 19:29:51 2012
+
+Placer Finished: Mon Oct 08 19:30:00 2012
+Total Placer CPU Time:     00:00:09
+
+                        o - o - o - o - o - o
+
+
+Timing-driven Router 
+Design: top_oled                        Started: Mon Oct 08 19:30:04 2012
+
+ 
+Iterative improvement...
+
+Timing-driven Router completed successfully.
+
+Design: top_oled                        
+Finished: Mon Oct 08 19:30:50 2012
+Total CPU Time:     00:00:46            Total Elapsed Time: 00:00:46
+                        o - o - o - o - o - o
+
+Loading the Timing data for the design.
+Finished loading the Timing data.
+TIMER: Max delay timing requirements have been met.
+TIMER: Min delay timing requirements have been met.
+
+The Layout command succeeded ( 00:01:06 )
+Warning: The following files already exist:
+         
+         F:\Manufactioring
+         test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\designer\impl1\top_oled.pdb
+         
+         Do you want to replace the files? [YES]
+
+The Export-map command succeeded ( 00:00:19 )
+Warning: Overwriting the existing file: F:\Manufactioring
+         test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\designer\impl1\top_oled.pdb.
+Wrote to the file: F:\Manufactioring
+test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\designer\impl1\top_oled.pdb
+CHECKSUM: D19B
+
+The Generate programming file command succeeded ( 00:00:21 )
+Design saved to file F:\Manufactioring
+test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\designer\impl1\top_oled.adb.
+Design closed.
+

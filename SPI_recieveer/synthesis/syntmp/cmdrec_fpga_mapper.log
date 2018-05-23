@@ -1,0 +1,15 @@
+C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\m_proasic.exe  -prodtype  synplify_pro   -encrypt  -pro  -rundir  "C:\PID Project\SPI_recieveer\synthesis"   -part A3PE1500  -package PQFP208  -grade STD    -maxfan 24 -globalthreshold 50 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile "C:\PID Project\SPI_recieveer\synthesis\synlog\report\spi_rx_fpga_mapper.xml"  -top_level_module  spi_rx  -licensetype  synplifypro_actel  -flow mapping  -mp  4  -prjfile  "C:\PID Project\SPI_recieveer\synthesis\scratchproject.prs"  -implementation  synthesis  -multisrs  -oedif  "C:\PID Project\SPI_recieveer\synthesis\spi_rx.edn"   -freq 100.000   "C:\PID Project\SPI_recieveer\synthesis\synwork\spi_rx_prem.srd"  -sap  "C:\PID Project\SPI_recieveer\synthesis\spi_rx.sap"  -otap  "C:\PID Project\SPI_recieveer\synthesis\spi_rx.tap"  -omap  "C:\PID Project\SPI_recieveer\synthesis\spi_rx.map"  -devicelib  C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.v  -sap  "C:\PID Project\SPI_recieveer\synthesis\spi_rx.sap"  -ologparam  "C:\PID Project\SPI_recieveer\synthesis\syntmp\spi_rx.plg"  -osyn  "C:\PID Project\SPI_recieveer\synthesis\spi_rx.srm"  -prjdir  "C:\PID Project\SPI_recieveer\synthesis\"  -prjname  spi_rx_syn  -log  "C:\PID Project\SPI_recieveer\synthesis\synlog\spi_rx_fpga_mapper.srr" 
+rc:1 success:1 runtime:1
+file:C:\PID Project\SPI_recieveer\synthesis\scratchproject.prs|io:o|time:1519962107|size:1965|exec:0
+file:C:\PID Project\SPI_recieveer\synthesis\spi_rx.edn|io:o|time:1519962129|size:63972|exec:0
+file:C:\PID Project\SPI_recieveer\synthesis\synwork\spi_rx_prem.srd|io:i|time:1519962128|size:10090|exec:0
+file:C:\PID Project\SPI_recieveer\synthesis\spi_rx.sap|io:o|time:1519962128|size:1077|exec:0
+file:C:\PID Project\SPI_recieveer\synthesis\spi_rx.tap|io:o|time:0|size:0|exec:0
+file:C:\PID Project\SPI_recieveer\synthesis\spi_rx.map|io:o|time:1519962129|size:0|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.v|io:i|time:1487963250|size:55760|exec:0
+file:C:\PID Project\SPI_recieveer\synthesis\spi_rx.sap|io:o|time:1519962128|size:1077|exec:0
+file:"C:\PID Project\SPI_recieveer\synthesis\syntmp\spi_rx.plg"|io:o|time:0|size:0|exec:0
+file:C:\PID Project\SPI_recieveer\synthesis\spi_rx.srm|io:o|time:1519962129|size:67208|exec:0
+file:C:\PID Project\SPI_recieveer\synthesis\synlog\spi_rx_fpga_mapper.srr|io:o|time:1519962129|size:35019|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\m_proasic.exe|io:i|time:1479395834|size:10978304|exec:1
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\m_proasic.exe|io:i|time:1479397240|size:14125056|exec:1

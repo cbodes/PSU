@@ -1,0 +1,2 @@
+@W: MT530 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Found inferred clock PID_controller|clk which controls 1176 sequential elements including CONTROLLER.count[15:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\pid project\pid_controller\hdl\spi_stp.v":32:0:32:5|Found inferred clock spi_clk_11s|cur_clk_inferred_clock which controls 32 sequential elements including SPI.VD_STP.sr[11:0]. This clock has no specified timing constraint which may adversely impact design performance. 

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+Max Top 5 critical clocks will be reported. For rest user needs to refer to Detailed report
+*******************************************************************************************-->
+<report_table display_priority="2" name="Timing Summary">
+<report_link name="Detailed report">
+<data>C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\synlog\top_oled_fpga_mapper.srr</data>
+<title>START OF TIMING REPORT</title>
+</report_link>
+<row>
+<data tcl_name="clock_name">Clock Name</data>
+<data tcl_name="req_freq">Req Freq</data>
+<data tcl_name="est_freq">Est Freq</data>
+<data tcl_name="slack">Slack</data>
+</row>
+<row>
+<data>PLL_clock|GLA_inferred_clock</data>
+<data>40.0 MHz</data>
+<data>139.4 MHz</data>
+<data>17.828</data>
+</row>
+<row>
+<data>top_oled|DBlock_clkin_inferred_clock</data>
+<data>40.0 MHz</data>
+<data>107.6 MHz</data>
+<data>15.709</data>
+</row>
+<row>
+<data>top_oled|OLED_clk_in_inferred_clock</data>
+<data>40.0 MHz</data>
+<data>70.9 MHz</data>
+<data>10.889</data>
+</row>
+<row>
+<data>top_oled|SW4</data>
+<data>40.0 MHz</data>
+<data>354.9 MHz</data>
+<data>22.182</data>
+</row>
+<row>
+<data>top_oled|SW6</data>
+<data>40.0 MHz</data>
+<data>354.9 MHz</data>
+<data>22.182</data>
+</row>
+</report_table>

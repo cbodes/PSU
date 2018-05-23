@@ -1,0 +1,27 @@
+C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\c_hdl.exe  -osyn  "C:\PID Project\PID_Controller\synthesis\synwork\PSU_Top_Level_comp.srs"  -top  PSU_Top_Level  -hdllog  "C:\PID Project\PID_Controller\synthesis\synlog\PSU_Top_Level_compiler.srr"  -encrypt  -mp  4  -verification_mode 0  -verilog  -prodtype  synplify_pro  -nram -fixsmult -divnmod   -I "C:\PID Project\PID_Controller\synthesis\"  -I C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib   -sysv  -devicelib  C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.v  -encrypt  -pro  -dmgen  "C:\PID Project\PID_Controller\synthesis\dm"  -ui -fid2 -ram -sharing on -ll 2000 -autosm  -lib work "C:\PID Project\PID_Controller\hdl\PID_controller.v" -lib work "C:\PID Project\PID_Controller\hdl\sig_gen.v" -lib work "C:\PID Project\PID_Controller\hdl\derivative_calc.v" -lib work "C:\PID Project\PID_Controller\hdl\error_calc.v" -lib work "C:\PID Project\PID_Controller\hdl\error_sr.v" -lib work "C:\PID Project\PID_Controller\hdl\integral_calc.v" -lib work "C:\PID Project\PID_Controller\hdl\pid_sum.v" -lib work "C:\PID Project\PID_Controller\hdl\PSU_controller.v" -lib work "C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v" -lib work "C:\PID Project\PID_Controller\hdl\pwm_ctl.v" -lib work "C:\PID Project\PID_Controller\hdl\pwm_tx.v" -lib work "C:\PID Project\PID_Controller\hdl\spi_clk.v" -lib work "C:\PID Project\PID_Controller\hdl\spi_ctl.v" -lib work "C:\PID Project\PID_Controller\hdl\spi_rx.v" -lib work "C:\PID Project\PID_Controller\hdl\spi_stp.v" -lib work "C:\PID Project\PID_Controller\hdl\controller.v" -lib work "C:\PID Project\PID_Controller\hdl\constant_gen.v" -lib work "C:\PID Project\PID_Controller\smartgen\pll_maxf\pll_maxf.v" -lib work "C:\PID Project\PID_Controller\smartgen\pll_80\pll_80.v" -lib work "C:\PID Project\PID_Controller\smartgen\pll_spi\pll_spi.v" 
+rc:0 success:1 runtime:2
+file:C:\PID Project\PID_Controller\synthesis\synwork\PSU_Top_Level_comp.srs|io:o|time:1525426930|size:44694|exec:0
+file:C:\PID Project\PID_Controller\synthesis\synlog\PSU_Top_Level_compiler.srr|io:o|time:1525426930|size:31046|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.v|io:i|time:1487963250|size:55760|exec:0
+file:C:\PID Project\PID_Controller\hdl\PID_controller.v|io:i|time:1525425359|size:8113|exec:0
+file:C:\PID Project\PID_Controller\hdl\sig_gen.v|io:i|time:1520132301|size:992|exec:0
+file:C:\PID Project\PID_Controller\hdl\derivative_calc.v|io:i|time:1520134634|size:1026|exec:0
+file:C:\PID Project\PID_Controller\hdl\error_calc.v|io:i|time:1523052168|size:1185|exec:0
+file:C:\PID Project\PID_Controller\hdl\error_sr.v|io:i|time:1520119775|size:1430|exec:0
+file:C:\PID Project\PID_Controller\hdl\integral_calc.v|io:i|time:1521335498|size:2107|exec:0
+file:C:\PID Project\PID_Controller\hdl\pid_sum.v|io:i|time:1523239037|size:3827|exec:0
+file:C:\PID Project\PID_Controller\hdl\PSU_controller.v|io:i|time:1525388227|size:1830|exec:0
+file:C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v|io:i|time:1525426903|size:6665|exec:0
+file:C:\PID Project\PID_Controller\hdl\pwm_ctl.v|io:i|time:1525424908|size:4800|exec:0
+file:C:\PID Project\PID_Controller\hdl\pwm_tx.v|io:i|time:1525214351|size:2073|exec:0
+file:C:\PID Project\PID_Controller\hdl\spi_clk.v|io:i|time:1520204935|size:1064|exec:0
+file:C:\PID Project\PID_Controller\hdl\spi_ctl.v|io:i|time:1525031884|size:1693|exec:0
+file:C:\PID Project\PID_Controller\hdl\spi_rx.v|io:i|time:1524789965|size:1487|exec:0
+file:C:\PID Project\PID_Controller\hdl\spi_stp.v|io:i|time:1522886649|size:1021|exec:0
+file:C:\PID Project\PID_Controller\hdl\controller.v|io:i|time:1525405093|size:4372|exec:0
+file:C:\PID Project\PID_Controller\hdl\constant_gen.v|io:i|time:1525388046|size:10366|exec:0
+file:C:\PID Project\PID_Controller\smartgen\pll_maxf\pll_maxf.v|io:i|time:1525395199|size:2713|exec:0
+file:C:\PID Project\PID_Controller\smartgen\pll_80\pll_80.v|io:i|time:1525426926|size:2842|exec:0
+file:C:\PID Project\PID_Controller\smartgen\pll_spi\pll_spi.v|io:i|time:1525423871|size:2659|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\c_hdl.exe|io:i|time:1479395164|size:1337856|exec:1
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\c_hdl.exe|io:i|time:1479395368|size:1973248|exec:1

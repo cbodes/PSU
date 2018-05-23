@@ -1,0 +1,96 @@
+# Wed Feb 28 23:49:23 2018
+
+Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 1920R, Built Nov 17 2016 09:40:34
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09M-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\top_oled_scck.rpt 
+Printing clock  summary report in "C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\top_oled_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 104MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 104MB)
+
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+
+
+
+Clock Summary
+*****************
+
+Start                                    Requested     Requested     Clock        Clock                   Clock
+Clock                                    Frequency     Period        Type         Group                   Load 
+---------------------------------------------------------------------------------------------------------------
+PLL_clock|GLA_inferred_clock             40.0 MHz      25.000        inferred     Inferred_clkgroup_4     20   
+top_oled|DBlock_clkin_inferred_clock     40.0 MHz      25.000        inferred     Inferred_clkgroup_1     11   
+top_oled|OLED_clk_in_inferred_clock      40.0 MHz      25.000        inferred     Inferred_clkgroup_3     1628 
+top_oled|SW4                             40.0 MHz      25.000        inferred     Inferred_clkgroup_2     1    
+top_oled|SW6                             40.0 MHz      25.000        inferred     Inferred_clkgroup_0     1    
+===============================================================================================================
+
+@W: MT530 :"c:\pid project\proasic3e_starter_kit_demo\hdl\clockdiv.vhd":20:8:20:9|Found inferred clock top_oled|SW6 which controls 1 sequential elements including inst_Data_Block.SW6_count.Q_net. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\pid project\proasic3e_starter_kit_demo\hdl\binary_counter.vhd":21:4:21:5|Found inferred clock top_oled|DBlock_clkin_inferred_clock which controls 11 sequential elements including inst_Data_Block.LED_Flashing_instance.flashing_counter.Qaux[2:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\pid project\proasic3e_starter_kit_demo\hdl\clockdiv.vhd":20:8:20:9|Found inferred clock top_oled|SW4 which controls 1 sequential elements including inst_Data_Block.LED_Flashing_instance.SW4_DirectionChange.Q_net. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\pid project\proasic3e_starter_kit_demo\hdl\oled_driver_proasic3e_hdl_v4.vhd":125:4:125:5|Found inferred clock top_oled|OLED_clk_in_inferred_clock which controls 1628 sequential elements including inst_oled_driver.state[0:32]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\pid project\proasic3e_starter_kit_demo\hdl\top_oled_v2.vhd":102:4:102:5|Found inferred clock PLL_clock|GLA_inferred_clock which controls 20 sequential elements including int_count[19:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\PID Project\ProASIC3E_Starter_Kit_Demo\synthesis\top_oled.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+
+Encoding state machine state[0:32] (in view: work.OLED_driver(def_arch))
+original code -> new code
+   000000 -> 000000
+   000001 -> 000001
+   000010 -> 000011
+   000011 -> 000010
+   000100 -> 000110
+   000101 -> 000111
+   000110 -> 000101
+   000111 -> 000100
+   001000 -> 001100
+   001001 -> 001101
+   001010 -> 001111
+   001011 -> 001110
+   001100 -> 001010
+   001101 -> 001011
+   001110 -> 001001
+   001111 -> 001000
+   010000 -> 011000
+   010001 -> 011001
+   010010 -> 011011
+   010011 -> 011010
+   010100 -> 011110
+   010101 -> 011111
+   010110 -> 011101
+   010111 -> 011100
+   011000 -> 010100
+   011001 -> 010101
+   011010 -> 010111
+   011011 -> 010110
+   011100 -> 010010
+   011101 -> 010011
+   011110 -> 010001
+   011111 -> 010000
+   110000 -> 110000
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 116MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 28MB peak: 116MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Feb 28 23:49:24 2018
+
+###########################################################]

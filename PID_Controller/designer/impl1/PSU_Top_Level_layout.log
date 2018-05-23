@@ -1,0 +1,1647 @@
+Microsemi Libero Software
+Version: 11.8.3.6
+Release: v11.8 SP3
+
+Info: The design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb was last
+      modified by software version 11.8.3.6.
+Opened an existing Libero design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+'BA_NAME' set to 'PSU_Top_Level_ba'
+'KEEP_EXISTING_PHYSICAL_CONSTRAINTS' set to '1'
+'SDC_IMPORT_MERGE' set to '1'
+'IDE_DESIGNERVIEW_NAME' set to 'Impl1'
+'IDE_DESIGNERVIEW_COUNT' set to '1'
+'IDE_DESIGNERVIEW_REV0' set to 'Impl1'
+'IDE_DESIGNERVIEW_REVNUM0' set to '1'
+'IDE_DESIGNERVIEW_ROOTDIR' set to 'C:\PID Project\PID_Controller\designer'
+'IDE_DESIGNERVIEW_LASTREV' set to '1'
+
+The Execute Script command succeeded ( 00:00:00 )
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+Error: PRL13: Cannot place the instance clk_pad on the Upper Left quadrant locations because
+       the instance PID_33/PLL/Core connected to the clock net cannot be assigned to a quadrant.
+       This instance must be placed on a middle left or middle right global locations.
+
+The Layout command failed ( 00:00:00 )
+
+The Layout command failed ( 00:00:01 )
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+Error: PLC002: No legal assignment exists for global net PID_33/GLA.
+
+Global Nets Whose Drivers Are Limited to Quadrants or Which Have No Valid Locations:
+
+        |--------------------------------------------|
+        |Global Net          |Valid Driver Locations |
+        |--------------------------------------------|
+        |PID_33/GLA          |(None)
+        |--------------------------------------------|
+        |clk_c               |(None)
+        |--------------------------------------------|
+        |n_rst_c             |(None)
+        |--------------------------------------------|
+
+Info: Consider relaxing the constraints for these nets by removing region constraints,
+      unassigning fixed cells and I/Os, relaxing I/O bank assignments, or using input
+      buffers without hardwired pad connections.
+Error: PLC003: No legal global assignment could be found because of complex region and/or IO
+       technology constraints.
+Error: PLC005: Automatic global net placement failed.
+INFO: See the GlobalNet Report from the Reports option of the Tools menu for information about
+the global assignment.
+
+The Layout command failed ( 00:00:01 )
+
+The Layout command failed ( 00:00:01 )
+Before proceeding, your design must be saved to disk.
+Save changes to C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb now? [OK]
+Design saved to file C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+Wrote pin report to file: C:\PID
+Project\PID_Controller\designer\impl1\PSU_Top_Level_report_pin_byname.txt
+
+The Report command succeeded ( 00:00:01 )
+Wrote pin report to file: C:\PID
+Project\PID_Controller\designer\impl1\PSU_Top_Level_report_pin_bynumber.txt
+
+The Report command succeeded ( 00:00:01 )
+
+The Execute Script command succeeded ( 00:00:02 )
+Check design state: COMPILE
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '0'
+Design saved to file C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 0
+----- Evaluating Initial State -------
+Wrote to the file: C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level_layout.log
+
+The Export command succeeded ( 00:00:02 )
+----- Iteration 1 of 25 -----
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 0
+Variable DEFAULT_PLACE_SEED_VARIABLE_VALUE = 0
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 0
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '1'
+Info: Multi-Pass: Seed:   0
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+Error: PLC002: No legal assignment exists for global net PID_33/GLA.
+
+Global Nets Whose Drivers Are Limited to Quadrants or Which Have No Valid Locations:
+
+        |--------------------------------------------|
+        |Global Net          |Valid Driver Locations |
+        |--------------------------------------------|
+        |PID_33/GLA          |(None)
+        |--------------------------------------------|
+        |clk_c               |(None)
+        |--------------------------------------------|
+        |n_rst_c             |(None)
+        |--------------------------------------------|
+
+Info: Consider relaxing the constraints for these nets by removing region constraints,
+      unassigning fixed cells and I/Os, relaxing I/O bank assignments, or using input
+      buffers without hardwired pad connections.
+Error: PLC003: No legal global assignment could be found because of complex region and/or IO
+       technology constraints.
+Error: PLC005: Automatic global net placement failed.
+INFO: See the GlobalNet Report from the Reports option of the Tools menu for information about
+the global assignment.
+
+The Layout command failed ( 00:00:01 )
+
+The Layout command failed ( 00:00:02 )
+Info: Multi-Pass: Layout failed with seed 0
+Variable IS_POWER_GUI_SUPPORTED = 1
+Layout incomplete
+Design closed.
+
+Info: The design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb was last
+      modified by software version 11.8.3.6.
+Opened an existing Libero design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '1'
+Design saved to file C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+Warning: Overwriting the existing file: C:/PID
+         Project/PID_Controller/designer/impl1/PSU_Top_Level_layout.log.
+Wrote to the file: C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level_layout.log
+
+The Export command succeeded ( 00:00:02 )
+----- Iteration 2 of 25 -----
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 1
+Variable DEFAULT_PLACE_SEED_VARIABLE_VALUE = 0
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 1
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '2'
+Info: Multi-Pass: Seed:   86662958
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+Error: PLC002: No legal assignment exists for global net PID_33/GLA.
+
+Global Nets Whose Drivers Are Limited to Quadrants or Which Have No Valid Locations:
+
+        |--------------------------------------------|
+        |Global Net          |Valid Driver Locations |
+        |--------------------------------------------|
+        |PID_33/GLA          |(None)
+        |--------------------------------------------|
+        |clk_c               |(None)
+        |--------------------------------------------|
+        |n_rst_c             |(None)
+        |--------------------------------------------|
+
+Info: Consider relaxing the constraints for these nets by removing region constraints,
+      unassigning fixed cells and I/Os, relaxing I/O bank assignments, or using input
+      buffers without hardwired pad connections.
+Error: PLC003: No legal global assignment could be found because of complex region and/or IO
+       technology constraints.
+Error: PLC005: Automatic global net placement failed.
+INFO: See the GlobalNet Report from the Reports option of the Tools menu for information about
+the global assignment.
+
+The Layout command failed ( 00:00:01 )
+
+The Layout command failed ( 00:00:02 )
+Info: Multi-Pass: Layout failed with seed 86662958
+Variable IS_POWER_GUI_SUPPORTED = 1
+Layout incomplete
+Design closed.
+
+Info: The design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb was last
+      modified by software version 11.8.3.6.
+Opened an existing Libero design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '2'
+Design saved to file C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+Warning: Overwriting the existing file: C:/PID
+         Project/PID_Controller/designer/impl1/PSU_Top_Level_layout.log.
+Wrote to the file: C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level_layout.log
+
+The Export command succeeded ( 00:00:02 )
+----- Iteration 3 of 25 -----
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 2
+Variable DEFAULT_PLACE_SEED_VARIABLE_VALUE = 0
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 2
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '3'
+Info: Multi-Pass: Seed:   8988747
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+Error: PLC002: No legal assignment exists for global net PID_33/GLA.
+
+Global Nets Whose Drivers Are Limited to Quadrants or Which Have No Valid Locations:
+
+        |--------------------------------------------|
+        |Global Net          |Valid Driver Locations |
+        |--------------------------------------------|
+        |PID_33/GLA          |(None)
+        |--------------------------------------------|
+        |clk_c               |(None)
+        |--------------------------------------------|
+        |n_rst_c             |(None)
+        |--------------------------------------------|
+
+Info: Consider relaxing the constraints for these nets by removing region constraints,
+      unassigning fixed cells and I/Os, relaxing I/O bank assignments, or using input
+      buffers without hardwired pad connections.
+Error: PLC003: No legal global assignment could be found because of complex region and/or IO
+       technology constraints.
+Error: PLC005: Automatic global net placement failed.
+INFO: See the GlobalNet Report from the Reports option of the Tools menu for information about
+the global assignment.
+
+The Layout command failed ( 00:00:01 )
+
+The Layout command failed ( 00:00:02 )
+Info: Multi-Pass: Layout failed with seed 8988747
+Variable IS_POWER_GUI_SUPPORTED = 1
+Layout incomplete
+Design closed.
+
+Info: The design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb was last
+      modified by software version 11.8.3.6.
+Opened an existing Libero design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '3'
+Design saved to file C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+Warning: Overwriting the existing file: C:/PID
+         Project/PID_Controller/designer/impl1/PSU_Top_Level_layout.log.
+Wrote to the file: C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level_layout.log
+
+The Export command succeeded ( 00:00:02 )
+----- Iteration 4 of 25 -----
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 3
+Variable DEFAULT_PLACE_SEED_VARIABLE_VALUE = 0
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 3
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '4'
+Info: Multi-Pass: Seed:   51071856
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+Error: PLC002: No legal assignment exists for global net PID_33/GLA.
+
+Global Nets Whose Drivers Are Limited to Quadrants or Which Have No Valid Locations:
+
+        |--------------------------------------------|
+        |Global Net          |Valid Driver Locations |
+        |--------------------------------------------|
+        |PID_33/GLA          |(None)
+        |--------------------------------------------|
+        |clk_c               |(None)
+        |--------------------------------------------|
+        |n_rst_c             |(None)
+        |--------------------------------------------|
+
+Info: Consider relaxing the constraints for these nets by removing region constraints,
+      unassigning fixed cells and I/Os, relaxing I/O bank assignments, or using input
+      buffers without hardwired pad connections.
+Error: PLC003: No legal global assignment could be found because of complex region and/or IO
+       technology constraints.
+Error: PLC005: Automatic global net placement failed.
+INFO: See the GlobalNet Report from the Reports option of the Tools menu for information about
+the global assignment.
+
+The Layout command failed ( 00:00:01 )
+
+The Layout command failed ( 00:00:03 )
+Info: Multi-Pass: Layout failed with seed 51071856
+Variable IS_POWER_GUI_SUPPORTED = 1
+Layout incomplete
+Design closed.
+
+Info: The design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb was last
+      modified by software version 11.8.3.6.
+Opened an existing Libero design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '4'
+Design saved to file C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+Warning: Overwriting the existing file: C:/PID
+         Project/PID_Controller/designer/impl1/PSU_Top_Level_layout.log.
+Wrote to the file: C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level_layout.log
+
+The Export command succeeded ( 00:00:02 )
+----- Iteration 5 of 25 -----
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 4
+Variable DEFAULT_PLACE_SEED_VARIABLE_VALUE = 0
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 4
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '5'
+Info: Multi-Pass: Seed:   78381505
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+Error: PLC002: No legal assignment exists for global net PID_33/GLA.
+
+Global Nets Whose Drivers Are Limited to Quadrants or Which Have No Valid Locations:
+
+        |--------------------------------------------|
+        |Global Net          |Valid Driver Locations |
+        |--------------------------------------------|
+        |PID_33/GLA          |(None)
+        |--------------------------------------------|
+        |clk_c               |(None)
+        |--------------------------------------------|
+        |n_rst_c             |(None)
+        |--------------------------------------------|
+
+Info: Consider relaxing the constraints for these nets by removing region constraints,
+      unassigning fixed cells and I/Os, relaxing I/O bank assignments, or using input
+      buffers without hardwired pad connections.
+Error: PLC003: No legal global assignment could be found because of complex region and/or IO
+       technology constraints.
+Error: PLC005: Automatic global net placement failed.
+INFO: See the GlobalNet Report from the Reports option of the Tools menu for information about
+the global assignment.
+
+The Layout command failed ( 00:00:01 )
+
+The Layout command failed ( 00:00:02 )
+Info: Multi-Pass: Layout failed with seed 78381505
+Variable IS_POWER_GUI_SUPPORTED = 1
+Layout incomplete
+Design closed.
+
+Info: The design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb was last
+      modified by software version 11.8.3.6.
+Opened an existing Libero design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '5'
+Design saved to file C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+Warning: Overwriting the existing file: C:/PID
+         Project/PID_Controller/designer/impl1/PSU_Top_Level_layout.log.
+Wrote to the file: C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level_layout.log
+
+The Export command succeeded ( 00:00:02 )
+----- Iteration 6 of 25 -----
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 5
+Variable DEFAULT_PLACE_SEED_VARIABLE_VALUE = 0
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 5
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '6'
+Info: Multi-Pass: Seed:   82287664
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+Error: PLC002: No legal assignment exists for global net PID_33/GLA.
+
+Global Nets Whose Drivers Are Limited to Quadrants or Which Have No Valid Locations:
+
+        |--------------------------------------------|
+        |Global Net          |Valid Driver Locations |
+        |--------------------------------------------|
+        |PID_33/GLA          |(None)
+        |--------------------------------------------|
+        |clk_c               |(None)
+        |--------------------------------------------|
+        |n_rst_c             |(None)
+        |--------------------------------------------|
+
+Info: Consider relaxing the constraints for these nets by removing region constraints,
+      unassigning fixed cells and I/Os, relaxing I/O bank assignments, or using input
+      buffers without hardwired pad connections.
+Error: PLC003: No legal global assignment could be found because of complex region and/or IO
+       technology constraints.
+Error: PLC005: Automatic global net placement failed.
+INFO: See the GlobalNet Report from the Reports option of the Tools menu for information about
+the global assignment.
+
+The Layout command failed ( 00:00:01 )
+
+The Layout command failed ( 00:00:02 )
+Info: Multi-Pass: Layout failed with seed 82287664
+Variable IS_POWER_GUI_SUPPORTED = 1
+Layout incomplete
+Design closed.
+
+Info: The design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb was last
+      modified by software version 11.8.3.6.
+Opened an existing Libero design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '6'
+Design saved to file C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+Warning: Overwriting the existing file: C:/PID
+         Project/PID_Controller/designer/impl1/PSU_Top_Level_layout.log.
+Wrote to the file: C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level_layout.log
+
+The Export command succeeded ( 00:00:02 )
+----- Iteration 7 of 25 -----
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 6
+Variable DEFAULT_PLACE_SEED_VARIABLE_VALUE = 0
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 6
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '7'
+Info: Multi-Pass: Seed:   23702026
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+Error: PLC002: No legal assignment exists for global net PID_33/GLA.
+
+Global Nets Whose Drivers Are Limited to Quadrants or Which Have No Valid Locations:
+
+        |--------------------------------------------|
+        |Global Net          |Valid Driver Locations |
+        |--------------------------------------------|
+        |PID_33/GLA          |(None)
+        |--------------------------------------------|
+        |clk_c               |(None)
+        |--------------------------------------------|
+        |n_rst_c             |(None)
+        |--------------------------------------------|
+
+Info: Consider relaxing the constraints for these nets by removing region constraints,
+      unassigning fixed cells and I/Os, relaxing I/O bank assignments, or using input
+      buffers without hardwired pad connections.
+Error: PLC003: No legal global assignment could be found because of complex region and/or IO
+       technology constraints.
+Error: PLC005: Automatic global net placement failed.
+INFO: See the GlobalNet Report from the Reports option of the Tools menu for information about
+the global assignment.
+
+The Layout command failed ( 00:00:01 )
+
+The Layout command failed ( 00:00:02 )
+Info: Multi-Pass: Layout failed with seed 23702026
+Variable IS_POWER_GUI_SUPPORTED = 1
+Layout incomplete
+Design closed.
+
+Info: The design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb was last
+      modified by software version 11.8.3.6.
+Opened an existing Libero design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '7'
+Design saved to file C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+Warning: Overwriting the existing file: C:/PID
+         Project/PID_Controller/designer/impl1/PSU_Top_Level_layout.log.
+Wrote to the file: C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level_layout.log
+
+The Export command succeeded ( 00:00:02 )
+----- Iteration 8 of 25 -----
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 7
+Variable DEFAULT_PLACE_SEED_VARIABLE_VALUE = 0
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 7
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '8'
+Info: Multi-Pass: Seed:   51370950
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+Error: PLC002: No legal assignment exists for global net PID_33/GLA.
+
+Global Nets Whose Drivers Are Limited to Quadrants or Which Have No Valid Locations:
+
+        |--------------------------------------------|
+        |Global Net          |Valid Driver Locations |
+        |--------------------------------------------|
+        |PID_33/GLA          |(None)
+        |--------------------------------------------|
+        |clk_c               |(None)
+        |--------------------------------------------|
+        |n_rst_c             |(None)
+        |--------------------------------------------|
+
+Info: Consider relaxing the constraints for these nets by removing region constraints,
+      unassigning fixed cells and I/Os, relaxing I/O bank assignments, or using input
+      buffers without hardwired pad connections.
+Error: PLC003: No legal global assignment could be found because of complex region and/or IO
+       technology constraints.
+Error: PLC005: Automatic global net placement failed.
+INFO: See the GlobalNet Report from the Reports option of the Tools menu for information about
+the global assignment.
+
+The Layout command failed ( 00:00:01 )
+
+The Layout command failed ( 00:00:02 )
+Info: Multi-Pass: Layout failed with seed 51370950
+Variable IS_POWER_GUI_SUPPORTED = 1
+Layout incomplete
+Design closed.
+
+Info: The design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb was last
+      modified by software version 11.8.3.6.
+Opened an existing Libero design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '8'
+Design saved to file C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+Warning: Overwriting the existing file: C:/PID
+         Project/PID_Controller/designer/impl1/PSU_Top_Level_layout.log.
+Wrote to the file: C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level_layout.log
+
+The Export command succeeded ( 00:00:02 )
+----- Iteration 9 of 25 -----
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 8
+Variable DEFAULT_PLACE_SEED_VARIABLE_VALUE = 0
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 8
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '9'
+Info: Multi-Pass: Seed:   93189207
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+Error: PLC002: No legal assignment exists for global net PID_33/GLA.
+
+Global Nets Whose Drivers Are Limited to Quadrants or Which Have No Valid Locations:
+
+        |--------------------------------------------|
+        |Global Net          |Valid Driver Locations |
+        |--------------------------------------------|
+        |PID_33/GLA          |(None)
+        |--------------------------------------------|
+        |clk_c               |(None)
+        |--------------------------------------------|
+        |n_rst_c             |(None)
+        |--------------------------------------------|
+
+Info: Consider relaxing the constraints for these nets by removing region constraints,
+      unassigning fixed cells and I/Os, relaxing I/O bank assignments, or using input
+      buffers without hardwired pad connections.
+Error: PLC003: No legal global assignment could be found because of complex region and/or IO
+       technology constraints.
+Error: PLC005: Automatic global net placement failed.
+INFO: See the GlobalNet Report from the Reports option of the Tools menu for information about
+the global assignment.
+
+The Layout command failed ( 00:00:01 )
+
+The Layout command failed ( 00:00:02 )
+Info: Multi-Pass: Layout failed with seed 93189207
+Variable IS_POWER_GUI_SUPPORTED = 1
+Layout incomplete
+Design closed.
+
+Info: The design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb was last
+      modified by software version 11.8.3.6.
+Opened an existing Libero design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '9'
+Design saved to file C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+Warning: Overwriting the existing file: C:/PID
+         Project/PID_Controller/designer/impl1/PSU_Top_Level_layout.log.
+Wrote to the file: C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level_layout.log
+
+The Export command succeeded ( 00:00:02 )
+----- Iteration 10 of 25 -----
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 9
+Variable DEFAULT_PLACE_SEED_VARIABLE_VALUE = 0
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 9
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '10'
+Info: Multi-Pass: Seed:   17538078
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+Error: PLC002: No legal assignment exists for global net PID_33/GLA.
+
+Global Nets Whose Drivers Are Limited to Quadrants or Which Have No Valid Locations:
+
+        |--------------------------------------------|
+        |Global Net          |Valid Driver Locations |
+        |--------------------------------------------|
+        |PID_33/GLA          |(None)
+        |--------------------------------------------|
+        |clk_c               |(None)
+        |--------------------------------------------|
+        |n_rst_c             |(None)
+        |--------------------------------------------|
+
+Info: Consider relaxing the constraints for these nets by removing region constraints,
+      unassigning fixed cells and I/Os, relaxing I/O bank assignments, or using input
+      buffers without hardwired pad connections.
+Error: PLC003: No legal global assignment could be found because of complex region and/or IO
+       technology constraints.
+Error: PLC005: Automatic global net placement failed.
+INFO: See the GlobalNet Report from the Reports option of the Tools menu for information about
+the global assignment.
+
+The Layout command failed ( 00:00:01 )
+
+The Layout command failed ( 00:00:02 )
+Info: Multi-Pass: Layout failed with seed 17538078
+Variable IS_POWER_GUI_SUPPORTED = 1
+Layout incomplete
+Design closed.
+
+Info: The design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb was last
+      modified by software version 11.8.3.6.
+Opened an existing Libero design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '10'
+Design saved to file C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+Warning: Overwriting the existing file: C:/PID
+         Project/PID_Controller/designer/impl1/PSU_Top_Level_layout.log.
+Wrote to the file: C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level_layout.log
+
+The Export command succeeded ( 00:00:02 )
+----- Iteration 11 of 25 -----
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 10
+Variable DEFAULT_PLACE_SEED_VARIABLE_VALUE = 0
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 10
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '11'
+Info: Multi-Pass: Seed:   77122585
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+Error: PLC002: No legal assignment exists for global net PID_33/GLA.
+
+Global Nets Whose Drivers Are Limited to Quadrants or Which Have No Valid Locations:
+
+        |--------------------------------------------|
+        |Global Net          |Valid Driver Locations |
+        |--------------------------------------------|
+        |PID_33/GLA          |(None)
+        |--------------------------------------------|
+        |clk_c               |(None)
+        |--------------------------------------------|
+        |n_rst_c             |(None)
+        |--------------------------------------------|
+
+Info: Consider relaxing the constraints for these nets by removing region constraints,
+      unassigning fixed cells and I/Os, relaxing I/O bank assignments, or using input
+      buffers without hardwired pad connections.
+Error: PLC003: No legal global assignment could be found because of complex region and/or IO
+       technology constraints.
+Error: PLC005: Automatic global net placement failed.
+INFO: See the GlobalNet Report from the Reports option of the Tools menu for information about
+the global assignment.
+
+The Layout command failed ( 00:00:01 )
+
+The Layout command failed ( 00:00:11 )
+Info: Multi-Pass: Layout failed with seed 77122585
+Variable IS_POWER_GUI_SUPPORTED = 1
+Layout incomplete
+Design closed.
+
+Info: The design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb was last
+      modified by software version 11.8.3.6.
+Opened an existing Libero design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '11'
+Design saved to file C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+Warning: Overwriting the existing file: C:/PID
+         Project/PID_Controller/designer/impl1/PSU_Top_Level_layout.log.
+Wrote to the file: C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level_layout.log
+
+The Export command succeeded ( 00:00:02 )
+----- Iteration 12 of 25 -----
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 11
+Variable DEFAULT_PLACE_SEED_VARIABLE_VALUE = 0
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 11
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '12'
+Info: Multi-Pass: Seed:   27521058
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+Error: PLC002: No legal assignment exists for global net PID_33/GLA.
+
+Global Nets Whose Drivers Are Limited to Quadrants or Which Have No Valid Locations:
+
+        |--------------------------------------------|
+        |Global Net          |Valid Driver Locations |
+        |--------------------------------------------|
+        |PID_33/GLA          |(None)
+        |--------------------------------------------|
+        |clk_c               |(None)
+        |--------------------------------------------|
+        |n_rst_c             |(None)
+        |--------------------------------------------|
+
+Info: Consider relaxing the constraints for these nets by removing region constraints,
+      unassigning fixed cells and I/Os, relaxing I/O bank assignments, or using input
+      buffers without hardwired pad connections.
+Error: PLC003: No legal global assignment could be found because of complex region and/or IO
+       technology constraints.
+Error: PLC005: Automatic global net placement failed.
+INFO: See the GlobalNet Report from the Reports option of the Tools menu for information about
+the global assignment.
+
+The Layout command failed ( 00:00:01 )
+
+The Layout command failed ( 00:00:02 )
+Info: Multi-Pass: Layout failed with seed 27521058
+Variable IS_POWER_GUI_SUPPORTED = 1
+Layout incomplete
+Design closed.
+
+Info: The design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb was last
+      modified by software version 11.8.3.6.
+Opened an existing Libero design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '12'
+Design saved to file C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+Warning: Overwriting the existing file: C:/PID
+         Project/PID_Controller/designer/impl1/PSU_Top_Level_layout.log.
+Wrote to the file: C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level_layout.log
+
+The Export command succeeded ( 00:00:01 )
+----- Iteration 13 of 25 -----
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 12
+Variable DEFAULT_PLACE_SEED_VARIABLE_VALUE = 0
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 12
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '13'
+Info: Multi-Pass: Seed:   77808595
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+Error: PLC002: No legal assignment exists for global net PID_33/GLA.
+
+Global Nets Whose Drivers Are Limited to Quadrants or Which Have No Valid Locations:
+
+        |--------------------------------------------|
+        |Global Net          |Valid Driver Locations |
+        |--------------------------------------------|
+        |PID_33/GLA          |(None)
+        |--------------------------------------------|
+        |clk_c               |(None)
+        |--------------------------------------------|
+        |n_rst_c             |(None)
+        |--------------------------------------------|
+
+Info: Consider relaxing the constraints for these nets by removing region constraints,
+      unassigning fixed cells and I/Os, relaxing I/O bank assignments, or using input
+      buffers without hardwired pad connections.
+Error: PLC003: No legal global assignment could be found because of complex region and/or IO
+       technology constraints.
+Error: PLC005: Automatic global net placement failed.
+INFO: See the GlobalNet Report from the Reports option of the Tools menu for information about
+the global assignment.
+
+The Layout command failed ( 00:00:01 )
+
+The Layout command failed ( 00:00:02 )
+Info: Multi-Pass: Layout failed with seed 77808595
+Variable IS_POWER_GUI_SUPPORTED = 1
+Layout incomplete
+Design closed.
+
+Info: The design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb was last
+      modified by software version 11.8.3.6.
+Opened an existing Libero design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '13'
+Design saved to file C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+Warning: Overwriting the existing file: C:/PID
+         Project/PID_Controller/designer/impl1/PSU_Top_Level_layout.log.
+Wrote to the file: C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level_layout.log
+
+The Export command succeeded ( 00:00:02 )
+----- Iteration 14 of 25 -----
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 13
+Variable DEFAULT_PLACE_SEED_VARIABLE_VALUE = 0
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 13
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '14'
+Info: Multi-Pass: Seed:   85318856
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+Error: PLC002: No legal assignment exists for global net PID_33/GLA.
+
+Global Nets Whose Drivers Are Limited to Quadrants or Which Have No Valid Locations:
+
+        |--------------------------------------------|
+        |Global Net          |Valid Driver Locations |
+        |--------------------------------------------|
+        |PID_33/GLA          |(None)
+        |--------------------------------------------|
+        |clk_c               |(None)
+        |--------------------------------------------|
+        |n_rst_c             |(None)
+        |--------------------------------------------|
+
+Info: Consider relaxing the constraints for these nets by removing region constraints,
+      unassigning fixed cells and I/Os, relaxing I/O bank assignments, or using input
+      buffers without hardwired pad connections.
+Error: PLC003: No legal global assignment could be found because of complex region and/or IO
+       technology constraints.
+Error: PLC005: Automatic global net placement failed.
+INFO: See the GlobalNet Report from the Reports option of the Tools menu for information about
+the global assignment.
+
+The Layout command failed ( 00:00:01 )
+
+The Layout command failed ( 00:00:01 )
+Info: Multi-Pass: Layout failed with seed 85318856
+Variable IS_POWER_GUI_SUPPORTED = 1
+Layout incomplete
+Design closed.
+
+Info: The design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb was last
+      modified by software version 11.8.3.6.
+Opened an existing Libero design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '14'
+Design saved to file C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+Warning: Overwriting the existing file: C:/PID
+         Project/PID_Controller/designer/impl1/PSU_Top_Level_layout.log.
+Wrote to the file: C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level_layout.log
+
+The Export command succeeded ( 00:00:01 )
+----- Iteration 15 of 25 -----
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 14
+Variable DEFAULT_PLACE_SEED_VARIABLE_VALUE = 0
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 14
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '15'
+Info: Multi-Pass: Seed:   74257101
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+Error: PLC002: No legal assignment exists for global net PID_33/GLA.
+
+Global Nets Whose Drivers Are Limited to Quadrants or Which Have No Valid Locations:
+
+        |--------------------------------------------|
+        |Global Net          |Valid Driver Locations |
+        |--------------------------------------------|
+        |PID_33/GLA          |(None)
+        |--------------------------------------------|
+        |clk_c               |(None)
+        |--------------------------------------------|
+        |n_rst_c             |(None)
+        |--------------------------------------------|
+
+Info: Consider relaxing the constraints for these nets by removing region constraints,
+      unassigning fixed cells and I/Os, relaxing I/O bank assignments, or using input
+      buffers without hardwired pad connections.
+Error: PLC003: No legal global assignment could be found because of complex region and/or IO
+       technology constraints.
+Error: PLC005: Automatic global net placement failed.
+INFO: See the GlobalNet Report from the Reports option of the Tools menu for information about
+the global assignment.
+
+The Layout command failed ( 00:00:01 )
+
+The Layout command failed ( 00:00:02 )
+Info: Multi-Pass: Layout failed with seed 74257101
+Variable IS_POWER_GUI_SUPPORTED = 1
+Layout incomplete
+Design closed.
+
+Info: The design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb was last
+      modified by software version 11.8.3.6.
+Opened an existing Libero design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '15'
+Design saved to file C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+Warning: Overwriting the existing file: C:/PID
+         Project/PID_Controller/designer/impl1/PSU_Top_Level_layout.log.
+Wrote to the file: C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level_layout.log
+
+The Export command succeeded ( 00:00:02 )
+----- Iteration 16 of 25 -----
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 15
+Variable DEFAULT_PLACE_SEED_VARIABLE_VALUE = 0
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 15
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '16'
+Info: Multi-Pass: Seed:   32878858
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+Error: PLC002: No legal assignment exists for global net PID_33/GLA.
+
+Global Nets Whose Drivers Are Limited to Quadrants or Which Have No Valid Locations:
+
+        |--------------------------------------------|
+        |Global Net          |Valid Driver Locations |
+        |--------------------------------------------|
+        |PID_33/GLA          |(None)
+        |--------------------------------------------|
+        |clk_c               |(None)
+        |--------------------------------------------|
+        |n_rst_c             |(None)
+        |--------------------------------------------|
+
+Info: Consider relaxing the constraints for these nets by removing region constraints,
+      unassigning fixed cells and I/Os, relaxing I/O bank assignments, or using input
+      buffers without hardwired pad connections.
+Error: PLC003: No legal global assignment could be found because of complex region and/or IO
+       technology constraints.
+Error: PLC005: Automatic global net placement failed.
+INFO: See the GlobalNet Report from the Reports option of the Tools menu for information about
+the global assignment.
+
+The Layout command failed ( 00:00:01 )
+
+The Layout command failed ( 00:00:02 )
+Info: Multi-Pass: Layout failed with seed 32878858
+Variable IS_POWER_GUI_SUPPORTED = 1
+Layout incomplete
+Design closed.
+
+Info: The design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb was last
+      modified by software version 11.8.3.6.
+Opened an existing Libero design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '16'
+Design saved to file C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+Warning: Overwriting the existing file: C:/PID
+         Project/PID_Controller/designer/impl1/PSU_Top_Level_layout.log.
+Wrote to the file: C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level_layout.log
+
+The Export command succeeded ( 00:00:02 )
+----- Iteration 17 of 25 -----
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 16
+Variable DEFAULT_PLACE_SEED_VARIABLE_VALUE = 0
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 16
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '17'
+Info: Multi-Pass: Seed:   46508465
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+Error: PLC002: No legal assignment exists for global net PID_33/GLA.
+
+Global Nets Whose Drivers Are Limited to Quadrants or Which Have No Valid Locations:
+
+        |--------------------------------------------|
+        |Global Net          |Valid Driver Locations |
+        |--------------------------------------------|
+        |PID_33/GLA          |(None)
+        |--------------------------------------------|
+        |clk_c               |(None)
+        |--------------------------------------------|
+        |n_rst_c             |(None)
+        |--------------------------------------------|
+
+Info: Consider relaxing the constraints for these nets by removing region constraints,
+      unassigning fixed cells and I/Os, relaxing I/O bank assignments, or using input
+      buffers without hardwired pad connections.
+Error: PLC003: No legal global assignment could be found because of complex region and/or IO
+       technology constraints.
+Error: PLC005: Automatic global net placement failed.
+INFO: See the GlobalNet Report from the Reports option of the Tools menu for information about
+the global assignment.
+
+The Layout command failed ( 00:00:01 )
+
+The Layout command failed ( 00:00:02 )
+Info: Multi-Pass: Layout failed with seed 46508465
+Variable IS_POWER_GUI_SUPPORTED = 1
+Layout incomplete
+Design closed.
+
+Info: The design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb was last
+      modified by software version 11.8.3.6.
+Opened an existing Libero design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '17'
+Design saved to file C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+Warning: Overwriting the existing file: C:/PID
+         Project/PID_Controller/designer/impl1/PSU_Top_Level_layout.log.
+Wrote to the file: C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level_layout.log
+
+The Export command succeeded ( 00:00:02 )
+----- Iteration 18 of 25 -----
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 17
+Variable DEFAULT_PLACE_SEED_VARIABLE_VALUE = 0
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 17
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '18'
+Info: Multi-Pass: Seed:   94448754
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+Error: PLC002: No legal assignment exists for global net PID_33/GLA.
+
+Global Nets Whose Drivers Are Limited to Quadrants or Which Have No Valid Locations:
+
+        |--------------------------------------------|
+        |Global Net          |Valid Driver Locations |
+        |--------------------------------------------|
+        |PID_33/GLA          |(None)
+        |--------------------------------------------|
+        |clk_c               |(None)
+        |--------------------------------------------|
+        |n_rst_c             |(None)
+        |--------------------------------------------|
+
+Info: Consider relaxing the constraints for these nets by removing region constraints,
+      unassigning fixed cells and I/Os, relaxing I/O bank assignments, or using input
+      buffers without hardwired pad connections.
+Error: PLC003: No legal global assignment could be found because of complex region and/or IO
+       technology constraints.
+Error: PLC005: Automatic global net placement failed.
+INFO: See the GlobalNet Report from the Reports option of the Tools menu for information about
+the global assignment.
+
+The Layout command failed ( 00:00:01 )
+
+The Layout command failed ( 00:00:02 )
+Info: Multi-Pass: Layout failed with seed 94448754
+Variable IS_POWER_GUI_SUPPORTED = 1
+Layout incomplete
+Design closed.
+
+Info: The design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb was last
+      modified by software version 11.8.3.6.
+Opened an existing Libero design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '18'
+Design saved to file C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+Warning: Overwriting the existing file: C:/PID
+         Project/PID_Controller/designer/impl1/PSU_Top_Level_layout.log.
+Wrote to the file: C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level_layout.log
+
+The Export command succeeded ( 00:00:02 )
+----- Iteration 19 of 25 -----
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 18
+Variable DEFAULT_PLACE_SEED_VARIABLE_VALUE = 0
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 18
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '19'
+Info: Multi-Pass: Seed:   15741291
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+Error: PLC002: No legal assignment exists for global net PID_33/GLA.
+
+Global Nets Whose Drivers Are Limited to Quadrants or Which Have No Valid Locations:
+
+        |--------------------------------------------|
+        |Global Net          |Valid Driver Locations |
+        |--------------------------------------------|
+        |PID_33/GLA          |(None)
+        |--------------------------------------------|
+        |clk_c               |(None)
+        |--------------------------------------------|
+        |n_rst_c             |(None)
+        |--------------------------------------------|
+
+Info: Consider relaxing the constraints for these nets by removing region constraints,
+      unassigning fixed cells and I/Os, relaxing I/O bank assignments, or using input
+      buffers without hardwired pad connections.
+Error: PLC003: No legal global assignment could be found because of complex region and/or IO
+       technology constraints.
+Error: PLC005: Automatic global net placement failed.
+INFO: See the GlobalNet Report from the Reports option of the Tools menu for information about
+the global assignment.
+
+The Layout command failed ( 00:00:01 )
+
+The Layout command failed ( 00:00:02 )
+Info: Multi-Pass: Layout failed with seed 15741291
+Variable IS_POWER_GUI_SUPPORTED = 1
+Layout incomplete
+Design closed.
+
+Info: The design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb was last
+      modified by software version 11.8.3.6.
+Opened an existing Libero design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '19'
+Design saved to file C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+Warning: Overwriting the existing file: C:/PID
+         Project/PID_Controller/designer/impl1/PSU_Top_Level_layout.log.
+Wrote to the file: C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level_layout.log
+
+The Export command succeeded ( 00:00:02 )
+----- Iteration 20 of 25 -----
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 19
+Variable DEFAULT_PLACE_SEED_VARIABLE_VALUE = 0
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 19
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '20'
+Info: Multi-Pass: Seed:   54522669
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+Error: PLC002: No legal assignment exists for global net PID_33/GLA.
+
+Global Nets Whose Drivers Are Limited to Quadrants or Which Have No Valid Locations:
+
+        |--------------------------------------------|
+        |Global Net          |Valid Driver Locations |
+        |--------------------------------------------|
+        |PID_33/GLA          |(None)
+        |--------------------------------------------|
+        |clk_c               |(None)
+        |--------------------------------------------|
+        |n_rst_c             |(None)
+        |--------------------------------------------|
+
+Info: Consider relaxing the constraints for these nets by removing region constraints,
+      unassigning fixed cells and I/Os, relaxing I/O bank assignments, or using input
+      buffers without hardwired pad connections.
+Error: PLC003: No legal global assignment could be found because of complex region and/or IO
+       technology constraints.
+Error: PLC005: Automatic global net placement failed.
+INFO: See the GlobalNet Report from the Reports option of the Tools menu for information about
+the global assignment.
+
+The Layout command failed ( 00:00:01 )
+
+The Layout command failed ( 00:00:02 )
+Info: Multi-Pass: Layout failed with seed 54522669
+Variable IS_POWER_GUI_SUPPORTED = 1
+Layout incomplete
+Design closed.
+
+Info: The design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb was last
+      modified by software version 11.8.3.6.
+Opened an existing Libero design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '20'
+Design saved to file C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+Warning: Overwriting the existing file: C:/PID
+         Project/PID_Controller/designer/impl1/PSU_Top_Level_layout.log.
+Wrote to the file: C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level_layout.log
+
+The Export command succeeded ( 00:00:01 )
+----- Iteration 21 of 25 -----
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 20
+Variable DEFAULT_PLACE_SEED_VARIABLE_VALUE = 0
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 20
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '21'
+Info: Multi-Pass: Seed:   48978728
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+Error: PLC002: No legal assignment exists for global net PID_33/GLA.
+
+Global Nets Whose Drivers Are Limited to Quadrants or Which Have No Valid Locations:
+
+        |--------------------------------------------|
+        |Global Net          |Valid Driver Locations |
+        |--------------------------------------------|
+        |PID_33/GLA          |(None)
+        |--------------------------------------------|
+        |clk_c               |(None)
+        |--------------------------------------------|
+        |n_rst_c             |(None)
+        |--------------------------------------------|
+
+Info: Consider relaxing the constraints for these nets by removing region constraints,
+      unassigning fixed cells and I/Os, relaxing I/O bank assignments, or using input
+      buffers without hardwired pad connections.
+Error: PLC003: No legal global assignment could be found because of complex region and/or IO
+       technology constraints.
+Error: PLC005: Automatic global net placement failed.
+INFO: See the GlobalNet Report from the Reports option of the Tools menu for information about
+the global assignment.
+
+The Layout command failed ( 00:00:01 )
+
+The Layout command failed ( 00:00:02 )
+Info: Multi-Pass: Layout failed with seed 48978728
+Variable IS_POWER_GUI_SUPPORTED = 1
+Layout incomplete
+Design closed.
+
+Info: The design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb was last
+      modified by software version 11.8.3.6.
+Opened an existing Libero design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '21'
+Design saved to file C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+Warning: Overwriting the existing file: C:/PID
+         Project/PID_Controller/designer/impl1/PSU_Top_Level_layout.log.
+Wrote to the file: C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level_layout.log
+
+The Export command succeeded ( 00:00:01 )
+----- Iteration 22 of 25 -----
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 21
+Variable DEFAULT_PLACE_SEED_VARIABLE_VALUE = 0
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 21
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '22'
+Info: Multi-Pass: Seed:   69702706
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+Error: PLC002: No legal assignment exists for global net PID_33/GLA.
+
+Global Nets Whose Drivers Are Limited to Quadrants or Which Have No Valid Locations:
+
+        |--------------------------------------------|
+        |Global Net          |Valid Driver Locations |
+        |--------------------------------------------|
+        |PID_33/GLA          |(None)
+        |--------------------------------------------|
+        |clk_c               |(None)
+        |--------------------------------------------|
+        |n_rst_c             |(None)
+        |--------------------------------------------|
+
+Info: Consider relaxing the constraints for these nets by removing region constraints,
+      unassigning fixed cells and I/Os, relaxing I/O bank assignments, or using input
+      buffers without hardwired pad connections.
+Error: PLC003: No legal global assignment could be found because of complex region and/or IO
+       technology constraints.
+Error: PLC005: Automatic global net placement failed.
+INFO: See the GlobalNet Report from the Reports option of the Tools menu for information about
+the global assignment.
+
+The Layout command failed ( 00:00:01 )
+
+The Layout command failed ( 00:00:01 )
+Info: Multi-Pass: Layout failed with seed 69702706
+Variable IS_POWER_GUI_SUPPORTED = 1
+Layout incomplete
+Design closed.
+
+Info: The design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb was last
+      modified by software version 11.8.3.6.
+Opened an existing Libero design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '22'
+Design saved to file C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+Warning: Overwriting the existing file: C:/PID
+         Project/PID_Controller/designer/impl1/PSU_Top_Level_layout.log.
+Wrote to the file: C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level_layout.log
+
+The Export command succeeded ( 00:00:01 )
+----- Iteration 23 of 25 -----
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 22
+Variable DEFAULT_PLACE_SEED_VARIABLE_VALUE = 0
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 22
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '23'
+Info: Multi-Pass: Seed:   97870047
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+Error: PLC002: No legal assignment exists for global net PID_33/GLA.
+
+Global Nets Whose Drivers Are Limited to Quadrants or Which Have No Valid Locations:
+
+        |--------------------------------------------|
+        |Global Net          |Valid Driver Locations |
+        |--------------------------------------------|
+        |PID_33/GLA          |(None)
+        |--------------------------------------------|
+        |clk_c               |(None)
+        |--------------------------------------------|
+        |n_rst_c             |(None)
+        |--------------------------------------------|
+
+Info: Consider relaxing the constraints for these nets by removing region constraints,
+      unassigning fixed cells and I/Os, relaxing I/O bank assignments, or using input
+      buffers without hardwired pad connections.
+Error: PLC003: No legal global assignment could be found because of complex region and/or IO
+       technology constraints.
+Error: PLC005: Automatic global net placement failed.
+INFO: See the GlobalNet Report from the Reports option of the Tools menu for information about
+the global assignment.
+
+The Layout command failed ( 00:00:01 )
+
+The Layout command failed ( 00:00:02 )
+Info: Multi-Pass: Layout failed with seed 97870047
+Variable IS_POWER_GUI_SUPPORTED = 1
+Layout incomplete
+Design closed.
+
+Info: The design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb was last
+      modified by software version 11.8.3.6.
+Opened an existing Libero design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '23'
+Design saved to file C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+Warning: Overwriting the existing file: C:/PID
+         Project/PID_Controller/designer/impl1/PSU_Top_Level_layout.log.
+Wrote to the file: C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level_layout.log
+
+The Export command succeeded ( 00:00:02 )
+----- Iteration 24 of 25 -----
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 23
+Variable DEFAULT_PLACE_SEED_VARIABLE_VALUE = 0
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 23
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '24'
+Info: Multi-Pass: Seed:   62801420
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+Error: PLC002: No legal assignment exists for global net PID_33/GLA.
+
+Global Nets Whose Drivers Are Limited to Quadrants or Which Have No Valid Locations:
+
+        |--------------------------------------------|
+        |Global Net          |Valid Driver Locations |
+        |--------------------------------------------|
+        |PID_33/GLA          |(None)
+        |--------------------------------------------|
+        |clk_c               |(None)
+        |--------------------------------------------|
+        |n_rst_c             |(None)
+        |--------------------------------------------|
+
+Info: Consider relaxing the constraints for these nets by removing region constraints,
+      unassigning fixed cells and I/Os, relaxing I/O bank assignments, or using input
+      buffers without hardwired pad connections.
+Error: PLC003: No legal global assignment could be found because of complex region and/or IO
+       technology constraints.
+Error: PLC005: Automatic global net placement failed.
+INFO: See the GlobalNet Report from the Reports option of the Tools menu for information about
+the global assignment.
+
+The Layout command failed ( 00:00:01 )
+
+The Layout command failed ( 00:00:01 )
+Info: Multi-Pass: Layout failed with seed 62801420
+Variable IS_POWER_GUI_SUPPORTED = 1
+Layout incomplete
+Design closed.
+
+Info: The design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb was last
+      modified by software version 11.8.3.6.
+Opened an existing Libero design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '24'
+Design saved to file C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+Warning: Overwriting the existing file: C:/PID
+         Project/PID_Controller/designer/impl1/PSU_Top_Level_layout.log.
+Wrote to the file: C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level_layout.log
+
+The Export command succeeded ( 00:00:02 )
+----- Iteration 25 of 25 -----
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 24
+Variable DEFAULT_PLACE_SEED_VARIABLE_VALUE = 0
+Variable MULTIPASS_LAYOUT_SEED_INDEX = 24
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '25'
+Info: Multi-Pass: Seed:   53746736
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+Error: PLC002: No legal assignment exists for global net PID_33/GLA.
+
+Global Nets Whose Drivers Are Limited to Quadrants or Which Have No Valid Locations:
+
+        |--------------------------------------------|
+        |Global Net          |Valid Driver Locations |
+        |--------------------------------------------|
+        |PID_33/GLA          |(None)
+        |--------------------------------------------|
+        |clk_c               |(None)
+        |--------------------------------------------|
+        |n_rst_c             |(None)
+        |--------------------------------------------|
+
+Info: Consider relaxing the constraints for these nets by removing region constraints,
+      unassigning fixed cells and I/Os, relaxing I/O bank assignments, or using input
+      buffers without hardwired pad connections.
+Error: PLC003: No legal global assignment could be found because of complex region and/or IO
+       technology constraints.
+Error: PLC005: Automatic global net placement failed.
+INFO: See the GlobalNet Report from the Reports option of the Tools menu for information about
+the global assignment.
+
+The Layout command failed ( 00:00:01 )
+
+The Layout command failed ( 00:00:02 )
+Info: Multi-Pass: Layout failed with seed 53746736
+Variable IS_POWER_GUI_SUPPORTED = 1
+Layout incomplete
+Design closed.
+
+Info: The design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb was last
+      modified by software version 11.8.3.6.
+Opened an existing Libero design C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+'MULTIPASS_LAYOUT_SEED_INDEX' set to '25'
+Design saved to file C:\PID Project\PID_Controller\designer\impl1\PSU_Top_Level.adb.
+Warning: Overwriting the existing file: C:/PID
+         Project/PID_Controller/designer/impl1/PSU_Top_Level_layout.log.

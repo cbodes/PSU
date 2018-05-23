@@ -1,0 +1,82 @@
+(DELAYFILE
+(SDFVERSION "OVI 2.1")
+(DESIGN "spi_clk")
+(DATE "123")
+(VENDOR "ProASIC3E")
+(PROGRAM "Synplify")
+(VERSION "mapact, Build 1920R")
+(DIVIDER /)
+(VOLTAGE 2.500000:2.500000:2.500000)
+(PROCESS "TYPICAL")
+(TEMPERATURE 70.000000:70.000000:70.000000)
+(TIMESCALE 1ns)
+(CELL
+  (CELLTYPE "spi_clk")
+  (INSTANCE)
+  (TIMINGCHECK
+
+    (PATHCONSTRAINT counter\[2\]/CLK  counter\[2\]/Q  counter_RNILVI6\[2\]/A  counter_RNILVI6\[2\]/Y  counter_RNIE36D\[5\]/B  counter_RNIE36D\[5\]/Y  cur_clk_RNO\[0\]/B  cur_clk_RNO\[0\]/Y  cur_clk\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT counter\[2\]/CLK  counter\[2\]/Q  counter_RNILVI6\[2\]/A  counter_RNILVI6\[2\]/Y  counter_RNIE36D\[5\]/B  counter_RNIE36D\[5\]/Y  counter_RNO\[5\]/A  counter_RNO\[5\]/Y  counter\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT counter\[2\]/CLK  counter\[2\]/Q  counter_RNILVI6\[2\]/A  counter_RNILVI6\[2\]/Y  counter_RNIE36D\[5\]/B  counter_RNIE36D\[5\]/Y  counter_RNO\[3\]/A  counter_RNO\[3\]/Y  counter\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT counter\[3\]/CLK  counter\[3\]/Q  counter_RNILVI6\[2\]/B  counter_RNILVI6\[2\]/Y  counter_RNIE36D\[5\]/B  counter_RNIE36D\[5\]/Y  cur_clk_RNO\[0\]/B  cur_clk_RNO\[0\]/Y  cur_clk\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT counter\[0\]/CLK  counter\[0\]/Q  un3_counter_I_10/A  un3_counter_I_10/Y  un3_counter_I_13/A  un3_counter_I_13/Y  un3_counter_I_14/A  un3_counter_I_14/Y  counter_RNO\[5\]/C  counter_RNO\[5\]/Y  counter\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT counter\[1\]/CLK  counter\[1\]/Q  un3_counter_I_10/B  un3_counter_I_10/Y  un3_counter_I_13/A  un3_counter_I_13/Y  un3_counter_I_14/A  un3_counter_I_14/Y  counter_RNO\[5\]/C  counter_RNO\[5\]/Y  counter\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT counter\[2\]/CLK  counter\[2\]/Q  un3_counter_I_10/C  un3_counter_I_10/Y  un3_counter_I_13/A  un3_counter_I_13/Y  un3_counter_I_14/A  un3_counter_I_14/Y  counter_RNO\[5\]/C  counter_RNO\[5\]/Y  counter\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT counter\[0\]/CLK  counter\[0\]/Q  counter_RNIHRI6\[1\]/B  counter_RNIHRI6\[1\]/Y  cur_clk_RNO\[0\]/A  cur_clk_RNO\[0\]/Y  cur_clk\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT counter\[0\]/CLK  counter\[0\]/Q  un3_counter_I_10/A  un3_counter_I_10/Y  un3_counter_I_11/B  un3_counter_I_11/Y  un3_counter_I_12/A  un3_counter_I_12/Y  counter\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT counter\[0\]/CLK  counter\[0\]/Q  counter_RNIHRI6\[1\]/B  counter_RNIHRI6\[1\]/Y  counter_RNO\[5\]/B  counter_RNO\[5\]/Y  counter\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT counter\[0\]/CLK  counter\[0\]/Q  counter_RNIHRI6\[1\]/B  counter_RNIHRI6\[1\]/Y  counter_RNO\[3\]/B  counter_RNO\[3\]/Y  counter\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT counter\[1\]/CLK  counter\[1\]/Q  counter_RNIHRI6\[1\]/A  counter_RNIHRI6\[1\]/Y  cur_clk_RNO\[0\]/A  cur_clk_RNO\[0\]/Y  cur_clk\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT counter\[0\]/CLK  counter\[0\]/Q  un3_counter_I_8/A  un3_counter_I_8/Y  un3_counter_I_9/A  un3_counter_I_9/Y  counter_RNO\[3\]/C  counter_RNO\[3\]/Y  counter\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT counter\[1\]/CLK  counter\[1\]/Q  un3_counter_I_8/B  un3_counter_I_8/Y  un3_counter_I_9/A  un3_counter_I_9/Y  counter_RNO\[3\]/C  counter_RNO\[3\]/Y  counter\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT counter\[2\]/CLK  counter\[2\]/Q  un3_counter_I_8/C  un3_counter_I_8/Y  un3_counter_I_9/A  un3_counter_I_9/Y  counter_RNO\[3\]/C  counter_RNO\[3\]/Y  counter\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT counter\[3\]/CLK  counter\[3\]/Q  un3_counter_I_13/B  un3_counter_I_13/Y  un3_counter_I_14/A  un3_counter_I_14/Y  counter_RNO\[5\]/C  counter_RNO\[5\]/Y  counter\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT counter\[4\]/CLK  counter\[4\]/Q  counter_RNIE36D\[5\]/C  counter_RNIE36D\[5\]/Y  cur_clk_RNO\[0\]/B  cur_clk_RNO\[0\]/Y  cur_clk\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT counter\[4\]/CLK  counter\[4\]/Q  un3_counter_I_13/C  un3_counter_I_13/Y  un3_counter_I_14/A  un3_counter_I_14/Y  counter_RNO\[5\]/C  counter_RNO\[5\]/Y  counter\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT counter\[0\]/CLK  counter\[0\]/Q  un3_counter_I_6/B  un3_counter_I_6/Y  un3_counter_I_7/A  un3_counter_I_7/Y  counter\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT counter\[3\]/CLK  counter\[3\]/Q  un3_counter_I_9/B  un3_counter_I_9/Y  counter_RNO\[3\]/C  counter_RNO\[3\]/Y  counter\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT counter\[5\]/CLK  counter\[5\]/Q  counter_RNIE36D\[5\]/A  counter_RNIE36D\[5\]/Y  cur_clk_RNO\[0\]/B  cur_clk_RNO\[0\]/Y  cur_clk\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT counter\[1\]/CLK  counter\[1\]/Q  un3_counter_I_6/A  un3_counter_I_6/Y  un3_counter_I_7/A  un3_counter_I_7/Y  counter\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT counter\[3\]/CLK  counter\[3\]/Q  un3_counter_I_11/A  un3_counter_I_11/Y  un3_counter_I_12/A  un3_counter_I_12/Y  counter\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT counter\[1\]/CLK  counter\[1\]/Q  un3_counter_I_5/B  un3_counter_I_5/Y  counter\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT counter\[2\]/CLK  counter\[2\]/Q  un3_counter_I_7/B  un3_counter_I_7/Y  counter\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT counter\[5\]/CLK  counter\[5\]/Q  un3_counter_I_14/B  un3_counter_I_14/Y  counter_RNO\[5\]/C  counter_RNO\[5\]/Y  counter\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT counter\[0\]/CLK  counter\[0\]/Q  un3_counter_I_4/A  un3_counter_I_4/Y  counter\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT counter\[0\]/CLK  counter\[0\]/Q  un3_counter_I_5/A  un3_counter_I_5/Y  counter\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT counter\[4\]/CLK  counter\[4\]/Q  un3_counter_I_12/B  un3_counter_I_12/Y  counter\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT cur_clk\[0\]/CLK  cur_clk\[0\]/Q  cur_clk_RNO\[0\]/C  cur_clk_RNO\[0\]/Y  cur_clk\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT cur_clk\[0\]/CLK  cur_clk\[0\]/Q  clk_out_pad/D  clk_out_pad/PAD  	(10.0:10.0:10.0) )
+
+  )
+)
+)

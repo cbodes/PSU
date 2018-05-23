@@ -1,0 +1,70 @@
+Target Part: A3PE1500_PQFP208_STD
+Report for cell PID_ControllerSD.verilog
+  Core Cell usage:
+              cell count     area count*area
+              AND2     3      1.0        3.0
+              AND3    20      1.0       20.0
+               AO1    49      1.0       49.0
+              AO13     7      1.0        7.0
+              AO1A     2      1.0        2.0
+              AO1B     1      1.0        1.0
+              AOI1     3      1.0        3.0
+             AOI1B     2      1.0        2.0
+              AOI5     1      1.0        1.0
+               AX1     3      1.0        3.0
+              AX1B     5      1.0        5.0
+              AX1C    11      1.0       11.0
+              AX1D    30      1.0       30.0
+              AX1E     1      1.0        1.0
+            CLKINT     1      0.0        0.0
+               GND    11      0.0        0.0
+               INV     4      1.0        4.0
+              MAJ3    17      1.0       17.0
+              MIN3     2      1.0        2.0
+               MX2     1      1.0        1.0
+              MX2B     1      1.0        1.0
+              NOR2    27      1.0       27.0
+             NOR2A    17      1.0       17.0
+             NOR2B   170      1.0      170.0
+              NOR3     4      1.0        4.0
+             NOR3A    11      1.0       11.0
+             NOR3B    15      1.0       15.0
+             NOR3C    51      1.0       51.0
+               OA1    11      1.0       11.0
+              OA1B     2      1.0        2.0
+               OR2    33      1.0       33.0
+              OR2A     3      1.0        3.0
+              OR2B     2      1.0        2.0
+               OR3     2      1.0        2.0
+              OR3C     1      1.0        1.0
+               VCC    11      0.0        0.0
+               XA1     7      1.0        7.0
+              XA1C     2      1.0        2.0
+             XNOR2     9      1.0        9.0
+             XNOR3     4      1.0        4.0
+               XO1     7      1.0        7.0
+              XOR2    57      1.0       57.0
+              XOR3    20      1.0       20.0
+
+
+            DFN1C0    51      1.0       51.0
+          DFN1E0C0    71      1.0       71.0
+          DFN1E1C0    27      1.0       27.0
+                   -----          ----------
+             TOTAL   790               767.0
+
+
+  IO Cell usage:
+              cell count
+            CLKBUF     2
+            OUTBUF    12
+                   -----
+             TOTAL    14
+
+
+Core Cells         : 767 of 38400 (2%)
+IO Cells           : 14
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 60 (0%)
+

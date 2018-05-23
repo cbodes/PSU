@@ -1,0 +1,135 @@
+# Fri May 04 15:44:33 2018
+
+Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 1920R, Built Nov 17 2016 09:40:34
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09M-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\PID Project\PID_Controller\synthesis\PSU_Top_Level_scck.rpt 
+Printing clock  summary report in "C:\PID Project\PID_Controller\synthesis\PSU_Top_Level_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 106MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 106MB)
+
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":32:18:32:21|Tristate driver cs_5 (in view: work.PSU_Top_Level(verilog)) on net cs_5 (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":26:19:26:23|Tristate driver cs_12 (in view: work.PSU_Top_Level(verilog)) on net cs_12 (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":34:19:34:23|Tristate driver cs_15 (in view: work.PSU_Top_Level(verilog)) on net cs_15 (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":30:19:30:23|Tristate driver cs_fb (in view: work.PSU_Top_Level(verilog)) on net cs_fb (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":32:24:32:32|Tristate driver primary_5 (in view: work.PSU_Top_Level(verilog)) on net primary_5 (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":26:26:26:35|Tristate driver primary_12 (in view: work.PSU_Top_Level(verilog)) on net primary_12 (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":34:26:34:35|Tristate driver primary_15 (in view: work.PSU_Top_Level(verilog)) on net primary_15 (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":30:26:30:35|Tristate driver primary_fb (in view: work.PSU_Top_Level(verilog)) on net primary_fb (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":32:11:32:15|Tristate driver sck_5 (in view: work.PSU_Top_Level(verilog)) on net sck_5 (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":26:11:26:16|Tristate driver sck_12 (in view: work.PSU_Top_Level(verilog)) on net sck_12 (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+@N: BN362 :"c:\pid project\pid_controller\hdl\pid_sum.v":48:0:48:5|Removing sequential instance d_adj[12:0] (in view: work.pid_sum_13s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+
+
+
+Clock Summary
+*****************
+
+Start                                 Requested     Requested     Clock        Clock                   Clock
+Clock                                 Frequency     Period        Type         Group                   Load 
+------------------------------------------------------------------------------------------------------------
+PSU_Top_Level|clk                     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     1656 
+spi_clk_20|cur_clk_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1     44   
+============================================================================================================
+
+@W: MT530 :"c:\pid project\pid_controller\hdl\psu_controller.v":35:0:35:5|Found inferred clock PSU_Top_Level|clk which controls 1656 sequential elements including PSU_CTL.state[2:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\pid project\pid_controller\hdl\spi_stp.v":32:0:32:5|Found inferred clock spi_clk_20|cur_clk_inferred_clock which controls 44 sequential elements including PID_33.SPI.VD_STP.sr[11:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\PID Project\PID_Controller\synthesis\PSU_Top_Level.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
+
+Encoding state machine state[2:0] (in view: work.PSU_controller(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine state[13:0] (in view: work.controller_Z1(verilog))
+original code -> new code
+   000000 -> 00000000000001
+   000001 -> 00000000000010
+   000010 -> 00000000000100
+   000011 -> 00000000001000
+   000100 -> 00000000010000
+   000101 -> 00000000100000
+   000110 -> 00000001000000
+   000111 -> 00000010000000
+   001000 -> 00000100000000
+   001001 -> 00001000000000
+   001010 -> 00010000000000
+   001011 -> 00100000000000
+   001110 -> 01000000000000
+   001111 -> 10000000000000
+Encoding state machine state[2:0] (in view: work.integral_calc_13s_2(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine state[2:0] (in view: work.integral_calc_13s_1(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine state[2:0] (in view: work.integral_calc_13s_0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine state[6:0] (in view: work.pid_sum_13s(verilog))
+original code -> new code
+   000 -> 0000001
+   001 -> 0000010
+   010 -> 0000100
+   011 -> 0001000
+   100 -> 0010000
+   101 -> 0100000
+   110 -> 1000000
+Encoding state machine state[1:0] (in view: work.spi_ctl_12s(verilog))
+original code -> new code
+   00 -> 0
+   01 -> 1
+@N: MO225 :"c:\pid project\pid_controller\hdl\spi_ctl.v":39:0:39:5|There are no possible illegal states for state machine state[1:0] (in view: work.spi_ctl_12s(verilog)); safe FSM implementation is not required.
+Encoding state machine state[4:0] (in view: work.pwm_ctl_Z2(verilog))
+original code -> new code
+   000 -> 00001
+   001 -> 00010
+   010 -> 00100
+   011 -> 01000
+   100 -> 10000
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[0] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[1] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[2] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[3] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[4] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[5] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[6] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[7] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[8] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[9] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[10] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[11] (in view: work.derivative_calc_13s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 29MB peak: 117MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri May 04 15:44:33 2018
+
+###########################################################]

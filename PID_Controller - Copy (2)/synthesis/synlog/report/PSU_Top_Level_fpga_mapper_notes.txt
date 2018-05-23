@@ -1,0 +1,97 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":34:38:34:49|Tristate driver secondary_15 (in view: work.PSU_Top_Level(verilog)) on net secondary_15 (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":34:26:34:35|Tristate driver primary_15 (in view: work.PSU_Top_Level(verilog)) on net primary_15 (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":34:19:34:23|Tristate driver cs_15 (in view: work.PSU_Top_Level(verilog)) on net cs_15 (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":34:11:34:16|Tristate driver sck_15 (in view: work.PSU_Top_Level(verilog)) on net sck_15 (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":32:35:32:45|Tristate driver secondary_5 (in view: work.PSU_Top_Level(verilog)) on net secondary_5 (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":32:24:32:32|Tristate driver primary_5 (in view: work.PSU_Top_Level(verilog)) on net primary_5 (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":32:18:32:21|Tristate driver cs_5 (in view: work.PSU_Top_Level(verilog)) on net cs_5 (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":32:11:32:15|Tristate driver sck_5 (in view: work.PSU_Top_Level(verilog)) on net sck_5 (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":30:38:30:49|Tristate driver secondary_fb (in view: work.PSU_Top_Level(verilog)) on net secondary_fb (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":30:26:30:35|Tristate driver primary_fb (in view: work.PSU_Top_Level(verilog)) on net primary_fb (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+@N: MO231 :"c:\pid project\pid_controller\hdl\psu_controller.v":35:0:35:5|Found counter in view:work.PSU_controller(verilog) instance cnt[8:0] 
+@N: MO231 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Found counter in view:work.controller_Z1(verilog) instance count[15:0] 
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[15] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[14] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[13] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[12] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[11] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[10] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[9] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[8] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[7] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[6] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[5] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[4] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[3] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[2] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[1] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[0] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: MF184 :"c:\pid project\pid_controller\hdl\error_calc.v":40:19:40:36|Found 13 by 13 bit subtractor, 'un2_diffreg_0_0[12:0]'
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF238 :"c:\pid project\pid_controller\hdl\integral_calc.v":34:0:34:5|Found 13-bit incrementor, 'inf_abs1_a_1[12:0]'
+@N: MF238 :"c:\pid project\pid_controller\hdl\integral_calc.v":34:0:34:5|Found 13-bit incrementor, 'inf_abs0_a_0[12:0]'
+@N: MF238 :"c:\pid project\pid_controller\hdl\integral_calc.v":34:0:34:5|Found 13-bit incrementor, 'inf_abs1_a_1[12:0]'
+@N: MF238 :"c:\pid project\pid_controller\hdl\integral_calc.v":34:0:34:5|Found 13-bit incrementor, 'inf_abs0_a_0[12:0]'
+@N: MF184 :"c:\pid project\pid_controller\hdl\derivative_calc.v":33:21:33:43|Found 13 by 13 bit subtractor, 'un2_deriv_out_0_0[12:0]'
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[0] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[1] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[2] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[3] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[4] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[5] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[6] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[7] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[8] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[9] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[10] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[11] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: MF176 |Default generator successful 
+@N: MF238 :"c:\pid project\pid_controller\hdl\pid_sum.v":48:0:48:5|Found 13-bit incrementor, 'inf_abs1_a_2[12:0]'
+@N: MF238 :"c:\pid project\pid_controller\hdl\pid_sum.v":48:0:48:5|Found 26-bit incrementor, 'inf_abs2_a_0[25:0]'
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MO231 :"c:\pid project\pid_controller\hdl\spi_ctl.v":39:0:39:5|Found counter in view:work.spi_ctl_12s(verilog) instance cnt[15:0] 
+@N: MO225 :"c:\pid project\pid_controller\hdl\spi_ctl.v":39:0:39:5|There are no possible illegal states for state machine state[1:0] (in view: work.spi_ctl_12s(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\pid project\pid_controller\hdl\pwm_ctl.v":51:0:51:5|There are no possible illegal states for state machine state[3:0] (in view: work.pwm_ctl_469_32s_13s_228538_732_0_1_2_3_4(verilog)); safe FSM implementation is not required.
+@N: MF176 |Default generator successful 
+@N: MF238 :"c:\pid project\pid_controller\hdl\pwm_ctl.v":103:28:103:37|Found 24-bit incrementor, 'un1_nsum_adj[23:0]'
+@N: MO231 :"c:\pid project\pid_controller\hdl\pwm_tx.v":50:0:50:5|Found counter in view:work.pwm_tx_469_32s_13s_10_228538_469(verilog) instance counter[31:0] 
+@N: MF179 :"c:\pid project\pid_controller\hdl\pwm_tx.v":57:33:57:52|Found 32 by 32 bit less-than operator ('<') un1_counter_2 (in view: work.pwm_tx_469_32s_13s_10_228538_469(verilog))
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":186:0:186:5|Found up-down counter in view:work.constant_gen(verilog) instance k_pfb[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":186:0:186:5|Found up-down counter in view:work.constant_gen(verilog) instance k_ifb[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":153:0:153:5|Found up-down counter in view:work.constant_gen(verilog) instance k_p12[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":153:0:153:5|Found up-down counter in view:work.constant_gen(verilog) instance k_i12[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":120:0:120:5|Found up-down counter in view:work.constant_gen(verilog) instance k_p15[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":120:0:120:5|Found up-down counter in view:work.constant_gen(verilog) instance k_i15[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":87:0:87:5|Found up-down counter in view:work.constant_gen(verilog) instance k_p33[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":87:0:87:5|Found up-down counter in view:work.constant_gen(verilog) instance k_i33[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":54:0:54:5|Found up-down counter in view:work.constant_gen(verilog) instance k_p5[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":54:0:54:5|Found up-down counter in view:work.constant_gen(verilog) instance k_i5[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":186:0:186:5|Found up-down counter in view:work.constant_gen(verilog) instance target_vfb[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":153:0:153:5|Found up-down counter in view:work.constant_gen(verilog) instance target_v12[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":120:0:120:5|Found up-down counter in view:work.constant_gen(verilog) instance target_v15[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":87:0:87:5|Found up-down counter in view:work.constant_gen(verilog) instance target_v33[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":54:0:54:5|Found up-down counter in view:work.constant_gen(verilog) instance target_v5[12:0]  
+@N: BN362 :"c:\pid project\pid_controller\hdl\constant_gen.v":186:0:186:5|Removing sequential instance k_pfb[12] (in view: work.constant_gen(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\constant_gen.v":153:0:153:5|Removing sequential instance k_i12[12] (in view: work.constant_gen(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\constant_gen.v":153:0:153:5|Removing sequential instance k_p12[12] (in view: work.constant_gen(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\constant_gen.v":186:0:186:5|Removing sequential instance k_ifb[12] (in view: work.constant_gen(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\constant_gen.v":120:0:120:5|Removing sequential instance k_i15[12] (in view: work.constant_gen(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\constant_gen.v":120:0:120:5|Removing sequential instance k_p15[12] (in view: work.constant_gen(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\constant_gen.v":54:0:54:5|Removing sequential instance k_i5[12] (in view: work.constant_gen(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\constant_gen.v":54:0:54:5|Removing sequential instance k_p5[12] (in view: work.constant_gen(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\constant_gen.v":120:0:120:5|Removing sequential instance target_v15[12] (in view: work.constant_gen(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\constant_gen.v":153:0:153:5|Removing sequential instance target_v12[12] (in view: work.constant_gen(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\constant_gen.v":186:0:186:5|Removing sequential instance target_vfb[12] (in view: work.constant_gen(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\constant_gen.v":54:0:54:5|Removing sequential instance target_v5[12] (in view: work.constant_gen(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\sig_gen.v":28:0:28:5|Removing sequential instance PID_33.FM_CYCLE.sig_old (in view: work.PSU_Top_Level(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\sig_gen.v":28:0:28:5|Removing sequential instance PID_33.FM_CYCLE.sig_prev (in view: work.PSU_Top_Level(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: FP130 |Promoting Net n_rst_c on CLKBUF  n_rst_pad 
+@N: FP130 |Promoting Net clk_c on CLKBUF  clk_pad 
+@N: FP130 |Promoting Net PID_33.int_enable on CLKINT  I_500 
+@N: FP130 |Promoting Net PID_33.SUM.state[2] on CLKINT  I_501 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

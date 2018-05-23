@@ -1,0 +1,12 @@
+@P:  Worst Slack : -2.696
+@P:  spi_rx|clk - Estimated Frequency : 65.0 MHz
+@P:  spi_rx|clk - Requested Frequency : 100.0 MHz
+@P:  spi_rx|clk - Estimated Period : 15.391
+@P:  spi_rx|clk - Requested Period : 10.000
+@P:  spi_rx|clk - Slack : -2.696
+@P:  Total Area : 86.0
+@P:  Total Area : 8.0
+@P:  Total Area : 3.0
+@P:  Total Area : 74.0
+@P:  Total Area : 86.0
+@P:  CPU Time : 0h:00m:00s

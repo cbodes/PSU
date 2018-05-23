@@ -1,0 +1,97 @@
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\PID Project\\PID_Controller\\synthesis\\synwork\\PSU_Top_Level_comp.srs|-top|PSU_Top_Level|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|C:\\PID Project\\PID_Controller\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib|-sysv|-devicelib|C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\proasic\\proasic3e.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\bin64\\c_ver.exe":1480000224
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\proasic\\proasic3e.v":1487963250
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\hypermods.v":1487963386
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\umr_capim.v":1487963386
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\scemi_objects.v":1487963386
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\scemi_pipes.svh":1487963386
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\PID_controller.v":1525313517
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\sig_gen.v":1520132301
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\derivative_calc.v":1520134634
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\error_calc.v":1523052168
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\error_sr.v":1520119775
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\integral_calc.v":1521335498
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\pid_sum.v":1523239037
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\PSU_controller.v":1525190053
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\PSU_Top_Level.v":1525384148
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\pwm_ctl.v":1525312041
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\pwm_tx.v":1525214351
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\spi_clk.v":1520204935
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\spi_ctl.v":1525031884
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\spi_rx.v":1524789965
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\spi_stp.v":1522886649
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\controller.v":1523056678
+#CUR:"C:\\PID Project\\PID_Controller\\hdl\\constant_gen.v":1525235228
+#numinternalfiles:5
+#defaultlanguage:verilog
+0			"C:\PID Project\PID_Controller\hdl\PID_controller.v" verilog
+1			"C:\PID Project\PID_Controller\hdl\sig_gen.v" verilog
+2			"C:\PID Project\PID_Controller\hdl\derivative_calc.v" verilog
+3			"C:\PID Project\PID_Controller\hdl\error_calc.v" verilog
+4			"C:\PID Project\PID_Controller\hdl\error_sr.v" verilog
+5			"C:\PID Project\PID_Controller\hdl\integral_calc.v" verilog
+6			"C:\PID Project\PID_Controller\hdl\pid_sum.v" verilog
+7			"C:\PID Project\PID_Controller\hdl\PSU_controller.v" verilog
+8			"C:\PID Project\PID_Controller\hdl\PSU_Top_Level.v" verilog
+9			"C:\PID Project\PID_Controller\hdl\pwm_ctl.v" verilog
+10			"C:\PID Project\PID_Controller\hdl\pwm_tx.v" verilog
+11			"C:\PID Project\PID_Controller\hdl\spi_clk.v" verilog
+12			"C:\PID Project\PID_Controller\hdl\spi_ctl.v" verilog
+13			"C:\PID Project\PID_Controller\hdl\spi_rx.v" verilog
+14			"C:\PID Project\PID_Controller\hdl\spi_stp.v" verilog
+15			"C:\PID Project\PID_Controller\hdl\controller.v" verilog
+16			"C:\PID Project\PID_Controller\hdl\constant_gen.v" verilog
+#Dependency Lists(Uses List)
+0 15 3 5 4 2 6 11 13 9 10 1
+1 -1
+2 -1
+3 -1
+4 -1
+5 -1
+6 -1
+7 -1
+8 7 0 1 16
+9 -1
+10 -1
+11 -1
+12 -1
+13 14 12 1
+14 -1
+15 -1
+16 -1
+#Dependency Lists(Users Of)
+0 8
+1 0 8 13
+2 0
+3 0
+4 0
+5 0
+6 0
+7 8
+8 -1
+9 0
+10 0
+11 0
+12 13
+13 0
+14 13
+15 0
+16 8
+#Design Unit to File Association
+module work controller 15
+module work error_calc 3
+module work integral_calc 5
+module work error_sr 4
+module work derivative_calc 2
+module work pid_sum 6
+module work spi_clk 11
+module work spi_rx 13
+module work pwm_ctl 9
+module work pwm_tx 10
+module work sig_gen 1
+module work PID_controller 0
+module work PSU_controller 7
+module work constant_gen 16
+module work PSU_Top_Level 8
+module work spi_ctl 12
+module work spi_stp 14

@@ -1,0 +1,2 @@
+@E: CG150 :"C:\PID Project\SPI_recieveer\hdl\spi_stp.v":38:14:38:18|Can't mix blocking and non-blocking assignments. Bit 7 of sr
+

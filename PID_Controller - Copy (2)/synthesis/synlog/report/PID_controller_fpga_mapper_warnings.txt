@@ -1,0 +1,25 @@
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_0_[12] (in view view:work.PID_controller(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_1_[12] (in view view:work.PID_controller(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_2_[12] (in view view:work.PID_controller(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_3_[12] (in view view:work.PID_controller(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Register bit count[15] (in view view:work.controller_Z1(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Register bit count[14] (in view view:work.controller_Z1(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Register bit count[13] (in view view:work.controller_Z1(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Register bit count[12] (in view view:work.controller_Z1(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Register bit count[11] (in view view:work.controller_Z1(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Register bit count[10] (in view view:work.controller_Z1(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Register bit count[9] (in view view:work.controller_Z1(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Register bit count[8] (in view view:work.controller_Z1(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Register bit count[7] (in view view:work.controller_Z1(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Register bit count[6] (in view view:work.controller_Z1(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Register bit count[5] (in view view:work.controller_Z1(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Register bit count[4] (in view view:work.controller_Z1(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Register bit count[3] (in view view:work.controller_Z1(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Register bit count[2] (in view view:work.controller_Z1(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Register bit count[1] (in view view:work.controller_Z1(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Register bit count[0] (in view view:work.controller_Z1(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO197 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing FSM register state[11] (in view view:work.controller_Z1(verilog)) because its output is a constant.
+@W: MO160 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Register bit state[12] (in view view:work.controller_Z1(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO197 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing FSM register state[13] (in view view:work.controller_Z1(verilog)) because its output is a constant.
+@W: MT420 |Found inferred clock PID_controller|clk with period 10.00ns. Please declare a user-defined clock on object "p:clk"
+@W: MT420 |Found inferred clock spi_clk_11s|cur_clk_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:SPICLK.cur_clk"

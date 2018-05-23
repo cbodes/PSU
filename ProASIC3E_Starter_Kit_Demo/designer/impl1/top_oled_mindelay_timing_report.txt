@@ -1,0 +1,1864 @@
+Timing Report Min Delay Analysis
+
+SmartTime Version v11.8 SP3
+Microsemi Corporation - Microsemi Libero Software Release v11.8 SP3 (Version 11.8.3.6)
+Date: Thu Mar 01 00:00:15 2018
+
+
+Design: top_oled
+Family: ProASIC3E
+Die: A3PE1500
+Package: 208 PQFP
+Temperature Range: 0 - 70 C
+Voltage Range: 1.425 - 1.575 V
+Speed Grade: STD
+Design State: Post-Layout
+Data source: Silicon verified
+Min Operating Conditions: BEST - 1.575 V - 0 C
+Max Operating Conditions: WORST - 1.425 V - 70 C
+Using Enhanced Min Delay Analysis
+Scenario for Timing Analysis: Primary
+
+
+-----------------------------------------------------
+SUMMARY
+
+Clock Domain:               CLK
+Period (ns):                4.000
+Frequency (MHz):            250.000
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      3.034
+Max Clock-To-Out (ns):      9.537
+
+Clock Domain:               top_oled|SW4
+Period (ns):                4.000
+Frequency (MHz):            250.000
+Required Period (ns):       25.000
+Required Frequency (MHz):   40.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      3.750
+Max Clock-To-Out (ns):      13.465
+
+Clock Domain:               top_oled|SW6
+Period (ns):                4.000
+Frequency (MHz):            250.000
+Required Period (ns):       25.000
+Required Frequency (MHz):   40.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      5.071
+Max Clock-To-Out (ns):      16.949
+
+Clock Domain:               inst_PLL/Core:GLA
+Period (ns):                12.447
+Frequency (MHz):            80.341
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      2.793
+Max Clock-To-Out (ns):      10.557
+
+Clock Domain:               int_count[18]:Q
+Period (ns):                14.575
+Frequency (MHz):            68.611
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+External Setup (ns):        14.936
+External Hold (ns):         -0.096
+Min Clock-To-Out (ns):      3.585
+Max Clock-To-Out (ns):      15.093
+
+Clock Domain:               int_count[1]:Q
+Period (ns):                26.585
+Frequency (MHz):            37.615
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+External Setup (ns):        8.234
+External Hold (ns):         -0.939
+Min Clock-To-Out (ns):      3.112
+Max Clock-To-Out (ns):      11.699
+
+                            Input to Output
+Min Delay (ns):             3.804
+Max Delay (ns):             20.905
+
+END SUMMARY
+-----------------------------------------------------
+
+Clock Domain CLK
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin CLK_pad/U0/U0:PAD
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Hold
+
+No Path
+
+END SET External Hold
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        inst_PLL/Core:CLKA
+  To:                          LOCK_out
+  Delay (ns):                  2.416
+  Slack (ns):
+  Arrival (ns):                3.034
+  Required (ns):
+  Clock to Out (ns):           3.034
+
+Path 2
+  From:                        inst_PLL/Core:CLKA
+  To:                          PLL_CLK_out
+  Delay (ns):                  2.869
+  Slack (ns):
+  Arrival (ns):                3.487
+  Required (ns):
+  Clock to Out (ns):           3.487
+
+
+Expanded Path 1
+  From: inst_PLL/Core:CLKA
+  To: LOCK_out
+  data arrival time                              3.034
+  data required time                         -   N/C
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        CLK
+               +     0.000          Clock source
+  0.000                        CLK (r)
+               +     0.000          net: CLK
+  0.000                        CLK_pad/U0/U0:PAD (r)
+               +     0.376          cell: ADLIB:IOPAD_IN
+  0.376                        CLK_pad/U0/U0:Y (r)
+               +     0.000          net: CLK_pad/U0/NET1
+  0.376                        CLK_pad/U0/U1:YIN (r)
+               +     0.015          cell: ADLIB:IOIN_IB
+  0.391                        CLK_pad/U0/U1:Y (r)
+               +     0.227          net: CLK_c
+  0.618                        inst_PLL/Core:CLKA (r)
+               +     0.674          cell: ADLIB:PLL
+  1.292                        inst_PLL/Core:LOCK (r)
+               +     0.634          net: LOCK_out_c
+  1.926                        LOCK_out_pad/U0/U1:D (r)
+               +     0.209          cell: ADLIB:IOTRI_OB_EB
+  2.135                        LOCK_out_pad/U0/U1:DOUT (r)
+               +     0.000          net: LOCK_out_pad/U0/NET1
+  2.135                        LOCK_out_pad/U0/U0:D (r)
+               +     0.899          cell: ADLIB:IOPAD_TRI
+  3.034                        LOCK_out_pad/U0/U0:PAD (r)
+               +     0.000          net: LOCK_out
+  3.034                        LOCK_out (r)
+                                    
+  3.034                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          CLK
+               +     0.000          Clock source
+  N/C                          CLK (r)
+                                    
+  N/C                          LOCK_out (r)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Removal
+
+No Path
+
+END SET External Removal
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain top_oled|SW4
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin SW4_pad/U0/U0:PAD
+
+SET Register to Register
+
+Path 1
+  From:                        inst_Data_Block/LED_Flashing_instance/SW4_DirectionChange/Q_net:CLK
+  To:                          inst_Data_Block/LED_Flashing_instance/SW4_DirectionChange/Q_net:D
+  Delay (ns):                  0.561
+  Slack (ns):                  0.561
+  Arrival (ns):                1.311
+  Required (ns):               0.750
+  Hold (ns):                   0.000
+
+
+Expanded Path 1
+  From: inst_Data_Block/LED_Flashing_instance/SW4_DirectionChange/Q_net:CLK
+  To: inst_Data_Block/LED_Flashing_instance/SW4_DirectionChange/Q_net:D
+  data arrival time                              1.311
+  data required time                         -   0.750
+  slack                                          0.561
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        top_oled|SW4
+               +     0.000          Clock source
+  0.000                        SW4 (r)
+               +     0.000          net: SW4
+  0.000                        SW4_pad/U0/U0:PAD (r)
+               +     0.376          cell: ADLIB:IOPAD_IN
+  0.376                        SW4_pad/U0/U0:Y (r)
+               +     0.000          net: SW4_pad/U0/NET1
+  0.376                        SW4_pad/U0/U1:YIN (r)
+               +     0.015          cell: ADLIB:IOIN_IB
+  0.391                        SW4_pad/U0/U1:Y (r)
+               +     0.359          net: SW4_c
+  0.750                        inst_Data_Block/LED_Flashing_instance/SW4_DirectionChange/Q_net:CLK (r)
+               +     0.183          cell: ADLIB:DFN1C1
+  0.933                        inst_Data_Block/LED_Flashing_instance/SW4_DirectionChange/Q_net:Q (r)
+               +     0.130          net: inst_Data_Block/LED_Flashing_instance/SW4_DirectionChange/direction_sel
+  1.063                        inst_Data_Block/LED_Flashing_instance/SW4_DirectionChange/Q_net_RNO:A (r)
+               +     0.124          cell: ADLIB:INV
+  1.187                        inst_Data_Block/LED_Flashing_instance/SW4_DirectionChange/Q_net_RNO:Y (f)
+               +     0.124          net: inst_Data_Block/LED_Flashing_instance/SW4_DirectionChange/direction_sel_i
+  1.311                        inst_Data_Block/LED_Flashing_instance/SW4_DirectionChange/Q_net:D (f)
+                                    
+  1.311                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  0.000                        top_oled|SW4
+               +     0.000          Clock source
+  0.000                        SW4 (r)
+               +     0.000          net: SW4
+  0.000                        SW4_pad/U0/U0:PAD (r)
+               +     0.376          cell: ADLIB:IOPAD_IN
+  0.376                        SW4_pad/U0/U0:Y (r)
+               +     0.000          net: SW4_pad/U0/NET1
+  0.376                        SW4_pad/U0/U1:YIN (r)
+               +     0.015          cell: ADLIB:IOIN_IB
+  0.391                        SW4_pad/U0/U1:Y (r)
+               +     0.359          net: SW4_c
+  0.750                        inst_Data_Block/LED_Flashing_instance/SW4_DirectionChange/Q_net:CLK (r)
+               +     0.000          Library hold time: ADLIB:DFN1C1
+  0.750                        inst_Data_Block/LED_Flashing_instance/SW4_DirectionChange/Q_net:D
+                                    
+  0.750                        data required time
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Hold
+
+No Path
+
+END SET External Hold
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        inst_Data_Block/LED_Flashing_instance/SW4_DirectionChange/Q_net:CLK
+  To:                          LED[5]
+  Delay (ns):                  3.000
+  Slack (ns):
+  Arrival (ns):                3.750
+  Required (ns):
+  Clock to Out (ns):           3.750
+
+Path 2
+  From:                        inst_Data_Block/LED_Flashing_instance/SW4_DirectionChange/Q_net:CLK
+  To:                          LED[2]
+  Delay (ns):                  3.147
+  Slack (ns):
+  Arrival (ns):                3.897
+  Required (ns):
+  Clock to Out (ns):           3.897
+
+Path 3
+  From:                        inst_Data_Block/LED_Flashing_instance/SW4_DirectionChange/Q_net:CLK
+  To:                          LED[7]
+  Delay (ns):                  3.177
+  Slack (ns):
+  Arrival (ns):                3.927
+  Required (ns):
+  Clock to Out (ns):           3.927
+
+Path 4
+  From:                        inst_Data_Block/LED_Flashing_instance/SW4_DirectionChange/Q_net:CLK
+  To:                          LED[0]
+  Delay (ns):                  3.314
+  Slack (ns):
+  Arrival (ns):                4.064
+  Required (ns):
+  Clock to Out (ns):           4.064
+
+Path 5
+  From:                        inst_Data_Block/LED_Flashing_instance/SW4_DirectionChange/Q_net:CLK
+  To:                          LED[3]
+  Delay (ns):                  3.391
+  Slack (ns):
+  Arrival (ns):                4.141
+  Required (ns):
+  Clock to Out (ns):           4.141
+
+
+Expanded Path 1
+  From: inst_Data_Block/LED_Flashing_instance/SW4_DirectionChange/Q_net:CLK
+  To: LED[5]
+  data arrival time                              3.750
+  data required time                         -   N/C
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        top_oled|SW4
+               +     0.000          Clock source
+  0.000                        SW4 (r)
+               +     0.000          net: SW4
+  0.000                        SW4_pad/U0/U0:PAD (r)
+               +     0.376          cell: ADLIB:IOPAD_IN
+  0.376                        SW4_pad/U0/U0:Y (r)
+               +     0.000          net: SW4_pad/U0/NET1
+  0.376                        SW4_pad/U0/U1:YIN (r)
+               +     0.015          cell: ADLIB:IOIN_IB
+  0.391                        SW4_pad/U0/U1:Y (r)
+               +     0.359          net: SW4_c
+  0.750                        inst_Data_Block/LED_Flashing_instance/SW4_DirectionChange/Q_net:CLK (r)
+               +     0.183          cell: ADLIB:DFN1C1
+  0.933                        inst_Data_Block/LED_Flashing_instance/SW4_DirectionChange/Q_net:Q (r)
+               +     0.449          net: inst_Data_Block/LED_Flashing_instance/SW4_DirectionChange/direction_sel
+  1.382                        inst_Data_Block/LED_Flashing_instance/SW4_DirectionChange/Q_net_RNILCQ72_0:S (r)
+               +     0.128          cell: ADLIB:MX2A
+  1.510                        inst_Data_Block/LED_Flashing_instance/SW4_DirectionChange/Q_net_RNILCQ72_0:Y (r)
+               +     0.118          net: inst_Data_Block/LED_Flashing_net[5]
+  1.628                        inst_Data_Block/DATA_MUX/Y[5]:A (r)
+               +     0.232          cell: ADLIB:MX2
+  1.860                        inst_Data_Block/DATA_MUX/Y[5]:Y (r)
+               +     0.122          net: inst_Data_Block/count_net[5]
+  1.982                        inst_Data_Block/LED_Flashing_instance/LED[5]:A (r)
+               +     0.180          cell: ADLIB:NOR2A
+  2.162                        inst_Data_Block/LED_Flashing_instance/LED[5]:Y (r)
+               +     0.480          net: LED_c[5]
+  2.642                        LED_pad[5]/U0/U1:D (r)
+               +     0.209          cell: ADLIB:IOTRI_OB_EB
+  2.851                        LED_pad[5]/U0/U1:DOUT (r)
+               +     0.000          net: LED_pad[5]/U0/NET1
+  2.851                        LED_pad[5]/U0/U0:D (r)
+               +     0.899          cell: ADLIB:IOPAD_TRI
+  3.750                        LED_pad[5]/U0/U0:PAD (r)
+               +     0.000          net: LED[5]
+  3.750                        LED[5] (r)
+                                    
+  3.750                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          top_oled|SW4
+               +     0.000          Clock source
+  N/C                          SW4 (r)
+                                    
+  N/C                          LED[5] (r)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Removal
+
+Path 1
+  From:                        SW5
+  To:                          inst_Data_Block/LED_Flashing_instance/SW4_DirectionChange/Q_net:CLR
+  Delay (ns):                  4.419
+  Slack (ns):
+  Arrival (ns):                4.419
+  Required (ns):
+  Removal (ns):                0.000
+  External Removal (ns):       -3.477
+
+
+Expanded Path 1
+  From: SW5
+  To: inst_Data_Block/LED_Flashing_instance/SW4_DirectionChange/Q_net:CLR
+  data arrival time                              4.419
+  data required time                         -   N/C
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        SW5 (f)
+               +     0.000          net: SW5
+  0.000                        SW5_pad/U0/U0:PAD (f)
+               +     0.281          cell: ADLIB:IOPAD_IN
+  0.281                        SW5_pad/U0/U0:Y (f)
+               +     0.000          net: SW5_pad/U0/NET1
+  0.281                        SW5_pad/U0/U1:YIN (f)
+               +     0.014          cell: ADLIB:IOIN_IB
+  0.295                        SW5_pad/U0/U1:Y (f)
+               +     2.982          net: SW5_c
+  3.277                        SW5_pad_RNIJA5F:A (f)
+               +     0.184          cell: ADLIB:BUFF
+  3.461                        SW5_pad_RNIJA5F:Y (f)
+               +     0.958          net: SW5_c_0
+  4.419                        inst_Data_Block/LED_Flashing_instance/SW4_DirectionChange/Q_net:CLR (f)
+                                    
+  4.419                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          top_oled|SW4
+               +     0.000          Clock source
+  N/C                          SW4 (r)
+               +     0.000          net: SW4
+  N/C                          SW4_pad/U0/U0:PAD (r)
+               +     0.472          cell: ADLIB:IOPAD_IN
+  N/C                          SW4_pad/U0/U0:Y (r)
+               +     0.000          net: SW4_pad/U0/NET1
+  N/C                          SW4_pad/U0/U1:YIN (r)
+               +     0.019          cell: ADLIB:IOIN_IB
+  N/C                          SW4_pad/U0/U1:Y (r)
+               +     0.451          net: SW4_c
+  N/C                          inst_Data_Block/LED_Flashing_instance/SW4_DirectionChange/Q_net:CLK (r)
+               +     0.000          Library removal time: ADLIB:DFN1C1
+  N/C                          inst_Data_Block/LED_Flashing_instance/SW4_DirectionChange/Q_net:CLR
+
+
+END SET External Removal
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain top_oled|SW6
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin SW6_pad/U0/U0:PAD
+
+SET Register to Register
+
+Path 1
+  From:                        inst_Data_Block/SW6_count/Q_net:CLK
+  To:                          inst_Data_Block/SW6_count/Q_net:D
+  Delay (ns):                  0.554
+  Slack (ns):                  0.554
+  Arrival (ns):                2.754
+  Required (ns):               2.200
+  Hold (ns):                   0.000
+
+
+Expanded Path 1
+  From: inst_Data_Block/SW6_count/Q_net:CLK
+  To: inst_Data_Block/SW6_count/Q_net:D
+  data arrival time                              2.754
+  data required time                         -   2.200
+  slack                                          0.554
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        top_oled|SW6
+               +     0.000          Clock source
+  0.000                        SW6 (r)
+               +     0.000          net: SW6
+  0.000                        SW6_pad/U0/U0:PAD (r)
+               +     0.376          cell: ADLIB:IOPAD_IN
+  0.376                        SW6_pad/U0/U0:Y (r)
+               +     0.000          net: SW6_pad/U0/NET1
+  0.376                        SW6_pad/U0/U1:YIN (r)
+               +     0.015          cell: ADLIB:IOIN_IB
+  0.391                        SW6_pad/U0/U1:Y (r)
+               +     1.809          net: SW6_c
+  2.200                        inst_Data_Block/SW6_count/Q_net:CLK (r)
+               +     0.183          cell: ADLIB:DFN1C1
+  2.383                        inst_Data_Block/SW6_count/Q_net:Q (r)
+               +     0.122          net: inst_Data_Block/mux_select
+  2.505                        inst_Data_Block/SW6_count/Q_net_RNO:A (r)
+               +     0.124          cell: ADLIB:INV
+  2.629                        inst_Data_Block/SW6_count/Q_net_RNO:Y (f)
+               +     0.125          net: inst_Data_Block/SW6_count/mux_select_i
+  2.754                        inst_Data_Block/SW6_count/Q_net:D (f)
+                                    
+  2.754                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  0.000                        top_oled|SW6
+               +     0.000          Clock source
+  0.000                        SW6 (r)
+               +     0.000          net: SW6
+  0.000                        SW6_pad/U0/U0:PAD (r)
+               +     0.376          cell: ADLIB:IOPAD_IN
+  0.376                        SW6_pad/U0/U0:Y (r)
+               +     0.000          net: SW6_pad/U0/NET1
+  0.376                        SW6_pad/U0/U1:YIN (r)
+               +     0.015          cell: ADLIB:IOIN_IB
+  0.391                        SW6_pad/U0/U1:Y (r)
+               +     1.809          net: SW6_c
+  2.200                        inst_Data_Block/SW6_count/Q_net:CLK (r)
+               +     0.000          Library hold time: ADLIB:DFN1C1
+  2.200                        inst_Data_Block/SW6_count/Q_net:D
+                                    
+  2.200                        data required time
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Hold
+
+No Path
+
+END SET External Hold
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        inst_Data_Block/SW6_count/Q_net:CLK
+  To:                          LED[5]
+  Delay (ns):                  2.871
+  Slack (ns):
+  Arrival (ns):                5.071
+  Required (ns):
+  Clock to Out (ns):           5.071
+
+Path 2
+  From:                        inst_Data_Block/SW6_count/Q_net:CLK
+  To:                          LED[7]
+  Delay (ns):                  2.923
+  Slack (ns):
+  Arrival (ns):                5.123
+  Required (ns):
+  Clock to Out (ns):           5.123
+
+Path 3
+  From:                        inst_Data_Block/SW6_count/Q_net:CLK
+  To:                          LED[2]
+  Delay (ns):                  3.048
+  Slack (ns):
+  Arrival (ns):                5.248
+  Required (ns):
+  Clock to Out (ns):           5.248
+
+Path 4
+  From:                        inst_Data_Block/SW6_count/Q_net:CLK
+  To:                          LED[0]
+  Delay (ns):                  3.254
+  Slack (ns):
+  Arrival (ns):                5.454
+  Required (ns):
+  Clock to Out (ns):           5.454
+
+Path 5
+  From:                        inst_Data_Block/SW6_count/Q_net:CLK
+  To:                          LED[6]
+  Delay (ns):                  3.287
+  Slack (ns):
+  Arrival (ns):                5.487
+  Required (ns):
+  Clock to Out (ns):           5.487
+
+
+Expanded Path 1
+  From: inst_Data_Block/SW6_count/Q_net:CLK
+  To: LED[5]
+  data arrival time                              5.071
+  data required time                         -   N/C
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        top_oled|SW6
+               +     0.000          Clock source
+  0.000                        SW6 (r)
+               +     0.000          net: SW6
+  0.000                        SW6_pad/U0/U0:PAD (r)
+               +     0.376          cell: ADLIB:IOPAD_IN
+  0.376                        SW6_pad/U0/U0:Y (r)
+               +     0.000          net: SW6_pad/U0/NET1
+  0.376                        SW6_pad/U0/U1:YIN (r)
+               +     0.015          cell: ADLIB:IOIN_IB
+  0.391                        SW6_pad/U0/U1:Y (r)
+               +     1.809          net: SW6_c
+  2.200                        inst_Data_Block/SW6_count/Q_net:CLK (r)
+               +     0.183          cell: ADLIB:DFN1C1
+  2.383                        inst_Data_Block/SW6_count/Q_net:Q (r)
+               +     0.671          net: inst_Data_Block/mux_select
+  3.054                        inst_Data_Block/DATA_MUX/Y[5]:S (r)
+               +     0.127          cell: ADLIB:MX2
+  3.181                        inst_Data_Block/DATA_MUX/Y[5]:Y (r)
+               +     0.122          net: inst_Data_Block/count_net[5]
+  3.303                        inst_Data_Block/LED_Flashing_instance/LED[5]:A (r)
+               +     0.180          cell: ADLIB:NOR2A
+  3.483                        inst_Data_Block/LED_Flashing_instance/LED[5]:Y (r)
+               +     0.480          net: LED_c[5]
+  3.963                        LED_pad[5]/U0/U1:D (r)
+               +     0.209          cell: ADLIB:IOTRI_OB_EB
+  4.172                        LED_pad[5]/U0/U1:DOUT (r)
+               +     0.000          net: LED_pad[5]/U0/NET1
+  4.172                        LED_pad[5]/U0/U0:D (r)
+               +     0.899          cell: ADLIB:IOPAD_TRI
+  5.071                        LED_pad[5]/U0/U0:PAD (r)
+               +     0.000          net: LED[5]
+  5.071                        LED[5] (r)
+                                    
+  5.071                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          top_oled|SW6
+               +     0.000          Clock source
+  N/C                          SW6 (r)
+                                    
+  N/C                          LED[5] (r)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Removal
+
+Path 1
+  From:                        SW5
+  To:                          inst_Data_Block/SW6_count/Q_net:CLR
+  Delay (ns):                  4.346
+  Slack (ns):
+  Arrival (ns):                4.346
+  Required (ns):
+  Removal (ns):                0.000
+  External Removal (ns):       -1.585
+
+
+Expanded Path 1
+  From: SW5
+  To: inst_Data_Block/SW6_count/Q_net:CLR
+  data arrival time                              4.346
+  data required time                         -   N/C
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        SW5 (f)
+               +     0.000          net: SW5
+  0.000                        SW5_pad/U0/U0:PAD (f)
+               +     0.281          cell: ADLIB:IOPAD_IN
+  0.281                        SW5_pad/U0/U0:Y (f)
+               +     0.000          net: SW5_pad/U0/NET1
+  0.281                        SW5_pad/U0/U1:YIN (f)
+               +     0.014          cell: ADLIB:IOIN_IB
+  0.295                        SW5_pad/U0/U1:Y (f)
+               +     2.982          net: SW5_c
+  3.277                        SW5_pad_RNIJA5F:A (f)
+               +     0.184          cell: ADLIB:BUFF
+  3.461                        SW5_pad_RNIJA5F:Y (f)
+               +     0.885          net: SW5_c_0
+  4.346                        inst_Data_Block/SW6_count/Q_net:CLR (f)
+                                    
+  4.346                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          top_oled|SW6
+               +     0.000          Clock source
+  N/C                          SW6 (r)
+               +     0.000          net: SW6
+  N/C                          SW6_pad/U0/U0:PAD (r)
+               +     0.472          cell: ADLIB:IOPAD_IN
+  N/C                          SW6_pad/U0/U0:Y (r)
+               +     0.000          net: SW6_pad/U0/NET1
+  N/C                          SW6_pad/U0/U1:YIN (r)
+               +     0.019          cell: ADLIB:IOIN_IB
+  N/C                          SW6_pad/U0/U1:Y (r)
+               +     2.270          net: SW6_c
+  N/C                          inst_Data_Block/SW6_count/Q_net:CLK (r)
+               +     0.000          Library removal time: ADLIB:DFN1C1
+  N/C                          inst_Data_Block/SW6_count/Q_net:CLR
+
+
+END SET External Removal
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain inst_PLL/Core:GLA
+
+SET Register to Register
+
+Path 1
+  From:                        int_count[12]:CLK
+  To:                          int_count[12]:D
+  Delay (ns):                  0.591
+  Slack (ns):
+  Arrival (ns):                1.023
+  Required (ns):
+  Hold (ns):                   0.000
+
+Path 2
+  From:                        int_count[9]:CLK
+  To:                          int_count[9]:D
+  Delay (ns):                  0.637
+  Slack (ns):
+  Arrival (ns):                1.073
+  Required (ns):
+  Hold (ns):                   0.000
+
+Path 3
+  From:                        int_count[2]:CLK
+  To:                          int_count[2]:D
+  Delay (ns):                  0.648
+  Slack (ns):
+  Arrival (ns):                1.078
+  Required (ns):
+  Hold (ns):                   0.000
+
+Path 4
+  From:                        int_count[19]:CLK
+  To:                          int_count[19]:D
+  Delay (ns):                  0.653
+  Slack (ns):
+  Arrival (ns):                1.079
+  Required (ns):
+  Hold (ns):                   0.000
+
+Path 5
+  From:                        int_count[8]:CLK
+  To:                          int_count[8]:D
+  Delay (ns):                  0.653
+  Slack (ns):
+  Arrival (ns):                1.083
+  Required (ns):
+  Hold (ns):                   0.000
+
+
+Expanded Path 1
+  From: int_count[12]:CLK
+  To: int_count[12]:D
+  data arrival time                              1.023
+  data required time                         -   N/C
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        inst_PLL/Core:GLA
+               +     0.000          Clock source
+  0.000                        inst_PLL/Core:GLA (r)
+               +     0.432          net: GLA
+  0.432                        int_count[12]:CLK (r)
+               +     0.202          cell: ADLIB:DFN1C1
+  0.634                        int_count[12]:Q (r)
+               +     0.147          net: int_count[12]
+  0.781                        un2_int_count_I_35:C (r)
+               +     0.120          cell: ADLIB:AX1C
+  0.901                        un2_int_count_I_35:Y (r)
+               +     0.122          net: I_35
+  1.023                        int_count[12]:D (r)
+                                    
+  1.023                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          inst_PLL/Core:GLA
+               +     0.000          Clock source
+  N/C                          inst_PLL/Core:GLA (r)
+               +     0.432          net: GLA
+  N/C                          int_count[12]:CLK (r)
+               +     0.000          Library hold time: ADLIB:DFN1C1
+  N/C                          int_count[12]:D
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Hold
+
+No Path
+
+END SET External Hold
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        int_count[18]:CLK
+  To:                          DBlock_clkin
+  Delay (ns):                  2.357
+  Slack (ns):
+  Arrival (ns):                2.793
+  Required (ns):
+  Clock to Out (ns):           2.793
+
+Path 2
+  From:                        int_count[1]:CLK
+  To:                          OLED_clk_in
+  Delay (ns):                  2.978
+  Slack (ns):
+  Arrival (ns):                3.404
+  Required (ns):
+  Clock to Out (ns):           3.404
+
+
+Expanded Path 1
+  From: int_count[18]:CLK
+  To: DBlock_clkin
+  data arrival time                              2.793
+  data required time                         -   N/C
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        inst_PLL/Core:GLA
+               +     0.000          Clock source
+  0.000                        inst_PLL/Core:GLA (r)
+               +     0.436          net: GLA
+  0.436                        int_count[18]:CLK (r)
+               +     0.202          cell: ADLIB:DFN1C1
+  0.638                        int_count[18]:Q (r)
+               +     1.029          net: DBlock_clkin
+  1.667                        DBlock_clkin_pad/U0/U1:D (r)
+               +     0.227          cell: ADLIB:IOTRI_OB_EB
+  1.894                        DBlock_clkin_pad/U0/U1:DOUT (r)
+               +     0.000          net: DBlock_clkin_pad/U0/NET1
+  1.894                        DBlock_clkin_pad/U0/U0:D (r)
+               +     0.899          cell: ADLIB:IOPAD_TRI
+  2.793                        DBlock_clkin_pad/U0/U0:PAD (r)
+               +     0.000          net: DBlock_clkin_c
+  2.793                        DBlock_clkin (r)
+                                    
+  2.793                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          inst_PLL/Core:GLA
+               +     0.000          Clock source
+  N/C                          inst_PLL/Core:GLA (r)
+                                    
+  N/C                          DBlock_clkin (r)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Removal
+
+Path 1
+  From:                        SW5
+  To:                          int_count[9]:CLR
+  Delay (ns):                  3.350
+  Slack (ns):
+  Arrival (ns):                3.350
+  Required (ns):
+  Removal (ns):                0.000
+  External Removal (ns):       -2.808
+
+Path 2
+  From:                        SW5
+  To:                          int_count[10]:CLR
+  Delay (ns):                  3.599
+  Slack (ns):
+  Arrival (ns):                3.599
+  Required (ns):
+  Removal (ns):                0.000
+  External Removal (ns):       -3.057
+
+Path 3
+  From:                        SW5
+  To:                          int_count[11]:CLR
+  Delay (ns):                  3.599
+  Slack (ns):
+  Arrival (ns):                3.599
+  Required (ns):
+  Removal (ns):                0.000
+  External Removal (ns):       -3.057
+
+Path 4
+  From:                        SW5
+  To:                          int_count[4]:CLR
+  Delay (ns):                  3.779
+  Slack (ns):
+  Arrival (ns):                3.779
+  Required (ns):
+  Removal (ns):                0.000
+  External Removal (ns):       -3.237
+
+Path 5
+  From:                        SW5
+  To:                          int_count[16]:CLR
+  Delay (ns):                  4.001
+  Slack (ns):
+  Arrival (ns):                4.001
+  Required (ns):
+  Removal (ns):                0.000
+  External Removal (ns):       -3.465
+
+
+Expanded Path 1
+  From: SW5
+  To: int_count[9]:CLR
+  data arrival time                              3.350
+  data required time                         -   N/C
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        SW5 (f)
+               +     0.000          net: SW5
+  0.000                        SW5_pad/U0/U0:PAD (f)
+               +     0.281          cell: ADLIB:IOPAD_IN
+  0.281                        SW5_pad/U0/U0:Y (f)
+               +     0.000          net: SW5_pad/U0/NET1
+  0.281                        SW5_pad/U0/U1:YIN (f)
+               +     0.014          cell: ADLIB:IOIN_IB
+  0.295                        SW5_pad/U0/U1:Y (f)
+               +     3.055          net: SW5_c
+  3.350                        int_count[9]:CLR (f)
+                                    
+  3.350                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          inst_PLL/Core:GLA
+               +     0.000          Clock source
+  N/C                          inst_PLL/Core:GLA (r)
+               +     0.542          net: GLA
+  N/C                          int_count[9]:CLK (r)
+               +     0.000          Library removal time: ADLIB:DFN1C1
+  N/C                          int_count[9]:CLR
+
+
+END SET External Removal
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain int_count[18]:Q
+
+SET Register to Register
+
+Path 1
+  From:                        inst_Data_Block/LED_Flashing_instance/flashing_counter/Qaux[0]:CLK
+  To:                          inst_Data_Block/LED_Flashing_instance/flashing_counter/Qaux[0]:D
+  Delay (ns):                  0.556
+  Slack (ns):
+  Arrival (ns):                1.222
+  Required (ns):
+  Hold (ns):                   0.000
+
+Path 2
+  From:                        inst_Data_Block/LED_Flashing_instance/flashing_counter/Qaux[2]:CLK
+  To:                          inst_Data_Block/LED_Flashing_instance/flashing_counter/Qaux[2]:D
+  Delay (ns):                  0.638
+  Slack (ns):
+  Arrival (ns):                1.292
+  Required (ns):
+  Hold (ns):                   0.000
+
+Path 3
+  From:                        inst_Data_Block/LED_Flashing_instance/flashing_counter/Qaux[1]:CLK
+  To:                          inst_Data_Block/LED_Flashing_instance/flashing_counter/Qaux[1]:D
+  Delay (ns):                  0.707
+  Slack (ns):
+  Arrival (ns):                1.361
+  Required (ns):
+  Hold (ns):                   0.000
+
+Path 4
+  From:                        inst_Data_Block/LED_Flashing_instance/flashing_counter/Qaux[1]:CLK
+  To:                          inst_Data_Block/LED_Flashing_instance/flashing_counter/Qaux[2]:D
+  Delay (ns):                  1.033
+  Slack (ns):
+  Arrival (ns):                1.687
+  Required (ns):
+  Hold (ns):                   0.000
+
+Path 5
+  From:                        inst_Data_Block/count8_intance/Qaux[1]:CLK
+  To:                          inst_Data_Block/count8_intance/Qaux[1]:D
+  Delay (ns):                  0.967
+  Slack (ns):
+  Arrival (ns):                1.738
+  Required (ns):
+  Hold (ns):                   0.000
+
+
+Expanded Path 1
+  From: inst_Data_Block/LED_Flashing_instance/flashing_counter/Qaux[0]:CLK
+  To: inst_Data_Block/LED_Flashing_instance/flashing_counter/Qaux[0]:D
+  data arrival time                              1.222
+  data required time                         -   N/C
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        int_count[18]:Q
+               +     0.000          Clock source
+  0.000                        int_count[18]:Q (r)
+               +     0.666          net: DBlock_clkin
+  0.666                        inst_Data_Block/LED_Flashing_instance/flashing_counter/Qaux[0]:CLK (r)
+               +     0.202          cell: ADLIB:DFN1C1
+  0.868                        inst_Data_Block/LED_Flashing_instance/flashing_counter/Qaux[0]:Q (r)
+               +     0.116          net: inst_Data_Block/LED_Flashing_instance/flashing_counter/count_flashing[0]
+  0.984                        inst_Data_Block/LED_Flashing_instance/flashing_counter/Qaux_RNO[0]:A (r)
+               +     0.124          cell: ADLIB:INV
+  1.108                        inst_Data_Block/LED_Flashing_instance/flashing_counter/Qaux_RNO[0]:Y (f)
+               +     0.114          net: inst_Data_Block/LED_Flashing_instance/flashing_counter/count_flashing_i[0]
+  1.222                        inst_Data_Block/LED_Flashing_instance/flashing_counter/Qaux[0]:D (f)
+                                    
+  1.222                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          int_count[18]:Q
+               +     0.000          Clock source
+  N/C                          int_count[18]:Q (r)
+               +     0.666          net: DBlock_clkin
+  N/C                          inst_Data_Block/LED_Flashing_instance/flashing_counter/Qaux[0]:CLK (r)
+               +     0.000          Library hold time: ADLIB:DFN1C1
+  N/C                          inst_Data_Block/LED_Flashing_instance/flashing_counter/Qaux[0]:D
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Hold
+
+Path 1
+  From:                        SW2
+  To:                          inst_Data_Block/count8_intance/Qaux[4]:D
+  Delay (ns):                  1.137
+  Slack (ns):
+  Arrival (ns):                1.137
+  Required (ns):
+  Hold (ns):                   0.000
+  External Hold (ns):          -0.096
+
+Path 2
+  From:                        SW2
+  To:                          inst_Data_Block/count8_intance/Qaux[1]:D
+  Delay (ns):                  1.284
+  Slack (ns):
+  Arrival (ns):                1.284
+  Required (ns):
+  Hold (ns):                   0.000
+  External Hold (ns):          -0.316
+
+Path 3
+  From:                        SW2
+  To:                          inst_Data_Block/count8_intance/Qaux[6]:D
+  Delay (ns):                  1.274
+  Slack (ns):
+  Arrival (ns):                1.274
+  Required (ns):
+  Hold (ns):                   0.000
+  External Hold (ns):          -0.352
+
+Path 4
+  From:                        SW2
+  To:                          inst_Data_Block/count8_intance/Qaux[2]:D
+  Delay (ns):                  1.382
+  Slack (ns):
+  Arrival (ns):                1.382
+  Required (ns):
+  Hold (ns):                   0.000
+  External Hold (ns):          -0.376
+
+Path 5
+  From:                        SW2
+  To:                          inst_Data_Block/count8_intance/Qaux[7]:D
+  Delay (ns):                  1.587
+  Slack (ns):
+  Arrival (ns):                1.587
+  Required (ns):
+  Hold (ns):                   0.000
+  External Hold (ns):          -0.615
+
+
+Expanded Path 1
+  From: SW2
+  To: inst_Data_Block/count8_intance/Qaux[4]:D
+  data arrival time                              1.137
+  data required time                         -   N/C
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        SW2 (f)
+               +     0.000          net: SW2
+  0.000                        SW2_pad/U0/U0:PAD (f)
+               +     0.281          cell: ADLIB:IOPAD_IN
+  0.281                        SW2_pad/U0/U0:Y (f)
+               +     0.000          net: SW2_pad/U0/NET1
+  0.281                        SW2_pad/U0/U1:YIN (f)
+               +     0.014          cell: ADLIB:IOIN_IB
+  0.295                        SW2_pad/U0/U1:Y (f)
+               +     0.505          net: SW2_c
+  0.800                        inst_Data_Block/count8_intance/Qaux_5_I_33:B (f)
+               +     0.221          cell: ADLIB:XOR3
+  1.021                        inst_Data_Block/count8_intance/Qaux_5_I_33:Y (f)
+               +     0.116          net: inst_Data_Block/count8_intance/Qaux_5[4]
+  1.137                        inst_Data_Block/count8_intance/Qaux[4]:D (f)
+                                    
+  1.137                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          int_count[18]:Q
+               +     0.000          Clock source
+  N/C                          int_count[18]:Q (r)
+               +     1.041          net: DBlock_clkin
+  N/C                          inst_Data_Block/count8_intance/Qaux[4]:CLK (r)
+               +     0.000          Library hold time: ADLIB:DFN1P1C1
+  N/C                          inst_Data_Block/count8_intance/Qaux[4]:D
+
+
+END SET External Hold
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        inst_Data_Block/count8_intance/Qaux[5]:CLK
+  To:                          LED[5]
+  Delay (ns):                  3.144
+  Slack (ns):
+  Arrival (ns):                3.585
+  Required (ns):
+  Clock to Out (ns):           3.585
+
+Path 2
+  From:                        inst_Data_Block/LED_Flashing_instance/flashing_counter/Qaux[2]:CLK
+  To:                          LED[7]
+  Delay (ns):                  2.959
+  Slack (ns):
+  Arrival (ns):                3.613
+  Required (ns):
+  Clock to Out (ns):           3.613
+
+Path 3
+  From:                        inst_Data_Block/LED_Flashing_instance/flashing_counter/Qaux[2]:CLK
+  To:                          LED[0]
+  Delay (ns):                  3.019
+  Slack (ns):
+  Arrival (ns):                3.673
+  Required (ns):
+  Clock to Out (ns):           3.673
+
+Path 4
+  From:                        inst_Data_Block/LED_Flashing_instance/flashing_counter/Qaux[1]:CLK
+  To:                          LED[5]
+  Delay (ns):                  3.165
+  Slack (ns):
+  Arrival (ns):                3.819
+  Required (ns):
+  Clock to Out (ns):           3.819
+
+Path 5
+  From:                        inst_Data_Block/count8_intance/Qaux[7]:CLK
+  To:                          LED[7]
+  Delay (ns):                  3.094
+  Slack (ns):
+  Arrival (ns):                3.868
+  Required (ns):
+  Clock to Out (ns):           3.868
+
+
+Expanded Path 1
+  From: inst_Data_Block/count8_intance/Qaux[5]:CLK
+  To: LED[5]
+  data arrival time                              3.585
+  data required time                         -   N/C
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        int_count[18]:Q
+               +     0.000          Clock source
+  0.000                        int_count[18]:Q (r)
+               +     0.441          net: DBlock_clkin
+  0.441                        inst_Data_Block/count8_intance/Qaux[5]:CLK (r)
+               +     0.584          cell: ADLIB:DFN1P1C1
+  1.025                        inst_Data_Block/count8_intance/Qaux[5]:Q (r)
+               +     0.466          net: inst_Data_Block/count_net_0[5]
+  1.491                        inst_Data_Block/DATA_MUX/Y[5]:B (r)
+               +     0.204          cell: ADLIB:MX2
+  1.695                        inst_Data_Block/DATA_MUX/Y[5]:Y (r)
+               +     0.122          net: inst_Data_Block/count_net[5]
+  1.817                        inst_Data_Block/LED_Flashing_instance/LED[5]:A (r)
+               +     0.180          cell: ADLIB:NOR2A
+  1.997                        inst_Data_Block/LED_Flashing_instance/LED[5]:Y (r)
+               +     0.480          net: LED_c[5]
+  2.477                        LED_pad[5]/U0/U1:D (r)
+               +     0.209          cell: ADLIB:IOTRI_OB_EB
+  2.686                        LED_pad[5]/U0/U1:DOUT (r)
+               +     0.000          net: LED_pad[5]/U0/NET1
+  2.686                        LED_pad[5]/U0/U0:D (r)
+               +     0.899          cell: ADLIB:IOPAD_TRI
+  3.585                        LED_pad[5]/U0/U0:PAD (r)
+               +     0.000          net: LED[5]
+  3.585                        LED[5] (r)
+                                    
+  3.585                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          int_count[18]:Q
+               +     0.000          Clock source
+  N/C                          int_count[18]:Q (r)
+                                    
+  N/C                          LED[5] (r)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Removal
+
+Path 1
+  From:                        SW3
+  To:                          inst_Data_Block/count8_intance/Qaux[2]:PRE
+  Delay (ns):                  1.117
+  Slack (ns):
+  Arrival (ns):                1.117
+  Required (ns):
+  Removal (ns):                0.000
+  External Removal (ns):       -0.111
+
+Path 2
+  From:                        SW3
+  To:                          inst_Data_Block/count8_intance/Qaux[7]:PRE
+  Delay (ns):                  1.093
+  Slack (ns):
+  Arrival (ns):                1.093
+  Required (ns):
+  Removal (ns):                0.000
+  External Removal (ns):       -0.121
+
+Path 3
+  From:                        SW3
+  To:                          inst_Data_Block/count8_intance/Qaux[1]:CLR
+  Delay (ns):                  1.115
+  Slack (ns):
+  Arrival (ns):                1.115
+  Required (ns):
+  Removal (ns):                0.000
+  External Removal (ns):       -0.147
+
+Path 4
+  From:                        SW3
+  To:                          inst_Data_Block/count8_intance/Qaux[6]:PRE
+  Delay (ns):                  1.096
+  Slack (ns):
+  Arrival (ns):                1.096
+  Required (ns):
+  Removal (ns):                0.000
+  External Removal (ns):       -0.174
+
+Path 5
+  From:                        SW3
+  To:                          inst_Data_Block/count8_intance/Qaux[7]:CLR
+  Delay (ns):                  1.170
+  Slack (ns):
+  Arrival (ns):                1.170
+  Required (ns):
+  Removal (ns):                0.000
+  External Removal (ns):       -0.198
+
+
+Expanded Path 1
+  From: SW3
+  To: inst_Data_Block/count8_intance/Qaux[2]:PRE
+  data arrival time                              1.117
+  data required time                         -   N/C
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        SW3 (f)
+               +     0.000          net: SW3
+  0.000                        SW3_pad/U0/U0:PAD (f)
+               +     0.281          cell: ADLIB:IOPAD_IN
+  0.281                        SW3_pad/U0/U0:Y (f)
+               +     0.000          net: SW3_pad/U0/NET1
+  0.281                        SW3_pad/U0/U1:YIN (f)
+               +     0.014          cell: ADLIB:IOIN_IB
+  0.295                        SW3_pad/U0/U1:Y (f)
+               +     0.545          net: SW3_c
+  0.840                        inst_Data_Block/count8_intance/Qaux_RNO_0[2]:A (f)
+               +     0.132          cell: ADLIB:NOR2B
+  0.972                        inst_Data_Block/count8_intance/Qaux_RNO_0[2]:Y (f)
+               +     0.145          net: inst_Data_Block/count8_intance/Qaux_RNO_0[2]
+  1.117                        inst_Data_Block/count8_intance/Qaux[2]:PRE (f)
+                                    
+  1.117                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          int_count[18]:Q
+               +     0.000          Clock source
+  N/C                          int_count[18]:Q (r)
+               +     1.006          net: DBlock_clkin
+  N/C                          inst_Data_Block/count8_intance/Qaux[2]:CLK (r)
+               +     0.000          Library removal time: ADLIB:DFN1P1C1
+  N/C                          inst_Data_Block/count8_intance/Qaux[2]:PRE
+
+
+END SET External Removal
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain int_count[1]:Q
+
+SET Register to Register
+
+Path 1
+  From:                        inst_oled_driver/state_7[5]:CLK
+  To:                          inst_oled_driver/main_proc.oled_char1_68[2]:D
+  Delay (ns):                  0.324
+  Slack (ns):
+  Arrival (ns):                1.984
+  Required (ns):
+  Hold (ns):                   0.000
+
+Path 2
+  From:                        inst_oled_driver/state_9[5]:CLK
+  To:                          inst_oled_driver/main_proc.oled_char1_50[6]:D
+  Delay (ns):                  0.324
+  Slack (ns):
+  Arrival (ns):                1.973
+  Required (ns):
+  Hold (ns):                   0.000
+
+Path 3
+  From:                        inst_oled_driver/state_1[5]:CLK
+  To:                          inst_oled_driver/main_proc.oled_char1_30[6]:D
+  Delay (ns):                  0.324
+  Slack (ns):
+  Arrival (ns):                1.973
+  Required (ns):
+  Hold (ns):                   0.000
+
+Path 4
+  From:                        inst_oled_driver/state_11[5]:CLK
+  To:                          inst_oled_driver/main_proc.oled_char2_42[3]:D
+  Delay (ns):                  0.324
+  Slack (ns):
+  Arrival (ns):                1.971
+  Required (ns):
+  Hold (ns):                   0.000
+
+Path 5
+  From:                        inst_oled_driver/state_3[5]:CLK
+  To:                          inst_oled_driver/main_proc.oled_char2_15[0]:D
+  Delay (ns):                  0.324
+  Slack (ns):
+  Arrival (ns):                1.985
+  Required (ns):
+  Hold (ns):                   0.000
+
+
+Expanded Path 1
+  From: inst_oled_driver/state_7[5]:CLK
+  To: inst_oled_driver/main_proc.oled_char1_68[2]:D
+  data arrival time                              1.984
+  data required time                         -   N/C
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        int_count[1]:Q
+               +     0.000          Clock source
+  0.000                        int_count[1]:Q (r)
+               +     0.953          net: OLED_clk_in_i
+  0.953                        OLED_clk_in_inferred_clock:A (r)
+               +     0.250          cell: ADLIB:CLKINT
+  1.203                        OLED_clk_in_inferred_clock:Y (r)
+               +     0.457          net: OLED_clk_in_c
+  1.660                        inst_oled_driver/state_7[5]:CLK (r)
+               +     0.202          cell: ADLIB:DFN1C0
+  1.862                        inst_oled_driver/state_7[5]:Q (r)
+               +     0.122          net: inst_oled_driver/state_7[5]
+  1.984                        inst_oled_driver/main_proc.oled_char1_68[2]:D (r)
+                                    
+  1.984                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          int_count[1]:Q
+               +     0.000          Clock source
+  N/C                          int_count[1]:Q (r)
+               +     0.953          net: OLED_clk_in_i
+  N/C                          OLED_clk_in_inferred_clock:A (r)
+               +     0.250          cell: ADLIB:CLKINT
+  N/C                          OLED_clk_in_inferred_clock:Y (r)
+               +     0.481          net: OLED_clk_in_c
+  N/C                          inst_oled_driver/main_proc.oled_char1_68[2]:CLK (r)
+               +     0.000          Library hold time: ADLIB:DFN1E1C0
+  N/C                          inst_oled_driver/main_proc.oled_char1_68[2]:D
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Hold
+
+Path 1
+  From:                        SW1
+  To:                          inst_oled_driver/start_sel[0]:D
+  Delay (ns):                  2.984
+  Slack (ns):
+  Arrival (ns):                2.984
+  Required (ns):
+  Hold (ns):                   0.000
+  External Hold (ns):          -0.939
+
+Path 2
+  From:                        SW1
+  To:                          inst_oled_driver/state[1]:D
+  Delay (ns):                  3.722
+  Slack (ns):
+  Arrival (ns):                3.722
+  Required (ns):
+  Hold (ns):                   0.000
+  External Hold (ns):          -1.677
+
+Path 3
+  From:                        SW1
+  To:                          inst_oled_driver/main_proc.oled_char2_16[1]:E
+  Delay (ns):                  3.983
+  Slack (ns):
+  Arrival (ns):                3.983
+  Required (ns):
+  Hold (ns):                   0.000
+  External Hold (ns):          -1.894
+
+Path 4
+  From:                        SW1
+  To:                          inst_oled_driver/main_proc.oled_char1_47[0]:E
+  Delay (ns):                  3.970
+  Slack (ns):
+  Arrival (ns):                3.970
+  Required (ns):
+  Hold (ns):                   0.000
+  External Hold (ns):          -1.895
+
+Path 5
+  From:                        SW1
+  To:                          inst_oled_driver/main_proc.oled_char2_81[4]:E
+  Delay (ns):                  3.970
+  Slack (ns):
+  Arrival (ns):                3.970
+  Required (ns):
+  Hold (ns):                   0.000
+  External Hold (ns):          -1.895
+
+
+Expanded Path 1
+  From: SW1
+  To: inst_oled_driver/start_sel[0]:D
+  data arrival time                              2.984
+  data required time                         -   N/C
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        SW1 (f)
+               +     0.000          net: SW1
+  0.000                        SW1_pad/U0/U0:PAD (f)
+               +     0.281          cell: ADLIB:IOPAD_IN
+  0.281                        SW1_pad/U0/U0:Y (f)
+               +     0.000          net: SW1_pad/U0/NET1
+  0.281                        SW1_pad/U0/U1:YIN (f)
+               +     0.014          cell: ADLIB:IOIN_IB
+  0.295                        SW1_pad/U0/U1:Y (f)
+               +     1.714          net: SW1_c
+  2.009                        inst_oled_driver/start_sel_0_a9_0[0]:A (f)
+               +     0.343          cell: ADLIB:OA1A
+  2.352                        inst_oled_driver/start_sel_0_a9_0[0]:Y (r)
+               +     0.116          net: inst_oled_driver/N_4020
+  2.468                        inst_oled_driver/start_sel_RNO_0[0]:A (r)
+               +     0.125          cell: ADLIB:OR3
+  2.593                        inst_oled_driver/start_sel_RNO_0[0]:Y (r)
+               +     0.112          net: inst_oled_driver/start_sel_0_1[0]
+  2.705                        inst_oled_driver/start_sel_RNO[0]:A (r)
+               +     0.162          cell: ADLIB:OR3
+  2.867                        inst_oled_driver/start_sel_RNO[0]:Y (r)
+               +     0.117          net: inst_oled_driver/start_sel_RNO[0]
+  2.984                        inst_oled_driver/start_sel[0]:D (r)
+                                    
+  2.984                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          int_count[1]:Q
+               +     0.000          Clock source
+  N/C                          int_count[1]:Q (r)
+               +     1.196          net: OLED_clk_in_i
+  N/C                          OLED_clk_in_inferred_clock:A (r)
+               +     0.314          cell: ADLIB:CLKINT
+  N/C                          OLED_clk_in_inferred_clock:Y (r)
+               +     0.535          net: OLED_clk_in_c
+  N/C                          inst_oled_driver/start_sel[0]:CLK (r)
+               +     0.000          Library hold time: ADLIB:DFN1C0
+  N/C                          inst_oled_driver/start_sel[0]:D
+
+
+END SET External Hold
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        inst_oled_driver/init_done:CLK
+  To:                          oled_init
+  Delay (ns):                  1.476
+  Slack (ns):
+  Arrival (ns):                3.112
+  Required (ns):
+  Clock to Out (ns):           3.112
+
+Path 2
+  From:                        inst_oled_driver/oled_data[7]:CLK
+  To:                          sda
+  Delay (ns):                  2.126
+  Slack (ns):
+  Arrival (ns):                3.775
+  Required (ns):
+  Clock to Out (ns):           3.775
+
+Path 3
+  From:                        inst_oled_driver/int_scl:CLK
+  To:                          scl
+  Delay (ns):                  2.155
+  Slack (ns):
+  Arrival (ns):                3.802
+  Required (ns):
+  Clock to Out (ns):           3.802
+
+
+Expanded Path 1
+  From: inst_oled_driver/init_done:CLK
+  To: oled_init
+  data arrival time                              3.112
+  data required time                         -   N/C
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        int_count[1]:Q
+               +     0.000          Clock source
+  0.000                        int_count[1]:Q (r)
+               +     0.953          net: OLED_clk_in_i
+  0.953                        OLED_clk_in_inferred_clock:A (r)
+               +     0.250          cell: ADLIB:CLKINT
+  1.203                        OLED_clk_in_inferred_clock:Y (r)
+               +     0.433          net: OLED_clk_in_c
+  1.636                        inst_oled_driver/init_done:CLK (r)
+               +     0.202          cell: ADLIB:DFN1C0
+  1.838                        inst_oled_driver/init_done:Q (r)
+               +     0.148          net: oled_init_c
+  1.986                        oled_init_pad/U0/U1:D (r)
+               +     0.227          cell: ADLIB:IOTRI_OB_EB
+  2.213                        oled_init_pad/U0/U1:DOUT (r)
+               +     0.000          net: oled_init_pad/U0/NET1
+  2.213                        oled_init_pad/U0/U0:D (r)
+               +     0.899          cell: ADLIB:IOPAD_TRI
+  3.112                        oled_init_pad/U0/U0:PAD (r)
+               +     0.000          net: oled_init
+  3.112                        oled_init (r)
+                                    
+  3.112                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          int_count[1]:Q
+               +     0.000          Clock source
+  N/C                          int_count[1]:Q (r)
+                                    
+  N/C                          oled_init (r)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Removal
+
+Path 1
+  From:                        SW5
+  To:                          inst_oled_driver/main_proc.oled_char2_16[1]:CLR
+  Delay (ns):                  2.648
+  Slack (ns):
+  Arrival (ns):                2.648
+  Required (ns):
+  Removal (ns):                0.000
+  External Removal (ns):       -0.559
+
+Path 2
+  From:                        SW5
+  To:                          inst_oled_driver/main_proc.oled_char2_16[4]:CLR
+  Delay (ns):                  2.636
+  Slack (ns):
+  Arrival (ns):                2.636
+  Required (ns):
+  Removal (ns):                0.000
+  External Removal (ns):       -0.561
+
+Path 3
+  From:                        SW5
+  To:                          inst_oled_driver/main_proc.oled_char1_12[3]:CLR
+  Delay (ns):                  2.637
+  Slack (ns):
+  Arrival (ns):                2.637
+  Required (ns):
+  Removal (ns):                0.000
+  External Removal (ns):       -0.562
+
+Path 4
+  From:                        SW5
+  To:                          inst_oled_driver/main_proc.oled_char1_92[3]:CLR
+  Delay (ns):                  2.637
+  Slack (ns):
+  Arrival (ns):                2.637
+  Required (ns):
+  Removal (ns):                0.000
+  External Removal (ns):       -0.562
+
+Path 5
+  From:                        SW5
+  To:                          inst_oled_driver/main_proc.oled_char2_81[4]:CLR
+  Delay (ns):                  2.639
+  Slack (ns):
+  Arrival (ns):                2.639
+  Required (ns):
+  Removal (ns):                0.000
+  External Removal (ns):       -0.564
+
+
+Expanded Path 1
+  From: SW5
+  To: inst_oled_driver/main_proc.oled_char2_16[1]:CLR
+  data arrival time                              2.648
+  data required time                         -   N/C
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        SW5 (f)
+               +     0.000          net: SW5
+  0.000                        SW5_pad/U0/U0:PAD (f)
+               +     0.281          cell: ADLIB:IOPAD_IN
+  0.281                        SW5_pad/U0/U0:Y (f)
+               +     0.000          net: SW5_pad/U0/NET1
+  0.281                        SW5_pad/U0/U1:YIN (f)
+               +     0.014          cell: ADLIB:IOIN_IB
+  0.295                        SW5_pad/U0/U1:Y (f)
+               +     0.930          net: SW5_c
+  1.225                        inst_oled_driver/reset_RNO:A (f)
+               +     0.187          cell: ADLIB:INV
+  1.412                        inst_oled_driver/reset_RNO:Y (r)
+               +     0.555          net: inst_oled_driver/SW5_c_i
+  1.967                        inst_oled_driver/reset:A (r)
+               +     0.250          cell: ADLIB:CLKINT
+  2.217                        inst_oled_driver/reset:Y (r)
+               +     0.431          net: pacer_rst_c
+  2.648                        inst_oled_driver/main_proc.oled_char2_16[1]:CLR (r)
+                                    
+  2.648                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          int_count[1]:Q
+               +     0.000          Clock source
+  N/C                          int_count[1]:Q (r)
+               +     1.196          net: OLED_clk_in_i
+  N/C                          OLED_clk_in_inferred_clock:A (r)
+               +     0.314          cell: ADLIB:CLKINT
+  N/C                          OLED_clk_in_inferred_clock:Y (r)
+               +     0.579          net: OLED_clk_in_c
+  N/C                          inst_oled_driver/main_proc.oled_char2_16[1]:CLK (r)
+               +     0.000          Library removal time: ADLIB:DFN1E1C0
+  N/C                          inst_oled_driver/main_proc.oled_char2_16[1]:CLR
+
+
+END SET External Removal
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Path set Pin to Pin
+
+SET Input to Output
+
+Path 1
+  From:                        SW5
+  To:                          pacer_rst
+  Delay (ns):                  3.804
+  Slack (ns):
+  Arrival (ns):                3.804
+  Required (ns):
+
+Path 2
+  From:                        SW5
+  To:                          LED[2]
+  Delay (ns):                  5.918
+  Slack (ns):
+  Arrival (ns):                5.918
+  Required (ns):
+
+Path 3
+  From:                        SW5
+  To:                          LED[7]
+  Delay (ns):                  6.052
+  Slack (ns):
+  Arrival (ns):                6.052
+  Required (ns):
+
+Path 4
+  From:                        SW5
+  To:                          LED[0]
+  Delay (ns):                  6.467
+  Slack (ns):
+  Arrival (ns):                6.467
+  Required (ns):
+
+Path 5
+  From:                        SW5
+  To:                          LED[5]
+  Delay (ns):                  6.507
+  Slack (ns):
+  Arrival (ns):                6.507
+  Required (ns):
+
+
+Expanded Path 1
+  From: SW5
+  To: pacer_rst
+  data arrival time                              3.804
+  data required time                         -   N/C
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        SW5 (f)
+               +     0.000          net: SW5
+  0.000                        SW5_pad/U0/U0:PAD (f)
+               +     0.281          cell: ADLIB:IOPAD_IN
+  0.281                        SW5_pad/U0/U0:Y (f)
+               +     0.000          net: SW5_pad/U0/NET1
+  0.281                        SW5_pad/U0/U1:YIN (f)
+               +     0.014          cell: ADLIB:IOIN_IB
+  0.295                        SW5_pad/U0/U1:Y (f)
+               +     0.930          net: SW5_c
+  1.225                        inst_oled_driver/reset_RNO:A (f)
+               +     0.187          cell: ADLIB:INV
+  1.412                        inst_oled_driver/reset_RNO:Y (r)
+               +     0.555          net: inst_oled_driver/SW5_c_i
+  1.967                        inst_oled_driver/reset:A (r)
+               +     0.250          cell: ADLIB:CLKINT
+  2.217                        inst_oled_driver/reset:Y (r)
+               +     0.461          net: pacer_rst_c
+  2.678                        pacer_rst_pad/U0/U1:D (r)
+               +     0.227          cell: ADLIB:IOTRI_OB_EB
+  2.905                        pacer_rst_pad/U0/U1:DOUT (r)
+               +     0.000          net: pacer_rst_pad/U0/NET1
+  2.905                        pacer_rst_pad/U0/U0:D (r)
+               +     0.899          cell: ADLIB:IOPAD_TRI
+  3.804                        pacer_rst_pad/U0/U0:PAD (r)
+               +     0.000          net: pacer_rst
+  3.804                        pacer_rst (r)
+                                    
+  3.804                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          SW5 (f)
+                                    
+  N/C                          pacer_rst (r)
+                                    
+  N/C                          data required time
+
+
+END SET Input to Output
+
+----------------------------------------------------
+
+Path set User Sets
+

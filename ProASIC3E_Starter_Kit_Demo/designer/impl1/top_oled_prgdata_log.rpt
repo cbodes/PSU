@@ -1,0 +1,19 @@
+Microsemi Libero Software
+Version: 11.8.3.6
+Release: v11.8 SP3
+
+Info: The design C:/PID Project/ProASIC3E_Starter_Kit_Demo/designer/impl1/top_oled.adb was last
+      modified by software version 11.8.3.6.
+Opened an existing Libero design C:/PID
+Project/ProASIC3E_Starter_Kit_Demo/designer/impl1/top_oled.adb.
+
+The Export-map command succeeded ( 00:00:25 )
+Wrote to the file: C:\PID Project\ProASIC3E_Starter_Kit_Demo\designer\impl1\top_oled.pdb
+CHECKSUM: 34AE
+
+The Generate programming file command succeeded ( 00:00:26 )
+Design saved to file C:/PID Project/ProASIC3E_Starter_Kit_Demo/designer/impl1/top_oled.adb.
+
+The Execute Script command succeeded ( 00:00:29 )
+Design closed.
+

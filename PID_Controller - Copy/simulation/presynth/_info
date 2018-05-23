@@ -1,0 +1,616 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/LiberoProjects/PID_Controller/simulation
+vconstant_gen
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1525189093
+!i10b 1
+!s100 WG6g3;VWZDhoEg]UJXYd;2
+IB5Zf@OTQ[3c@RS`lS4[>m3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 constant_gen_v_unit
+S1
+Z4 dC:/PID Project/PID_Controller/simulation
+w1524202779
+8C:/PID Project/PID_Controller/hdl/constant_gen.v
+FC:/PID Project/PID_Controller/hdl/constant_gen.v
+Z5 L0 21
+Z6 OW;L;10.5c;63
+r1
+!s85 0
+31
+Z7 !s108 1525189093.000000
+!s107 C:/PID Project/PID_Controller/hdl/constant_gen.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/PID Project/PID_Controller/hdl/constant_gen.v|
+!s101 -O0
+!i113 1
+Z8 o-sv -work presynth -O0
+Z9 tCvgOpt 0
+vcontroller
+R1
+R2
+!i10b 1
+!s100 T]X67Ulnk9JS[:hgHRHSk1
+I6^EmONdoMNnTSEFo[>I?02
+R3
+!s105 controller_v_unit
+S1
+R4
+w1523056678
+8C:/PID Project/PID_Controller/hdl/controller.v
+FC:/PID Project/PID_Controller/hdl/controller.v
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/PID Project/PID_Controller/hdl/controller.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/PID Project/PID_Controller/hdl/controller.v|
+!s101 -O0
+!i113 1
+R8
+R9
+vderivative_calc
+R1
+Z10 !s110 1525189090
+!i10b 1
+!s100 ?n^RIR^cf;>@So`VAz=m52
+I0OLf[X^adCARTRSamNC]T2
+R3
+!s105 derivative_calc_v_unit
+S1
+R4
+w1520134634
+8C:/PID Project/PID_Controller/hdl/derivative_calc.v
+FC:/PID Project/PID_Controller/hdl/derivative_calc.v
+Z11 L0 20
+R6
+r1
+!s85 0
+31
+Z12 !s108 1525189090.000000
+!s107 C:/PID Project/PID_Controller/hdl/derivative_calc.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/PID Project/PID_Controller/hdl/derivative_calc.v|
+!s101 -O0
+!i113 1
+R8
+R9
+verror_calc
+R1
+R10
+!i10b 1
+!s100 k29oSlGJF2JECDRomC]fM0
+IL?8_lD5KY>hJn=L:oS7L`1
+R3
+!s105 error_calc_v_unit
+S1
+R4
+w1523052168
+8C:/PID Project/PID_Controller/hdl/error_calc.v
+FC:/PID Project/PID_Controller/hdl/error_calc.v
+R5
+R6
+r1
+!s85 0
+31
+R12
+!s107 C:/PID Project/PID_Controller/hdl/error_calc.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/PID Project/PID_Controller/hdl/error_calc.v|
+!s101 -O0
+!i113 1
+R8
+R9
+verror_sr
+R1
+R10
+!i10b 1
+!s100 @N;fT_L_TWR80Ue4S]a]41
+IblRiXgEH@RR_k5fA2a9bH2
+R3
+!s105 error_sr_v_unit
+S1
+R4
+w1520119775
+8C:/PID Project/PID_Controller/hdl/error_sr.v
+FC:/PID Project/PID_Controller/hdl/error_sr.v
+R5
+R6
+r1
+!s85 0
+31
+R12
+!s107 C:/PID Project/PID_Controller/hdl/error_sr.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/PID Project/PID_Controller/hdl/error_sr.v|
+!s101 -O0
+!i113 1
+R8
+R9
+vintegral_calc
+R1
+R10
+!i10b 1
+!s100 UCU[9WC]GeMcUU[hBG:=M0
+I<2mm8FbDO]TD4OjgOFK7i3
+R3
+!s105 integral_calc_v_unit
+S1
+R4
+w1521335498
+8C:/PID Project/PID_Controller/hdl/integral_calc.v
+FC:/PID Project/PID_Controller/hdl/integral_calc.v
+R5
+R6
+r1
+!s85 0
+31
+R12
+!s107 C:/PID Project/PID_Controller/hdl/integral_calc.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/PID Project/PID_Controller/hdl/integral_calc.v|
+!s101 -O0
+!i113 1
+R8
+R9
+vintegral_calc_tb
+R1
+!s110 1521332589
+!i10b 1
+!s100 R9BPH3S>8G8^8[2]XdJa[0
+Iz<<a6h^MQhCNVNEP23Kan3
+R3
+!s105 integral_calc_tb_v_unit
+S1
+R4
+w1521332576
+8C:/PID Project/PID_Controller/stimulus/integral_calc_tb.v
+FC:/PID Project/PID_Controller/stimulus/integral_calc_tb.v
+Z13 L0 30
+R6
+r1
+!s85 0
+31
+!s108 1521332589.000000
+!s107 C:/PID Project/PID_Controller/stimulus/integral_calc_tb.v|
+!s90 -reportprogress|300|+incdir+C:/PID Project/PID_Controller/stimulus|-sv|-work|presynth|C:/PID Project/PID_Controller/stimulus/integral_calc_tb.v|
+!s101 -O0
+!i113 1
+R8
+Z14 !s92 {+incdir+C:/PID Project/PID_Controller/stimulus} -sv -work presynth -O0
+R9
+vPID_controller
+R1
+Z15 !s110 1525189092
+!i10b 1
+!s100 Sl;[J3Rf@GU7Fc:_HAnA51
+I0:A=EIf:A>CSz]FbOkkU^0
+R3
+!s105 PID_controller_v_unit
+S1
+R4
+w1525186141
+8C:/PID Project/PID_Controller/hdl/PID_controller.v
+FC:/PID Project/PID_Controller/hdl/PID_controller.v
+R5
+R6
+r1
+!s85 0
+31
+Z16 !s108 1525189092.000000
+!s107 C:/PID Project/PID_Controller/hdl/PID_controller.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/PID Project/PID_Controller/hdl/PID_controller.v|
+!s101 -O0
+!i113 1
+R8
+R9
+n@p@i@d_controller
+vpid_controller_tb
+R1
+!s110 1519788814
+!i10b 1
+!s100 OaW0GEo]Jz8=Y<@MbdgD[1
+IHKMT;7hllR>fj[PFET;G;0
+R3
+!s105 pid_controller_tb_v_unit
+S1
+R0
+w1519786263
+8C:/LiberoProjects/PID_Controller/stimulus/pid_controller_tb.v
+FC:/LiberoProjects/PID_Controller/stimulus/pid_controller_tb.v
+R13
+R6
+r1
+!s85 0
+31
+!s108 1519788814.000000
+!s107 C:/LiberoProjects/PID_Controller/stimulus/pid_controller_tb.v|
+!s90 -reportprogress|300|+incdir+C:/LiberoProjects/PID_Controller/stimulus|-sv|-work|presynth|C:/LiberoProjects/PID_Controller/stimulus/pid_controller_tb.v|
+!s101 -O0
+!i113 1
+R8
+!s92 +incdir+C:/LiberoProjects/PID_Controller/stimulus -sv -work presynth -O0
+R9
+vpid_controllertb
+R1
+!s110 1525189094
+!i10b 1
+!s100 _eThhd5l4dfYZm:1gKmLU0
+If5KZfhde@e;6`Xh8h:4dO2
+R3
+!s105 pid_controllertb_v_unit
+S1
+R4
+w1525185676
+8C:/PID Project/PID_Controller/stimulus/pid_controllertb.v
+FC:/PID Project/PID_Controller/stimulus/pid_controllertb.v
+R13
+R6
+r1
+!s85 0
+31
+!s108 1525189094.000000
+!s107 C:/PID Project/PID_Controller/stimulus/pid_controllertb.v|
+!s90 -reportprogress|300|+incdir+C:/PID Project/PID_Controller/stimulus|-sv|-work|presynth|C:/PID Project/PID_Controller/stimulus/pid_controllertb.v|
+!s101 -O0
+!i113 1
+R8
+R14
+R9
+vpid_ctrl
+R1
+!s110 1522272413
+!i10b 1
+!s100 1SRA2YLU4o4Y8_;VENbLT2
+Iiz=>XZL?EAY7F6]m^88WN1
+R3
+!s105 pid_ctrl_v_unit
+S1
+R4
+w1522271947
+8C:/PID Project/PID_Controller/hdl/pid_ctrl.v
+FC:/PID Project/PID_Controller/hdl/pid_ctrl.v
+R5
+R6
+r1
+!s85 0
+31
+!s108 1522272413.000000
+!s107 C:/PID Project/PID_Controller/hdl/pid_ctrl.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/PID Project/PID_Controller/hdl/pid_ctrl.v|
+!s101 -O0
+!i113 1
+R8
+R9
+vpid_sum
+R1
+Z17 !s110 1525189091
+!i10b 1
+!s100 R?_;i8P_DE7fNB_NX:Mg>3
+Ik=h5>O?WMHlk19PKT7FBk1
+R3
+!s105 pid_sum_v_unit
+S1
+R4
+w1523239037
+8C:/PID Project/PID_Controller/hdl/pid_sum.v
+FC:/PID Project/PID_Controller/hdl/pid_sum.v
+R5
+R6
+r1
+!s85 0
+31
+Z18 !s108 1525189091.000000
+!s107 C:/PID Project/PID_Controller/hdl/pid_sum.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/PID Project/PID_Controller/hdl/pid_sum.v|
+!s101 -O0
+!i113 1
+R8
+R9
+vpll_maxf
+R1
+R2
+!i10b 1
+!s100 1lPLYBLjE050WmXFnhhfb0
+IGGXI2e^cGh>NYY4YlnHBE3
+R3
+!s105 pll_maxf_v_unit
+S1
+R4
+w1524199165
+8C:/PID Project/PID_Controller/smartgen/pll_maxf/pll_maxf.v
+FC:/PID Project/PID_Controller/smartgen/pll_maxf/pll_maxf.v
+L0 5
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/PID Project/PID_Controller/smartgen/pll_maxf/pll_maxf.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/PID Project/PID_Controller/smartgen/pll_maxf/pll_maxf.v|
+!s101 -O0
+!i113 1
+R8
+R9
+vPSU_controller
+R1
+Z19 !s110 1525189089
+!i10b 1
+!s100 VcM3Pdefk]3oG^a@=<aH82
+IlbfbN<SiW_cDn:hi`4idd3
+R3
+!s105 PSU_controller_v_unit
+S1
+R4
+w1525188018
+8C:/PID Project/PID_Controller/hdl/PSU_controller.v
+FC:/PID Project/PID_Controller/hdl/PSU_controller.v
+R5
+R6
+r1
+!s85 0
+31
+Z20 !s108 1525189089.000000
+!s107 C:/PID Project/PID_Controller/hdl/PSU_controller.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/PID Project/PID_Controller/hdl/PSU_controller.v|
+!s101 -O0
+!i113 1
+R8
+R9
+n@p@s@u_controller
+vPSU_Top_Level
+R1
+R15
+!i10b 1
+!s100 `1=9`XCfa=ETgVNh=UX=72
+Io=;QPoUGjz<1;Q<0SP:Ee0
+R3
+!s105 PSU_Top_Level_v_unit
+S1
+R4
+w1525189082
+8C:/PID Project/PID_Controller/hdl/PSU_Top_Level.v
+FC:/PID Project/PID_Controller/hdl/PSU_Top_Level.v
+R5
+R6
+r1
+!s85 0
+31
+R16
+!s107 C:/PID Project/PID_Controller/hdl/PSU_Top_Level.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/PID Project/PID_Controller/hdl/PSU_Top_Level.v|
+!s101 -O0
+!i113 1
+R8
+R9
+n@p@s@u_@top_@level
+vpwm_ctl
+R1
+R2
+!i10b 1
+!s100 EU[eO2QHT4MA6b5a40@@A0
+IFzWH4jlkjnC_EAU=B]X]F2
+R3
+!s105 pwm_ctl_v_unit
+S1
+R4
+w1525018127
+8C:/PID Project/PID_Controller/hdl/pwm_ctl.v
+FC:/PID Project/PID_Controller/hdl/pwm_ctl.v
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/PID Project/PID_Controller/hdl/pwm_ctl.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/PID Project/PID_Controller/hdl/pwm_ctl.v|
+!s101 -O0
+!i113 1
+R8
+R9
+vpwm_tx
+R1
+R17
+!i10b 1
+!s100 ImWYndPCda>kXV3OXl3E03
+I<<N:a38FEnnjRWE:o=XH90
+R3
+!s105 pwm_tx_v_unit
+S1
+R4
+w1525018180
+8C:/PID Project/PID_Controller/hdl/pwm_tx.v
+FC:/PID Project/PID_Controller/hdl/pwm_tx.v
+R5
+R6
+r1
+!s85 0
+31
+R18
+!s107 C:/PID Project/PID_Controller/hdl/pwm_tx.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/PID Project/PID_Controller/hdl/pwm_tx.v|
+!s101 -O0
+!i113 1
+R8
+R9
+vsig_gen
+R1
+R19
+!i10b 1
+!s100 _1zm[^UNoF8jhcbkHeo9:2
+I6MNFbd=4:l]9XRLi0IgO=3
+R3
+!s105 sig_gen_v_unit
+S1
+R4
+w1520132301
+8C:/PID Project/PID_Controller/hdl/sig_gen.v
+FC:/PID Project/PID_Controller/hdl/sig_gen.v
+R5
+R6
+r1
+!s85 0
+31
+R20
+!s107 C:/PID Project/PID_Controller/hdl/sig_gen.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/PID Project/PID_Controller/hdl/sig_gen.v|
+!s101 -O0
+!i113 1
+R8
+R9
+vspi_clk
+R1
+R17
+!i10b 1
+!s100 =Re`0E^8>G8:U<4H?DdmR2
+ImA8`D`<26WjU[EIGTJ=C?0
+R3
+!s105 spi_clk_v_unit
+S1
+R4
+w1520204935
+8C:/PID Project/PID_Controller/hdl/spi_clk.v
+FC:/PID Project/PID_Controller/hdl/spi_clk.v
+R5
+R6
+r1
+!s85 0
+31
+R18
+!s107 C:/PID Project/PID_Controller/hdl/spi_clk.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/PID Project/PID_Controller/hdl/spi_clk.v|
+!s101 -O0
+!i113 1
+R8
+R9
+vspi_ctl
+R1
+R15
+!i10b 1
+!s100 Bz[6AY=K;GG=>l3U7COKb3
+I9Sg5:iFLSO```C^bISX:M1
+R3
+!s105 spi_ctl_v_unit
+S1
+R4
+w1525031884
+8C:/PID Project/PID_Controller/hdl/spi_ctl.v
+FC:/PID Project/PID_Controller/hdl/spi_ctl.v
+R5
+R6
+r1
+!s85 0
+31
+R16
+!s107 C:/PID Project/PID_Controller/hdl/spi_ctl.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/PID Project/PID_Controller/hdl/spi_ctl.v|
+!s101 -O0
+!i113 1
+R8
+R9
+vspi_pts
+R1
+!s110 1524789311
+!i10b 1
+!s100 [28YUEkP6G3nOAIYI=^[e1
+IKFCKn1HhU0OH1>YXBV4AK3
+R3
+!s105 spi_pts_v_unit
+S1
+R4
+w1523002083
+8C:/PID Project/PID_Controller/hdl/spi_pts.v
+FC:/PID Project/PID_Controller/hdl/spi_pts.v
+R5
+R6
+r1
+!s85 0
+31
+!s108 1524789311.000000
+!s107 C:/PID Project/PID_Controller/hdl/spi_pts.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/PID Project/PID_Controller/hdl/spi_pts.v|
+!s101 -O0
+!i113 1
+R8
+R9
+vspi_rx
+R1
+R15
+!i10b 1
+!s100 0chA>hC72eIo[TfI`bzFz1
+IAS5Ub27Vg7NHRUMN6hABG3
+R3
+!s105 spi_rx_v_unit
+S1
+R4
+w1524789965
+8C:/PID Project/PID_Controller/hdl/spi_rx.v
+FC:/PID Project/PID_Controller/hdl/spi_rx.v
+R5
+R6
+r1
+!s85 0
+31
+R16
+!s107 C:/PID Project/PID_Controller/hdl/spi_rx.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/PID Project/PID_Controller/hdl/spi_rx.v|
+!s101 -O0
+!i113 1
+R8
+R9
+vspi_stp
+R1
+R17
+!i10b 1
+!s100 B^P4=SSmS=J[fkCklPBck3
+I]22Tm>hXZB^JYThgVgKDm0
+R3
+!s105 spi_stp_v_unit
+S1
+R4
+w1522886649
+8C:/PID Project/PID_Controller/hdl/spi_stp.v
+FC:/PID Project/PID_Controller/hdl/spi_stp.v
+R11
+R6
+r1
+!s85 0
+31
+R18
+!s107 C:/PID Project/PID_Controller/hdl/spi_stp.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/PID Project/PID_Controller/hdl/spi_stp.v|
+!s101 -O0
+!i113 1
+R8
+R9
+vv_test
+R1
+!s110 1519877212
+!i10b 1
+!s100 fIB9cHOmI:B9nkSLISTUF2
+I5kDB>ZfV9d:;5U4zzmo0i0
+R3
+!s105 v_test_v_unit
+S1
+R4
+w1519877022
+8C:/PID Project/PID_Controller/hdl/v_test.v
+FC:/PID Project/PID_Controller/hdl/v_test.v
+R5
+R6
+r1
+!s85 0
+31
+!s108 1519877211.000000
+!s107 C:/PID Project/PID_Controller/hdl/v_test.v|
+!s90 -reportprogress|300|-sv|-work|presynth|C:/PID Project/PID_Controller/hdl/v_test.v|
+!s101 -O0
+!i113 1
+R8
+R9

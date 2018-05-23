@@ -1,0 +1,169 @@
+//////////////////////////////////////////////////////////////////////
+// Created by Microsemi SmartDesign Tue Feb 27 17:22:43 2018
+// Testbench Template
+// This is a basic testbench that instantiates your design with basic 
+// clock and reset pins connected.  If your design has special
+// clock/reset or testbench driver requirements then you should 
+// copy this file and modify it. 
+//////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// Company: <Name>
+//
+// File: pid_controllertb.v
+// File history:
+//      <Revision number>: <Date>: <Comments>
+//      <Revision number>: <Date>: <Comments>
+//      <Revision number>: <Date>: <Comments>
+//
+// Description: 
+//
+// <Description here>
+//
+// Targeted device: <Family::ProASIC3E> <Die::A3PE1500> <Package::208 PQFP>
+// Author: <Name>
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+`timescale 1ns/100ps
+
+module pid_controllertb;
+
+    parameter ADC_WIDTH = 12;
+    parameter SR_LENGTH = 2;
+    parameter TARGET_V = 3;
+
+integer i;
+parameter SYSCLK_PERIOD = 100;// 10MHZ
+
+wire tb_cs, tb_sck;
+reg tb_din = 0;
+reg SYSCLK = 1'b0;
+reg NSYSRESET = 1'b1;
+reg [11:0] tb_vd = 12'd0;
+
+
+    wire din_12;
+    wire sck_12, cs_12, primary_12, secondary_12;
+    wire din_33;
+    wire sck_33, cs_33, primary_33, secondary_33;
+    wire din_fb;
+    wire sck_fb, cs_fb, primary_fb, secondary_fb;
+    wire din_5;
+    wire sck_5, cs_5, primary_5, secondary_5;
+    wire din_15;
+    wire sck_15, cs_15, primary_15, secondary_15;
+
+
+//////////////////////////////////////////////////////////////////////
+// Reset Pulse
+//////////////////////////////////////////////////////////////////////
+initial
+begin
+    NSYSRESET = 1'b0;
+    #(SYSCLK_PERIOD * 2 )
+    NSYSRESET = 1'b1;
+    //changeVD;
+    @(posedge SYSCLK);  
+    @(posedge SYSCLK);
+    @(negedge tb_cs);
+    tb_vd = 12'd100;
+    genvd; 
+    @(negedge tb_cs);
+    tb_vd = 12'd200;
+    genvd; 
+    @(negedge tb_cs);
+    tb_vd = 12'd300;
+    genvd; 
+    @(negedge tb_cs);
+    tb_vd = 12'd400;
+    genvd; 
+    @(posedge SYSCLK);
+    tb_din = 1;
+end
+
+task genvd; begin
+        @(negedge tb_sck);    
+        @(negedge tb_sck);    
+        @(negedge tb_sck);    
+        @(negedge tb_sck);   
+        @(negedge tb_sck);   
+        for (i = 11; i >= 0; i--) begin
+            tb_din = tb_vd[i];
+            @(negedge tb_sck);  
+        end
+        @(negedge tb_sck);    
+        @(negedge tb_sck);    
+        @(negedge tb_sck);   
+        @(negedge tb_sck);   
+        @(negedge tb_sck);   
+        for (i = 11; i >= 0; i--) begin
+            tb_din = tb_vd[i];
+            @(negedge tb_sck);  
+        end
+end
+endtask
+
+//////////////////////////////////////////////////////////////////////
+// Clock Driver
+//////////////////////////////////////////////////////////////////////
+
+	always
+	begin : CLK_GEN
+		SYSCLK = 1'b0;
+		#(SYSCLK_PERIOD / 2.0);
+		SYSCLK = 1'b1;
+		#(SYSCLK_PERIOD / 2.0);
+	end
+
+//////////////////////////////////////////////////////////////////////
+// Instantiate Unit Under Test:  error_calc
+/////////////////////////////////////////////////////////////////////
+/*PID_controller 
+ PID
+(
+    // Inputs
+    .clk(SYSCLK),
+    .n_rst(NSYSRESET),
+    // Outputs
+    .fm_out(tb_fm),
+    .din(tb_din),
+    .dout(tb_dout),
+    .cs(tb_cs),
+    .sck(tb_sck),
+    .inc_const(1'b0),
+    .dec_const(1'b0),
+    .choose_const(1'b0),
+    .sum_sign(tb_sign),
+    .secondary(tb_secondary),
+    .LED(tb_LED)
+    // Inouts
+);*/
+
+assign din_12 = tb_din;
+assign din_33 = tb_din;
+assign din_fb = tb_din;
+assign din_5 = tb_din;
+assign din_15 = tb_din;
+
+assign tb_cs = cs_12;
+assign tb_sck = sck_12;
+
+PSU_Top_Level PSU
+(
+    .clk(SYSCLK), .n_rst(NSYSRESET), 
+    .din_12,
+    .sck_12, .cs_12, .primary_12, .secondary_12,
+    .din_33,
+    .sck_33, .cs_33, .primary_33, .secondary_33,
+    .din_fb,
+    .sck_fb, .cs_fb, .primary_fb, .secondary_fb,
+    .din_5,
+    .sck_5, .cs_5, .primary_5, .secondary_5,
+    .din_15,
+    .sck_15, .cs_15, .primary_15, .secondary_15
+);
+
+
+endmodule
+

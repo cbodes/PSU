@@ -1,0 +1,6 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: MF238 :"c:\pid project\spi_recieveer\hdl\spi_clk.v":39:17:39:26|Found 6-bit incrementor, 'un3_counter[5:0]'
+@N: FP130 |Promoting Net clk_c on CLKBUF  clk_pad 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

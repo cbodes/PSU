@@ -1,0 +1,5 @@
+@W: MO160 :"c:\pid project\spi_recieveer\hdl\spi_pts.v":34:0:34:5|Register bit PTS.sr[0] (in view view:work.spi_rx(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\spi_recieveer\hdl\spi_pts.v":34:0:34:5|Register bit PTS.sr[1] (in view view:work.spi_rx(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\spi_recieveer\hdl\spi_pts.v":34:0:34:5|Register bit PTS.sr[2] (in view view:work.spi_rx(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MT420 |Found inferred clock spi_rx|clk with period 10.00ns. Please declare a user-defined clock on object "p:clk"
+@W: MT420 |Found inferred clock spi_clk_20s|cur_clk_inferred_clock[0] with period 10.00ns. Please declare a user-defined clock on object "n:SPICLK.cur_clk[0]"

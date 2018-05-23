@@ -1,0 +1,76 @@
+@N: CD630 :"F:\Manufactioring test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\hdl\top_oled_v2.vhd":24:7:24:14|Synthesizing work.top_oled.rtl 
+@N: CD630 :"F:\Manufactioring test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\hdl\Data_block.vhd":20:7:20:16|Synthesizing work.data_block.def_arch 
+@W: CD638 :"F:\Manufactioring test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\hdl\Data_block.vhd":64:11:64:20|Signal hex_sw_net is undriven 
+@W: CD638 :"F:\Manufactioring test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\hdl\Data_block.vhd":65:11:65:23|Signal mux_selectsw2 is undriven 
+@W: CD638 :"F:\Manufactioring test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\hdl\Data_block.vhd":66:11:66:23|Signal mux_selectsw3 is undriven 
+@W: CD638 :"F:\Manufactioring test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\hdl\Data_block.vhd":67:11:67:31|Signal hexsw_counter_sel_int is undriven 
+@W: CD638 :"F:\Manufactioring test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\hdl\Data_block.vhd":68:11:68:34|Signal flashled_counter_sel_int is undriven 
+@N: CD630 :"F:\Manufactioring test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\hdl\mux2.vhd":5:7:5:10|Synthesizing work.mux2.behavioral 
+@W: CD604 :"F:\Manufactioring test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\hdl\mux2.vhd":23:6:23:19|OTHERS clause is not synthesized 
+Post processing for work.mux2.behavioral
+@N: CD630 :"F:\Manufactioring test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\hdl\clockdiv.vhd":5:7:5:14|Synthesizing work.clockdiv.behavioural 
+Post processing for work.clockdiv.behavioural
+@N: CD630 :"F:\Manufactioring test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\hdl\count8.vhd":6:7:6:12|Synthesizing work.count8.behavioral 
+@W: CG296 :"F:\Manufactioring test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\hdl\count8.vhd":21:2:21:8|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"F:\Manufactioring test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\hdl\count8.vhd":27:23:27:26|Referenced variable data is not in sensitivity list
+@W: CG290 :"F:\Manufactioring test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\hdl\count8.vhd":26:11:26:15|Referenced variable sload is not in sensitivity list
+Post processing for work.count8.behavioral
+@N: CD630 :"F:\Manufactioring test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\hdl\LED_Flashing.vhd":21:7:21:18|Synthesizing work.led_flashing.behavioral 
+@W: CD604 :"F:\Manufactioring test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\hdl\LED_Flashing.vhd":63:6:63:19|OTHERS clause is not synthesized 
+@W: CD604 :"F:\Manufactioring test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\hdl\LED_Flashing.vhd":77:6:77:19|OTHERS clause is not synthesized 
+@N: CD630 :"F:\Manufactioring test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\hdl\binary_counter.vhd":6:7:6:20|Synthesizing work.binary_counter.behavioral 
+Post processing for work.binary_counter.behavioral
+Post processing for work.led_flashing.behavioral
+Post processing for work.data_block.def_arch
+@N: CD630 :"F:\Manufactioring test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\hdl\OLED_driver_proasic3e_hdl_v4.vhd":28:7:28:17|Synthesizing work.oled_driver.def_arch 
+@N: CD232 :"F:\Manufactioring test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\hdl\OLED_driver_proasic3e_hdl_v4.vhd":64:16:64:17|Using gray code encoding for type state_type
+@N: CD630 :"C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\proasic3e.vhd":3135:10:3135:15|Synthesizing proasic3e.clkint.syn_black_box 
+Post processing for proasic3e.clkint.syn_black_box
+Post processing for work.oled_driver.def_arch
+@N: CD630 :"F:\Manufactioring test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\smartgen\PLL_clock\PLL_clock.vhd":8:7:8:15|Synthesizing work.pll_clock.def_arch 
+@N: CD630 :"C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\proasic3e.vhd":3976:10:3976:12|Synthesizing proasic3e.pll.syn_black_box 
+Post processing for proasic3e.pll.syn_black_box
+@N: CD630 :"C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\proasic3e.vhd":407:10:407:15|Synthesizing proasic3e.pllint.syn_black_box 
+Post processing for proasic3e.pllint.syn_black_box
+@N: CD630 :"C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\proasic3e.vhd":1894:10:1894:12|Synthesizing proasic3e.gnd.syn_black_box 
+Post processing for proasic3e.gnd.syn_black_box
+@N: CD630 :"C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\proasic3e.vhd":2999:10:2999:12|Synthesizing proasic3e.vcc.syn_black_box 
+Post processing for proasic3e.vcc.syn_black_box
+Post processing for work.pll_clock.def_arch
+Post processing for work.top_oled.rtl
+@N: CL201 :"F:\Manufactioring test\A3PE_STARTER_KIT_DF\ProASIC3E_Starter_Kit_Demo\hdl\OLED_driver_proasic3e_hdl_v4.vhd":125:4:125:5|Trying to extract state machine for register state
+Extracted state machine for register state
+State machine has 33 reachable states with original encodings of:
+   000000
+   000001
+   000010
+   000011
+   000100
+   000101
+   000110
+   000111
+   001000
+   001001
+   001010
+   001011
+   001100
+   001101
+   001110
+   001111
+   010000
+   010001
+   010010
+   010011
+   010100
+   010101
+   010110
+   010111
+   011000
+   011001
+   011010
+   011011
+   011100
+   011101
+   011110
+   011111
+   110000

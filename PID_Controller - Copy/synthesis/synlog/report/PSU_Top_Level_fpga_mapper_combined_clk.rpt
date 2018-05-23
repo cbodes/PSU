@@ -1,0 +1,30 @@
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+1 non-gated/non-generated clock tree(s) driving 7082 clock pin(s) of sequential element(s)
+5 gated/generated clock tree(s) driving 155 clock pin(s) of sequential element(s)
+0 instances converted, 155 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@K:CKID0006       clk                 port                   7082       CG.k_pfb[12]   
+=======================================================================================
+================================================================================ Gated/Generated Clocks =================================================================================
+Clock Tree ID     Driving Element           Drive Element Type     Fanout     Sample Instance                    Explanation                                                             
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       PID_12.SPICLK.cur_clk     DFN1C0                 31         PID_12.SPI.SPI_RDYSIG.sig_prev     No generated or derived clock directive on output of sequential instance
+@K:CKID0002       PID_33.SPICLK.cur_clk     DFN1C0                 31         PID_33.SPI.SPI_RDYSIG.sig_prev     No generated or derived clock directive on output of sequential instance
+@K:CKID0003       PID_FB.SPICLK.cur_clk     DFN1C0                 31         PID_FB.SPI.SPI_RDYSIG.sig_prev     No generated or derived clock directive on output of sequential instance
+@K:CKID0004       PID_5.SPICLK.cur_clk      DFN1C0                 31         PID_5.SPI.SPI_RDYSIG.sig_prev      No generated or derived clock directive on output of sequential instance
+@K:CKID0005       PID_15.SPICLK.cur_clk     DFN1C0                 31         PID_15.SPI.SPI_RDYSIG.sig_prev     No generated or derived clock directive on output of sequential instance
+=========================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+

@@ -1,0 +1,1687 @@
+# Fri May 04 05:42:12 2018
+
+Synopsys Microsemi Technology Mapper, Version mapact, Build 1920R, Built Nov 17 2016 09:40:34
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09M-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 110MB)
+
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":34:38:34:49|Tristate driver secondary_15 (in view: work.PSU_Top_Level(verilog)) on net secondary_15 (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":34:26:34:35|Tristate driver primary_15 (in view: work.PSU_Top_Level(verilog)) on net primary_15 (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":34:19:34:23|Tristate driver cs_15 (in view: work.PSU_Top_Level(verilog)) on net cs_15 (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":34:11:34:16|Tristate driver sck_15 (in view: work.PSU_Top_Level(verilog)) on net sck_15 (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":32:35:32:45|Tristate driver secondary_5 (in view: work.PSU_Top_Level(verilog)) on net secondary_5 (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":32:24:32:32|Tristate driver primary_5 (in view: work.PSU_Top_Level(verilog)) on net primary_5 (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":32:18:32:21|Tristate driver cs_5 (in view: work.PSU_Top_Level(verilog)) on net cs_5 (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":32:11:32:15|Tristate driver sck_5 (in view: work.PSU_Top_Level(verilog)) on net sck_5 (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":30:38:30:49|Tristate driver secondary_fb (in view: work.PSU_Top_Level(verilog)) on net secondary_fb (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\pid project\pid_controller\hdl\psu_top_level.v":30:26:30:35|Tristate driver primary_fb (in view: work.PSU_Top_Level(verilog)) on net primary_fb (in view: work.PSU_Top_Level(verilog)) has its enable tied to GND.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+Encoding state machine state[2:0] (in view: work.PSU_controller(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+@N: MO231 :"c:\pid project\pid_controller\hdl\psu_controller.v":35:0:35:5|Found counter in view:work.PSU_controller(verilog) instance cnt[8:0] 
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_0_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_1_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_2_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_3_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\pid project\pid_controller\hdl\error_sr.v":35:0:35:5|Register bit AVGSR.sr_4_[12] (in view view:work.PID_controller_Z2(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@N: MO231 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Found counter in view:work.controller_Z1(verilog) instance count[15:0] 
+Encoding state machine state[13:0] (in view: work.controller_Z1(verilog))
+original code -> new code
+   000000 -> 00000000000001
+   000001 -> 00000000000010
+   000010 -> 00000000000100
+   000011 -> 00000000001000
+   000100 -> 00000000010000
+   000101 -> 00000000100000
+   000110 -> 00000001000000
+   000111 -> 00000010000000
+   001000 -> 00000100000000
+   001001 -> 00001000000000
+   001010 -> 00010000000000
+   001011 -> 00100000000000
+   001110 -> 01000000000000
+   001111 -> 10000000000000
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[15] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[14] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[13] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[12] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[11] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[10] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[9] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[8] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[7] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[6] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[5] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[4] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[3] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[2] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[1] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\controller.v":50:0:50:5|Removing sequential instance count[0] (in view: work.controller_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: MF184 :"c:\pid project\pid_controller\hdl\error_calc.v":40:19:40:36|Found 13 by 13 bit subtractor, 'un2_diffreg_0_0[12:0]'
+@N: MF176 |Default generator successful 
+Encoding state machine state[2:0] (in view: work.integral_calc_13s_1(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+@N: MF176 |Default generator successful 
+@N: MF238 :"c:\pid project\pid_controller\hdl\integral_calc.v":34:0:34:5|Found 13-bit incrementor, 'inf_abs1_a_1[12:0]'
+@N: MF238 :"c:\pid project\pid_controller\hdl\integral_calc.v":34:0:34:5|Found 13-bit incrementor, 'inf_abs0_a_0[12:0]'
+Encoding state machine state[2:0] (in view: work.integral_calc_13s_0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+@N: MF238 :"c:\pid project\pid_controller\hdl\integral_calc.v":34:0:34:5|Found 13-bit incrementor, 'inf_abs1_a_1[12:0]'
+@N: MF238 :"c:\pid project\pid_controller\hdl\integral_calc.v":34:0:34:5|Found 13-bit incrementor, 'inf_abs0_a_0[12:0]'
+@N: MF184 :"c:\pid project\pid_controller\hdl\derivative_calc.v":33:21:33:43|Found 13 by 13 bit subtractor, 'un2_deriv_out_0_0[12:0]'
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[0] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[1] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[2] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[3] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[4] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[5] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[6] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[7] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[8] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[9] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[10] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\derivative_calc.v":29:0:29:5|Removing sequential instance deriv_out[11] (in view: work.derivative_calc_13s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+Encoding state machine state[6:0] (in view: work.pid_sum_13s(verilog))
+original code -> new code
+   000 -> 0000001
+   001 -> 0000010
+   010 -> 0000100
+   011 -> 0001000
+   100 -> 0010000
+   101 -> 0100000
+   110 -> 1000000
+@N: MF176 |Default generator successful 
+@N: MF238 :"c:\pid project\pid_controller\hdl\pid_sum.v":48:0:48:5|Found 13-bit incrementor, 'inf_abs1_a_2[12:0]'
+@N: MF238 :"c:\pid project\pid_controller\hdl\pid_sum.v":48:0:48:5|Found 26-bit incrementor, 'inf_abs2_a_0[25:0]'
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MO231 :"c:\pid project\pid_controller\hdl\spi_ctl.v":39:0:39:5|Found counter in view:work.spi_ctl_12s(verilog) instance cnt[15:0] 
+Encoding state machine state[1:0] (in view: work.spi_ctl_12s(verilog))
+original code -> new code
+   00 -> 0
+   01 -> 1
+@N: MO225 :"c:\pid project\pid_controller\hdl\spi_ctl.v":39:0:39:5|There are no possible illegal states for state machine state[1:0] (in view: work.spi_ctl_12s(verilog)); safe FSM implementation is not required.
+Encoding state machine state[3:0] (in view: work.pwm_ctl_469_32s_13s_228538_732_0_1_2_3_4(verilog))
+original code -> new code
+   000 -> 00
+   001 -> 01
+   010 -> 10
+   100 -> 11
+@N: MO225 :"c:\pid project\pid_controller\hdl\pwm_ctl.v":51:0:51:5|There are no possible illegal states for state machine state[3:0] (in view: work.pwm_ctl_469_32s_13s_228538_732_0_1_2_3_4(verilog)); safe FSM implementation is not required.
+@N: MF176 |Default generator successful 
+@N: MF238 :"c:\pid project\pid_controller\hdl\pwm_ctl.v":103:28:103:37|Found 24-bit incrementor, 'un1_nsum_adj[23:0]'
+@N: MO231 :"c:\pid project\pid_controller\hdl\pwm_tx.v":50:0:50:5|Found counter in view:work.pwm_tx_469_32s_13s_10_228538_469(verilog) instance counter[31:0] 
+@N: MF179 :"c:\pid project\pid_controller\hdl\pwm_tx.v":57:33:57:52|Found 32 by 32 bit less-than operator ('<') un1_counter_2 (in view: work.pwm_tx_469_32s_13s_10_228538_469(verilog))
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":186:0:186:5|Found up-down counter in view:work.constant_gen(verilog) instance k_pfb[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":186:0:186:5|Found up-down counter in view:work.constant_gen(verilog) instance k_ifb[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":153:0:153:5|Found up-down counter in view:work.constant_gen(verilog) instance k_p12[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":153:0:153:5|Found up-down counter in view:work.constant_gen(verilog) instance k_i12[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":120:0:120:5|Found up-down counter in view:work.constant_gen(verilog) instance k_p15[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":120:0:120:5|Found up-down counter in view:work.constant_gen(verilog) instance k_i15[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":87:0:87:5|Found up-down counter in view:work.constant_gen(verilog) instance k_p33[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":87:0:87:5|Found up-down counter in view:work.constant_gen(verilog) instance k_i33[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":54:0:54:5|Found up-down counter in view:work.constant_gen(verilog) instance k_p5[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":54:0:54:5|Found up-down counter in view:work.constant_gen(verilog) instance k_i5[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":186:0:186:5|Found up-down counter in view:work.constant_gen(verilog) instance target_vfb[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":153:0:153:5|Found up-down counter in view:work.constant_gen(verilog) instance target_v12[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":120:0:120:5|Found up-down counter in view:work.constant_gen(verilog) instance target_v15[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":87:0:87:5|Found up-down counter in view:work.constant_gen(verilog) instance target_v33[12:0]  
+@N: MO230 :"c:\pid project\pid_controller\hdl\constant_gen.v":54:0:54:5|Found up-down counter in view:work.constant_gen(verilog) instance target_v5[12:0]  
+@N: BN362 :"c:\pid project\pid_controller\hdl\constant_gen.v":186:0:186:5|Removing sequential instance k_pfb[12] (in view: work.constant_gen(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\constant_gen.v":153:0:153:5|Removing sequential instance k_i12[12] (in view: work.constant_gen(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\constant_gen.v":153:0:153:5|Removing sequential instance k_p12[12] (in view: work.constant_gen(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\constant_gen.v":186:0:186:5|Removing sequential instance k_ifb[12] (in view: work.constant_gen(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\constant_gen.v":120:0:120:5|Removing sequential instance k_i15[12] (in view: work.constant_gen(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\constant_gen.v":120:0:120:5|Removing sequential instance k_p15[12] (in view: work.constant_gen(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\constant_gen.v":54:0:54:5|Removing sequential instance k_i5[12] (in view: work.constant_gen(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\constant_gen.v":54:0:54:5|Removing sequential instance k_p5[12] (in view: work.constant_gen(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\constant_gen.v":120:0:120:5|Removing sequential instance target_v15[12] (in view: work.constant_gen(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\constant_gen.v":153:0:153:5|Removing sequential instance target_v12[12] (in view: work.constant_gen(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\constant_gen.v":186:0:186:5|Removing sequential instance target_vfb[12] (in view: work.constant_gen(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\constant_gen.v":54:0:54:5|Removing sequential instance target_v5[12] (in view: work.constant_gen(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+
+Starting factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 123MB peak: 124MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:03s; Memory used current: 151MB peak: 152MB)
+
+@N: BN362 :"c:\pid project\pid_controller\hdl\sig_gen.v":28:0:28:5|Removing sequential instance PID_33.FM_CYCLE.sig_old (in view: work.PSU_Top_Level(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\pid project\pid_controller\hdl\sig_gen.v":28:0:28:5|Removing sequential instance PID_33.FM_CYCLE.sig_prev (in view: work.PSU_Top_Level(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@A: BN291 :"c:\pid project\pid_controller\hdl\sig_gen.v":28:0:28:5|Boundary register PID_33.FM_CYCLE.sig_prev (in view: work.PSU_Top_Level(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:03s; Memory used current: 148MB peak: 153MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:05s; Memory used current: 156MB peak: 190MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 158MB peak: 190MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:42s; CPU Time elapsed 0h:00m:41s; Memory used current: 236MB peak: 236MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:42s; CPU Time elapsed 0h:00m:41s; Memory used current: 234MB peak: 237MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:42s; CPU Time elapsed 0h:00m:41s; Memory used current: 229MB peak: 237MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:44s; CPU Time elapsed 0h:00m:43s; Memory used current: 237MB peak: 268MB)
+
+
+High Fanout Net Report
+**********************
+
+Driver Instance / Pin Name                          Fanout, notes                     
+--------------------------------------------------------------------------------------
+PSU_CTL.state[0] / Q                                48                                
+CG.k_i33[0] / Q                                     31                                
+CG.k_i33[1] / Q                                     36                                
+CG.k_i33[4] / Q                                     31                                
+CG.k_i33[5] / Q                                     41                                
+CG.k_i33[6] / Q                                     31                                
+CG.k_i33[7] / Q                                     40                                
+CG.k_i33[8] / Q                                     31                                
+CG.k_i33[9] / Q                                     37                                
+CG.k_i33[10] / Q                                    26                                
+CG.k_i33[11] / Q                                    38                                
+PID_33.CONTROLLER.state[2] / Q                      62                                
+PID_33.CONTROLLER.state[5] / Q                      847                               
+PID_33.CONTROLLER.state[13] / Q                     32                                
+PID_33.INTSR.sr_0_[12] / Q                          42                                
+PID_33.INTCALC.integ[25] / Q                        66                                
+PID_33.SUM.sumreg[39] / Q                           32                                
+PID_33.PWM_TX.un1_counter_4[0] / Y                  30                                
+PID_33.SUM.state[1] / Q                             41                                
+PID_33.SUM.state[2] / Q                             92                                
+PID_33.SUM.state[3] / Q                             28                                
+PID_33.AVG_CALC.state[0] / Q                        51                                
+n_rst_pad / Y                                       1474 : 1473 asynchronous set/reset
+choose_cont_pad[0] / Y                              48                                
+choose_cont_pad[1] / Y                              45                                
+choose_cont_pad[2] / Y                              38                                
+choose_cont_pad[3] / Y                              45                                
+choose_const_pad[0] / Y                             27                                
+CG.k_p5_0_sqmuxa_1 / Y                              25                                
+CG.k_p15_0_sqmuxa / Y                               31                                
+CG.k_ifb_0_sqmuxa / Y                               25                                
+CG.target_v5_0_sqmuxa_1 / Y                         28                                
+PID_33.PWM_CTL.next_off_div_1_sqmuxa_1_0_a3 / Y     53                                
+PID_33.PWM_CTL.un1_off_div5_i_0 / Y                 27                                
+PID_33.SUM.next_ireg_3.m2_0 / Y                     25                                
+PID_33.INTCALC.state_s0_0_a2 / Y                    29                                
+PID_33.INTCALC.un1_next_int_0_iv[13] / Y            37                                
+CG.target_v33_0_sqmuxa / Y                          25                                
+CG.k_p33_0_sqmuxa / Y                               29                                
+PID_33.SUM.un1_state_1_0_a2 / Y                     40                                
+PID_33.SUM.next_sum_1_sqmuxa / Y                    27                                
+PID_33.SUM.next_sum_0_sqmuxa_1 / Y                  26                                
+PID_33.SUM.next_sum_1_sqmuxa_2 / Y                  27                                
+PID_33.SUM.next_sum_0_sqmuxa_2 / Y                  28                                
+PID_33.SUM.un1_next_sum_1_iv[26] / Y                41                                
+CG.target_v15_0_sqmuxa / Y                          30                                
+CG.k_pfb_0_sqmuxa / Y                               29                                
+PID_33.SUM.next_ireg_3.m1_1 / Y                     27                                
+CG.k_i33_276_a1 / Y                                 30                                
+======================================================================================
+
+@N: FP130 |Promoting Net n_rst_c on CLKBUF  n_rst_pad 
+@N: FP130 |Promoting Net clk_c on CLKBUF  clk_pad 
+@N: FP130 |Promoting Net PID_33.int_enable on CLKINT  I_500 
+@N: FP130 |Promoting Net PID_33.SUM.state[2] on CLKINT  I_501 
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:45s; CPU Time elapsed 0h:00m:43s; Memory used current: 237MB peak: 268MB)
+
+Replicating Combinational Instance CG.k_i33_276_a1, fanout 30 segments 2
+Replicating Combinational Instance PID_33.SUM.next_ireg_3.m1_1, fanout 27 segments 2
+Replicating Combinational Instance CG.k_pfb_0_sqmuxa, fanout 29 segments 2
+Replicating Combinational Instance CG.target_v15_0_sqmuxa, fanout 30 segments 2
+Replicating Combinational Instance PID_33.SUM.un1_next_sum_1_iv[26], fanout 41 segments 2
+Replicating Combinational Instance PID_33.SUM.next_sum_0_sqmuxa_2, fanout 28 segments 2
+Replicating Combinational Instance PID_33.SUM.next_sum_1_sqmuxa_2, fanout 28 segments 2
+Replicating Combinational Instance PID_33.SUM.next_sum_0_sqmuxa_1, fanout 26 segments 2
+Replicating Combinational Instance PID_33.SUM.next_sum_1_sqmuxa, fanout 28 segments 2
+Replicating Combinational Instance PID_33.SUM.un1_state_1_0_a2, fanout 40 segments 2
+Replicating Combinational Instance CG.k_p33_0_sqmuxa, fanout 29 segments 2
+Replicating Combinational Instance CG.target_v33_0_sqmuxa, fanout 25 segments 2
+Replicating Combinational Instance PID_33.INTCALC.un1_next_int_0_iv[13], fanout 37 segments 2
+Replicating Combinational Instance PID_33.INTCALC.state_s0_0_a2, fanout 29 segments 2
+Replicating Combinational Instance PID_33.SUM.next_ireg_3.m2_0, fanout 25 segments 2
+Replicating Combinational Instance PID_33.PWM_CTL.un1_off_div5_i_0, fanout 27 segments 2
+Replicating Combinational Instance PID_33.PWM_CTL.next_off_div_1_sqmuxa_1_0_a3, fanout 53 segments 3
+Replicating Combinational Instance CG.target_v5_0_sqmuxa_1, fanout 28 segments 2
+Replicating Combinational Instance CG.k_ifb_0_sqmuxa, fanout 25 segments 2
+Replicating Combinational Instance CG.k_p15_0_sqmuxa, fanout 31 segments 2
+Replicating Combinational Instance CG.k_p5_0_sqmuxa_1, fanout 25 segments 2
+Buffering choose_const_c[0], fanout 27 segments 2
+Buffering choose_cont_c[3], fanout 45 segments 2
+Buffering choose_cont_c[2], fanout 39 segments 2
+Buffering choose_cont_c[1], fanout 45 segments 2
+Buffering choose_cont_c[0], fanout 48 segments 2
+Replicating Sequential Instance PID_33.AVG_CALC.state[0], fanout 51 segments 3
+Replicating Sequential Instance PID_33.SUM.state[3], fanout 29 segments 2
+Replicating Sequential Instance PID_33.SUM.state[1], fanout 42 segments 2
+Replicating Combinational Instance PID_33.PWM_TX.un1_counter_4[0], fanout 30 segments 2
+Replicating Sequential Instance PID_33.SUM.sumreg[39], fanout 34 segments 2
+Replicating Sequential Instance PID_33.INTCALC.integ[25], fanout 67 segments 3
+Replicating Sequential Instance PID_33.INTSR.sr_0_[12], fanout 44 segments 2
+Replicating Sequential Instance PID_33.CONTROLLER.state[13], fanout 32 segments 2
+Replicating Sequential Instance PID_33.CONTROLLER.state[2], fanout 62 segments 3
+Replicating Sequential Instance CG.k_i33[11], fanout 38 segments 2
+Replicating Sequential Instance CG.k_i33[10], fanout 26 segments 2
+Replicating Sequential Instance CG.k_i33[9], fanout 37 segments 2
+Replicating Sequential Instance CG.k_i33[8], fanout 31 segments 2
+Replicating Sequential Instance CG.k_i33[7], fanout 40 segments 2
+Replicating Sequential Instance CG.k_i33[6], fanout 31 segments 2
+Replicating Sequential Instance CG.k_i33[5], fanout 41 segments 2
+Replicating Sequential Instance CG.k_i33[4], fanout 31 segments 2
+Replicating Sequential Instance CG.k_i33[1], fanout 38 segments 2
+Replicating Sequential Instance CG.k_i33[0], fanout 32 segments 2
+Replicating Sequential Instance PSU_CTL.state[0], fanout 49 segments 3
+
+Added 6 Buffers
+Added 46 Cells via replication
+	Added 23 Sequential Cells via replication
+	Added 23 Combinational Cells via replication
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:45s; CPU Time elapsed 0h:00m:43s; Memory used current: 238MB peak: 268MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+1 non-gated/non-generated clock tree(s) driving 1400 clock pin(s) of sequential element(s)
+2 gated/generated clock tree(s) driving 96 clock pin(s) of sequential element(s)
+0 instances converted, 96 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@K:CKID0003       clk                 port                   1400       CG.k_pfb[11]   
+=======================================================================================
+========================================================================================================== Gated/Generated Clocks ===========================================================================================================
+Clock Tree ID     Driving Element         Drive Element Type     Fanout     Sample Instance                    Explanation                                                                                                                   
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       PID_33.PLL_PWM.Core     PLL                    65         PID_33.PWM_TX.off_reg[31]          Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0002       PID_33.PLL_PWM.Core     PLL                    31         PID_33.SPI.SPI_RDYSIG.sig_prev     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+=============================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:45s; CPU Time elapsed 0h:00m:44s; Memory used current: 201MB peak: 268MB)
+
+Writing Analyst data base C:\PID Project\PID_Controller\synthesis\synwork\PSU_Top_Level_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:46s; CPU Time elapsed 0h:00m:44s; Memory used current: 207MB peak: 268MB)
+
+Writing EDIF Netlist and constraint files
+L-2016.09M-2
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:46s; CPU Time elapsed 0h:00m:45s; Memory used current: 213MB peak: 268MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:46s; CPU Time elapsed 0h:00m:45s; Memory used current: 208MB peak: 268MB)
+
+@W: MT420 |Found inferred clock PSU_Top_Level|clk with period 10.00ns. Please declare a user-defined clock on object "p:clk"
+@W: MT420 |Found inferred clock pll_80|YC_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:PID_33.PLL_PWM.YC"
+@W: MT420 |Found inferred clock pll_80|GLA_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:PID_33.PLL_PWM.GLA"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Fri May 04 05:42:59 2018
+#
+
+
+Top view:               PSU_Top_Level
+Library name:           PA3
+Operating conditions:   COMWCSTD ( T = 70.0, V = 1.42, P = 1.74, tree_type = balanced_tree )
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Wire load model:        proasic3e
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -19.611
+
+                              Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock                Frequency     Frequency     Period        Period        Slack       Type         Group              
+----------------------------------------------------------------------------------------------------------------------------------
+PSU_Top_Level|clk             100.0 MHz     33.8 MHz      10.000        29.611        -19.611     inferred     Inferred_clkgroup_0
+pll_80|GLA_inferred_clock     100.0 MHz     65.0 MHz      10.000        15.373        -5.373      inferred     Inferred_clkgroup_1
+pll_80|YC_inferred_clock      100.0 MHz     99.1 MHz      10.000        10.094        -0.094      inferred     Inferred_clkgroup_2
+==================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------------------------------------------
+Starting                   Ending                     |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------------------------------------------
+PSU_Top_Level|clk          PSU_Top_Level|clk          |  10.000      -19.611  |  No paths    -      |  No paths    -      |  No paths    -    
+PSU_Top_Level|clk          pll_80|GLA_inferred_clock  |  Diff grp    -        |  No paths    -      |  No paths    -      |  No paths    -    
+pll_80|GLA_inferred_clock  pll_80|GLA_inferred_clock  |  10.000      -5.373   |  No paths    -      |  No paths    -      |  No paths    -    
+pll_80|YC_inferred_clock   PSU_Top_Level|clk          |  Diff grp    -        |  No paths    -      |  No paths    -      |  No paths    -    
+pll_80|YC_inferred_clock   pll_80|YC_inferred_clock   |  10.000      -0.094   |  No paths    -      |  No paths    -      |  No paths    -    
+==============================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: PSU_Top_Level|clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                        Starting                                                  Arrival            
+Instance                Reference             Type         Pin     Net            Time        Slack  
+                        Clock                                                                        
+-----------------------------------------------------------------------------------------------------
+CG.k_i33[7]             PSU_Top_Level|clk     DFN1C0       Q       k_i33[7]       0.737       -19.611
+CG.k_i33[5]             PSU_Top_Level|clk     DFN1P0       Q       k_i33[5]       0.737       -19.533
+CG.k_i33[3]             PSU_Top_Level|clk     DFN1C0       Q       k_i33[3]       0.737       -19.291
+CG.k_i33[9]             PSU_Top_Level|clk     DFN1C0       Q       k_i33[9]       0.737       -19.211
+CG.k_i33[6]             PSU_Top_Level|clk     DFN1C0       Q       k_i33[6]       0.737       -18.728
+PID_33.SUM.i_adj[3]     PSU_Top_Level|clk     DFN1E1C0     Q       i_adj[3]       0.737       -18.620
+CG.k_i33[8]             PSU_Top_Level|clk     DFN1C0       Q       k_i33[8]       0.737       -18.578
+CG.k_i33_0[5]           PSU_Top_Level|clk     DFN1P0       Q       k_i33_0[5]     0.737       -18.271
+CG.k_i33_0[1]           PSU_Top_Level|clk     DFN1C0       Q       k_i33_0[1]     0.737       -18.179
+CG.k_i33_0[7]           PSU_Top_Level|clk     DFN1C0       Q       k_i33_0[7]     0.737       -18.165
+=====================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                        Starting                                                       Required            
+Instance                Reference             Type         Pin     Net                 Time         Slack  
+                        Clock                                                                              
+-----------------------------------------------------------------------------------------------------------
+PID_33.SUM.ireg[24]     PSU_Top_Level|clk     DFN1E1C0     D       next_ireg_3[24]     9.496        -19.611
+PID_33.SUM.ireg[25]     PSU_Top_Level|clk     DFN1E1C0     D       next_ireg_3[25]     9.496        -18.712
+PID_33.SUM.ireg[16]     PSU_Top_Level|clk     DFN1E1C0     D       next_ireg_3[16]     9.496        -18.544
+PID_33.SUM.ireg[22]     PSU_Top_Level|clk     DFN1E1C0     D       next_ireg_3[22]     9.496        -17.713
+PID_33.SUM.ireg[23]     PSU_Top_Level|clk     DFN1E1C0     D       next_ireg_3[23]     9.496        -17.619
+PID_33.SUM.ireg[19]     PSU_Top_Level|clk     DFN1E1C0     D       next_ireg_3[19]     9.496        -17.608
+PID_33.SUM.ireg[21]     PSU_Top_Level|clk     DFN1E1C0     D       next_ireg_3[21]     9.496        -17.608
+PID_33.SUM.ireg[15]     PSU_Top_Level|clk     DFN1E1C0     D       next_ireg_3[15]     9.496        -17.595
+PID_33.SUM.ireg[17]     PSU_Top_Level|clk     DFN1E1C0     D       next_ireg_3[17]     9.496        -17.595
+PID_33.SUM.preg[19]     PSU_Top_Level|clk     DFN1E1C0     D       next_preg_3[19]     9.496        -17.164
+===========================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.504
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.496
+
+    - Propagation time:                      29.107
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -19.611
+
+    Number of logic level(s):                21
+    Starting point:                          CG.k_i33[7] / Q
+    Ending point:                            PID_33.SUM.ireg[24] / D
+    The start point is clocked by            PSU_Top_Level|clk [rising] on pin CLK
+    The end   point is clocked by            PSU_Top_Level|clk [rising] on pin CLK
+
+Instance / Net                                                              Pin      Pin               Arrival     No. of    
+Name                                                           Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------
+CG.k_i33[7]                                                    DFN1C0       Q        Out     0.737     0.737       -         
+k_i33[7]                                                       Net          -        -       2.353     -           20        
+PID_33.SUM.next_ireg_3.fz4_11_a2_1                             NOR2A        A        In      -         3.090       -         
+PID_33.SUM.next_ireg_3.fz4_11_a2_1                             NOR2A        Y        Out     0.627     3.718       -         
+fz4_11_a2_1                                                    Net          -        -       1.423     -           6         
+PID_33.SUM.next_ireg_3.fz4_11_a2                               NOR3B        B        In      -         5.141       -         
+PID_33.SUM.next_ireg_3.fz4_11_a2                               NOR3B        Y        Out     0.607     5.747       -         
+fz4_11_a2                                                      Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.fz4_0_1                                 AO1          C        In      -         6.069       -         
+PID_33.SUM.next_ireg_3.fz4_0_1                                 AO1          Y        Out     0.633     6.702       -         
+fz4_0_1                                                        Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.fz4_0                                   OR3          A        In      -         7.023       -         
+PID_33.SUM.next_ireg_3.fz4_0                                   OR3          Y        Out     0.488     7.511       -         
+N_96_0                                                         Net          -        -       0.806     -           3         
+PID_33.SUM.next_ireg_3.mbadd_100                               XOR3         C        In      -         8.318       -         
+PID_33.SUM.next_ireg_3.mbadd_100                               XOR3         Y        Out     0.985     9.303       -         
+N_191_0                                                        Net          -        -       0.806     -           3         
+PID_33.SUM.next_ireg_3.mbadd_114_0_tz_0                        OR2          A        In      -         10.110      -         
+PID_33.SUM.next_ireg_3.mbadd_114_0_tz_0                        OR2          Y        Out     0.507     10.617      -         
+mbadd_114_0_tz_0                                               Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_114_0_tz                          OR2          A        In      -         10.938      -         
+PID_33.SUM.next_ireg_3.mbadd_114_0_tz                          OR2          Y        Out     0.507     11.446      -         
+mbadd_114_0_tz                                                 Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_114_0                             NOR2B        B        In      -         11.767      -         
+PID_33.SUM.next_ireg_3.mbadd_114_0                             NOR2B        Y        Out     0.627     12.395      -         
+mbadd_114_0                                                    Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_114                               OR2          A        In      -         12.716      -         
+PID_33.SUM.next_ireg_3.mbadd_114                               OR2          Y        Out     0.507     13.224      -         
+N_196_0                                                        Net          -        -       1.184     -           4         
+PID_33.SUM.next_ireg_3.mbadd_140                               NOR2B        B        In      -         14.407      -         
+PID_33.SUM.next_ireg_3.mbadd_140                               NOR2B        Y        Out     0.627     15.035      -         
+mbadd_73_0                                                     Net          -        -       0.386     -           2         
+PID_33.SUM.next_ireg_3.mbadd_141                               OR2          B        In      -         15.421      -         
+PID_33.SUM.next_ireg_3.mbadd_141                               OR2          Y        Out     0.646     16.067      -         
+N_208                                                          Net          -        -       1.184     -           4         
+PID_33.SUM.next_ireg_3.mbadd_170                               NOR2B        B        In      -         17.251      -         
+PID_33.SUM.next_ireg_3.mbadd_170                               NOR2B        Y        Out     0.627     17.878      -         
+mbadd_91_0                                                     Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_171                               AO1          C        In      -         18.200      -         
+PID_33.SUM.next_ireg_3.mbadd_171                               AO1          Y        Out     0.633     18.832      -         
+N_220_0                                                        Net          -        -       0.806     -           3         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I11_P0N        OR2          B        In      -         19.639      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I11_P0N        OR2          Y        Out     0.646     20.285      -         
+N335_0                                                         Net          -        -       0.806     -           3         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I42_Y          OA1          C        In      -         21.091      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I42_Y          OA1          Y        Out     0.666     21.757      -         
+N388                                                           Net          -        -       1.279     -           5         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I88_Y          NOR2B        A        In      -         23.036      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I88_Y          NOR2B        Y        Out     0.514     23.551      -         
+N439                                                           Net          -        -       0.386     -           2         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I131_un1_Y     NOR2B        B        In      -         23.936      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I131_un1_Y     NOR2B        Y        Out     0.627     24.564      -         
+I131_un1_Y                                                     Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I131_Y         OR2          A        In      -         24.885      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I131_Y         OR2          Y        Out     0.507     25.393      -         
+N488                                                           Net          -        -       0.386     -           2         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I155_un1_Y     NOR2B        B        In      -         25.779      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I155_un1_Y     NOR2B        Y        Out     0.627     26.406      -         
+I155_un1_Y                                                     Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I186_Y         OR3          C        In      -         26.727      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I186_Y         OR3          Y        Out     0.751     27.478      -         
+N580                                                           Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I231_Y         XOR3         C        In      -         27.800      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I231_Y         XOR3         Y        Out     0.985     28.785      -         
+next_ireg_3[24]                                                Net          -        -       0.322     -           1         
+PID_33.SUM.ireg[24]                                            DFN1E1C0     D        In      -         29.107      -         
+=============================================================================================================================
+Total path delay (propagation time + setup) of 29.611 is 14.589(49.3%) logic and 15.021(50.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.000
+    - Setup time:                            0.504
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.496
+
+    - Propagation time:                      29.072
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -19.576
+
+    Number of logic level(s):                21
+    Starting point:                          CG.k_i33[7] / Q
+    Ending point:                            PID_33.SUM.ireg[24] / D
+    The start point is clocked by            PSU_Top_Level|clk [rising] on pin CLK
+    The end   point is clocked by            PSU_Top_Level|clk [rising] on pin CLK
+
+Instance / Net                                                              Pin      Pin               Arrival     No. of    
+Name                                                           Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------
+CG.k_i33[7]                                                    DFN1C0       Q        Out     0.737     0.737       -         
+k_i33[7]                                                       Net          -        -       2.353     -           20        
+PID_33.SUM.next_ireg_3.fz4_11_a2_1                             NOR2A        A        In      -         3.090       -         
+PID_33.SUM.next_ireg_3.fz4_11_a2_1                             NOR2A        Y        Out     0.627     3.718       -         
+fz4_11_a2_1                                                    Net          -        -       1.423     -           6         
+PID_33.SUM.next_ireg_3.fz4_11_a2                               NOR3B        B        In      -         5.141       -         
+PID_33.SUM.next_ireg_3.fz4_11_a2                               NOR3B        Y        Out     0.607     5.747       -         
+fz4_11_a2                                                      Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.fz4_0_1                                 AO1          C        In      -         6.069       -         
+PID_33.SUM.next_ireg_3.fz4_0_1                                 AO1          Y        Out     0.633     6.702       -         
+fz4_0_1                                                        Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.fz4_0                                   OR3          A        In      -         7.023       -         
+PID_33.SUM.next_ireg_3.fz4_0                                   OR3          Y        Out     0.488     7.511       -         
+N_96_0                                                         Net          -        -       0.806     -           3         
+PID_33.SUM.next_ireg_3.mbadd_100                               XOR3         C        In      -         8.318       -         
+PID_33.SUM.next_ireg_3.mbadd_100                               XOR3         Y        Out     0.985     9.303       -         
+N_191_0                                                        Net          -        -       0.806     -           3         
+PID_33.SUM.next_ireg_3.mbadd_114_0_tz_0                        OR2          A        In      -         10.110      -         
+PID_33.SUM.next_ireg_3.mbadd_114_0_tz_0                        OR2          Y        Out     0.507     10.617      -         
+mbadd_114_0_tz_0                                               Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_114_0_tz                          OR2          A        In      -         10.938      -         
+PID_33.SUM.next_ireg_3.mbadd_114_0_tz                          OR2          Y        Out     0.507     11.446      -         
+mbadd_114_0_tz                                                 Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_114_0                             NOR2B        B        In      -         11.767      -         
+PID_33.SUM.next_ireg_3.mbadd_114_0                             NOR2B        Y        Out     0.627     12.395      -         
+mbadd_114_0                                                    Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_114                               OR2          A        In      -         12.716      -         
+PID_33.SUM.next_ireg_3.mbadd_114                               OR2          Y        Out     0.507     13.224      -         
+N_196_0                                                        Net          -        -       1.184     -           4         
+PID_33.SUM.next_ireg_3.mbadd_141_0                             OA1          A        In      -         14.407      -         
+PID_33.SUM.next_ireg_3.mbadd_141_0                             OA1          Y        Out     0.732     15.139      -         
+mbadd_141_0                                                    Net          -        -       0.386     -           2         
+PID_33.SUM.next_ireg_3.mbadd_141                               OR2          A        In      -         15.525      -         
+PID_33.SUM.next_ireg_3.mbadd_141                               OR2          Y        Out     0.507     16.032      -         
+N_208                                                          Net          -        -       1.184     -           4         
+PID_33.SUM.next_ireg_3.mbadd_170                               NOR2B        B        In      -         17.216      -         
+PID_33.SUM.next_ireg_3.mbadd_170                               NOR2B        Y        Out     0.627     17.843      -         
+mbadd_91_0                                                     Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_171                               AO1          C        In      -         18.165      -         
+PID_33.SUM.next_ireg_3.mbadd_171                               AO1          Y        Out     0.633     18.797      -         
+N_220_0                                                        Net          -        -       0.806     -           3         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I11_P0N        OR2          B        In      -         19.604      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I11_P0N        OR2          Y        Out     0.646     20.250      -         
+N335_0                                                         Net          -        -       0.806     -           3         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I42_Y          OA1          C        In      -         21.057      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I42_Y          OA1          Y        Out     0.666     21.722      -         
+N388                                                           Net          -        -       1.279     -           5         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I88_Y          NOR2B        A        In      -         23.001      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I88_Y          NOR2B        Y        Out     0.514     23.516      -         
+N439                                                           Net          -        -       0.386     -           2         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I131_un1_Y     NOR2B        B        In      -         23.901      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I131_un1_Y     NOR2B        Y        Out     0.627     24.529      -         
+I131_un1_Y                                                     Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I131_Y         OR2          A        In      -         24.850      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I131_Y         OR2          Y        Out     0.507     25.358      -         
+N488                                                           Net          -        -       0.386     -           2         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I155_un1_Y     NOR2B        B        In      -         25.744      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I155_un1_Y     NOR2B        Y        Out     0.627     26.371      -         
+I155_un1_Y                                                     Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I186_Y         OR3          C        In      -         26.692      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I186_Y         OR3          Y        Out     0.751     27.443      -         
+N580                                                           Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I231_Y         XOR3         C        In      -         27.765      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I231_Y         XOR3         Y        Out     0.985     28.750      -         
+next_ireg_3[24]                                                Net          -        -       0.322     -           1         
+PID_33.SUM.ireg[24]                                            DFN1E1C0     D        In      -         29.072      -         
+=============================================================================================================================
+Total path delay (propagation time + setup) of 29.576 is 14.555(49.2%) logic and 15.021(50.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            0.504
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.496
+
+    - Propagation time:                      29.029
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -19.533
+
+    Number of logic level(s):                21
+    Starting point:                          CG.k_i33[5] / Q
+    Ending point:                            PID_33.SUM.ireg[24] / D
+    The start point is clocked by            PSU_Top_Level|clk [rising] on pin CLK
+    The end   point is clocked by            PSU_Top_Level|clk [rising] on pin CLK
+
+Instance / Net                                                              Pin      Pin               Arrival     No. of    
+Name                                                           Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------
+CG.k_i33[5]                                                    DFN1P0       Q        Out     0.737     0.737       -         
+k_i33[5]                                                       Net          -        -       2.353     -           20        
+PID_33.SUM.next_ireg_3.fz2_10_a0_1                             NOR2A        A        In      -         3.090       -         
+PID_33.SUM.next_ireg_3.fz2_10_a0_1                             NOR2A        Y        Out     0.627     3.718       -         
+fz2_10_a0_1                                                    Net          -        -       1.423     -           6         
+PID_33.SUM.next_ireg_3.fz2_10_a0                               NOR3A        A        In      -         5.141       -         
+PID_33.SUM.next_ireg_3.fz2_10_a0                               NOR3A        Y        Out     0.641     5.782       -         
+fz2_10_a0                                                      Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.fz2_0_2                                 AO1          C        In      -         6.104       -         
+PID_33.SUM.next_ireg_3.fz2_0_2                                 AO1          Y        Out     0.633     6.736       -         
+fz2_0_2                                                        Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.fz2_0                                   OR3          C        In      -         7.058       -         
+PID_33.SUM.next_ireg_3.fz2_0                                   OR3          Y        Out     0.751     7.809       -         
+N_57                                                           Net          -        -       1.184     -           4         
+PID_33.SUM.next_ireg_3.mbadd_86                                NOR2B        A        In      -         8.992       -         
+PID_33.SUM.next_ireg_3.mbadd_86                                NOR2B        Y        Out     0.514     9.507       -         
+mbadd_43                                                       Net          -        -       0.386     -           2         
+PID_33.SUM.next_ireg_3.mbadd_114_0_tz_0                        OR2          B        In      -         9.893       -         
+PID_33.SUM.next_ireg_3.mbadd_114_0_tz_0                        OR2          Y        Out     0.646     10.539      -         
+mbadd_114_0_tz_0                                               Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_114_0_tz                          OR2          A        In      -         10.861      -         
+PID_33.SUM.next_ireg_3.mbadd_114_0_tz                          OR2          Y        Out     0.507     11.368      -         
+mbadd_114_0_tz                                                 Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_114_0                             NOR2B        B        In      -         11.689      -         
+PID_33.SUM.next_ireg_3.mbadd_114_0                             NOR2B        Y        Out     0.627     12.317      -         
+mbadd_114_0                                                    Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_114                               OR2          A        In      -         12.638      -         
+PID_33.SUM.next_ireg_3.mbadd_114                               OR2          Y        Out     0.507     13.146      -         
+N_196_0                                                        Net          -        -       1.184     -           4         
+PID_33.SUM.next_ireg_3.mbadd_140                               NOR2B        B        In      -         14.329      -         
+PID_33.SUM.next_ireg_3.mbadd_140                               NOR2B        Y        Out     0.627     14.957      -         
+mbadd_73_0                                                     Net          -        -       0.386     -           2         
+PID_33.SUM.next_ireg_3.mbadd_141                               OR2          B        In      -         15.342      -         
+PID_33.SUM.next_ireg_3.mbadd_141                               OR2          Y        Out     0.646     15.989      -         
+N_208                                                          Net          -        -       1.184     -           4         
+PID_33.SUM.next_ireg_3.mbadd_170                               NOR2B        B        In      -         17.173      -         
+PID_33.SUM.next_ireg_3.mbadd_170                               NOR2B        Y        Out     0.627     17.800      -         
+mbadd_91_0                                                     Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_171                               AO1          C        In      -         18.122      -         
+PID_33.SUM.next_ireg_3.mbadd_171                               AO1          Y        Out     0.633     18.754      -         
+N_220_0                                                        Net          -        -       0.806     -           3         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I11_P0N        OR2          B        In      -         19.561      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I11_P0N        OR2          Y        Out     0.646     20.207      -         
+N335_0                                                         Net          -        -       0.806     -           3         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I42_Y          OA1          C        In      -         21.013      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I42_Y          OA1          Y        Out     0.666     21.679      -         
+N388                                                           Net          -        -       1.279     -           5         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I88_Y          NOR2B        A        In      -         22.958      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I88_Y          NOR2B        Y        Out     0.514     23.473      -         
+N439                                                           Net          -        -       0.386     -           2         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I131_un1_Y     NOR2B        B        In      -         23.858      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I131_un1_Y     NOR2B        Y        Out     0.627     24.486      -         
+I131_un1_Y                                                     Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I131_Y         OR2          A        In      -         24.807      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I131_Y         OR2          Y        Out     0.507     25.315      -         
+N488                                                           Net          -        -       0.386     -           2         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I155_un1_Y     NOR2B        B        In      -         25.701      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I155_un1_Y     NOR2B        Y        Out     0.627     26.328      -         
+I155_un1_Y                                                     Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I186_Y         OR3          C        In      -         26.649      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I186_Y         OR3          Y        Out     0.751     27.400      -         
+N580                                                           Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I231_Y         XOR3         C        In      -         27.722      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I231_Y         XOR3         Y        Out     0.985     28.707      -         
+next_ireg_3[24]                                                Net          -        -       0.322     -           1         
+PID_33.SUM.ireg[24]                                            DFN1E1C0     D        In      -         29.029      -         
+=============================================================================================================================
+Total path delay (propagation time + setup) of 29.533 is 14.555(49.3%) logic and 14.978(50.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.000
+    - Setup time:                            0.504
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.496
+
+    - Propagation time:                      28.994
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -19.498
+
+    Number of logic level(s):                21
+    Starting point:                          CG.k_i33[5] / Q
+    Ending point:                            PID_33.SUM.ireg[24] / D
+    The start point is clocked by            PSU_Top_Level|clk [rising] on pin CLK
+    The end   point is clocked by            PSU_Top_Level|clk [rising] on pin CLK
+
+Instance / Net                                                              Pin      Pin               Arrival     No. of    
+Name                                                           Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------
+CG.k_i33[5]                                                    DFN1P0       Q        Out     0.737     0.737       -         
+k_i33[5]                                                       Net          -        -       2.353     -           20        
+PID_33.SUM.next_ireg_3.fz2_10_a0_1                             NOR2A        A        In      -         3.090       -         
+PID_33.SUM.next_ireg_3.fz2_10_a0_1                             NOR2A        Y        Out     0.627     3.718       -         
+fz2_10_a0_1                                                    Net          -        -       1.423     -           6         
+PID_33.SUM.next_ireg_3.fz2_10_a0                               NOR3A        A        In      -         5.141       -         
+PID_33.SUM.next_ireg_3.fz2_10_a0                               NOR3A        Y        Out     0.641     5.782       -         
+fz2_10_a0                                                      Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.fz2_0_2                                 AO1          C        In      -         6.104       -         
+PID_33.SUM.next_ireg_3.fz2_0_2                                 AO1          Y        Out     0.633     6.736       -         
+fz2_0_2                                                        Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.fz2_0                                   OR3          C        In      -         7.058       -         
+PID_33.SUM.next_ireg_3.fz2_0                                   OR3          Y        Out     0.751     7.809       -         
+N_57                                                           Net          -        -       1.184     -           4         
+PID_33.SUM.next_ireg_3.mbadd_86                                NOR2B        A        In      -         8.992       -         
+PID_33.SUM.next_ireg_3.mbadd_86                                NOR2B        Y        Out     0.514     9.507       -         
+mbadd_43                                                       Net          -        -       0.386     -           2         
+PID_33.SUM.next_ireg_3.mbadd_114_0_tz_0                        OR2          B        In      -         9.893       -         
+PID_33.SUM.next_ireg_3.mbadd_114_0_tz_0                        OR2          Y        Out     0.646     10.539      -         
+mbadd_114_0_tz_0                                               Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_114_0_tz                          OR2          A        In      -         10.861      -         
+PID_33.SUM.next_ireg_3.mbadd_114_0_tz                          OR2          Y        Out     0.507     11.368      -         
+mbadd_114_0_tz                                                 Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_114_0                             NOR2B        B        In      -         11.689      -         
+PID_33.SUM.next_ireg_3.mbadd_114_0                             NOR2B        Y        Out     0.627     12.317      -         
+mbadd_114_0                                                    Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_114                               OR2          A        In      -         12.638      -         
+PID_33.SUM.next_ireg_3.mbadd_114                               OR2          Y        Out     0.507     13.146      -         
+N_196_0                                                        Net          -        -       1.184     -           4         
+PID_33.SUM.next_ireg_3.mbadd_141_0                             OA1          A        In      -         14.329      -         
+PID_33.SUM.next_ireg_3.mbadd_141_0                             OA1          Y        Out     0.732     15.061      -         
+mbadd_141_0                                                    Net          -        -       0.386     -           2         
+PID_33.SUM.next_ireg_3.mbadd_141                               OR2          A        In      -         15.447      -         
+PID_33.SUM.next_ireg_3.mbadd_141                               OR2          Y        Out     0.507     15.954      -         
+N_208                                                          Net          -        -       1.184     -           4         
+PID_33.SUM.next_ireg_3.mbadd_170                               NOR2B        B        In      -         17.138      -         
+PID_33.SUM.next_ireg_3.mbadd_170                               NOR2B        Y        Out     0.627     17.765      -         
+mbadd_91_0                                                     Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_171                               AO1          C        In      -         18.087      -         
+PID_33.SUM.next_ireg_3.mbadd_171                               AO1          Y        Out     0.633     18.719      -         
+N_220_0                                                        Net          -        -       0.806     -           3         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I11_P0N        OR2          B        In      -         19.526      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I11_P0N        OR2          Y        Out     0.646     20.172      -         
+N335_0                                                         Net          -        -       0.806     -           3         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I42_Y          OA1          C        In      -         20.979      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I42_Y          OA1          Y        Out     0.666     21.644      -         
+N388                                                           Net          -        -       1.279     -           5         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I88_Y          NOR2B        A        In      -         22.923      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I88_Y          NOR2B        Y        Out     0.514     23.438      -         
+N439                                                           Net          -        -       0.386     -           2         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I131_un1_Y     NOR2B        B        In      -         23.823      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I131_un1_Y     NOR2B        Y        Out     0.627     24.451      -         
+I131_un1_Y                                                     Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I131_Y         OR2          A        In      -         24.772      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I131_Y         OR2          Y        Out     0.507     25.280      -         
+N488                                                           Net          -        -       0.386     -           2         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I155_un1_Y     NOR2B        B        In      -         25.666      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I155_un1_Y     NOR2B        Y        Out     0.627     26.293      -         
+I155_un1_Y                                                     Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I186_Y         OR3          C        In      -         26.615      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I186_Y         OR3          Y        Out     0.751     27.365      -         
+N580                                                           Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I231_Y         XOR3         C        In      -         27.687      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I231_Y         XOR3         Y        Out     0.985     28.672      -         
+next_ireg_3[24]                                                Net          -        -       0.322     -           1         
+PID_33.SUM.ireg[24]                                            DFN1E1C0     D        In      -         28.994      -         
+=============================================================================================================================
+Total path delay (propagation time + setup) of 29.498 is 14.520(49.2%) logic and 14.978(50.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.000
+    - Setup time:                            0.504
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.496
+
+    - Propagation time:                      28.898
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -19.402
+
+    Number of logic level(s):                20
+    Starting point:                          CG.k_i33[5] / Q
+    Ending point:                            PID_33.SUM.ireg[24] / D
+    The start point is clocked by            PSU_Top_Level|clk [rising] on pin CLK
+    The end   point is clocked by            PSU_Top_Level|clk [rising] on pin CLK
+
+Instance / Net                                                              Pin      Pin               Arrival     No. of    
+Name                                                           Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------
+CG.k_i33[5]                                                    DFN1P0       Q        Out     0.737     0.737       -         
+k_i33[5]                                                       Net          -        -       2.353     -           20        
+PID_33.SUM.next_ireg_3.m0                                      XNOR2        B        In      -         3.090       -         
+PID_33.SUM.next_ireg_3.m0                                      XNOR2        Y        Out     0.937     4.027       -         
+m0_3                                                           Net          -        -       2.127     -           15        
+PID_33.SUM.next_ireg_3.shft3_10                                MX2          S        In      -         6.154       -         
+PID_33.SUM.next_ireg_3.shft3_10                                MX2          Y        Out     0.480     6.634       -         
+shft3_10                                                       Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.fz3_10                                  XA1          B        In      -         6.955       -         
+PID_33.SUM.next_ireg_3.fz3_10                                  XA1          Y        Out     0.987     7.942       -         
+N_77                                                           Net          -        -       0.806     -           3         
+PID_33.SUM.next_ireg_3.mbadd_86                                NOR2B        B        In      -         8.749       -         
+PID_33.SUM.next_ireg_3.mbadd_86                                NOR2B        Y        Out     0.627     9.376       -         
+mbadd_43                                                       Net          -        -       0.386     -           2         
+PID_33.SUM.next_ireg_3.mbadd_114_0_tz_0                        OR2          B        In      -         9.762       -         
+PID_33.SUM.next_ireg_3.mbadd_114_0_tz_0                        OR2          Y        Out     0.646     10.409      -         
+mbadd_114_0_tz_0                                               Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_114_0_tz                          OR2          A        In      -         10.730      -         
+PID_33.SUM.next_ireg_3.mbadd_114_0_tz                          OR2          Y        Out     0.507     11.237      -         
+mbadd_114_0_tz                                                 Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_114_0                             NOR2B        B        In      -         11.559      -         
+PID_33.SUM.next_ireg_3.mbadd_114_0                             NOR2B        Y        Out     0.627     12.186      -         
+mbadd_114_0                                                    Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_114                               OR2          A        In      -         12.508      -         
+PID_33.SUM.next_ireg_3.mbadd_114                               OR2          Y        Out     0.507     13.015      -         
+N_196_0                                                        Net          -        -       1.184     -           4         
+PID_33.SUM.next_ireg_3.mbadd_140                               NOR2B        B        In      -         14.199      -         
+PID_33.SUM.next_ireg_3.mbadd_140                               NOR2B        Y        Out     0.627     14.826      -         
+mbadd_73_0                                                     Net          -        -       0.386     -           2         
+PID_33.SUM.next_ireg_3.mbadd_141                               OR2          B        In      -         15.212      -         
+PID_33.SUM.next_ireg_3.mbadd_141                               OR2          Y        Out     0.646     15.858      -         
+N_208                                                          Net          -        -       1.184     -           4         
+PID_33.SUM.next_ireg_3.mbadd_170                               NOR2B        B        In      -         17.042      -         
+PID_33.SUM.next_ireg_3.mbadd_170                               NOR2B        Y        Out     0.627     17.669      -         
+mbadd_91_0                                                     Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_171                               AO1          C        In      -         17.991      -         
+PID_33.SUM.next_ireg_3.mbadd_171                               AO1          Y        Out     0.633     18.624      -         
+N_220_0                                                        Net          -        -       0.806     -           3         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I11_P0N        OR2          B        In      -         19.430      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I11_P0N        OR2          Y        Out     0.646     20.076      -         
+N335_0                                                         Net          -        -       0.806     -           3         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I42_Y          OA1          C        In      -         20.883      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I42_Y          OA1          Y        Out     0.666     21.549      -         
+N388                                                           Net          -        -       1.279     -           5         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I88_Y          NOR2B        A        In      -         22.828      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I88_Y          NOR2B        Y        Out     0.514     23.342      -         
+N439                                                           Net          -        -       0.386     -           2         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I131_un1_Y     NOR2B        B        In      -         23.728      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I131_un1_Y     NOR2B        Y        Out     0.627     24.355      -         
+I131_un1_Y                                                     Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I131_Y         OR2          A        In      -         24.677      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I131_Y         OR2          Y        Out     0.507     25.184      -         
+N488                                                           Net          -        -       0.386     -           2         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I155_un1_Y     NOR2B        B        In      -         25.570      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I155_un1_Y     NOR2B        Y        Out     0.627     26.197      -         
+I155_un1_Y                                                     Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I186_Y         OR3          C        In      -         26.519      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I186_Y         OR3          Y        Out     0.751     27.270      -         
+N580                                                           Net          -        -       0.322     -           1         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I231_Y         XOR3         C        In      -         27.591      -         
+PID_33.SUM.next_ireg_3.mbadd_472.ADD_24x24_fast_I231_Y         XOR3         Y        Out     0.985     28.577      -         
+next_ireg_3[24]                                                Net          -        -       0.322     -           1         
+PID_33.SUM.ireg[24]                                            DFN1E1C0     D        In      -         28.898      -         
+=============================================================================================================================
+Total path delay (propagation time + setup) of 29.402 is 14.419(49.0%) logic and 14.983(51.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: pll_80|GLA_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                              Starting                                                           Arrival           
+Instance                      Reference                     Type         Pin     Net             Time        Slack 
+                              Clock                                                                                
+-------------------------------------------------------------------------------------------------------------------
+PID_33.PWM_TX.counter[1]      pll_80|GLA_inferred_clock     DFN1C0       Q       counter[1]      0.737       -5.373
+PID_33.PWM_TX.counter[0]      pll_80|GLA_inferred_clock     DFN1C0       Q       counter[0]      0.737       -5.356
+PID_33.PWM_TX.counter[2]      pll_80|GLA_inferred_clock     DFN1C0       Q       counter[2]      0.737       -4.569
+PID_33.PWM_TX.counter[6]      pll_80|GLA_inferred_clock     DFN1C0       Q       counter[6]      0.737       -4.470
+PID_33.PWM_TX.counter[11]     pll_80|GLA_inferred_clock     DFN1C0       Q       counter[11]     0.737       -4.367
+PID_33.PWM_TX.counter[20]     pll_80|GLA_inferred_clock     DFN1C0       Q       counter[20]     0.737       -4.367
+PID_33.PWM_TX.off_reg[6]      pll_80|GLA_inferred_clock     DFN1E1C0     Q       off_reg[6]      0.580       -4.322
+PID_33.PWM_TX.off_reg[20]     pll_80|GLA_inferred_clock     DFN1E1C0     Q       off_reg[20]     0.580       -4.322
+PID_33.PWM_TX.counter[8]      pll_80|GLA_inferred_clock     DFN1C0       Q       counter[8]      0.737       -4.218
+PID_33.PWM_TX.counter[4]      pll_80|GLA_inferred_clock     DFN1C0       Q       counter[4]      0.737       -4.193
+===================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                              Starting                                                         Required           
+Instance                      Reference                     Type       Pin     Net             Time         Slack 
+                              Clock                                                                               
+------------------------------------------------------------------------------------------------------------------
+PID_33.PWM_TX.counter[20]     pll_80|GLA_inferred_clock     DFN1C0     D       counter_n20     9.427        -5.373
+PID_33.PWM_TX.counter[31]     pll_80|GLA_inferred_clock     DFN1C0     D       counter_n31     9.427        -4.689
+PID_33.PWM_TX.counter[19]     pll_80|GLA_inferred_clock     DFN1C0     D       counter_n19     9.427        -4.537
+PID_33.PWM_TX.counter[1]      pll_80|GLA_inferred_clock     DFN1C0     D       counter_n1      9.461        -4.470
+PID_33.PWM_TX.counter[2]      pll_80|GLA_inferred_clock     DFN1C0     D       counter_n2      9.461        -4.470
+PID_33.PWM_TX.counter[3]      pll_80|GLA_inferred_clock     DFN1C0     D       counter_n3      9.461        -4.470
+PID_33.PWM_TX.counter[4]      pll_80|GLA_inferred_clock     DFN1C0     D       counter_n4      9.461        -4.470
+PID_33.PWM_TX.counter[5]      pll_80|GLA_inferred_clock     DFN1C0     D       counter_n5      9.461        -4.470
+PID_33.PWM_TX.counter[6]      pll_80|GLA_inferred_clock     DFN1C0     D       counter_n6      9.461        -4.470
+PID_33.PWM_TX.counter[7]      pll_80|GLA_inferred_clock     DFN1C0     D       counter_n7      9.461        -4.470
+==================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      14.800
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -5.373
+
+    Number of logic level(s):                13
+    Starting point:                          PID_33.PWM_TX.counter[1] / Q
+    Ending point:                            PID_33.PWM_TX.counter[20] / D
+    The start point is clocked by            pll_80|GLA_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            pll_80|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                   Pin      Pin               Arrival     No. of    
+Name                                  Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+PID_33.PWM_TX.counter[1]              DFN1C0     Q        Out     0.737     0.737       -         
+counter[1]                            Net        -        -       1.184     -           4         
+PID_33.PWM_TX.counter_RNIBD31[1]      NOR2B      B        In      -         1.921       -         
+PID_33.PWM_TX.counter_RNIBD31[1]      NOR2B      Y        Out     0.627     2.548       -         
+counter_c1                            Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNII5L1[2]      NOR2B      A        In      -         2.934       -         
+PID_33.PWM_TX.counter_RNII5L1[2]      NOR2B      Y        Out     0.514     3.448       -         
+counter_c2                            Net        -        -       0.806     -           3         
+PID_33.PWM_TX.counter_RNIOGS3[3]      NOR3C      C        In      -         4.255       -         
+PID_33.PWM_TX.counter_RNIOGS3[3]      NOR3C      Y        Out     0.641     4.896       -         
+counter_m6_0_a2_4_0                   Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNICG1A[9]      NOR2B      B        In      -         5.282       -         
+PID_33.PWM_TX.counter_RNICG1A[9]      NOR2B      Y        Out     0.627     5.909       -         
+counter_c11                           Net        -        -       0.806     -           3         
+PID_33.PWM_TX.counter_RNI449C[12]     NOR2B      A        In      -         6.715       -         
+PID_33.PWM_TX.counter_RNI449C[12]     NOR2B      Y        Out     0.514     7.230       -         
+counter_c12                           Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNITOGE[13]     NOR2B      A        In      -         7.616       -         
+PID_33.PWM_TX.counter_RNITOGE[13]     NOR2B      Y        Out     0.514     8.130       -         
+counter_c13                           Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNINEOG[14]     NOR2B      A        In      -         8.516       -         
+PID_33.PWM_TX.counter_RNINEOG[14]     NOR2B      Y        Out     0.514     9.030       -         
+counter_c14                           Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNII50J[15]     NOR2B      A        In      -         9.416       -         
+PID_33.PWM_TX.counter_RNII50J[15]     NOR2B      Y        Out     0.514     9.930       -         
+counter_c15                           Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNIET7L[16]     NOR2B      A        In      -         10.316      -         
+PID_33.PWM_TX.counter_RNIET7L[16]     NOR2B      Y        Out     0.514     10.831      -         
+counter_c16                           Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNIBMFN[17]     NOR2B      A        In      -         11.216      -         
+PID_33.PWM_TX.counter_RNIBMFN[17]     NOR2B      Y        Out     0.514     11.731      -         
+counter_c17                           Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNI9GNP[18]     NOR2B      A        In      -         12.117      -         
+PID_33.PWM_TX.counter_RNI9GNP[18]     NOR2B      Y        Out     0.514     12.631      -         
+counter_c18                           Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNO_0[20]       NOR2B      A        In      -         13.017      -         
+PID_33.PWM_TX.counter_RNO_0[20]       NOR2B      Y        Out     0.514     13.531      -         
+counter_c19                           Net        -        -       0.322     -           1         
+PID_33.PWM_TX.counter_RNO[20]         XA1B       B        In      -         13.853      -         
+PID_33.PWM_TX.counter_RNO[20]         XA1B       Y        Out     0.626     14.478      -         
+counter_n20                           Net        -        -       0.322     -           1         
+PID_33.PWM_TX.counter[20]             DFN1C0     D        In      -         14.800      -         
+==================================================================================================
+Total path delay (propagation time + setup) of 15.373 is 8.462(55.0%) logic and 6.912(45.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      14.782
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -5.356
+
+    Number of logic level(s):                13
+    Starting point:                          PID_33.PWM_TX.counter[0] / Q
+    Ending point:                            PID_33.PWM_TX.counter[20] / D
+    The start point is clocked by            pll_80|GLA_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            pll_80|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                   Pin      Pin               Arrival     No. of    
+Name                                  Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+PID_33.PWM_TX.counter[0]              DFN1C0     Q        Out     0.737     0.737       -         
+counter[0]                            Net        -        -       1.279     -           5         
+PID_33.PWM_TX.counter_RNIBD31[1]      NOR2B      A        In      -         2.016       -         
+PID_33.PWM_TX.counter_RNIBD31[1]      NOR2B      Y        Out     0.514     2.531       -         
+counter_c1                            Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNII5L1[2]      NOR2B      A        In      -         2.916       -         
+PID_33.PWM_TX.counter_RNII5L1[2]      NOR2B      Y        Out     0.514     3.431       -         
+counter_c2                            Net        -        -       0.806     -           3         
+PID_33.PWM_TX.counter_RNIOGS3[3]      NOR3C      C        In      -         4.237       -         
+PID_33.PWM_TX.counter_RNIOGS3[3]      NOR3C      Y        Out     0.641     4.878       -         
+counter_m6_0_a2_4_0                   Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNICG1A[9]      NOR2B      B        In      -         5.264       -         
+PID_33.PWM_TX.counter_RNICG1A[9]      NOR2B      Y        Out     0.627     5.892       -         
+counter_c11                           Net        -        -       0.806     -           3         
+PID_33.PWM_TX.counter_RNI449C[12]     NOR2B      A        In      -         6.698       -         
+PID_33.PWM_TX.counter_RNI449C[12]     NOR2B      Y        Out     0.514     7.212       -         
+counter_c12                           Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNITOGE[13]     NOR2B      A        In      -         7.598       -         
+PID_33.PWM_TX.counter_RNITOGE[13]     NOR2B      Y        Out     0.514     8.113       -         
+counter_c13                           Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNINEOG[14]     NOR2B      A        In      -         8.498       -         
+PID_33.PWM_TX.counter_RNINEOG[14]     NOR2B      Y        Out     0.514     9.013       -         
+counter_c14                           Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNII50J[15]     NOR2B      A        In      -         9.399       -         
+PID_33.PWM_TX.counter_RNII50J[15]     NOR2B      Y        Out     0.514     9.913       -         
+counter_c15                           Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNIET7L[16]     NOR2B      A        In      -         10.299      -         
+PID_33.PWM_TX.counter_RNIET7L[16]     NOR2B      Y        Out     0.514     10.813      -         
+counter_c16                           Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNIBMFN[17]     NOR2B      A        In      -         11.199      -         
+PID_33.PWM_TX.counter_RNIBMFN[17]     NOR2B      Y        Out     0.514     11.713      -         
+counter_c17                           Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNI9GNP[18]     NOR2B      A        In      -         12.099      -         
+PID_33.PWM_TX.counter_RNI9GNP[18]     NOR2B      Y        Out     0.514     12.614      -         
+counter_c18                           Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNO_0[20]       NOR2B      A        In      -         12.999      -         
+PID_33.PWM_TX.counter_RNO_0[20]       NOR2B      Y        Out     0.514     13.514      -         
+counter_c19                           Net        -        -       0.322     -           1         
+PID_33.PWM_TX.counter_RNO[20]         XA1B       B        In      -         13.835      -         
+PID_33.PWM_TX.counter_RNO[20]         XA1B       Y        Out     0.626     14.461      -         
+counter_n20                           Net        -        -       0.322     -           1         
+PID_33.PWM_TX.counter[20]             DFN1C0     D        In      -         14.782      -         
+==================================================================================================
+Total path delay (propagation time + setup) of 15.356 is 8.349(54.4%) logic and 7.007(45.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      14.115
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -4.689
+
+    Number of logic level(s):                12
+    Starting point:                          PID_33.PWM_TX.counter[1] / Q
+    Ending point:                            PID_33.PWM_TX.counter[31] / D
+    The start point is clocked by            pll_80|GLA_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            pll_80|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                    Pin      Pin               Arrival     No. of    
+Name                                   Type       Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------
+PID_33.PWM_TX.counter[1]               DFN1C0     Q        Out     0.737     0.737       -         
+counter[1]                             Net        -        -       1.184     -           4         
+PID_33.PWM_TX.counter_RNIBD31[1]       NOR2B      B        In      -         1.921       -         
+PID_33.PWM_TX.counter_RNIBD31[1]       NOR2B      Y        Out     0.627     2.548       -         
+counter_c1                             Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNII5L1[2]       NOR2B      A        In      -         2.934       -         
+PID_33.PWM_TX.counter_RNII5L1[2]       NOR2B      Y        Out     0.514     3.448       -         
+counter_c2                             Net        -        -       0.806     -           3         
+PID_33.PWM_TX.counter_RNIOGS3[3]       NOR3C      C        In      -         4.255       -         
+PID_33.PWM_TX.counter_RNIOGS3[3]       NOR3C      Y        Out     0.641     4.896       -         
+counter_m6_0_a2_4_0                    Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNIE2DL[22]      NOR3C      C        In      -         5.282       -         
+PID_33.PWM_TX.counter_RNIE2DL[22]      NOR3C      Y        Out     0.641     5.923       -         
+counter_m6_0_a2_11_7                   Net        -        -       0.322     -           1         
+PID_33.PWM_TX.counter_RNI1HJ91[22]     NOR2B      A        In      -         6.244       -         
+PID_33.PWM_TX.counter_RNI1HJ91[22]     NOR2B      Y        Out     0.514     6.759       -         
+counter_c25                            Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNIUASB1[26]     NOR2B      A        In      -         7.145       -         
+PID_33.PWM_TX.counter_RNIUASB1[26]     NOR2B      Y        Out     0.514     7.659       -         
+counter_c26                            Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNIS55E1[27]     NOR2B      A        In      -         8.045       -         
+PID_33.PWM_TX.counter_RNIS55E1[27]     NOR2B      Y        Out     0.514     8.559       -         
+counter_c27                            Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNIR1EG1[28]     NOR2B      A        In      -         8.945       -         
+PID_33.PWM_TX.counter_RNIR1EG1[28]     NOR2B      Y        Out     0.514     9.459       -         
+counter_c28                            Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNIRUMI1[29]     NOR2B      A        In      -         9.845       -         
+PID_33.PWM_TX.counter_RNIRUMI1[29]     NOR2B      Y        Out     0.514     10.360      -         
+counter_c29                            Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNIEJ2F3[30]     NOR2B      B        In      -         10.745      -         
+PID_33.PWM_TX.counter_RNIEJ2F3[30]     NOR2B      Y        Out     0.627     11.373      -         
+counter_1                              Net        -        -       0.806     -           3         
+PID_33.PWM_TX.counter_RNO_0[31]        OA1C       B        In      -         12.179      -         
+PID_33.PWM_TX.counter_RNO_0[31]        OA1C       Y        Out     0.652     12.831      -         
+counter_n31_0_0                        Net        -        -       0.322     -           1         
+PID_33.PWM_TX.counter_RNO[31]          NOR3B      A        In      -         13.152      -         
+PID_33.PWM_TX.counter_RNO[31]          NOR3B      Y        Out     0.641     13.794      -         
+counter_n31                            Net        -        -       0.322     -           1         
+PID_33.PWM_TX.counter[31]              DFN1C0     D        In      -         14.115      -         
+===================================================================================================
+Total path delay (propagation time + setup) of 14.689 is 8.227(56.0%) logic and 6.462(44.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      14.098
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -4.671
+
+    Number of logic level(s):                12
+    Starting point:                          PID_33.PWM_TX.counter[0] / Q
+    Ending point:                            PID_33.PWM_TX.counter[31] / D
+    The start point is clocked by            pll_80|GLA_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            pll_80|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                    Pin      Pin               Arrival     No. of    
+Name                                   Type       Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------
+PID_33.PWM_TX.counter[0]               DFN1C0     Q        Out     0.737     0.737       -         
+counter[0]                             Net        -        -       1.279     -           5         
+PID_33.PWM_TX.counter_RNIBD31[1]       NOR2B      A        In      -         2.016       -         
+PID_33.PWM_TX.counter_RNIBD31[1]       NOR2B      Y        Out     0.514     2.531       -         
+counter_c1                             Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNII5L1[2]       NOR2B      A        In      -         2.916       -         
+PID_33.PWM_TX.counter_RNII5L1[2]       NOR2B      Y        Out     0.514     3.431       -         
+counter_c2                             Net        -        -       0.806     -           3         
+PID_33.PWM_TX.counter_RNIOGS3[3]       NOR3C      C        In      -         4.237       -         
+PID_33.PWM_TX.counter_RNIOGS3[3]       NOR3C      Y        Out     0.641     4.878       -         
+counter_m6_0_a2_4_0                    Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNIE2DL[22]      NOR3C      C        In      -         5.264       -         
+PID_33.PWM_TX.counter_RNIE2DL[22]      NOR3C      Y        Out     0.641     5.906       -         
+counter_m6_0_a2_11_7                   Net        -        -       0.322     -           1         
+PID_33.PWM_TX.counter_RNI1HJ91[22]     NOR2B      A        In      -         6.227       -         
+PID_33.PWM_TX.counter_RNI1HJ91[22]     NOR2B      Y        Out     0.514     6.741       -         
+counter_c25                            Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNIUASB1[26]     NOR2B      A        In      -         7.127       -         
+PID_33.PWM_TX.counter_RNIUASB1[26]     NOR2B      Y        Out     0.514     7.642       -         
+counter_c26                            Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNIS55E1[27]     NOR2B      A        In      -         8.027       -         
+PID_33.PWM_TX.counter_RNIS55E1[27]     NOR2B      Y        Out     0.514     8.542       -         
+counter_c27                            Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNIR1EG1[28]     NOR2B      A        In      -         8.928       -         
+PID_33.PWM_TX.counter_RNIR1EG1[28]     NOR2B      Y        Out     0.514     9.442       -         
+counter_c28                            Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNIRUMI1[29]     NOR2B      A        In      -         9.828       -         
+PID_33.PWM_TX.counter_RNIRUMI1[29]     NOR2B      Y        Out     0.514     10.342      -         
+counter_c29                            Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNIEJ2F3[30]     NOR2B      B        In      -         10.728      -         
+PID_33.PWM_TX.counter_RNIEJ2F3[30]     NOR2B      Y        Out     0.627     11.355      -         
+counter_1                              Net        -        -       0.806     -           3         
+PID_33.PWM_TX.counter_RNO_0[31]        OA1C       B        In      -         12.162      -         
+PID_33.PWM_TX.counter_RNO_0[31]        OA1C       Y        Out     0.652     12.813      -         
+counter_n31_0_0                        Net        -        -       0.322     -           1         
+PID_33.PWM_TX.counter_RNO[31]          NOR3B      A        In      -         13.135      -         
+PID_33.PWM_TX.counter_RNO[31]          NOR3B      Y        Out     0.641     13.776      -         
+counter_n31                            Net        -        -       0.322     -           1         
+PID_33.PWM_TX.counter[31]              DFN1C0     D        In      -         14.098      -         
+===================================================================================================
+Total path delay (propagation time + setup) of 14.671 is 8.114(55.3%) logic and 6.557(44.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      14.079
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -4.617
+
+    Number of logic level(s):                12
+    Starting point:                          PID_33.PWM_TX.counter[1] / Q
+    Ending point:                            PID_33.PWM_TX.counter[31] / D
+    The start point is clocked by            pll_80|GLA_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            pll_80|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                    Pin      Pin               Arrival     No. of    
+Name                                   Type       Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------
+PID_33.PWM_TX.counter[1]               DFN1C0     Q        Out     0.737     0.737       -         
+counter[1]                             Net        -        -       1.184     -           4         
+PID_33.PWM_TX.counter_RNIBD31[1]       NOR2B      B        In      -         1.921       -         
+PID_33.PWM_TX.counter_RNIBD31[1]       NOR2B      Y        Out     0.627     2.548       -         
+counter_c1                             Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNII5L1[2]       NOR2B      A        In      -         2.934       -         
+PID_33.PWM_TX.counter_RNII5L1[2]       NOR2B      Y        Out     0.514     3.448       -         
+counter_c2                             Net        -        -       0.806     -           3         
+PID_33.PWM_TX.counter_RNIOGS3[3]       NOR3C      C        In      -         4.255       -         
+PID_33.PWM_TX.counter_RNIOGS3[3]       NOR3C      Y        Out     0.641     4.896       -         
+counter_m6_0_a2_4_0                    Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNIE2DL[22]      NOR3C      C        In      -         5.282       -         
+PID_33.PWM_TX.counter_RNIE2DL[22]      NOR3C      Y        Out     0.641     5.923       -         
+counter_m6_0_a2_11_7                   Net        -        -       0.322     -           1         
+PID_33.PWM_TX.counter_RNI1HJ91[22]     NOR2B      A        In      -         6.244       -         
+PID_33.PWM_TX.counter_RNI1HJ91[22]     NOR2B      Y        Out     0.514     6.759       -         
+counter_c25                            Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNIUASB1[26]     NOR2B      A        In      -         7.145       -         
+PID_33.PWM_TX.counter_RNIUASB1[26]     NOR2B      Y        Out     0.514     7.659       -         
+counter_c26                            Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNIS55E1[27]     NOR2B      A        In      -         8.045       -         
+PID_33.PWM_TX.counter_RNIS55E1[27]     NOR2B      Y        Out     0.514     8.559       -         
+counter_c27                            Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNIR1EG1[28]     NOR2B      A        In      -         8.945       -         
+PID_33.PWM_TX.counter_RNIR1EG1[28]     NOR2B      Y        Out     0.514     9.459       -         
+counter_c28                            Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNIRUMI1[29]     NOR2B      A        In      -         9.845       -         
+PID_33.PWM_TX.counter_RNIRUMI1[29]     NOR2B      Y        Out     0.514     10.360      -         
+counter_c29                            Net        -        -       0.386     -           2         
+PID_33.PWM_TX.counter_RNIEJ2F3[30]     NOR2B      B        In      -         10.745      -         
+PID_33.PWM_TX.counter_RNIEJ2F3[30]     NOR2B      Y        Out     0.627     11.373      -         
+counter_1                              Net        -        -       0.806     -           3         
+PID_33.PWM_TX.counter_RNO_1[31]        OAI1       C        In      -         12.179      -         
+PID_33.PWM_TX.counter_RNO_1[31]        OAI1       Y        Out     0.633     12.812      -         
+counter_n31_0_1                        Net        -        -       0.322     -           1         
+PID_33.PWM_TX.counter_RNO[31]          NOR3B      B        In      -         13.133      -         
+PID_33.PWM_TX.counter_RNO[31]          NOR3B      Y        Out     0.624     13.757      -         
+counter_n31                            Net        -        -       0.322     -           1         
+PID_33.PWM_TX.counter[31]              DFN1C0     D        In      -         14.079      -         
+===================================================================================================
+Total path delay (propagation time + setup) of 14.617 is 8.156(55.8%) logic and 6.462(44.2%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: pll_80|YC_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                              Starting                                                    Arrival           
+Instance                      Reference                    Type       Pin     Net         Time        Slack 
+                              Clock                                                                         
+------------------------------------------------------------------------------------------------------------
+PID_33.SPI.SPICTL.cnt[0]      pll_80|YC_inferred_clock     DFN1C0     Q       cnt[0]      0.580       -0.094
+PID_33.SPI.SPICTL.cnt[1]      pll_80|YC_inferred_clock     DFN1C0     Q       cnt[1]      0.580       0.030 
+PID_33.SPI.SPICTL.cnt[5]      pll_80|YC_inferred_clock     DFN1C0     Q       cnt[5]      0.580       0.643 
+PID_33.SPI.SPICTL.cnt[7]      pll_80|YC_inferred_clock     DFN1C0     Q       cnt[7]      0.737       1.027 
+PID_33.SPI.SPICTL.cnt[9]      pll_80|YC_inferred_clock     DFN1C0     Q       cnt[9]      0.580       1.078 
+PID_33.SPI.SPICTL.cnt[10]     pll_80|YC_inferred_clock     DFN1C0     Q       cnt[10]     0.580       1.144 
+PID_33.SPI.SPICTL.cnt[2]      pll_80|YC_inferred_clock     DFN1C0     Q       cnt[2]      0.580       1.338 
+PID_33.SPI.SPICTL.cnt[11]     pll_80|YC_inferred_clock     DFN1C0     Q       cnt[11]     0.580       1.518 
+PID_33.SPI.SPICTL.cnt[3]      pll_80|YC_inferred_clock     DFN1C0     Q       cnt[3]      0.580       1.714 
+PID_33.SPI.SPICTL.cnt[4]      pll_80|YC_inferred_clock     DFN1C0     Q       cnt[4]      0.580       1.771 
+============================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                              Starting                                                      Required           
+Instance                      Reference                    Type         Pin     Net         Time         Slack 
+                              Clock                                                                            
+---------------------------------------------------------------------------------------------------------------
+PID_33.SPI.SPICTL.cnt[15]     pll_80|YC_inferred_clock     DFN1C0       D       cnt_n15     9.461        -0.094
+PID_33.SPI.SPICTL.cnt[6]      pll_80|YC_inferred_clock     DFN1C0       D       N_16        9.427        0.511 
+PID_33.SPI.SPICTL.cnt[14]     pll_80|YC_inferred_clock     DFN1C0       D       cnt_n14     9.461        0.874 
+PID_33.SPI.SPICTL.cnt[13]     pll_80|YC_inferred_clock     DFN1C0       D       cnt_n13     9.461        0.954 
+PID_33.SPI.SPICTL.cnt[5]      pll_80|YC_inferred_clock     DFN1C0       D       N_18        9.461        1.468 
+PID_33.SPI.SPICTL.cnt[9]      pll_80|YC_inferred_clock     DFN1C0       D       cnt_n9      9.461        1.677 
+PID_33.SPI.SPICTL.cnt[12]     pll_80|YC_inferred_clock     DFN1C0       D       cnt_n12     9.427        1.708 
+PID_33.SPI.SPICTL.cnt[4]      pll_80|YC_inferred_clock     DFN1C0       D       N_20        9.461        1.785 
+PID_33.SPI.VD_STP.sr[0]       pll_80|YC_inferred_clock     DFN1E0C0     E       N_29        9.392        1.997 
+PID_33.SPI.VD_STP.sr[1]       pll_80|YC_inferred_clock     DFN1E0C0     E       N_29        9.392        1.997 
+===============================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      9.555
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.094
+
+    Number of logic level(s):                6
+    Starting point:                          PID_33.SPI.SPICTL.cnt[0] / Q
+    Ending point:                            PID_33.SPI.SPICTL.cnt[15] / D
+    The start point is clocked by            pll_80|YC_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            pll_80|YC_inferred_clock [rising] on pin CLK
+
+Instance / Net                                    Pin      Pin               Arrival     No. of    
+Name                                   Type       Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------
+PID_33.SPI.SPICTL.cnt[0]               DFN1C0     Q        Out     0.580     0.580       -         
+cnt[0]                                 Net        -        -       1.279     -           5         
+PID_33.SPI.SPICTL.cnt_RNI9KSO[1]       OR2B       B        In      -         1.860       -         
+PID_33.SPI.SPICTL.cnt_RNI9KSO[1]       OR2B       Y        Out     0.516     2.376       -         
+N_30                                   Net        -        -       0.806     -           3         
+PID_33.SPI.SPICTL.cnt_RNIVVA51[2]      OR2A       B        In      -         3.182       -         
+PID_33.SPI.SPICTL.cnt_RNIVVA51[2]      OR2A       Y        Out     0.646     3.829       -         
+N_31                                   Net        -        -       1.279     -           5         
+PID_33.SPI.SPICTL.cnt_RNI0OVH4[6]      NOR3B      C        In      -         5.108       -         
+PID_33.SPI.SPICTL.cnt_RNI0OVH4[6]      NOR3B      Y        Out     0.488     5.596       -         
+cnt_N_13_mux                           Net        -        -       0.806     -           3         
+PID_33.SPI.SPICTL.cnt_RNIF5F75[12]     OR2A       A        In      -         6.402       -         
+PID_33.SPI.SPICTL.cnt_RNIF5F75[12]     OR2A       Y        Out     0.537     6.939       -         
+N_74                                   Net        -        -       0.386     -           2         
+PID_33.SPI.SPICTL.cnt_RNO_0[15]        OR2A       B        In      -         7.325       -         
+PID_33.SPI.SPICTL.cnt_RNO_0[15]        OR2A       Y        Out     0.646     7.972       -         
+N_75                                   Net        -        -       0.322     -           1         
+PID_33.SPI.SPICTL.cnt_RNO[15]          XA1A       B        In      -         8.293       -         
+PID_33.SPI.SPICTL.cnt_RNO[15]          XA1A       Y        Out     0.940     9.233       -         
+cnt_n15                                Net        -        -       0.322     -           1         
+PID_33.SPI.SPICTL.cnt[15]              DFN1C0     D        In      -         9.555       -         
+===================================================================================================
+Total path delay (propagation time + setup) of 10.094 is 4.894(48.5%) logic and 5.200(51.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      9.432
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 0.030
+
+    Number of logic level(s):                6
+    Starting point:                          PID_33.SPI.SPICTL.cnt[1] / Q
+    Ending point:                            PID_33.SPI.SPICTL.cnt[15] / D
+    The start point is clocked by            pll_80|YC_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            pll_80|YC_inferred_clock [rising] on pin CLK
+
+Instance / Net                                    Pin      Pin               Arrival     No. of    
+Name                                   Type       Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------
+PID_33.SPI.SPICTL.cnt[1]               DFN1C0     Q        Out     0.580     0.580       -         
+cnt[1]                                 Net        -        -       1.184     -           4         
+PID_33.SPI.SPICTL.cnt_RNI9KSO[1]       OR2B       A        In      -         1.764       -         
+PID_33.SPI.SPICTL.cnt_RNI9KSO[1]       OR2B       Y        Out     0.488     2.252       -         
+N_30                                   Net        -        -       0.806     -           3         
+PID_33.SPI.SPICTL.cnt_RNIVVA51[2]      OR2A       B        In      -         3.059       -         
+PID_33.SPI.SPICTL.cnt_RNIVVA51[2]      OR2A       Y        Out     0.646     3.705       -         
+N_31                                   Net        -        -       1.279     -           5         
+PID_33.SPI.SPICTL.cnt_RNI0OVH4[6]      NOR3B      C        In      -         4.984       -         
+PID_33.SPI.SPICTL.cnt_RNI0OVH4[6]      NOR3B      Y        Out     0.488     5.473       -         
+cnt_N_13_mux                           Net        -        -       0.806     -           3         
+PID_33.SPI.SPICTL.cnt_RNIF5F75[12]     OR2A       A        In      -         6.279       -         
+PID_33.SPI.SPICTL.cnt_RNIF5F75[12]     OR2A       Y        Out     0.537     6.816       -         
+N_74                                   Net        -        -       0.386     -           2         
+PID_33.SPI.SPICTL.cnt_RNO_0[15]        OR2A       B        In      -         7.202       -         
+PID_33.SPI.SPICTL.cnt_RNO_0[15]        OR2A       Y        Out     0.646     7.848       -         
+N_75                                   Net        -        -       0.322     -           1         
+PID_33.SPI.SPICTL.cnt_RNO[15]          XA1A       B        In      -         8.170       -         
+PID_33.SPI.SPICTL.cnt_RNO[15]          XA1A       Y        Out     0.940     9.110       -         
+cnt_n15                                Net        -        -       0.322     -           1         
+PID_33.SPI.SPICTL.cnt[15]              DFN1C0     D        In      -         9.432       -         
+===================================================================================================
+Total path delay (propagation time + setup) of 9.970 is 4.866(48.8%) logic and 5.104(51.2%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      8.818
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 0.643
+
+    Number of logic level(s):                6
+    Starting point:                          PID_33.SPI.SPICTL.cnt[5] / Q
+    Ending point:                            PID_33.SPI.SPICTL.cnt[15] / D
+    The start point is clocked by            pll_80|YC_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            pll_80|YC_inferred_clock [rising] on pin CLK
+
+Instance / Net                                    Pin      Pin               Arrival     No. of    
+Name                                   Type       Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------
+PID_33.SPI.SPICTL.cnt[5]               DFN1C0     Q        Out     0.580     0.580       -         
+cnt[5]                                 Net        -        -       1.639     -           8         
+PID_33.SPI.SPICTL.cnt_RNI4OT11[11]     NOR3C      C        In      -         2.219       -         
+PID_33.SPI.SPICTL.cnt_RNI4OT11[11]     NOR3C      Y        Out     0.666     2.885       -         
+cnt_m6_0_a2_4                          Net        -        -       0.322     -           1         
+PID_33.SPI.SPICTL.cnt_RNIONQQ1[8]      NOR3C      C        In      -         3.206       -         
+PID_33.SPI.SPICTL.cnt_RNIONQQ1[8]      NOR3C      Y        Out     0.666     3.872       -         
+cnt_m6_0_a2_6                          Net        -        -       0.322     -           1         
+PID_33.SPI.SPICTL.cnt_RNI0OVH4[6]      NOR3B      A        In      -         4.194       -         
+PID_33.SPI.SPICTL.cnt_RNI0OVH4[6]      NOR3B      Y        Out     0.666     4.859       -         
+cnt_N_13_mux                           Net        -        -       0.806     -           3         
+PID_33.SPI.SPICTL.cnt_RNIF5F75[12]     OR2A       A        In      -         5.665       -         
+PID_33.SPI.SPICTL.cnt_RNIF5F75[12]     OR2A       Y        Out     0.537     6.202       -         
+N_74                                   Net        -        -       0.386     -           2         
+PID_33.SPI.SPICTL.cnt_RNO_0[15]        OR2A       B        In      -         6.588       -         
+PID_33.SPI.SPICTL.cnt_RNO_0[15]        OR2A       Y        Out     0.646     7.235       -         
+N_75                                   Net        -        -       0.322     -           1         
+PID_33.SPI.SPICTL.cnt_RNO[15]          XA1A       B        In      -         7.556       -         
+PID_33.SPI.SPICTL.cnt_RNO[15]          XA1A       Y        Out     0.940     8.496       -         
+cnt_n15                                Net        -        -       0.322     -           1         
+PID_33.SPI.SPICTL.cnt[15]              DFN1C0     D        In      -         8.818       -         
+===================================================================================================
+Total path delay (propagation time + setup) of 9.357 is 5.240(56.0%) logic and 4.117(44.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      8.676
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 0.786
+
+    Number of logic level(s):                5
+    Starting point:                          PID_33.SPI.SPICTL.cnt[0] / Q
+    Ending point:                            PID_33.SPI.SPICTL.cnt[6] / D
+    The start point is clocked by            pll_80|YC_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            pll_80|YC_inferred_clock [rising] on pin CLK
+
+Instance / Net                                   Pin      Pin               Arrival     No. of    
+Name                                  Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+PID_33.SPI.SPICTL.cnt[0]              DFN1C0     Q        Out     0.580     0.580       -         
+cnt[0]                                Net        -        -       1.279     -           5         
+PID_33.SPI.SPICTL.cnt_RNI9KSO[1]      OR2B       B        In      -         1.860       -         
+PID_33.SPI.SPICTL.cnt_RNI9KSO[1]      OR2B       Y        Out     0.516     2.376       -         
+N_30                                  Net        -        -       0.806     -           3         
+PID_33.SPI.SPICTL.cnt_RNIVVA51[2]     OR2A       B        In      -         3.182       -         
+PID_33.SPI.SPICTL.cnt_RNIVVA51[2]     OR2A       Y        Out     0.646     3.829       -         
+N_31                                  Net        -        -       1.279     -           5         
+PID_33.SPI.SPICTL.cnt_RNIEQ7U1[3]     OR3B       C        In      -         5.108       -         
+PID_33.SPI.SPICTL.cnt_RNIEQ7U1[3]     OR3B       Y        Out     0.751     5.859       -         
+N_33                                  Net        -        -       0.806     -           3         
+PID_33.SPI.SPICTL.cnt_RNO_0[6]        OA1C       B        In      -         6.665       -         
+PID_33.SPI.SPICTL.cnt_RNO_0[6]        OA1C       Y        Out     0.652     7.317       -         
+N_95                                  Net        -        -       0.322     -           1         
+PID_33.SPI.SPICTL.cnt_RNO[6]          NOR3A      C        In      -         7.638       -         
+PID_33.SPI.SPICTL.cnt_RNO[6]          NOR3A      Y        Out     0.716     8.354       -         
+N_16                                  Net        -        -       0.322     -           1         
+PID_33.SPI.SPICTL.cnt[6]              DFN1C0     D        In      -         8.676       -         
+==================================================================================================
+Total path delay (propagation time + setup) of 9.214 is 4.400(47.8%) logic and 4.814(52.2%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      8.587
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 0.874
+
+    Number of logic level(s):                5
+    Starting point:                          PID_33.SPI.SPICTL.cnt[0] / Q
+    Ending point:                            PID_33.SPI.SPICTL.cnt[14] / D
+    The start point is clocked by            pll_80|YC_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            pll_80|YC_inferred_clock [rising] on pin CLK
+
+Instance / Net                                    Pin      Pin               Arrival     No. of    
+Name                                   Type       Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------
+PID_33.SPI.SPICTL.cnt[0]               DFN1C0     Q        Out     0.580     0.580       -         
+cnt[0]                                 Net        -        -       1.279     -           5         
+PID_33.SPI.SPICTL.cnt_RNI9KSO[1]       OR2B       B        In      -         1.860       -         
+PID_33.SPI.SPICTL.cnt_RNI9KSO[1]       OR2B       Y        Out     0.516     2.376       -         
+N_30                                   Net        -        -       0.806     -           3         
+PID_33.SPI.SPICTL.cnt_RNIVVA51[2]      OR2A       B        In      -         3.182       -         
+PID_33.SPI.SPICTL.cnt_RNIVVA51[2]      OR2A       Y        Out     0.646     3.829       -         
+N_31                                   Net        -        -       1.279     -           5         
+PID_33.SPI.SPICTL.cnt_RNI0OVH4[6]      NOR3B      C        In      -         5.108       -         
+PID_33.SPI.SPICTL.cnt_RNI0OVH4[6]      NOR3B      Y        Out     0.488     5.596       -         
+cnt_N_13_mux                           Net        -        -       0.806     -           3         
+PID_33.SPI.SPICTL.cnt_RNIF5F75[12]     OR2A       A        In      -         6.402       -         
+PID_33.SPI.SPICTL.cnt_RNIF5F75[12]     OR2A       Y        Out     0.537     6.939       -         
+N_74                                   Net        -        -       0.386     -           2         
+PID_33.SPI.SPICTL.cnt_RNO[14]          XA1A       B        In      -         7.325       -         
+PID_33.SPI.SPICTL.cnt_RNO[14]          XA1A       Y        Out     0.940     8.265       -         
+cnt_n14                                Net        -        -       0.322     -           1         
+PID_33.SPI.SPICTL.cnt[14]              DFN1C0     D        In      -         8.587       -         
+===================================================================================================
+Total path delay (propagation time + setup) of 9.126 is 4.247(46.5%) logic and 4.878(53.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:46s; CPU Time elapsed 0h:00m:45s; Memory used current: 208MB peak: 268MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:46s; CPU Time elapsed 0h:00m:45s; Memory used current: 208MB peak: 268MB)
+
+--------------------------------------------------------------------------------
+Target Part: A3PE1500_PQFP208_STD
+Report for cell PSU_Top_Level.verilog
+  Core Cell usage:
+              cell count     area count*area
+              AND2    30      1.0       30.0
+             AND2A     3      1.0        3.0
+              AND3    54      1.0       54.0
+               AO1   441      1.0      441.0
+              AO13   140      1.0      140.0
+              AO16     4      1.0        4.0
+              AO18    20      1.0       20.0
+              AO1A    32      1.0       32.0
+              AO1B    43      1.0       43.0
+              AO1C    21      1.0       21.0
+              AO1D    12      1.0       12.0
+              AOI1    10      1.0       10.0
+             AOI1A     5      1.0        5.0
+             AOI1B    12      1.0       12.0
+               AX1     7      1.0        7.0
+              AX1A     7      1.0        7.0
+              AX1B     9      1.0        9.0
+              AX1C    10      1.0       10.0
+              AX1D   124      1.0      124.0
+              AX1E     3      1.0        3.0
+              AXO2     1      1.0        1.0
+             AXOI5     1      1.0        1.0
+              BUFF     6      1.0        6.0
+            CLKINT     2      0.0        0.0
+               GND    22      0.0        0.0
+               INV     7      1.0        7.0
+              MAJ3   105      1.0      105.0
+              MIN3    12      1.0       12.0
+               MX2   354      1.0      354.0
+              MX2A    11      1.0       11.0
+              MX2B    30      1.0       30.0
+              MX2C    46      1.0       46.0
+              NOR2    80      1.0       80.0
+             NOR2A   213      1.0      213.0
+             NOR2B   797      1.0      797.0
+              NOR3    50      1.0       50.0
+             NOR3A    75      1.0       75.0
+             NOR3B   105      1.0      105.0
+             NOR3C   201      1.0      201.0
+               OA1   135      1.0      135.0
+              OA1A    45      1.0       45.0
+              OA1B    52      1.0       52.0
+              OA1C    12      1.0       12.0
+              OAI1     2      1.0        2.0
+               OR2   253      1.0      253.0
+              OR2A    63      1.0       63.0
+              OR2B    11      1.0       11.0
+               OR3   115      1.0      115.0
+              OR3A     2      1.0        2.0
+              OR3B     5      1.0        5.0
+              OR3C     5      1.0        5.0
+               PLL     1      0.0        0.0
+            PLLINT     1      0.0        0.0
+               VCC    22      0.0        0.0
+               XA1   210      1.0      210.0
+              XA1A    23      1.0       23.0
+              XA1B    73      1.0       73.0
+              XA1C     6      1.0        6.0
+              XAI1     1      1.0        1.0
+             XAI1A     1      1.0        1.0
+             XNOR2   219      1.0      219.0
+             XNOR3   149      1.0      149.0
+               XO1    15      1.0       15.0
+              XO1A    22      1.0       22.0
+              XOR2   273      1.0      273.0
+              XOR3   134      1.0      134.0
+             ZOR3I    12      1.0       12.0
+
+
+            DFN1C0   302      1.0      302.0
+          DFN1E0C0    53      1.0       53.0
+          DFN1E1C0  1098      1.0     1098.0
+            DFN1P0    43      1.0       43.0
+                   -----          ----------
+             TOTAL  6463              6415.0
+
+
+  IO Cell usage:
+              cell count
+            CLKBUF     2
+             INBUF    11
+            OUTBUF    13
+           TRIBUFF    16
+                   -----
+             TOTAL    42
+
+
+Core Cells         : 6415 of 38400 (17%)
+IO Cells           : 42
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 60 (0%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:46s; CPU Time elapsed 0h:00m:45s; Memory used current: 44MB peak: 268MB)
+
+Process took 0h:00m:46s realtime, 0h:00m:45s cputime
+# Fri May 04 05:42:59 2018
+
+###########################################################]
